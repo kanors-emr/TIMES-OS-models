@@ -1,0 +1,247 @@
+{
+ "case": "gc_ref",
+ "made": "2026-11-08",
+ "objective": 756404387.8201399,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 512182,
+  "columns": 765953,
+  "nonzeros": 5622500,
+  "objective": 756404387.8201399,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 512182,
+  "columns": 765953,
+  "nonzeros": 5622500,
+  "objective": 756404387.8201396
+ },
+ "row_counts": {
+  "EQ_OBJVAR": 2,
+  "EQ_PTRANS": 220328,
+  "EQG_CPT": 460,
+  "EQ_OBJSALV": 2,
+  "EQ_OBJFIX": 2,
+  "EQG_COMBAL": 8247,
+  "EQL_CAPACT": 148740,
+  "EQ_STGAUX": 8104,
+  "EQE_UCRSUS": 414,
+  "EQL_CAFLAC": 3588,
+  "EQ_IRE": 1152,
+  "EQ_STGIPS": 384,
+  "EQE_COMPRD": 2544,
+  "EQ_OBJ": 1,
+  "EQE_CPT": 1135,
+  "EQ_PEAK": 7200,
+  "EQG_INSHR": 6022,
+  "EQE_INSHR": 2484,
+  "EQE_COMBAL": 8664,
+  "EQ_OBJINV": 2,
+  "EQE_ACTEFF": 64488,
+  "EQ_STGTSS": 3312,
+  "EQL_INSHR": 417,
+  "EQE_UCRTS": 16056,
+  "EQG_CAPACT": 578,
+  "EQ_ACTFLO": 6488,
+  "EQE_OUTSHR": 1368
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1980",
+  "CTST": "",
+  "DAMAGE": "NO",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "AUTO",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "gc_ref",
+  "SCENARIO_NAME": "uc_tra",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "STAGES": "NO",
+  "SYSPREFIX": "",
+  "TIMESED": "NO",
+  "TMP": "0",
+  "VALIDATE": "NO",
+  "VAR": "VARIABLE OBJZ",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "gc_ref_ts.dd",
+   "bytes": 98,
+   "sha256_16": "a0e0e428646d7f19"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 1029360,
+   "sha256_16": "676c0d02d3910fdf"
+  },
+  {
+   "name": "techcom.dd",
+   "bytes": 2020647,
+   "sha256_16": "6179dc794e88d22d"
+  },
+  {
+   "name": "techind.dd",
+   "bytes": 9059,
+   "sha256_16": "a9c96e2e897aa424"
+  },
+  {
+   "name": "techelc.dd",
+   "bytes": 659826,
+   "sha256_16": "be6bfdb19d9911a2"
+  },
+  {
+   "name": "demand.dd",
+   "bytes": 38485,
+   "sha256_16": "e014b96904f55934"
+  },
+  {
+   "name": "techres.dd",
+   "bytes": 2430859,
+   "sha256_16": "37c384287ebd9191"
+  },
+  {
+   "name": "techret.dd",
+   "bytes": 131175,
+   "sha256_16": "adabbe75c67f8161"
+  },
+  {
+   "name": "techtra.dd",
+   "bytes": 337735,
+   "sha256_16": "26ca5e016c0f03f2"
+  },
+  {
+   "name": "techwas.dd",
+   "bytes": 57144,
+   "sha256_16": "3943b1611e85ecf3"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 154510,
+   "sha256_16": "80e77b709b98f657"
+  },
+  {
+   "name": "tradeparam.dd",
+   "bytes": 1943,
+   "sha256_16": "471949d32efca209"
+  },
+  {
+   "name": "gdr.dd",
+   "bytes": 315,
+   "sha256_16": "a6e92bc4fccbbc22"
+  },
+  {
+   "name": "ghg_ipcc.dd",
+   "bytes": 1999864,
+   "sha256_16": "27e57b1d11aba8e5"
+  },
+  {
+   "name": "growth_elc.dd",
+   "bytes": 64839,
+   "sha256_16": "cd22a5b6993c8e8f"
+  },
+  {
+   "name": "pollutants.dd",
+   "bytes": 1165688,
+   "sha256_16": "ebfaa4af6d4c1f6b"
+  },
+  {
+   "name": "uc_ind.dd",
+   "bytes": 11421,
+   "sha256_16": "5bd22940e630646a"
+  },
+  {
+   "name": "uc_res.dd",
+   "bytes": 505074,
+   "sha256_16": "783bfdee39a9164b"
+  },
+  {
+   "name": "uc_com.dd",
+   "bytes": 47958,
+   "sha256_16": "318f93f999dd1299"
+  },
+  {
+   "name": "uc_tra.dd",
+   "bytes": 56903,
+   "sha256_16": "f43d014d9bc3815d"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 512182   GAMS 512182   only here 0   only in GAMS 0",
+    "columns    here 765953   GAMS 765953   only here 0   only in GAMS 0",
+    "entries    here 5622500   GAMS 5622500   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 5.66e-15 (tolerance 1.0e-9); 421631 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 756404387.8201396,
+   "times_in_gams_objective": 756404387.8201399,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 24.25,
+   "relative_difference": 3.1519988902847874e-16
+  },
+  "regions": 2,
+  "highs": {
+   "status": "Optimal",
+   "objective": 756405975.8766135,
+   "version": "1.15.1",
+   "threads": 24,
+   "method": "IPX",
+   "solve_seconds": 87.1,
+   "attempts": [
+    {
+     "options": "(default)",
+     "status": "Optimal"
+    }
+   ],
+   "relative_difference_from_cplex": 2.099480779308221e-06
+  },
+  "command": "python TIMES.py run OTCGEN/gc_ref --tolerance 3e-6",
+  "build": {
+   "timesos_seconds": 32.3,
+   "timesos_peak_gb": 5.21,
+   "times_in_gams_seconds": 26.9,
+   "times_in_gams_peak_gb": 1.25,
+   "time_ratio": 1.200743494423792,
+   "memory_ratio": 4.184345098039215,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

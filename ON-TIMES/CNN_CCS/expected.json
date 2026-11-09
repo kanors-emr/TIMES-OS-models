@@ -1,0 +1,724 @@
+{
+ "case": "cnn_ccs",
+ "made": "2026-11-08",
+ "objective": 792224036.7800869,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 8222634,
+  "columns": 15757960,
+  "nonzeros": 72253471,
+  "objective": 792224036.7800869,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 8222634,
+  "columns": 15757960,
+  "nonzeros": 72253471,
+  "objective": 792224036.7800869
+ },
+ "row_counts": {
+  "EQG_CPT": 1678,
+  "EQ_OBJSALV": 10,
+  "EQ_OBJFIX": 10,
+  "EQL_CAPACT": 3231890,
+  "EQL_FLOMRK": 37846,
+  "EQ_STGAUX": 200,
+  "EQL_ACTBND": 127,
+  "EQL_CAFLAC": 1162,
+  "EQ_IRE": 30850,
+  "EQL_CAPFLO": 910,
+  "EQ_STGIPS": 48,
+  "EQL_CPT": 15,
+  "EQE_COMPRD": 11334,
+  "EQE_CPT": 2322,
+  "EQ_PEAK": 44,
+  "EQL_IREBND": 11,
+  "EQL_XBND": 44,
+  "EQE_ASHAR": 1050,
+  "EQE_COMBAL": 41392,
+  "EQG_OUTSHR": 35199,
+  "EQ_OBJINV": 10,
+  "EQE_ACTEFF": 3076816,
+  "EQE_ACTBND": 6,
+  "EQ_STGTSS": 2740,
+  "EQE_UCRT": 3251,
+  "EQL_FLOFR": 268,
+  "EQE_UC": 12,
+  "EQL_INSHR": 5454,
+  "EQG_IREBND": 5,
+  "EQG_FLOBND": 11,
+  "EQ_ACTFLO": 506790,
+  "EQ_SLSIFT": 1584,
+  "EQE_OUTSHR": 325727,
+  "EQ_OBJVAR": 10,
+  "EQ_PTRANS": 88662,
+  "EQG_COMBAL": 162222,
+  "EQL_OUTSHR": 180872,
+  "EQ_STSBAL": 504,
+  "EQE_FLOMRK": 125,
+  "EQE_UCT": 43,
+  "EQG_ACTBND": 32,
+  "EQ_OBJ": 1,
+  "EQN_UCRTP": 44,
+  "EQL_FLOBND": 36,
+  "EQG_INSHR": 236340,
+  "EQE_INSHR": 174124,
+  "EQG_FLOMRK": 4240,
+  "EQG_ASHAR": 4211,
+  "EQE_UCTS": 634,
+  "EQE_CAPACT": 42356,
+  "EQL_ASHAR": 8369,
+  "EQE_UCRTS": 884,
+  "EQ_CUMFLO": 2,
+  "EQG_CAPACT": 107
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1980",
+  "CTST": "",
+  "DAMAGE": "NO",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MID_YEAR": "YES",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "AUTO",
+  "OBLONG": "YES",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "cnn_ccs",
+  "SCENARIO_NAME": "fi_x_high_ccs",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "STAGES": "NO",
+  "SYSPREFIX": "",
+  "TMP": "0",
+  "VALIDATE": "NO",
+  "VAR": "VARIABLE OBJZ",
+  "VARCOST": "LIN",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "cnn_ccs_ts.dd",
+   "bytes": 273,
+   "sha256_16": "6239eaa98c9675fc"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 8967813,
+   "sha256_16": "eaddeaf6463aa179"
+  },
+  {
+   "name": "elc-het-ref_fin.dd",
+   "bytes": 564332,
+   "sha256_16": "6b82c46072678871"
+  },
+  {
+   "name": "elc_ccs_techs.dd",
+   "bytes": 691649,
+   "sha256_16": "809cdb67ad3460e9"
+  },
+  {
+   "name": "elc_dh-pipes.dd",
+   "bytes": 22221,
+   "sha256_16": "d7e51404d8534cbc"
+  },
+  {
+   "name": "elc_excessheat.dd",
+   "bytes": 322468,
+   "sha256_16": "8fa7437f5701b761"
+  },
+  {
+   "name": "elc_impexp_no.dd",
+   "bytes": 5763,
+   "sha256_16": "68f951eea3136a9c"
+  },
+  {
+   "name": "elc_impexp_se.dd",
+   "bytes": 6738,
+   "sha256_16": "0fd16f990b723c03"
+  },
+  {
+   "name": "elc_importexport_dk.dd",
+   "bytes": 8426,
+   "sha256_16": "fd12b44e119f1090"
+  },
+  {
+   "name": "elc_plants2020_dk.dd",
+   "bytes": 22218,
+   "sha256_16": "64a65e12062fc394"
+  },
+  {
+   "name": "elc_techs.dd",
+   "bytes": 703837,
+   "sha256_16": "28a8c0e1508de31e"
+  },
+  {
+   "name": "elc_techs_extra_no.dd",
+   "bytes": 102,
+   "sha256_16": "917198d2df25d00a"
+  },
+  {
+   "name": "elc_techs_nodk.dd",
+   "bytes": 32301,
+   "sha256_16": "deac2af305302e58"
+  },
+  {
+   "name": "ind-res-tra_fin.dd",
+   "bytes": 844746,
+   "sha256_16": "1f6f682406617c5a"
+  },
+  {
+   "name": "ind_techs.dd",
+   "bytes": 6106984,
+   "sha256_16": "0f56b50a76e05e8f"
+  },
+  {
+   "name": "nonco2_fin.dd",
+   "bytes": 150223,
+   "sha256_16": "53e52acf7cd2f225"
+  },
+  {
+   "name": "ind_datacenters.dd",
+   "bytes": 98505,
+   "sha256_16": "59594a5f1d5f1541"
+  },
+  {
+   "name": "res_app_techs.dd",
+   "bytes": 50031,
+   "sha256_16": "1aa43387953a15fa"
+  },
+  {
+   "name": "res_heatsav_dk.dd",
+   "bytes": 40245,
+   "sha256_16": "14f18bfa443009f0"
+  },
+  {
+   "name": "res_heatsav_se.dd",
+   "bytes": 69282,
+   "sha256_16": "6f73fcb1955532e9"
+  },
+  {
+   "name": "res_techs.dd",
+   "bytes": 375048,
+   "sha256_16": "8d808d14e9bbfc24"
+  },
+  {
+   "name": "tra_aggregates.dd",
+   "bytes": 9694,
+   "sha256_16": "4adeba88e442b0ea"
+  },
+  {
+   "name": "sup_refineries.dd",
+   "bytes": 658639,
+   "sha256_16": "b49a3c6d3459899c"
+  },
+  {
+   "name": "tra_techs.dd",
+   "bytes": 886968,
+   "sha256_16": "901229e97fde25d8"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 88237,
+   "sha256_16": "c12130094e1a6f2f"
+  },
+  {
+   "name": "trade_dk_elc.dd",
+   "bytes": 1067,
+   "sha256_16": "4190c7f5188c2430"
+  },
+  {
+   "name": "trade_fin.dd",
+   "bytes": 28641,
+   "sha256_16": "213057fdc8cc1f88"
+  },
+  {
+   "name": "trade_no_elc.dd",
+   "bytes": 1071,
+   "sha256_16": "5fd3b234aca62602"
+  },
+  {
+   "name": "trade_nordic_elc.dd",
+   "bytes": 4880,
+   "sha256_16": "f0e2c3342aa5aa95"
+  },
+  {
+   "name": "trade_nordic_fuel.dd",
+   "bytes": 74539,
+   "sha256_16": "aa51245fdf68c54b"
+  },
+  {
+   "name": "trade_se_elc.dd",
+   "bytes": 2671,
+   "sha256_16": "94932c5b8d0f1851"
+  },
+  {
+   "name": "_merge_sys_fuel_constraints.dd",
+   "bytes": 615560,
+   "sha256_16": "e0afea723277f8de"
+  },
+  {
+   "name": "_merged_co2storagepot_flows.dd",
+   "bytes": 108349,
+   "sha256_16": "8499b0a14da9f821"
+  },
+  {
+   "name": "_merged_elc_pricetrade_balmorel.dd",
+   "bytes": 141991,
+   "sha256_16": "52d99e98b5cb68cd"
+  },
+  {
+   "name": "_merged_nav_dem_fix.dd",
+   "bytes": 4628,
+   "sha256_16": "8da4e66e0e0553fd"
+  },
+  {
+   "name": "_merged_datacenters.dd",
+   "bytes": 16527,
+   "sha256_16": "5c9f9087cb43c384"
+  },
+  {
+   "name": "_merged_sys_re_pot.dd",
+   "bytes": 215398,
+   "sha256_16": "af5c724b8955daea"
+  },
+  {
+   "name": "_merged_tra_maxshare.dd",
+   "bytes": 31814,
+   "sha256_16": "ee116b2302397c60"
+  },
+  {
+   "name": "_merged_tra_infrastructure.dd",
+   "bytes": 22699,
+   "sha256_16": "efdd5dd77826d892"
+  },
+  {
+   "name": "_merged_tra_tp_update.dd",
+   "bytes": 179358,
+   "sha256_16": "703e26e846f6df5a"
+  },
+  {
+   "name": "dk_elc_baseconstraints.dd",
+   "bytes": 106,
+   "sha256_16": "01ef48151e3947a0"
+  },
+  {
+   "name": "dk_elc_dh-pipesdata.dd",
+   "bytes": 1833,
+   "sha256_16": "d182579c2e43d419"
+  },
+  {
+   "name": "dk_elc_excessheat_pots.dd",
+   "bytes": 15632,
+   "sha256_16": "096b7606292d2dfc"
+  },
+  {
+   "name": "dk_ets-nets_emicoeff.dd",
+   "bytes": 128618,
+   "sha256_16": "a7c098f0a462dbd7"
+  },
+  {
+   "name": "dk_ind_demandproj.dd",
+   "bytes": 192516,
+   "sha256_16": "a1195591fd9d8f80"
+  },
+  {
+   "name": "dk_ind_ee-low.dd",
+   "bytes": 54219,
+   "sha256_16": "563ea2d41b1949b7"
+  },
+  {
+   "name": "dk_res_app_effproj.dd",
+   "bytes": 7817,
+   "sha256_16": "3588a92ed71ea799"
+  },
+  {
+   "name": "dk_res_baseconstraints.dd",
+   "bytes": 54630,
+   "sha256_16": "dcca64c9bd92ec48"
+  },
+  {
+   "name": "dk_res_buildingstockproj.dd",
+   "bytes": 86615,
+   "sha256_16": "2526041a4535deea"
+  },
+  {
+   "name": "dk_res_demandproj.dd",
+   "bytes": 13144,
+   "sha256_16": "63e4e9b80346fe4d"
+  },
+  {
+   "name": "dk_res_restrictheatsav.dd",
+   "bytes": 9644,
+   "sha256_16": "7eac2de152ec9911"
+  },
+  {
+   "name": "dk_sup_northseaminingproj.dd",
+   "bytes": 21701,
+   "sha256_16": "cdabdda1feeaa882"
+  },
+  {
+   "name": "dk_sys_deliverycosts.dd",
+   "bytes": 171945,
+   "sha256_16": "95fbe4df32fb49c5"
+  },
+  {
+   "name": "dk_sys_fuelinfrastructure.dd",
+   "bytes": 8132,
+   "sha256_16": "485826db5d319bc2"
+  },
+  {
+   "name": "dk_sys_subannual_data.dd",
+   "bytes": 694308,
+   "sha256_16": "e504f5dae0898a12"
+  },
+  {
+   "name": "dk_tra_baseconstraints.dd",
+   "bytes": 18562,
+   "sha256_16": "56aaca64a1767c4d"
+  },
+  {
+   "name": "dk_tra_demandproj.dd",
+   "bytes": 20468,
+   "sha256_16": "ed1fd71ff2a06b9c"
+  },
+  {
+   "name": "dk_tra_taxessubsidies.dd",
+   "bytes": 9055802,
+   "sha256_16": "4892f04728e59e34"
+  },
+  {
+   "name": "dk_tra_xassumptions.dd",
+   "bytes": 92969,
+   "sha256_16": "5ef28ac7e3a641fb"
+  },
+  {
+   "name": "fi_distribution.dd",
+   "bytes": 22949,
+   "sha256_16": "8930f46a65178702"
+  },
+  {
+   "name": "fi_potentials.dd",
+   "bytes": 76842,
+   "sha256_16": "42a704c7013b951f"
+  },
+  {
+   "name": "fi_secextra.dd",
+   "bytes": 258425,
+   "sha256_16": "05599b2773298d26"
+  },
+  {
+   "name": "fi_subannualdata.dd",
+   "bytes": 208445,
+   "sha256_16": "c08df2cb52f8c560"
+  },
+  {
+   "name": "fi_taxes.dd",
+   "bytes": 89429,
+   "sha256_16": "225e7c6b69ab00cd"
+  },
+  {
+   "name": "no_calibration.dd",
+   "bytes": 12535,
+   "sha256_16": "6bca769d7fbf57dc"
+  },
+  {
+   "name": "no_elc_dh-pipesdata.dd",
+   "bytes": 1812,
+   "sha256_16": "faf247b039581501"
+  },
+  {
+   "name": "no_ets-nets_emicoeff.dd",
+   "bytes": 201242,
+   "sha256_16": "a68e226ec21c3ba6"
+  },
+  {
+   "name": "no_hydro_average.dd",
+   "bytes": 41685,
+   "sha256_16": "ddc2e6e39ed4c34e"
+  },
+  {
+   "name": "no_ind_demandproj.dd",
+   "bytes": 205407,
+   "sha256_16": "50bb371dc7efed59"
+  },
+  {
+   "name": "no_ind_ee-low.dd",
+   "bytes": 51013,
+   "sha256_16": "ebb338011a2e8cc9"
+  },
+  {
+   "name": "no_res_demandproj.dd",
+   "bytes": 4401,
+   "sha256_16": "0dd47d36081a2629"
+  },
+  {
+   "name": "no_sys_deliverycosts.dd",
+   "bytes": 982262,
+   "sha256_16": "bb93202578ea4fdb"
+  },
+  {
+   "name": "no_res_buildingstockproj.dd",
+   "bytes": 88325,
+   "sha256_16": "dbdb32013b2e28af"
+  },
+  {
+   "name": "no_sys_fuelinfrastructure.dd",
+   "bytes": 10464,
+   "sha256_16": "d35845f4196d2c4b"
+  },
+  {
+   "name": "no_sys_subannual_data.dd",
+   "bytes": 559591,
+   "sha256_16": "42f90f01031494a9"
+  },
+  {
+   "name": "no_tra_demandproj.dd",
+   "bytes": 25931,
+   "sha256_16": "f61ea0f4abfcf66e"
+  },
+  {
+   "name": "no_tra_taxessubsidies.dd",
+   "bytes": 6189499,
+   "sha256_16": "5a2c176fa94ca0ef"
+  },
+  {
+   "name": "no_tra_xassumptions.dd",
+   "bytes": 94645,
+   "sha256_16": "266dc49c0bc7f408"
+  },
+  {
+   "name": "se_elc_dh-pipes.dd",
+   "bytes": 4912,
+   "sha256_16": "7c506b6afcc8dca5"
+  },
+  {
+   "name": "se_elc_excessheat_pots.dd",
+   "bytes": 219061,
+   "sha256_16": "87f06249de4b43b3"
+  },
+  {
+   "name": "se_ets-nets_emicoeff.dd",
+   "bytes": 415730,
+   "sha256_16": "f6e68417bd7a05ef"
+  },
+  {
+   "name": "se_ind_baseconstraints.dd",
+   "bytes": 106,
+   "sha256_16": "e596105ad692d64e"
+  },
+  {
+   "name": "se_ind_demandproj.dd",
+   "bytes": 472384,
+   "sha256_16": "10a41897862bb661"
+  },
+  {
+   "name": "se_ind_ee-low.dd",
+   "bytes": 81090,
+   "sha256_16": "4e21b44132f0dd27"
+  },
+  {
+   "name": "se_res_app_effproj.dd",
+   "bytes": 15499,
+   "sha256_16": "e03def438a35d07f"
+  },
+  {
+   "name": "se_res_baseconstraints.dd",
+   "bytes": 75581,
+   "sha256_16": "7cf9e21f9eaab1d1"
+  },
+  {
+   "name": "se_res_buildingstockproj.dd",
+   "bytes": 173347,
+   "sha256_16": "3a23beabcc8b966a"
+  },
+  {
+   "name": "se_res_demandproj.dd",
+   "bytes": 25624,
+   "sha256_16": "97ed4e7669bd195b"
+  },
+  {
+   "name": "se_res_restrictheatsav.dd",
+   "bytes": 19895,
+   "sha256_16": "1219c41fda7e758c"
+  },
+  {
+   "name": "se_sys_deliverycosts.dd",
+   "bytes": 1419504,
+   "sha256_16": "a50596f270c59e13"
+  },
+  {
+   "name": "se_sys_fuelinfrastructure.dd",
+   "bytes": 18163,
+   "sha256_16": "67931114c1ea4b01"
+  },
+  {
+   "name": "se_sys_subannual_data.dd",
+   "bytes": 1340997,
+   "sha256_16": "60fbe7b0a4cf97da"
+  },
+  {
+   "name": "se_tra_demandproj.dd",
+   "bytes": 39075,
+   "sha256_16": "f322d04a9dfa364b"
+  },
+  {
+   "name": "se_tra_taxessubsidies.dd",
+   "bytes": 14939862,
+   "sha256_16": "93f49b0d88c87da5"
+  },
+  {
+   "name": "se_tra_xassumptions.dd",
+   "bytes": 195791,
+   "sha256_16": "167d2da15f11bfa8"
+  },
+  {
+   "name": "dk_elc_taxessubsidies.dd",
+   "bytes": 4155786,
+   "sha256_16": "2f80d1054e713f66"
+  },
+  {
+   "name": "dk_ind_taxessubsidies.dd",
+   "bytes": 1254564,
+   "sha256_16": "2b1ad8d8f2972a9b"
+  },
+  {
+   "name": "dk_res_taxessubsidies.dd",
+   "bytes": 2074134,
+   "sha256_16": "c8300c4857f25d2b"
+  },
+  {
+   "name": "no_res_taxessubsidies.dd",
+   "bytes": 1185746,
+   "sha256_16": "8a67b4e33f9af48e"
+  },
+  {
+   "name": "dk_sup_taxessubsidies.dd",
+   "bytes": 1314822,
+   "sha256_16": "0bbc532ef1f8ee24"
+  },
+  {
+   "name": "no_elc_taxessubsidies.dd",
+   "bytes": 3851264,
+   "sha256_16": "d98dc85fae8c7818"
+  },
+  {
+   "name": "no_ind_taxessubsidies.dd",
+   "bytes": 1516436,
+   "sha256_16": "91c2b589d28aa5b4"
+  },
+  {
+   "name": "no_sup_taxessubsidies.dd",
+   "bytes": 1375782,
+   "sha256_16": "2c500e540442b841"
+  },
+  {
+   "name": "se_elc_taxessubsidies.dd",
+   "bytes": 10585691,
+   "sha256_16": "1728ed35a2a60f06"
+  },
+  {
+   "name": "se_ind_taxessubsidies.dd",
+   "bytes": 2776162,
+   "sha256_16": "c8cf9fefd39651a2"
+  },
+  {
+   "name": "se_res_taxessubsidies.dd",
+   "bytes": 4622282,
+   "sha256_16": "1c41961065820ad0"
+  },
+  {
+   "name": "se_sup_taxessubsidies.dd",
+   "bytes": 2979714,
+   "sha256_16": "9c5e9afabe320859"
+  },
+  {
+   "name": "_merged_biofuels_no_bound.dd",
+   "bytes": 102109,
+   "sha256_16": "92bad90270a72fe1"
+  },
+  {
+   "name": "_merged_cns.dd",
+   "bytes": 2536551,
+   "sha256_16": "62b027af4d3b3cd2"
+  },
+  {
+   "name": "fi_x_cnn.dd",
+   "bytes": 136219,
+   "sha256_16": "043a9c19bcad212b"
+  },
+  {
+   "name": "x_high_ccs.dd",
+   "bytes": 5121,
+   "sha256_16": "fe591792f4845af6"
+  },
+  {
+   "name": "fi_x_high_ccs.dd",
+   "bytes": 1057,
+   "sha256_16": "16acaeea3f5a2b8a"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 8222634   GAMS 8222634   only here 0   only in GAMS 0",
+    "columns    here 15757960   GAMS 15757960   only here 0   only in GAMS 0",
+    "entries    here 72253471   GAMS 72253471   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 5.16e-15 (tolerance 1.0e-9); 6771716 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 792224036.7800869,
+   "times_in_gams_objective": 792224036.7800869,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 10907.234,
+   "relative_difference": 0.0
+  },
+  "regions": 10,
+  "highs": {
+   "status": "not attempted (over 1 M rows)"
+  },
+  "command": "python TIMES.py run ON-TIMES/CNN_CCS --lp cplex",
+  "build": {
+   "timesos_seconds": 97.2,
+   "timesos_peak_gb": 15.21,
+   "times_in_gams_seconds": 146.1,
+   "times_in_gams_peak_gb": 7.38,
+   "time_ratio": 0.6652977412731007,
+   "memory_ratio": 2.0612811011116996,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

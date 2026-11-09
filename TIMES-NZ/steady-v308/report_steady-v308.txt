@@ -1,0 +1,101 @@
+VERDICT  SAME OBJECTIVE: only the objective was compared
+model    steady-v308    (TIMES-NZ/steady-v308)
+when     2026-11-08T17:50:40    total 484.2 s
+limit    50000 s for each solve    (the run file's OPTION RESLIM)
+
+This file is written by TIMES.py. It is complete in itself: everything needed to understand
+the result is below; FILES says which of the files it names are in this folder.
+
+CHECKS
+     check                                   result              Julia                   GAMS
+  0  all inputs supported                    yes
+  1  rows                                    same                622,043                 622,043
+  1  columns                                 same                523,095                 523,095
+  1  non-zeros                               same                3,414,768               3,414,768
+  2  objective                               same                1333686.052984          1333686.040700   relative difference 9.2e-09
+  4  matrix, entry by entry                  not made here       made in the matrix run: same (report_steady-v308_matrix.txt)
+
+THE TWO RUNS
+  GAMS    published reference (expected.json); REDUCE YES; GAMS 54.1.0; TIMES v4.9.8; solver CPLEX
+          1 Normal Completion / 1 Optimal; objective 1333686.0406999006; rows 622,043, columns 523,095, non-zeros 3,414,768
+  memory  peak working set of the processes of each run, summed, every 0.5 s: the open chain 2.52 GB (preprocessor and Julia), GAMS not run
+  Julia   HiGHS ipx; OPTIMAL; objective 1333686.0529837294; rows 622,043, columns 523,095, non-zeros 3,414,768
+          HiGHS options: run_crossover=on, solver=ipx
+          time      start and packages 0.2 s (packages loaded while the preprocessor ran: 1.2 s), load 0.4 s, checks 0.0 s, build 0.9 s, counts 0.2 s, solver setup 0.0 s, copy to HiGHS 0.4 s, solve 443.7 s, solution 1.9 s, solution file 1.5 s, result file 0.0 s, other 0.1 s; Julia process 449.3 s; Julia 1.13.1
+          compiling load 3.9 s, build 0.4 s, counts 0.5 s; garbage collection 1.1 s; allocated 8.7 GB; peak memory 1.4 GB to the built model, 2.8 GB for the whole run
+          solve     IPX; cores in use 0.8 of 24 (CPU 332.8 s in 443.7 s); HiGHS 1.15.1
+          presolve  rows 622,043 -> 261,444, columns 523,095 -> 267,483, non-zeros 3,375,383 -> 1,927,853
+          iterations 231 interior point iterations; 558 simplex iterations; crossover 28,898 iterations; first iteration at 2.9 s; 1.88 s per iteration; HiGHS run time 443.7 s
+          warning   Problem has some excessively small column bounds
+          warning   Problem has some excessively small row bounds
+          warning   Ipx: Crossover imprecise
+          warning   Unwelcome IPX status of Unknown: basis is valid; solution is valid; run_crossover is "on"
+          solution: solution.db3 (levels, marginals and bounds of every column and row, by GAMS name)
+
+NOTES
+  - the reference has no gams_solution.db3: sizes and the objective are compared, not the solution
+
+INPUT
+  run file  TIMES-NZ/steady-v308/steady-v308.run    sha256 c25224d2aee22aa5
+  switches  REDUCE=YES  OBJ=AUTO  OBLONG=YES  MID_YEAR=YES  VAR_UC=YES  VARCOST=LIN  DSCAUTO=YES  VALIDATE=NO  STAGES=NO  DAMAGE=NO  BOTIME=1902
+            (as in the run file)
+  DD file   steady-v308_ts.dd                                365 bytes  sha256 9f8ff4ff4ff65c0e
+  DD file   base.dd                                      957,639 bytes  sha256 700aca7d78225e37
+  DD file   newtechs_agr_steady.dd                        43,698 bytes  sha256 c80efa45b18176fb
+  DD file   newtechs_elc_steady.dd                       337,584 bytes  sha256 7ee38a5862dfa394
+  DD file   newtechs_h2_steady.dd                          2,697 bytes  sha256 f37e53125cdf0056
+  DD file   newtechs_tra_steady.dd                       146,175 bytes  sha256 e2ec984a7db9577b
+  DD file   newtechs_ind.dd                               54,620 bytes  sha256 cb62f028e1c65113
+  DD file   newtechs_com.dd                               83,845 bytes  sha256 3a42f0d1a2d717cc
+  DD file   sectorclosures.dd                              1,508 bytes  sha256 13b1b101df693c8e
+  DD file   demandflex_steady.dd                           6,792 bytes  sha256 a4ed543d5e6f29b2
+  DD file   lng_imports_steady.dd                          1,543 bytes  sha256 9718c606c7737942
+  DD file   newtech_storage_steady.dd                     25,219 bytes  sha256 30e2c9e18a465da8
+  DD file   syssettings.dd                                 4,885 bytes  sha256 26d874f55db8e728
+  DD file   trade_parms.dd                                 1,171 bytes  sha256 dcffa5bccd8a5a79
+  DD file   steady.dd                                    635,853 bytes  sha256 08af95d6296a36d6
+  DD file   base_constraints.dd                          127,294 bytes  sha256 769c93c1c9204a89
+  DD file   processheatcoalban.dd                         29,014 bytes  sha256 4241dd94f736a8d6
+  DD file   carbon_steady.dd                               3,175 bytes  sha256 823b7799411ae1f2
+  DD file   discountrates_steady.dd                       55,284 bytes  sha256 224b24faa7c8d0ea
+  DD file   distributedsolar_steady.dd                     9,519 bytes  sha256 2016cde73d047d33
+  DD file   eafdemand_steady.dd                            3,033 bytes  sha256 4400cb0db411935b
+  DD file   lng_build_timing_steady.dd                       261 bytes  sha256 239c7073bec2cc71
+  DD file   renewable_availability.dd                    615,799 bytes  sha256 a54a4f9f120ec492
+  DD file   existingbatteryinvestment.dd                     291 bytes  sha256 2b5f13ffcaf2b514
+  DD file   wem_wcm.dd                                    24,130 bytes  sha256 571511618f9fc37d
+  DD file   loadcurve.dd                                 957,381 bytes  sha256 a94499e306db930a
+
+VEDA RESULT FILES (of the Julia solution; import them into Veda as a scenario next to the GAMS run)
+  steady-v308_julia.vd, .vde, .vds   712,998 rows in 54 attributes, 14.6 s
+
+ENVIRONMENT
+  TIMES code         TIMES-OS 1.0.0   (follows TIMES v4.9.8)
+  TIMES source       v4.9.8
+  Python 3.12.6;  Julia;  GAMS
+  system             Windows-11-10.0.22631-SP0
+  preprocessor       Segment Heap, DuckDB with 8 threads, parallel stages level 2;  the tables as model_parquet/, streamed beside the steps; tables dropped once no longer read: off (TIMES_DROP=1 turns it on)
+  Julia              threads auto (24), garbage collector threads 12, at most 8 equation families at once (memory 63.8 GB, expected peak 2.9 GB)
+  seconds            before_preprocess 0.3, preprocess 15.0, julia_started 15.4, julia 449.3, to_solver 17.5, preprocess_finished 15.0, report 15.0, results_for_later_runs 4.6, total 484.2
+
+FILES (this folder)
+  report_steady-v308.txt          the run that compares with expected.json, with no GAMS: the objective
+  report_steady-v308_matrix.txt   the run that compared the matrix with that of TIMES in GAMS, entry by entry
+  expected.json                   the result of TIMES in GAMS that the run compares with, and the evidence in short
+  steady-v308.run                 with the DD files and the option files: the inputs
+  The run's other files (report json, logs, solution.db3, the Veda files) are written to its result folder;
+  README.md gives the command.
+
+WHAT THE VERDICT MEANS
+  SAME            every check that could be made against the published GAMS result agrees. With the published matrix the
+                  two are the same linear program, and have the same optimum whether or not the solver finds it.
+  SAME OBJECTIVE  the optimum is the one published; no more was published to compare with.
+  DIFFERENT       the model runs and something does not agree with the published result: a defect. DIFFERENCES above says where to look.
+  UNSUPPORTED     the model uses TIMES features this implementation does not have yet; they are all listed above. Not a defect.
+  NOT SOLVED      the model was built and the solver did not reach an optimum (time limit, or a failure of the solver). julia.log has the solver log.
+  ERROR           a step failed. If it is the preprocessor or Julia, it is a defect; the message is above.
+  INFEASIBLE      the model's data cannot be met: rows left with no column whose constant does not satisfy them
+                  (0 = 2.685), on which TIMES in GAMS stops too (equation infeasible due to rhs value). Not a defect.
+  SOLVED          the open chain solved the model; there was no published GAMS result to compare with (--jacobian writes the matrix
+                  in the layout of GAMS's CONVERT jacobian, to compare with GAMS's own).
+  To report or to work on a result, hand over this file (or the bundle made with --bundle, which adds the input files).

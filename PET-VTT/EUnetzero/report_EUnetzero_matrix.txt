@@ -1,0 +1,191 @@
+VERDICT  SAME: the same linear program as GAMS, every coefficient, right-hand side and bound; not solved here (--no-solve)
+model    eunetzero    (PET-VTT/EUnetzero)
+when     2026-11-08T06:21:45    total 465.3 s
+limit    50000 s for each solve    (the run file's OPTION RESLIM)
+
+This file is written by TIMES.py. It is complete in itself: everything needed to understand
+the result is below; FILES says which of the files it names are in this folder.
+
+CHECKS
+     check                                   result              Julia                   GAMS
+  0  all inputs supported                    yes
+  1  rows                                    same                5,507,746               5,507,746
+  1  columns                                 same                7,137,957               7,137,957
+  1  non-zeros                               same                36,603,806              36,603,806
+  4  matrix: every coefficient               same                36,603,806              36,603,806   largest relative difference 4.0e-15 (tolerance 1e-09); compared as Parquet in DuckDB
+  4  matrix: rows and columns by name        same
+  4  matrix: right-hand sides and senses     same                5,507,746 rows
+  4  matrix: column bounds                   same                7,137,957 columns
+
+MATRIX BY EQUATION (check 4: the coefficients of GAMS and of Julia, matched by row and column name)
+  equation              rows  coefficients       equal  other value  only here  only GAMS   largest relative difference of the equal ones
+  EQL_CAPACT       1,561,786     5,397,311   5,397,311            0          0          0   1.3e-15
+  EQE_COMBAL         138,080     4,418,066   4,418,066            0          0          0   6.7e-16
+  EQE_COMPRD          91,294     3,511,313   3,511,313            0          0          0   4.4e-16
+  EQE_ACTEFF       1,159,789     3,395,583   3,395,583            0          0          0   3.0e-15
+  EQG_COMBAL         136,910     3,089,903   3,089,903            0          0          0   6.7e-16
+  EQ_PEAK             22,320     3,068,484   3,068,484            0          0          0   0.0e+00
+  EQ_ACTFLO          490,456     2,511,134   2,511,134            0          0          0   0.0e+00
+  EQE_UCRS            56,203     1,364,130   1,364,130            0          0          0   8.9e-16
+  EQ_OBJVAR               31     1,256,458   1,256,458            0          0          0   3.3e-16
+  EQE_INSHR          468,990     1,025,210   1,025,210            0          0          0   0.0e+00
+  EQE_OUTSHR         276,351       892,384     892,384            0          0          0   0.0e+00
+  EQE_UCRT            31,844       862,598     862,598            0          0          0   2.0e-16
+  EQL_CAPFLO         118,358       700,848     700,848            0          0          0   0.0e+00
+  EQL_OUTSHR          90,641       496,619     496,619            0          0          0   0.0e+00
+  EQE_CAPACT         144,965       452,156     452,156            0          0          0   2.8e-16
+  EQE_UCRTS           27,702       444,554     444,554            0          0          0   2.2e-16
+  EQE_CPT             92,038       403,414     403,414            0          0          0   1.2e-15
+  EQL_INSHR           68,461       384,832     384,832            0          0          0   0.0e+00
+  EQ_OBJINV               31       362,089     362,089            0          0          0   6.6e-16
+  EQG_INSHR           95,695       342,631     342,631            0          0          0   0.0e+00
+  EQL_CAFLAC          58,231       337,343     337,343            0          0          0   0.0e+00
+  EQ_OBJFIX               31       331,428     331,428            0          0          0   5.5e-16
+  EQG_CAPACT          36,208       249,271     249,271            0          0          0   2.6e-16
+  EQ_STGTSS           49,628       222,980     222,980            0          0          0   0.0e+00
+  EQ_CAPLOAD          73,344       219,600     219,600            0          0          0   2.3e-16
+  EQ_STGAUX           74,068       145,532     145,532            0          0          0   0.0e+00
+  EQ_OBJSALV              31       132,218     132,218            0          0          0   1.0e-15
+  EQG_CPT             28,104       116,013     116,013            0          0          0   0.0e+00
+  EQ_CUMRET           30,667        92,001      92,001            0          0          0   0.0e+00
+  EQ_SLSIFT           10,230        66,650      66,650            0          0          0   3.2e-16
+  EQ_IRE              25,892        59,012      59,012            0          0          0   0.0e+00
+  EQG_OUTSHR          20,193        55,059      55,059            0          0          0   0.0e+00
+  EQE_UCRSU            2,201        39,719      39,719            0          0          0   1.7e-16
+  EQE_UCTS                41        27,021      27,021            0          0          0   1.6e-16
+  EQ_STSBAL            8,156        24,468      24,468            0          0          0   4.0e-15
+  EQ_PTRANS            5,760        17,280      17,280            0          0          0   3.2e-16
+  EQL_BNDPRD           1,552        11,936      11,936            0          0          0   0.0e+00
+  EQ_CUMFLO              873        11,589      11,589            0          0          0   1.9e-16
+  EQ_GR_POWFLO         2,760        11,040      11,040            0          0          0   0.0e+00
+  EQE_UCT                 66         9,866       9,866            0          0          0   0.0e+00
+  EQL_SCAP             3,212         9,636       9,636            0          0          0   0.0e+00
+  EQG_BNDPRD           1,127         8,572       8,572            0          0          0   0.0e+00
+  EQE_UCRSUS             854         7,482       7,482            0          0          0   0.0e+00
+  EQE_UCSUS                7         5,705       5,705            0          0          0   0.0e+00
+  EQL_STGIN              310         3,720       3,720            0          0          0   0.0e+00
+  EQL_ACTBND             511         3,488       3,488            0          0          0   0.0e+00
+  EQL_FLOBND             240         1,440       1,440            0          0          0   2.2e-16
+  EQL_FLOMRK             485         1,435       1,435            0          0          0   0.0e+00
+  EQG_FLOMRK             570         1,140       1,140            0          0          0   0.0e+00
+  EQN_UCRTC              304           608         608            0          0          0   1.3e-16
+  EQL_XBND               120           424         424            0          0          0   0.0e+00
+  EQG_ACTBND              24           288         288            0          0          0   0.0e+00
+  EQ_OBJ                   1           125         125            0          0          0   0.0e+00
+  all              5,507,746    36,603,806  36,603,806            0          0          0   4.0e-15
+  312,476 of the equal coefficients are zero on both sides: GAMS keeps them in the matrix (EPS), and so does this implementation.
+
+THE TWO RUNS
+  GAMS    run now; REDUCE YES; GAMS 54.1.0; TIMES v4.9.8; solver CONVERT
+          model generated and its matrix written, nothing solved (--no-solve); rows 5,507,746, columns 7,137,957, non-zeros 36,603,806; 150.7 s, 118.6 s to the solver
+  memory  peak working set of the processes of each run, summed, every 0.5 s: the open chain 18.18 GB (preprocessor and Julia), GAMS 10.68 GB (the whole run)
+  Julia   not solved; -; objective None; rows 5,507,746, columns 7,137,957, non-zeros 36,603,806
+          time      start and packages 0.6 s (packages loaded while the preprocessor ran: 1.3 s), load 3.1 s, checks 0.0 s, build 14.8 s, counts 1.3 s, result file 0.0 s, matrix out 5.2 s, other 0.1 s; Julia process 25.1 s; Julia 1.13.1
+          compiling load 3.6 s, build 0.6 s, counts 0.1 s; garbage collection 7.3 s; allocated 59.3 GB; peak memory 11.9 GB to the built model
+
+INPUT
+  run file  PET-VTT/EUnetzero/eunetzero.run    sha256 d78d2fe27f176f04
+  switches  REDUCE=YES  OBJ=AUTO  OBLONG=YES  MID_YEAR=YES  VAR_UC=YES  VARCOST=LIN  DSCAUTO=YES  VALIDATE=NO  STAGES=NO  DAMAGE=NO  BOTIME=1940
+            (as in the run file)
+  DD file   eunetzero_ts.dd                                   89 bytes  sha256 221ea626f60d81f5
+  DD file   base.dd                                   17,167,909 bytes  sha256 b948f6215c833b1c
+  DD file   00_nuc-eu.dd                                 192,606 bytes  sha256 f665b80303c5b535
+  DD file   01_nucchain-eu.dd                              6,045 bytes  sha256 2ef0d79f4c37dc0e
+  DD file   10_techs_chp_sup_ind.dd                    6,011,899 bytes  sha256 5af24d430e812d2c
+  DD file   11_techs_power.dd                          1,972,569 bytes  sha256 6c945c76bc8e8358
+  DD file   12_techs_powerlowaf.dd                     1,412,311 bytes  sha256 2953c031b5afb258
+  DD file   13_techs_ind-chp-boiler.dd                 1,607,411 bytes  sha256 b43fd8d16513c94d
+  DD file   14_techs_storage.dd                        1,247,918 bytes  sha256 dd4c5c0e2f968bb2
+  DD file   15_techs_hydrogen.dd                       1,712,917 bytes  sha256 a1497f210ff51856
+  DD file   20_techs_tra.dd                           10,593,696 bytes  sha256 5e6cb15d4aeb572a
+  DD file   21_techs_other.dd                            462,196 bytes  sha256 f024b4daed6d0173
+  DD file   22_techs_biorefineries.dd                  2,340,907 bytes  sha256 f48bd05764296f5a
+  DD file   23_techs_ccus.dd                           2,090,485 bytes  sha256 e13698bb9111b36c
+  DD file   30_techs_heatingcooling.dd                17,715,656 bytes  sha256 165f8fc54575cc01
+  DD file   31_techs_buildings_com.dd                    710,578 bytes  sha256 959a9a7ba1bedfe3
+  DD file   32_techs_buildings_rsd.dd                  2,004,861 bytes  sha256 00e30748cadfab30
+  DD file   40_trade-extraeu.dd                          285,985 bytes  sha256 5eb0c4946427b976
+  DD file   41_trade-elc-extraeu.dd                       21,762 bytes  sha256 ce958b10e9876bf6
+  DD file   42_trade-elc-balkans.dd                        5,588 bytes  sha256 96bd37176e337f71
+  DD file   50_shalegas.dd                                70,054 bytes  sha256 ee59da21d59274bf
+  DD file   01_tradeparameters.dd                        104,590 bytes  sha256 d21862cfd8415344
+  DD file   syssettings.dd                             1,593,344 bytes  sha256 b1712aefd52ad724
+  DD file   02_tradeparameters.dd                         53,971 bytes  sha256 13973389781af3cd
+  DD file   03_diversified_reflr.dd                      887,816 bytes  sha256 802a2a2f0b175260
+  DD file   power_from_jrc-idees-2015.dd                 230,043 bytes  sha256 62653e812f7ec2b8
+  DD file   bau-general.dd                               777,861 bytes  sha256 ec22925dcce7c648
+  DD file   coalphaseout.dd                               29,625 bytes  sha256 3180c68f5c27df71
+  DD file   enuc.dd                                        5,951 bytes  sha256 d1f4ae2326776ba5
+  DD file   demand_com-fr.dd                             957,195 bytes  sha256 e54f4296fc0b50ab
+  DD file   demand_elastpar.dd                           481,571 bytes  sha256 00ff2726edcf3a53
+  DD file   emisco2.dd                                 1,776,959 bytes  sha256 9f0d84c7db7cea68
+  DD file   eu-ren_target2030bis.dd                    4,787,396 bytes  sha256 047c1a8ba2ff84cc
+  DD file   hydrogenustore.dd                              1,017 bytes  sha256 2ed0cf2ba6720414
+  DD file   kill_tb_elc-balkans-exclhr.dd                  1,025 bytes  sha256 27780e66b4450cb6
+  DD file   newhouses_and_retrofits.dd                 1,735,519 bytes  sha256 6604e1064a74ae23
+  DD file   nogreencerttrade.dd                            2,476 bytes  sha256 505a79bcc142427d
+  DD file   refineries_lim.dd                             57,468 bytes  sha256 fd3f6802f8580caf
+  DD file   sepdb-ziet_var.dd                          3,993,975 bytes  sha256 ed8811536187d331
+  DD file   sepdb-ziet_var_stor.dd                       873,996 bytes  sha256 9d08a70cb17c17d2
+  DD file   sepdb-zietassumptions_drate.dd             3,485,597 bytes  sha256 662ca1d814c3ddbe
+  DD file   uc_elcpot.dd                                 709,422 bytes  sha256 015545b8c145b3dd
+  DD file   uc_elcpot_wind_high.dd                        22,121 bytes  sha256 b2ec9d3f91f57b6b
+  DD file   uc_limitcoal.dd                              492,903 bytes  sha256 4596cb9d33b8ff05
+  DD file   uc_refscen16_data.dd                          67,563 bytes  sha256 20ef8d79d53612bf
+  DD file   uc_rsd-com.dd                              4,152,644 bytes  sha256 d382a4f2b3e5bf4a
+  DD file   uc_storage.dd                                921,265 bytes  sha256 fc8a7cf1f775cfad
+  DD file   uc-elc.dd                                    283,952 bytes  sha256 0eb6d54206c320cd
+  DD file   subannuals.dd                                290,306 bytes  sha256 4667d03700db4c0d
+  DD file   uc-ind.dd                                  1,393,041 bytes  sha256 d6981aeba2881ba9
+  DD file   x-nationalgrids.dd                            91,039 bytes  sha256 86559757ce89d530
+  DD file   x-yesgrid_bound.dd                           153,076 bytes  sha256 f1f66abfafbc1bde
+  DD file   x-yesgrid_maxinv.dd                          475,088 bytes  sha256 b4aaadb2df5bd7ba
+  DD file   x-yesgrid_noextrapoll.dd                       6,144 bytes  sha256 13cdce84f67dc755
+  DD file   zatemp_calibration_v2.dd                     989,026 bytes  sha256 8655ad9b5bf590b2
+  DD file   zietassumptions.dd                            49,887 bytes  sha256 8d7bf838d9c0ee53
+  DD file   zusetrneff_from_eurostat.dd                   14,436 bytes  sha256 4eaa584b4da34445
+  DD file   z_electrolysers_ncapafa.dd                   239,427 bytes  sha256 7543d1da17bab2cd
+  DD file   uc_tra.dd                                    986,416 bytes  sha256 01ce5fe54667d970
+  DD file   tra_evphev_newsalesbase.dd                 3,773,176 bytes  sha256 3dfbe549b3a596f0
+  DD file   tra_scenarios.dd                             207,337 bytes  sha256 b5ae2dd281185453
+  DD file   co2target_ets1.dd                            111,109 bytes  sha256 125561dc8c603d45
+  DD file   co2target_ets2.dd                            233,220 bytes  sha256 214953c18a13789c
+  DD file   fuelprices_bau2025.dd                        490,694 bytes  sha256 91a9b1fb7f4d8b9c
+  DD file   20_demand_bau2025.dd                         361,513 bytes  sha256 2a6f8fb9251f750c
+  DD file   biopot_bau2025.dd                            400,930 bytes  sha256 d168eccdd2ba183c
+  DD file   ccus_bau2025.dd                              391,228 bytes  sha256 0af3764978e55e37
+  DD file   rsdcom_heating_calibration.dd                336,045 bytes  sha256 18e984ca55385ba7
+  DD file   zz_calibration2025.dd                         44,960 bytes  sha256 c4980b75a61fcf71
+  DD file   co2_100.dd                                    48,497 bytes  sha256 03c2ed2d4c3dd189
+  DD file   zz_modelfix.dd                               478,649 bytes  sha256 64653b3fa564d37c
+
+ENVIRONMENT
+  TIMES code         89ae69e5   (follows TIMES v4.9.8)
+  TIMES source       v4.9.8
+  Python 3.12.6;  Julia;  GAMS
+  system             Windows-11-10.0.22631-SP0
+  preprocessor       Segment Heap, DuckDB with 8 threads, parallel stages level 2;  the tables as model_parquet/, streamed beside the steps; tables dropped once no longer read: off (TIMES_DROP=1 turns it on)
+  Julia              threads auto (24), garbage collector threads 12, at most 8 equation families at once (memory 63.8 GB, expected peak 36.6 GB)
+  seconds            before_preprocess 0.3, preprocess 104.5, julia_started 104.8, julia 25.1, preprocess_finished 114.6, jacobian_gdx 41.7, gams_matrix 150.7, gams_matrix_convert 143.0, gams 150.7, gams_to_solver 118.6, total 465.3, matrix_here_parquet 2.3, matrix_compare 5.7, check 8.0
+
+FILES (this folder)
+  report_EUnetzero.txt          the run that compares with expected.json, with no GAMS: the objective
+  report_EUnetzero_matrix.txt   the run that compared the matrix with that of TIMES in GAMS, entry by entry
+  expected.json                 the result of TIMES in GAMS that the run compares with, and the evidence in short
+  eunetzero.run                 with the DD files and the option files: the inputs
+  The run's other files (report json, logs, solution.db3, the Veda files) are written to its result folder;
+  README.md gives the command.
+
+WHAT THE VERDICT MEANS
+  SAME            every check that could be made against the published GAMS result agrees. With the published matrix the
+                  two are the same linear program, and have the same optimum whether or not the solver finds it.
+  SAME OBJECTIVE  the optimum is the one published; no more was published to compare with.
+  DIFFERENT       the model runs and something does not agree with the published result: a defect. DIFFERENCES above says where to look.
+  UNSUPPORTED     the model uses TIMES features this implementation does not have yet; they are all listed above. Not a defect.
+  NOT SOLVED      the model was built and the solver did not reach an optimum (time limit, or a failure of the solver). julia.log has the solver log.
+  ERROR           a step failed. If it is the preprocessor or Julia, it is a defect; the message is above.
+  INFEASIBLE      the model's data cannot be met: rows left with no column whose constant does not satisfy them
+                  (0 = 2.685), on which TIMES in GAMS stops too (equation infeasible due to rhs value). Not a defect.
+  SOLVED          the open chain solved the model; there was no published GAMS result to compare with (--jacobian writes the matrix
+                  in the layout of GAMS's CONVERT jacobian, to compare with GAMS's own).
+  To report or to work on a result, hand over this file (or the bundle made with --bundle, which adds the input files).

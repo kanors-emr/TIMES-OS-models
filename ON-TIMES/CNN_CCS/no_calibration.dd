@@ -1,0 +1,315 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'no_calibration'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'AU_NO_RESNGA_HIS-'
+'DKE'.'NRG'.'AU_NO_RESNGA_HIS_'
+'DKE'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'DKE'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'DKE'.'NRG'.'UC_Imp_BY_NO-'
+'DKE'.'NRG'.'UC_Imp_BY_NO_'
+'DKW'.'NRG'.'AU_NO_RESNGA_HIS-'
+'DKW'.'NRG'.'AU_NO_RESNGA_HIS_'
+'DKW'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'DKW'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'DKW'.'NRG'.'UC_Imp_BY_NO-'
+'DKW'.'NRG'.'UC_Imp_BY_NO_'
+'FIM'.'NRG'.'AU_NO_RESNGA_HIS-'
+'FIM'.'NRG'.'AU_NO_RESNGA_HIS_'
+'FIM'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'FIM'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'FIM'.'NRG'.'UC_Imp_BY_NO-'
+'FIM'.'NRG'.'UC_Imp_BY_NO_'
+'FIN'.'NRG'.'AU_NO_RESNGA_HIS-'
+'FIN'.'NRG'.'AU_NO_RESNGA_HIS_'
+'FIN'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'FIN'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'FIN'.'NRG'.'UC_Imp_BY_NO-'
+'FIN'.'NRG'.'UC_Imp_BY_NO_'
+'NO1'.'NRG'.'AU_NO_RESNGA_HIS-'
+'NO1'.'NRG'.'AU_NO_RESNGA_HIS_'
+'NO1'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'NO1'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'NO1'.'NRG'.'UC_Imp_BY_NO-'
+'NO1'.'NRG'.'UC_Imp_BY_NO_'
+'NO2'.'NRG'.'AU_NO_RESNGA_HIS-'
+'NO2'.'NRG'.'AU_NO_RESNGA_HIS_'
+'NO2'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'NO2'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'NO2'.'NRG'.'UC_Imp_BY_NO-'
+'NO2'.'NRG'.'UC_Imp_BY_NO_'
+'SE1'.'NRG'.'AU_NO_RESNGA_HIS-'
+'SE1'.'NRG'.'AU_NO_RESNGA_HIS_'
+'SE1'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'SE1'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'SE1'.'NRG'.'UC_Imp_BY_NO-'
+'SE1'.'NRG'.'UC_Imp_BY_NO_'
+'SE2'.'NRG'.'AU_NO_RESNGA_HIS-'
+'SE2'.'NRG'.'AU_NO_RESNGA_HIS_'
+'SE2'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'SE2'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'SE2'.'NRG'.'UC_Imp_BY_NO-'
+'SE2'.'NRG'.'UC_Imp_BY_NO_'
+'SE3'.'NRG'.'AU_NO_RESNGA_HIS-'
+'SE3'.'NRG'.'AU_NO_RESNGA_HIS_'
+'SE3'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'SE3'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'SE3'.'NRG'.'UC_Imp_BY_NO-'
+'SE3'.'NRG'.'UC_Imp_BY_NO_'
+'SE4'.'NRG'.'AU_NO_RESNGA_HIS-'
+'SE4'.'NRG'.'AU_NO_RESNGA_HIS_'
+'SE4'.'NRG'.'UC_ElcBoilers_BY_NO-'
+'SE4'.'NRG'.'UC_ElcBoilers_BY_NO_'
+'SE4'.'NRG'.'UC_Imp_BY_NO-'
+'SE4'.'NRG'.'UC_Imp_BY_NO_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'AU_NO_RESNGA_HIS-'.'UCU'
+'DKE'.'AU_NO_RESNGA_HIS_'.'UCU'
+'DKE'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'DKE'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'DKE'.'UC_Imp_BY_NO-'.'UCU'
+'DKE'.'UC_Imp_BY_NO_'.'UCU'
+'DKW'.'AU_NO_RESNGA_HIS-'.'UCU'
+'DKW'.'AU_NO_RESNGA_HIS_'.'UCU'
+'DKW'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'DKW'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'DKW'.'UC_Imp_BY_NO-'.'UCU'
+'DKW'.'UC_Imp_BY_NO_'.'UCU'
+'FIM'.'AU_NO_RESNGA_HIS-'.'UCU'
+'FIM'.'AU_NO_RESNGA_HIS_'.'UCU'
+'FIM'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'FIM'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'FIM'.'UC_Imp_BY_NO-'.'UCU'
+'FIM'.'UC_Imp_BY_NO_'.'UCU'
+'FIN'.'AU_NO_RESNGA_HIS-'.'UCU'
+'FIN'.'AU_NO_RESNGA_HIS_'.'UCU'
+'FIN'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'FIN'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'FIN'.'UC_Imp_BY_NO-'.'UCU'
+'FIN'.'UC_Imp_BY_NO_'.'UCU'
+'NO1'.'AU_NO_RESNGA_HIS-'.'UCU'
+'NO1'.'AU_NO_RESNGA_HIS_'.'UCU'
+'NO1'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'NO1'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'NO1'.'UC_Imp_BY_NO-'.'UCU'
+'NO1'.'UC_Imp_BY_NO_'.'UCU'
+'NO2'.'AU_NO_RESNGA_HIS-'.'UCU'
+'NO2'.'AU_NO_RESNGA_HIS_'.'UCU'
+'NO2'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'NO2'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'NO2'.'UC_Imp_BY_NO-'.'UCU'
+'NO2'.'UC_Imp_BY_NO_'.'UCU'
+'SE1'.'AU_NO_RESNGA_HIS-'.'UCU'
+'SE1'.'AU_NO_RESNGA_HIS_'.'UCU'
+'SE1'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'SE1'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'SE1'.'UC_Imp_BY_NO-'.'UCU'
+'SE1'.'UC_Imp_BY_NO_'.'UCU'
+'SE2'.'AU_NO_RESNGA_HIS-'.'UCU'
+'SE2'.'AU_NO_RESNGA_HIS_'.'UCU'
+'SE2'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'SE2'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'SE2'.'UC_Imp_BY_NO-'.'UCU'
+'SE2'.'UC_Imp_BY_NO_'.'UCU'
+'SE3'.'AU_NO_RESNGA_HIS-'.'UCU'
+'SE3'.'AU_NO_RESNGA_HIS_'.'UCU'
+'SE3'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'SE3'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'SE3'.'UC_Imp_BY_NO-'.'UCU'
+'SE3'.'UC_Imp_BY_NO_'.'UCU'
+'SE4'.'AU_NO_RESNGA_HIS-'.'UCU'
+'SE4'.'AU_NO_RESNGA_HIS_'.'UCU'
+'SE4'.'UC_ElcBoilers_BY_NO-'.'UCU'
+'SE4'.'UC_ElcBoilers_BY_NO_'.'UCU'
+'SE4'.'UC_Imp_BY_NO-'.'UCU'
+'SE4'.'UC_Imp_BY_NO_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'AU_NO_RESNGA_HIS-'.'NO1'.'AU_NO_RESNGA_HIS-'.'IMPDUCZ'
+'IMPEXP'.'AU_NO_RESNGA_HIS-'.'NO2'.'AU_NO_RESNGA_HIS-'.'IMPDUCZ'
+'IMPEXP'.'AU_NO_RESNGA_HIS_'.'NO1'.'AU_NO_RESNGA_HIS_'.'IMPDUCZ'
+'IMPEXP'.'AU_NO_RESNGA_HIS_'.'NO2'.'AU_NO_RESNGA_HIS_'.'IMPDUCZ'
+'IMPEXP'.'UC_ElcBoilers_BY_NO-'.'NO1'.'UC_ElcBoilers_BY_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_ElcBoilers_BY_NO-'.'NO2'.'UC_ElcBoilers_BY_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_ElcBoilers_BY_NO_'.'NO1'.'UC_ElcBoilers_BY_NO_'.'IMPDUCZ'
+'IMPEXP'.'UC_ElcBoilers_BY_NO_'.'NO2'.'UC_ElcBoilers_BY_NO_'.'IMPDUCZ'
+'IMPEXP'.'UC_Imp_BY_NO-'.'NO1'.'UC_Imp_BY_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_Imp_BY_NO-'.'NO2'.'UC_Imp_BY_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_Imp_BY_NO_'.'NO1'.'UC_Imp_BY_NO_'.'IMPDUCZ'
+'IMPEXP'.'UC_Imp_BY_NO_'.'NO2'.'UC_Imp_BY_NO_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'DKE'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'DKE'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'DKE'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'DKE'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'DKE'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'DKW'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'DKW'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'DKW'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'DKW'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'DKW'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'DKW'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'FIM'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'FIM'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'FIM'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'FIM'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'FIM'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'FIM'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'FIN'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'FIN'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'FIN'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'FIN'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'FIN'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'FIN'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'NO1'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'NO1'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'NO1'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'NO1'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'NO1'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'NO1'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'NO2'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'NO2'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'NO2'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'NO2'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'NO2'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'NO2'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'SE1'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'SE1'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'SE1'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE1'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE1'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'SE1'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'SE2'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'SE2'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'SE2'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE2'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE2'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'SE2'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'SE3'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'SE3'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'SE3'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE3'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE3'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'SE3'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+'SE4'.'AU_NO_RESNGA_HIS-' 'Negative dummy var for UC: AU_NO_RESNGA_HIS'
+'SE4'.'AU_NO_RESNGA_HIS_' 'Positive dummy var for UC: AU_NO_RESNGA_HIS'
+'SE4'.'UC_ElcBoilers_BY_NO-' 'Negative dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE4'.'UC_ElcBoilers_BY_NO_' 'Positive dummy var for UC: UC_ElcBoilers_BY_NO'
+'SE4'.'UC_Imp_BY_NO-' 'Negative dummy var for UC: UC_Imp_BY_NO'
+'SE4'.'UC_Imp_BY_NO_' 'Positive dummy var for UC: UC_Imp_BY_NO'
+/;
+
+SET UC_R_EACH
+
+/
+'NO1'.'AU_NO_RESNGA_HIS'
+'NO2'.'AU_NO_RESNGA_HIS'
+/;
+
+SET UC_R_SUM
+
+/
+'NO1'.'UC_ElcBoilers_BY_NO'
+'NO1'.'UC_Imp_BY_NO'
+'NO2'.'UC_ElcBoilers_BY_NO'
+'NO2'.'UC_Imp_BY_NO'
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2010.'EHELCBOC1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2010.'EHELCBOD1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2011.'EHELCBOC1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2011.'EHELCBOD1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2012.'EHELCBOC1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2012.'EHELCBOD1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2010.'EHELCBOC1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2010.'EHELCBOD1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2011.'EHELCBOC1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2011.'EHELCBOD1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2012.'EHELCBOC1E'.ANNUAL 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2012.'EHELCBOD1E'.ANNUAL 1
+'UC_Imp_BY_NO'.LHS.'NO1'.2010.'IMPELC-NODE'.ANNUAL 1
+'UC_Imp_BY_NO'.LHS.'NO1'.2010.'IMPELC-NONL'.ANNUAL 1
+'UC_Imp_BY_NO'.LHS.'NO1'.2010.'IMPELC-NOUK'.ANNUAL 1
+'UC_Imp_BY_NO'.LHS.'NO2'.2010.'IMPELC-NORU'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_FLO ' '/
+'AU_NO_RESNGA_HIS'.LHS.'NO1'.2015.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_NO_RESNGA_HIS'.LHS.'NO1'.2015.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+'AU_NO_RESNGA_HIS'.LHS.'NO1'.2020.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_NO_RESNGA_HIS'.LHS.'NO1'.2020.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+'AU_NO_RESNGA_HIS'.LHS.'NO2'.2015.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_NO_RESNGA_HIS'.LHS.'NO2'.2015.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+'AU_NO_RESNGA_HIS'.LHS.'NO2'.2020.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_NO_RESNGA_HIS'.LHS.'NO2'.2020.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'AU_NO_RESNGA_HIS'.LHS.'NO1'.2010.'IMPDUCZ'.'AU_NO_RESNGA_HIS-'.ANNUAL.IMP -1
+'AU_NO_RESNGA_HIS'.LHS.'NO1'.2010.'IMPDUCZ'.'AU_NO_RESNGA_HIS_'.ANNUAL.IMP 1
+'AU_NO_RESNGA_HIS'.LHS.'NO2'.2010.'IMPDUCZ'.'AU_NO_RESNGA_HIS-'.ANNUAL.IMP -1
+'AU_NO_RESNGA_HIS'.LHS.'NO2'.2010.'IMPDUCZ'.'AU_NO_RESNGA_HIS_'.ANNUAL.IMP 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_ElcBoilers_BY_NO-'.ANNUAL.IMP -1
+'UC_ElcBoilers_BY_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_ElcBoilers_BY_NO_'.ANNUAL.IMP 1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_ElcBoilers_BY_NO-'.ANNUAL.IMP -1
+'UC_ElcBoilers_BY_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_ElcBoilers_BY_NO_'.ANNUAL.IMP 1
+'UC_Imp_BY_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Imp_BY_NO-'.ANNUAL.IMP -1
+'UC_Imp_BY_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Imp_BY_NO_'.ANNUAL.IMP 1
+'UC_Imp_BY_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Imp_BY_NO-'.ANNUAL.IMP -1
+'UC_Imp_BY_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Imp_BY_NO_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSRTS ' '/
+'NO1'.'AU_NO_RESNGA_HIS'.0.ANNUAL.UP 3
+'NO1'.'AU_NO_RESNGA_HIS'.2015.ANNUAL.UP 0.16
+'NO1'.'AU_NO_RESNGA_HIS'.2020.ANNUAL.UP 0.16
+'NO2'.'AU_NO_RESNGA_HIS'.0.ANNUAL.UP 3
+'NO2'.'AU_NO_RESNGA_HIS'.2015.ANNUAL.UP 0.16
+'NO2'.'AU_NO_RESNGA_HIS'.2020.ANNUAL.UP 0.16
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'UC_ElcBoilers_BY_NO'.0.ANNUAL.LO 1
+'UC_ElcBoilers_BY_NO'.2010.ANNUAL.LO 4.208
+'UC_ElcBoilers_BY_NO'.2011.ANNUAL.LO 3.273
+'UC_ElcBoilers_BY_NO'.2012.ANNUAL.LO 4.298
+'UC_Imp_BY_NO'.0.ANNUAL.UP 1
+'UC_Imp_BY_NO'.2010.ANNUAL.UP 52.823
+/;
+
+

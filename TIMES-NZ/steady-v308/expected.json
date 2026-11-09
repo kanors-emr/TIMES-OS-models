@@ -1,0 +1,293 @@
+{
+ "case": "steady-v308",
+ "made": "2026-11-08",
+ "objective": 1333686.0406999006,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 622043,
+  "columns": 523095,
+  "nonzeros": 3414768,
+  "objective": 1333686.0406999006,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 622043,
+  "columns": 523095,
+  "nonzeros": 3414768,
+  "objective": 1333686.0404737373
+ },
+ "row_counts": {
+  "EQ_OBJVAR": 2,
+  "EQE_OUTSHR": 52,
+  "EQG_CPT": 25,
+  "EQ_OBJSALV": 2,
+  "EQ_OBJFIX": 2,
+  "EQ_PTRANS": 28,
+  "EQG_COMBAL": 147374,
+  "EQL_CAPACT": 292778,
+  "EQL_ACTBND": 208,
+  "EQE_UCT": 78,
+  "EQE_UCRSUS": 868,
+  "EQL_CAFLAC": 1776,
+  "EQ_IRE": 714,
+  "EQL_CAPFLO": 1776,
+  "EQE_COMPRD": 8736,
+  "EQ_OBJ": 1,
+  "EQE_CPT": 9224,
+  "EQ_PEAK": 672,
+  "EQG_INSHR": 91,
+  "EQE_INSHR": 1080,
+  "EQE_COMBAL": 9534,
+  "EQG_FLOMRK": 6720,
+  "EQ_OBJINV": 2,
+  "EQE_ACTEFF": 28529,
+  "EQE_ACTBND": 14,
+  "EQE_UCTS": 13,
+  "EQ_STGTSS": 1776,
+  "EQE_CAPACT": 28022,
+  "EQE_UCRTS": 14,
+  "EQG_CAPACT": 89,
+  "EQ_ACTFLO": 72519,
+  "EQ_SLSIFT": 8736,
+  "EQE_UCRSU": 588
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1902",
+  "CTST": "",
+  "DAMAGE": "NO",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MID_YEAR": "YES",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "AUTO",
+  "OBLONG": "YES",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "steady-v308",
+  "SCENARIO_NAME": "loadcurve",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "STAGES": "NO",
+  "SYSPREFIX": "",
+  "TMP": "0",
+  "VALIDATE": "NO",
+  "VAR": "VARIABLE OBJZ",
+  "VARCOST": "LIN",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "steady-v308_ts.dd",
+   "bytes": 365,
+   "sha256_16": "9f8ff4ff4ff65c0e"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 957639,
+   "sha256_16": "700aca7d78225e37"
+  },
+  {
+   "name": "newtechs_agr_steady.dd",
+   "bytes": 43698,
+   "sha256_16": "c80efa45b18176fb"
+  },
+  {
+   "name": "newtechs_elc_steady.dd",
+   "bytes": 337584,
+   "sha256_16": "7ee38a5862dfa394"
+  },
+  {
+   "name": "newtechs_h2_steady.dd",
+   "bytes": 2697,
+   "sha256_16": "f37e53125cdf0056"
+  },
+  {
+   "name": "newtechs_tra_steady.dd",
+   "bytes": 146175,
+   "sha256_16": "e2ec984a7db9577b"
+  },
+  {
+   "name": "newtechs_ind.dd",
+   "bytes": 54620,
+   "sha256_16": "cb62f028e1c65113"
+  },
+  {
+   "name": "newtechs_com.dd",
+   "bytes": 83845,
+   "sha256_16": "3a42f0d1a2d717cc"
+  },
+  {
+   "name": "sectorclosures.dd",
+   "bytes": 1508,
+   "sha256_16": "13b1b101df693c8e"
+  },
+  {
+   "name": "demandflex_steady.dd",
+   "bytes": 6792,
+   "sha256_16": "a4ed543d5e6f29b2"
+  },
+  {
+   "name": "lng_imports_steady.dd",
+   "bytes": 1543,
+   "sha256_16": "9718c606c7737942"
+  },
+  {
+   "name": "newtech_storage_steady.dd",
+   "bytes": 25219,
+   "sha256_16": "30e2c9e18a465da8"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 4885,
+   "sha256_16": "26d874f55db8e728"
+  },
+  {
+   "name": "trade_parms.dd",
+   "bytes": 1171,
+   "sha256_16": "dcffa5bccd8a5a79"
+  },
+  {
+   "name": "steady.dd",
+   "bytes": 635853,
+   "sha256_16": "08af95d6296a36d6"
+  },
+  {
+   "name": "base_constraints.dd",
+   "bytes": 127294,
+   "sha256_16": "769c93c1c9204a89"
+  },
+  {
+   "name": "processheatcoalban.dd",
+   "bytes": 29014,
+   "sha256_16": "4241dd94f736a8d6"
+  },
+  {
+   "name": "carbon_steady.dd",
+   "bytes": 3175,
+   "sha256_16": "823b7799411ae1f2"
+  },
+  {
+   "name": "discountrates_steady.dd",
+   "bytes": 55284,
+   "sha256_16": "224b24faa7c8d0ea"
+  },
+  {
+   "name": "distributedsolar_steady.dd",
+   "bytes": 9519,
+   "sha256_16": "2016cde73d047d33"
+  },
+  {
+   "name": "eafdemand_steady.dd",
+   "bytes": 3033,
+   "sha256_16": "4400cb0db411935b"
+  },
+  {
+   "name": "lng_build_timing_steady.dd",
+   "bytes": 261,
+   "sha256_16": "239c7073bec2cc71"
+  },
+  {
+   "name": "renewable_availability.dd",
+   "bytes": 615799,
+   "sha256_16": "a54a4f9f120ec492"
+  },
+  {
+   "name": "existingbatteryinvestment.dd",
+   "bytes": 291,
+   "sha256_16": "2b5f13ffcaf2b514"
+  },
+  {
+   "name": "wem_wcm.dd",
+   "bytes": 24130,
+   "sha256_16": "571511618f9fc37d"
+  },
+  {
+   "name": "loadcurve.dd",
+   "bytes": 957381,
+   "sha256_16": "a94499e306db930a"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 622043   GAMS 622043   only here 0   only in GAMS 0",
+    "columns    here 523095   GAMS 523095   only here 0   only in GAMS 0",
+    "entries    here 3414768   GAMS 3414768   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 2.79e-15 (tolerance 1.0e-9); 39385 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 1333686.0404737373,
+   "times_in_gams_objective": 1333686.0406999006,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 63.219,
+   "relative_difference": 1.6957762054966846e-10
+  },
+  "regions": 2,
+  "highs": {
+   "status": "Optimal",
+   "objective": 1333686.0529837294,
+   "version": "1.15.1",
+   "threads": 24,
+   "method": "IPX + crossover",
+   "solve_seconds": 445.2,
+   "attempts": [
+    {
+     "options": "(default)",
+     "status": "Unknown"
+    },
+    {
+     "options": "--solver hipo",
+     "status": "Unknown"
+    },
+    {
+     "options": "--solver ipx --highs-option run_crossover=on",
+     "status": "Optimal"
+    }
+   ],
+   "relative_difference_from_cplex": 9.21043516474712e-09
+  },
+  "command": "python TIMES.py run TIMES-NZ/steady-v308 --solver ipx --highs-option run_crossover=on",
+  "build": {
+   "timesos_seconds": 17.1,
+   "timesos_peak_gb": 1.49,
+   "times_in_gams_seconds": 6.8,
+   "times_in_gams_peak_gb": 0.52,
+   "time_ratio": 2.5147058823529416,
+   "memory_ratio": 2.8465671641791044,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

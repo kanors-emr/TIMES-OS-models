@@ -1,0 +1,65 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'EUNETZERO'
+$SET SCENARIO_NAME 'nogreencerttrade'
+
+
+PARAMETER
+
+ACT_COST ' '/
+'AT'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'AT'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'BE'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'BE'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'BG'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'BG'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'CY'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'CY'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'CZ'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'CZ'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'DE'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'DE'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'DK'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'DK'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'EE'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'EE'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'EL'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'EL'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'ES'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'ES'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'FI'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'FI'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'FR'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'FR'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'HU'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'HU'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'IE'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'IE'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'IT'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'IT'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'LT'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'LT'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'LV'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'LV'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'MT'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'MT'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'NL'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'NL'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'PL'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'PL'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'PT'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'PT'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'RO'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'RO'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'SE'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'SE'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'SI'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'SI'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'SK'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'SK'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+'UK'.2010.'GreenCert-ELC-Trade'.'EUR10' 111
+'UK'.2010.'GreenCert-FIN-Trade'.'EUR10' 111
+/;
+
+

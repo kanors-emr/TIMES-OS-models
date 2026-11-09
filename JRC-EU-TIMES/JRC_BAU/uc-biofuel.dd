@@ -1,0 +1,2750 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'JRC_BAU'
+$SET SCENARIO_NAME 'uc-biofuel'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'AT'.'NRG'.'AUC_Bio1TransCons-'
+'AT'.'NRG'.'AUC_Bio1TransCons_'
+'AT'.'NRG'.'AUC_Bio2TransCons-'
+'AT'.'NRG'.'AUC_Bio2TransCons_'
+'AT'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'AT'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'AT'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'AT'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'AT'.'NRG'.'UC_MinBIOETHA_E5-'
+'AT'.'NRG'.'UC_MinBIOETHA_E5_'
+'BE'.'NRG'.'AUC_Bio1TransCons-'
+'BE'.'NRG'.'AUC_Bio1TransCons_'
+'BE'.'NRG'.'AUC_Bio2TransCons-'
+'BE'.'NRG'.'AUC_Bio2TransCons_'
+'BE'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'BE'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'BE'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'BE'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'BE'.'NRG'.'UC_MinBIOETHA_E5-'
+'BE'.'NRG'.'UC_MinBIOETHA_E5_'
+'BG'.'NRG'.'AUC_Bio1TransCons-'
+'BG'.'NRG'.'AUC_Bio1TransCons_'
+'BG'.'NRG'.'AUC_Bio2TransCons-'
+'BG'.'NRG'.'AUC_Bio2TransCons_'
+'BG'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'BG'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'BG'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'BG'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'BG'.'NRG'.'UC_MinBIOETHA_E5-'
+'BG'.'NRG'.'UC_MinBIOETHA_E5_'
+'CH'.'NRG'.'AUC_Bio1TransCons-'
+'CH'.'NRG'.'AUC_Bio1TransCons_'
+'CH'.'NRG'.'AUC_Bio2TransCons-'
+'CH'.'NRG'.'AUC_Bio2TransCons_'
+'CH'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'CH'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'CH'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'CH'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'CH'.'NRG'.'UC_MinBIOETHA_E5-'
+'CH'.'NRG'.'UC_MinBIOETHA_E5_'
+'CY'.'NRG'.'AUC_Bio1TransCons-'
+'CY'.'NRG'.'AUC_Bio1TransCons_'
+'CY'.'NRG'.'AUC_Bio2TransCons-'
+'CY'.'NRG'.'AUC_Bio2TransCons_'
+'CY'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'CY'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'CY'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'CY'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'CY'.'NRG'.'UC_MinBIOETHA_E5-'
+'CY'.'NRG'.'UC_MinBIOETHA_E5_'
+'CZ'.'NRG'.'AUC_Bio1TransCons-'
+'CZ'.'NRG'.'AUC_Bio1TransCons_'
+'CZ'.'NRG'.'AUC_Bio2TransCons-'
+'CZ'.'NRG'.'AUC_Bio2TransCons_'
+'CZ'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'CZ'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'CZ'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'CZ'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'CZ'.'NRG'.'UC_MinBIOETHA_E5-'
+'CZ'.'NRG'.'UC_MinBIOETHA_E5_'
+'DE'.'NRG'.'AUC_Bio1TransCons-'
+'DE'.'NRG'.'AUC_Bio1TransCons_'
+'DE'.'NRG'.'AUC_Bio2TransCons-'
+'DE'.'NRG'.'AUC_Bio2TransCons_'
+'DE'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'DE'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'DE'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'DE'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'DE'.'NRG'.'UC_MinBIOETHA_E5-'
+'DE'.'NRG'.'UC_MinBIOETHA_E5_'
+'DK'.'NRG'.'AUC_Bio1TransCons-'
+'DK'.'NRG'.'AUC_Bio1TransCons_'
+'DK'.'NRG'.'AUC_Bio2TransCons-'
+'DK'.'NRG'.'AUC_Bio2TransCons_'
+'DK'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'DK'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'DK'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'DK'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'DK'.'NRG'.'UC_MinBIOETHA_E5-'
+'DK'.'NRG'.'UC_MinBIOETHA_E5_'
+'EE'.'NRG'.'AUC_Bio1TransCons-'
+'EE'.'NRG'.'AUC_Bio1TransCons_'
+'EE'.'NRG'.'AUC_Bio2TransCons-'
+'EE'.'NRG'.'AUC_Bio2TransCons_'
+'EE'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'EE'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'EE'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'EE'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'EE'.'NRG'.'UC_MinBIOETHA_E5-'
+'EE'.'NRG'.'UC_MinBIOETHA_E5_'
+'EL'.'NRG'.'AUC_Bio1TransCons-'
+'EL'.'NRG'.'AUC_Bio1TransCons_'
+'EL'.'NRG'.'AUC_Bio2TransCons-'
+'EL'.'NRG'.'AUC_Bio2TransCons_'
+'EL'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'EL'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'EL'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'EL'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'EL'.'NRG'.'UC_MinBIOETHA_E5-'
+'EL'.'NRG'.'UC_MinBIOETHA_E5_'
+'ES'.'NRG'.'AUC_Bio1TransCons-'
+'ES'.'NRG'.'AUC_Bio1TransCons_'
+'ES'.'NRG'.'AUC_Bio2TransCons-'
+'ES'.'NRG'.'AUC_Bio2TransCons_'
+'ES'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'ES'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'ES'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'ES'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'ES'.'NRG'.'UC_MinBIOETHA_E5-'
+'ES'.'NRG'.'UC_MinBIOETHA_E5_'
+'FI'.'NRG'.'AUC_Bio1TransCons-'
+'FI'.'NRG'.'AUC_Bio1TransCons_'
+'FI'.'NRG'.'AUC_Bio2TransCons-'
+'FI'.'NRG'.'AUC_Bio2TransCons_'
+'FI'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'FI'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'FI'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'FI'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'FI'.'NRG'.'UC_MinBIOETHA_E5-'
+'FI'.'NRG'.'UC_MinBIOETHA_E5_'
+'FR'.'NRG'.'AUC_Bio1TransCons-'
+'FR'.'NRG'.'AUC_Bio1TransCons_'
+'FR'.'NRG'.'AUC_Bio2TransCons-'
+'FR'.'NRG'.'AUC_Bio2TransCons_'
+'FR'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'FR'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'FR'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'FR'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'FR'.'NRG'.'UC_MinBIOETHA_E5-'
+'FR'.'NRG'.'UC_MinBIOETHA_E5_'
+'HR'.'NRG'.'AUC_Bio1TransCons-'
+'HR'.'NRG'.'AUC_Bio1TransCons_'
+'HR'.'NRG'.'AUC_Bio2TransCons-'
+'HR'.'NRG'.'AUC_Bio2TransCons_'
+'HR'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'HR'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'HR'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'HR'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'HR'.'NRG'.'UC_MinBIOETHA_E5-'
+'HR'.'NRG'.'UC_MinBIOETHA_E5_'
+'HU'.'NRG'.'AUC_Bio1TransCons-'
+'HU'.'NRG'.'AUC_Bio1TransCons_'
+'HU'.'NRG'.'AUC_Bio2TransCons-'
+'HU'.'NRG'.'AUC_Bio2TransCons_'
+'HU'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'HU'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'HU'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'HU'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'HU'.'NRG'.'UC_MinBIOETHA_E5-'
+'HU'.'NRG'.'UC_MinBIOETHA_E5_'
+'IE'.'NRG'.'AUC_Bio1TransCons-'
+'IE'.'NRG'.'AUC_Bio1TransCons_'
+'IE'.'NRG'.'AUC_Bio2TransCons-'
+'IE'.'NRG'.'AUC_Bio2TransCons_'
+'IE'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'IE'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'IE'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'IE'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'IE'.'NRG'.'UC_MinBIOETHA_E5-'
+'IE'.'NRG'.'UC_MinBIOETHA_E5_'
+'IS'.'NRG'.'AUC_Bio1TransCons-'
+'IS'.'NRG'.'AUC_Bio1TransCons_'
+'IS'.'NRG'.'AUC_Bio2TransCons-'
+'IS'.'NRG'.'AUC_Bio2TransCons_'
+'IS'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'IS'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'IS'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'IS'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'IS'.'NRG'.'UC_MinBIOETHA_E5-'
+'IS'.'NRG'.'UC_MinBIOETHA_E5_'
+'IT'.'NRG'.'AUC_Bio1TransCons-'
+'IT'.'NRG'.'AUC_Bio1TransCons_'
+'IT'.'NRG'.'AUC_Bio2TransCons-'
+'IT'.'NRG'.'AUC_Bio2TransCons_'
+'IT'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'IT'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'IT'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'IT'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'IT'.'NRG'.'UC_MinBIOETHA_E5-'
+'IT'.'NRG'.'UC_MinBIOETHA_E5_'
+'LT'.'NRG'.'AUC_Bio1TransCons-'
+'LT'.'NRG'.'AUC_Bio1TransCons_'
+'LT'.'NRG'.'AUC_Bio2TransCons-'
+'LT'.'NRG'.'AUC_Bio2TransCons_'
+'LT'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'LT'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'LT'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'LT'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'LT'.'NRG'.'UC_MinBIOETHA_E5-'
+'LT'.'NRG'.'UC_MinBIOETHA_E5_'
+'LU'.'NRG'.'AUC_Bio1TransCons-'
+'LU'.'NRG'.'AUC_Bio1TransCons_'
+'LU'.'NRG'.'AUC_Bio2TransCons-'
+'LU'.'NRG'.'AUC_Bio2TransCons_'
+'LU'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'LU'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'LU'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'LU'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'LU'.'NRG'.'UC_MinBIOETHA_E5-'
+'LU'.'NRG'.'UC_MinBIOETHA_E5_'
+'LV'.'NRG'.'AUC_Bio1TransCons-'
+'LV'.'NRG'.'AUC_Bio1TransCons_'
+'LV'.'NRG'.'AUC_Bio2TransCons-'
+'LV'.'NRG'.'AUC_Bio2TransCons_'
+'LV'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'LV'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'LV'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'LV'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'LV'.'NRG'.'UC_MinBIOETHA_E5-'
+'LV'.'NRG'.'UC_MinBIOETHA_E5_'
+'MT'.'NRG'.'AUC_Bio1TransCons-'
+'MT'.'NRG'.'AUC_Bio1TransCons_'
+'MT'.'NRG'.'AUC_Bio2TransCons-'
+'MT'.'NRG'.'AUC_Bio2TransCons_'
+'MT'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'MT'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'MT'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'MT'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'MT'.'NRG'.'UC_MinBIOETHA_E5-'
+'MT'.'NRG'.'UC_MinBIOETHA_E5_'
+'NL'.'NRG'.'AUC_Bio1TransCons-'
+'NL'.'NRG'.'AUC_Bio1TransCons_'
+'NL'.'NRG'.'AUC_Bio2TransCons-'
+'NL'.'NRG'.'AUC_Bio2TransCons_'
+'NL'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'NL'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'NL'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'NL'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'NL'.'NRG'.'UC_MinBIOETHA_E5-'
+'NL'.'NRG'.'UC_MinBIOETHA_E5_'
+'NO'.'NRG'.'AUC_Bio1TransCons-'
+'NO'.'NRG'.'AUC_Bio1TransCons_'
+'NO'.'NRG'.'AUC_Bio2TransCons-'
+'NO'.'NRG'.'AUC_Bio2TransCons_'
+'NO'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'NO'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'NO'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'NO'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'NO'.'NRG'.'UC_MinBIOETHA_E5-'
+'NO'.'NRG'.'UC_MinBIOETHA_E5_'
+'PL'.'NRG'.'AUC_Bio1TransCons-'
+'PL'.'NRG'.'AUC_Bio1TransCons_'
+'PL'.'NRG'.'AUC_Bio2TransCons-'
+'PL'.'NRG'.'AUC_Bio2TransCons_'
+'PL'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'PL'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'PL'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'PL'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'PL'.'NRG'.'UC_MinBIOETHA_E5-'
+'PL'.'NRG'.'UC_MinBIOETHA_E5_'
+'PT'.'NRG'.'AUC_Bio1TransCons-'
+'PT'.'NRG'.'AUC_Bio1TransCons_'
+'PT'.'NRG'.'AUC_Bio2TransCons-'
+'PT'.'NRG'.'AUC_Bio2TransCons_'
+'PT'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'PT'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'PT'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'PT'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'PT'.'NRG'.'UC_MinBIOETHA_E5-'
+'PT'.'NRG'.'UC_MinBIOETHA_E5_'
+'RO'.'NRG'.'AUC_Bio1TransCons-'
+'RO'.'NRG'.'AUC_Bio1TransCons_'
+'RO'.'NRG'.'AUC_Bio2TransCons-'
+'RO'.'NRG'.'AUC_Bio2TransCons_'
+'RO'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'RO'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'RO'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'RO'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'RO'.'NRG'.'UC_MinBIOETHA_E5-'
+'RO'.'NRG'.'UC_MinBIOETHA_E5_'
+'SE'.'NRG'.'AUC_Bio1TransCons-'
+'SE'.'NRG'.'AUC_Bio1TransCons_'
+'SE'.'NRG'.'AUC_Bio2TransCons-'
+'SE'.'NRG'.'AUC_Bio2TransCons_'
+'SE'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'SE'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'SE'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'SE'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'SE'.'NRG'.'UC_MinBIOETHA_E5-'
+'SE'.'NRG'.'UC_MinBIOETHA_E5_'
+'SI'.'NRG'.'AUC_Bio1TransCons-'
+'SI'.'NRG'.'AUC_Bio1TransCons_'
+'SI'.'NRG'.'AUC_Bio2TransCons-'
+'SI'.'NRG'.'AUC_Bio2TransCons_'
+'SI'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'SI'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'SI'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'SI'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'SI'.'NRG'.'UC_MinBIOETHA_E5-'
+'SI'.'NRG'.'UC_MinBIOETHA_E5_'
+'SK'.'NRG'.'AUC_Bio1TransCons-'
+'SK'.'NRG'.'AUC_Bio1TransCons_'
+'SK'.'NRG'.'AUC_Bio2TransCons-'
+'SK'.'NRG'.'AUC_Bio2TransCons_'
+'SK'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'SK'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'SK'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'SK'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'SK'.'NRG'.'UC_MinBIOETHA_E5-'
+'SK'.'NRG'.'UC_MinBIOETHA_E5_'
+'UK'.'NRG'.'AUC_Bio1TransCons-'
+'UK'.'NRG'.'AUC_Bio1TransCons_'
+'UK'.'NRG'.'AUC_Bio2TransCons-'
+'UK'.'NRG'.'AUC_Bio2TransCons_'
+'UK'.'NRG'.'UC_MinBIOETHA_E10_Max-'
+'UK'.'NRG'.'UC_MinBIOETHA_E10_Max_'
+'UK'.'NRG'.'UC_MinBIOETHA_E10_Min-'
+'UK'.'NRG'.'UC_MinBIOETHA_E10_Min_'
+'UK'.'NRG'.'UC_MinBIOETHA_E5-'
+'UK'.'NRG'.'UC_MinBIOETHA_E5_'
+/;
+
+SET COM_UNIT
+
+/
+'AT'.'AUC_Bio1TransCons-'.'UCU'
+'AT'.'AUC_Bio1TransCons_'.'UCU'
+'AT'.'AUC_Bio2TransCons-'.'UCU'
+'AT'.'AUC_Bio2TransCons_'.'UCU'
+'AT'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'AT'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'AT'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'AT'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'AT'.'UC_MinBIOETHA_E5-'.'UCU'
+'AT'.'UC_MinBIOETHA_E5_'.'UCU'
+'BE'.'AUC_Bio1TransCons-'.'UCU'
+'BE'.'AUC_Bio1TransCons_'.'UCU'
+'BE'.'AUC_Bio2TransCons-'.'UCU'
+'BE'.'AUC_Bio2TransCons_'.'UCU'
+'BE'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'BE'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'BE'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'BE'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'BE'.'UC_MinBIOETHA_E5-'.'UCU'
+'BE'.'UC_MinBIOETHA_E5_'.'UCU'
+'BG'.'AUC_Bio1TransCons-'.'UCU'
+'BG'.'AUC_Bio1TransCons_'.'UCU'
+'BG'.'AUC_Bio2TransCons-'.'UCU'
+'BG'.'AUC_Bio2TransCons_'.'UCU'
+'BG'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'BG'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'BG'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'BG'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'BG'.'UC_MinBIOETHA_E5-'.'UCU'
+'BG'.'UC_MinBIOETHA_E5_'.'UCU'
+'CH'.'AUC_Bio1TransCons-'.'UCU'
+'CH'.'AUC_Bio1TransCons_'.'UCU'
+'CH'.'AUC_Bio2TransCons-'.'UCU'
+'CH'.'AUC_Bio2TransCons_'.'UCU'
+'CH'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'CH'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'CH'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'CH'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'CH'.'UC_MinBIOETHA_E5-'.'UCU'
+'CH'.'UC_MinBIOETHA_E5_'.'UCU'
+'CY'.'AUC_Bio1TransCons-'.'UCU'
+'CY'.'AUC_Bio1TransCons_'.'UCU'
+'CY'.'AUC_Bio2TransCons-'.'UCU'
+'CY'.'AUC_Bio2TransCons_'.'UCU'
+'CY'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'CY'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'CY'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'CY'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'CY'.'UC_MinBIOETHA_E5-'.'UCU'
+'CY'.'UC_MinBIOETHA_E5_'.'UCU'
+'CZ'.'AUC_Bio1TransCons-'.'UCU'
+'CZ'.'AUC_Bio1TransCons_'.'UCU'
+'CZ'.'AUC_Bio2TransCons-'.'UCU'
+'CZ'.'AUC_Bio2TransCons_'.'UCU'
+'CZ'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'CZ'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'CZ'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'CZ'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'CZ'.'UC_MinBIOETHA_E5-'.'UCU'
+'CZ'.'UC_MinBIOETHA_E5_'.'UCU'
+'DE'.'AUC_Bio1TransCons-'.'UCU'
+'DE'.'AUC_Bio1TransCons_'.'UCU'
+'DE'.'AUC_Bio2TransCons-'.'UCU'
+'DE'.'AUC_Bio2TransCons_'.'UCU'
+'DE'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'DE'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'DE'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'DE'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'DE'.'UC_MinBIOETHA_E5-'.'UCU'
+'DE'.'UC_MinBIOETHA_E5_'.'UCU'
+'DK'.'AUC_Bio1TransCons-'.'UCU'
+'DK'.'AUC_Bio1TransCons_'.'UCU'
+'DK'.'AUC_Bio2TransCons-'.'UCU'
+'DK'.'AUC_Bio2TransCons_'.'UCU'
+'DK'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'DK'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'DK'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'DK'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'DK'.'UC_MinBIOETHA_E5-'.'UCU'
+'DK'.'UC_MinBIOETHA_E5_'.'UCU'
+'EE'.'AUC_Bio1TransCons-'.'UCU'
+'EE'.'AUC_Bio1TransCons_'.'UCU'
+'EE'.'AUC_Bio2TransCons-'.'UCU'
+'EE'.'AUC_Bio2TransCons_'.'UCU'
+'EE'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'EE'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'EE'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'EE'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'EE'.'UC_MinBIOETHA_E5-'.'UCU'
+'EE'.'UC_MinBIOETHA_E5_'.'UCU'
+'EL'.'AUC_Bio1TransCons-'.'UCU'
+'EL'.'AUC_Bio1TransCons_'.'UCU'
+'EL'.'AUC_Bio2TransCons-'.'UCU'
+'EL'.'AUC_Bio2TransCons_'.'UCU'
+'EL'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'EL'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'EL'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'EL'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'EL'.'UC_MinBIOETHA_E5-'.'UCU'
+'EL'.'UC_MinBIOETHA_E5_'.'UCU'
+'ES'.'AUC_Bio1TransCons-'.'UCU'
+'ES'.'AUC_Bio1TransCons_'.'UCU'
+'ES'.'AUC_Bio2TransCons-'.'UCU'
+'ES'.'AUC_Bio2TransCons_'.'UCU'
+'ES'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'ES'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'ES'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'ES'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'ES'.'UC_MinBIOETHA_E5-'.'UCU'
+'ES'.'UC_MinBIOETHA_E5_'.'UCU'
+'FI'.'AUC_Bio1TransCons-'.'UCU'
+'FI'.'AUC_Bio1TransCons_'.'UCU'
+'FI'.'AUC_Bio2TransCons-'.'UCU'
+'FI'.'AUC_Bio2TransCons_'.'UCU'
+'FI'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'FI'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'FI'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'FI'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'FI'.'UC_MinBIOETHA_E5-'.'UCU'
+'FI'.'UC_MinBIOETHA_E5_'.'UCU'
+'FR'.'AUC_Bio1TransCons-'.'UCU'
+'FR'.'AUC_Bio1TransCons_'.'UCU'
+'FR'.'AUC_Bio2TransCons-'.'UCU'
+'FR'.'AUC_Bio2TransCons_'.'UCU'
+'FR'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'FR'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'FR'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'FR'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'FR'.'UC_MinBIOETHA_E5-'.'UCU'
+'FR'.'UC_MinBIOETHA_E5_'.'UCU'
+'HR'.'AUC_Bio1TransCons-'.'UCU'
+'HR'.'AUC_Bio1TransCons_'.'UCU'
+'HR'.'AUC_Bio2TransCons-'.'UCU'
+'HR'.'AUC_Bio2TransCons_'.'UCU'
+'HR'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'HR'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'HR'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'HR'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'HR'.'UC_MinBIOETHA_E5-'.'UCU'
+'HR'.'UC_MinBIOETHA_E5_'.'UCU'
+'HU'.'AUC_Bio1TransCons-'.'UCU'
+'HU'.'AUC_Bio1TransCons_'.'UCU'
+'HU'.'AUC_Bio2TransCons-'.'UCU'
+'HU'.'AUC_Bio2TransCons_'.'UCU'
+'HU'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'HU'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'HU'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'HU'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'HU'.'UC_MinBIOETHA_E5-'.'UCU'
+'HU'.'UC_MinBIOETHA_E5_'.'UCU'
+'IE'.'AUC_Bio1TransCons-'.'UCU'
+'IE'.'AUC_Bio1TransCons_'.'UCU'
+'IE'.'AUC_Bio2TransCons-'.'UCU'
+'IE'.'AUC_Bio2TransCons_'.'UCU'
+'IE'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'IE'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'IE'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'IE'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'IE'.'UC_MinBIOETHA_E5-'.'UCU'
+'IE'.'UC_MinBIOETHA_E5_'.'UCU'
+'IS'.'AUC_Bio1TransCons-'.'UCU'
+'IS'.'AUC_Bio1TransCons_'.'UCU'
+'IS'.'AUC_Bio2TransCons-'.'UCU'
+'IS'.'AUC_Bio2TransCons_'.'UCU'
+'IS'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'IS'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'IS'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'IS'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'IS'.'UC_MinBIOETHA_E5-'.'UCU'
+'IS'.'UC_MinBIOETHA_E5_'.'UCU'
+'IT'.'AUC_Bio1TransCons-'.'UCU'
+'IT'.'AUC_Bio1TransCons_'.'UCU'
+'IT'.'AUC_Bio2TransCons-'.'UCU'
+'IT'.'AUC_Bio2TransCons_'.'UCU'
+'IT'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'IT'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'IT'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'IT'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'IT'.'UC_MinBIOETHA_E5-'.'UCU'
+'IT'.'UC_MinBIOETHA_E5_'.'UCU'
+'LT'.'AUC_Bio1TransCons-'.'UCU'
+'LT'.'AUC_Bio1TransCons_'.'UCU'
+'LT'.'AUC_Bio2TransCons-'.'UCU'
+'LT'.'AUC_Bio2TransCons_'.'UCU'
+'LT'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'LT'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'LT'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'LT'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'LT'.'UC_MinBIOETHA_E5-'.'UCU'
+'LT'.'UC_MinBIOETHA_E5_'.'UCU'
+'LU'.'AUC_Bio1TransCons-'.'UCU'
+'LU'.'AUC_Bio1TransCons_'.'UCU'
+'LU'.'AUC_Bio2TransCons-'.'UCU'
+'LU'.'AUC_Bio2TransCons_'.'UCU'
+'LU'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'LU'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'LU'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'LU'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'LU'.'UC_MinBIOETHA_E5-'.'UCU'
+'LU'.'UC_MinBIOETHA_E5_'.'UCU'
+'LV'.'AUC_Bio1TransCons-'.'UCU'
+'LV'.'AUC_Bio1TransCons_'.'UCU'
+'LV'.'AUC_Bio2TransCons-'.'UCU'
+'LV'.'AUC_Bio2TransCons_'.'UCU'
+'LV'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'LV'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'LV'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'LV'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'LV'.'UC_MinBIOETHA_E5-'.'UCU'
+'LV'.'UC_MinBIOETHA_E5_'.'UCU'
+'MT'.'AUC_Bio1TransCons-'.'UCU'
+'MT'.'AUC_Bio1TransCons_'.'UCU'
+'MT'.'AUC_Bio2TransCons-'.'UCU'
+'MT'.'AUC_Bio2TransCons_'.'UCU'
+'MT'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'MT'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'MT'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'MT'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'MT'.'UC_MinBIOETHA_E5-'.'UCU'
+'MT'.'UC_MinBIOETHA_E5_'.'UCU'
+'NL'.'AUC_Bio1TransCons-'.'UCU'
+'NL'.'AUC_Bio1TransCons_'.'UCU'
+'NL'.'AUC_Bio2TransCons-'.'UCU'
+'NL'.'AUC_Bio2TransCons_'.'UCU'
+'NL'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'NL'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'NL'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'NL'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'NL'.'UC_MinBIOETHA_E5-'.'UCU'
+'NL'.'UC_MinBIOETHA_E5_'.'UCU'
+'NO'.'AUC_Bio1TransCons-'.'UCU'
+'NO'.'AUC_Bio1TransCons_'.'UCU'
+'NO'.'AUC_Bio2TransCons-'.'UCU'
+'NO'.'AUC_Bio2TransCons_'.'UCU'
+'NO'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'NO'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'NO'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'NO'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'NO'.'UC_MinBIOETHA_E5-'.'UCU'
+'NO'.'UC_MinBIOETHA_E5_'.'UCU'
+'PL'.'AUC_Bio1TransCons-'.'UCU'
+'PL'.'AUC_Bio1TransCons_'.'UCU'
+'PL'.'AUC_Bio2TransCons-'.'UCU'
+'PL'.'AUC_Bio2TransCons_'.'UCU'
+'PL'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'PL'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'PL'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'PL'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'PL'.'UC_MinBIOETHA_E5-'.'UCU'
+'PL'.'UC_MinBIOETHA_E5_'.'UCU'
+'PT'.'AUC_Bio1TransCons-'.'UCU'
+'PT'.'AUC_Bio1TransCons_'.'UCU'
+'PT'.'AUC_Bio2TransCons-'.'UCU'
+'PT'.'AUC_Bio2TransCons_'.'UCU'
+'PT'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'PT'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'PT'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'PT'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'PT'.'UC_MinBIOETHA_E5-'.'UCU'
+'PT'.'UC_MinBIOETHA_E5_'.'UCU'
+'RO'.'AUC_Bio1TransCons-'.'UCU'
+'RO'.'AUC_Bio1TransCons_'.'UCU'
+'RO'.'AUC_Bio2TransCons-'.'UCU'
+'RO'.'AUC_Bio2TransCons_'.'UCU'
+'RO'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'RO'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'RO'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'RO'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'RO'.'UC_MinBIOETHA_E5-'.'UCU'
+'RO'.'UC_MinBIOETHA_E5_'.'UCU'
+'SE'.'AUC_Bio1TransCons-'.'UCU'
+'SE'.'AUC_Bio1TransCons_'.'UCU'
+'SE'.'AUC_Bio2TransCons-'.'UCU'
+'SE'.'AUC_Bio2TransCons_'.'UCU'
+'SE'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'SE'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'SE'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'SE'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'SE'.'UC_MinBIOETHA_E5-'.'UCU'
+'SE'.'UC_MinBIOETHA_E5_'.'UCU'
+'SI'.'AUC_Bio1TransCons-'.'UCU'
+'SI'.'AUC_Bio1TransCons_'.'UCU'
+'SI'.'AUC_Bio2TransCons-'.'UCU'
+'SI'.'AUC_Bio2TransCons_'.'UCU'
+'SI'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'SI'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'SI'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'SI'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'SI'.'UC_MinBIOETHA_E5-'.'UCU'
+'SI'.'UC_MinBIOETHA_E5_'.'UCU'
+'SK'.'AUC_Bio1TransCons-'.'UCU'
+'SK'.'AUC_Bio1TransCons_'.'UCU'
+'SK'.'AUC_Bio2TransCons-'.'UCU'
+'SK'.'AUC_Bio2TransCons_'.'UCU'
+'SK'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'SK'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'SK'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'SK'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'SK'.'UC_MinBIOETHA_E5-'.'UCU'
+'SK'.'UC_MinBIOETHA_E5_'.'UCU'
+'UK'.'AUC_Bio1TransCons-'.'UCU'
+'UK'.'AUC_Bio1TransCons_'.'UCU'
+'UK'.'AUC_Bio2TransCons-'.'UCU'
+'UK'.'AUC_Bio2TransCons_'.'UCU'
+'UK'.'UC_MinBIOETHA_E10_Max-'.'UCU'
+'UK'.'UC_MinBIOETHA_E10_Max_'.'UCU'
+'UK'.'UC_MinBIOETHA_E10_Min-'.'UCU'
+'UK'.'UC_MinBIOETHA_E10_Min_'.'UCU'
+'UK'.'UC_MinBIOETHA_E5-'.'UCU'
+'UK'.'UC_MinBIOETHA_E5_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'AUC_Bio1TransCons-'.'AT'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'BE'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'BG'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'CH'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'CY'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'CZ'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'DE'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'DK'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'EE'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'EL'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'ES'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'FI'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'FR'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'HR'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'HU'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'IE'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'IS'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'IT'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'LT'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'LU'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'LV'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'MT'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'NL'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'NO'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'PL'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'PT'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'RO'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'SE'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'SI'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'SK'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons-'.'UK'.'AUC_Bio1TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'AT'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'BE'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'BG'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'CH'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'CY'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'CZ'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'DE'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'DK'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'EE'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'EL'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'ES'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'FI'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'FR'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'HR'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'HU'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'IE'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'IS'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'IT'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'LT'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'LU'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'LV'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'MT'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'NL'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'NO'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'PL'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'PT'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'RO'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'SE'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'SI'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'SK'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio1TransCons_'.'UK'.'AUC_Bio1TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'AT'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'BE'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'BG'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'CH'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'CY'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'CZ'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'DE'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'DK'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'EE'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'EL'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'ES'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'FI'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'FR'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'HR'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'HU'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'IE'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'IS'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'IT'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'LT'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'LU'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'LV'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'MT'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'NL'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'NO'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'PL'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'PT'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'RO'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'SE'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'SI'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'SK'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons-'.'UK'.'AUC_Bio2TransCons-'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'AT'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'BE'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'BG'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'CH'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'CY'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'CZ'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'DE'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'DK'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'EE'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'EL'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'ES'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'FI'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'FR'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'HR'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'HU'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'IE'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'IS'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'IT'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'LT'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'LU'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'LV'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'MT'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'NL'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'NO'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'PL'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'PT'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'RO'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'SE'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'SI'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'SK'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'AUC_Bio2TransCons_'.'UK'.'AUC_Bio2TransCons_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'AT'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'BE'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'BG'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'CH'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'CY'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'CZ'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'DE'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'DK'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'EE'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'EL'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'ES'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'FI'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'FR'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'HR'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'HU'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'IE'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'IS'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'IT'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'LT'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'LU'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'LV'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'MT'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'NL'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'NO'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'PL'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'PT'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'RO'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'SE'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'SI'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'SK'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max-'.'UK'.'UC_MinBIOETHA_E10_Max-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'AT'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'BE'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'BG'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'CH'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'CY'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'CZ'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'DE'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'DK'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'EE'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'EL'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'ES'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'FI'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'FR'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'HR'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'HU'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'IE'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'IS'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'IT'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'LT'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'LU'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'LV'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'MT'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'NL'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'NO'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'PL'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'PT'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'RO'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'SE'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'SI'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'SK'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Max_'.'UK'.'UC_MinBIOETHA_E10_Max_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'AT'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'BE'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'BG'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'CH'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'CY'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'CZ'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'DE'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'DK'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'EE'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'EL'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'ES'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'FI'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'FR'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'HR'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'HU'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'IE'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'IS'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'IT'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'LT'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'LU'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'LV'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'MT'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'NL'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'NO'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'PL'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'PT'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'RO'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'SE'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'SI'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'SK'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min-'.'UK'.'UC_MinBIOETHA_E10_Min-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'AT'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'BE'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'BG'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'CH'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'CY'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'CZ'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'DE'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'DK'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'EE'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'EL'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'ES'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'FI'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'FR'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'HR'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'HU'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'IE'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'IS'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'IT'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'LT'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'LU'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'LV'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'MT'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'NL'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'NO'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'PL'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'PT'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'RO'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'SE'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'SI'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'SK'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E10_Min_'.'UK'.'UC_MinBIOETHA_E10_Min_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'AT'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'BE'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'BG'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'CH'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'CY'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'CZ'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'DE'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'DK'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'EE'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'EL'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'ES'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'FI'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'FR'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'HR'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'HU'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'IE'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'IS'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'IT'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'LT'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'LU'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'LV'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'MT'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'NL'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'NO'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'PL'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'PT'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'RO'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'SE'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'SI'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'SK'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5-'.'UK'.'UC_MinBIOETHA_E5-'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'AT'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'BE'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'BG'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'CH'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'CY'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'CZ'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'DE'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'DK'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'EE'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'EL'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'ES'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'FI'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'FR'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'HR'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'HU'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'IE'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'IS'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'IT'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'LT'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'LU'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'LV'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'MT'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'NL'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'NO'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'PL'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'PT'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'RO'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'SE'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'SI'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'SK'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+'IMPEXP'.'UC_MinBIOETHA_E5_'.'UK'.'UC_MinBIOETHA_E5_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'AT'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'AT'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'AT'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'AT'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'AT'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'AT'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'AT'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'AT'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'AT'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'AT'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'BE'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'BE'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'BE'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'BE'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'BE'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'BE'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'BE'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'BE'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'BE'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'BE'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'BG'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'BG'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'BG'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'BG'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'BG'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'BG'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'BG'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'BG'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'BG'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'BG'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'CH'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'CH'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'CH'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'CH'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'CH'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'CH'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'CH'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'CH'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'CH'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'CH'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'CY'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'CY'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'CY'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'CY'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'CY'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'CY'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'CY'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'CY'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'CY'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'CY'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'CZ'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'CZ'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'CZ'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'CZ'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'CZ'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'CZ'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'CZ'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'CZ'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'CZ'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'CZ'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'DE'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'DE'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'DE'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'DE'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'DE'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'DE'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'DE'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'DE'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'DE'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'DE'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'DK'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'DK'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'DK'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'DK'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'DK'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'DK'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'DK'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'DK'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'DK'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'DK'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'EE'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'EE'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'EE'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'EE'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'EE'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'EE'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'EE'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'EE'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'EE'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'EE'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'EL'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'EL'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'EL'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'EL'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'EL'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'EL'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'EL'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'EL'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'EL'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'EL'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'ES'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'ES'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'ES'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'ES'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'ES'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'ES'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'ES'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'ES'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'ES'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'ES'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'FI'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'FI'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'FI'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'FI'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'FI'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'FI'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'FI'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'FI'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'FI'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'FI'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'FR'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'FR'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'FR'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'FR'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'FR'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'FR'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'FR'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'FR'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'FR'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'FR'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'HR'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'HR'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'HR'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'HR'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'HR'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'HR'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'HR'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'HR'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'HR'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'HR'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'HU'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'HU'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'HU'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'HU'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'HU'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'HU'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'HU'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'HU'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'HU'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'HU'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'IE'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'IE'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'IE'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'IE'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'IE'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'IE'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'IE'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'IE'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'IE'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'IE'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'IS'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'IS'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'IS'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'IS'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'IS'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'IS'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'IS'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'IS'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'IS'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'IS'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'IT'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'IT'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'IT'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'IT'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'IT'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'IT'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'IT'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'IT'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'IT'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'IT'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'LT'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'LT'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'LT'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'LT'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'LT'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'LT'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'LT'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'LT'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'LT'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'LT'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'LU'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'LU'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'LU'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'LU'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'LU'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'LU'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'LU'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'LU'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'LU'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'LU'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'LV'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'LV'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'LV'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'LV'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'LV'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'LV'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'LV'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'LV'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'LV'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'LV'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'MT'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'MT'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'MT'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'MT'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'MT'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'MT'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'MT'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'MT'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'MT'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'MT'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'NL'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'NL'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'NL'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'NL'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'NL'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'NL'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'NL'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'NL'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'NL'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'NL'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'NO'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'NO'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'NO'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'NO'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'NO'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'NO'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'NO'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'NO'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'NO'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'NO'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'PL'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'PL'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'PL'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'PL'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'PL'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'PL'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'PL'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'PL'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'PL'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'PL'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'PT'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'PT'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'PT'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'PT'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'PT'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'PT'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'PT'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'PT'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'PT'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'PT'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'RO'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'RO'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'RO'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'RO'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'RO'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'RO'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'RO'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'RO'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'RO'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'RO'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'SE'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'SE'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'SE'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'SE'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'SE'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'SE'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'SE'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'SE'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'SE'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'SE'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'SI'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'SI'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'SI'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'SI'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'SI'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'SI'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'SI'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'SI'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'SI'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'SI'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'SK'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'SK'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'SK'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'SK'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'SK'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'SK'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'SK'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'SK'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'SK'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'SK'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+'UK'.'AUC_Bio1TransCons-' 'Negative dummy var for UC: AUC_Bio1TransCons'
+'UK'.'AUC_Bio1TransCons_' 'Positive dummy var for UC: AUC_Bio1TransCons'
+'UK'.'AUC_Bio2TransCons-' 'Negative dummy var for UC: AUC_Bio2TransCons'
+'UK'.'AUC_Bio2TransCons_' 'Positive dummy var for UC: AUC_Bio2TransCons'
+'UK'.'UC_MinBIOETHA_E10_Max-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Max'
+'UK'.'UC_MinBIOETHA_E10_Max_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Max'
+'UK'.'UC_MinBIOETHA_E10_Min-' 'Negative dummy var for UC: UC_MinBIOETHA_E10_Min'
+'UK'.'UC_MinBIOETHA_E10_Min_' 'Positive dummy var for UC: UC_MinBIOETHA_E10_Min'
+'UK'.'UC_MinBIOETHA_E5-' 'Negative dummy var for UC: UC_MinBIOETHA_E5'
+'UK'.'UC_MinBIOETHA_E5_' 'Positive dummy var for UC: UC_MinBIOETHA_E5'
+/;
+
+SET UC_R_EACH
+
+/
+'AT'.'AUC_Bio1TransCons'
+'AT'.'AUC_Bio2TransCons'
+'AT'.'UC_MinBIOETHA_E10_Max'
+'AT'.'UC_MinBIOETHA_E10_Min'
+'AT'.'UC_MinBIOETHA_E5'
+'BE'.'AUC_Bio1TransCons'
+'BE'.'AUC_Bio2TransCons'
+'BE'.'UC_MinBIOETHA_E10_Max'
+'BE'.'UC_MinBIOETHA_E10_Min'
+'BE'.'UC_MinBIOETHA_E5'
+'BG'.'AUC_Bio1TransCons'
+'BG'.'AUC_Bio2TransCons'
+'BG'.'UC_MinBIOETHA_E10_Max'
+'BG'.'UC_MinBIOETHA_E10_Min'
+'BG'.'UC_MinBIOETHA_E5'
+'CH'.'AUC_Bio1TransCons'
+'CH'.'AUC_Bio2TransCons'
+'CH'.'UC_MinBIOETHA_E10_Max'
+'CH'.'UC_MinBIOETHA_E10_Min'
+'CH'.'UC_MinBIOETHA_E5'
+'CY'.'AUC_Bio1TransCons'
+'CY'.'AUC_Bio2TransCons'
+'CY'.'UC_MinBIOETHA_E10_Max'
+'CY'.'UC_MinBIOETHA_E10_Min'
+'CY'.'UC_MinBIOETHA_E5'
+'CZ'.'AUC_Bio1TransCons'
+'CZ'.'AUC_Bio2TransCons'
+'CZ'.'UC_MinBIOETHA_E10_Max'
+'CZ'.'UC_MinBIOETHA_E10_Min'
+'CZ'.'UC_MinBIOETHA_E5'
+'DE'.'AUC_Bio1TransCons'
+'DE'.'AUC_Bio2TransCons'
+'DE'.'UC_MinBIOETHA_E10_Max'
+'DE'.'UC_MinBIOETHA_E10_Min'
+'DE'.'UC_MinBIOETHA_E5'
+'DK'.'AUC_Bio1TransCons'
+'DK'.'AUC_Bio2TransCons'
+'DK'.'UC_MinBIOETHA_E10_Max'
+'DK'.'UC_MinBIOETHA_E10_Min'
+'DK'.'UC_MinBIOETHA_E5'
+'EE'.'AUC_Bio1TransCons'
+'EE'.'AUC_Bio2TransCons'
+'EE'.'UC_MinBIOETHA_E10_Max'
+'EE'.'UC_MinBIOETHA_E10_Min'
+'EE'.'UC_MinBIOETHA_E5'
+'EL'.'AUC_Bio1TransCons'
+'EL'.'AUC_Bio2TransCons'
+'EL'.'UC_MinBIOETHA_E10_Max'
+'EL'.'UC_MinBIOETHA_E10_Min'
+'EL'.'UC_MinBIOETHA_E5'
+'ES'.'AUC_Bio1TransCons'
+'ES'.'AUC_Bio2TransCons'
+'ES'.'UC_MinBIOETHA_E10_Max'
+'ES'.'UC_MinBIOETHA_E10_Min'
+'ES'.'UC_MinBIOETHA_E5'
+'FI'.'AUC_Bio1TransCons'
+'FI'.'AUC_Bio2TransCons'
+'FI'.'UC_MinBIOETHA_E10_Max'
+'FI'.'UC_MinBIOETHA_E10_Min'
+'FI'.'UC_MinBIOETHA_E5'
+'FR'.'AUC_Bio1TransCons'
+'FR'.'AUC_Bio2TransCons'
+'FR'.'UC_MinBIOETHA_E10_Max'
+'FR'.'UC_MinBIOETHA_E10_Min'
+'FR'.'UC_MinBIOETHA_E5'
+'HR'.'AUC_Bio1TransCons'
+'HR'.'AUC_Bio2TransCons'
+'HR'.'UC_MinBIOETHA_E10_Max'
+'HR'.'UC_MinBIOETHA_E10_Min'
+'HR'.'UC_MinBIOETHA_E5'
+'HU'.'AUC_Bio1TransCons'
+'HU'.'AUC_Bio2TransCons'
+'HU'.'UC_MinBIOETHA_E10_Max'
+'HU'.'UC_MinBIOETHA_E10_Min'
+'HU'.'UC_MinBIOETHA_E5'
+'IE'.'AUC_Bio1TransCons'
+'IE'.'AUC_Bio2TransCons'
+'IE'.'UC_MinBIOETHA_E10_Max'
+'IE'.'UC_MinBIOETHA_E10_Min'
+'IE'.'UC_MinBIOETHA_E5'
+'IS'.'AUC_Bio1TransCons'
+'IS'.'AUC_Bio2TransCons'
+'IS'.'UC_MinBIOETHA_E10_Max'
+'IS'.'UC_MinBIOETHA_E10_Min'
+'IS'.'UC_MinBIOETHA_E5'
+'IT'.'AUC_Bio1TransCons'
+'IT'.'AUC_Bio2TransCons'
+'IT'.'UC_MinBIOETHA_E10_Max'
+'IT'.'UC_MinBIOETHA_E10_Min'
+'IT'.'UC_MinBIOETHA_E5'
+'LT'.'AUC_Bio1TransCons'
+'LT'.'AUC_Bio2TransCons'
+'LT'.'UC_MinBIOETHA_E10_Max'
+'LT'.'UC_MinBIOETHA_E10_Min'
+'LT'.'UC_MinBIOETHA_E5'
+'LU'.'AUC_Bio1TransCons'
+'LU'.'AUC_Bio2TransCons'
+'LU'.'UC_MinBIOETHA_E10_Max'
+'LU'.'UC_MinBIOETHA_E10_Min'
+'LU'.'UC_MinBIOETHA_E5'
+'LV'.'AUC_Bio1TransCons'
+'LV'.'AUC_Bio2TransCons'
+'LV'.'UC_MinBIOETHA_E10_Max'
+'LV'.'UC_MinBIOETHA_E10_Min'
+'LV'.'UC_MinBIOETHA_E5'
+'MT'.'AUC_Bio1TransCons'
+'MT'.'AUC_Bio2TransCons'
+'MT'.'UC_MinBIOETHA_E10_Max'
+'MT'.'UC_MinBIOETHA_E10_Min'
+'MT'.'UC_MinBIOETHA_E5'
+'NL'.'AUC_Bio1TransCons'
+'NL'.'AUC_Bio2TransCons'
+'NL'.'UC_MinBIOETHA_E10_Max'
+'NL'.'UC_MinBIOETHA_E10_Min'
+'NL'.'UC_MinBIOETHA_E5'
+'NO'.'AUC_Bio1TransCons'
+'NO'.'AUC_Bio2TransCons'
+'NO'.'UC_MinBIOETHA_E10_Max'
+'NO'.'UC_MinBIOETHA_E10_Min'
+'NO'.'UC_MinBIOETHA_E5'
+'PL'.'AUC_Bio1TransCons'
+'PL'.'AUC_Bio2TransCons'
+'PL'.'UC_MinBIOETHA_E10_Max'
+'PL'.'UC_MinBIOETHA_E10_Min'
+'PL'.'UC_MinBIOETHA_E5'
+'PT'.'AUC_Bio1TransCons'
+'PT'.'AUC_Bio2TransCons'
+'PT'.'UC_MinBIOETHA_E10_Max'
+'PT'.'UC_MinBIOETHA_E10_Min'
+'PT'.'UC_MinBIOETHA_E5'
+'RO'.'AUC_Bio1TransCons'
+'RO'.'AUC_Bio2TransCons'
+'RO'.'UC_MinBIOETHA_E10_Max'
+'RO'.'UC_MinBIOETHA_E10_Min'
+'RO'.'UC_MinBIOETHA_E5'
+'SE'.'AUC_Bio1TransCons'
+'SE'.'AUC_Bio2TransCons'
+'SE'.'UC_MinBIOETHA_E10_Max'
+'SE'.'UC_MinBIOETHA_E10_Min'
+'SE'.'UC_MinBIOETHA_E5'
+'SI'.'AUC_Bio1TransCons'
+'SI'.'AUC_Bio2TransCons'
+'SI'.'UC_MinBIOETHA_E10_Max'
+'SI'.'UC_MinBIOETHA_E10_Min'
+'SI'.'UC_MinBIOETHA_E5'
+'SK'.'AUC_Bio1TransCons'
+'SK'.'AUC_Bio2TransCons'
+'SK'.'UC_MinBIOETHA_E10_Max'
+'SK'.'UC_MinBIOETHA_E10_Min'
+'SK'.'UC_MinBIOETHA_E5'
+'UK'.'AUC_Bio1TransCons'
+'UK'.'AUC_Bio2TransCons'
+'UK'.'UC_MinBIOETHA_E10_Max'
+'UK'.'UC_MinBIOETHA_E10_Min'
+'UK'.'UC_MinBIOETHA_E5'
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'AcctTBiof-g1'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'AT'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'BE'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'BG'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'CH'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'CY'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'CZ'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'DE'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'DK'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'EE'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'EL'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'ES'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'FI'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'FR'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'HR'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'HU'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'IE'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'IS'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'IT'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'LT'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'LU'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'LV'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'MT'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'NL'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'NO'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'PL'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'PT'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'RO'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'SE'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'SI'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'SK'.2010.'AcctTBiof-g2'.ANNUAL -1
+'AUC_Bio2TransCons'.LHS.'UK'.2010.'AcctTBiof-g2'.ANNUAL -1
+/;
+
+PARAMETER
+
+UC_FLO ' '/
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'BLDDSL'.'BIOEMHV'.ANNUAL 0.037
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'BLDDSL'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'BLDJET'.'BIOHVO'.ANNUAL 0.044
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'BRF1_ETHAMIDO'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'BRF1_ETHSUCRI'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'AT'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'AT'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'AT'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'BE'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'BE'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'BE'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'BG'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'BG'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'BG'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'CH'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'CH'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'CH'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'CY'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'CY'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'CY'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'CZ'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'CZ'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'CZ'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'DE'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'DE'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'DE'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'DK'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'DK'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'DK'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'EE'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'EE'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'EE'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'EL'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'EL'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'EL'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'ES'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'ES'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'ES'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'FI'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'FI'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'FI'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'FR'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'FR'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'FR'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'HR'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'HR'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'HR'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'HU'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'HU'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'HU'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'IE'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'IE'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'IE'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'IS'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'IS'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'IS'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'IT'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'IT'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'IT'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'LT'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'LT'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'LT'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'LU'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'LU'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'LU'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'LV'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'LV'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'LV'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'MT'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'MT'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'MT'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'NL'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'NL'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'NL'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'NO'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'NO'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'NO'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'PL'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'PL'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'PL'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'PT'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'PT'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'PT'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'RO'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'RO'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'RO'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'SE'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'SE'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'SE'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'SI'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'SI'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'SI'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'SK'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'SK'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'SK'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'AUC_Bio2TransCons'.LHS.'UK'.2010.'BLDDSL'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'UK'.2010.'BLDJET'.'BIOBTLFTDSL'.ANNUAL 0.044
+'AUC_Bio2TransCons'.LHS.'UK'.2010.'BRF2_ETHLGC'.'BIOETHA'.ANNUAL 0.027
+'UC_MinBIOETHA_E10_Max'.LHS.'AT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'AT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'AT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'BE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'BE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'BE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'BG'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'BG'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'BG'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'CH'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'CH'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'CH'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'CY'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'CY'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'CY'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'CZ'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'CZ'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'CZ'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'DE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'DE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'DE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'DK'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'DK'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'DK'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'EE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'EE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'EE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'EL'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'EL'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'EL'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'ES'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'ES'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'ES'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'FI'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'FI'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'FI'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'FR'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'FR'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'FR'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'HR'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'HR'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'HR'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'HU'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'HU'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'HU'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'IE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'IE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'IE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'IS'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'IS'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'IS'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'IT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'IT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'IT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'LT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'LT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'LT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'LU'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'LU'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'LU'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'LV'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'LV'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'LV'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'MT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'MT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'MT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'NL'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'NL'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'NL'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'NO'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'NO'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'NO'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'PL'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'PL'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'PL'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'PT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'PT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'PT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'RO'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'RO'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'RO'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'SE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'SE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'SE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'SI'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'SI'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'SI'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'SK'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'SK'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'SK'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Max'.LHS.'UK'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.119862745098039
+'UC_MinBIOETHA_E10_Max'.LHS.'UK'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.310826086956522
+'UC_MinBIOETHA_E10_Max'.LHS.'UK'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.037
+'UC_MinBIOETHA_E10_Min'.LHS.'AT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'AT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'AT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'BE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'BE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'BE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'BG'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'BG'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'BG'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'CH'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'CH'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'CH'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'CY'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'CY'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'CY'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'CZ'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'CZ'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'CZ'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'DE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'DE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'DE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'DK'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'DK'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'DK'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'EE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'EE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'EE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'EL'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'EL'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'EL'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'ES'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'ES'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'ES'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'FI'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'FI'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'FI'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'FR'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'FR'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'FR'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'HR'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'HR'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'HR'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'HU'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'HU'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'HU'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'IE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'IE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'IE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'IS'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'IS'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'IS'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'IT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'IT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'IT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'LT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'LT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'LT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'LU'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'LU'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'LU'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'LV'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'LV'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'LV'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'MT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'MT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'MT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'NL'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'NL'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'NL'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'NO'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'NO'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'NO'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'PL'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'PL'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'PL'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'PT'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'PT'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'PT'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'RO'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'RO'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'RO'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'SE'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'SE'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'SE'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'SI'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'SI'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'SI'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'SK'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'SK'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'SK'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E10_Min'.LHS.'UK'.2010.'BLDGSLSP95E10'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E10_Min'.LHS.'UK'.2010.'BLDGSLSP95E10'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E10_Min'.LHS.'UK'.2010.'BLDGSLSP95E10'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'AT'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'AT'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'AT'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'BE'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'BE'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'BE'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'BG'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'BG'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'BG'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'CH'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'CH'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'CH'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'CY'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'CY'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'CY'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'CZ'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'CZ'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'CZ'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'DE'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'DE'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'DE'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'DK'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'DK'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'DK'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'EE'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'EE'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'EE'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'EL'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'EL'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'EL'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'ES'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'ES'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'ES'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'FI'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'FI'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'FI'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'FR'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'FR'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'FR'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'HR'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'HR'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'HR'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'HU'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'HU'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'HU'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'IE'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'IE'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'IE'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'IS'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'IS'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'IS'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'IT'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'IT'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'IT'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'LT'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'LT'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'LT'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'LU'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'LU'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'LU'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'LV'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'LV'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'LV'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'MT'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'MT'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'MT'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'NL'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'NL'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'NL'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'NO'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'NO'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'NO'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'PL'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'PL'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'PL'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'PT'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'PT'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'PT'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'RO'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'RO'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'RO'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'SE'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'SE'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'SE'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'SI'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'SI'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'SI'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'SK'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'SK'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'SK'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+'UC_MinBIOETHA_E5'.LHS.'UK'.2010.'BLDGSLSP95'.'BIOETBE'.ANNUAL 0.129862745098039
+'UC_MinBIOETHA_E5'.LHS.'UK'.2010.'BLDGSLSP95'.'BIOETHA'.ANNUAL 0.320826086956522
+'UC_MinBIOETHA_E5'.LHS.'UK'.2010.'BLDGSLSP95'.'OILGSLkt'.ANNUAL -0.027
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'AT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'BE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'BG'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'CH'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'CY'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'CZ'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'DE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'DK'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'EE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'EL'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'ES'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'FI'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'FR'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'HR'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'HU'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'IE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'IS'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'IT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'LT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'LU'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'LV'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'MT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'NL'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'NO'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'PL'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'PT'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'RO'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'SE'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'SI'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'SK'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.EXP -0.027
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'EUMrkt-BIOETHA'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'IMPBIOETH'.'BIOETHA'.ANNUAL.IMP 0.027
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'IMPDUCZ'.'AUC_Bio1TransCons-'.ANNUAL.IMP -1
+'AUC_Bio1TransCons'.LHS.'UK'.2010.'IMPDUCZ'.'AUC_Bio1TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'AT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'AT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'BE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'BE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'BG'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'BG'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'CH'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'CH'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'CY'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'CY'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'CZ'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'CZ'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'DE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'DE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'DK'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'DK'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'EE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'EE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'EL'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'EL'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'ES'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'ES'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'FI'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'FI'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'FR'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'FR'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'HR'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'HR'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'HU'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'HU'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'IE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'IE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'IS'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'IS'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'IT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'IT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'LT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'LT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'LU'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'LU'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'LV'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'LV'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'MT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'MT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'NL'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'NL'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'NO'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'NO'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'PL'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'PL'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'PT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'PT'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'RO'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'RO'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'SE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'SE'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'SI'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'SI'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'SK'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'SK'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'AUC_Bio2TransCons'.LHS.'UK'.2010.'IMPDUCZ'.'AUC_Bio2TransCons-'.ANNUAL.IMP -1
+'AUC_Bio2TransCons'.LHS.'UK'.2010.'IMPDUCZ'.'AUC_Bio2TransCons_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'AT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'AT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'BE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'BE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'BG'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'BG'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'CH'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'CH'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'CY'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'CY'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'DE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'DE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'DK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'DK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'EE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'EE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'EL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'EL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'ES'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'ES'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'FI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'FI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'FR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'FR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'HR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'HR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'HU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'HU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'IE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'IE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'IS'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'IS'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'IT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'IT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'LT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'LT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'LU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'LU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'LV'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'LV'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'MT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'MT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'NL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'NL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'NO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'NO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'PL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'PL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'PT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'PT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'RO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'RO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'SE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'SE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'SI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'SI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'SK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'SK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Max'.LHS.'UK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Max'.LHS.'UK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Max_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'AT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'AT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'BE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'BE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'BG'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'BG'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'CH'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'CH'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'CY'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'CY'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'DE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'DE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'DK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'DK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'EE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'EE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'EL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'EL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'ES'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'ES'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'FI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'FI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'FR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'FR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'HR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'HR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'HU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'HU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'IE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'IE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'IS'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'IS'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'IT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'IT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'LT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'LT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'LU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'LU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'LV'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'LV'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'MT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'MT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'NL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'NL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'NO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'NO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'PL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'PL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'PT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'PT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'RO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'RO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'SE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'SE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'SI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'SI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'SK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'SK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E10_Min'.LHS.'UK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E10_Min'.LHS.'UK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E10_Min_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'AT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'AT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'BE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'BE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'BG'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'BG'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'CH'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'CH'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'CY'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'CY'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'DE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'DE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'DK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'DK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'EE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'EE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'EL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'EL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'ES'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'ES'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'FI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'FI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'FR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'FR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'HR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'HR'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'HU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'HU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'IE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'IE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'IS'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'IS'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'IT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'IT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'LT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'LT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'LU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'LU'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'LV'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'LV'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'MT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'MT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'NL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'NL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'NO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'NO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'PL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'PL'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'PT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'PT'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'RO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'RO'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'SE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'SE'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'SI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'SI'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'SK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'SK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+'UC_MinBIOETHA_E5'.LHS.'UK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5-'.ANNUAL.IMP -1
+'UC_MinBIOETHA_E5'.LHS.'UK'.2010.'IMPDUCZ'.'UC_MinBIOETHA_E5_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSRT ' '/
+'AT'.'AUC_Bio1TransCons'.0.FX 3
+'AT'.'AUC_Bio1TransCons'.2010.FX 0
+'AT'.'AUC_Bio2TransCons'.0.FX 3
+'AT'.'AUC_Bio2TransCons'.2010.FX 0
+'AT'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'AT'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'AT'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'AT'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'AT'.'UC_MinBIOETHA_E5'.0.UP 5
+'AT'.'UC_MinBIOETHA_E5'.2010.UP 0
+'BE'.'AUC_Bio1TransCons'.0.FX 3
+'BE'.'AUC_Bio1TransCons'.2010.FX 0
+'BE'.'AUC_Bio2TransCons'.0.FX 3
+'BE'.'AUC_Bio2TransCons'.2010.FX 0
+'BE'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'BE'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'BE'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'BE'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'BE'.'UC_MinBIOETHA_E5'.0.UP 5
+'BE'.'UC_MinBIOETHA_E5'.2010.UP 0
+'BG'.'AUC_Bio1TransCons'.0.FX 3
+'BG'.'AUC_Bio1TransCons'.2010.FX 0
+'BG'.'AUC_Bio2TransCons'.0.FX 3
+'BG'.'AUC_Bio2TransCons'.2010.FX 0
+'BG'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'BG'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'BG'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'BG'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'BG'.'UC_MinBIOETHA_E5'.0.UP 5
+'BG'.'UC_MinBIOETHA_E5'.2010.UP 0
+'CH'.'AUC_Bio1TransCons'.0.FX 3
+'CH'.'AUC_Bio1TransCons'.2010.FX 0
+'CH'.'AUC_Bio2TransCons'.0.FX 3
+'CH'.'AUC_Bio2TransCons'.2010.FX 0
+'CH'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'CH'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'CH'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'CH'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'CH'.'UC_MinBIOETHA_E5'.0.UP 5
+'CH'.'UC_MinBIOETHA_E5'.2010.UP 0
+'CY'.'AUC_Bio1TransCons'.0.FX 3
+'CY'.'AUC_Bio1TransCons'.2010.FX 0
+'CY'.'AUC_Bio2TransCons'.0.FX 3
+'CY'.'AUC_Bio2TransCons'.2010.FX 0
+'CY'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'CY'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'CY'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'CY'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'CY'.'UC_MinBIOETHA_E5'.0.UP 5
+'CY'.'UC_MinBIOETHA_E5'.2010.UP 0
+'CZ'.'AUC_Bio1TransCons'.0.FX 3
+'CZ'.'AUC_Bio1TransCons'.2010.FX 0
+'CZ'.'AUC_Bio2TransCons'.0.FX 3
+'CZ'.'AUC_Bio2TransCons'.2010.FX 0
+'CZ'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'CZ'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'CZ'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'CZ'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'CZ'.'UC_MinBIOETHA_E5'.0.UP 5
+'CZ'.'UC_MinBIOETHA_E5'.2010.UP 0
+'DE'.'AUC_Bio1TransCons'.0.FX 3
+'DE'.'AUC_Bio1TransCons'.2010.FX 0
+'DE'.'AUC_Bio2TransCons'.0.FX 3
+'DE'.'AUC_Bio2TransCons'.2010.FX 0
+'DE'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'DE'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'DE'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'DE'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'DE'.'UC_MinBIOETHA_E5'.0.UP 5
+'DE'.'UC_MinBIOETHA_E5'.2010.UP 0
+'DK'.'AUC_Bio1TransCons'.0.FX 3
+'DK'.'AUC_Bio1TransCons'.2010.FX 0
+'DK'.'AUC_Bio2TransCons'.0.FX 3
+'DK'.'AUC_Bio2TransCons'.2010.FX 0
+'DK'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'DK'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'DK'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'DK'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'DK'.'UC_MinBIOETHA_E5'.0.UP 5
+'DK'.'UC_MinBIOETHA_E5'.2010.UP 0
+'EE'.'AUC_Bio1TransCons'.0.FX 3
+'EE'.'AUC_Bio1TransCons'.2010.FX 0
+'EE'.'AUC_Bio2TransCons'.0.FX 3
+'EE'.'AUC_Bio2TransCons'.2010.FX 0
+'EE'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'EE'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'EE'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'EE'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'EE'.'UC_MinBIOETHA_E5'.0.UP 5
+'EE'.'UC_MinBIOETHA_E5'.2010.UP 0
+'EL'.'AUC_Bio1TransCons'.0.FX 3
+'EL'.'AUC_Bio1TransCons'.2010.FX 0
+'EL'.'AUC_Bio2TransCons'.0.FX 3
+'EL'.'AUC_Bio2TransCons'.2010.FX 0
+'EL'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'EL'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'EL'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'EL'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'EL'.'UC_MinBIOETHA_E5'.0.UP 5
+'EL'.'UC_MinBIOETHA_E5'.2010.UP 0
+'ES'.'AUC_Bio1TransCons'.0.FX 3
+'ES'.'AUC_Bio1TransCons'.2010.FX 0
+'ES'.'AUC_Bio2TransCons'.0.FX 3
+'ES'.'AUC_Bio2TransCons'.2010.FX 0
+'ES'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'ES'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'ES'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'ES'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'ES'.'UC_MinBIOETHA_E5'.0.UP 5
+'ES'.'UC_MinBIOETHA_E5'.2010.UP 0
+'FI'.'AUC_Bio1TransCons'.0.FX 3
+'FI'.'AUC_Bio1TransCons'.2010.FX 0
+'FI'.'AUC_Bio2TransCons'.0.FX 3
+'FI'.'AUC_Bio2TransCons'.2010.FX 0
+'FI'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'FI'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'FI'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'FI'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'FI'.'UC_MinBIOETHA_E5'.0.UP 5
+'FI'.'UC_MinBIOETHA_E5'.2010.UP 0
+'FR'.'AUC_Bio1TransCons'.0.FX 3
+'FR'.'AUC_Bio1TransCons'.2010.FX 0
+'FR'.'AUC_Bio2TransCons'.0.FX 3
+'FR'.'AUC_Bio2TransCons'.2010.FX 0
+'FR'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'FR'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'FR'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'FR'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'FR'.'UC_MinBIOETHA_E5'.0.UP 5
+'FR'.'UC_MinBIOETHA_E5'.2010.UP 0
+'HR'.'AUC_Bio1TransCons'.0.FX 3
+'HR'.'AUC_Bio1TransCons'.2010.FX 0
+'HR'.'AUC_Bio2TransCons'.0.FX 3
+'HR'.'AUC_Bio2TransCons'.2010.FX 0
+'HR'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'HR'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'HR'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'HR'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'HR'.'UC_MinBIOETHA_E5'.0.UP 5
+'HR'.'UC_MinBIOETHA_E5'.2010.UP 0
+'HU'.'AUC_Bio1TransCons'.0.FX 3
+'HU'.'AUC_Bio1TransCons'.2010.FX 0
+'HU'.'AUC_Bio2TransCons'.0.FX 3
+'HU'.'AUC_Bio2TransCons'.2010.FX 0
+'HU'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'HU'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'HU'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'HU'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'HU'.'UC_MinBIOETHA_E5'.0.UP 5
+'HU'.'UC_MinBIOETHA_E5'.2010.UP 0
+'IE'.'AUC_Bio1TransCons'.0.FX 3
+'IE'.'AUC_Bio1TransCons'.2010.FX 0
+'IE'.'AUC_Bio2TransCons'.0.FX 3
+'IE'.'AUC_Bio2TransCons'.2010.FX 0
+'IE'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'IE'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'IE'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'IE'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'IE'.'UC_MinBIOETHA_E5'.0.UP 5
+'IE'.'UC_MinBIOETHA_E5'.2010.UP 0
+'IS'.'AUC_Bio1TransCons'.0.FX 3
+'IS'.'AUC_Bio1TransCons'.2010.FX 0
+'IS'.'AUC_Bio2TransCons'.0.FX 3
+'IS'.'AUC_Bio2TransCons'.2010.FX 0
+'IS'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'IS'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'IS'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'IS'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'IS'.'UC_MinBIOETHA_E5'.0.UP 5
+'IS'.'UC_MinBIOETHA_E5'.2010.UP 0
+'IT'.'AUC_Bio1TransCons'.0.FX 3
+'IT'.'AUC_Bio1TransCons'.2010.FX 0
+'IT'.'AUC_Bio2TransCons'.0.FX 3
+'IT'.'AUC_Bio2TransCons'.2010.FX 0
+'IT'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'IT'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'IT'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'IT'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'IT'.'UC_MinBIOETHA_E5'.0.UP 5
+'IT'.'UC_MinBIOETHA_E5'.2010.UP 0
+'LT'.'AUC_Bio1TransCons'.0.FX 3
+'LT'.'AUC_Bio1TransCons'.2010.FX 0
+'LT'.'AUC_Bio2TransCons'.0.FX 3
+'LT'.'AUC_Bio2TransCons'.2010.FX 0
+'LT'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'LT'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'LT'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'LT'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'LT'.'UC_MinBIOETHA_E5'.0.UP 5
+'LT'.'UC_MinBIOETHA_E5'.2010.UP 0
+'LU'.'AUC_Bio1TransCons'.0.FX 3
+'LU'.'AUC_Bio1TransCons'.2010.FX 0
+'LU'.'AUC_Bio2TransCons'.0.FX 3
+'LU'.'AUC_Bio2TransCons'.2010.FX 0
+'LU'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'LU'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'LU'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'LU'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'LU'.'UC_MinBIOETHA_E5'.0.UP 5
+'LU'.'UC_MinBIOETHA_E5'.2010.UP 0
+'LV'.'AUC_Bio1TransCons'.0.FX 3
+'LV'.'AUC_Bio1TransCons'.2010.FX 0
+'LV'.'AUC_Bio2TransCons'.0.FX 3
+'LV'.'AUC_Bio2TransCons'.2010.FX 0
+'LV'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'LV'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'LV'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'LV'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'LV'.'UC_MinBIOETHA_E5'.0.UP 5
+'LV'.'UC_MinBIOETHA_E5'.2010.UP 0
+'MT'.'AUC_Bio1TransCons'.0.FX 3
+'MT'.'AUC_Bio1TransCons'.2010.FX 0
+'MT'.'AUC_Bio2TransCons'.0.FX 3
+'MT'.'AUC_Bio2TransCons'.2010.FX 0
+'MT'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'MT'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'MT'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'MT'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'MT'.'UC_MinBIOETHA_E5'.0.UP 5
+'MT'.'UC_MinBIOETHA_E5'.2010.UP 0
+'NL'.'AUC_Bio1TransCons'.0.FX 3
+'NL'.'AUC_Bio1TransCons'.2010.FX 0
+'NL'.'AUC_Bio2TransCons'.0.FX 3
+'NL'.'AUC_Bio2TransCons'.2010.FX 0
+'NL'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'NL'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'NL'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'NL'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'NL'.'UC_MinBIOETHA_E5'.0.UP 5
+'NL'.'UC_MinBIOETHA_E5'.2010.UP 0
+'NO'.'AUC_Bio1TransCons'.0.FX 3
+'NO'.'AUC_Bio1TransCons'.2010.FX 0
+'NO'.'AUC_Bio2TransCons'.0.FX 3
+'NO'.'AUC_Bio2TransCons'.2010.FX 0
+'NO'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'NO'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'NO'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'NO'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'NO'.'UC_MinBIOETHA_E5'.0.UP 5
+'NO'.'UC_MinBIOETHA_E5'.2010.UP 0
+'PL'.'AUC_Bio1TransCons'.0.FX 3
+'PL'.'AUC_Bio1TransCons'.2010.FX 0
+'PL'.'AUC_Bio2TransCons'.0.FX 3
+'PL'.'AUC_Bio2TransCons'.2010.FX 0
+'PL'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'PL'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'PL'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'PL'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'PL'.'UC_MinBIOETHA_E5'.0.UP 5
+'PL'.'UC_MinBIOETHA_E5'.2010.UP 0
+'PT'.'AUC_Bio1TransCons'.0.FX 3
+'PT'.'AUC_Bio1TransCons'.2010.FX 0
+'PT'.'AUC_Bio2TransCons'.0.FX 3
+'PT'.'AUC_Bio2TransCons'.2010.FX 0
+'PT'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'PT'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'PT'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'PT'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'PT'.'UC_MinBIOETHA_E5'.0.UP 5
+'PT'.'UC_MinBIOETHA_E5'.2010.UP 0
+'RO'.'AUC_Bio1TransCons'.0.FX 3
+'RO'.'AUC_Bio1TransCons'.2010.FX 0
+'RO'.'AUC_Bio2TransCons'.0.FX 3
+'RO'.'AUC_Bio2TransCons'.2010.FX 0
+'RO'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'RO'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'RO'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'RO'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'RO'.'UC_MinBIOETHA_E5'.0.UP 5
+'RO'.'UC_MinBIOETHA_E5'.2010.UP 0
+'SE'.'AUC_Bio1TransCons'.0.FX 3
+'SE'.'AUC_Bio1TransCons'.2010.FX 0
+'SE'.'AUC_Bio2TransCons'.0.FX 3
+'SE'.'AUC_Bio2TransCons'.2010.FX 0
+'SE'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'SE'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'SE'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'SE'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'SE'.'UC_MinBIOETHA_E5'.0.UP 5
+'SE'.'UC_MinBIOETHA_E5'.2010.UP 0
+'SI'.'AUC_Bio1TransCons'.0.FX 3
+'SI'.'AUC_Bio1TransCons'.2010.FX 0
+'SI'.'AUC_Bio2TransCons'.0.FX 3
+'SI'.'AUC_Bio2TransCons'.2010.FX 0
+'SI'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'SI'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'SI'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'SI'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'SI'.'UC_MinBIOETHA_E5'.0.UP 5
+'SI'.'UC_MinBIOETHA_E5'.2010.UP 0
+'SK'.'AUC_Bio1TransCons'.0.FX 3
+'SK'.'AUC_Bio1TransCons'.2010.FX 0
+'SK'.'AUC_Bio2TransCons'.0.FX 3
+'SK'.'AUC_Bio2TransCons'.2010.FX 0
+'SK'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'SK'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'SK'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'SK'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'SK'.'UC_MinBIOETHA_E5'.0.UP 5
+'SK'.'UC_MinBIOETHA_E5'.2010.UP 0
+'UK'.'AUC_Bio1TransCons'.0.FX 3
+'UK'.'AUC_Bio1TransCons'.2010.FX 0
+'UK'.'AUC_Bio2TransCons'.0.FX 3
+'UK'.'AUC_Bio2TransCons'.2010.FX 0
+'UK'.'UC_MinBIOETHA_E10_Max'.0.UP 5
+'UK'.'UC_MinBIOETHA_E10_Max'.2010.UP 0
+'UK'.'UC_MinBIOETHA_E10_Min'.0.LO 5
+'UK'.'UC_MinBIOETHA_E10_Min'.2010.LO 0
+'UK'.'UC_MinBIOETHA_E5'.0.UP 5
+'UK'.'UC_MinBIOETHA_E5'.2010.UP 0
+/;
+
+

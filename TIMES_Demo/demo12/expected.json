@@ -1,0 +1,193 @@
+{
+ "case": "demo12",
+ "made": "2026-11-08",
+ "objective": 23960685.737007417,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CBC"
+ },
+ "gams": {
+  "rows": 3233,
+  "columns": 4485,
+  "nonzeros": 18375,
+  "objective": 23960685.737007417,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CBC",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 3233,
+  "columns": 4485,
+  "nonzeros": 18375,
+  "objective": 23960685.737007767
+ },
+ "row_counts": {
+  "EQ_OBJVAR": 2,
+  "EQ_OBJSALV": 2,
+  "EQ_OBJFIX": 2,
+  "EQG_COMBAL": 876,
+  "EQL_CAPACT": 1232,
+  "EQL_ACTBND": 24,
+  "EQ_IRE": 54,
+  "EQE_COMPRD": 48,
+  "EQ_OBJ": 1,
+  "EQE_CPT": 18,
+  "EQ_PEAK": 24,
+  "EQG_INSHR": 322,
+  "EQE_INSHR": 238,
+  "EQE_COMBAL": 120,
+  "EQG_OUTSHR": 70,
+  "EQ_OBJINV": 2,
+  "EQE_ACTEFF": 132,
+  "EQE_UCRT": 8,
+  "EQE_UCRTS": 6,
+  "EQ_CUMFLO": 16,
+  "EQ_ACTFLO": 24,
+  "EQE_OUTSHR": 12
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1960",
+  "CTST": "",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "MOD",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "demo12",
+  "SCENARIO_NAME": "bounds-uc_wsets",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "SYSPREFIX": "",
+  "TMP": "0",
+  "VAR": "VARIABLE OBJZ",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "demo12_ts.dd",
+   "bytes": 111,
+   "sha256_16": "88865dabecc777fe"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 111836,
+   "sha256_16": "e488f886ee5d517c"
+  },
+  {
+   "name": "newtechs.dd",
+   "bytes": 37737,
+   "sha256_16": "9c1d4e921260e724"
+  },
+  {
+   "name": "trade_param.dd",
+   "bytes": 248,
+   "sha256_16": "7fbbf12506e9b9c5"
+  },
+  {
+   "name": "dem_ref.dd",
+   "bytes": 25528,
+   "sha256_16": "42466bdc4c3e2eaa"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 6460,
+   "sha256_16": "0e43c1494803517b"
+  },
+  {
+   "name": "peak_rsv.dd",
+   "bytes": 234,
+   "sha256_16": "552bcfdefa6ffdbe"
+  },
+  {
+   "name": "refinery.dd",
+   "bytes": 1033,
+   "sha256_16": "9f47ccd14d0fbf97"
+  },
+  {
+   "name": "demproj_dtcar.dd",
+   "bytes": 436,
+   "sha256_16": "598d259ee8747baf"
+  },
+  {
+   "name": "uc_nuc_maxcap.dd",
+   "bytes": 1050,
+   "sha256_16": "e1f155d9e1d2f7a7"
+  },
+  {
+   "name": "bounds-uc_wsets.dd",
+   "bytes": 2273,
+   "sha256_16": "53d679b6752a3f3f"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 3233   GAMS 3233   only here 0   only in GAMS 0",
+    "columns    here 4485   GAMS 4485   only here 0   only in GAMS 0",
+    "entries    here 18375   GAMS 18375   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 8.28e-16 (tolerance 1.0e-9); 0 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 23960685.737007767,
+   "times_in_gams_objective": 23960685.737007417,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 0.089,
+   "relative_difference": 1.4614660527622924e-14
+  },
+  "regions": 2,
+  "highs": {
+   "status": "Optimal",
+   "objective": 23960685.737007905,
+   "version": "1.15.1",
+   "threads": 24,
+   "method": "simplex",
+   "solve_seconds": 0.1,
+   "attempts": [
+    {
+     "options": "(default)",
+     "status": "Optimal"
+    }
+   ],
+   "relative_difference_from_cplex": 2.0367239671474503e-14
+  },
+  "command": "python TIMES.py run TIMES_Demo/demo12",
+  "build": {
+   "timesos_seconds": 8.3,
+   "timesos_peak_gb": 0.78,
+   "times_in_gams_seconds": 0.4,
+   "times_in_gams_peak_gb": 0.01,
+   "time_ratio": 20.75,
+   "memory_ratio": 57.05142857142857,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

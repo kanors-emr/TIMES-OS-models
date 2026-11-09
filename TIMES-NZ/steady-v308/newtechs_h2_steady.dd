@@ -1,0 +1,183 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'STEADY-V308'
+$SET SCENARIO_NAME 'newtechs_h2_steady'
+
+
+SET UNITS_COM
+
+/
+'PJ'
+/;
+
+SET UNITS_CAP
+
+/
+'PJA'
+/;
+
+SET UNITS_ACT
+
+/
+'PJ'
+/;
+
+SET COM_GMAP
+
+/
+'NI'.'H2_ALK_NRGI'.'ELCDD'
+'NI'.'H2_ALK_NRGO'.'H2R'
+'NI'.'H2_PEM_NRGI'.'ELCDD'
+'NI'.'H2_PEM_NRGO'.'H2R'
+'SI'.'H2_ALK_NRGI'.'ELCDD'
+'SI'.'H2_ALK_NRGO'.'H2R'
+'SI'.'H2_PEM_NRGI'.'ELCDD'
+'SI'.'H2_PEM_NRGO'.'H2R'
+/;
+
+SET COM_TMAP
+
+/
+'NI'.'NRG'.'H2R'
+'SI'.'NRG'.'H2R'
+/;
+
+SET COM_UNIT
+
+/
+'NI'.'H2R'.'PJ'
+'SI'.'H2R'.'PJ'
+/;
+
+SET PRC
+
+/
+'H2_ALK'
+'H2_PEM'
+/;
+
+SET PRC_MAP
+
+/
+'NI'.'PRE'.'H2_ALK'
+'NI'.'PRE'.'H2_PEM'
+'SI'.'PRE'.'H2_ALK'
+'SI'.'PRE'.'H2_PEM'
+/;
+
+SET PRC_TSL
+
+/
+'NI'.'H2_ALK'.DAYNITE
+'NI'.'H2_PEM'.DAYNITE
+'SI'.'H2_ALK'.DAYNITE
+'SI'.'H2_PEM'.DAYNITE
+/;
+
+SET PRC_ACTUNT
+
+/
+'NI'.'H2_ALK'.'H2_ALK_NRGO'.'PJ'
+'NI'.'H2_PEM'.'H2_PEM_NRGO'.'PJ'
+'SI'.'H2_ALK'.'H2_ALK_NRGO'.'PJ'
+'SI'.'H2_PEM'.'H2_PEM_NRGO'.'PJ'
+/;
+
+SET TOP
+
+/
+'NI'.'H2_ALK'.'ELCDD'.IN
+'NI'.'H2_ALK'.'H2R'.OUT
+'NI'.'H2_PEM'.'ELCDD'.IN
+'NI'.'H2_PEM'.'H2R'.OUT
+'SI'.'H2_ALK'.'ELCDD'.IN
+'SI'.'H2_ALK'.'H2R'.OUT
+'SI'.'H2_PEM'.'ELCDD'.IN
+'SI'.'H2_PEM'.'H2R'.OUT
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'H2R'.'NI'.'H2R'.'IMPNRGZ'
+'IMPEXP'.'H2R'.'SI'.'H2R'.'IMPNRGZ'
+/;
+
+SET COM_LIM
+
+/
+'NI'.'H2R'.FX
+'SI'.'H2R'.FX
+/;
+
+SET PRC_DESC
+
+/
+'NI'.'H2_ALK' 'H2_ALK'
+'NI'.'H2_PEM' 'H2_PEM'
+'SI'.'H2_ALK' 'H2_ALK'
+'SI'.'H2_PEM' 'H2_PEM'
+/;
+
+SET COM_DESC
+
+/
+'NI'.'H2R' 'H2R'
+'SI'.'H2R' 'H2R'
+/;
+
+PARAMETER
+
+ACT_EFF ' '/
+'NI'.2023.'H2_ALK'.'ACT'.ANNUAL 0.72
+'NI'.2023.'H2_PEM'.'ACT'.ANNUAL 0.66
+'SI'.2023.'H2_ALK'.'ACT'.ANNUAL 0.72
+'SI'.2023.'H2_PEM'.'ACT'.ANNUAL 0.66
+/;
+
+PARAMETER
+
+NCAP_AFA ' '/
+'NI'.2023.'H2_ALK'.UP 0.8
+'NI'.2023.'H2_PEM'.UP 0.8
+'SI'.2023.'H2_ALK'.UP 0.8
+'SI'.2023.'H2_PEM'.UP 0.8
+/;
+
+PARAMETER
+
+NCAP_COST ' '/
+'NI'.2023.'H2_ALK'.'MioNZDollar' 2862
+'NI'.2023.'H2_PEM'.'MioNZDollar' 3004
+'NI'.2035.'H2_ALK'.'MioNZDollar' 2120
+'NI'.2035.'H2_PEM'.'MioNZDollar' 2225
+'NI'.2050.'H2_ALK'.'MioNZDollar' 1824
+'NI'.2050.'H2_PEM'.'MioNZDollar' 1732
+'SI'.2023.'H2_ALK'.'MioNZDollar' 2862
+'SI'.2023.'H2_PEM'.'MioNZDollar' 3004
+'SI'.2035.'H2_ALK'.'MioNZDollar' 2120
+'SI'.2035.'H2_PEM'.'MioNZDollar' 2225
+'SI'.2050.'H2_ALK'.'MioNZDollar' 1824
+'SI'.2050.'H2_PEM'.'MioNZDollar' 1732
+/;
+
+PARAMETER
+
+NCAP_FOM ' '/
+'NI'.2023.'H2_ALK'.'MioNZDollar' 49.2
+'NI'.2023.'H2_PEM'.'MioNZDollar' 52.6
+'SI'.2023.'H2_ALK'.'MioNZDollar' 49.2
+'SI'.2023.'H2_PEM'.'MioNZDollar' 52.6
+/;
+
+PARAMETER
+
+NCAP_TLIFE ' '/
+'NI'.2023.'H2_ALK' 25
+'NI'.2023.'H2_PEM' 25
+'SI'.2023.'H2_ALK' 25
+'SI'.2023.'H2_PEM' 25
+/;
+
+

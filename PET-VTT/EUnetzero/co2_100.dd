@@ -1,0 +1,925 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'EUNETZERO'
+$SET SCENARIO_NAME 'co2_100'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'AT'.'NRG'.'CO2TargetAllSectors2050-'
+'AT'.'NRG'.'CO2TargetAllSectors2050_'
+'AT'.'NRG'.'CO2TargetEU272050-'
+'AT'.'NRG'.'CO2TargetEU272050_'
+'BE'.'NRG'.'CO2TargetAllSectors2050-'
+'BE'.'NRG'.'CO2TargetAllSectors2050_'
+'BE'.'NRG'.'CO2TargetEU272050-'
+'BE'.'NRG'.'CO2TargetEU272050_'
+'BG'.'NRG'.'CO2TargetAllSectors2050-'
+'BG'.'NRG'.'CO2TargetAllSectors2050_'
+'BG'.'NRG'.'CO2TargetEU272050-'
+'BG'.'NRG'.'CO2TargetEU272050_'
+'CH'.'NRG'.'CO2TargetAllSectors2050-'
+'CH'.'NRG'.'CO2TargetAllSectors2050_'
+'CH'.'NRG'.'CO2TargetEU272050-'
+'CH'.'NRG'.'CO2TargetEU272050_'
+'CY'.'NRG'.'CO2TargetAllSectors2050-'
+'CY'.'NRG'.'CO2TargetAllSectors2050_'
+'CY'.'NRG'.'CO2TargetEU272050-'
+'CY'.'NRG'.'CO2TargetEU272050_'
+'CZ'.'NRG'.'CO2TargetAllSectors2050-'
+'CZ'.'NRG'.'CO2TargetAllSectors2050_'
+'CZ'.'NRG'.'CO2TargetEU272050-'
+'CZ'.'NRG'.'CO2TargetEU272050_'
+'DE'.'NRG'.'CO2TargetAllSectors2050-'
+'DE'.'NRG'.'CO2TargetAllSectors2050_'
+'DE'.'NRG'.'CO2TargetEU272050-'
+'DE'.'NRG'.'CO2TargetEU272050_'
+'DK'.'NRG'.'CO2TargetAllSectors2050-'
+'DK'.'NRG'.'CO2TargetAllSectors2050_'
+'DK'.'NRG'.'CO2TargetEU272050-'
+'DK'.'NRG'.'CO2TargetEU272050_'
+'EE'.'NRG'.'CO2TargetAllSectors2050-'
+'EE'.'NRG'.'CO2TargetAllSectors2050_'
+'EE'.'NRG'.'CO2TargetEU272050-'
+'EE'.'NRG'.'CO2TargetEU272050_'
+'EL'.'NRG'.'CO2TargetAllSectors2050-'
+'EL'.'NRG'.'CO2TargetAllSectors2050_'
+'EL'.'NRG'.'CO2TargetEU272050-'
+'EL'.'NRG'.'CO2TargetEU272050_'
+'ES'.'NRG'.'CO2TargetAllSectors2050-'
+'ES'.'NRG'.'CO2TargetAllSectors2050_'
+'ES'.'NRG'.'CO2TargetEU272050-'
+'ES'.'NRG'.'CO2TargetEU272050_'
+'FI'.'NRG'.'CO2TargetAllSectors2050-'
+'FI'.'NRG'.'CO2TargetAllSectors2050_'
+'FI'.'NRG'.'CO2TargetEU272050-'
+'FI'.'NRG'.'CO2TargetEU272050_'
+'FR'.'NRG'.'CO2TargetAllSectors2050-'
+'FR'.'NRG'.'CO2TargetAllSectors2050_'
+'FR'.'NRG'.'CO2TargetEU272050-'
+'FR'.'NRG'.'CO2TargetEU272050_'
+'HR'.'NRG'.'CO2TargetAllSectors2050-'
+'HR'.'NRG'.'CO2TargetAllSectors2050_'
+'HR'.'NRG'.'CO2TargetEU272050-'
+'HR'.'NRG'.'CO2TargetEU272050_'
+'HU'.'NRG'.'CO2TargetAllSectors2050-'
+'HU'.'NRG'.'CO2TargetAllSectors2050_'
+'HU'.'NRG'.'CO2TargetEU272050-'
+'HU'.'NRG'.'CO2TargetEU272050_'
+'IE'.'NRG'.'CO2TargetAllSectors2050-'
+'IE'.'NRG'.'CO2TargetAllSectors2050_'
+'IE'.'NRG'.'CO2TargetEU272050-'
+'IE'.'NRG'.'CO2TargetEU272050_'
+'IS'.'NRG'.'CO2TargetAllSectors2050-'
+'IS'.'NRG'.'CO2TargetAllSectors2050_'
+'IS'.'NRG'.'CO2TargetEU272050-'
+'IS'.'NRG'.'CO2TargetEU272050_'
+'IT'.'NRG'.'CO2TargetAllSectors2050-'
+'IT'.'NRG'.'CO2TargetAllSectors2050_'
+'IT'.'NRG'.'CO2TargetEU272050-'
+'IT'.'NRG'.'CO2TargetEU272050_'
+'LT'.'NRG'.'CO2TargetAllSectors2050-'
+'LT'.'NRG'.'CO2TargetAllSectors2050_'
+'LT'.'NRG'.'CO2TargetEU272050-'
+'LT'.'NRG'.'CO2TargetEU272050_'
+'LU'.'NRG'.'CO2TargetAllSectors2050-'
+'LU'.'NRG'.'CO2TargetAllSectors2050_'
+'LU'.'NRG'.'CO2TargetEU272050-'
+'LU'.'NRG'.'CO2TargetEU272050_'
+'LV'.'NRG'.'CO2TargetAllSectors2050-'
+'LV'.'NRG'.'CO2TargetAllSectors2050_'
+'LV'.'NRG'.'CO2TargetEU272050-'
+'LV'.'NRG'.'CO2TargetEU272050_'
+'MT'.'NRG'.'CO2TargetAllSectors2050-'
+'MT'.'NRG'.'CO2TargetAllSectors2050_'
+'MT'.'NRG'.'CO2TargetEU272050-'
+'MT'.'NRG'.'CO2TargetEU272050_'
+'NL'.'NRG'.'CO2TargetAllSectors2050-'
+'NL'.'NRG'.'CO2TargetAllSectors2050_'
+'NL'.'NRG'.'CO2TargetEU272050-'
+'NL'.'NRG'.'CO2TargetEU272050_'
+'NO'.'NRG'.'CO2TargetAllSectors2050-'
+'NO'.'NRG'.'CO2TargetAllSectors2050_'
+'NO'.'NRG'.'CO2TargetEU272050-'
+'NO'.'NRG'.'CO2TargetEU272050_'
+'PL'.'NRG'.'CO2TargetAllSectors2050-'
+'PL'.'NRG'.'CO2TargetAllSectors2050_'
+'PL'.'NRG'.'CO2TargetEU272050-'
+'PL'.'NRG'.'CO2TargetEU272050_'
+'PT'.'NRG'.'CO2TargetAllSectors2050-'
+'PT'.'NRG'.'CO2TargetAllSectors2050_'
+'PT'.'NRG'.'CO2TargetEU272050-'
+'PT'.'NRG'.'CO2TargetEU272050_'
+'RO'.'NRG'.'CO2TargetAllSectors2050-'
+'RO'.'NRG'.'CO2TargetAllSectors2050_'
+'RO'.'NRG'.'CO2TargetEU272050-'
+'RO'.'NRG'.'CO2TargetEU272050_'
+'SE'.'NRG'.'CO2TargetAllSectors2050-'
+'SE'.'NRG'.'CO2TargetAllSectors2050_'
+'SE'.'NRG'.'CO2TargetEU272050-'
+'SE'.'NRG'.'CO2TargetEU272050_'
+'SI'.'NRG'.'CO2TargetAllSectors2050-'
+'SI'.'NRG'.'CO2TargetAllSectors2050_'
+'SI'.'NRG'.'CO2TargetEU272050-'
+'SI'.'NRG'.'CO2TargetEU272050_'
+'SK'.'NRG'.'CO2TargetAllSectors2050-'
+'SK'.'NRG'.'CO2TargetAllSectors2050_'
+'SK'.'NRG'.'CO2TargetEU272050-'
+'SK'.'NRG'.'CO2TargetEU272050_'
+'UK'.'NRG'.'CO2TargetAllSectors2050-'
+'UK'.'NRG'.'CO2TargetAllSectors2050_'
+'UK'.'NRG'.'CO2TargetEU272050-'
+'UK'.'NRG'.'CO2TargetEU272050_'
+/;
+
+SET COM_UNIT
+
+/
+'AT'.'CO2TargetAllSectors2050-'.'UCU'
+'AT'.'CO2TargetAllSectors2050_'.'UCU'
+'AT'.'CO2TargetEU272050-'.'UCU'
+'AT'.'CO2TargetEU272050_'.'UCU'
+'BE'.'CO2TargetAllSectors2050-'.'UCU'
+'BE'.'CO2TargetAllSectors2050_'.'UCU'
+'BE'.'CO2TargetEU272050-'.'UCU'
+'BE'.'CO2TargetEU272050_'.'UCU'
+'BG'.'CO2TargetAllSectors2050-'.'UCU'
+'BG'.'CO2TargetAllSectors2050_'.'UCU'
+'BG'.'CO2TargetEU272050-'.'UCU'
+'BG'.'CO2TargetEU272050_'.'UCU'
+'CH'.'CO2TargetAllSectors2050-'.'UCU'
+'CH'.'CO2TargetAllSectors2050_'.'UCU'
+'CH'.'CO2TargetEU272050-'.'UCU'
+'CH'.'CO2TargetEU272050_'.'UCU'
+'CY'.'CO2TargetAllSectors2050-'.'UCU'
+'CY'.'CO2TargetAllSectors2050_'.'UCU'
+'CY'.'CO2TargetEU272050-'.'UCU'
+'CY'.'CO2TargetEU272050_'.'UCU'
+'CZ'.'CO2TargetAllSectors2050-'.'UCU'
+'CZ'.'CO2TargetAllSectors2050_'.'UCU'
+'CZ'.'CO2TargetEU272050-'.'UCU'
+'CZ'.'CO2TargetEU272050_'.'UCU'
+'DE'.'CO2TargetAllSectors2050-'.'UCU'
+'DE'.'CO2TargetAllSectors2050_'.'UCU'
+'DE'.'CO2TargetEU272050-'.'UCU'
+'DE'.'CO2TargetEU272050_'.'UCU'
+'DK'.'CO2TargetAllSectors2050-'.'UCU'
+'DK'.'CO2TargetAllSectors2050_'.'UCU'
+'DK'.'CO2TargetEU272050-'.'UCU'
+'DK'.'CO2TargetEU272050_'.'UCU'
+'EE'.'CO2TargetAllSectors2050-'.'UCU'
+'EE'.'CO2TargetAllSectors2050_'.'UCU'
+'EE'.'CO2TargetEU272050-'.'UCU'
+'EE'.'CO2TargetEU272050_'.'UCU'
+'EL'.'CO2TargetAllSectors2050-'.'UCU'
+'EL'.'CO2TargetAllSectors2050_'.'UCU'
+'EL'.'CO2TargetEU272050-'.'UCU'
+'EL'.'CO2TargetEU272050_'.'UCU'
+'ES'.'CO2TargetAllSectors2050-'.'UCU'
+'ES'.'CO2TargetAllSectors2050_'.'UCU'
+'ES'.'CO2TargetEU272050-'.'UCU'
+'ES'.'CO2TargetEU272050_'.'UCU'
+'FI'.'CO2TargetAllSectors2050-'.'UCU'
+'FI'.'CO2TargetAllSectors2050_'.'UCU'
+'FI'.'CO2TargetEU272050-'.'UCU'
+'FI'.'CO2TargetEU272050_'.'UCU'
+'FR'.'CO2TargetAllSectors2050-'.'UCU'
+'FR'.'CO2TargetAllSectors2050_'.'UCU'
+'FR'.'CO2TargetEU272050-'.'UCU'
+'FR'.'CO2TargetEU272050_'.'UCU'
+'HR'.'CO2TargetAllSectors2050-'.'UCU'
+'HR'.'CO2TargetAllSectors2050_'.'UCU'
+'HR'.'CO2TargetEU272050-'.'UCU'
+'HR'.'CO2TargetEU272050_'.'UCU'
+'HU'.'CO2TargetAllSectors2050-'.'UCU'
+'HU'.'CO2TargetAllSectors2050_'.'UCU'
+'HU'.'CO2TargetEU272050-'.'UCU'
+'HU'.'CO2TargetEU272050_'.'UCU'
+'IE'.'CO2TargetAllSectors2050-'.'UCU'
+'IE'.'CO2TargetAllSectors2050_'.'UCU'
+'IE'.'CO2TargetEU272050-'.'UCU'
+'IE'.'CO2TargetEU272050_'.'UCU'
+'IS'.'CO2TargetAllSectors2050-'.'UCU'
+'IS'.'CO2TargetAllSectors2050_'.'UCU'
+'IS'.'CO2TargetEU272050-'.'UCU'
+'IS'.'CO2TargetEU272050_'.'UCU'
+'IT'.'CO2TargetAllSectors2050-'.'UCU'
+'IT'.'CO2TargetAllSectors2050_'.'UCU'
+'IT'.'CO2TargetEU272050-'.'UCU'
+'IT'.'CO2TargetEU272050_'.'UCU'
+'LT'.'CO2TargetAllSectors2050-'.'UCU'
+'LT'.'CO2TargetAllSectors2050_'.'UCU'
+'LT'.'CO2TargetEU272050-'.'UCU'
+'LT'.'CO2TargetEU272050_'.'UCU'
+'LU'.'CO2TargetAllSectors2050-'.'UCU'
+'LU'.'CO2TargetAllSectors2050_'.'UCU'
+'LU'.'CO2TargetEU272050-'.'UCU'
+'LU'.'CO2TargetEU272050_'.'UCU'
+'LV'.'CO2TargetAllSectors2050-'.'UCU'
+'LV'.'CO2TargetAllSectors2050_'.'UCU'
+'LV'.'CO2TargetEU272050-'.'UCU'
+'LV'.'CO2TargetEU272050_'.'UCU'
+'MT'.'CO2TargetAllSectors2050-'.'UCU'
+'MT'.'CO2TargetAllSectors2050_'.'UCU'
+'MT'.'CO2TargetEU272050-'.'UCU'
+'MT'.'CO2TargetEU272050_'.'UCU'
+'NL'.'CO2TargetAllSectors2050-'.'UCU'
+'NL'.'CO2TargetAllSectors2050_'.'UCU'
+'NL'.'CO2TargetEU272050-'.'UCU'
+'NL'.'CO2TargetEU272050_'.'UCU'
+'NO'.'CO2TargetAllSectors2050-'.'UCU'
+'NO'.'CO2TargetAllSectors2050_'.'UCU'
+'NO'.'CO2TargetEU272050-'.'UCU'
+'NO'.'CO2TargetEU272050_'.'UCU'
+'PL'.'CO2TargetAllSectors2050-'.'UCU'
+'PL'.'CO2TargetAllSectors2050_'.'UCU'
+'PL'.'CO2TargetEU272050-'.'UCU'
+'PL'.'CO2TargetEU272050_'.'UCU'
+'PT'.'CO2TargetAllSectors2050-'.'UCU'
+'PT'.'CO2TargetAllSectors2050_'.'UCU'
+'PT'.'CO2TargetEU272050-'.'UCU'
+'PT'.'CO2TargetEU272050_'.'UCU'
+'RO'.'CO2TargetAllSectors2050-'.'UCU'
+'RO'.'CO2TargetAllSectors2050_'.'UCU'
+'RO'.'CO2TargetEU272050-'.'UCU'
+'RO'.'CO2TargetEU272050_'.'UCU'
+'SE'.'CO2TargetAllSectors2050-'.'UCU'
+'SE'.'CO2TargetAllSectors2050_'.'UCU'
+'SE'.'CO2TargetEU272050-'.'UCU'
+'SE'.'CO2TargetEU272050_'.'UCU'
+'SI'.'CO2TargetAllSectors2050-'.'UCU'
+'SI'.'CO2TargetAllSectors2050_'.'UCU'
+'SI'.'CO2TargetEU272050-'.'UCU'
+'SI'.'CO2TargetEU272050_'.'UCU'
+'SK'.'CO2TargetAllSectors2050-'.'UCU'
+'SK'.'CO2TargetAllSectors2050_'.'UCU'
+'SK'.'CO2TargetEU272050-'.'UCU'
+'SK'.'CO2TargetEU272050_'.'UCU'
+'UK'.'CO2TargetAllSectors2050-'.'UCU'
+'UK'.'CO2TargetAllSectors2050_'.'UCU'
+'UK'.'CO2TargetEU272050-'.'UCU'
+'UK'.'CO2TargetEU272050_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'CO2TargetAllSectors2050-'.'AT'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'BE'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'BG'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'CH'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'CY'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'CZ'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'DE'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'DK'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'EE'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'EL'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'ES'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'FI'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'FR'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'HR'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'HU'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'IE'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'IS'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'IT'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'LT'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'LU'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'LV'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'MT'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'NL'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'NO'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'PL'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'PT'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'RO'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'SE'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'SI'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'SK'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050-'.'UK'.'CO2TargetAllSectors2050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'AT'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'BE'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'BG'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'CH'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'CY'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'CZ'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'DE'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'DK'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'EE'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'EL'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'ES'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'FI'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'FR'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'HR'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'HU'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'IE'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'IS'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'IT'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'LT'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'LU'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'LV'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'MT'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'NL'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'NO'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'PL'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'PT'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'RO'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'SE'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'SI'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'SK'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetAllSectors2050_'.'UK'.'CO2TargetAllSectors2050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'AT'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'BE'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'BG'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'CY'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'CZ'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'DE'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'DK'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'EE'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'EL'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'ES'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'FI'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'FR'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'HR'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'HU'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'IE'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'IT'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'LT'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'LU'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'LV'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'MT'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'NL'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'PL'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'PT'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'RO'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'SE'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'SI'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050-'.'SK'.'CO2TargetEU272050-'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'AT'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'BE'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'BG'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'CY'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'CZ'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'DE'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'DK'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'EE'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'EL'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'ES'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'FI'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'FR'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'HR'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'HU'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'IE'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'IT'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'LT'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'LU'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'LV'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'MT'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'NL'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'PL'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'PT'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'RO'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'SE'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'SI'.'CO2TargetEU272050_'.'IMPDUCZ'
+'IMPEXP'.'CO2TargetEU272050_'.'SK'.'CO2TargetEU272050_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'AT'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'AT'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'AT'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'AT'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'BE'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'BE'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'BE'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'BE'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'BG'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'BG'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'BG'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'BG'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'CH'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'CH'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'CH'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'CH'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'CY'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'CY'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'CY'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'CY'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'CZ'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'CZ'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'CZ'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'CZ'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'DE'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'DE'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'DE'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'DE'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'DK'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'DK'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'DK'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'DK'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'EE'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'EE'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'EE'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'EE'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'EL'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'EL'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'EL'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'EL'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'ES'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'ES'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'ES'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'ES'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'FI'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'FI'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'FI'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'FI'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'FR'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'FR'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'FR'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'FR'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'HR'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'HR'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'HR'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'HR'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'HU'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'HU'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'HU'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'HU'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'IE'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'IE'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'IE'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'IE'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'IS'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'IS'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'IS'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'IS'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'IT'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'IT'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'IT'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'IT'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'LT'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'LT'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'LT'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'LT'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'LU'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'LU'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'LU'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'LU'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'LV'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'LV'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'LV'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'LV'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'MT'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'MT'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'MT'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'MT'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'NL'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'NL'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'NL'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'NL'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'NO'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'NO'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'NO'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'NO'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'PL'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'PL'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'PL'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'PL'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'PT'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'PT'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'PT'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'PT'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'RO'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'RO'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'RO'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'RO'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'SE'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'SE'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'SE'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'SE'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'SI'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'SI'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'SI'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'SI'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'SK'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'SK'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'SK'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'SK'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+'UK'.'CO2TargetAllSectors2050-' 'Negative dummy var for UC: CO2TargetAllSectors2050'
+'UK'.'CO2TargetAllSectors2050_' 'Positive dummy var for UC: CO2TargetAllSectors2050'
+'UK'.'CO2TargetEU272050-' 'Negative dummy var for UC: CO2TargetEU272050'
+'UK'.'CO2TargetEU272050_' 'Positive dummy var for UC: CO2TargetEU272050'
+/;
+
+SET UC_R_SUM
+
+/
+'AT'.'CO2TargetAllSectors2050'
+'AT'.'CO2TargetEU272050'
+'BE'.'CO2TargetAllSectors2050'
+'BE'.'CO2TargetEU272050'
+'BG'.'CO2TargetAllSectors2050'
+'BG'.'CO2TargetEU272050'
+'CH'.'CO2TargetAllSectors2050'
+'CY'.'CO2TargetAllSectors2050'
+'CY'.'CO2TargetEU272050'
+'CZ'.'CO2TargetAllSectors2050'
+'CZ'.'CO2TargetEU272050'
+'DE'.'CO2TargetAllSectors2050'
+'DE'.'CO2TargetEU272050'
+'DK'.'CO2TargetAllSectors2050'
+'DK'.'CO2TargetEU272050'
+'EE'.'CO2TargetAllSectors2050'
+'EE'.'CO2TargetEU272050'
+'EL'.'CO2TargetAllSectors2050'
+'EL'.'CO2TargetEU272050'
+'ES'.'CO2TargetAllSectors2050'
+'ES'.'CO2TargetEU272050'
+'FI'.'CO2TargetAllSectors2050'
+'FI'.'CO2TargetEU272050'
+'FR'.'CO2TargetAllSectors2050'
+'FR'.'CO2TargetEU272050'
+'HR'.'CO2TargetAllSectors2050'
+'HR'.'CO2TargetEU272050'
+'HU'.'CO2TargetAllSectors2050'
+'HU'.'CO2TargetEU272050'
+'IE'.'CO2TargetAllSectors2050'
+'IE'.'CO2TargetEU272050'
+'IS'.'CO2TargetAllSectors2050'
+'IT'.'CO2TargetAllSectors2050'
+'IT'.'CO2TargetEU272050'
+'LT'.'CO2TargetAllSectors2050'
+'LT'.'CO2TargetEU272050'
+'LU'.'CO2TargetAllSectors2050'
+'LU'.'CO2TargetEU272050'
+'LV'.'CO2TargetAllSectors2050'
+'LV'.'CO2TargetEU272050'
+'MT'.'CO2TargetAllSectors2050'
+'MT'.'CO2TargetEU272050'
+'NL'.'CO2TargetAllSectors2050'
+'NL'.'CO2TargetEU272050'
+'NO'.'CO2TargetAllSectors2050'
+'PL'.'CO2TargetAllSectors2050'
+'PL'.'CO2TargetEU272050'
+'PT'.'CO2TargetAllSectors2050'
+'PT'.'CO2TargetEU272050'
+'RO'.'CO2TargetAllSectors2050'
+'RO'.'CO2TargetEU272050'
+'SE'.'CO2TargetAllSectors2050'
+'SE'.'CO2TargetEU272050'
+'SI'.'CO2TargetAllSectors2050'
+'SI'.'CO2TargetEU272050'
+'SK'.'CO2TargetAllSectors2050'
+'SK'.'CO2TargetEU272050'
+'UK'.'CO2TargetAllSectors2050'
+/;
+
+PARAMETER
+
+COM_BNDNET ' '/
+'AT'.0.'TOTCO2'.ANNUAL.LO 5
+'AT'.0.'TOTCO2'.ANNUAL.UP 5
+'AT'.2040.'TOTCO2'.ANNUAL.LO -10527.9976621825
+'AT'.2050.'TOTCO2'.ANNUAL.UP 7018.66510812169
+'BE'.0.'TOTCO2'.ANNUAL.LO 5
+'BE'.0.'TOTCO2'.ANNUAL.UP 5
+'BE'.2040.'TOTCO2'.ANNUAL.LO -20170.0733407893
+'BE'.2050.'TOTCO2'.ANNUAL.UP 13446.7155605262
+'BG'.0.'TOTCO2'.ANNUAL.LO 5
+'BG'.0.'TOTCO2'.ANNUAL.UP 5
+'BG'.2040.'TOTCO2'.ANNUAL.LO -5898.22567169316
+'BG'.2050.'TOTCO2'.ANNUAL.UP 3932.15044779544
+'CH'.0.'TOTCO2'.ANNUAL.LO 5
+'CH'.0.'TOTCO2'.ANNUAL.UP 5
+'CH'.2040.'TOTCO2'.ANNUAL.LO -5972.02800950349
+'CH'.2050.'TOTCO2'.ANNUAL.UP 3981.35200633566
+'CY'.0.'TOTCO2'.ANNUAL.LO 5
+'CY'.0.'TOTCO2'.ANNUAL.UP 5
+'CY'.2040.'TOTCO2'.ANNUAL.LO -1322.57519011331
+'CY'.2050.'TOTCO2'.ANNUAL.UP 881.716793408875
+'CZ'.0.'TOTCO2'.ANNUAL.LO 5
+'CZ'.0.'TOTCO2'.ANNUAL.UP 5
+'CZ'.2040.'TOTCO2'.ANNUAL.LO -16523.5741933456
+'CZ'.2050.'TOTCO2'.ANNUAL.UP 11015.7161288971
+'DE'.0.'TOTCO2'.ANNUAL.LO 5
+'DE'.0.'TOTCO2'.ANNUAL.UP 5
+'DE'.2040.'TOTCO2'.ANNUAL.LO -125457.98006568
+'DE'.2050.'TOTCO2'.ANNUAL.UP 83638.6533771197
+'DK'.0.'TOTCO2'.ANNUAL.LO 5
+'DK'.0.'TOTCO2'.ANNUAL.UP 5
+'DK'.2040.'TOTCO2'.ANNUAL.LO -8370.8369551198
+'DK'.2050.'TOTCO2'.ANNUAL.UP 5580.55797007987
+'EE'.0.'TOTCO2'.ANNUAL.LO 5
+'EE'.0.'TOTCO2'.ANNUAL.UP 5
+'EE'.2040.'TOTCO2'.ANNUAL.LO -2483.60915237445
+'EE'.2050.'TOTCO2'.ANNUAL.UP 1655.7394349163
+'EL'.0.'TOTCO2'.ANNUAL.LO 5
+'EL'.0.'TOTCO2'.ANNUAL.UP 5
+'EL'.2040.'TOTCO2'.ANNUAL.LO -14075.1843602553
+'EL'.2050.'TOTCO2'.ANNUAL.UP 9383.45624017023
+'ES'.0.'TOTCO2'.ANNUAL.LO 5
+'ES'.0.'TOTCO2'.ANNUAL.UP 5
+'ES'.2040.'TOTCO2'.ANNUAL.LO -44394.0500639623
+'ES'.2050.'TOTCO2'.ANNUAL.UP 29596.0333759749
+'FI'.0.'TOTCO2'.ANNUAL.LO 5
+'FI'.0.'TOTCO2'.ANNUAL.UP 5
+'FI'.2040.'TOTCO2'.ANNUAL.LO -10086.1007158766
+'FI'.2050.'TOTCO2'.ANNUAL.UP 6724.06714391775
+'FR'.0.'TOTCO2'.ANNUAL.LO 5
+'FR'.0.'TOTCO2'.ANNUAL.UP 5
+'FR'.2040.'TOTCO2'.ANNUAL.LO -53561.777504598
+'FR'.2050.'TOTCO2'.ANNUAL.UP 35707.851669732
+'HR'.0.'TOTCO2'.ANNUAL.LO 5
+'HR'.0.'TOTCO2'.ANNUAL.UP 5
+'HR'.2040.'TOTCO2'.ANNUAL.LO -2896.97160900888
+'HR'.2050.'TOTCO2'.ANNUAL.UP 1931.31440600592
+'HU'.0.'TOTCO2'.ANNUAL.LO 5
+'HU'.0.'TOTCO2'.ANNUAL.UP 5
+'HU'.2040.'TOTCO2'.ANNUAL.LO -7018.15092244506
+'HU'.2050.'TOTCO2'.ANNUAL.UP 4678.76728163004
+'IE'.0.'TOTCO2'.ANNUAL.LO 5
+'IE'.0.'TOTCO2'.ANNUAL.UP 5
+'IE'.2040.'TOTCO2'.ANNUAL.LO -6114.22644967164
+'IE'.2050.'TOTCO2'.ANNUAL.UP 4076.15096644776
+'IS'.0.'TOTCO2'.ANNUAL.LO 5
+'IS'.0.'TOTCO2'.ANNUAL.UP 5
+'IS'.2040.'TOTCO2'.ANNUAL.LO -754.630336960237
+'IS'.2050.'TOTCO2'.ANNUAL.UP 503.086891306825
+'IT'.0.'TOTCO2'.ANNUAL.LO 5
+'IT'.0.'TOTCO2'.ANNUAL.UP 5
+'IT'.2040.'TOTCO2'.ANNUAL.LO -63228.0031488205
+'IT'.2050.'TOTCO2'.ANNUAL.UP 42152.0020992137
+'LT'.0.'TOTCO2'.ANNUAL.LO 5
+'LT'.0.'TOTCO2'.ANNUAL.UP 5
+'LT'.2040.'TOTCO2'.ANNUAL.LO -1805.11626406592
+'LT'.2050.'TOTCO2'.ANNUAL.UP 1203.41084271061
+'LU'.0.'TOTCO2'.ANNUAL.LO 5
+'LU'.0.'TOTCO2'.ANNUAL.UP 5
+'LU'.2040.'TOTCO2'.ANNUAL.LO -1752.14783972056
+'LU'.2050.'TOTCO2'.ANNUAL.UP 1168.09855981371
+'LV'.0.'TOTCO2'.ANNUAL.LO 5
+'LV'.0.'TOTCO2'.ANNUAL.UP 5
+'LV'.2040.'TOTCO2'.ANNUAL.LO -1360.92913662734
+'LV'.2050.'TOTCO2'.ANNUAL.UP 907.286091084893
+'MT'.0.'TOTCO2'.ANNUAL.LO 5
+'MT'.0.'TOTCO2'.ANNUAL.UP 5
+'MT'.2040.'TOTCO2'.ANNUAL.LO -1121.84183198803
+'MT'.2050.'TOTCO2'.ANNUAL.UP 747.894554658685
+'NL'.0.'TOTCO2'.ANNUAL.LO 5
+'NL'.0.'TOTCO2'.ANNUAL.UP 5
+'NL'.2040.'TOTCO2'.ANNUAL.LO -35022.9438617483
+'NL'.2050.'TOTCO2'.ANNUAL.UP 23348.6292411655
+'NO'.0.'TOTCO2'.ANNUAL.LO 5
+'NO'.0.'TOTCO2'.ANNUAL.UP 5
+'NO'.2040.'TOTCO2'.ANNUAL.LO -6102.32582007266
+'NO'.2050.'TOTCO2'.ANNUAL.UP 4068.21721338177
+'PL'.0.'TOTCO2'.ANNUAL.LO 5
+'PL'.0.'TOTCO2'.ANNUAL.UP 5
+'PL'.2040.'TOTCO2'.ANNUAL.LO -49515.6445102428
+'PL'.2050.'TOTCO2'.ANNUAL.UP 33010.4296734952
+'PT'.0.'TOTCO2'.ANNUAL.LO 5
+'PT'.0.'TOTCO2'.ANNUAL.UP 5
+'PT'.2040.'TOTCO2'.ANNUAL.LO -8054.5056046893
+'PT'.2050.'TOTCO2'.ANNUAL.UP 5369.6704031262
+'RO'.0.'TOTCO2'.ANNUAL.LO 5
+'RO'.0.'TOTCO2'.ANNUAL.UP 5
+'RO'.2040.'TOTCO2'.ANNUAL.LO -10491.0648301625
+'RO'.2050.'TOTCO2'.ANNUAL.UP 6994.04322010831
+'SE'.0.'TOTCO2'.ANNUAL.LO 5
+'SE'.0.'TOTCO2'.ANNUAL.UP 5
+'SE'.2040.'TOTCO2'.ANNUAL.LO -7856.16059443605
+'SE'.2050.'TOTCO2'.ANNUAL.UP 5237.4403962907
+'SI'.0.'TOTCO2'.ANNUAL.LO 5
+'SI'.0.'TOTCO2'.ANNUAL.UP 5
+'SI'.2040.'TOTCO2'.ANNUAL.LO -2257.02220413163
+'SI'.2050.'TOTCO2'.ANNUAL.UP 1504.68146942109
+'SK'.0.'TOTCO2'.ANNUAL.LO 5
+'SK'.0.'TOTCO2'.ANNUAL.UP 5
+'SK'.2040.'TOTCO2'.ANNUAL.LO -5436.9217239653
+'SK'.2050.'TOTCO2'.ANNUAL.UP 3624.61448264353
+'UK'.0.'TOTCO2'.ANNUAL.LO 5
+'UK'.0.'TOTCO2'.ANNUAL.UP 5
+'UK'.2040.'TOTCO2'.ANNUAL.LO -80206.3982059537
+'UK'.2050.'TOTCO2'.ANNUAL.UP 53470.9321373025
+/;
+
+PARAMETER
+
+UC_COMNET ' '/
+'CO2TargetAllSectors2050'.LHS.'AT'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'BE'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'BG'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'CH'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'CY'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'CZ'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'DE'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'DK'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'EE'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'EL'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'ES'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'FI'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'FR'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'HR'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'HU'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'IE'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'IS'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'IT'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'LT'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'LU'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'LV'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'MT'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'NL'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'NO'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'PL'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'PT'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'RO'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'SE'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'SI'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'SK'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetAllSectors2050'.LHS.'UK'.2010.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'AT'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'BE'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'BG'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'CY'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'CZ'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'DE'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'DK'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'EE'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'EL'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'ES'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'FI'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'FR'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'HR'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'HU'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'IE'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'IT'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'LT'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'LU'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'LV'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'MT'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'NL'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'PL'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'PT'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'RO'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'SE'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'SI'.2030.'TOTCO2'.ANNUAL 1
+'CO2TargetEU272050'.LHS.'SK'.2030.'TOTCO2'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'CO2TargetAllSectors2050'.LHS.'AT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'AT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'BE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'BE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'BG'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'BG'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'CH'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'CH'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'CY'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'CY'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'DE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'DE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'DK'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'DK'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'EE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'EE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'EL'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'EL'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'ES'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'ES'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'FI'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'FI'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'FR'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'FR'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'HR'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'HR'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'HU'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'HU'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'IE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'IE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'IS'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'IS'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'IT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'IT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'LT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'LT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'LU'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'LU'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'LV'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'LV'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'MT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'MT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'NL'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'NL'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'NO'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'NO'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'PL'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'PL'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'PT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'PT'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'RO'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'RO'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'SE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'SE'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'SI'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'SI'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'SK'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'SK'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetAllSectors2050'.LHS.'UK'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050-'.ANNUAL.IMP -1
+'CO2TargetAllSectors2050'.LHS.'UK'.2010.'IMPDUCZ'.'CO2TargetAllSectors2050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'AT'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'AT'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'BE'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'BE'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'BG'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'BG'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'CY'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'CY'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'DE'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'DE'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'DK'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'DK'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'EE'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'EE'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'EL'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'EL'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'ES'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'ES'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'FI'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'FI'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'FR'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'FR'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'HR'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'HR'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'HU'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'HU'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'IE'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'IE'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'IT'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'IT'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'LT'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'LT'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'LU'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'LU'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'LV'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'LV'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'MT'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'MT'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'NL'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'NL'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'PL'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'PL'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'PT'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'PT'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'RO'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'RO'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'SE'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'SE'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'SI'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'SI'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+'CO2TargetEU272050'.LHS.'SK'.2010.'IMPDUCZ'.'CO2TargetEU272050-'.ANNUAL.IMP -1
+'CO2TargetEU272050'.LHS.'SK'.2010.'IMPDUCZ'.'CO2TargetEU272050_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'CO2TargetAllSectors2050'.0.ANNUAL.UP 5
+'CO2TargetAllSectors2050'.2010.ANNUAL.UP 4065597.20989965
+'CO2TargetAllSectors2050'.2015.ANNUAL.UP 3768671.5709744
+'CO2TargetAllSectors2050'.2020.ANNUAL.UP 3471745.93204914
+'CO2TargetAllSectors2050'.2025.ANNUAL.UP 2969256.38925255
+'CO2TargetAllSectors2050'.2030.ANNUAL.UP 2664043.37634812
+'CO2TargetAllSectors2050'.2035.ANNUAL.UP 1988830.36344368
+'CO2TargetAllSectors2050'.2040.ANNUAL.UP 1333617.35053925
+'CO2TargetAllSectors2050'.2045.ANNUAL.UP 896808.675269624
+'CO2TargetAllSectors2050'.2050.ANNUAL.UP 400000
+'CO2TargetAllSectors2050'.2060.ANNUAL.UP 300000
+'CO2TargetAllSectors2050'.2075.ANNUAL.UP 300000
+'CO2TargetAllSectors2050'.2100.ANNUAL.UP 300000
+'CO2TargetEU272050'.0.ANNUAL.UP 1
+'CO2TargetEU272050'.2030.ANNUAL.UP 1866976
+'CO2TargetEU272050'.2035.ANNUAL.UP 1275374
+'CO2TargetEU272050'.2040.ANNUAL.UP 743772
+'CO2TargetEU272050'.2045.ANNUAL.UP 571886
+'CO2TargetEU272050'.2050.ANNUAL.UP 350000
+'CO2TargetEU272050'.2060.ANNUAL.UP -343772
+'CO2TargetEU272050'.2075.ANNUAL.UP -343772
+'CO2TargetEU272050'.2100.ANNUAL.UP -343772
+/;
+
+

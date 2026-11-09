@@ -1,0 +1,248 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'BASE'
+$SET SCENARIO_NAME 'dk_res_restrictheatsav'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'UC_HeatSav_DK-'
+'DKE'.'NRG'.'UC_HeatSav_DK_'
+'DKW'.'NRG'.'UC_HeatSav_DK-'
+'DKW'.'NRG'.'UC_HeatSav_DK_'
+'FIM'.'NRG'.'UC_HeatSav_DK-'
+'FIM'.'NRG'.'UC_HeatSav_DK_'
+'FIN'.'NRG'.'UC_HeatSav_DK-'
+'FIN'.'NRG'.'UC_HeatSav_DK_'
+'NO1'.'NRG'.'UC_HeatSav_DK-'
+'NO1'.'NRG'.'UC_HeatSav_DK_'
+'NO2'.'NRG'.'UC_HeatSav_DK-'
+'NO2'.'NRG'.'UC_HeatSav_DK_'
+'SE1'.'NRG'.'UC_HeatSav_DK-'
+'SE1'.'NRG'.'UC_HeatSav_DK_'
+'SE2'.'NRG'.'UC_HeatSav_DK-'
+'SE2'.'NRG'.'UC_HeatSav_DK_'
+'SE3'.'NRG'.'UC_HeatSav_DK-'
+'SE3'.'NRG'.'UC_HeatSav_DK_'
+'SE4'.'NRG'.'UC_HeatSav_DK-'
+'SE4'.'NRG'.'UC_HeatSav_DK_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'UC_HeatSav_DK-'.'UCU'
+'DKE'.'UC_HeatSav_DK_'.'UCU'
+'DKW'.'UC_HeatSav_DK-'.'UCU'
+'DKW'.'UC_HeatSav_DK_'.'UCU'
+'FIM'.'UC_HeatSav_DK-'.'UCU'
+'FIM'.'UC_HeatSav_DK_'.'UCU'
+'FIN'.'UC_HeatSav_DK-'.'UCU'
+'FIN'.'UC_HeatSav_DK_'.'UCU'
+'NO1'.'UC_HeatSav_DK-'.'UCU'
+'NO1'.'UC_HeatSav_DK_'.'UCU'
+'NO2'.'UC_HeatSav_DK-'.'UCU'
+'NO2'.'UC_HeatSav_DK_'.'UCU'
+'SE1'.'UC_HeatSav_DK-'.'UCU'
+'SE1'.'UC_HeatSav_DK_'.'UCU'
+'SE2'.'UC_HeatSav_DK-'.'UCU'
+'SE2'.'UC_HeatSav_DK_'.'UCU'
+'SE3'.'UC_HeatSav_DK-'.'UCU'
+'SE3'.'UC_HeatSav_DK_'.'UCU'
+'SE4'.'UC_HeatSav_DK-'.'UCU'
+'SE4'.'UC_HeatSav_DK_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'UC_HeatSav_DK-'.'DKE'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'DKW'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'FIM'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'FIN'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'NO1'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'NO2'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'SE1'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'SE2'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'SE3'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK-'.'SE4'.'UC_HeatSav_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'DKE'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'DKW'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'FIM'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'FIN'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'NO1'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'NO2'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'SE1'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'SE2'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'SE3'.'UC_HeatSav_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_HeatSav_DK_'.'SE4'.'UC_HeatSav_DK_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'DKE'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'DKW'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'DKW'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'FIM'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'FIM'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'FIN'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'FIN'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'NO1'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'NO1'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'NO2'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'NO2'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'SE1'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'SE1'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'SE2'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'SE2'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'SE3'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'SE3'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+'SE4'.'UC_HeatSav_DK-' 'Negative dummy var for UC: UC_HeatSav_DK'
+'SE4'.'UC_HeatSav_DK_' 'Positive dummy var for UC: UC_HeatSav_DK'
+/;
+
+SET UC_R_EACH
+
+/
+'DKE'.'UC_HeatSav_DK'
+'DKW'.'UC_HeatSav_DK'
+'FIM'.'UC_HeatSav_DK'
+'FIN'.'UC_HeatSav_DK'
+'NO1'.'UC_HeatSav_DK'
+'NO2'.'UC_HeatSav_DK'
+'SE1'.'UC_HeatSav_DK'
+'SE2'.'UC_HeatSav_DK'
+'SE3'.'UC_HeatSav_DK'
+'SE4'.'UC_HeatSav_DK'
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'UC_HeatSav_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+'UC_HeatSav_DK'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_HeatSav_DK-'.ANNUAL.IMP -1
+'UC_HeatSav_DK'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_HeatSav_DK_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_NCAP ' '/
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCDa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCDa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCDa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCDb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCDb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCDb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCMa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCMa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCMa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCMb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCMb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBCMb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDDa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDDa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDDa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDDb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDDb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDDb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDMa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDMa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDMa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDMb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDMb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBDMb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIDa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIDa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIDa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIDb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIDb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIDb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIMa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIMa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIMa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIMb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIMb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKE'.2012.'RSBIMb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCDa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCDa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCDa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCDb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCDb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCDb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCMa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCMa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCMa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCMb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCMb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBCMb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDDa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDDa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDDa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDDb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDDb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDDb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDMa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDMa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDMa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDMb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDMb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBDMb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIDa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIDa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIDa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIDb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIDb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIDb72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIMa72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIMa72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIMa72_P3' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIMb72_P1' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIMb72_P2' 1
+'UC_HeatSav_DK'.LHS.'DKW'.2012.'RSBIMb72_P3' 1
+/;
+
+PARAMETER
+
+UC_RHSRT ' '/
+'DKE'.'UC_HeatSav_DK'.0.UP 15
+'DKE'.'UC_HeatSav_DK'.2012.UP 3.97647412658873
+'DKW'.'UC_HeatSav_DK'.0.UP 15
+'DKW'.'UC_HeatSav_DK'.2012.UP 5.3412230151022
+'FIM'.'UC_HeatSav_DK'.0.UP 15
+'FIN'.'UC_HeatSav_DK'.0.UP 15
+'NO1'.'UC_HeatSav_DK'.0.UP 15
+'NO2'.'UC_HeatSav_DK'.0.UP 15
+'SE1'.'UC_HeatSav_DK'.0.UP 15
+'SE2'.'UC_HeatSav_DK'.0.UP 15
+'SE3'.'UC_HeatSav_DK'.0.UP 15
+'SE4'.'UC_HeatSav_DK'.0.UP 15
+/;
+
+

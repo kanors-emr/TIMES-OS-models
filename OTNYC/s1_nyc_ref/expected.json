@@ -1,0 +1,264 @@
+{
+ "case": "s1_nyc_ref",
+ "made": "2026-11-08",
+ "objective": 9657725.872571386,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 236650,
+  "columns": 557258,
+  "nonzeros": 1870931,
+  "objective": 9657725.872571386,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 236650,
+  "columns": 557258,
+  "nonzeros": 1870931,
+  "objective": 9657725.872571386
+ },
+ "row_counts": {
+  "EQ_OBJVAR": 7,
+  "EQ_PTRANS": 18870,
+  "EQG_CPT": 542,
+  "EQ_OBJSALV": 7,
+  "EQ_OBJFIX": 7,
+  "EQG_COMBAL": 20383,
+  "EQL_CAPACT": 64068,
+  "EQ_STSBAL": 12,
+  "EQL_ACTBND": 43,
+  "EQL_CAFLAC": 11,
+  "EQ_IRE": 3212,
+  "EQ_STGIPS": 48,
+  "EQG_ACTBND": 28,
+  "EQE_COMPRD": 572,
+  "EQ_OBJ": 1,
+  "EQE_CPT": 1230,
+  "EQ_PEAK": 13068,
+  "EQE_INSHR": 5352,
+  "EQE_COMBAL": 1001,
+  "EQG_OUTSHR": 21960,
+  "EQ_OBJINV": 7,
+  "EQE_ACTEFF": 34599,
+  "EQ_STGTSS": 1812,
+  "EQE_UCRT": 1330,
+  "EQE_UCRTS": 6092,
+  "EQ_CUMFLO": 68,
+  "EQG_CAPACT": 180,
+  "EQ_ACTFLO": 26419,
+  "EQE_OUTSHR": 15721
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1980",
+  "CTST": "",
+  "DAMAGE": "NO",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "AUTO",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "s1_nyc_ref",
+  "SCENARIO_NAME": "uc_trnldv",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "STAGES": "NO",
+  "SYSPREFIX": "",
+  "TIMESED": "NO",
+  "TMP": "0",
+  "VALIDATE": "NO",
+  "VAR": "VARIABLE OBJZ",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "s1_nyc_ref_ts.dd",
+   "bytes": 98,
+   "sha256_16": "3532c121d1d758a7"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 4122627,
+   "sha256_16": "69066036bfea38d6"
+  },
+  {
+   "name": "techcom.dd",
+   "bytes": 1190059,
+   "sha256_16": "8e86d4e41ae3ee8f"
+  },
+  {
+   "name": "techelc.dd",
+   "bytes": 238653,
+   "sha256_16": "e3ba493cd68c0efe"
+  },
+  {
+   "name": "techh2g.dd",
+   "bytes": 87893,
+   "sha256_16": "a7e94bc39ba6220d"
+  },
+  {
+   "name": "technga.dd",
+   "bytes": 9462,
+   "sha256_16": "ab498717c1c378d1"
+  },
+  {
+   "name": "techref.dd",
+   "bytes": 3084,
+   "sha256_16": "2e7025edcba96656"
+  },
+  {
+   "name": "techres.dd",
+   "bytes": 835309,
+   "sha256_16": "8c13ca03416da133"
+  },
+  {
+   "name": "techtrnhdv.dd",
+   "bytes": 3319783,
+   "sha256_16": "83136c67e7c2b7a3"
+  },
+  {
+   "name": "techtrnldv.dd",
+   "bytes": 1315807,
+   "sha256_16": "2cc230bf75e2c2d2"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 284425,
+   "sha256_16": "effc6aa45f488bd7"
+  },
+  {
+   "name": "tradeparam.dd",
+   "bytes": 97,
+   "sha256_16": "275f4762b7e20395"
+  },
+  {
+   "name": "gdr_ref.dd",
+   "bytes": 743,
+   "sha256_16": "67ec427ec7954e68"
+  },
+  {
+   "name": "ghg.dd",
+   "bytes": 87367,
+   "sha256_16": "4430c71dcea743e2"
+  },
+  {
+   "name": "uc_coa.dd",
+   "bytes": 1398931,
+   "sha256_16": "0427dfb9172239fa"
+  },
+  {
+   "name": "uc_com.dd",
+   "bytes": 622376,
+   "sha256_16": "f23fa41039e2a6c3"
+  },
+  {
+   "name": "uc_elc.dd",
+   "bytes": 293692,
+   "sha256_16": "4a8db80c18aff7f3"
+  },
+  {
+   "name": "uc_ind.dd",
+   "bytes": 18882,
+   "sha256_16": "4d0f54f95db13364"
+  },
+  {
+   "name": "uc_nga.dd",
+   "bytes": 223512,
+   "sha256_16": "da246f7b6ee902e5"
+  },
+  {
+   "name": "uc_oil.dd",
+   "bytes": 695470,
+   "sha256_16": "9ede16da53f57bf7"
+  },
+  {
+   "name": "uc_res.dd",
+   "bytes": 885072,
+   "sha256_16": "d5b82afbf794663d"
+  },
+  {
+   "name": "uc_trnhdv.dd",
+   "bytes": 583366,
+   "sha256_16": "082382c9cf4dcf78"
+  },
+  {
+   "name": "uc_trnldv.dd",
+   "bytes": 1559816,
+   "sha256_16": "abd1fd136173e1d5"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 236650   GAMS 236650   only here 0   only in GAMS 0",
+    "columns    here 557258   GAMS 557258   only here 0   only in GAMS 0",
+    "entries    here 1870931   GAMS 1870931   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 1.74e-15 (tolerance 1.0e-9); 7763 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 9657725.872571386,
+   "times_in_gams_objective": 9657725.872571386,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 6.375,
+   "relative_difference": 0.0
+  },
+  "regions": 7,
+  "highs": {
+   "status": "Optimal",
+   "objective": 9657725.93999427,
+   "version": "1.15.1",
+   "threads": 24,
+   "method": "IPX",
+   "solve_seconds": 51.7,
+   "attempts": [
+    {
+     "options": "(default)",
+     "status": "Optimal"
+    }
+   ],
+   "relative_difference_from_cplex": 6.981238075578547e-09
+  },
+  "command": "python TIMES.py run OTNYC/s1_nyc_ref",
+  "build": {
+   "timesos_seconds": 20.5,
+   "timesos_peak_gb": 1.43,
+   "times_in_gams_seconds": 7.2,
+   "times_in_gams_peak_gb": 0.46,
+   "time_ratio": 2.8472222222222223,
+   "memory_ratio": 3.0892827004219408,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

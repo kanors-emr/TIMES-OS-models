@@ -1,0 +1,8 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'JRC_NETZERO'
+$SET SCENARIO_NAME 'roadtransport_life_shaping'
+
+
+

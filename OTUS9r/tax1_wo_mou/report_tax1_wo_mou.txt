@@ -1,0 +1,94 @@
+VERDICT  SAME OBJECTIVE: only the objective was compared
+model    tax1_wo_mou    (OTUS9r/tax1_wo_mou)
+when     2026-11-08T18:45:55    total 492.8 s
+limit    50000 s for each solve    (the run file's OPTION RESLIM)
+
+This file is written by TIMES.py. It is complete in itself: everything needed to understand
+the result is below; FILES says which of the files it names are in this folder.
+
+CHECKS
+     check                                   result              Julia                   GAMS
+  0  all inputs supported                    yes
+  1  rows                                    same                1,199,533               1,199,533
+  1  columns                                 same                1,922,664               1,922,664
+  1  non-zeros                               same                8,402,583               8,402,583
+  2  objective                               same                212593237937.448059     212593238099.785004   relative difference 7.6e-10
+  4  matrix, entry by entry                  not made here       made in the matrix run: same (report_tax1_wo_mou_matrix.txt)
+
+THE TWO RUNS
+  GAMS    published reference (expected.json); REDUCE YES; GAMS 54.1.0; TIMES v4.9.8; solver CPLEX
+          1 Normal Completion / 1 Optimal; objective 212593238099.785; rows 1,199,533, columns 1,922,664, non-zeros 8,402,583
+  memory  peak working set of the processes of each run, summed, every 0.5 s: the open chain 8.72 GB (preprocessor and Julia), GAMS not run; in the open chain's, GAMS of --lp 4.37 GB
+  Julia   CPLEX 22.1.2.0 through GAMS 54.1.0 (cplex.opt: scaind 0, rerun yes, iis yes, lpmethod 4, baralg 2, barcrossalg 0, barorder 3, THREADS=7, advind=0); OPTIMAL; objective 212593237937.44806; rows 1,199,533, columns 1,922,664, non-zeros 8,402,583
+          through GAMS: the LP taken from JuMP 3.2 s, to a GDX 1.6 s, GAMS 354.3 s (to the solver's start 3.6 s, of it generation 2.7 s; solver 347.6 s, 206 iterations; after it 3.1 s), read back 1.6 s: the hand-over 13.2 s; GAMS's log: gamslp.log
+          optimal, with infeasibilities after unscaling: largest row violation 0.0768, largest bound violation 9.95e-7
+          time      start and packages 0.3 s (packages loaded while the preprocessor ran: 1.2 s), load 1.5 s, checks 0.0 s, build 3.8 s, counts 0.4 s, solver setup 0.0 s, solve 361.6 s, solution 5.7 s, solution file 5.2 s, result file 0.0 s, other 5.5 s; Julia process 384.0 s; Julia 1.13.1
+          compiling load 5.3 s, build 0.5 s, counts 0.1 s, solve 0.8 s, solution 0.2 s; garbage collection 3.5 s; allocated 28.7 GB; peak memory 4.6 GB to the built model, 5.1 GB for the whole run
+          solution: solution.db3 (levels, marginals and bounds of every column and row, by GAMS name)
+
+NOTES
+  - the reference has no gams_solution.db3: sizes and the objective are compared, not the solution
+
+INPUT
+  run file  OTUS9r/tax1_wo_mou/tax1_wo_mou.run    sha256 34bfbdad3291da31
+  switches  REDUCE=YES  OBJ=AUTO  OBLONG=YES  MID_YEAR=YES  VAR_UC=YES  VARCOST=LIN  DSCAUTO=YES  VALIDATE=NO  STAGES=NO  DAMAGE=NO  BOTIME=1929
+            (as in the run file)
+  DD file   tax1_wo_mou_ts.dd                                121 bytes  sha256 77c307bad99e0ced
+  DD file   base.dd                                   42,550,962 bytes  sha256 d4a4470c34e45bc5
+  DD file   coalplants-ret-and_lifeext.dd                 75,053 bytes  sha256 41bb343b18d404fd
+  DD file   storage.dd                                     7,360 bytes  sha256 69017a9519e03956
+  DD file   syssettings.dd                               506,790 bytes  sha256 e163902d96b26bd2
+  DD file   tradeparams.dd                                32,573 bytes  sha256 38e89c38f3b14889
+  DD file   aqreg.dd                                       1,684 bytes  sha256 0c32ed3718414985
+  DD file   baseextra-offeps.dd                           49,421 bytes  sha256 c483b0cccd1739f7
+  DD file   2080upd.dd                                     4,279 bytes  sha256 7ae742c0dda85892
+  DD file   bevcharging.dd                                67,337 bytes  sha256 38bd5370a71ee7ea
+  DD file   co2_tax_az020122.dd                            1,373 bytes  sha256 35aa5c1c8c966ef7
+  DD file   csapr-mats.dd                                  4,819 bytes  sha256 307dcfb2133b5a24
+  DD file   growthv2.dd                                1,853,767 bytes  sha256 0a22272cd443fc31
+  DD file   refemiupd-ts.dd                               59,686 bytes  sha256 56e985cabe2e27ad
+  DD file   trnco2-ts.dd                                  85,262 bytes  sha256 58e9b3a49b6f9c6a
+  DD file   uc-biofuels20.dd                              66,907 bytes  sha256 31e8cfb9c77a2bd2
+  DD file   uc-csapr-mats.dd                              20,583 bytes  sha256 17f015016d3be3c0
+  DD file   uc-elc20.dd                                  451,957 bytes  sha256 44fb44c6913d2acf
+  DD file   uc-ind20.dd                                2,689,326 bytes  sha256 1c4c7aac499805d1
+  DD file   uc-nonewnuc.dd                                10,110 bytes  sha256 da444314559ba01b
+  DD file   uc-rescom20.dd                               593,351 bytes  sha256 8e3a5dbb5f5cf751
+  DD file   uc-rps20.dd                                  402,090 bytes  sha256 12f25b5751e6237a
+  DD file   uc_aqreg.dd                                   15,478 bytes  sha256 bcfc0f3d8f27a2e7
+  DD file   uc_trnhdv20_az121921.dd                      422,431 bytes  sha256 5fc36f61b7af3c42
+  DD file   uc_trnldv20.dd                             1,432,876 bytes  sha256 9d1a6a29fa5cd179
+
+VEDA RESULT FILES (of the Julia solution; import them into Veda as a scenario next to the GAMS run)
+  tax1_wo_mou_julia.vd, .vde, .vds   2,880,484 rows in 54 attributes, 48.1 s
+
+ENVIRONMENT
+  TIMES code         TIMES-OS 1.0.0   (follows TIMES v4.9.8)
+  TIMES source       v4.9.8
+  Python 3.12.6;  Julia;  GAMS
+  system             Windows-11-10.0.22631-SP0
+  preprocessor       Segment Heap, DuckDB with 8 threads, parallel stages level 2;  the tables as model_parquet/, streamed beside the steps; tables dropped once no longer read: off (TIMES_DROP=1 turns it on)
+  Julia              threads auto (24), garbage collector threads 12, at most 8 equation families at once (memory 63.8 GB, expected peak 15.2 GB)
+  seconds            before_preprocess 0.6, preprocess 46.8, julia_started 47.4, julia 384.0, to_solver 67.1, preprocess_finished 50.4, report 48.7, results_for_later_runs 12.6, total 492.8
+
+FILES (this folder)
+  report_tax1_wo_mou.txt          the run that compares with expected.json, with no GAMS: the objective
+  report_tax1_wo_mou_matrix.txt   the run that compared the matrix with that of TIMES in GAMS, entry by entry
+  expected.json                   the result of TIMES in GAMS that the run compares with, and the evidence in short
+  tax1_wo_mou.run                 with the DD files and the option files: the inputs
+  The run's other files (report json, logs, solution.db3, the Veda files) are written to its result folder;
+  README.md gives the command.
+
+WHAT THE VERDICT MEANS
+  SAME            every check that could be made against the published GAMS result agrees. With the published matrix the
+                  two are the same linear program, and have the same optimum whether or not the solver finds it.
+  SAME OBJECTIVE  the optimum is the one published; no more was published to compare with.
+  DIFFERENT       the model runs and something does not agree with the published result: a defect. DIFFERENCES above says where to look.
+  UNSUPPORTED     the model uses TIMES features this implementation does not have yet; they are all listed above. Not a defect.
+  NOT SOLVED      the model was built and the solver did not reach an optimum (time limit, or a failure of the solver). julia.log has the solver log.
+  ERROR           a step failed. If it is the preprocessor or Julia, it is a defect; the message is above.
+  INFEASIBLE      the model's data cannot be met: rows left with no column whose constant does not satisfy them
+                  (0 = 2.685), on which TIMES in GAMS stops too (equation infeasible due to rhs value). Not a defect.
+  SOLVED          the open chain solved the model; there was no published GAMS result to compare with (--jacobian writes the matrix
+                  in the layout of GAMS's CONVERT jacobian, to compare with GAMS's own).
+  To report or to work on a result, hand over this file (or the bundle made with --bundle, which adds the input files).

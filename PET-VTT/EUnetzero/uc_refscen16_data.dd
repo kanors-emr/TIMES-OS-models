@@ -1,0 +1,1290 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'EUNETZERO'
+$SET SCENARIO_NAME 'uc_refscen16_data'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'AT'.'NRG'.'UC_AUCoalWithoutCCS-'
+'AT'.'NRG'.'UC_AUCoalWithoutCCS_'
+'BE'.'NRG'.'UC_AUCoalWithoutCCS-'
+'BE'.'NRG'.'UC_AUCoalWithoutCCS_'
+'BG'.'NRG'.'UC_AUCoalWithoutCCS-'
+'BG'.'NRG'.'UC_AUCoalWithoutCCS_'
+'CH'.'NRG'.'UC_AUCoalWithoutCCS-'
+'CH'.'NRG'.'UC_AUCoalWithoutCCS_'
+'CY'.'NRG'.'UC_AUCoalWithoutCCS-'
+'CY'.'NRG'.'UC_AUCoalWithoutCCS_'
+'CZ'.'NRG'.'UC_AUCoalWithoutCCS-'
+'CZ'.'NRG'.'UC_AUCoalWithoutCCS_'
+'DE'.'NRG'.'UC_AUCoalWithoutCCS-'
+'DE'.'NRG'.'UC_AUCoalWithoutCCS_'
+'DK'.'NRG'.'UC_AUCoalWithoutCCS-'
+'DK'.'NRG'.'UC_AUCoalWithoutCCS_'
+'EE'.'NRG'.'UC_AUCoalWithoutCCS-'
+'EE'.'NRG'.'UC_AUCoalWithoutCCS_'
+'EL'.'NRG'.'UC_AUCoalWithoutCCS-'
+'EL'.'NRG'.'UC_AUCoalWithoutCCS_'
+'ES'.'NRG'.'UC_AUCoalWithoutCCS-'
+'ES'.'NRG'.'UC_AUCoalWithoutCCS_'
+'FI'.'NRG'.'UC_AUCoalWithoutCCS-'
+'FI'.'NRG'.'UC_AUCoalWithoutCCS_'
+'FR'.'NRG'.'UC_AUCoalWithoutCCS-'
+'FR'.'NRG'.'UC_AUCoalWithoutCCS_'
+'HR'.'NRG'.'UC_AUCoalWithoutCCS-'
+'HR'.'NRG'.'UC_AUCoalWithoutCCS_'
+'HU'.'NRG'.'UC_AUCoalWithoutCCS-'
+'HU'.'NRG'.'UC_AUCoalWithoutCCS_'
+'IE'.'NRG'.'UC_AUCoalWithoutCCS-'
+'IE'.'NRG'.'UC_AUCoalWithoutCCS_'
+'IS'.'NRG'.'UC_AUCoalWithoutCCS-'
+'IS'.'NRG'.'UC_AUCoalWithoutCCS_'
+'IT'.'NRG'.'UC_AUCoalWithoutCCS-'
+'IT'.'NRG'.'UC_AUCoalWithoutCCS_'
+'LT'.'NRG'.'UC_AUCoalWithoutCCS-'
+'LT'.'NRG'.'UC_AUCoalWithoutCCS_'
+'LU'.'NRG'.'UC_AUCoalWithoutCCS-'
+'LU'.'NRG'.'UC_AUCoalWithoutCCS_'
+'LV'.'NRG'.'UC_AUCoalWithoutCCS-'
+'LV'.'NRG'.'UC_AUCoalWithoutCCS_'
+'MT'.'NRG'.'UC_AUCoalWithoutCCS-'
+'MT'.'NRG'.'UC_AUCoalWithoutCCS_'
+'NL'.'NRG'.'UC_AUCoalWithoutCCS-'
+'NL'.'NRG'.'UC_AUCoalWithoutCCS_'
+'NO'.'NRG'.'UC_AUCoalWithoutCCS-'
+'NO'.'NRG'.'UC_AUCoalWithoutCCS_'
+'PL'.'NRG'.'UC_AUCoalWithoutCCS-'
+'PL'.'NRG'.'UC_AUCoalWithoutCCS_'
+'PT'.'NRG'.'UC_AUCoalWithoutCCS-'
+'PT'.'NRG'.'UC_AUCoalWithoutCCS_'
+'RO'.'NRG'.'UC_AUCoalWithoutCCS-'
+'RO'.'NRG'.'UC_AUCoalWithoutCCS_'
+'SE'.'NRG'.'UC_AUCoalWithoutCCS-'
+'SE'.'NRG'.'UC_AUCoalWithoutCCS_'
+'SI'.'NRG'.'UC_AUCoalWithoutCCS-'
+'SI'.'NRG'.'UC_AUCoalWithoutCCS_'
+'SK'.'NRG'.'UC_AUCoalWithoutCCS-'
+'SK'.'NRG'.'UC_AUCoalWithoutCCS_'
+'UK'.'NRG'.'UC_AUCoalWithoutCCS-'
+'UK'.'NRG'.'UC_AUCoalWithoutCCS_'
+/;
+
+SET COM_UNIT
+
+/
+'AT'.'UC_AUCoalWithoutCCS-'.'UCU'
+'AT'.'UC_AUCoalWithoutCCS_'.'UCU'
+'BE'.'UC_AUCoalWithoutCCS-'.'UCU'
+'BE'.'UC_AUCoalWithoutCCS_'.'UCU'
+'BG'.'UC_AUCoalWithoutCCS-'.'UCU'
+'BG'.'UC_AUCoalWithoutCCS_'.'UCU'
+'CH'.'UC_AUCoalWithoutCCS-'.'UCU'
+'CH'.'UC_AUCoalWithoutCCS_'.'UCU'
+'CY'.'UC_AUCoalWithoutCCS-'.'UCU'
+'CY'.'UC_AUCoalWithoutCCS_'.'UCU'
+'CZ'.'UC_AUCoalWithoutCCS-'.'UCU'
+'CZ'.'UC_AUCoalWithoutCCS_'.'UCU'
+'DE'.'UC_AUCoalWithoutCCS-'.'UCU'
+'DE'.'UC_AUCoalWithoutCCS_'.'UCU'
+'DK'.'UC_AUCoalWithoutCCS-'.'UCU'
+'DK'.'UC_AUCoalWithoutCCS_'.'UCU'
+'EE'.'UC_AUCoalWithoutCCS-'.'UCU'
+'EE'.'UC_AUCoalWithoutCCS_'.'UCU'
+'EL'.'UC_AUCoalWithoutCCS-'.'UCU'
+'EL'.'UC_AUCoalWithoutCCS_'.'UCU'
+'ES'.'UC_AUCoalWithoutCCS-'.'UCU'
+'ES'.'UC_AUCoalWithoutCCS_'.'UCU'
+'FI'.'UC_AUCoalWithoutCCS-'.'UCU'
+'FI'.'UC_AUCoalWithoutCCS_'.'UCU'
+'FR'.'UC_AUCoalWithoutCCS-'.'UCU'
+'FR'.'UC_AUCoalWithoutCCS_'.'UCU'
+'HR'.'UC_AUCoalWithoutCCS-'.'UCU'
+'HR'.'UC_AUCoalWithoutCCS_'.'UCU'
+'HU'.'UC_AUCoalWithoutCCS-'.'UCU'
+'HU'.'UC_AUCoalWithoutCCS_'.'UCU'
+'IE'.'UC_AUCoalWithoutCCS-'.'UCU'
+'IE'.'UC_AUCoalWithoutCCS_'.'UCU'
+'IS'.'UC_AUCoalWithoutCCS-'.'UCU'
+'IS'.'UC_AUCoalWithoutCCS_'.'UCU'
+'IT'.'UC_AUCoalWithoutCCS-'.'UCU'
+'IT'.'UC_AUCoalWithoutCCS_'.'UCU'
+'LT'.'UC_AUCoalWithoutCCS-'.'UCU'
+'LT'.'UC_AUCoalWithoutCCS_'.'UCU'
+'LU'.'UC_AUCoalWithoutCCS-'.'UCU'
+'LU'.'UC_AUCoalWithoutCCS_'.'UCU'
+'LV'.'UC_AUCoalWithoutCCS-'.'UCU'
+'LV'.'UC_AUCoalWithoutCCS_'.'UCU'
+'MT'.'UC_AUCoalWithoutCCS-'.'UCU'
+'MT'.'UC_AUCoalWithoutCCS_'.'UCU'
+'NL'.'UC_AUCoalWithoutCCS-'.'UCU'
+'NL'.'UC_AUCoalWithoutCCS_'.'UCU'
+'NO'.'UC_AUCoalWithoutCCS-'.'UCU'
+'NO'.'UC_AUCoalWithoutCCS_'.'UCU'
+'PL'.'UC_AUCoalWithoutCCS-'.'UCU'
+'PL'.'UC_AUCoalWithoutCCS_'.'UCU'
+'PT'.'UC_AUCoalWithoutCCS-'.'UCU'
+'PT'.'UC_AUCoalWithoutCCS_'.'UCU'
+'RO'.'UC_AUCoalWithoutCCS-'.'UCU'
+'RO'.'UC_AUCoalWithoutCCS_'.'UCU'
+'SE'.'UC_AUCoalWithoutCCS-'.'UCU'
+'SE'.'UC_AUCoalWithoutCCS_'.'UCU'
+'SI'.'UC_AUCoalWithoutCCS-'.'UCU'
+'SI'.'UC_AUCoalWithoutCCS_'.'UCU'
+'SK'.'UC_AUCoalWithoutCCS-'.'UCU'
+'SK'.'UC_AUCoalWithoutCCS_'.'UCU'
+'UK'.'UC_AUCoalWithoutCCS-'.'UCU'
+'UK'.'UC_AUCoalWithoutCCS_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'AT'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'BE'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'BG'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'CH'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'CY'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'CZ'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'DE'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'DK'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'EE'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'EL'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'ES'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'FI'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'FR'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'HR'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'HU'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'IE'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'IT'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'LT'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'LU'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'LV'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'MT'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'NL'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'NO'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'PL'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'PT'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'RO'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'SE'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'SI'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'SK'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS-'.'UK'.'UC_AUCoalWithoutCCS-'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'AT'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'BE'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'BG'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'CH'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'CY'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'CZ'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'DE'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'DK'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'EE'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'EL'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'ES'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'FI'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'FR'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'HR'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'HU'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'IE'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'IT'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'LT'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'LU'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'LV'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'MT'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'NL'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'NO'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'PL'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'PT'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'RO'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'SE'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'SI'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'SK'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+'IMPEXP'.'UC_AUCoalWithoutCCS_'.'UK'.'UC_AUCoalWithoutCCS_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'AT'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'AT'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'BE'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'BE'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'BG'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'BG'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'CH'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'CH'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'CY'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'CY'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'CZ'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'CZ'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'DE'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'DE'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'DK'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'DK'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'EE'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'EE'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'EL'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'EL'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'ES'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'ES'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'FI'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'FI'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'FR'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'FR'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'HR'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'HR'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'HU'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'HU'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'IE'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'IE'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'IS'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'IS'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'IT'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'IT'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'LT'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'LT'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'LU'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'LU'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'LV'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'LV'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'MT'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'MT'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'NL'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'NL'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'NO'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'NO'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'PL'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'PL'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'PT'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'PT'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'RO'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'RO'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'SE'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'SE'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'SI'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'SI'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'SK'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'SK'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+'UK'.'UC_AUCoalWithoutCCS-' 'Negative dummy var for UC: UC_AUCoalWithoutCCS'
+'UK'.'UC_AUCoalWithoutCCS_' 'Positive dummy var for UC: UC_AUCoalWithoutCCS'
+/;
+
+SET UC_R_EACH
+
+/
+'AT'.'UC_AUCoalWithoutCCS'
+'BE'.'UC_AUCoalWithoutCCS'
+'BG'.'UC_AUCoalWithoutCCS'
+'CH'.'UC_AUCoalWithoutCCS'
+'CY'.'UC_AUCoalWithoutCCS'
+'CZ'.'UC_AUCoalWithoutCCS'
+'DE'.'UC_AUCoalWithoutCCS'
+'DK'.'UC_AUCoalWithoutCCS'
+'EE'.'UC_AUCoalWithoutCCS'
+'EL'.'UC_AUCoalWithoutCCS'
+'ES'.'UC_AUCoalWithoutCCS'
+'FI'.'UC_AUCoalWithoutCCS'
+'FR'.'UC_AUCoalWithoutCCS'
+'HR'.'UC_AUCoalWithoutCCS'
+'HU'.'UC_AUCoalWithoutCCS'
+'IE'.'UC_AUCoalWithoutCCS'
+'IT'.'UC_AUCoalWithoutCCS'
+'LT'.'UC_AUCoalWithoutCCS'
+'LU'.'UC_AUCoalWithoutCCS'
+'LV'.'UC_AUCoalWithoutCCS'
+'MT'.'UC_AUCoalWithoutCCS'
+'NL'.'UC_AUCoalWithoutCCS'
+'NO'.'UC_AUCoalWithoutCCS'
+'PL'.'UC_AUCoalWithoutCCS'
+'PT'.'UC_AUCoalWithoutCCS'
+'RO'.'UC_AUCoalWithoutCCS'
+'SE'.'UC_AUCoalWithoutCCS'
+'SI'.'UC_AUCoalWithoutCCS'
+'SK'.'UC_AUCoalWithoutCCS'
+'UK'.'UC_AUCoalWithoutCCS'
+/;
+
+PARAMETER
+
+UC_CAP ' '/
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2015.'PUSCSCOL3' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'ECHP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'ECHP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EEPP_coal_CCGT' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EEPP_coal_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EEPP_lignite_thermal' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUFBCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUFBCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUIGCCCOH15' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUIGCCCOL01' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUIGCOHCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUIGCOLCCSpre20' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUSTCOHcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUSTCOHsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUSTCOLcon01' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'EUSTCOLsup01' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'HHTHCOH001' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'PUICSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'PUICSCOH2' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'PUICSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'PUSCSCOH1' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'PUSCSCOH3' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'PUSCSCOL1' 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2015.'PUSCSCOL3' 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'AT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'BE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'BG'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'CH'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'CY'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'DE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'DK'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'EE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'EL'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'ES'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'FI'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'FR'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'HR'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'HR'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'HU'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'IE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'IT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'LT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'LU'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'LV'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'MT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'NL'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'NO'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'PL'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'PT'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'RO'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'SE'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'SI'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'SK'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS-'.ANNUAL.IMP -1
+'UC_AUCoalWithoutCCS'.LHS.'UK'.2010.'IMPDUCZ'.'UC_AUCoalWithoutCCS_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSRTS ' '/
+'AT'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'AT'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0.872754
+'AT'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.804160701075646
+'AT'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.778216701075646
+'AT'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'AT'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'AT'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'AT'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'BE'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'BE'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0.825249
+'BE'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.043249
+'BE'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.043249
+'BE'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'BE'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'BE'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'BE'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'BG'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'BG'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 5.3127
+'BG'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 4.81902489322227
+'BG'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 3.50134489322227
+'BG'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 3.39094489322227
+'BG'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 2.78515489322227
+'BG'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 2.17936489322227
+'BG'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 2.17936489322227
+'CH'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'CH'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'CH'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'CH'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'CH'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'CY'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'CY'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0
+'CY'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.000000527496106960958
+'CY'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.000000527496106960958
+'CY'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0.00000874705328900138
+'CY'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'CY'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'CY'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'CZ'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'CZ'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 9.65640155
+'CZ'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 9.48663455
+'CZ'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 9.41395455
+'CZ'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 8.79727455
+'CZ'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 5.94745635116021
+'CZ'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 3.09763815232042
+'CZ'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 3.09763815232042
+'DE'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'DE'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 52.81941883
+'DE'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 49.1699841856267
+'DE'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 44.0159301856268
+'DE'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 36.7748901856267
+'DE'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'DE'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'DE'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'DK'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'DK'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 4.22529
+'DK'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 2.36589
+'DK'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 2.08989
+'DK'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 1.47165
+'DK'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0.753064005429849
+'DK'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.0344780108596984
+'DK'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0.0344780108596984
+'EE'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'EE'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 1.8714
+'EE'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 1.40804625295482
+'EE'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 1.40804625295482
+'EE'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'EE'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'EE'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'EE'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'EL'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'EL'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 3.9233
+'EL'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 3.03004465620539
+'EL'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 3.09989708316041
+'EL'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 2.84491142742425
+'EL'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 1.83876602993617
+'EL'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.832620632448102
+'EL'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0.832620632448102
+'ES'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'ES'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 10.316328
+'ES'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 9.332934608511
+'ES'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 7.377934608511
+'ES'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 3.967770608511
+'ES'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 2.03218656750002
+'ES'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.0966025264890441
+'ES'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0.0966025264890441
+'FI'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'FI'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 4.3398758
+'FI'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 3.3027073
+'FI'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 2.3077173
+'FI'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'FI'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'FI'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'FI'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'FR'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'FR'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 5.3848375
+'FR'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 3.8555255
+'FR'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 3.833533
+'FR'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'FR'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'FR'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'FR'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'HR'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0.31120846
+'HR'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.657503780075514
+'HR'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.657503780075514
+'HR'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0.657503780075514
+'HR'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0.560299249167392
+'HR'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.46309471825927
+'HR'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0.46309471825927
+'HU'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'HU'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 1.136753
+'HU'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.673698152781118
+'HU'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.407178152781118
+'HU'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0.395985152781119
+'HU'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0.199699097304697
+'HU'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.00341304182827598
+'HU'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0.00341304182827598
+'IE'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'IE'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 1.18578
+'IE'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.841998172780401
+'IE'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.841998172780401
+'IE'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'IE'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'IE'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'IE'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'IT'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'IT'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 9.51149
+'IT'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 8.85801888364397
+'IT'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 5.10349888364397
+'IT'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 5.09836888364397
+'IT'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 3.49986888364397
+'IT'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 1.90136888364397
+'IT'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 1.90136888364397
+'LT'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'LT'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0
+'LT'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0
+'LT'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0
+'LT'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'LT'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'LT'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'LT'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'LU'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'LU'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0
+'LU'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0
+'LU'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0
+'LU'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'LU'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'LU'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.000000163584521915289
+'LU'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'LV'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'LV'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0.02116
+'LV'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.02116
+'LV'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.02116
+'LV'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'LV'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'LV'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'LV'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'MT'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'MT'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0
+'MT'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0
+'MT'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0
+'MT'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'MT'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'MT'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'MT'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'NL'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'NL'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 6.97544
+'NL'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 5.38844
+'NL'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 5.05424
+'NL'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'NL'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'NL'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'NL'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'NO'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'NO'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'NO'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'NO'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'NO'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'PL'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'PL'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 28.543311
+'PL'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 22.9665575502183
+'PL'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 20.6949781933626
+'PL'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 20.703922615663
+'PL'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 15.3434484241241
+'PL'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 9.9829742325852
+'PL'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 9.9829742325852
+'PT'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'PT'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 1.72776
+'PT'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.57776
+'PT'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0
+'PT'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'PT'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'PT'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'PT'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'RO'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'RO'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 6.44134
+'RO'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 5.62598
+'RO'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 3.09408
+'RO'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 1.90926
+'RO'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 1.39730160620028
+'RO'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.885343212400554
+'RO'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0.885343212400554
+'SE'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'SE'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0.355675
+'SE'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.135615
+'SE'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.135615
+'SE'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'SE'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'SE'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'SE'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'SI'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'SI'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 0.79203
+'SI'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.79203
+'SI'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.67828
+'SI'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0.63228
+'SI'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0.44114
+'SI'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0.25
+'SI'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0.25
+'SK'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'SK'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 1.274263
+'SK'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 0.791943
+'SK'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 0.711498
+'SK'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'SK'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'SK'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'SK'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+'UK'.'UC_AUCoalWithoutCCS'.0.ANNUAL.UP 11
+'UK'.'UC_AUCoalWithoutCCS'.2015.ANNUAL.UP 18.734876
+'UK'.'UC_AUCoalWithoutCCS'.2020.ANNUAL.UP 11.149485
+'UK'.'UC_AUCoalWithoutCCS'.2025.ANNUAL.UP 2.32261
+'UK'.'UC_AUCoalWithoutCCS'.2030.ANNUAL.UP 0
+'UK'.'UC_AUCoalWithoutCCS'.2040.ANNUAL.UP 0
+'UK'.'UC_AUCoalWithoutCCS'.2050.ANNUAL.UP 0
+'UK'.'UC_AUCoalWithoutCCS'.2060.ANNUAL.UP 0
+/;
+
+

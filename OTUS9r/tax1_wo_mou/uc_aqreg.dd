@@ -1,0 +1,316 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'TAX1_WO_MOU'
+$SET SCENARIO_NAME 'uc_aqreg'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'R0'.'NRG'.'AQREG_NOX_AllRegions-'
+'R0'.'NRG'.'AQREG_NOX_AllRegions_'
+'R0'.'NRG'.'AQREG_SO2_AllRegions-'
+'R0'.'NRG'.'AQREG_SO2_AllRegions_'
+'R1'.'NRG'.'AQREG_NOX_AllRegions-'
+'R1'.'NRG'.'AQREG_NOX_AllRegions_'
+'R1'.'NRG'.'AQREG_SO2_AllRegions-'
+'R1'.'NRG'.'AQREG_SO2_AllRegions_'
+'R2'.'NRG'.'AQREG_NOX_AllRegions-'
+'R2'.'NRG'.'AQREG_NOX_AllRegions_'
+'R2'.'NRG'.'AQREG_SO2_AllRegions-'
+'R2'.'NRG'.'AQREG_SO2_AllRegions_'
+'R3'.'NRG'.'AQREG_NOX_AllRegions-'
+'R3'.'NRG'.'AQREG_NOX_AllRegions_'
+'R3'.'NRG'.'AQREG_SO2_AllRegions-'
+'R3'.'NRG'.'AQREG_SO2_AllRegions_'
+'R4'.'NRG'.'AQREG_NOX_AllRegions-'
+'R4'.'NRG'.'AQREG_NOX_AllRegions_'
+'R4'.'NRG'.'AQREG_SO2_AllRegions-'
+'R4'.'NRG'.'AQREG_SO2_AllRegions_'
+'R5'.'NRG'.'AQREG_NOX_AllRegions-'
+'R5'.'NRG'.'AQREG_NOX_AllRegions_'
+'R5'.'NRG'.'AQREG_SO2_AllRegions-'
+'R5'.'NRG'.'AQREG_SO2_AllRegions_'
+'R6'.'NRG'.'AQREG_NOX_AllRegions-'
+'R6'.'NRG'.'AQREG_NOX_AllRegions_'
+'R6'.'NRG'.'AQREG_SO2_AllRegions-'
+'R6'.'NRG'.'AQREG_SO2_AllRegions_'
+'R7'.'NRG'.'AQREG_NOX_AllRegions-'
+'R7'.'NRG'.'AQREG_NOX_AllRegions_'
+'R7'.'NRG'.'AQREG_SO2_AllRegions-'
+'R7'.'NRG'.'AQREG_SO2_AllRegions_'
+'R8'.'NRG'.'AQREG_NOX_AllRegions-'
+'R8'.'NRG'.'AQREG_NOX_AllRegions_'
+'R8'.'NRG'.'AQREG_SO2_AllRegions-'
+'R8'.'NRG'.'AQREG_SO2_AllRegions_'
+'R9'.'NRG'.'AQREG_NOX_AllRegions-'
+'R9'.'NRG'.'AQREG_NOX_AllRegions_'
+'R9'.'NRG'.'AQREG_SO2_AllRegions-'
+'R9'.'NRG'.'AQREG_SO2_AllRegions_'
+/;
+
+SET COM_UNIT
+
+/
+'R0'.'AQREG_NOX_AllRegions-'.'UCU'
+'R0'.'AQREG_NOX_AllRegions_'.'UCU'
+'R0'.'AQREG_SO2_AllRegions-'.'UCU'
+'R0'.'AQREG_SO2_AllRegions_'.'UCU'
+'R1'.'AQREG_NOX_AllRegions-'.'UCU'
+'R1'.'AQREG_NOX_AllRegions_'.'UCU'
+'R1'.'AQREG_SO2_AllRegions-'.'UCU'
+'R1'.'AQREG_SO2_AllRegions_'.'UCU'
+'R2'.'AQREG_NOX_AllRegions-'.'UCU'
+'R2'.'AQREG_NOX_AllRegions_'.'UCU'
+'R2'.'AQREG_SO2_AllRegions-'.'UCU'
+'R2'.'AQREG_SO2_AllRegions_'.'UCU'
+'R3'.'AQREG_NOX_AllRegions-'.'UCU'
+'R3'.'AQREG_NOX_AllRegions_'.'UCU'
+'R3'.'AQREG_SO2_AllRegions-'.'UCU'
+'R3'.'AQREG_SO2_AllRegions_'.'UCU'
+'R4'.'AQREG_NOX_AllRegions-'.'UCU'
+'R4'.'AQREG_NOX_AllRegions_'.'UCU'
+'R4'.'AQREG_SO2_AllRegions-'.'UCU'
+'R4'.'AQREG_SO2_AllRegions_'.'UCU'
+'R5'.'AQREG_NOX_AllRegions-'.'UCU'
+'R5'.'AQREG_NOX_AllRegions_'.'UCU'
+'R5'.'AQREG_SO2_AllRegions-'.'UCU'
+'R5'.'AQREG_SO2_AllRegions_'.'UCU'
+'R6'.'AQREG_NOX_AllRegions-'.'UCU'
+'R6'.'AQREG_NOX_AllRegions_'.'UCU'
+'R6'.'AQREG_SO2_AllRegions-'.'UCU'
+'R6'.'AQREG_SO2_AllRegions_'.'UCU'
+'R7'.'AQREG_NOX_AllRegions-'.'UCU'
+'R7'.'AQREG_NOX_AllRegions_'.'UCU'
+'R7'.'AQREG_SO2_AllRegions-'.'UCU'
+'R7'.'AQREG_SO2_AllRegions_'.'UCU'
+'R8'.'AQREG_NOX_AllRegions-'.'UCU'
+'R8'.'AQREG_NOX_AllRegions_'.'UCU'
+'R8'.'AQREG_SO2_AllRegions-'.'UCU'
+'R8'.'AQREG_SO2_AllRegions_'.'UCU'
+'R9'.'AQREG_NOX_AllRegions-'.'UCU'
+'R9'.'AQREG_NOX_AllRegions_'.'UCU'
+'R9'.'AQREG_SO2_AllRegions-'.'UCU'
+'R9'.'AQREG_SO2_AllRegions_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R1'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R2'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R3'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R4'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R5'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R6'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R7'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R8'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions-'.'R9'.'AQREG_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R1'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R2'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R3'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R4'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R5'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R6'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R7'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R8'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_NOX_AllRegions_'.'R9'.'AQREG_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R1'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R2'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R3'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R4'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R5'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R6'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R7'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R8'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions-'.'R9'.'AQREG_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R1'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R2'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R3'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R4'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R5'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R6'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R7'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R8'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'AQREG_SO2_AllRegions_'.'R9'.'AQREG_SO2_AllRegions_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'R0'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R0'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R0'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R0'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R1'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R1'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R1'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R1'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R2'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R2'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R2'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R2'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R3'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R3'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R3'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R3'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R4'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R4'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R4'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R4'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R5'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R5'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R5'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R5'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R6'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R6'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R6'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R6'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R7'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R7'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R7'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R7'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R8'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R8'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R8'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R8'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+'R9'.'AQREG_NOX_AllRegions-' 'Negative dummy var for UC: AQREG_NOX_AllRegions'
+'R9'.'AQREG_NOX_AllRegions_' 'Positive dummy var for UC: AQREG_NOX_AllRegions'
+'R9'.'AQREG_SO2_AllRegions-' 'Negative dummy var for UC: AQREG_SO2_AllRegions'
+'R9'.'AQREG_SO2_AllRegions_' 'Positive dummy var for UC: AQREG_SO2_AllRegions'
+/;
+
+SET UC_R_SUM
+
+/
+'R1'.'AQREG_NOX_AllRegions'
+'R1'.'AQREG_SO2_AllRegions'
+'R2'.'AQREG_NOX_AllRegions'
+'R2'.'AQREG_SO2_AllRegions'
+'R3'.'AQREG_NOX_AllRegions'
+'R3'.'AQREG_SO2_AllRegions'
+'R4'.'AQREG_NOX_AllRegions'
+'R4'.'AQREG_SO2_AllRegions'
+'R5'.'AQREG_NOX_AllRegions'
+'R5'.'AQREG_SO2_AllRegions'
+'R6'.'AQREG_NOX_AllRegions'
+'R6'.'AQREG_SO2_AllRegions'
+'R7'.'AQREG_NOX_AllRegions'
+'R7'.'AQREG_SO2_AllRegions'
+'R8'.'AQREG_NOX_AllRegions'
+'R8'.'AQREG_SO2_AllRegions'
+'R9'.'AQREG_NOX_AllRegions'
+'R9'.'AQREG_SO2_AllRegions'
+/;
+
+PARAMETER
+
+UC_COMNET ' '/
+'AQREG_NOX_AllRegions'.LHS.'R1'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R1'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R2'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R2'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R3'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R3'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R4'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R4'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R5'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R5'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R6'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R6'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R7'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R7'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R8'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R8'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R9'.2010.'ELCNOX'.ANNUAL 1
+'AQREG_NOX_AllRegions'.LHS.'R9'.2055.'ELCNOX'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R1'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R1'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R1'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R2'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R2'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R2'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R3'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R3'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R3'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R4'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R4'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R4'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R5'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R5'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R5'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R6'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R6'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R6'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R7'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R7'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R7'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R8'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R8'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R8'.2055.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R9'.2010.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R9'.2015.'ELCSO2'.ANNUAL 1
+'AQREG_SO2_AllRegions'.LHS.'R9'.2055.'ELCSO2'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'AQREG_NOX_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_NOX_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions-'.ANNUAL.IMP -1
+'AQREG_NOX_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'AQREG_NOX_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+'AQREG_SO2_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions-'.ANNUAL.IMP -1
+'AQREG_SO2_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'AQREG_SO2_AllRegions_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'AQREG_NOX_AllRegions'.0.ANNUAL.UP 5
+'AQREG_NOX_AllRegions'.2010.ANNUAL.UP 3317
+'AQREG_NOX_AllRegions'.2055.ANNUAL.UP 3317
+'AQREG_SO2_AllRegions'.0.ANNUAL.UP 5
+'AQREG_SO2_AllRegions'.2010.ANNUAL.UP 8119
+'AQREG_SO2_AllRegions'.2015.ANNUAL.UP 8119
+'AQREG_SO2_AllRegions'.2055.ANNUAL.UP 8119
+/;
+
+

@@ -1,0 +1,442 @@
+{
+ "case": "TIMES-DK_COMETS_CB_20",
+ "made": "2026-11-08",
+ "objective": 2065814.349626841,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 866875,
+  "columns": 1030870,
+  "nonzeros": 4827622,
+  "objective": 2065814.349626841,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "4 Terminated By Solver",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 866875,
+  "columns": 1030870,
+  "nonzeros": 4827622,
+  "objective": 2065814.3483820618
+ },
+ "row_counts": {
+  "EQ_OBJVAR": 2,
+  "EQ_PTRANS": 47961,
+  "EQG_CPT": 272,
+  "EQ_OBJSALV": 2,
+  "EQ_OBJFIX": 2,
+  "EQG_COMBAL": 21422,
+  "EQL_OUTSHR": 14008,
+  "EQL_CAPACT": 338668,
+  "EQ_IRE": 640,
+  "EQG_ACTBND": 10,
+  "EQE_COMPRD": 3200,
+  "EQ_OBJ": 1,
+  "EQE_CPT": 1212,
+  "EQG_INSHR": 19950,
+  "EQE_ASHAR": 2176,
+  "EQE_INSHR": 38612,
+  "EQE_COMBAL": 11020,
+  "EQG_OUTSHR": 96,
+  "EQ_OBJINV": 2,
+  "EQE_ACTEFF": 198081,
+  "EQE_ACTBND": 2,
+  "EQE_UCTS": 1215,
+  "EQE_UCRT": 308,
+  "EQE_UC": 1,
+  "EQL_INSHR": 298,
+  "EQE_CAPACT": 22886,
+  "EQE_UCRTS": 960,
+  "EQ_ACTFLO": 78151,
+  "EQE_OUTSHR": 65717
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1970",
+  "CTST": "",
+  "DAMAGE": "NO",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "AUTO",
+  "OBLONG": "YES",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "DTU_CB_20",
+  "SCENARIO_NAME": "z_cb_no_tax",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "STAGES": "NO",
+  "SYSPREFIX": "",
+  "TMP": "0",
+  "VALIDATE": "NO",
+  "VAR": "VARIABLE OBJZ",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "ts.dd",
+   "bytes": 315,
+   "sha256_16": "546e33c5ffc68824"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 1354265,
+   "sha256_16": "02c5ba8c1eea1269"
+  },
+  {
+   "name": "elc_techs.dd",
+   "bytes": 197787,
+   "sha256_16": "fd6d55dfef0ec8d3"
+  },
+  {
+   "name": "elc_plants2020.dd",
+   "bytes": 29706,
+   "sha256_16": "99f1c155a7f61876"
+  },
+  {
+   "name": "elc_importexport.dd",
+   "bytes": 10290,
+   "sha256_16": "3097f39753606044"
+  },
+  {
+   "name": "elc_dh-pipes.dd",
+   "bytes": 5308,
+   "sha256_16": "e91fd0e329db5f40"
+  },
+  {
+   "name": "ind_techs.dd",
+   "bytes": 786282,
+   "sha256_16": "d216b3ceb761cace"
+  },
+  {
+   "name": "res_app_techs.dd",
+   "bytes": 11545,
+   "sha256_16": "cc18dded6b486d22"
+  },
+  {
+   "name": "res_techs.dd",
+   "bytes": 76511,
+   "sha256_16": "f295fd1c5cd1e043"
+  },
+  {
+   "name": "res_heatsav.dd",
+   "bytes": 35327,
+   "sha256_16": "f8d8bd948943adcd"
+  },
+  {
+   "name": "sup_h2_chain.dd",
+   "bytes": 28131,
+   "sha256_16": "2c9ac394608e9917"
+  },
+  {
+   "name": "sup_bioref.dd",
+   "bytes": 23049,
+   "sha256_16": "e7cf75b9618b78ea"
+  },
+  {
+   "name": "sup_biogasplants.dd",
+   "bytes": 8195,
+   "sha256_16": "fd2116e626828b50"
+  },
+  {
+   "name": "tra_techs.dd",
+   "bytes": 160759,
+   "sha256_16": "4af90e3add82250b"
+  },
+  {
+   "name": "elc_excessheat.dd",
+   "bytes": 185289,
+   "sha256_16": "d3a3fe0cf116fab0"
+  },
+  {
+   "name": "ldc_wasteheat.dd",
+   "bytes": 12983,
+   "sha256_16": "2db68843c247a0f4"
+  },
+  {
+   "name": "elc_trade.dd",
+   "bytes": 736,
+   "sha256_16": "0048e0817ca7c8c6"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 7916,
+   "sha256_16": "297fbd415ca9fd0c"
+  },
+  {
+   "name": "ind_demandproj.dd",
+   "bytes": 187691,
+   "sha256_16": "e6d37fd2ead60f20"
+  },
+  {
+   "name": "res_demandproj.dd",
+   "bytes": 10779,
+   "sha256_16": "2836803e7975a727"
+  },
+  {
+   "name": "elc_baseconstraints.dd",
+   "bytes": 18281,
+   "sha256_16": "5ca78d01943281c7"
+  },
+  {
+   "name": "ind_baseconstraints.dd",
+   "bytes": 17105,
+   "sha256_16": "a4751c1f2cd885f6"
+  },
+  {
+   "name": "res_baseconstraints.dd",
+   "bytes": 9021,
+   "sha256_16": "f1c0e2ff257d43f7"
+  },
+  {
+   "name": "tra_baseconstraints.dd",
+   "bytes": 66685,
+   "sha256_16": "bb6bb30c520312a6"
+  },
+  {
+   "name": "sys_deliverycosts.dd",
+   "bytes": 245663,
+   "sha256_16": "64368850c4dc233b"
+  },
+  {
+   "name": "elc_maxelcexports.dd",
+   "bytes": 2306,
+   "sha256_16": "d97b537099e3f84d"
+  },
+  {
+   "name": "elc_dh-pipesdata.dd",
+   "bytes": 1580,
+   "sha256_16": "1fc58a6b971d3d29"
+  },
+  {
+   "name": "sys_subannual_data.dd",
+   "bytes": 686816,
+   "sha256_16": "e36f4f66a8874baf"
+  },
+  {
+   "name": "elc_excessheat_pots.dd",
+   "bytes": 13592,
+   "sha256_16": "376339c32271c154"
+  },
+  {
+   "name": "ind_ee-low.dd",
+   "bytes": 46112,
+   "sha256_16": "8c1646ab8cec7039"
+  },
+  {
+   "name": "res_buildingstockproj.dd",
+   "bytes": 34756,
+   "sha256_16": "acf00cb629a0b65a"
+  },
+  {
+   "name": "res_restrictheatsav.dd",
+   "bytes": 7112,
+   "sha256_16": "2bfd0228c082fead"
+  },
+  {
+   "name": "res_app_effproj.dd",
+   "bytes": 7007,
+   "sha256_16": "490afb3edff12d62"
+  },
+  {
+   "name": "sup_northseaminingproj.dd",
+   "bytes": 13986,
+   "sha256_16": "8a7752fd31494cff"
+  },
+  {
+   "name": "sup-elc_renewablepotentials.dd",
+   "bytes": 12592,
+   "sha256_16": "81dba90be6f77244"
+  },
+  {
+   "name": "tra_xassumptions.dd",
+   "bytes": 69095,
+   "sha256_16": "09b7f1479fbff338"
+  },
+  {
+   "name": "elc_taxessubsidies.dd",
+   "bytes": 3214264,
+   "sha256_16": "94bde0e916dfdba1"
+  },
+  {
+   "name": "ind_taxessubsidies.dd",
+   "bytes": 881382,
+   "sha256_16": "c9d3b9793570d91a"
+  },
+  {
+   "name": "res_taxessubsidies.dd",
+   "bytes": 2255845,
+   "sha256_16": "d968ff486bf8fd0a"
+  },
+  {
+   "name": "tra_xtaxessubsidies.dd",
+   "bytes": 12383485,
+   "sha256_16": "27265b13bf212694"
+  },
+  {
+   "name": "sup_taxessubsidies.dd",
+   "bytes": 779324,
+   "sha256_16": "9542a6c9001b41cf"
+  },
+  {
+   "name": "ets-nets_emicoeff.dd",
+   "bytes": 91626,
+   "sha256_16": "000fa424e621b967"
+  },
+  {
+   "name": "tra_demandproj.dd",
+   "bytes": 6605,
+   "sha256_16": "e8b5bbe28375bef4"
+  },
+  {
+   "name": "tra_minimum_shares.dd",
+   "bytes": 45040,
+   "sha256_16": "b4647001beb567a6"
+  },
+  {
+   "name": "tra_ttb.dd",
+   "bytes": 768,
+   "sha256_16": "5eea9495724f210a"
+  },
+  {
+   "name": "tra_shiftpotential.dd",
+   "bytes": 372300,
+   "sha256_16": "329f7f275837119d"
+  },
+  {
+   "name": "tra_infrastructure_structure.dd",
+   "bytes": 15129,
+   "sha256_16": "45771062484ef395"
+  },
+  {
+   "name": "sys_fuelinfrastructure.dd",
+   "bytes": 4042,
+   "sha256_16": "fa8aa2805484c2f7"
+  },
+  {
+   "name": "fuel_constraints.dd",
+   "bytes": 3596,
+   "sha256_16": "42622edea0f314e3"
+  },
+  {
+   "name": "sys_elc_ie.dd",
+   "bytes": 1787,
+   "sha256_16": "54e40a22c4c1cc72"
+  },
+  {
+   "name": "ldc_increaseddemand_varprofile.dd",
+   "bytes": 12078,
+   "sha256_16": "140334f969e8a61d"
+  },
+  {
+   "name": "sup_fuelprice_bf18.dd",
+   "bytes": 386056,
+   "sha256_16": "6e526f5624c2c411"
+  },
+  {
+   "name": "sys_dr.dd",
+   "bytes": 62748,
+   "sha256_16": "7f5d511ef0f15cb5"
+  },
+  {
+   "name": "vat.dd",
+   "bytes": 120553,
+   "sha256_16": "04e1be44c133fccc"
+  },
+  {
+   "name": "sys_carbon_budget.dd",
+   "bytes": 85136,
+   "sha256_16": "b901894592ab9df1"
+  },
+  {
+   "name": "tra_ev_share_cb.dd",
+   "bytes": 32299,
+   "sha256_16": "c84329e9d7fb49dc"
+  },
+  {
+   "name": "z_cb_no_tax.dd",
+   "bytes": 18483496,
+   "sha256_16": "fcb3e3499a0d954e"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 866875   GAMS 866875   only here 0   only in GAMS 0",
+    "columns    here 1030870   GAMS 1030870   only here 0   only in GAMS 0",
+    "entries    here 4827622   GAMS 4827622   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 1.36e-15 (tolerance 1.0e-9); 252550 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 2065814.3483820618,
+   "times_in_gams_objective": 2065814.349626841,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 144.563,
+   "relative_difference": 6.02561024306237e-10
+  },
+  "regions": 2,
+  "highs": {
+   "status": "Optimal",
+   "objective": 2065814.3498800097,
+   "version": "1.15.1",
+   "threads": 24,
+   "method": "IPX + crossover",
+   "solve_seconds": 931.2,
+   "attempts": [
+    {
+     "options": "(default)",
+     "status": "Unknown"
+    },
+    {
+     "options": "--solver hipo",
+     "status": "Unknown"
+    },
+    {
+     "options": "--solver ipx --highs-option run_crossover=on",
+     "status": "Optimal"
+    }
+   ],
+   "relative_difference_from_cplex": 1.225514931936696e-10
+  },
+  "command": "python TIMES.py run TIMES-DK/CB_20 --solver ipx --highs-option run_crossover=on",
+  "build": {
+   "timesos_seconds": 24.1,
+   "timesos_peak_gb": 1.89,
+   "times_in_gams_seconds": 10.4,
+   "times_in_gams_peak_gb": 0.62,
+   "time_ratio": 2.317307692307692,
+   "memory_ratio": 3.0574407582938385,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

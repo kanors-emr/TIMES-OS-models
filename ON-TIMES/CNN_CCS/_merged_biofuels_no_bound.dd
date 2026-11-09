@@ -1,0 +1,1610 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME '_merged_biofuels_no_bound'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'DKE'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'DKE'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'DKW'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'DKW'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'FIM'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'FIM'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'FIN'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'FIN'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'NO1'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'NO1'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'NO2'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'NO2'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'SE1'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'SE1'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'SE2'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'SE2'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'SE3'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'SE3'.'NRG'.'WPE_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'BGA_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'BGA_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'CRN_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'CRN_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'DSB1_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'DSB1_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'DSB2_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'DSB2_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'GSB1_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'GSB1_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'GSB2_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'GSB2_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'KRB1_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'KRB1_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'KRB2_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'KRB2_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'MOB1_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'MOB1_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'MOB2_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'MOB2_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'SNG1_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'SNG1_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'SNG2_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'SNG2_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'WCH_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'WCH_Import_Bounds_Nordic_'
+'SE4'.'NRG'.'WPE_Import_Bounds_Nordic-'
+'SE4'.'NRG'.'WPE_Import_Bounds_Nordic_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'DKE'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'DKE'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'DKW'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'DKW'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'FIM'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'FIM'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'FIN'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'FIN'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'NO1'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'NO1'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'NO2'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'NO2'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'SE1'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'SE1'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'SE2'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'SE2'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'SE3'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'SE3'.'WPE_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'BGA_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'BGA_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'CRN_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'CRN_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'DSB1_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'DSB1_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'DSB2_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'DSB2_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'GSB1_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'GSB1_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'GSB2_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'GSB2_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'KRB1_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'KRB1_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'KRB2_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'KRB2_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'MOB1_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'MOB1_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'MOB2_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'MOB2_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'SNG1_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'SNG1_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'SNG2_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'SNG2_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'WCH_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'WCH_Import_Bounds_Nordic_'.'UCU'
+'SE4'.'WPE_Import_Bounds_Nordic-'.'UCU'
+'SE4'.'WPE_Import_Bounds_Nordic_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'DKE'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'DKW'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'NO1'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'NO2'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'SE1'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'SE2'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'SE3'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic-'.'SE4'.'BGA_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'DKE'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'DKW'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'NO1'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'NO2'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'SE1'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'SE2'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'SE3'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'BGA_Import_Bounds_Nordic_'.'SE4'.'BGA_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'DKE'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'DKW'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'NO1'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'NO2'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'SE1'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'SE2'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'SE3'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic-'.'SE4'.'CRN_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'DKE'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'DKW'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'NO1'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'NO2'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'SE1'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'SE2'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'SE3'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'CRN_Import_Bounds_Nordic_'.'SE4'.'CRN_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'DKE'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'DKW'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'NO1'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'NO2'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'SE1'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'SE2'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'SE3'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic-'.'SE4'.'DSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'DKE'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'DKW'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'NO1'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'NO2'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'SE1'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'SE2'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'SE3'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB1_Import_Bounds_Nordic_'.'SE4'.'DSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'DKE'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'DKW'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'NO1'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'NO2'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'SE1'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'SE2'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'SE3'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic-'.'SE4'.'DSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'DKE'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'DKW'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'NO1'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'NO2'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'SE1'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'SE2'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'SE3'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'DSB2_Import_Bounds_Nordic_'.'SE4'.'DSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'DKE'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'DKW'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'NO1'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'NO2'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'SE1'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'SE2'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'SE3'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic-'.'SE4'.'GSB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'DKE'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'DKW'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'NO1'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'NO2'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'SE1'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'SE2'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'SE3'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB1_Import_Bounds_Nordic_'.'SE4'.'GSB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'DKE'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'DKW'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'NO1'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'NO2'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'SE1'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'SE2'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'SE3'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic-'.'SE4'.'GSB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'DKE'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'DKW'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'NO1'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'NO2'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'SE1'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'SE2'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'SE3'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'GSB2_Import_Bounds_Nordic_'.'SE4'.'GSB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'DKE'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'DKW'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'NO1'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'NO2'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'SE1'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'SE2'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'SE3'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic-'.'SE4'.'KRB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'DKE'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'DKW'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'NO1'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'NO2'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'SE1'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'SE2'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'SE3'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB1_Import_Bounds_Nordic_'.'SE4'.'KRB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'DKE'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'DKW'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'NO1'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'NO2'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'SE1'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'SE2'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'SE3'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic-'.'SE4'.'KRB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'DKE'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'DKW'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'NO1'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'NO2'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'SE1'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'SE2'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'SE3'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'KRB2_Import_Bounds_Nordic_'.'SE4'.'KRB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'DKE'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'DKW'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'NO1'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'NO2'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'SE1'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'SE2'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'SE3'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic-'.'SE4'.'MOB1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'DKE'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'DKW'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'NO1'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'NO2'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'SE1'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'SE2'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'SE3'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB1_Import_Bounds_Nordic_'.'SE4'.'MOB1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'DKE'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'DKW'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'NO1'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'NO2'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'SE1'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'SE2'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'SE3'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic-'.'SE4'.'MOB2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'DKE'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'DKW'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'NO1'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'NO2'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'SE1'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'SE2'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'SE3'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'MOB2_Import_Bounds_Nordic_'.'SE4'.'MOB2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'DKE'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'DKW'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'NO1'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'NO2'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'SE1'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'SE2'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'SE3'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic-'.'SE4'.'SNG1_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'DKE'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'DKW'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'NO1'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'NO2'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'SE1'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'SE2'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'SE3'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG1_Import_Bounds_Nordic_'.'SE4'.'SNG1_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'DKE'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'DKW'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'NO1'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'NO2'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'SE1'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'SE2'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'SE3'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic-'.'SE4'.'SNG2_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'DKE'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'DKW'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'NO1'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'NO2'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'SE1'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'SE2'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'SE3'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'SNG2_Import_Bounds_Nordic_'.'SE4'.'SNG2_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'DKE'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'DKW'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'NO1'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'NO2'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'SE1'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'SE2'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'SE3'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic-'.'SE4'.'WCH_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'DKE'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'DKW'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'NO1'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'NO2'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'SE1'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'SE2'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'SE3'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WCH_Import_Bounds_Nordic_'.'SE4'.'WCH_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'DKE'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'DKW'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'NO1'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'NO2'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'SE1'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'SE2'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'SE3'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic-'.'SE4'.'WPE_Import_Bounds_Nordic-'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'DKE'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'DKW'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'NO1'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'NO2'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'SE1'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'SE2'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'SE3'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+'IMPEXP'.'WPE_Import_Bounds_Nordic_'.'SE4'.'WPE_Import_Bounds_Nordic_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'DKE'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'DKE'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'DKE'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'DKE'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'DKE'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'DKE'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'DKE'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'DKE'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'DKE'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'DKE'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'DKE'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'DKE'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'DKE'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'DKE'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'DKE'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'DKE'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'DKE'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'DKE'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'DKE'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'DKE'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'DKE'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'DKE'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'DKE'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'DKE'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'DKE'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'DKE'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'DKE'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'DKW'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'DKW'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'DKW'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'DKW'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'DKW'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'DKW'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'DKW'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'DKW'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'DKW'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'DKW'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'DKW'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'DKW'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'DKW'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'DKW'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'DKW'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'DKW'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'DKW'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'DKW'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'DKW'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'DKW'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'DKW'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'DKW'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'DKW'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'DKW'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'DKW'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'DKW'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'DKW'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'DKW'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'FIM'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'FIM'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'FIM'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'FIM'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'FIM'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'FIM'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'FIM'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'FIM'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'FIM'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'FIM'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'FIM'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'FIM'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'FIM'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'FIM'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'FIM'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'FIM'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'FIM'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'FIM'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'FIM'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'FIM'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'FIM'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'FIM'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'FIM'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'FIM'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'FIM'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'FIM'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'FIM'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'FIM'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'FIN'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'FIN'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'FIN'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'FIN'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'FIN'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'FIN'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'FIN'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'FIN'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'FIN'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'FIN'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'FIN'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'FIN'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'FIN'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'FIN'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'FIN'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'FIN'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'FIN'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'FIN'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'FIN'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'FIN'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'FIN'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'FIN'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'FIN'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'FIN'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'FIN'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'FIN'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'FIN'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'FIN'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'NO1'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'NO1'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'NO1'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'NO1'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'NO1'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'NO1'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'NO1'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'NO1'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'NO1'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'NO1'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'NO1'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'NO1'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'NO1'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'NO1'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'NO1'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'NO1'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'NO1'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'NO1'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'NO1'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'NO1'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'NO1'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'NO1'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'NO1'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'NO1'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'NO1'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'NO1'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'NO1'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'NO1'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'NO2'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'NO2'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'NO2'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'NO2'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'NO2'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'NO2'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'NO2'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'NO2'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'NO2'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'NO2'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'NO2'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'NO2'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'NO2'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'NO2'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'NO2'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'NO2'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'NO2'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'NO2'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'NO2'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'NO2'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'NO2'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'NO2'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'NO2'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'NO2'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'NO2'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'NO2'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'NO2'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'NO2'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE1'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE1'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE1'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE1'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE1'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE1'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE1'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE1'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE1'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE1'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE1'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE1'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE1'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE1'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE1'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE1'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE1'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE1'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE1'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE1'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE1'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE1'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE1'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE1'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE1'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE1'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE1'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE1'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE2'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE2'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE2'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE2'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE2'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE2'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE2'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE2'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE2'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE2'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE2'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE2'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE2'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE2'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE2'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE2'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE2'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE2'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE2'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE2'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE2'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE2'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE2'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE2'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE2'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE2'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE2'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE2'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE3'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE3'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE3'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE3'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE3'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE3'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE3'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE3'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE3'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE3'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE3'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE3'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE3'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE3'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE3'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE3'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE3'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE3'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE3'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE3'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE3'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE3'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE3'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE3'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE3'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE3'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE3'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE3'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE4'.'BGA_Import_Bounds_Nordic-' 'Negative dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE4'.'BGA_Import_Bounds_Nordic_' 'Positive dummy var for UC: BGA_Import_Bounds_Nordic'
+'SE4'.'CRN_Import_Bounds_Nordic-' 'Negative dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE4'.'CRN_Import_Bounds_Nordic_' 'Positive dummy var for UC: CRN_Import_Bounds_Nordic'
+'SE4'.'DSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE4'.'DSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB1_Import_Bounds_Nordic'
+'SE4'.'DSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE4'.'DSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: DSB2_Import_Bounds_Nordic'
+'SE4'.'GSB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE4'.'GSB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB1_Import_Bounds_Nordic'
+'SE4'.'GSB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE4'.'GSB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: GSB2_Import_Bounds_Nordic'
+'SE4'.'KRB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE4'.'KRB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB1_Import_Bounds_Nordic'
+'SE4'.'KRB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE4'.'KRB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: KRB2_Import_Bounds_Nordic'
+'SE4'.'MOB1_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE4'.'MOB1_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB1_Import_Bounds_Nordic'
+'SE4'.'MOB2_Import_Bounds_Nordic-' 'Negative dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE4'.'MOB2_Import_Bounds_Nordic_' 'Positive dummy var for UC: MOB2_Import_Bounds_Nordic'
+'SE4'.'SNG1_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE4'.'SNG1_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG1_Import_Bounds_Nordic'
+'SE4'.'SNG2_Import_Bounds_Nordic-' 'Negative dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE4'.'SNG2_Import_Bounds_Nordic_' 'Positive dummy var for UC: SNG2_Import_Bounds_Nordic'
+'SE4'.'WCH_Import_Bounds_Nordic-' 'Negative dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE4'.'WCH_Import_Bounds_Nordic_' 'Positive dummy var for UC: WCH_Import_Bounds_Nordic'
+'SE4'.'WPE_Import_Bounds_Nordic-' 'Negative dummy var for UC: WPE_Import_Bounds_Nordic'
+'SE4'.'WPE_Import_Bounds_Nordic_' 'Positive dummy var for UC: WPE_Import_Bounds_Nordic'
+/;
+
+SET UC_R_SUM
+
+/
+'DKE'.'BGA_Import_Bounds_Nordic'
+'DKE'.'CRN_Import_Bounds_Nordic'
+'DKE'.'DSB1_Import_Bounds_Nordic'
+'DKE'.'DSB2_Import_Bounds_Nordic'
+'DKE'.'GSB1_Import_Bounds_Nordic'
+'DKE'.'GSB2_Import_Bounds_Nordic'
+'DKE'.'KRB1_Import_Bounds_Nordic'
+'DKE'.'KRB2_Import_Bounds_Nordic'
+'DKE'.'MOB1_Import_Bounds_Nordic'
+'DKE'.'MOB2_Import_Bounds_Nordic'
+'DKE'.'SNG1_Import_Bounds_Nordic'
+'DKE'.'SNG2_Import_Bounds_Nordic'
+'DKE'.'WCH_Import_Bounds_Nordic'
+'DKE'.'WPE_Import_Bounds_Nordic'
+'DKW'.'BGA_Import_Bounds_Nordic'
+'DKW'.'CRN_Import_Bounds_Nordic'
+'DKW'.'DSB1_Import_Bounds_Nordic'
+'DKW'.'DSB2_Import_Bounds_Nordic'
+'DKW'.'GSB1_Import_Bounds_Nordic'
+'DKW'.'GSB2_Import_Bounds_Nordic'
+'DKW'.'KRB1_Import_Bounds_Nordic'
+'DKW'.'KRB2_Import_Bounds_Nordic'
+'DKW'.'MOB1_Import_Bounds_Nordic'
+'DKW'.'MOB2_Import_Bounds_Nordic'
+'DKW'.'SNG1_Import_Bounds_Nordic'
+'DKW'.'SNG2_Import_Bounds_Nordic'
+'DKW'.'WCH_Import_Bounds_Nordic'
+'DKW'.'WPE_Import_Bounds_Nordic'
+'NO1'.'BGA_Import_Bounds_Nordic'
+'NO1'.'CRN_Import_Bounds_Nordic'
+'NO1'.'DSB1_Import_Bounds_Nordic'
+'NO1'.'DSB2_Import_Bounds_Nordic'
+'NO1'.'GSB1_Import_Bounds_Nordic'
+'NO1'.'GSB2_Import_Bounds_Nordic'
+'NO1'.'KRB1_Import_Bounds_Nordic'
+'NO1'.'KRB2_Import_Bounds_Nordic'
+'NO1'.'MOB1_Import_Bounds_Nordic'
+'NO1'.'MOB2_Import_Bounds_Nordic'
+'NO1'.'SNG1_Import_Bounds_Nordic'
+'NO1'.'SNG2_Import_Bounds_Nordic'
+'NO1'.'WCH_Import_Bounds_Nordic'
+'NO1'.'WPE_Import_Bounds_Nordic'
+'NO2'.'BGA_Import_Bounds_Nordic'
+'NO2'.'CRN_Import_Bounds_Nordic'
+'NO2'.'DSB1_Import_Bounds_Nordic'
+'NO2'.'DSB2_Import_Bounds_Nordic'
+'NO2'.'GSB1_Import_Bounds_Nordic'
+'NO2'.'GSB2_Import_Bounds_Nordic'
+'NO2'.'KRB1_Import_Bounds_Nordic'
+'NO2'.'KRB2_Import_Bounds_Nordic'
+'NO2'.'MOB1_Import_Bounds_Nordic'
+'NO2'.'MOB2_Import_Bounds_Nordic'
+'NO2'.'SNG1_Import_Bounds_Nordic'
+'NO2'.'SNG2_Import_Bounds_Nordic'
+'NO2'.'WCH_Import_Bounds_Nordic'
+'NO2'.'WPE_Import_Bounds_Nordic'
+'SE1'.'BGA_Import_Bounds_Nordic'
+'SE1'.'CRN_Import_Bounds_Nordic'
+'SE1'.'DSB1_Import_Bounds_Nordic'
+'SE1'.'DSB2_Import_Bounds_Nordic'
+'SE1'.'GSB1_Import_Bounds_Nordic'
+'SE1'.'GSB2_Import_Bounds_Nordic'
+'SE1'.'KRB1_Import_Bounds_Nordic'
+'SE1'.'KRB2_Import_Bounds_Nordic'
+'SE1'.'MOB1_Import_Bounds_Nordic'
+'SE1'.'MOB2_Import_Bounds_Nordic'
+'SE1'.'SNG1_Import_Bounds_Nordic'
+'SE1'.'SNG2_Import_Bounds_Nordic'
+'SE1'.'WCH_Import_Bounds_Nordic'
+'SE1'.'WPE_Import_Bounds_Nordic'
+'SE2'.'BGA_Import_Bounds_Nordic'
+'SE2'.'CRN_Import_Bounds_Nordic'
+'SE2'.'DSB1_Import_Bounds_Nordic'
+'SE2'.'DSB2_Import_Bounds_Nordic'
+'SE2'.'GSB1_Import_Bounds_Nordic'
+'SE2'.'GSB2_Import_Bounds_Nordic'
+'SE2'.'KRB1_Import_Bounds_Nordic'
+'SE2'.'KRB2_Import_Bounds_Nordic'
+'SE2'.'MOB1_Import_Bounds_Nordic'
+'SE2'.'MOB2_Import_Bounds_Nordic'
+'SE2'.'SNG1_Import_Bounds_Nordic'
+'SE2'.'SNG2_Import_Bounds_Nordic'
+'SE2'.'WCH_Import_Bounds_Nordic'
+'SE2'.'WPE_Import_Bounds_Nordic'
+'SE3'.'BGA_Import_Bounds_Nordic'
+'SE3'.'CRN_Import_Bounds_Nordic'
+'SE3'.'DSB1_Import_Bounds_Nordic'
+'SE3'.'DSB2_Import_Bounds_Nordic'
+'SE3'.'GSB1_Import_Bounds_Nordic'
+'SE3'.'GSB2_Import_Bounds_Nordic'
+'SE3'.'KRB1_Import_Bounds_Nordic'
+'SE3'.'KRB2_Import_Bounds_Nordic'
+'SE3'.'MOB1_Import_Bounds_Nordic'
+'SE3'.'MOB2_Import_Bounds_Nordic'
+'SE3'.'SNG1_Import_Bounds_Nordic'
+'SE3'.'SNG2_Import_Bounds_Nordic'
+'SE3'.'WCH_Import_Bounds_Nordic'
+'SE3'.'WPE_Import_Bounds_Nordic'
+'SE4'.'BGA_Import_Bounds_Nordic'
+'SE4'.'CRN_Import_Bounds_Nordic'
+'SE4'.'DSB1_Import_Bounds_Nordic'
+'SE4'.'DSB2_Import_Bounds_Nordic'
+'SE4'.'GSB1_Import_Bounds_Nordic'
+'SE4'.'GSB2_Import_Bounds_Nordic'
+'SE4'.'KRB1_Import_Bounds_Nordic'
+'SE4'.'KRB2_Import_Bounds_Nordic'
+'SE4'.'MOB1_Import_Bounds_Nordic'
+'SE4'.'MOB2_Import_Bounds_Nordic'
+'SE4'.'SNG1_Import_Bounds_Nordic'
+'SE4'.'SNG2_Import_Bounds_Nordic'
+'SE4'.'WCH_Import_Bounds_Nordic'
+'SE4'.'WPE_Import_Bounds_Nordic'
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'BGA_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPBGA'.ANNUAL 1
+'BGA_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPBGA'.ANNUAL 1
+'BGA_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPBGA'.ANNUAL 1
+'BGA_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPBGA'.ANNUAL 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPBGA'.ANNUAL 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPBGA'.ANNUAL 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPBGA'.ANNUAL 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPBGA'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'DKE'.2020.'IMPCRN'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'DKW'.2020.'IMPCRN'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'NO1'.2020.'IMPCRN'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'NO2'.2020.'IMPCRN'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE1'.2020.'IMPCRN'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE2'.2020.'IMPCRN'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE3'.2020.'IMPCRN'.ANNUAL 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE4'.2020.'IMPCRN'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDSB1'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDSB1'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDSB1'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDSB1'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDSB1'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDSB1'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDSB1'.ANNUAL 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDSB1'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDSB2'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDSB2'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDSB2'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDSB2'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDSB2'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDSB2'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDSB2'.ANNUAL 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDSB2'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPGSB1'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPGSB1'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPGSB1'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPGSB1'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPGSB1'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPGSB1'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPGSB1'.ANNUAL 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPGSB1'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPGSB2'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPGSB2'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPGSB2'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPGSB2'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPGSB2'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPGSB2'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPGSB2'.ANNUAL 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPGSB2'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPKRB1'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPKRB1'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPKRB1'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPKRB1'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPKRB1'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPKRB1'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPKRB1'.ANNUAL 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPKRB1'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPKRB2'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPKRB2'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPKRB2'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPKRB2'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPKRB2'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPKRB2'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPKRB2'.ANNUAL 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPKRB2'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPMOB1'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPMOB1'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPMOB1'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPMOB1'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPMOB1'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPMOB1'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPMOB1'.ANNUAL 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPMOB1'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPMOB2'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPMOB2'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPMOB2'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPMOB2'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPMOB2'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPMOB2'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPMOB2'.ANNUAL 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPMOB2'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPSNG1'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPSNG1'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPSNG1'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPSNG1'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPSNG1'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPSNG1'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPSNG1'.ANNUAL 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPSNG1'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPSNG2'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPSNG2'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPSNG2'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPSNG2'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPSNG2'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPSNG2'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPSNG2'.ANNUAL 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPSNG2'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'DKE'.2030.'IMPWCH'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'DKW'.2030.'IMPWCH'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'NO1'.2030.'IMPWCH'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'NO2'.2030.'IMPWCH'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE1'.2030.'IMPWCH'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE2'.2030.'IMPWCH'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE3'.2030.'IMPWCH'.ANNUAL 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE4'.2030.'IMPWCH'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'DKE'.2030.'IMPWPE'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'DKW'.2030.'IMPWPE'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'NO1'.2030.'IMPWPE'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'NO2'.2030.'IMPWPE'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE1'.2030.'IMPWPE'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE2'.2030.'IMPWPE'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE3'.2030.'IMPWPE'.ANNUAL 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE4'.2030.'IMPWPE'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'BGA_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'BGA_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'BGA_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'BGA_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'BGA_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'BGA_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'BGA_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'CRN_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'CRN_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'CRN_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'DSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'DSB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'DSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'GSB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'GSB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'GSB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'KRB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'KRB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'KRB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'MOB1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'MOB2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'MOB2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG1_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'SNG1_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'SNG2_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'SNG2_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WCH_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WCH_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'WCH_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'DKE'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'DKW'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'NO1'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'NO2'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'SE1'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'SE2'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'SE3'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+'WPE_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic-'.ANNUAL.IMP -1
+'WPE_Import_Bounds_Nordic'.LHS.'SE4'.2010.'IMPDUCZ'.'WPE_Import_Bounds_Nordic_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'BGA_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'BGA_Import_Bounds_Nordic'.2010.ANNUAL.UP 2
+'BGA_Import_Bounds_Nordic'.2040.ANNUAL.UP 0
+'CRN_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'CRN_Import_Bounds_Nordic'.2020.ANNUAL.UP 3
+'CRN_Import_Bounds_Nordic'.2050.ANNUAL.UP 1000
+'DSB1_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'DSB1_Import_Bounds_Nordic'.2010.ANNUAL.UP 3
+'DSB1_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'DSB2_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'DSB2_Import_Bounds_Nordic'.2010.ANNUAL.UP 6
+'DSB2_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'GSB1_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'GSB1_Import_Bounds_Nordic'.2010.ANNUAL.UP 7
+'GSB1_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'GSB2_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'GSB2_Import_Bounds_Nordic'.2010.ANNUAL.UP 4
+'GSB2_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'KRB1_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'KRB1_Import_Bounds_Nordic'.2010.ANNUAL.UP 5
+'KRB1_Import_Bounds_Nordic'.2025.ANNUAL.UP 6
+'KRB1_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'KRB2_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'KRB2_Import_Bounds_Nordic'.2010.ANNUAL.UP 3
+'KRB2_Import_Bounds_Nordic'.2025.ANNUAL.UP 4
+'KRB2_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'MOB1_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'MOB1_Import_Bounds_Nordic'.2010.ANNUAL.UP 3
+'MOB1_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'MOB2_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'MOB2_Import_Bounds_Nordic'.2010.ANNUAL.UP 3
+'MOB2_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'SNG1_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'SNG1_Import_Bounds_Nordic'.2010.ANNUAL.UP 3
+'SNG1_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'SNG2_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'SNG2_Import_Bounds_Nordic'.2010.ANNUAL.UP 3
+'SNG2_Import_Bounds_Nordic'.2040.ANNUAL.UP 1000
+'WCH_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'WCH_Import_Bounds_Nordic'.2030.ANNUAL.UP 3
+'WCH_Import_Bounds_Nordic'.2050.ANNUAL.UP 1000
+'WPE_Import_Bounds_Nordic'.0.ANNUAL.UP 5
+'WPE_Import_Bounds_Nordic'.2030.ANNUAL.UP 3
+'WPE_Import_Bounds_Nordic'.2050.ANNUAL.UP 1000
+/;
+
+

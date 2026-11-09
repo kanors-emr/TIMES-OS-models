@@ -1,0 +1,226 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'dk_sys_fuelinfrastructure'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'STOCK_GasStations_DK-'
+'DKE'.'NRG'.'STOCK_GasStations_DK_'
+'DKW'.'NRG'.'STOCK_GasStations_DK-'
+'DKW'.'NRG'.'STOCK_GasStations_DK_'
+'FIM'.'NRG'.'STOCK_GasStations_DK-'
+'FIM'.'NRG'.'STOCK_GasStations_DK_'
+'FIN'.'NRG'.'STOCK_GasStations_DK-'
+'FIN'.'NRG'.'STOCK_GasStations_DK_'
+'NO1'.'NRG'.'STOCK_GasStations_DK-'
+'NO1'.'NRG'.'STOCK_GasStations_DK_'
+'NO2'.'NRG'.'STOCK_GasStations_DK-'
+'NO2'.'NRG'.'STOCK_GasStations_DK_'
+'SE1'.'NRG'.'STOCK_GasStations_DK-'
+'SE1'.'NRG'.'STOCK_GasStations_DK_'
+'SE2'.'NRG'.'STOCK_GasStations_DK-'
+'SE2'.'NRG'.'STOCK_GasStations_DK_'
+'SE3'.'NRG'.'STOCK_GasStations_DK-'
+'SE3'.'NRG'.'STOCK_GasStations_DK_'
+'SE4'.'NRG'.'STOCK_GasStations_DK-'
+'SE4'.'NRG'.'STOCK_GasStations_DK_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'STOCK_GasStations_DK-'.'UCU'
+'DKE'.'STOCK_GasStations_DK_'.'UCU'
+'DKW'.'STOCK_GasStations_DK-'.'UCU'
+'DKW'.'STOCK_GasStations_DK_'.'UCU'
+'FIM'.'STOCK_GasStations_DK-'.'UCU'
+'FIM'.'STOCK_GasStations_DK_'.'UCU'
+'FIN'.'STOCK_GasStations_DK-'.'UCU'
+'FIN'.'STOCK_GasStations_DK_'.'UCU'
+'NO1'.'STOCK_GasStations_DK-'.'UCU'
+'NO1'.'STOCK_GasStations_DK_'.'UCU'
+'NO2'.'STOCK_GasStations_DK-'.'UCU'
+'NO2'.'STOCK_GasStations_DK_'.'UCU'
+'SE1'.'STOCK_GasStations_DK-'.'UCU'
+'SE1'.'STOCK_GasStations_DK_'.'UCU'
+'SE2'.'STOCK_GasStations_DK-'.'UCU'
+'SE2'.'STOCK_GasStations_DK_'.'UCU'
+'SE3'.'STOCK_GasStations_DK-'.'UCU'
+'SE3'.'STOCK_GasStations_DK_'.'UCU'
+'SE4'.'STOCK_GasStations_DK-'.'UCU'
+'SE4'.'STOCK_GasStations_DK_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'STOCK_GasStations_DK-'.'DKE'.'STOCK_GasStations_DK-'.'IMPDUCZ'
+'IMPEXP'.'STOCK_GasStations_DK-'.'DKW'.'STOCK_GasStations_DK-'.'IMPDUCZ'
+'IMPEXP'.'STOCK_GasStations_DK_'.'DKE'.'STOCK_GasStations_DK_'.'IMPDUCZ'
+'IMPEXP'.'STOCK_GasStations_DK_'.'DKW'.'STOCK_GasStations_DK_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'DKE'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'DKW'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'DKW'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'FIM'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'FIM'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'FIN'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'FIN'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'NO1'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'NO1'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'NO2'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'NO2'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'SE1'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'SE1'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'SE2'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'SE2'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'SE3'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'SE3'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+'SE4'.'STOCK_GasStations_DK-' 'Negative dummy var for UC: STOCK_GasStations_DK'
+'SE4'.'STOCK_GasStations_DK_' 'Positive dummy var for UC: STOCK_GasStations_DK'
+/;
+
+SET UC_R_SUM
+
+/
+'DKE'.'STOCK_GasStations_DK'
+'DKW'.'STOCK_GasStations_DK'
+/;
+
+PARAMETER
+
+ACT_BND ' '/
+'DKE'.0.'FT-TRAELCEV'.ANNUAL.UP 4
+'DKE'.2015.'FT-TRAELCEV'.ANNUAL.UP 0.1
+'DKW'.0.'FT-TRAELCEV'.ANNUAL.UP 4
+'DKW'.2015.'FT-TRAELCEV'.ANNUAL.UP 0.1
+/;
+
+PARAMETER
+
+NCAP_COST ' '/
+'DKE'.2015.'FT-TRAELCEV'.'MKr15' 263.675
+'DKE'.2015.'FT-TRANGBL1'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL1N'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL2'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL2N'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL3'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL3N'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL4'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL4N'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL5'.'MKr15' 128.5
+'DKE'.2015.'FT-TRANGBL5N'.'MKr15' 128.5
+'DKE'.2020.'FT-TRAELCEV'.'MKr15' 86.18
+'DKE'.2020.'FT-TRANGBL1'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL1N'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL2'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL2N'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL3'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL3N'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL4'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL4N'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL5'.'MKr15' 76
+'DKE'.2020.'FT-TRANGBL5N'.'MKr15' 76
+'DKE'.2035.'FT-TRAELCEV'.'MKr15' 15.255
+'DKE'.2035.'FT-TRANGBL1'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL1N'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL2'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL2N'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL3'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL3N'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL4'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL4N'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL5'.'MKr15' 19
+'DKE'.2035.'FT-TRANGBL5N'.'MKr15' 19
+'DKW'.2015.'FT-TRAELCEV'.'MKr15' 263.675
+'DKW'.2015.'FT-TRANGBL1'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL1N'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL2'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL2N'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL3'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL3N'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL4'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL4N'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL5'.'MKr15' 128.5
+'DKW'.2015.'FT-TRANGBL5N'.'MKr15' 128.5
+'DKW'.2020.'FT-TRAELCEV'.'MKr15' 86.18
+'DKW'.2020.'FT-TRANGBL1'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL1N'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL2'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL2N'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL3'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL3N'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL4'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL4N'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL5'.'MKr15' 76
+'DKW'.2020.'FT-TRANGBL5N'.'MKr15' 76
+'DKW'.2035.'FT-TRAELCEV'.'MKr15' 15.255
+'DKW'.2035.'FT-TRANGBL1'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL1N'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL2'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL2N'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL3'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL3N'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL4'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL4N'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL5'.'MKr15' 19
+'DKW'.2035.'FT-TRANGBL5N'.'MKr15' 19
+/;
+
+PARAMETER
+
+UC_CAP ' '/
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL1' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL1N' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL2' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL2N' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL3' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL3N' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL4' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL4N' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL5' 1
+'STOCK_GasStations_DK'.LHS.'DKE'.2015.'FT-TRANGBL5N' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL1' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL1N' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL2' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL2N' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL3' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL3N' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL4' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL4N' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL5' 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2015.'FT-TRANGBL5N' 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'STOCK_GasStations_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'STOCK_GasStations_DK-'.ANNUAL.IMP -1
+'STOCK_GasStations_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'STOCK_GasStations_DK_'.ANNUAL.IMP 1
+'STOCK_GasStations_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'STOCK_GasStations_DK-'.ANNUAL.IMP -1
+'STOCK_GasStations_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'STOCK_GasStations_DK_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'STOCK_GasStations_DK'.0.ANNUAL.FX 4
+'STOCK_GasStations_DK'.2015.ANNUAL.FX 0.01
+/;
+
+

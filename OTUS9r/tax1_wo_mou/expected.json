@@ -1,0 +1,270 @@
+{
+ "case": "tax1_wo_mou",
+ "made": "2026-11-08",
+ "objective": 212593238099.785,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 1199533,
+  "columns": 1922664,
+  "nonzeros": 8402583,
+  "objective": 212593238099.785,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 1199533,
+  "columns": 1922664,
+  "nonzeros": 8402583,
+  "objective": 212593237937.44806
+ },
+ "row_counts": {
+  "EQ_OBJVAR": 10,
+  "EQ_PTRANS": 1260,
+  "EQG_CPT": 9559,
+  "EQ_OBJSALV": 10,
+  "EQ_OBJFIX": 10,
+  "EQG_COMBAL": 133117,
+  "EQL_CAPACT": 365896,
+  "EQ_STGAUX": 2016,
+  "EQL_ACTBND": 198,
+  "EQL_CAFLAC": 2016,
+  "EQ_IRE": 32088,
+  "EQL_CAPFLO": 2016,
+  "EQL_CPT": 198,
+  "EQG_ACTBND": 176,
+  "EQE_COMPRD": 22582,
+  "EQ_OBJ": 1,
+  "EQE_CPT": 379,
+  "EQL_REFIT": 770,
+  "EQ_PEAK": 6048,
+  "EQN_UCRTP": 19248,
+  "EQG_INSHR": 67,
+  "EQE_INSHR": 63732,
+  "EQE_COMBAL": 24397,
+  "EQG_OUTSHR": 4480,
+  "EQ_OBJINV": 10,
+  "EQE_ACTEFF": 160394,
+  "EQE_ACTBND": 484,
+  "EQE_UCTS": 160,
+  "EQ_STGTSS": 4140,
+  "EQE_UCRT": 63333,
+  "EQ_CUMRET": 2008,
+  "EQE_CAPACT": 3024,
+  "EQ_CUMFLO": 676,
+  "EQ_ACTFLO": 175124,
+  "EQE_OUTSHR": 99906
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1929",
+  "CTST": "",
+  "DAMAGE": "NO",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MID_YEAR": "YES",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "AUTO",
+  "OBLONG": "YES",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "tax1_wo_mou",
+  "SCENARIO_NAME": "uc_trnldv20",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "STAGES": "NO",
+  "SYSPREFIX": "",
+  "TMP": "0",
+  "VALIDATE": "NO",
+  "VAR": "VARIABLE OBJZ",
+  "VARCOST": "LIN",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "tax1_wo_mou_ts.dd",
+   "bytes": 121,
+   "sha256_16": "77c307bad99e0ced"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 42550962,
+   "sha256_16": "d4a4470c34e45bc5"
+  },
+  {
+   "name": "coalplants-ret-and_lifeext.dd",
+   "bytes": 75053,
+   "sha256_16": "41bb343b18d404fd"
+  },
+  {
+   "name": "storage.dd",
+   "bytes": 7360,
+   "sha256_16": "69017a9519e03956"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 506790,
+   "sha256_16": "e163902d96b26bd2"
+  },
+  {
+   "name": "tradeparams.dd",
+   "bytes": 32573,
+   "sha256_16": "38e89c38f3b14889"
+  },
+  {
+   "name": "aqreg.dd",
+   "bytes": 1684,
+   "sha256_16": "0c32ed3718414985"
+  },
+  {
+   "name": "baseextra-offeps.dd",
+   "bytes": 49421,
+   "sha256_16": "c483b0cccd1739f7"
+  },
+  {
+   "name": "2080upd.dd",
+   "bytes": 4279,
+   "sha256_16": "7ae742c0dda85892"
+  },
+  {
+   "name": "bevcharging.dd",
+   "bytes": 67337,
+   "sha256_16": "38bd5370a71ee7ea"
+  },
+  {
+   "name": "co2_tax_az020122.dd",
+   "bytes": 1373,
+   "sha256_16": "35aa5c1c8c966ef7"
+  },
+  {
+   "name": "csapr-mats.dd",
+   "bytes": 4819,
+   "sha256_16": "307dcfb2133b5a24"
+  },
+  {
+   "name": "growthv2.dd",
+   "bytes": 1853767,
+   "sha256_16": "0a22272cd443fc31"
+  },
+  {
+   "name": "refemiupd-ts.dd",
+   "bytes": 59686,
+   "sha256_16": "56e985cabe2e27ad"
+  },
+  {
+   "name": "trnco2-ts.dd",
+   "bytes": 85262,
+   "sha256_16": "58e9b3a49b6f9c6a"
+  },
+  {
+   "name": "uc-biofuels20.dd",
+   "bytes": 66907,
+   "sha256_16": "31e8cfb9c77a2bd2"
+  },
+  {
+   "name": "uc-csapr-mats.dd",
+   "bytes": 20583,
+   "sha256_16": "17f015016d3be3c0"
+  },
+  {
+   "name": "uc-elc20.dd",
+   "bytes": 451957,
+   "sha256_16": "44fb44c6913d2acf"
+  },
+  {
+   "name": "uc-ind20.dd",
+   "bytes": 2689326,
+   "sha256_16": "1c4c7aac499805d1"
+  },
+  {
+   "name": "uc-nonewnuc.dd",
+   "bytes": 10110,
+   "sha256_16": "da444314559ba01b"
+  },
+  {
+   "name": "uc-rescom20.dd",
+   "bytes": 593351,
+   "sha256_16": "8e3a5dbb5f5cf751"
+  },
+  {
+   "name": "uc-rps20.dd",
+   "bytes": 402090,
+   "sha256_16": "12f25b5751e6237a"
+  },
+  {
+   "name": "uc_aqreg.dd",
+   "bytes": 15478,
+   "sha256_16": "bcfc0f3d8f27a2e7"
+  },
+  {
+   "name": "uc_trnhdv20_az121921.dd",
+   "bytes": 422431,
+   "sha256_16": "5fc36f61b7af3c42"
+  },
+  {
+   "name": "uc_trnldv20.dd",
+   "bytes": 1432876,
+   "sha256_16": "9d1a6a29fa5cd179"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 1199533   GAMS 1199533   only here 0   only in GAMS 0",
+    "columns    here 1922664   GAMS 1922664   only here 0   only in GAMS 0",
+    "entries    here 8402583   GAMS 8402583   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 3.0e-15 (tolerance 1.0e-9); 25917 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 212593237937.44806,
+   "times_in_gams_objective": 212593238099.785,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 541.594,
+   "relative_difference": 7.636035183013767e-10
+  },
+  "regions": 10,
+  "highs": {
+   "status": "not attempted (over 1 M rows)"
+  },
+  "command": "python TIMES.py run OTUS9r/tax1_wo_mou --lp cplex",
+  "build": {
+   "timesos_seconds": 52.5,
+   "timesos_peak_gb": 7.09,
+   "times_in_gams_seconds": 44.3,
+   "times_in_gams_peak_gb": 2.09,
+   "time_ratio": 1.1851015801354403,
+   "memory_ratio": 3.39577174929841,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

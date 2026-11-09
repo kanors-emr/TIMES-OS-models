@@ -1,0 +1,442 @@
+$ONEMPTY
+$OFFEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'dk_sup_northseaminingproj'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'DKE'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'DKE'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'DKE'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'DKW'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'DKW'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'DKW'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'DKW'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'FIM'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'FIM'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'FIM'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'FIM'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'FIN'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'FIN'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'FIN'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'FIN'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'NO1'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'NO1'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'NO1'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'NO1'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'NO2'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'NO2'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'NO2'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'NO2'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'SE1'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'SE1'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'SE1'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'SE1'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'SE2'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'SE2'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'SE2'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'SE2'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'SE3'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'SE3'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'SE3'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'SE3'.'NRG'.'UC_Local_Oil_Prod_DK_'
+'SE4'.'NRG'.'UC_Local_NatGas_prod_DK-'
+'SE4'.'NRG'.'UC_Local_NatGas_prod_DK_'
+'SE4'.'NRG'.'UC_Local_Oil_Prod_DK-'
+'SE4'.'NRG'.'UC_Local_Oil_Prod_DK_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'DKE'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'DKE'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'DKE'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'DKW'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'DKW'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'DKW'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'DKW'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'FIM'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'FIM'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'FIM'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'FIM'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'FIN'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'FIN'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'FIN'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'FIN'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'NO1'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'NO1'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'NO1'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'NO1'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'NO2'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'NO2'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'NO2'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'NO2'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'SE1'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'SE1'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'SE1'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'SE1'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'SE2'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'SE2'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'SE2'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'SE2'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'SE3'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'SE3'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'SE3'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'SE3'.'UC_Local_Oil_Prod_DK_'.'UCU'
+'SE4'.'UC_Local_NatGas_prod_DK-'.'UCU'
+'SE4'.'UC_Local_NatGas_prod_DK_'.'UCU'
+'SE4'.'UC_Local_Oil_Prod_DK-'.'UCU'
+'SE4'.'UC_Local_Oil_Prod_DK_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'UC_Local_NatGas_prod_DK-'.'DKE'.'UC_Local_NatGas_prod_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_Local_NatGas_prod_DK-'.'DKW'.'UC_Local_NatGas_prod_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_Local_NatGas_prod_DK_'.'DKE'.'UC_Local_NatGas_prod_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_Local_NatGas_prod_DK_'.'DKW'.'UC_Local_NatGas_prod_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_Local_Oil_Prod_DK-'.'DKE'.'UC_Local_Oil_Prod_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_Local_Oil_Prod_DK-'.'DKW'.'UC_Local_Oil_Prod_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_Local_Oil_Prod_DK_'.'DKE'.'UC_Local_Oil_Prod_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_Local_Oil_Prod_DK_'.'DKW'.'UC_Local_Oil_Prod_DK_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'DKE'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'DKE'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'DKE'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'DKW'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'DKW'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'DKW'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'DKW'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'FIM'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'FIM'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'FIM'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'FIM'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'FIN'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'FIN'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'FIN'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'FIN'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'NO1'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'NO1'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'NO1'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'NO1'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'NO2'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'NO2'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'NO2'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'NO2'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE1'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE1'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE1'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE1'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE2'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE2'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE2'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE2'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE3'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE3'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE3'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE3'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE4'.'UC_Local_NatGas_prod_DK-' 'Negative dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE4'.'UC_Local_NatGas_prod_DK_' 'Positive dummy var for UC: UC_Local_NatGas_prod_DK'
+'SE4'.'UC_Local_Oil_Prod_DK-' 'Negative dummy var for UC: UC_Local_Oil_Prod_DK'
+'SE4'.'UC_Local_Oil_Prod_DK_' 'Positive dummy var for UC: UC_Local_Oil_Prod_DK'
+/;
+
+SET UC_R_SUM
+
+/
+'DKE'.'UC_Local_NatGas_prod_DK'
+'DKE'.'UC_Local_Oil_Prod_DK'
+'DKW'.'UC_Local_NatGas_prod_DK'
+'DKW'.'UC_Local_Oil_Prod_DK'
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2010.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2011.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2012.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2013.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2014.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2015.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2016.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2017.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2018.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2019.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2020.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2021.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2022.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2023.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2024.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2025.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2026.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2027.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2028.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2029.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2030.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2031.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2032.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2033.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2034.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2035.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2036.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2037.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2038.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2039.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2040.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2041.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2042.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2043.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2044.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2045.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2046.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2047.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2048.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2049.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2050.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2010.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2011.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2012.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2013.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2014.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2015.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2016.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2017.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2018.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2019.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2020.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2021.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2022.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2023.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2024.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2025.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2026.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2027.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2028.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2029.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2030.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2031.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2032.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2033.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2034.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2035.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2036.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2037.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2038.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2039.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2040.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2041.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2042.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2043.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2044.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2045.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2046.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2047.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2048.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2049.'MINNGA'.ANNUAL 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2050.'MINNGA'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2010.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2011.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2012.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2013.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2014.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2015.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2016.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2017.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2018.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2019.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2020.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2021.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2022.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2023.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2024.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2025.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2026.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2027.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2028.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2029.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2030.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2031.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2032.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2033.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2034.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2035.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2036.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2037.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2038.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2039.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2040.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2041.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2042.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2043.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2044.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2045.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2046.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2047.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2048.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2049.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2050.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2010.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2011.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2012.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2013.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2014.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2015.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2016.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2017.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2018.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2019.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2020.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2021.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2022.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2023.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2024.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2025.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2026.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2027.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2028.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2029.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2030.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2031.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2032.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2033.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2034.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2035.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2036.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2037.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2038.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2039.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2040.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2041.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2042.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2043.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2044.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2045.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2046.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2047.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2048.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2049.'MINCRD'.ANNUAL 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2050.'MINCRD'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Local_NatGas_prod_DK-'.ANNUAL.IMP -1
+'UC_Local_NatGas_prod_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Local_NatGas_prod_DK_'.ANNUAL.IMP 1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Local_NatGas_prod_DK-'.ANNUAL.IMP -1
+'UC_Local_NatGas_prod_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Local_NatGas_prod_DK_'.ANNUAL.IMP 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Local_Oil_Prod_DK-'.ANNUAL.IMP -1
+'UC_Local_Oil_Prod_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Local_Oil_Prod_DK_'.ANNUAL.IMP 1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Local_Oil_Prod_DK-'.ANNUAL.IMP -1
+'UC_Local_Oil_Prod_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Local_Oil_Prod_DK_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'UC_Local_NatGas_prod_DK'.0.ANNUAL.FX 15
+'UC_Local_NatGas_prod_DK'.2010.ANNUAL.FX 265.24
+'UC_Local_NatGas_prod_DK'.2011.ANNUAL.FX 209.28
+'UC_Local_NatGas_prod_DK'.2012.ANNUAL.FX 180.6
+'UC_Local_NatGas_prod_DK'.2013.ANNUAL.FX 147.86
+'UC_Local_NatGas_prod_DK'.2014.ANNUAL.FX 165.29
+'UC_Local_NatGas_prod_DK'.2015.ANNUAL.FX 151.15
+'UC_Local_NatGas_prod_DK'.2016.ANNUAL.FX 135.17
+'UC_Local_NatGas_prod_DK'.2017.ANNUAL.FX 137.93
+'UC_Local_NatGas_prod_DK'.2018.ANNUAL.FX 138.89
+'UC_Local_NatGas_prod_DK'.2019.ANNUAL.FX 147.34
+'UC_Local_NatGas_prod_DK'.2020.ANNUAL.FX 134.62
+'UC_Local_NatGas_prod_DK'.2021.ANNUAL.FX 117.44
+'UC_Local_NatGas_prod_DK'.2022.ANNUAL.FX 105.07
+'UC_Local_NatGas_prod_DK'.2023.ANNUAL.FX 93.57
+'UC_Local_NatGas_prod_DK'.2024.ANNUAL.FX 82.72
+'UC_Local_NatGas_prod_DK'.2025.ANNUAL.FX 83.17
+'UC_Local_NatGas_prod_DK'.2026.ANNUAL.FX 73.38
+'UC_Local_NatGas_prod_DK'.2027.ANNUAL.FX 61.63
+'UC_Local_NatGas_prod_DK'.2028.ANNUAL.FX 50.94
+'UC_Local_NatGas_prod_DK'.2029.ANNUAL.FX 41.15
+'UC_Local_NatGas_prod_DK'.2030.ANNUAL.FX 36.6
+'UC_Local_NatGas_prod_DK'.2031.ANNUAL.FX 35.14
+'UC_Local_NatGas_prod_DK'.2032.ANNUAL.FX 27.05
+'UC_Local_NatGas_prod_DK'.2033.ANNUAL.FX 14.11
+'UC_Local_NatGas_prod_DK'.2034.ANNUAL.FX 10.54
+'UC_Local_NatGas_prod_DK'.2035.ANNUAL.FX 8.74
+'UC_Local_NatGas_prod_DK'.2036.ANNUAL.FX 7.91
+'UC_Local_NatGas_prod_DK'.2037.ANNUAL.FX 7.2
+'UC_Local_NatGas_prod_DK'.2038.ANNUAL.FX 6.64
+'UC_Local_NatGas_prod_DK'.2039.ANNUAL.FX 6.13
+'UC_Local_NatGas_prod_DK'.2040.ANNUAL.FX 4.29
+'UC_Local_NatGas_prod_DK'.2041.ANNUAL.FX 0.45
+'UC_Local_NatGas_prod_DK'.2042.ANNUAL.FX 0.4
+'UC_Local_NatGas_prod_DK'.2043.ANNUAL.FX 0
+'UC_Local_NatGas_prod_DK'.2044.ANNUAL.FX 0
+'UC_Local_NatGas_prod_DK'.2045.ANNUAL.FX 0
+'UC_Local_NatGas_prod_DK'.2046.ANNUAL.FX 0
+'UC_Local_NatGas_prod_DK'.2047.ANNUAL.FX 0
+'UC_Local_NatGas_prod_DK'.2048.ANNUAL.FX 0
+'UC_Local_NatGas_prod_DK'.2049.ANNUAL.FX 0
+'UC_Local_NatGas_prod_DK'.2050.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.0.ANNUAL.FX 15
+'UC_Local_Oil_Prod_DK'.2010.ANNUAL.FX 519.87
+'UC_Local_Oil_Prod_DK'.2011.ANNUAL.FX 469.1
+'UC_Local_Oil_Prod_DK'.2012.ANNUAL.FX 428.63
+'UC_Local_Oil_Prod_DK'.2013.ANNUAL.FX 372.26
+'UC_Local_Oil_Prod_DK'.2014.ANNUAL.FX 350.84
+'UC_Local_Oil_Prod_DK'.2015.ANNUAL.FX 349.09
+'UC_Local_Oil_Prod_DK'.2016.ANNUAL.FX 346.61
+'UC_Local_Oil_Prod_DK'.2017.ANNUAL.FX 352.63
+'UC_Local_Oil_Prod_DK'.2018.ANNUAL.FX 324.3
+'UC_Local_Oil_Prod_DK'.2019.ANNUAL.FX 316.9
+'UC_Local_Oil_Prod_DK'.2020.ANNUAL.FX 346.13
+'UC_Local_Oil_Prod_DK'.2021.ANNUAL.FX 310.39
+'UC_Local_Oil_Prod_DK'.2022.ANNUAL.FX 272.45
+'UC_Local_Oil_Prod_DK'.2023.ANNUAL.FX 230.2
+'UC_Local_Oil_Prod_DK'.2024.ANNUAL.FX 198.31
+'UC_Local_Oil_Prod_DK'.2025.ANNUAL.FX 172.74
+'UC_Local_Oil_Prod_DK'.2026.ANNUAL.FX 152.18
+'UC_Local_Oil_Prod_DK'.2027.ANNUAL.FX 135.62
+'UC_Local_Oil_Prod_DK'.2028.ANNUAL.FX 120.67
+'UC_Local_Oil_Prod_DK'.2029.ANNUAL.FX 106.97
+'UC_Local_Oil_Prod_DK'.2030.ANNUAL.FX 97.95
+'UC_Local_Oil_Prod_DK'.2031.ANNUAL.FX 89.25
+'UC_Local_Oil_Prod_DK'.2032.ANNUAL.FX 81.56
+'UC_Local_Oil_Prod_DK'.2033.ANNUAL.FX 74.82
+'UC_Local_Oil_Prod_DK'.2034.ANNUAL.FX 67.99
+'UC_Local_Oil_Prod_DK'.2035.ANNUAL.FX 63.04
+'UC_Local_Oil_Prod_DK'.2036.ANNUAL.FX 58.99
+'UC_Local_Oil_Prod_DK'.2037.ANNUAL.FX 54.63
+'UC_Local_Oil_Prod_DK'.2038.ANNUAL.FX 51
+'UC_Local_Oil_Prod_DK'.2039.ANNUAL.FX 47.39
+'UC_Local_Oil_Prod_DK'.2040.ANNUAL.FX 43.17
+'UC_Local_Oil_Prod_DK'.2041.ANNUAL.FX 38.47
+'UC_Local_Oil_Prod_DK'.2042.ANNUAL.FX 36.31
+'UC_Local_Oil_Prod_DK'.2043.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.2044.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.2045.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.2046.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.2047.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.2048.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.2049.ANNUAL.FX 0
+'UC_Local_Oil_Prod_DK'.2050.ANNUAL.FX 0
+/;
+
+

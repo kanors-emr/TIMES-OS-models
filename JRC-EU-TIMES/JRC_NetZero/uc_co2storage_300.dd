@@ -1,0 +1,2026 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'JRC_NETZERO'
+$SET SCENARIO_NAME 'uc_co2storage_300'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'AT'.'NRG'.'CO2_Max_Stor_EU-'
+'AT'.'NRG'.'CO2_Max_Stor_EU_'
+'AT'.'NRG'.'CO2_Max_Stor_MS-'
+'AT'.'NRG'.'CO2_Max_Stor_MS_'
+'BE'.'NRG'.'CO2_Max_Stor_EU-'
+'BE'.'NRG'.'CO2_Max_Stor_EU_'
+'BE'.'NRG'.'CO2_Max_Stor_MS-'
+'BE'.'NRG'.'CO2_Max_Stor_MS_'
+'BG'.'NRG'.'CO2_Max_Stor_EU-'
+'BG'.'NRG'.'CO2_Max_Stor_EU_'
+'BG'.'NRG'.'CO2_Max_Stor_MS-'
+'BG'.'NRG'.'CO2_Max_Stor_MS_'
+'CH'.'NRG'.'CO2_Max_Stor_EU-'
+'CH'.'NRG'.'CO2_Max_Stor_EU_'
+'CH'.'NRG'.'CO2_Max_Stor_MS-'
+'CH'.'NRG'.'CO2_Max_Stor_MS_'
+'CY'.'NRG'.'CO2_Max_Stor_EU-'
+'CY'.'NRG'.'CO2_Max_Stor_EU_'
+'CY'.'NRG'.'CO2_Max_Stor_MS-'
+'CY'.'NRG'.'CO2_Max_Stor_MS_'
+'CZ'.'NRG'.'CO2_Max_Stor_EU-'
+'CZ'.'NRG'.'CO2_Max_Stor_EU_'
+'CZ'.'NRG'.'CO2_Max_Stor_MS-'
+'CZ'.'NRG'.'CO2_Max_Stor_MS_'
+'DE'.'NRG'.'CO2_Max_Stor_EU-'
+'DE'.'NRG'.'CO2_Max_Stor_EU_'
+'DE'.'NRG'.'CO2_Max_Stor_MS-'
+'DE'.'NRG'.'CO2_Max_Stor_MS_'
+'DK'.'NRG'.'CO2_Max_Stor_EU-'
+'DK'.'NRG'.'CO2_Max_Stor_EU_'
+'DK'.'NRG'.'CO2_Max_Stor_MS-'
+'DK'.'NRG'.'CO2_Max_Stor_MS_'
+'EE'.'NRG'.'CO2_Max_Stor_EU-'
+'EE'.'NRG'.'CO2_Max_Stor_EU_'
+'EE'.'NRG'.'CO2_Max_Stor_MS-'
+'EE'.'NRG'.'CO2_Max_Stor_MS_'
+'EL'.'NRG'.'CO2_Max_Stor_EU-'
+'EL'.'NRG'.'CO2_Max_Stor_EU_'
+'EL'.'NRG'.'CO2_Max_Stor_MS-'
+'EL'.'NRG'.'CO2_Max_Stor_MS_'
+'ES'.'NRG'.'CO2_Max_Stor_EU-'
+'ES'.'NRG'.'CO2_Max_Stor_EU_'
+'ES'.'NRG'.'CO2_Max_Stor_MS-'
+'ES'.'NRG'.'CO2_Max_Stor_MS_'
+'FI'.'NRG'.'CO2_Max_Stor_EU-'
+'FI'.'NRG'.'CO2_Max_Stor_EU_'
+'FI'.'NRG'.'CO2_Max_Stor_MS-'
+'FI'.'NRG'.'CO2_Max_Stor_MS_'
+'FR'.'NRG'.'CO2_Max_Stor_EU-'
+'FR'.'NRG'.'CO2_Max_Stor_EU_'
+'FR'.'NRG'.'CO2_Max_Stor_MS-'
+'FR'.'NRG'.'CO2_Max_Stor_MS_'
+'HR'.'NRG'.'CO2_Max_Stor_EU-'
+'HR'.'NRG'.'CO2_Max_Stor_EU_'
+'HR'.'NRG'.'CO2_Max_Stor_MS-'
+'HR'.'NRG'.'CO2_Max_Stor_MS_'
+'HU'.'NRG'.'CO2_Max_Stor_EU-'
+'HU'.'NRG'.'CO2_Max_Stor_EU_'
+'HU'.'NRG'.'CO2_Max_Stor_MS-'
+'HU'.'NRG'.'CO2_Max_Stor_MS_'
+'IE'.'NRG'.'CO2_Max_Stor_EU-'
+'IE'.'NRG'.'CO2_Max_Stor_EU_'
+'IE'.'NRG'.'CO2_Max_Stor_MS-'
+'IE'.'NRG'.'CO2_Max_Stor_MS_'
+'IS'.'NRG'.'CO2_Max_Stor_EU-'
+'IS'.'NRG'.'CO2_Max_Stor_EU_'
+'IS'.'NRG'.'CO2_Max_Stor_MS-'
+'IS'.'NRG'.'CO2_Max_Stor_MS_'
+'IT'.'NRG'.'CO2_Max_Stor_EU-'
+'IT'.'NRG'.'CO2_Max_Stor_EU_'
+'IT'.'NRG'.'CO2_Max_Stor_MS-'
+'IT'.'NRG'.'CO2_Max_Stor_MS_'
+'LT'.'NRG'.'CO2_Max_Stor_EU-'
+'LT'.'NRG'.'CO2_Max_Stor_EU_'
+'LT'.'NRG'.'CO2_Max_Stor_MS-'
+'LT'.'NRG'.'CO2_Max_Stor_MS_'
+'LU'.'NRG'.'CO2_Max_Stor_EU-'
+'LU'.'NRG'.'CO2_Max_Stor_EU_'
+'LU'.'NRG'.'CO2_Max_Stor_MS-'
+'LU'.'NRG'.'CO2_Max_Stor_MS_'
+'LV'.'NRG'.'CO2_Max_Stor_EU-'
+'LV'.'NRG'.'CO2_Max_Stor_EU_'
+'LV'.'NRG'.'CO2_Max_Stor_MS-'
+'LV'.'NRG'.'CO2_Max_Stor_MS_'
+'MT'.'NRG'.'CO2_Max_Stor_EU-'
+'MT'.'NRG'.'CO2_Max_Stor_EU_'
+'MT'.'NRG'.'CO2_Max_Stor_MS-'
+'MT'.'NRG'.'CO2_Max_Stor_MS_'
+'NL'.'NRG'.'CO2_Max_Stor_EU-'
+'NL'.'NRG'.'CO2_Max_Stor_EU_'
+'NL'.'NRG'.'CO2_Max_Stor_MS-'
+'NL'.'NRG'.'CO2_Max_Stor_MS_'
+'NO'.'NRG'.'CO2_Max_Stor_EU-'
+'NO'.'NRG'.'CO2_Max_Stor_EU_'
+'NO'.'NRG'.'CO2_Max_Stor_MS-'
+'NO'.'NRG'.'CO2_Max_Stor_MS_'
+'PL'.'NRG'.'CO2_Max_Stor_EU-'
+'PL'.'NRG'.'CO2_Max_Stor_EU_'
+'PL'.'NRG'.'CO2_Max_Stor_MS-'
+'PL'.'NRG'.'CO2_Max_Stor_MS_'
+'PT'.'NRG'.'CO2_Max_Stor_EU-'
+'PT'.'NRG'.'CO2_Max_Stor_EU_'
+'PT'.'NRG'.'CO2_Max_Stor_MS-'
+'PT'.'NRG'.'CO2_Max_Stor_MS_'
+'RO'.'NRG'.'CO2_Max_Stor_EU-'
+'RO'.'NRG'.'CO2_Max_Stor_EU_'
+'RO'.'NRG'.'CO2_Max_Stor_MS-'
+'RO'.'NRG'.'CO2_Max_Stor_MS_'
+'SE'.'NRG'.'CO2_Max_Stor_EU-'
+'SE'.'NRG'.'CO2_Max_Stor_EU_'
+'SE'.'NRG'.'CO2_Max_Stor_MS-'
+'SE'.'NRG'.'CO2_Max_Stor_MS_'
+'SI'.'NRG'.'CO2_Max_Stor_EU-'
+'SI'.'NRG'.'CO2_Max_Stor_EU_'
+'SI'.'NRG'.'CO2_Max_Stor_MS-'
+'SI'.'NRG'.'CO2_Max_Stor_MS_'
+'SK'.'NRG'.'CO2_Max_Stor_EU-'
+'SK'.'NRG'.'CO2_Max_Stor_EU_'
+'SK'.'NRG'.'CO2_Max_Stor_MS-'
+'SK'.'NRG'.'CO2_Max_Stor_MS_'
+'UK'.'NRG'.'CO2_Max_Stor_EU-'
+'UK'.'NRG'.'CO2_Max_Stor_EU_'
+'UK'.'NRG'.'CO2_Max_Stor_MS-'
+'UK'.'NRG'.'CO2_Max_Stor_MS_'
+/;
+
+SET COM_UNIT
+
+/
+'AT'.'CO2_Max_Stor_EU-'.'UCU'
+'AT'.'CO2_Max_Stor_EU_'.'UCU'
+'AT'.'CO2_Max_Stor_MS-'.'UCU'
+'AT'.'CO2_Max_Stor_MS_'.'UCU'
+'BE'.'CO2_Max_Stor_EU-'.'UCU'
+'BE'.'CO2_Max_Stor_EU_'.'UCU'
+'BE'.'CO2_Max_Stor_MS-'.'UCU'
+'BE'.'CO2_Max_Stor_MS_'.'UCU'
+'BG'.'CO2_Max_Stor_EU-'.'UCU'
+'BG'.'CO2_Max_Stor_EU_'.'UCU'
+'BG'.'CO2_Max_Stor_MS-'.'UCU'
+'BG'.'CO2_Max_Stor_MS_'.'UCU'
+'CH'.'CO2_Max_Stor_EU-'.'UCU'
+'CH'.'CO2_Max_Stor_EU_'.'UCU'
+'CH'.'CO2_Max_Stor_MS-'.'UCU'
+'CH'.'CO2_Max_Stor_MS_'.'UCU'
+'CY'.'CO2_Max_Stor_EU-'.'UCU'
+'CY'.'CO2_Max_Stor_EU_'.'UCU'
+'CY'.'CO2_Max_Stor_MS-'.'UCU'
+'CY'.'CO2_Max_Stor_MS_'.'UCU'
+'CZ'.'CO2_Max_Stor_EU-'.'UCU'
+'CZ'.'CO2_Max_Stor_EU_'.'UCU'
+'CZ'.'CO2_Max_Stor_MS-'.'UCU'
+'CZ'.'CO2_Max_Stor_MS_'.'UCU'
+'DE'.'CO2_Max_Stor_EU-'.'UCU'
+'DE'.'CO2_Max_Stor_EU_'.'UCU'
+'DE'.'CO2_Max_Stor_MS-'.'UCU'
+'DE'.'CO2_Max_Stor_MS_'.'UCU'
+'DK'.'CO2_Max_Stor_EU-'.'UCU'
+'DK'.'CO2_Max_Stor_EU_'.'UCU'
+'DK'.'CO2_Max_Stor_MS-'.'UCU'
+'DK'.'CO2_Max_Stor_MS_'.'UCU'
+'EE'.'CO2_Max_Stor_EU-'.'UCU'
+'EE'.'CO2_Max_Stor_EU_'.'UCU'
+'EE'.'CO2_Max_Stor_MS-'.'UCU'
+'EE'.'CO2_Max_Stor_MS_'.'UCU'
+'EL'.'CO2_Max_Stor_EU-'.'UCU'
+'EL'.'CO2_Max_Stor_EU_'.'UCU'
+'EL'.'CO2_Max_Stor_MS-'.'UCU'
+'EL'.'CO2_Max_Stor_MS_'.'UCU'
+'ES'.'CO2_Max_Stor_EU-'.'UCU'
+'ES'.'CO2_Max_Stor_EU_'.'UCU'
+'ES'.'CO2_Max_Stor_MS-'.'UCU'
+'ES'.'CO2_Max_Stor_MS_'.'UCU'
+'FI'.'CO2_Max_Stor_EU-'.'UCU'
+'FI'.'CO2_Max_Stor_EU_'.'UCU'
+'FI'.'CO2_Max_Stor_MS-'.'UCU'
+'FI'.'CO2_Max_Stor_MS_'.'UCU'
+'FR'.'CO2_Max_Stor_EU-'.'UCU'
+'FR'.'CO2_Max_Stor_EU_'.'UCU'
+'FR'.'CO2_Max_Stor_MS-'.'UCU'
+'FR'.'CO2_Max_Stor_MS_'.'UCU'
+'HR'.'CO2_Max_Stor_EU-'.'UCU'
+'HR'.'CO2_Max_Stor_EU_'.'UCU'
+'HR'.'CO2_Max_Stor_MS-'.'UCU'
+'HR'.'CO2_Max_Stor_MS_'.'UCU'
+'HU'.'CO2_Max_Stor_EU-'.'UCU'
+'HU'.'CO2_Max_Stor_EU_'.'UCU'
+'HU'.'CO2_Max_Stor_MS-'.'UCU'
+'HU'.'CO2_Max_Stor_MS_'.'UCU'
+'IE'.'CO2_Max_Stor_EU-'.'UCU'
+'IE'.'CO2_Max_Stor_EU_'.'UCU'
+'IE'.'CO2_Max_Stor_MS-'.'UCU'
+'IE'.'CO2_Max_Stor_MS_'.'UCU'
+'IS'.'CO2_Max_Stor_EU-'.'UCU'
+'IS'.'CO2_Max_Stor_EU_'.'UCU'
+'IS'.'CO2_Max_Stor_MS-'.'UCU'
+'IS'.'CO2_Max_Stor_MS_'.'UCU'
+'IT'.'CO2_Max_Stor_EU-'.'UCU'
+'IT'.'CO2_Max_Stor_EU_'.'UCU'
+'IT'.'CO2_Max_Stor_MS-'.'UCU'
+'IT'.'CO2_Max_Stor_MS_'.'UCU'
+'LT'.'CO2_Max_Stor_EU-'.'UCU'
+'LT'.'CO2_Max_Stor_EU_'.'UCU'
+'LT'.'CO2_Max_Stor_MS-'.'UCU'
+'LT'.'CO2_Max_Stor_MS_'.'UCU'
+'LU'.'CO2_Max_Stor_EU-'.'UCU'
+'LU'.'CO2_Max_Stor_EU_'.'UCU'
+'LU'.'CO2_Max_Stor_MS-'.'UCU'
+'LU'.'CO2_Max_Stor_MS_'.'UCU'
+'LV'.'CO2_Max_Stor_EU-'.'UCU'
+'LV'.'CO2_Max_Stor_EU_'.'UCU'
+'LV'.'CO2_Max_Stor_MS-'.'UCU'
+'LV'.'CO2_Max_Stor_MS_'.'UCU'
+'MT'.'CO2_Max_Stor_EU-'.'UCU'
+'MT'.'CO2_Max_Stor_EU_'.'UCU'
+'MT'.'CO2_Max_Stor_MS-'.'UCU'
+'MT'.'CO2_Max_Stor_MS_'.'UCU'
+'NL'.'CO2_Max_Stor_EU-'.'UCU'
+'NL'.'CO2_Max_Stor_EU_'.'UCU'
+'NL'.'CO2_Max_Stor_MS-'.'UCU'
+'NL'.'CO2_Max_Stor_MS_'.'UCU'
+'NO'.'CO2_Max_Stor_EU-'.'UCU'
+'NO'.'CO2_Max_Stor_EU_'.'UCU'
+'NO'.'CO2_Max_Stor_MS-'.'UCU'
+'NO'.'CO2_Max_Stor_MS_'.'UCU'
+'PL'.'CO2_Max_Stor_EU-'.'UCU'
+'PL'.'CO2_Max_Stor_EU_'.'UCU'
+'PL'.'CO2_Max_Stor_MS-'.'UCU'
+'PL'.'CO2_Max_Stor_MS_'.'UCU'
+'PT'.'CO2_Max_Stor_EU-'.'UCU'
+'PT'.'CO2_Max_Stor_EU_'.'UCU'
+'PT'.'CO2_Max_Stor_MS-'.'UCU'
+'PT'.'CO2_Max_Stor_MS_'.'UCU'
+'RO'.'CO2_Max_Stor_EU-'.'UCU'
+'RO'.'CO2_Max_Stor_EU_'.'UCU'
+'RO'.'CO2_Max_Stor_MS-'.'UCU'
+'RO'.'CO2_Max_Stor_MS_'.'UCU'
+'SE'.'CO2_Max_Stor_EU-'.'UCU'
+'SE'.'CO2_Max_Stor_EU_'.'UCU'
+'SE'.'CO2_Max_Stor_MS-'.'UCU'
+'SE'.'CO2_Max_Stor_MS_'.'UCU'
+'SI'.'CO2_Max_Stor_EU-'.'UCU'
+'SI'.'CO2_Max_Stor_EU_'.'UCU'
+'SI'.'CO2_Max_Stor_MS-'.'UCU'
+'SI'.'CO2_Max_Stor_MS_'.'UCU'
+'SK'.'CO2_Max_Stor_EU-'.'UCU'
+'SK'.'CO2_Max_Stor_EU_'.'UCU'
+'SK'.'CO2_Max_Stor_MS-'.'UCU'
+'SK'.'CO2_Max_Stor_MS_'.'UCU'
+'UK'.'CO2_Max_Stor_EU-'.'UCU'
+'UK'.'CO2_Max_Stor_EU_'.'UCU'
+'UK'.'CO2_Max_Stor_MS-'.'UCU'
+'UK'.'CO2_Max_Stor_MS_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'CO2_Max_Stor_EU-'.'AT'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'BE'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'BG'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'CH'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'CY'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'CZ'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'DE'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'DK'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'EE'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'EL'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'ES'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'FI'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'FR'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'HR'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'HU'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'IE'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'IS'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'IT'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'LT'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'LU'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'LV'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'MT'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'NL'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'NO'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'PL'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'PT'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'RO'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'SE'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'SI'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'SK'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU-'.'UK'.'CO2_Max_Stor_EU-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'AT'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'BE'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'BG'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'CH'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'CY'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'CZ'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'DE'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'DK'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'EE'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'EL'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'ES'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'FI'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'FR'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'HR'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'HU'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'IE'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'IS'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'IT'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'LT'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'LU'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'LV'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'MT'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'NL'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'NO'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'PL'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'PT'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'RO'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'SE'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'SI'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'SK'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_EU_'.'UK'.'CO2_Max_Stor_EU_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'AT'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'BE'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'BG'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'CH'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'CY'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'CZ'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'DE'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'DK'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'EE'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'EL'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'ES'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'FI'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'FR'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'HR'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'HU'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'IE'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'IS'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'IT'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'LT'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'LU'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'LV'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'MT'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'NL'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'NO'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'PL'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'PT'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'RO'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'SE'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'SI'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'SK'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS-'.'UK'.'CO2_Max_Stor_MS-'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'AT'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'BE'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'BG'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'CH'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'CY'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'CZ'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'DE'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'DK'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'EE'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'EL'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'ES'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'FI'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'FR'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'HR'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'HU'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'IE'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'IS'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'IT'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'LT'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'LU'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'LV'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'MT'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'NL'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'NO'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'PL'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'PT'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'RO'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'SE'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'SI'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'SK'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+'IMPEXP'.'CO2_Max_Stor_MS_'.'UK'.'CO2_Max_Stor_MS_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'AT'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'AT'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'AT'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'AT'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'BE'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'BE'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'BE'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'BE'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'BG'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'BG'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'BG'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'BG'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'CH'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'CH'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'CH'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'CH'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'CY'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'CY'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'CY'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'CY'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'CZ'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'CZ'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'CZ'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'CZ'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'DE'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'DE'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'DE'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'DE'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'DK'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'DK'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'DK'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'DK'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'EE'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'EE'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'EE'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'EE'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'EL'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'EL'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'EL'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'EL'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'ES'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'ES'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'ES'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'ES'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'FI'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'FI'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'FI'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'FI'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'FR'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'FR'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'FR'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'FR'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'HR'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'HR'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'HR'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'HR'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'HU'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'HU'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'HU'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'HU'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'IE'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'IE'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'IE'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'IE'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'IS'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'IS'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'IS'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'IS'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'IT'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'IT'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'IT'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'IT'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'LT'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'LT'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'LT'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'LT'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'LU'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'LU'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'LU'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'LU'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'LV'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'LV'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'LV'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'LV'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'MT'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'MT'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'MT'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'MT'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'NL'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'NL'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'NL'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'NL'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'NO'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'NO'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'NO'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'NO'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'PL'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'PL'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'PL'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'PL'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'PT'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'PT'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'PT'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'PT'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'RO'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'RO'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'RO'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'RO'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'SE'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'SE'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'SE'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'SE'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'SI'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'SI'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'SI'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'SI'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'SK'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'SK'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'SK'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'SK'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+'UK'.'CO2_Max_Stor_EU-' 'Negative dummy var for UC: CO2_Max_Stor_EU'
+'UK'.'CO2_Max_Stor_EU_' 'Positive dummy var for UC: CO2_Max_Stor_EU'
+'UK'.'CO2_Max_Stor_MS-' 'Negative dummy var for UC: CO2_Max_Stor_MS'
+'UK'.'CO2_Max_Stor_MS_' 'Positive dummy var for UC: CO2_Max_Stor_MS'
+/;
+
+SET UC_R_EACH
+
+/
+'AT'.'CO2_Max_Stor_MS'
+'BE'.'CO2_Max_Stor_MS'
+'BG'.'CO2_Max_Stor_MS'
+'CH'.'CO2_Max_Stor_MS'
+'CY'.'CO2_Max_Stor_MS'
+'CZ'.'CO2_Max_Stor_MS'
+'DE'.'CO2_Max_Stor_MS'
+'DK'.'CO2_Max_Stor_MS'
+'EE'.'CO2_Max_Stor_MS'
+'EL'.'CO2_Max_Stor_MS'
+'ES'.'CO2_Max_Stor_MS'
+'FI'.'CO2_Max_Stor_MS'
+'FR'.'CO2_Max_Stor_MS'
+'HR'.'CO2_Max_Stor_MS'
+'HU'.'CO2_Max_Stor_MS'
+'IE'.'CO2_Max_Stor_MS'
+'IS'.'CO2_Max_Stor_MS'
+'IT'.'CO2_Max_Stor_MS'
+'LT'.'CO2_Max_Stor_MS'
+'LU'.'CO2_Max_Stor_MS'
+'LV'.'CO2_Max_Stor_MS'
+'MT'.'CO2_Max_Stor_MS'
+'NL'.'CO2_Max_Stor_MS'
+'NO'.'CO2_Max_Stor_MS'
+'PL'.'CO2_Max_Stor_MS'
+'PT'.'CO2_Max_Stor_MS'
+'RO'.'CO2_Max_Stor_MS'
+'SE'.'CO2_Max_Stor_MS'
+'SI'.'CO2_Max_Stor_MS'
+'SK'.'CO2_Max_Stor_MS'
+'UK'.'CO2_Max_Stor_MS'
+/;
+
+SET UC_R_SUM
+
+/
+'AT'.'CO2_Max_Stor_EU'
+'BE'.'CO2_Max_Stor_EU'
+'BG'.'CO2_Max_Stor_EU'
+'CH'.'CO2_Max_Stor_EU'
+'CY'.'CO2_Max_Stor_EU'
+'CZ'.'CO2_Max_Stor_EU'
+'DE'.'CO2_Max_Stor_EU'
+'DK'.'CO2_Max_Stor_EU'
+'EE'.'CO2_Max_Stor_EU'
+'EL'.'CO2_Max_Stor_EU'
+'ES'.'CO2_Max_Stor_EU'
+'FI'.'CO2_Max_Stor_EU'
+'FR'.'CO2_Max_Stor_EU'
+'HR'.'CO2_Max_Stor_EU'
+'HU'.'CO2_Max_Stor_EU'
+'IE'.'CO2_Max_Stor_EU'
+'IS'.'CO2_Max_Stor_EU'
+'IT'.'CO2_Max_Stor_EU'
+'LT'.'CO2_Max_Stor_EU'
+'LU'.'CO2_Max_Stor_EU'
+'LV'.'CO2_Max_Stor_EU'
+'MT'.'CO2_Max_Stor_EU'
+'NL'.'CO2_Max_Stor_EU'
+'NO'.'CO2_Max_Stor_EU'
+'PL'.'CO2_Max_Stor_EU'
+'PT'.'CO2_Max_Stor_EU'
+'RO'.'CO2_Max_Stor_EU'
+'SE'.'CO2_Max_Stor_EU'
+'SI'.'CO2_Max_Stor_EU'
+'SK'.'CO2_Max_Stor_EU'
+'UK'.'CO2_Max_Stor_EU'
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'MINSNKEOR1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKAFF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKAFF2'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKAFF3'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKAFF4'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKCB11'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKCB21'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKCB31'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDOGF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDOGO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDOO1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDSAOF1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKDSAON1'.ANNUAL 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'MINSNKEOR1'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'AT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'BE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'BG'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'CH'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'CY'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'DE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'DK'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'EE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'EL'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'ES'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'FI'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'FR'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'HR'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'HU'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'IE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'IS'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'IT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'LT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'LU'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'LV'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'MT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'NL'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'NO'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'PL'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'PT'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'RO'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'SE'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'SI'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'SK'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU-'.ANNUAL.IMP -1
+'CO2_Max_Stor_EU'.LHS.'UK'.2010.'IMPDUCZ'.'CO2_Max_Stor_EU_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'AT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'BE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'BG'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'CH'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'CY'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'CZ'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'DE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'DK'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'EE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'EL'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'ES'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'FI'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'FR'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'HR'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'HU'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'IE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'IS'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'IT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'LT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'LU'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'LV'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'MT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'NL'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'NO'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'PL'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'PT'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'RO'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'SE'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'SI'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'SK'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS-'.ANNUAL.IMP -1
+'CO2_Max_Stor_MS'.LHS.'UK'.2010.'IMPDUCZ'.'CO2_Max_Stor_MS_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSRTS ' '/
+'AT'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'AT'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'AT'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'AT'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'AT'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'AT'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'AT'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'AT'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'AT'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'BE'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'BE'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'BE'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'BE'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'BE'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'BE'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'BE'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'BE'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'BE'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'BG'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'BG'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'BG'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'BG'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'BG'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'BG'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'BG'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'BG'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'BG'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'CH'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'CH'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'CH'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'CH'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'CH'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'CH'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'CH'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'CH'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'CH'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'CY'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'CY'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'CY'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'CY'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'CY'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'CY'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'CY'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'CY'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'CY'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'CZ'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'CZ'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'CZ'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'CZ'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'CZ'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'CZ'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'CZ'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'CZ'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'CZ'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'DE'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'DE'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'DE'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'DE'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'DE'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'DE'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'DE'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'DE'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'DE'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'DK'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'DK'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'DK'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'DK'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'DK'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'DK'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'DK'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'DK'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'DK'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'EE'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'EE'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'EE'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'EE'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'EE'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'EE'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'EE'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'EE'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'EE'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'EL'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'EL'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'EL'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'EL'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'EL'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'EL'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'EL'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'EL'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'EL'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'ES'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'ES'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'ES'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'ES'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'ES'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'ES'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'ES'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'ES'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'ES'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'FI'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'FI'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'FI'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'FI'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'FI'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'FI'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'FI'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'FI'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'FI'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'FR'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'FR'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'FR'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'FR'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'FR'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'FR'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'FR'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'FR'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'FR'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'HR'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'HR'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'HR'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'HR'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'HR'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'HR'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'HR'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'HR'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'HR'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'HU'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'HU'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'HU'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'HU'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'HU'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'HU'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'HU'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'HU'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'HU'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'IE'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'IE'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'IE'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'IE'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'IE'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'IE'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'IE'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'IE'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'IE'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'IS'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'IS'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'IS'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'IS'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'IS'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'IS'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'IS'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'IS'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'IS'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'IT'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'IT'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'IT'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'IT'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'IT'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'IT'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'IT'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'IT'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'IT'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'LT'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'LT'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'LT'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'LT'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'LT'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'LT'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'LT'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'LT'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'LT'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'LU'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'LU'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'LU'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'LU'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'LU'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'LU'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'LU'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'LU'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'LU'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'LV'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'LV'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'LV'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'LV'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'LV'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'LV'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'LV'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'LV'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'LV'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'MT'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'MT'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'MT'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'MT'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'MT'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'MT'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'MT'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'MT'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'MT'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'NL'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'NL'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'NL'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'NL'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'NL'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'NL'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'NL'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'NL'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'NL'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'NO'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'NO'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'NO'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'NO'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'NO'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'NO'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'NO'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'NO'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'NO'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'PL'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'PL'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'PL'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'PL'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'PL'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'PL'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'PL'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'PL'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'PL'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'PT'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'PT'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'PT'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'PT'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'PT'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'PT'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'PT'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'PT'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'PT'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'RO'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'RO'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'RO'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'RO'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'RO'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'RO'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'RO'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'RO'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'RO'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'SE'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'SE'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'SE'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'SE'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'SE'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'SE'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'SE'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'SE'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'SE'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'SI'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'SI'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'SI'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'SI'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'SI'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'SI'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'SI'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'SI'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'SI'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'SK'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'SK'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'SK'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'SK'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'SK'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'SK'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'SK'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'SK'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'SK'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+'UK'.'CO2_Max_Stor_MS'.0.ANNUAL.UP 5
+'UK'.'CO2_Max_Stor_MS'.2010.ANNUAL.UP 0
+'UK'.'CO2_Max_Stor_MS'.2035.ANNUAL.UP 0
+'UK'.'CO2_Max_Stor_MS'.2040.ANNUAL.UP 15000
+'UK'.'CO2_Max_Stor_MS'.2045.ANNUAL.UP 20000
+'UK'.'CO2_Max_Stor_MS'.2050.ANNUAL.UP 40000
+'UK'.'CO2_Max_Stor_MS'.2060.ANNUAL.UP 40000
+'UK'.'CO2_Max_Stor_MS'.2075.ANNUAL.UP 40000
+'UK'.'CO2_Max_Stor_MS'.2100.ANNUAL.UP 40000
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'CO2_Max_Stor_EU'.0.ANNUAL.UP 5
+'CO2_Max_Stor_EU'.2010.ANNUAL.UP 0
+'CO2_Max_Stor_EU'.2035.ANNUAL.UP 0
+'CO2_Max_Stor_EU'.2040.ANNUAL.UP 150000
+'CO2_Max_Stor_EU'.2045.ANNUAL.UP 225000
+'CO2_Max_Stor_EU'.2050.ANNUAL.UP 300000
+'CO2_Max_Stor_EU'.2060.ANNUAL.UP 300000
+'CO2_Max_Stor_EU'.2075.ANNUAL.UP 300000
+'CO2_Max_Stor_EU'.2100.ANNUAL.UP 300000
+/;
+
+

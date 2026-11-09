@@ -1,0 +1,754 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'no_hydro_average'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'DKE'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'DKE'.'NRG'.'UC_MaxDamProd_NO-'
+'DKE'.'NRG'.'UC_MaxDamProd_NO_'
+'DKE'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'DKE'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'DKE'.'NRG'.'UC_PotentialNewDAMNOR-'
+'DKE'.'NRG'.'UC_PotentialNewDAMNOR_'
+'DKE'.'NRG'.'UC_PotentialNewRORNOR-'
+'DKE'.'NRG'.'UC_PotentialNewRORNOR_'
+'DKE'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'DKE'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'DKE'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'DKE'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'DKE'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'DKE'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'DKW'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'DKW'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'DKW'.'NRG'.'UC_MaxDamProd_NO-'
+'DKW'.'NRG'.'UC_MaxDamProd_NO_'
+'DKW'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'DKW'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'DKW'.'NRG'.'UC_PotentialNewDAMNOR-'
+'DKW'.'NRG'.'UC_PotentialNewDAMNOR_'
+'DKW'.'NRG'.'UC_PotentialNewRORNOR-'
+'DKW'.'NRG'.'UC_PotentialNewRORNOR_'
+'DKW'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'DKW'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'DKW'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'DKW'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'DKW'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'DKW'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'FIM'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'FIM'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'FIM'.'NRG'.'UC_MaxDamProd_NO-'
+'FIM'.'NRG'.'UC_MaxDamProd_NO_'
+'FIM'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'FIM'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'FIM'.'NRG'.'UC_PotentialNewDAMNOR-'
+'FIM'.'NRG'.'UC_PotentialNewDAMNOR_'
+'FIM'.'NRG'.'UC_PotentialNewRORNOR-'
+'FIM'.'NRG'.'UC_PotentialNewRORNOR_'
+'FIM'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'FIM'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'FIM'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'FIM'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'FIM'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'FIM'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'FIN'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'FIN'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'FIN'.'NRG'.'UC_MaxDamProd_NO-'
+'FIN'.'NRG'.'UC_MaxDamProd_NO_'
+'FIN'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'FIN'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'FIN'.'NRG'.'UC_PotentialNewDAMNOR-'
+'FIN'.'NRG'.'UC_PotentialNewDAMNOR_'
+'FIN'.'NRG'.'UC_PotentialNewRORNOR-'
+'FIN'.'NRG'.'UC_PotentialNewRORNOR_'
+'FIN'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'FIN'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'FIN'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'FIN'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'FIN'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'FIN'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'NO1'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'NO1'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'NO1'.'NRG'.'UC_MaxDamProd_NO-'
+'NO1'.'NRG'.'UC_MaxDamProd_NO_'
+'NO1'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'NO1'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'NO1'.'NRG'.'UC_PotentialNewDAMNOR-'
+'NO1'.'NRG'.'UC_PotentialNewDAMNOR_'
+'NO1'.'NRG'.'UC_PotentialNewRORNOR-'
+'NO1'.'NRG'.'UC_PotentialNewRORNOR_'
+'NO1'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'NO1'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'NO1'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'NO1'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'NO1'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'NO1'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'NO2'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'NO2'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'NO2'.'NRG'.'UC_MaxDamProd_NO-'
+'NO2'.'NRG'.'UC_MaxDamProd_NO_'
+'NO2'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'NO2'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'NO2'.'NRG'.'UC_PotentialNewDAMNOR-'
+'NO2'.'NRG'.'UC_PotentialNewDAMNOR_'
+'NO2'.'NRG'.'UC_PotentialNewRORNOR-'
+'NO2'.'NRG'.'UC_PotentialNewRORNOR_'
+'NO2'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'NO2'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'NO2'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'NO2'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'NO2'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'NO2'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'SE1'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'SE1'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'SE1'.'NRG'.'UC_MaxDamProd_NO-'
+'SE1'.'NRG'.'UC_MaxDamProd_NO_'
+'SE1'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'SE1'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'SE1'.'NRG'.'UC_PotentialNewDAMNOR-'
+'SE1'.'NRG'.'UC_PotentialNewDAMNOR_'
+'SE1'.'NRG'.'UC_PotentialNewRORNOR-'
+'SE1'.'NRG'.'UC_PotentialNewRORNOR_'
+'SE1'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'SE1'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'SE1'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'SE1'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'SE1'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'SE1'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'SE2'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'SE2'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'SE2'.'NRG'.'UC_MaxDamProd_NO-'
+'SE2'.'NRG'.'UC_MaxDamProd_NO_'
+'SE2'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'SE2'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'SE2'.'NRG'.'UC_PotentialNewDAMNOR-'
+'SE2'.'NRG'.'UC_PotentialNewDAMNOR_'
+'SE2'.'NRG'.'UC_PotentialNewRORNOR-'
+'SE2'.'NRG'.'UC_PotentialNewRORNOR_'
+'SE2'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'SE2'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'SE2'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'SE2'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'SE2'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'SE2'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'SE3'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'SE3'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'SE3'.'NRG'.'UC_MaxDamProd_NO-'
+'SE3'.'NRG'.'UC_MaxDamProd_NO_'
+'SE3'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'SE3'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'SE3'.'NRG'.'UC_PotentialNewDAMNOR-'
+'SE3'.'NRG'.'UC_PotentialNewDAMNOR_'
+'SE3'.'NRG'.'UC_PotentialNewRORNOR-'
+'SE3'.'NRG'.'UC_PotentialNewRORNOR_'
+'SE3'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'SE3'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'SE3'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'SE3'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'SE3'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'SE3'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+'SE4'.'NRG'.'UC_DAMExpansionandUpgradingNOR-'
+'SE4'.'NRG'.'UC_DAMExpansionandUpgradingNOR_'
+'SE4'.'NRG'.'UC_MaxDamProd_NO-'
+'SE4'.'NRG'.'UC_MaxDamProd_NO_'
+'SE4'.'NRG'.'UC_MaxRunofriverProd_NO-'
+'SE4'.'NRG'.'UC_MaxRunofriverProd_NO_'
+'SE4'.'NRG'.'UC_PotentialNewDAMNOR-'
+'SE4'.'NRG'.'UC_PotentialNewDAMNOR_'
+'SE4'.'NRG'.'UC_PotentialNewRORNOR-'
+'SE4'.'NRG'.'UC_PotentialNewRORNOR_'
+'SE4'.'NRG'.'UC_PotentialReinstallDAMNOR-'
+'SE4'.'NRG'.'UC_PotentialReinstallDAMNOR_'
+'SE4'.'NRG'.'UC_PotentialReinstallRORNOR-'
+'SE4'.'NRG'.'UC_PotentialReinstallRORNOR_'
+'SE4'.'NRG'.'UC_RORExpansionandUpgradingNOR-'
+'SE4'.'NRG'.'UC_RORExpansionandUpgradingNOR_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'DKE'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'DKE'.'UC_MaxDamProd_NO-'.'UCU'
+'DKE'.'UC_MaxDamProd_NO_'.'UCU'
+'DKE'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'DKE'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'DKE'.'UC_PotentialNewDAMNOR-'.'UCU'
+'DKE'.'UC_PotentialNewDAMNOR_'.'UCU'
+'DKE'.'UC_PotentialNewRORNOR-'.'UCU'
+'DKE'.'UC_PotentialNewRORNOR_'.'UCU'
+'DKE'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'DKE'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'DKE'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'DKE'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'DKE'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'DKE'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'DKW'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'DKW'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'DKW'.'UC_MaxDamProd_NO-'.'UCU'
+'DKW'.'UC_MaxDamProd_NO_'.'UCU'
+'DKW'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'DKW'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'DKW'.'UC_PotentialNewDAMNOR-'.'UCU'
+'DKW'.'UC_PotentialNewDAMNOR_'.'UCU'
+'DKW'.'UC_PotentialNewRORNOR-'.'UCU'
+'DKW'.'UC_PotentialNewRORNOR_'.'UCU'
+'DKW'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'DKW'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'DKW'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'DKW'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'DKW'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'DKW'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'FIM'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'FIM'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'FIM'.'UC_MaxDamProd_NO-'.'UCU'
+'FIM'.'UC_MaxDamProd_NO_'.'UCU'
+'FIM'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'FIM'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'FIM'.'UC_PotentialNewDAMNOR-'.'UCU'
+'FIM'.'UC_PotentialNewDAMNOR_'.'UCU'
+'FIM'.'UC_PotentialNewRORNOR-'.'UCU'
+'FIM'.'UC_PotentialNewRORNOR_'.'UCU'
+'FIM'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'FIM'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'FIM'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'FIM'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'FIM'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'FIM'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'FIN'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'FIN'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'FIN'.'UC_MaxDamProd_NO-'.'UCU'
+'FIN'.'UC_MaxDamProd_NO_'.'UCU'
+'FIN'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'FIN'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'FIN'.'UC_PotentialNewDAMNOR-'.'UCU'
+'FIN'.'UC_PotentialNewDAMNOR_'.'UCU'
+'FIN'.'UC_PotentialNewRORNOR-'.'UCU'
+'FIN'.'UC_PotentialNewRORNOR_'.'UCU'
+'FIN'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'FIN'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'FIN'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'FIN'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'FIN'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'FIN'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'NO1'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'NO1'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'NO1'.'UC_MaxDamProd_NO-'.'UCU'
+'NO1'.'UC_MaxDamProd_NO_'.'UCU'
+'NO1'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'NO1'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'NO1'.'UC_PotentialNewDAMNOR-'.'UCU'
+'NO1'.'UC_PotentialNewDAMNOR_'.'UCU'
+'NO1'.'UC_PotentialNewRORNOR-'.'UCU'
+'NO1'.'UC_PotentialNewRORNOR_'.'UCU'
+'NO1'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'NO1'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'NO1'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'NO1'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'NO1'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'NO1'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'NO2'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'NO2'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'NO2'.'UC_MaxDamProd_NO-'.'UCU'
+'NO2'.'UC_MaxDamProd_NO_'.'UCU'
+'NO2'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'NO2'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'NO2'.'UC_PotentialNewDAMNOR-'.'UCU'
+'NO2'.'UC_PotentialNewDAMNOR_'.'UCU'
+'NO2'.'UC_PotentialNewRORNOR-'.'UCU'
+'NO2'.'UC_PotentialNewRORNOR_'.'UCU'
+'NO2'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'NO2'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'NO2'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'NO2'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'NO2'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'NO2'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'SE1'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'SE1'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'SE1'.'UC_MaxDamProd_NO-'.'UCU'
+'SE1'.'UC_MaxDamProd_NO_'.'UCU'
+'SE1'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'SE1'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'SE1'.'UC_PotentialNewDAMNOR-'.'UCU'
+'SE1'.'UC_PotentialNewDAMNOR_'.'UCU'
+'SE1'.'UC_PotentialNewRORNOR-'.'UCU'
+'SE1'.'UC_PotentialNewRORNOR_'.'UCU'
+'SE1'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'SE1'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'SE1'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'SE1'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'SE1'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'SE1'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'SE2'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'SE2'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'SE2'.'UC_MaxDamProd_NO-'.'UCU'
+'SE2'.'UC_MaxDamProd_NO_'.'UCU'
+'SE2'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'SE2'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'SE2'.'UC_PotentialNewDAMNOR-'.'UCU'
+'SE2'.'UC_PotentialNewDAMNOR_'.'UCU'
+'SE2'.'UC_PotentialNewRORNOR-'.'UCU'
+'SE2'.'UC_PotentialNewRORNOR_'.'UCU'
+'SE2'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'SE2'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'SE2'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'SE2'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'SE2'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'SE2'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'SE3'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'SE3'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'SE3'.'UC_MaxDamProd_NO-'.'UCU'
+'SE3'.'UC_MaxDamProd_NO_'.'UCU'
+'SE3'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'SE3'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'SE3'.'UC_PotentialNewDAMNOR-'.'UCU'
+'SE3'.'UC_PotentialNewDAMNOR_'.'UCU'
+'SE3'.'UC_PotentialNewRORNOR-'.'UCU'
+'SE3'.'UC_PotentialNewRORNOR_'.'UCU'
+'SE3'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'SE3'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'SE3'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'SE3'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'SE3'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'SE3'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+'SE4'.'UC_DAMExpansionandUpgradingNOR-'.'UCU'
+'SE4'.'UC_DAMExpansionandUpgradingNOR_'.'UCU'
+'SE4'.'UC_MaxDamProd_NO-'.'UCU'
+'SE4'.'UC_MaxDamProd_NO_'.'UCU'
+'SE4'.'UC_MaxRunofriverProd_NO-'.'UCU'
+'SE4'.'UC_MaxRunofriverProd_NO_'.'UCU'
+'SE4'.'UC_PotentialNewDAMNOR-'.'UCU'
+'SE4'.'UC_PotentialNewDAMNOR_'.'UCU'
+'SE4'.'UC_PotentialNewRORNOR-'.'UCU'
+'SE4'.'UC_PotentialNewRORNOR_'.'UCU'
+'SE4'.'UC_PotentialReinstallDAMNOR-'.'UCU'
+'SE4'.'UC_PotentialReinstallDAMNOR_'.'UCU'
+'SE4'.'UC_PotentialReinstallRORNOR-'.'UCU'
+'SE4'.'UC_PotentialReinstallRORNOR_'.'UCU'
+'SE4'.'UC_RORExpansionandUpgradingNOR-'.'UCU'
+'SE4'.'UC_RORExpansionandUpgradingNOR_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'UC_DAMExpansionandUpgradingNOR-'.'NO1'.'UC_DAMExpansionandUpgradingNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_DAMExpansionandUpgradingNOR-'.'NO2'.'UC_DAMExpansionandUpgradingNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_DAMExpansionandUpgradingNOR_'.'NO1'.'UC_DAMExpansionandUpgradingNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_DAMExpansionandUpgradingNOR_'.'NO2'.'UC_DAMExpansionandUpgradingNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxDamProd_NO-'.'NO1'.'UC_MaxDamProd_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxDamProd_NO-'.'NO2'.'UC_MaxDamProd_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxDamProd_NO_'.'NO1'.'UC_MaxDamProd_NO_'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxDamProd_NO_'.'NO2'.'UC_MaxDamProd_NO_'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxRunofriverProd_NO-'.'NO1'.'UC_MaxRunofriverProd_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxRunofriverProd_NO-'.'NO2'.'UC_MaxRunofriverProd_NO-'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxRunofriverProd_NO_'.'NO1'.'UC_MaxRunofriverProd_NO_'.'IMPDUCZ'
+'IMPEXP'.'UC_MaxRunofriverProd_NO_'.'NO2'.'UC_MaxRunofriverProd_NO_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewDAMNOR-'.'NO1'.'UC_PotentialNewDAMNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewDAMNOR-'.'NO2'.'UC_PotentialNewDAMNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewDAMNOR_'.'NO1'.'UC_PotentialNewDAMNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewDAMNOR_'.'NO2'.'UC_PotentialNewDAMNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewRORNOR-'.'NO1'.'UC_PotentialNewRORNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewRORNOR-'.'NO2'.'UC_PotentialNewRORNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewRORNOR_'.'NO1'.'UC_PotentialNewRORNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialNewRORNOR_'.'NO2'.'UC_PotentialNewRORNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallDAMNOR-'.'NO1'.'UC_PotentialReinstallDAMNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallDAMNOR-'.'NO2'.'UC_PotentialReinstallDAMNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallDAMNOR_'.'NO1'.'UC_PotentialReinstallDAMNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallDAMNOR_'.'NO2'.'UC_PotentialReinstallDAMNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallRORNOR-'.'NO1'.'UC_PotentialReinstallRORNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallRORNOR-'.'NO2'.'UC_PotentialReinstallRORNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallRORNOR_'.'NO1'.'UC_PotentialReinstallRORNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_PotentialReinstallRORNOR_'.'NO2'.'UC_PotentialReinstallRORNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_RORExpansionandUpgradingNOR-'.'NO1'.'UC_RORExpansionandUpgradingNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_RORExpansionandUpgradingNOR-'.'NO2'.'UC_RORExpansionandUpgradingNOR-'.'IMPDUCZ'
+'IMPEXP'.'UC_RORExpansionandUpgradingNOR_'.'NO1'.'UC_RORExpansionandUpgradingNOR_'.'IMPDUCZ'
+'IMPEXP'.'UC_RORExpansionandUpgradingNOR_'.'NO2'.'UC_RORExpansionandUpgradingNOR_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'DKE'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'DKE'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'DKE'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'DKE'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'DKE'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'DKE'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'DKE'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'DKE'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'DKE'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'DKE'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'DKE'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'DKE'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'DKE'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'DKE'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'DKE'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'DKW'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'DKW'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'DKW'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'DKW'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'DKW'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'DKW'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'DKW'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'DKW'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'DKW'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'DKW'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'DKW'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'DKW'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'DKW'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'DKW'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'DKW'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'DKW'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'FIM'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'FIM'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'FIM'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'FIM'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'FIM'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'FIM'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'FIM'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'FIM'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'FIM'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'FIM'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'FIM'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'FIM'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'FIM'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'FIM'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'FIM'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'FIM'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'FIN'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'FIN'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'FIN'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'FIN'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'FIN'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'FIN'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'FIN'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'FIN'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'FIN'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'FIN'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'FIN'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'FIN'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'FIN'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'FIN'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'FIN'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'FIN'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'NO1'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'NO1'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'NO1'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'NO1'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'NO1'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'NO1'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'NO1'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'NO1'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'NO1'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'NO1'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'NO1'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'NO1'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'NO1'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'NO1'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'NO1'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'NO1'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'NO2'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'NO2'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'NO2'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'NO2'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'NO2'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'NO2'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'NO2'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'NO2'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'NO2'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'NO2'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'NO2'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'NO2'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'NO2'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'NO2'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'NO2'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'NO2'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE1'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE1'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE1'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'SE1'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'SE1'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE1'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE1'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'SE1'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'SE1'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'SE1'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'SE1'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE1'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE1'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE1'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE1'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE1'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE2'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE2'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE2'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'SE2'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'SE2'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE2'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE2'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'SE2'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'SE2'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'SE2'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'SE2'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE2'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE2'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE2'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE2'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE2'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE3'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE3'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE3'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'SE3'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'SE3'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE3'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE3'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'SE3'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'SE3'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'SE3'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'SE3'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE3'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE3'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE3'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE3'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE3'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE4'.'UC_DAMExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE4'.'UC_DAMExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_DAMExpansionandUpgradingNOR'
+'SE4'.'UC_MaxDamProd_NO-' 'Negative dummy var for UC: UC_MaxDamProd_NO'
+'SE4'.'UC_MaxDamProd_NO_' 'Positive dummy var for UC: UC_MaxDamProd_NO'
+'SE4'.'UC_MaxRunofriverProd_NO-' 'Negative dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE4'.'UC_MaxRunofriverProd_NO_' 'Positive dummy var for UC: UC_MaxRunofriverProd_NO'
+'SE4'.'UC_PotentialNewDAMNOR-' 'Negative dummy var for UC: UC_PotentialNewDAMNOR'
+'SE4'.'UC_PotentialNewDAMNOR_' 'Positive dummy var for UC: UC_PotentialNewDAMNOR'
+'SE4'.'UC_PotentialNewRORNOR-' 'Negative dummy var for UC: UC_PotentialNewRORNOR'
+'SE4'.'UC_PotentialNewRORNOR_' 'Positive dummy var for UC: UC_PotentialNewRORNOR'
+'SE4'.'UC_PotentialReinstallDAMNOR-' 'Negative dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE4'.'UC_PotentialReinstallDAMNOR_' 'Positive dummy var for UC: UC_PotentialReinstallDAMNOR'
+'SE4'.'UC_PotentialReinstallRORNOR-' 'Negative dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE4'.'UC_PotentialReinstallRORNOR_' 'Positive dummy var for UC: UC_PotentialReinstallRORNOR'
+'SE4'.'UC_RORExpansionandUpgradingNOR-' 'Negative dummy var for UC: UC_RORExpansionandUpgradingNOR'
+'SE4'.'UC_RORExpansionandUpgradingNOR_' 'Positive dummy var for UC: UC_RORExpansionandUpgradingNOR'
+/;
+
+SET UC_R_EACH
+
+/
+'NO1'.'UC_DAMExpansionandUpgradingNOR'
+'NO1'.'UC_PotentialNewDAMNOR'
+'NO1'.'UC_PotentialNewRORNOR'
+'NO1'.'UC_PotentialReinstallDAMNOR'
+'NO1'.'UC_PotentialReinstallRORNOR'
+'NO1'.'UC_RORExpansionandUpgradingNOR'
+'NO2'.'UC_DAMExpansionandUpgradingNOR'
+'NO2'.'UC_PotentialNewDAMNOR'
+'NO2'.'UC_PotentialNewRORNOR'
+'NO2'.'UC_PotentialReinstallDAMNOR'
+'NO2'.'UC_PotentialReinstallRORNOR'
+'NO2'.'UC_RORExpansionandUpgradingNOR'
+/;
+
+SET UC_R_SUM
+
+/
+'NO1'.'UC_MaxDamProd_NO'
+'NO1'.'UC_MaxRunofriverProd_NO'
+'NO2'.'UC_MaxDamProd_NO'
+'NO2'.'UC_MaxRunofriverProd_NO'
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'UC_MaxDamProd_NO'.LHS.'NO1'.2010.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2010.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2010.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2012.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2012.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2012.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2014.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2014.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2014.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2015.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2015.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2015.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2018.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2018.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2018.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2020.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2020.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2020.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2010.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2010.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2010.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2012.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2012.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2012.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2014.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2014.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2014.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2015.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2015.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2015.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2018.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2018.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2018.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2020.'ERHYDDAM1E'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2020.'ERHYDDAM1N'.ANNUAL 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2020.'ERHYDDAM2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2010.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2010.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2010.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2012.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2012.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2012.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2014.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2014.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2014.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2015.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2015.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2015.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2018.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2018.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2018.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2020.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2020.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2020.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2010.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2010.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2010.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2012.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2012.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2012.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2014.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2014.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2014.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2015.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2015.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2015.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2018.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2018.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2018.'ERHYDROR2N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2020.'ERHYDROR1E'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2020.'ERHYDROR1N'.ANNUAL 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2020.'ERHYDROR2N'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'UC_DAMExpansionandUpgradingNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_DAMExpansionandUpgradingNOR-'.ANNUAL.IMP -1
+'UC_DAMExpansionandUpgradingNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_DAMExpansionandUpgradingNOR_'.ANNUAL.IMP 1
+'UC_DAMExpansionandUpgradingNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_DAMExpansionandUpgradingNOR-'.ANNUAL.IMP -1
+'UC_DAMExpansionandUpgradingNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_DAMExpansionandUpgradingNOR_'.ANNUAL.IMP 1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_MaxDamProd_NO-'.ANNUAL.IMP -1
+'UC_MaxDamProd_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_MaxDamProd_NO_'.ANNUAL.IMP 1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_MaxDamProd_NO-'.ANNUAL.IMP -1
+'UC_MaxDamProd_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_MaxDamProd_NO_'.ANNUAL.IMP 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_MaxRunofriverProd_NO-'.ANNUAL.IMP -1
+'UC_MaxRunofriverProd_NO'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_MaxRunofriverProd_NO_'.ANNUAL.IMP 1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_MaxRunofriverProd_NO-'.ANNUAL.IMP -1
+'UC_MaxRunofriverProd_NO'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_MaxRunofriverProd_NO_'.ANNUAL.IMP 1
+'UC_PotentialNewDAMNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialNewDAMNOR-'.ANNUAL.IMP -1
+'UC_PotentialNewDAMNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialNewDAMNOR_'.ANNUAL.IMP 1
+'UC_PotentialNewDAMNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialNewDAMNOR-'.ANNUAL.IMP -1
+'UC_PotentialNewDAMNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialNewDAMNOR_'.ANNUAL.IMP 1
+'UC_PotentialNewRORNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialNewRORNOR-'.ANNUAL.IMP -1
+'UC_PotentialNewRORNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialNewRORNOR_'.ANNUAL.IMP 1
+'UC_PotentialNewRORNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialNewRORNOR-'.ANNUAL.IMP -1
+'UC_PotentialNewRORNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialNewRORNOR_'.ANNUAL.IMP 1
+'UC_PotentialReinstallDAMNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialReinstallDAMNOR-'.ANNUAL.IMP -1
+'UC_PotentialReinstallDAMNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialReinstallDAMNOR_'.ANNUAL.IMP 1
+'UC_PotentialReinstallDAMNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialReinstallDAMNOR-'.ANNUAL.IMP -1
+'UC_PotentialReinstallDAMNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialReinstallDAMNOR_'.ANNUAL.IMP 1
+'UC_PotentialReinstallRORNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialReinstallRORNOR-'.ANNUAL.IMP -1
+'UC_PotentialReinstallRORNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_PotentialReinstallRORNOR_'.ANNUAL.IMP 1
+'UC_PotentialReinstallRORNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialReinstallRORNOR-'.ANNUAL.IMP -1
+'UC_PotentialReinstallRORNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_PotentialReinstallRORNOR_'.ANNUAL.IMP 1
+'UC_RORExpansionandUpgradingNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_RORExpansionandUpgradingNOR-'.ANNUAL.IMP -1
+'UC_RORExpansionandUpgradingNOR'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_RORExpansionandUpgradingNOR_'.ANNUAL.IMP 1
+'UC_RORExpansionandUpgradingNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_RORExpansionandUpgradingNOR-'.ANNUAL.IMP -1
+'UC_RORExpansionandUpgradingNOR'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_RORExpansionandUpgradingNOR_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSRTS ' '/
+'NO1'.'UC_DAMExpansionandUpgradingNOR'.0.ANNUAL.UP 5
+'NO1'.'UC_DAMExpansionandUpgradingNOR'.2015.ANNUAL.UP 12.76
+'NO1'.'UC_PotentialNewDAMNOR'.0.ANNUAL.UP 5
+'NO1'.'UC_PotentialNewDAMNOR'.2015.ANNUAL.UP 8.91
+'NO1'.'UC_PotentialNewRORNOR'.0.ANNUAL.UP 5
+'NO1'.'UC_PotentialNewRORNOR'.2015.ANNUAL.UP 31.27
+'NO1'.'UC_PotentialReinstallDAMNOR'.0.ANNUAL.UP 2
+'NO1'.'UC_PotentialReinstallDAMNOR'.2025.ANNUAL.UP 0
+'NO1'.'UC_PotentialReinstallDAMNOR'.2026.ANNUAL.UP 199.01
+'NO1'.'UC_PotentialReinstallDAMNOR'.2030.ANNUAL.UP 995.04
+'NO1'.'UC_PotentialReinstallDAMNOR'.2035.ANNUAL.UP 1990.09
+'NO1'.'UC_PotentialReinstallDAMNOR'.2040.ANNUAL.UP 3587.52
+'NO1'.'UC_PotentialReinstallDAMNOR'.2050.ANNUAL.UP 7332.51
+'NO1'.'UC_PotentialReinstallRORNOR'.0.ANNUAL.UP 2
+'NO1'.'UC_PotentialReinstallRORNOR'.2025.ANNUAL.UP 0
+'NO1'.'UC_PotentialReinstallRORNOR'.2026.ANNUAL.UP 53.22
+'NO1'.'UC_PotentialReinstallRORNOR'.2030.ANNUAL.UP 266.12
+'NO1'.'UC_PotentialReinstallRORNOR'.2035.ANNUAL.UP 532.25
+'NO1'.'UC_PotentialReinstallRORNOR'.2040.ANNUAL.UP 959.33
+'NO1'.'UC_PotentialReinstallRORNOR'.2050.ANNUAL.UP 1960.34
+'NO1'.'UC_RORExpansionandUpgradingNOR'.0.ANNUAL.UP 5
+'NO1'.'UC_RORExpansionandUpgradingNOR'.2015.ANNUAL.UP 5.84
+'NO2'.'UC_DAMExpansionandUpgradingNOR'.0.ANNUAL.UP 5
+'NO2'.'UC_DAMExpansionandUpgradingNOR'.2015.ANNUAL.UP 5.81
+'NO2'.'UC_PotentialNewDAMNOR'.0.ANNUAL.UP 5
+'NO2'.'UC_PotentialNewDAMNOR'.2015.ANNUAL.UP 4.05
+'NO2'.'UC_PotentialNewRORNOR'.0.ANNUAL.UP 5
+'NO2'.'UC_PotentialNewRORNOR'.2015.ANNUAL.UP 11.93
+'NO2'.'UC_PotentialReinstallDAMNOR'.0.ANNUAL.UP 2
+'NO2'.'UC_PotentialReinstallDAMNOR'.2025.ANNUAL.UP 0
+'NO2'.'UC_PotentialReinstallDAMNOR'.2026.ANNUAL.UP 97.99
+'NO2'.'UC_PotentialReinstallDAMNOR'.2030.ANNUAL.UP 489.96
+'NO2'.'UC_PotentialReinstallDAMNOR'.2035.ANNUAL.UP 979.91
+'NO2'.'UC_PotentialReinstallDAMNOR'.2040.ANNUAL.UP 1766.48
+'NO2'.'UC_PotentialReinstallDAMNOR'.2050.ANNUAL.UP 3610.49
+'NO2'.'UC_PotentialReinstallRORNOR'.0.ANNUAL.UP 2
+'NO2'.'UC_PotentialReinstallRORNOR'.2025.ANNUAL.UP 0
+'NO2'.'UC_PotentialReinstallRORNOR'.2026.ANNUAL.UP 29.78
+'NO2'.'UC_PotentialReinstallRORNOR'.2030.ANNUAL.UP 148.88
+'NO2'.'UC_PotentialReinstallRORNOR'.2035.ANNUAL.UP 297.75
+'NO2'.'UC_PotentialReinstallRORNOR'.2040.ANNUAL.UP 536.67
+'NO2'.'UC_PotentialReinstallRORNOR'.2050.ANNUAL.UP 1096.66
+'NO2'.'UC_RORExpansionandUpgradingNOR'.0.ANNUAL.UP 5
+'NO2'.'UC_RORExpansionandUpgradingNOR'.2015.ANNUAL.UP 2.23
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'UC_MaxDamProd_NO'.0.ANNUAL.UP 5
+'UC_MaxDamProd_NO'.2010.ANNUAL.UP 316.68
+'UC_MaxDamProd_NO'.2012.ANNUAL.UP 384.45
+'UC_MaxDamProd_NO'.2014.ANNUAL.UP 367.49
+'UC_MaxDamProd_NO'.2015.ANNUAL.UP 372.46
+'UC_MaxDamProd_NO'.2018.ANNUAL.UP 376.51
+'UC_MaxDamProd_NO'.2020.ANNUAL.UP 368.93
+'UC_MaxRunofriverProd_NO'.0.ANNUAL.UP 5
+'UC_MaxRunofriverProd_NO'.2010.ANNUAL.UP 103.58
+'UC_MaxRunofriverProd_NO'.2012.ANNUAL.UP 125.75
+'UC_MaxRunofriverProd_NO'.2014.ANNUAL.UP 120.2
+'UC_MaxRunofriverProd_NO'.2015.ANNUAL.UP 121.83
+'UC_MaxRunofriverProd_NO'.2018.ANNUAL.UP 123.15
+'UC_MaxRunofriverProd_NO'.2020.ANNUAL.UP 120.67
+/;
+
+

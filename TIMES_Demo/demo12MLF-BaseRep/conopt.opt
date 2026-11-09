@@ -1,0 +1,2 @@
+* Tighter optimality tolerance for the MACRO MLF calibration (TIMES sets MCE.OPTFILE=1)
+Tol_Optimality 1.e-12

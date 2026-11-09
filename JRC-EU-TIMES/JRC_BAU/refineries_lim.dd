@@ -1,0 +1,1079 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'JRC_BAU'
+$SET SCENARIO_NAME 'refineries_lim'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'AT'.'NRG'.'UC_Refineries_Lim-'
+'AT'.'NRG'.'UC_Refineries_Lim_'
+'BE'.'NRG'.'UC_Refineries_Lim-'
+'BE'.'NRG'.'UC_Refineries_Lim_'
+'BG'.'NRG'.'UC_Refineries_Lim-'
+'BG'.'NRG'.'UC_Refineries_Lim_'
+'CH'.'NRG'.'UC_Refineries_Lim-'
+'CH'.'NRG'.'UC_Refineries_Lim_'
+'CY'.'NRG'.'UC_Refineries_Lim-'
+'CY'.'NRG'.'UC_Refineries_Lim_'
+'CZ'.'NRG'.'UC_Refineries_Lim-'
+'CZ'.'NRG'.'UC_Refineries_Lim_'
+'DE'.'NRG'.'UC_Refineries_Lim-'
+'DE'.'NRG'.'UC_Refineries_Lim_'
+'DK'.'NRG'.'UC_Refineries_Lim-'
+'DK'.'NRG'.'UC_Refineries_Lim_'
+'EE'.'NRG'.'UC_Refineries_Lim-'
+'EE'.'NRG'.'UC_Refineries_Lim_'
+'EL'.'NRG'.'UC_Refineries_Lim-'
+'EL'.'NRG'.'UC_Refineries_Lim_'
+'ES'.'NRG'.'UC_Refineries_Lim-'
+'ES'.'NRG'.'UC_Refineries_Lim_'
+'FI'.'NRG'.'UC_Refineries_Lim-'
+'FI'.'NRG'.'UC_Refineries_Lim_'
+'FR'.'NRG'.'UC_Refineries_Lim-'
+'FR'.'NRG'.'UC_Refineries_Lim_'
+'HR'.'NRG'.'UC_Refineries_Lim-'
+'HR'.'NRG'.'UC_Refineries_Lim_'
+'HU'.'NRG'.'UC_Refineries_Lim-'
+'HU'.'NRG'.'UC_Refineries_Lim_'
+'IE'.'NRG'.'UC_Refineries_Lim-'
+'IE'.'NRG'.'UC_Refineries_Lim_'
+'IS'.'NRG'.'UC_Refineries_Lim-'
+'IS'.'NRG'.'UC_Refineries_Lim_'
+'IT'.'NRG'.'UC_Refineries_Lim-'
+'IT'.'NRG'.'UC_Refineries_Lim_'
+'LT'.'NRG'.'UC_Refineries_Lim-'
+'LT'.'NRG'.'UC_Refineries_Lim_'
+'LU'.'NRG'.'UC_Refineries_Lim-'
+'LU'.'NRG'.'UC_Refineries_Lim_'
+'LV'.'NRG'.'UC_Refineries_Lim-'
+'LV'.'NRG'.'UC_Refineries_Lim_'
+'MT'.'NRG'.'UC_Refineries_Lim-'
+'MT'.'NRG'.'UC_Refineries_Lim_'
+'NL'.'NRG'.'UC_Refineries_Lim-'
+'NL'.'NRG'.'UC_Refineries_Lim_'
+'NO'.'NRG'.'UC_Refineries_Lim-'
+'NO'.'NRG'.'UC_Refineries_Lim_'
+'PL'.'NRG'.'UC_Refineries_Lim-'
+'PL'.'NRG'.'UC_Refineries_Lim_'
+'PT'.'NRG'.'UC_Refineries_Lim-'
+'PT'.'NRG'.'UC_Refineries_Lim_'
+'RO'.'NRG'.'UC_Refineries_Lim-'
+'RO'.'NRG'.'UC_Refineries_Lim_'
+'SE'.'NRG'.'UC_Refineries_Lim-'
+'SE'.'NRG'.'UC_Refineries_Lim_'
+'SI'.'NRG'.'UC_Refineries_Lim-'
+'SI'.'NRG'.'UC_Refineries_Lim_'
+'SK'.'NRG'.'UC_Refineries_Lim-'
+'SK'.'NRG'.'UC_Refineries_Lim_'
+'UK'.'NRG'.'UC_Refineries_Lim-'
+'UK'.'NRG'.'UC_Refineries_Lim_'
+/;
+
+SET COM_UNIT
+
+/
+'AT'.'UC_Refineries_Lim-'.'UCU'
+'AT'.'UC_Refineries_Lim_'.'UCU'
+'BE'.'UC_Refineries_Lim-'.'UCU'
+'BE'.'UC_Refineries_Lim_'.'UCU'
+'BG'.'UC_Refineries_Lim-'.'UCU'
+'BG'.'UC_Refineries_Lim_'.'UCU'
+'CH'.'UC_Refineries_Lim-'.'UCU'
+'CH'.'UC_Refineries_Lim_'.'UCU'
+'CY'.'UC_Refineries_Lim-'.'UCU'
+'CY'.'UC_Refineries_Lim_'.'UCU'
+'CZ'.'UC_Refineries_Lim-'.'UCU'
+'CZ'.'UC_Refineries_Lim_'.'UCU'
+'DE'.'UC_Refineries_Lim-'.'UCU'
+'DE'.'UC_Refineries_Lim_'.'UCU'
+'DK'.'UC_Refineries_Lim-'.'UCU'
+'DK'.'UC_Refineries_Lim_'.'UCU'
+'EE'.'UC_Refineries_Lim-'.'UCU'
+'EE'.'UC_Refineries_Lim_'.'UCU'
+'EL'.'UC_Refineries_Lim-'.'UCU'
+'EL'.'UC_Refineries_Lim_'.'UCU'
+'ES'.'UC_Refineries_Lim-'.'UCU'
+'ES'.'UC_Refineries_Lim_'.'UCU'
+'FI'.'UC_Refineries_Lim-'.'UCU'
+'FI'.'UC_Refineries_Lim_'.'UCU'
+'FR'.'UC_Refineries_Lim-'.'UCU'
+'FR'.'UC_Refineries_Lim_'.'UCU'
+'HR'.'UC_Refineries_Lim-'.'UCU'
+'HR'.'UC_Refineries_Lim_'.'UCU'
+'HU'.'UC_Refineries_Lim-'.'UCU'
+'HU'.'UC_Refineries_Lim_'.'UCU'
+'IE'.'UC_Refineries_Lim-'.'UCU'
+'IE'.'UC_Refineries_Lim_'.'UCU'
+'IS'.'UC_Refineries_Lim-'.'UCU'
+'IS'.'UC_Refineries_Lim_'.'UCU'
+'IT'.'UC_Refineries_Lim-'.'UCU'
+'IT'.'UC_Refineries_Lim_'.'UCU'
+'LT'.'UC_Refineries_Lim-'.'UCU'
+'LT'.'UC_Refineries_Lim_'.'UCU'
+'LU'.'UC_Refineries_Lim-'.'UCU'
+'LU'.'UC_Refineries_Lim_'.'UCU'
+'LV'.'UC_Refineries_Lim-'.'UCU'
+'LV'.'UC_Refineries_Lim_'.'UCU'
+'MT'.'UC_Refineries_Lim-'.'UCU'
+'MT'.'UC_Refineries_Lim_'.'UCU'
+'NL'.'UC_Refineries_Lim-'.'UCU'
+'NL'.'UC_Refineries_Lim_'.'UCU'
+'NO'.'UC_Refineries_Lim-'.'UCU'
+'NO'.'UC_Refineries_Lim_'.'UCU'
+'PL'.'UC_Refineries_Lim-'.'UCU'
+'PL'.'UC_Refineries_Lim_'.'UCU'
+'PT'.'UC_Refineries_Lim-'.'UCU'
+'PT'.'UC_Refineries_Lim_'.'UCU'
+'RO'.'UC_Refineries_Lim-'.'UCU'
+'RO'.'UC_Refineries_Lim_'.'UCU'
+'SE'.'UC_Refineries_Lim-'.'UCU'
+'SE'.'UC_Refineries_Lim_'.'UCU'
+'SI'.'UC_Refineries_Lim-'.'UCU'
+'SI'.'UC_Refineries_Lim_'.'UCU'
+'SK'.'UC_Refineries_Lim-'.'UCU'
+'SK'.'UC_Refineries_Lim_'.'UCU'
+'UK'.'UC_Refineries_Lim-'.'UCU'
+'UK'.'UC_Refineries_Lim_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'UC_Refineries_Lim-'.'AT'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'BE'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'BG'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'CH'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'CY'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'CZ'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'DE'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'DK'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'EE'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'EL'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'ES'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'FI'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'FR'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'HR'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'HU'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'IE'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'IS'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'IT'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'LT'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'LU'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'LV'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'MT'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'NL'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'NO'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'PL'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'PT'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'RO'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'SE'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'SI'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'SK'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim-'.'UK'.'UC_Refineries_Lim-'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'AT'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'BE'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'BG'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'CH'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'CY'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'CZ'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'DE'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'DK'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'EE'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'EL'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'ES'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'FI'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'FR'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'HR'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'HU'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'IE'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'IS'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'IT'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'LT'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'LU'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'LV'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'MT'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'NL'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'NO'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'PL'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'PT'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'RO'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'SE'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'SI'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'SK'.'UC_Refineries_Lim_'.'IMPDUCZ'
+'IMPEXP'.'UC_Refineries_Lim_'.'UK'.'UC_Refineries_Lim_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'AT'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'AT'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'BE'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'BE'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'BG'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'BG'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'CH'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'CH'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'CY'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'CY'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'CZ'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'CZ'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'DE'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'DE'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'DK'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'DK'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'EE'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'EE'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'EL'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'EL'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'ES'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'ES'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'FI'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'FI'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'FR'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'FR'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'HR'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'HR'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'HU'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'HU'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'IE'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'IE'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'IS'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'IS'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'IT'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'IT'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'LT'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'LT'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'LU'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'LU'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'LV'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'LV'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'MT'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'MT'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'NL'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'NL'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'NO'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'NO'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'PL'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'PL'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'PT'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'PT'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'RO'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'RO'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'SE'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'SE'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'SI'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'SI'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'SK'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'SK'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+'UK'.'UC_Refineries_Lim-' 'Negative dummy var for UC: UC_Refineries_Lim'
+'UK'.'UC_Refineries_Lim_' 'Positive dummy var for UC: UC_Refineries_Lim'
+/;
+
+SET UC_R_SUM
+
+/
+'AT'.'UC_Refineries_Lim'
+'BE'.'UC_Refineries_Lim'
+'BG'.'UC_Refineries_Lim'
+'CH'.'UC_Refineries_Lim'
+'CY'.'UC_Refineries_Lim'
+'CZ'.'UC_Refineries_Lim'
+'DE'.'UC_Refineries_Lim'
+'DK'.'UC_Refineries_Lim'
+'EE'.'UC_Refineries_Lim'
+'EL'.'UC_Refineries_Lim'
+'ES'.'UC_Refineries_Lim'
+'FI'.'UC_Refineries_Lim'
+'FR'.'UC_Refineries_Lim'
+'HR'.'UC_Refineries_Lim'
+'HU'.'UC_Refineries_Lim'
+'IE'.'UC_Refineries_Lim'
+'IS'.'UC_Refineries_Lim'
+'IT'.'UC_Refineries_Lim'
+'LT'.'UC_Refineries_Lim'
+'LU'.'UC_Refineries_Lim'
+'LV'.'UC_Refineries_Lim'
+'MT'.'UC_Refineries_Lim'
+'NL'.'UC_Refineries_Lim'
+'NO'.'UC_Refineries_Lim'
+'PL'.'UC_Refineries_Lim'
+'PT'.'UC_Refineries_Lim'
+'RO'.'UC_Refineries_Lim'
+'SE'.'UC_Refineries_Lim'
+'SI'.'UC_Refineries_Lim'
+'SK'.'UC_Refineries_Lim'
+'UK'.'UC_Refineries_Lim'
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'AT'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BE'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'BG'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CH'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CY'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'CZ'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DE'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'DK'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EE'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'EL'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'ES'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FI'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'FR'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HR'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'HU'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IE'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IS'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'IT'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LT'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LU'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'LV'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'MT'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NL'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'NO'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PL'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'PT'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'RO'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SE'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SI'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'SK'.2050.'SSCDRFLX00'.ANNUAL -0.25
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2020.'SSCDRFLX00'.ANNUAL -0.2
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILDST'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILFDS'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILGSL'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILHFO'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILKER'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILLPG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILNAP'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILNEU'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILOTH'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'EXPOILRFG'.ANNUAL 1
+'UC_Refineries_Lim'.LHS.'UK'.2050.'SSCDRFLX00'.ANNUAL -0.25
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'UC_Refineries_Lim'.LHS.'AT'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'AT'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'BE'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'BE'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'BG'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'BG'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'CH'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'CH'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'CY'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'CY'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'CZ'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'DE'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'DE'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'DK'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'DK'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'EE'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'EE'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'EL'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'EL'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'ES'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'ES'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'FI'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'FI'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'FR'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'FR'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'HR'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'HR'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'HU'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'HU'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'IE'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'IE'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'IS'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'IS'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'IT'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'IT'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'LT'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'LT'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'LU'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'LU'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'LV'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'LV'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'MT'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'MT'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'NL'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'NL'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'NO'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'NO'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'PL'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'PL'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'PT'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'PT'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'RO'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'RO'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'SE'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'SE'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'SI'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'SI'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'SK'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'SK'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+'UC_Refineries_Lim'.LHS.'UK'.2010.'IMPDUCZ'.'UC_Refineries_Lim-'.ANNUAL.IMP -1
+'UC_Refineries_Lim'.LHS.'UK'.2010.'IMPDUCZ'.'UC_Refineries_Lim_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'UC_Refineries_Lim'.0.ANNUAL.UP 5
+'UC_Refineries_Lim'.2010.ANNUAL.UP 0
+/;
+
+

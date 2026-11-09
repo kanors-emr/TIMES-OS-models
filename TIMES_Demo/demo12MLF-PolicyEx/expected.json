@@ -1,0 +1,222 @@
+{
+ "case": "demo12MLF-PolicyEx",
+ "made": "2026-11-08",
+ "objective": 27198.5703,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 4270,
+  "columns": 44808,
+  "nonzeros": 142213,
+  "objective": 27198.5703,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 4270,
+  "columns": 44808,
+  "nonzeros": 142213,
+  "objective": 27198.570312634536
+ },
+ "row_counts": {
+  "EQ_ENSCST": 14,
+  "EQ_KNCAP": 14,
+  "EQ_CONSO": 14,
+  "EQG_COMBAL": 884,
+  "EQL_CAPACT": 1409,
+  "EQ_DD": 12,
+  "EQ_CONDA": 14,
+  "EQL_ACTBND": 28,
+  "EQ_LOGBD": 14,
+  "EQ_IRE": 63,
+  "EQ_UTILP": 1,
+  "EQ_TMC": 2,
+  "EQ_ANNINV": 14,
+  "EQ_MACAG": 24,
+  "EQE_COMPRD": 56,
+  "EQ_MACES": 48,
+  "EQ_DEMSH": 120,
+  "EQ_OBJ": 14,
+  "EQ_ANNVAR": 14,
+  "EQE_CPT": 20,
+  "EQ_DEMCES": 120,
+  "EQ_MCAP": 12,
+  "EQ_PEAK": 28,
+  "EQ_MACSH": 56,
+  "EQ_IVECBND": 12,
+  "EQG_INSHR": 384,
+  "EQE_INSHR": 271,
+  "EQE_COMBAL": 292,
+  "EQG_OUTSHR": 84,
+  "EQE_ACTEFF": 154,
+  "EQE_UCRT": 10,
+  "EQ_DEMAG": 12,
+  "EQ_TRDBAL": 6,
+  "EQE_UCRTS": 8,
+  "EQ_ANNFIX": 14,
+  "EQ_CUMFLO": 16,
+  "EQE_OUTSHR": 12
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "ANNCOST": "LEV",
+  "BOTIME": "1960",
+  "CTST": "",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "MLF",
+  "MAXSOW": "96",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "MOD",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "demo12Policy",
+  "SCENARIO_NAME": "bounds-uc_wsets",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "SYSPREFIX": "",
+  "TIMESED": "YES",
+  "TMP": "0",
+  "VAR": "VARIABLE OBJZ",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "demo12_ts.dd",
+   "bytes": 111,
+   "sha256_16": "88865dabecc777fe"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 111836,
+   "sha256_16": "e488f886ee5d517c"
+  },
+  {
+   "name": "newtechs.dd",
+   "bytes": 37737,
+   "sha256_16": "9c1d4e921260e724"
+  },
+  {
+   "name": "trade_param.dd",
+   "bytes": 248,
+   "sha256_16": "7fbbf12506e9b9c5"
+  },
+  {
+   "name": "dem_ref.dd",
+   "bytes": 25528,
+   "sha256_16": "42466bdc4c3e2eaa"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 6460,
+   "sha256_16": "0e43c1494803517b"
+  },
+  {
+   "name": "peak_rsv.dd",
+   "bytes": 234,
+   "sha256_16": "552bcfdefa6ffdbe"
+  },
+  {
+   "name": "refinery.dd",
+   "bytes": 1033,
+   "sha256_16": "9f47ccd14d0fbf97"
+  },
+  {
+   "name": "demproj_dtcar.dd",
+   "bytes": 436,
+   "sha256_16": "598d259ee8747baf"
+  },
+  {
+   "name": "uc_nuc_maxcap.dd",
+   "bytes": 1050,
+   "sha256_16": "e1f155d9e1d2f7a7"
+  },
+  {
+   "name": "bounds-uc_wsets.dd",
+   "bytes": 2273,
+   "sha256_16": "53d679b6752a3f3f"
+  },
+  {
+   "name": "offdummy.dd",
+   "bytes": 167,
+   "sha256_16": "f51997a45f8ddab7"
+  },
+  {
+   "name": "demomacro.dd",
+   "bytes": 269,
+   "sha256_16": "b14ab5caaec3c4a0"
+  },
+  {
+   "name": "ghgpolicy.dd",
+   "bytes": 936,
+   "sha256_16": "1bd560fab98e5049"
+  }
+ ],
+ "files": [],
+ "objective_note": "TIMES in GAMS solves the MLF model with CONOPT; the listing gives its objective to 4 decimals",
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 4270   GAMS 4270   only here 0   only in GAMS 0",
+    "columns    here 44808   GAMS 44808   only here 0   only in GAMS 0",
+    "entries    here 142213   GAMS 142213   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 5.7e-11 (tolerance 1.0e-9); 0 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "times_in_gams_objective": 27198.5703,
+   "times_in_gams_solver": "CONOPT (MLF)"
+  },
+  "regions": 2,
+  "highs": {
+   "status": "Optimal",
+   "objective": 27198.57031263454,
+   "version": "1.15.1",
+   "threads": 24,
+   "method": "simplex",
+   "solve_seconds": 7.3,
+   "attempts": [
+    {
+     "options": "(default)",
+     "status": "Optimal"
+    }
+   ],
+   "relative_difference_from_cplex": 4.64529575878553e-10
+  },
+  "run_first": "python TIMES.py run TIMES_Demo/demo12Base",
+  "command": "python TIMES.py run TIMES_Demo/demo12MLF-PolicyEx --points TIMES_Demo/demo12Base",
+  "build": {
+   "timesos_seconds": 10.3,
+   "timesos_peak_gb": 1.17,
+   "times_in_gams_seconds": 0.2,
+   "times_in_gams_peak_gb": 0.03,
+   "time_ratio": 51.5,
+   "memory_ratio": 46.08,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

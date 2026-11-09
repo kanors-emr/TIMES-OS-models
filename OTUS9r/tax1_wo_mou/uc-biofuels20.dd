@@ -1,0 +1,1326 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'TAX1_WO_MOU'
+$SET SCENARIO_NAME 'uc-biofuels20'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'R0'.'NRG'.'B20_AllRegions-'
+'R0'.'NRG'.'B20_AllRegions_'
+'R0'.'NRG'.'BDL_AllRegions-'
+'R0'.'NRG'.'BDL_AllRegions_'
+'R0'.'NRG'.'BDL_EXP_AllRegions-'
+'R0'.'NRG'.'BDL_EXP_AllRegions_'
+'R0'.'NRG'.'BDL_IMP_AllRegions-'
+'R0'.'NRG'.'BDL_IMP_AllRegions_'
+'R0'.'NRG'.'E85_AllRegions-'
+'R0'.'NRG'.'E85_AllRegions_'
+'R0'.'NRG'.'ETH_CRN_2010-'
+'R0'.'NRG'.'ETH_CRN_2010_'
+'R0'.'NRG'.'ETH_CRN_AllRegions-'
+'R0'.'NRG'.'ETH_CRN_AllRegions_'
+'R0'.'NRG'.'ETH_EXP_AllRegions-'
+'R0'.'NRG'.'ETH_EXP_AllRegions_'
+'R0'.'NRG'.'ETH_IMP_AllRegions-'
+'R0'.'NRG'.'ETH_IMP_AllRegions_'
+'R1'.'NRG'.'B20_AllRegions-'
+'R1'.'NRG'.'B20_AllRegions_'
+'R1'.'NRG'.'BDL_AllRegions-'
+'R1'.'NRG'.'BDL_AllRegions_'
+'R1'.'NRG'.'BDL_EXP_AllRegions-'
+'R1'.'NRG'.'BDL_EXP_AllRegions_'
+'R1'.'NRG'.'BDL_IMP_AllRegions-'
+'R1'.'NRG'.'BDL_IMP_AllRegions_'
+'R1'.'NRG'.'E85_AllRegions-'
+'R1'.'NRG'.'E85_AllRegions_'
+'R1'.'NRG'.'ETH_CRN_2010-'
+'R1'.'NRG'.'ETH_CRN_2010_'
+'R1'.'NRG'.'ETH_CRN_AllRegions-'
+'R1'.'NRG'.'ETH_CRN_AllRegions_'
+'R1'.'NRG'.'ETH_EXP_AllRegions-'
+'R1'.'NRG'.'ETH_EXP_AllRegions_'
+'R1'.'NRG'.'ETH_IMP_AllRegions-'
+'R1'.'NRG'.'ETH_IMP_AllRegions_'
+'R2'.'NRG'.'B20_AllRegions-'
+'R2'.'NRG'.'B20_AllRegions_'
+'R2'.'NRG'.'BDL_AllRegions-'
+'R2'.'NRG'.'BDL_AllRegions_'
+'R2'.'NRG'.'BDL_EXP_AllRegions-'
+'R2'.'NRG'.'BDL_EXP_AllRegions_'
+'R2'.'NRG'.'BDL_IMP_AllRegions-'
+'R2'.'NRG'.'BDL_IMP_AllRegions_'
+'R2'.'NRG'.'E85_AllRegions-'
+'R2'.'NRG'.'E85_AllRegions_'
+'R2'.'NRG'.'ETH_CRN_2010-'
+'R2'.'NRG'.'ETH_CRN_2010_'
+'R2'.'NRG'.'ETH_CRN_AllRegions-'
+'R2'.'NRG'.'ETH_CRN_AllRegions_'
+'R2'.'NRG'.'ETH_EXP_AllRegions-'
+'R2'.'NRG'.'ETH_EXP_AllRegions_'
+'R2'.'NRG'.'ETH_IMP_AllRegions-'
+'R2'.'NRG'.'ETH_IMP_AllRegions_'
+'R3'.'NRG'.'B20_AllRegions-'
+'R3'.'NRG'.'B20_AllRegions_'
+'R3'.'NRG'.'BDL_AllRegions-'
+'R3'.'NRG'.'BDL_AllRegions_'
+'R3'.'NRG'.'BDL_EXP_AllRegions-'
+'R3'.'NRG'.'BDL_EXP_AllRegions_'
+'R3'.'NRG'.'BDL_IMP_AllRegions-'
+'R3'.'NRG'.'BDL_IMP_AllRegions_'
+'R3'.'NRG'.'E85_AllRegions-'
+'R3'.'NRG'.'E85_AllRegions_'
+'R3'.'NRG'.'ETH_CRN_2010-'
+'R3'.'NRG'.'ETH_CRN_2010_'
+'R3'.'NRG'.'ETH_CRN_AllRegions-'
+'R3'.'NRG'.'ETH_CRN_AllRegions_'
+'R3'.'NRG'.'ETH_EXP_AllRegions-'
+'R3'.'NRG'.'ETH_EXP_AllRegions_'
+'R3'.'NRG'.'ETH_IMP_AllRegions-'
+'R3'.'NRG'.'ETH_IMP_AllRegions_'
+'R4'.'NRG'.'B20_AllRegions-'
+'R4'.'NRG'.'B20_AllRegions_'
+'R4'.'NRG'.'BDL_AllRegions-'
+'R4'.'NRG'.'BDL_AllRegions_'
+'R4'.'NRG'.'BDL_EXP_AllRegions-'
+'R4'.'NRG'.'BDL_EXP_AllRegions_'
+'R4'.'NRG'.'BDL_IMP_AllRegions-'
+'R4'.'NRG'.'BDL_IMP_AllRegions_'
+'R4'.'NRG'.'E85_AllRegions-'
+'R4'.'NRG'.'E85_AllRegions_'
+'R4'.'NRG'.'ETH_CRN_2010-'
+'R4'.'NRG'.'ETH_CRN_2010_'
+'R4'.'NRG'.'ETH_CRN_AllRegions-'
+'R4'.'NRG'.'ETH_CRN_AllRegions_'
+'R4'.'NRG'.'ETH_EXP_AllRegions-'
+'R4'.'NRG'.'ETH_EXP_AllRegions_'
+'R4'.'NRG'.'ETH_IMP_AllRegions-'
+'R4'.'NRG'.'ETH_IMP_AllRegions_'
+'R5'.'NRG'.'B20_AllRegions-'
+'R5'.'NRG'.'B20_AllRegions_'
+'R5'.'NRG'.'BDL_AllRegions-'
+'R5'.'NRG'.'BDL_AllRegions_'
+'R5'.'NRG'.'BDL_EXP_AllRegions-'
+'R5'.'NRG'.'BDL_EXP_AllRegions_'
+'R5'.'NRG'.'BDL_IMP_AllRegions-'
+'R5'.'NRG'.'BDL_IMP_AllRegions_'
+'R5'.'NRG'.'E85_AllRegions-'
+'R5'.'NRG'.'E85_AllRegions_'
+'R5'.'NRG'.'ETH_CRN_2010-'
+'R5'.'NRG'.'ETH_CRN_2010_'
+'R5'.'NRG'.'ETH_CRN_AllRegions-'
+'R5'.'NRG'.'ETH_CRN_AllRegions_'
+'R5'.'NRG'.'ETH_EXP_AllRegions-'
+'R5'.'NRG'.'ETH_EXP_AllRegions_'
+'R5'.'NRG'.'ETH_IMP_AllRegions-'
+'R5'.'NRG'.'ETH_IMP_AllRegions_'
+'R6'.'NRG'.'B20_AllRegions-'
+'R6'.'NRG'.'B20_AllRegions_'
+'R6'.'NRG'.'BDL_AllRegions-'
+'R6'.'NRG'.'BDL_AllRegions_'
+'R6'.'NRG'.'BDL_EXP_AllRegions-'
+'R6'.'NRG'.'BDL_EXP_AllRegions_'
+'R6'.'NRG'.'BDL_IMP_AllRegions-'
+'R6'.'NRG'.'BDL_IMP_AllRegions_'
+'R6'.'NRG'.'E85_AllRegions-'
+'R6'.'NRG'.'E85_AllRegions_'
+'R6'.'NRG'.'ETH_CRN_2010-'
+'R6'.'NRG'.'ETH_CRN_2010_'
+'R6'.'NRG'.'ETH_CRN_AllRegions-'
+'R6'.'NRG'.'ETH_CRN_AllRegions_'
+'R6'.'NRG'.'ETH_EXP_AllRegions-'
+'R6'.'NRG'.'ETH_EXP_AllRegions_'
+'R6'.'NRG'.'ETH_IMP_AllRegions-'
+'R6'.'NRG'.'ETH_IMP_AllRegions_'
+'R7'.'NRG'.'B20_AllRegions-'
+'R7'.'NRG'.'B20_AllRegions_'
+'R7'.'NRG'.'BDL_AllRegions-'
+'R7'.'NRG'.'BDL_AllRegions_'
+'R7'.'NRG'.'BDL_EXP_AllRegions-'
+'R7'.'NRG'.'BDL_EXP_AllRegions_'
+'R7'.'NRG'.'BDL_IMP_AllRegions-'
+'R7'.'NRG'.'BDL_IMP_AllRegions_'
+'R7'.'NRG'.'E85_AllRegions-'
+'R7'.'NRG'.'E85_AllRegions_'
+'R7'.'NRG'.'ETH_CRN_2010-'
+'R7'.'NRG'.'ETH_CRN_2010_'
+'R7'.'NRG'.'ETH_CRN_AllRegions-'
+'R7'.'NRG'.'ETH_CRN_AllRegions_'
+'R7'.'NRG'.'ETH_EXP_AllRegions-'
+'R7'.'NRG'.'ETH_EXP_AllRegions_'
+'R7'.'NRG'.'ETH_IMP_AllRegions-'
+'R7'.'NRG'.'ETH_IMP_AllRegions_'
+'R8'.'NRG'.'B20_AllRegions-'
+'R8'.'NRG'.'B20_AllRegions_'
+'R8'.'NRG'.'BDL_AllRegions-'
+'R8'.'NRG'.'BDL_AllRegions_'
+'R8'.'NRG'.'BDL_EXP_AllRegions-'
+'R8'.'NRG'.'BDL_EXP_AllRegions_'
+'R8'.'NRG'.'BDL_IMP_AllRegions-'
+'R8'.'NRG'.'BDL_IMP_AllRegions_'
+'R8'.'NRG'.'E85_AllRegions-'
+'R8'.'NRG'.'E85_AllRegions_'
+'R8'.'NRG'.'ETH_CRN_2010-'
+'R8'.'NRG'.'ETH_CRN_2010_'
+'R8'.'NRG'.'ETH_CRN_AllRegions-'
+'R8'.'NRG'.'ETH_CRN_AllRegions_'
+'R8'.'NRG'.'ETH_EXP_AllRegions-'
+'R8'.'NRG'.'ETH_EXP_AllRegions_'
+'R8'.'NRG'.'ETH_IMP_AllRegions-'
+'R8'.'NRG'.'ETH_IMP_AllRegions_'
+'R9'.'NRG'.'B20_AllRegions-'
+'R9'.'NRG'.'B20_AllRegions_'
+'R9'.'NRG'.'BDL_AllRegions-'
+'R9'.'NRG'.'BDL_AllRegions_'
+'R9'.'NRG'.'BDL_EXP_AllRegions-'
+'R9'.'NRG'.'BDL_EXP_AllRegions_'
+'R9'.'NRG'.'BDL_IMP_AllRegions-'
+'R9'.'NRG'.'BDL_IMP_AllRegions_'
+'R9'.'NRG'.'E85_AllRegions-'
+'R9'.'NRG'.'E85_AllRegions_'
+'R9'.'NRG'.'ETH_CRN_2010-'
+'R9'.'NRG'.'ETH_CRN_2010_'
+'R9'.'NRG'.'ETH_CRN_AllRegions-'
+'R9'.'NRG'.'ETH_CRN_AllRegions_'
+'R9'.'NRG'.'ETH_EXP_AllRegions-'
+'R9'.'NRG'.'ETH_EXP_AllRegions_'
+'R9'.'NRG'.'ETH_IMP_AllRegions-'
+'R9'.'NRG'.'ETH_IMP_AllRegions_'
+/;
+
+SET COM_UNIT
+
+/
+'R0'.'B20_AllRegions-'.'UCU'
+'R0'.'B20_AllRegions_'.'UCU'
+'R0'.'BDL_AllRegions-'.'UCU'
+'R0'.'BDL_AllRegions_'.'UCU'
+'R0'.'BDL_EXP_AllRegions-'.'UCU'
+'R0'.'BDL_EXP_AllRegions_'.'UCU'
+'R0'.'BDL_IMP_AllRegions-'.'UCU'
+'R0'.'BDL_IMP_AllRegions_'.'UCU'
+'R0'.'E85_AllRegions-'.'UCU'
+'R0'.'E85_AllRegions_'.'UCU'
+'R0'.'ETH_CRN_2010-'.'UCU'
+'R0'.'ETH_CRN_2010_'.'UCU'
+'R0'.'ETH_CRN_AllRegions-'.'UCU'
+'R0'.'ETH_CRN_AllRegions_'.'UCU'
+'R0'.'ETH_EXP_AllRegions-'.'UCU'
+'R0'.'ETH_EXP_AllRegions_'.'UCU'
+'R0'.'ETH_IMP_AllRegions-'.'UCU'
+'R0'.'ETH_IMP_AllRegions_'.'UCU'
+'R1'.'B20_AllRegions-'.'UCU'
+'R1'.'B20_AllRegions_'.'UCU'
+'R1'.'BDL_AllRegions-'.'UCU'
+'R1'.'BDL_AllRegions_'.'UCU'
+'R1'.'BDL_EXP_AllRegions-'.'UCU'
+'R1'.'BDL_EXP_AllRegions_'.'UCU'
+'R1'.'BDL_IMP_AllRegions-'.'UCU'
+'R1'.'BDL_IMP_AllRegions_'.'UCU'
+'R1'.'E85_AllRegions-'.'UCU'
+'R1'.'E85_AllRegions_'.'UCU'
+'R1'.'ETH_CRN_2010-'.'UCU'
+'R1'.'ETH_CRN_2010_'.'UCU'
+'R1'.'ETH_CRN_AllRegions-'.'UCU'
+'R1'.'ETH_CRN_AllRegions_'.'UCU'
+'R1'.'ETH_EXP_AllRegions-'.'UCU'
+'R1'.'ETH_EXP_AllRegions_'.'UCU'
+'R1'.'ETH_IMP_AllRegions-'.'UCU'
+'R1'.'ETH_IMP_AllRegions_'.'UCU'
+'R2'.'B20_AllRegions-'.'UCU'
+'R2'.'B20_AllRegions_'.'UCU'
+'R2'.'BDL_AllRegions-'.'UCU'
+'R2'.'BDL_AllRegions_'.'UCU'
+'R2'.'BDL_EXP_AllRegions-'.'UCU'
+'R2'.'BDL_EXP_AllRegions_'.'UCU'
+'R2'.'BDL_IMP_AllRegions-'.'UCU'
+'R2'.'BDL_IMP_AllRegions_'.'UCU'
+'R2'.'E85_AllRegions-'.'UCU'
+'R2'.'E85_AllRegions_'.'UCU'
+'R2'.'ETH_CRN_2010-'.'UCU'
+'R2'.'ETH_CRN_2010_'.'UCU'
+'R2'.'ETH_CRN_AllRegions-'.'UCU'
+'R2'.'ETH_CRN_AllRegions_'.'UCU'
+'R2'.'ETH_EXP_AllRegions-'.'UCU'
+'R2'.'ETH_EXP_AllRegions_'.'UCU'
+'R2'.'ETH_IMP_AllRegions-'.'UCU'
+'R2'.'ETH_IMP_AllRegions_'.'UCU'
+'R3'.'B20_AllRegions-'.'UCU'
+'R3'.'B20_AllRegions_'.'UCU'
+'R3'.'BDL_AllRegions-'.'UCU'
+'R3'.'BDL_AllRegions_'.'UCU'
+'R3'.'BDL_EXP_AllRegions-'.'UCU'
+'R3'.'BDL_EXP_AllRegions_'.'UCU'
+'R3'.'BDL_IMP_AllRegions-'.'UCU'
+'R3'.'BDL_IMP_AllRegions_'.'UCU'
+'R3'.'E85_AllRegions-'.'UCU'
+'R3'.'E85_AllRegions_'.'UCU'
+'R3'.'ETH_CRN_2010-'.'UCU'
+'R3'.'ETH_CRN_2010_'.'UCU'
+'R3'.'ETH_CRN_AllRegions-'.'UCU'
+'R3'.'ETH_CRN_AllRegions_'.'UCU'
+'R3'.'ETH_EXP_AllRegions-'.'UCU'
+'R3'.'ETH_EXP_AllRegions_'.'UCU'
+'R3'.'ETH_IMP_AllRegions-'.'UCU'
+'R3'.'ETH_IMP_AllRegions_'.'UCU'
+'R4'.'B20_AllRegions-'.'UCU'
+'R4'.'B20_AllRegions_'.'UCU'
+'R4'.'BDL_AllRegions-'.'UCU'
+'R4'.'BDL_AllRegions_'.'UCU'
+'R4'.'BDL_EXP_AllRegions-'.'UCU'
+'R4'.'BDL_EXP_AllRegions_'.'UCU'
+'R4'.'BDL_IMP_AllRegions-'.'UCU'
+'R4'.'BDL_IMP_AllRegions_'.'UCU'
+'R4'.'E85_AllRegions-'.'UCU'
+'R4'.'E85_AllRegions_'.'UCU'
+'R4'.'ETH_CRN_2010-'.'UCU'
+'R4'.'ETH_CRN_2010_'.'UCU'
+'R4'.'ETH_CRN_AllRegions-'.'UCU'
+'R4'.'ETH_CRN_AllRegions_'.'UCU'
+'R4'.'ETH_EXP_AllRegions-'.'UCU'
+'R4'.'ETH_EXP_AllRegions_'.'UCU'
+'R4'.'ETH_IMP_AllRegions-'.'UCU'
+'R4'.'ETH_IMP_AllRegions_'.'UCU'
+'R5'.'B20_AllRegions-'.'UCU'
+'R5'.'B20_AllRegions_'.'UCU'
+'R5'.'BDL_AllRegions-'.'UCU'
+'R5'.'BDL_AllRegions_'.'UCU'
+'R5'.'BDL_EXP_AllRegions-'.'UCU'
+'R5'.'BDL_EXP_AllRegions_'.'UCU'
+'R5'.'BDL_IMP_AllRegions-'.'UCU'
+'R5'.'BDL_IMP_AllRegions_'.'UCU'
+'R5'.'E85_AllRegions-'.'UCU'
+'R5'.'E85_AllRegions_'.'UCU'
+'R5'.'ETH_CRN_2010-'.'UCU'
+'R5'.'ETH_CRN_2010_'.'UCU'
+'R5'.'ETH_CRN_AllRegions-'.'UCU'
+'R5'.'ETH_CRN_AllRegions_'.'UCU'
+'R5'.'ETH_EXP_AllRegions-'.'UCU'
+'R5'.'ETH_EXP_AllRegions_'.'UCU'
+'R5'.'ETH_IMP_AllRegions-'.'UCU'
+'R5'.'ETH_IMP_AllRegions_'.'UCU'
+'R6'.'B20_AllRegions-'.'UCU'
+'R6'.'B20_AllRegions_'.'UCU'
+'R6'.'BDL_AllRegions-'.'UCU'
+'R6'.'BDL_AllRegions_'.'UCU'
+'R6'.'BDL_EXP_AllRegions-'.'UCU'
+'R6'.'BDL_EXP_AllRegions_'.'UCU'
+'R6'.'BDL_IMP_AllRegions-'.'UCU'
+'R6'.'BDL_IMP_AllRegions_'.'UCU'
+'R6'.'E85_AllRegions-'.'UCU'
+'R6'.'E85_AllRegions_'.'UCU'
+'R6'.'ETH_CRN_2010-'.'UCU'
+'R6'.'ETH_CRN_2010_'.'UCU'
+'R6'.'ETH_CRN_AllRegions-'.'UCU'
+'R6'.'ETH_CRN_AllRegions_'.'UCU'
+'R6'.'ETH_EXP_AllRegions-'.'UCU'
+'R6'.'ETH_EXP_AllRegions_'.'UCU'
+'R6'.'ETH_IMP_AllRegions-'.'UCU'
+'R6'.'ETH_IMP_AllRegions_'.'UCU'
+'R7'.'B20_AllRegions-'.'UCU'
+'R7'.'B20_AllRegions_'.'UCU'
+'R7'.'BDL_AllRegions-'.'UCU'
+'R7'.'BDL_AllRegions_'.'UCU'
+'R7'.'BDL_EXP_AllRegions-'.'UCU'
+'R7'.'BDL_EXP_AllRegions_'.'UCU'
+'R7'.'BDL_IMP_AllRegions-'.'UCU'
+'R7'.'BDL_IMP_AllRegions_'.'UCU'
+'R7'.'E85_AllRegions-'.'UCU'
+'R7'.'E85_AllRegions_'.'UCU'
+'R7'.'ETH_CRN_2010-'.'UCU'
+'R7'.'ETH_CRN_2010_'.'UCU'
+'R7'.'ETH_CRN_AllRegions-'.'UCU'
+'R7'.'ETH_CRN_AllRegions_'.'UCU'
+'R7'.'ETH_EXP_AllRegions-'.'UCU'
+'R7'.'ETH_EXP_AllRegions_'.'UCU'
+'R7'.'ETH_IMP_AllRegions-'.'UCU'
+'R7'.'ETH_IMP_AllRegions_'.'UCU'
+'R8'.'B20_AllRegions-'.'UCU'
+'R8'.'B20_AllRegions_'.'UCU'
+'R8'.'BDL_AllRegions-'.'UCU'
+'R8'.'BDL_AllRegions_'.'UCU'
+'R8'.'BDL_EXP_AllRegions-'.'UCU'
+'R8'.'BDL_EXP_AllRegions_'.'UCU'
+'R8'.'BDL_IMP_AllRegions-'.'UCU'
+'R8'.'BDL_IMP_AllRegions_'.'UCU'
+'R8'.'E85_AllRegions-'.'UCU'
+'R8'.'E85_AllRegions_'.'UCU'
+'R8'.'ETH_CRN_2010-'.'UCU'
+'R8'.'ETH_CRN_2010_'.'UCU'
+'R8'.'ETH_CRN_AllRegions-'.'UCU'
+'R8'.'ETH_CRN_AllRegions_'.'UCU'
+'R8'.'ETH_EXP_AllRegions-'.'UCU'
+'R8'.'ETH_EXP_AllRegions_'.'UCU'
+'R8'.'ETH_IMP_AllRegions-'.'UCU'
+'R8'.'ETH_IMP_AllRegions_'.'UCU'
+'R9'.'B20_AllRegions-'.'UCU'
+'R9'.'B20_AllRegions_'.'UCU'
+'R9'.'BDL_AllRegions-'.'UCU'
+'R9'.'BDL_AllRegions_'.'UCU'
+'R9'.'BDL_EXP_AllRegions-'.'UCU'
+'R9'.'BDL_EXP_AllRegions_'.'UCU'
+'R9'.'BDL_IMP_AllRegions-'.'UCU'
+'R9'.'BDL_IMP_AllRegions_'.'UCU'
+'R9'.'E85_AllRegions-'.'UCU'
+'R9'.'E85_AllRegions_'.'UCU'
+'R9'.'ETH_CRN_2010-'.'UCU'
+'R9'.'ETH_CRN_2010_'.'UCU'
+'R9'.'ETH_CRN_AllRegions-'.'UCU'
+'R9'.'ETH_CRN_AllRegions_'.'UCU'
+'R9'.'ETH_EXP_AllRegions-'.'UCU'
+'R9'.'ETH_EXP_AllRegions_'.'UCU'
+'R9'.'ETH_IMP_AllRegions-'.'UCU'
+'R9'.'ETH_IMP_AllRegions_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'B20_AllRegions-'.'R1'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R2'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R3'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R4'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R5'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R6'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R7'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R8'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions-'.'R9'.'B20_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R1'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R2'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R3'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R4'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R5'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R6'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R7'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R8'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'B20_AllRegions_'.'R9'.'B20_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R1'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R2'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R3'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R4'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R5'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R6'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R7'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R8'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions-'.'R9'.'BDL_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R1'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R2'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R3'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R4'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R5'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R6'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R7'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R8'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_AllRegions_'.'R9'.'BDL_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R1'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R2'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R3'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R4'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R5'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R6'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R7'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R8'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions-'.'R9'.'BDL_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R1'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R2'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R3'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R4'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R5'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R6'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R7'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R8'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_EXP_AllRegions_'.'R9'.'BDL_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R1'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R2'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R3'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R4'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R5'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R6'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R7'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R8'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions-'.'R9'.'BDL_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R1'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R2'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R3'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R4'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R5'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R6'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R7'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R8'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'BDL_IMP_AllRegions_'.'R9'.'BDL_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R1'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R2'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R3'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R4'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R5'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R6'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R7'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R8'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions-'.'R9'.'E85_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R1'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R2'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R3'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R4'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R5'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R6'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R7'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R8'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'E85_AllRegions_'.'R9'.'E85_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R1'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R2'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R3'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R4'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R5'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R6'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R7'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R8'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010-'.'R9'.'ETH_CRN_2010-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R1'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R2'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R3'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R4'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R5'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R6'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R7'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R8'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_2010_'.'R9'.'ETH_CRN_2010_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R1'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R2'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R3'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R4'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R5'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R6'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R7'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R8'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions-'.'R9'.'ETH_CRN_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R1'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R2'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R3'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R4'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R5'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R6'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R7'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R8'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_CRN_AllRegions_'.'R9'.'ETH_CRN_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R1'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R2'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R3'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R4'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R5'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R6'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R7'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R8'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions-'.'R9'.'ETH_EXP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R1'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R2'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R3'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R4'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R5'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R6'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R7'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R8'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_EXP_AllRegions_'.'R9'.'ETH_EXP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R1'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R2'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R3'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R4'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R5'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R6'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R7'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R8'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions-'.'R9'.'ETH_IMP_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R1'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R2'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R3'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R4'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R5'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R6'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R7'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R8'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'ETH_IMP_AllRegions_'.'R9'.'ETH_IMP_AllRegions_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'R0'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R0'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R0'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R0'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R0'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R0'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R0'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R0'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R0'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R0'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R0'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R0'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R0'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R0'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R0'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R0'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R0'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R0'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R1'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R1'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R1'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R1'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R1'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R1'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R1'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R1'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R1'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R1'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R1'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R1'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R1'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R1'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R1'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R1'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R1'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R1'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R2'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R2'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R2'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R2'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R2'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R2'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R2'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R2'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R2'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R2'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R2'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R2'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R2'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R2'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R2'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R2'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R2'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R2'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R3'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R3'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R3'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R3'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R3'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R3'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R3'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R3'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R3'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R3'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R3'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R3'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R3'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R3'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R3'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R3'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R3'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R3'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R4'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R4'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R4'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R4'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R4'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R4'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R4'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R4'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R4'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R4'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R4'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R4'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R4'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R4'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R4'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R4'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R4'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R4'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R5'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R5'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R5'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R5'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R5'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R5'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R5'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R5'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R5'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R5'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R5'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R5'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R5'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R5'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R5'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R5'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R5'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R5'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R6'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R6'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R6'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R6'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R6'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R6'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R6'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R6'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R6'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R6'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R6'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R6'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R6'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R6'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R6'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R6'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R6'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R6'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R7'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R7'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R7'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R7'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R7'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R7'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R7'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R7'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R7'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R7'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R7'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R7'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R7'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R7'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R7'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R7'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R7'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R7'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R8'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R8'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R8'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R8'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R8'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R8'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R8'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R8'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R8'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R8'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R8'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R8'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R8'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R8'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R8'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R8'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R8'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R8'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+'R9'.'B20_AllRegions-' 'Negative dummy var for UC: B20_AllRegions'
+'R9'.'B20_AllRegions_' 'Positive dummy var for UC: B20_AllRegions'
+'R9'.'BDL_AllRegions-' 'Negative dummy var for UC: BDL_AllRegions'
+'R9'.'BDL_AllRegions_' 'Positive dummy var for UC: BDL_AllRegions'
+'R9'.'BDL_EXP_AllRegions-' 'Negative dummy var for UC: BDL_EXP_AllRegions'
+'R9'.'BDL_EXP_AllRegions_' 'Positive dummy var for UC: BDL_EXP_AllRegions'
+'R9'.'BDL_IMP_AllRegions-' 'Negative dummy var for UC: BDL_IMP_AllRegions'
+'R9'.'BDL_IMP_AllRegions_' 'Positive dummy var for UC: BDL_IMP_AllRegions'
+'R9'.'E85_AllRegions-' 'Negative dummy var for UC: E85_AllRegions'
+'R9'.'E85_AllRegions_' 'Positive dummy var for UC: E85_AllRegions'
+'R9'.'ETH_CRN_2010-' 'Negative dummy var for UC: ETH_CRN_2010'
+'R9'.'ETH_CRN_2010_' 'Positive dummy var for UC: ETH_CRN_2010'
+'R9'.'ETH_CRN_AllRegions-' 'Negative dummy var for UC: ETH_CRN_AllRegions'
+'R9'.'ETH_CRN_AllRegions_' 'Positive dummy var for UC: ETH_CRN_AllRegions'
+'R9'.'ETH_EXP_AllRegions-' 'Negative dummy var for UC: ETH_EXP_AllRegions'
+'R9'.'ETH_EXP_AllRegions_' 'Positive dummy var for UC: ETH_EXP_AllRegions'
+'R9'.'ETH_IMP_AllRegions-' 'Negative dummy var for UC: ETH_IMP_AllRegions'
+'R9'.'ETH_IMP_AllRegions_' 'Positive dummy var for UC: ETH_IMP_AllRegions'
+/;
+
+SET UC_R_SUM
+
+/
+'R1'.'B20_AllRegions'
+'R1'.'BDL_AllRegions'
+'R1'.'BDL_EXP_AllRegions'
+'R1'.'BDL_IMP_AllRegions'
+'R1'.'E85_AllRegions'
+'R1'.'ETH_CRN_2010'
+'R1'.'ETH_CRN_AllRegions'
+'R1'.'ETH_EXP_AllRegions'
+'R1'.'ETH_IMP_AllRegions'
+'R2'.'B20_AllRegions'
+'R2'.'BDL_AllRegions'
+'R2'.'BDL_EXP_AllRegions'
+'R2'.'BDL_IMP_AllRegions'
+'R2'.'E85_AllRegions'
+'R2'.'ETH_CRN_2010'
+'R2'.'ETH_CRN_AllRegions'
+'R2'.'ETH_EXP_AllRegions'
+'R2'.'ETH_IMP_AllRegions'
+'R3'.'B20_AllRegions'
+'R3'.'BDL_AllRegions'
+'R3'.'BDL_EXP_AllRegions'
+'R3'.'BDL_IMP_AllRegions'
+'R3'.'E85_AllRegions'
+'R3'.'ETH_CRN_2010'
+'R3'.'ETH_CRN_AllRegions'
+'R3'.'ETH_EXP_AllRegions'
+'R3'.'ETH_IMP_AllRegions'
+'R4'.'B20_AllRegions'
+'R4'.'BDL_AllRegions'
+'R4'.'BDL_EXP_AllRegions'
+'R4'.'BDL_IMP_AllRegions'
+'R4'.'E85_AllRegions'
+'R4'.'ETH_CRN_2010'
+'R4'.'ETH_CRN_AllRegions'
+'R4'.'ETH_EXP_AllRegions'
+'R4'.'ETH_IMP_AllRegions'
+'R5'.'B20_AllRegions'
+'R5'.'BDL_AllRegions'
+'R5'.'BDL_EXP_AllRegions'
+'R5'.'BDL_IMP_AllRegions'
+'R5'.'E85_AllRegions'
+'R5'.'ETH_CRN_2010'
+'R5'.'ETH_CRN_AllRegions'
+'R5'.'ETH_EXP_AllRegions'
+'R5'.'ETH_IMP_AllRegions'
+'R6'.'B20_AllRegions'
+'R6'.'BDL_AllRegions'
+'R6'.'BDL_EXP_AllRegions'
+'R6'.'BDL_IMP_AllRegions'
+'R6'.'E85_AllRegions'
+'R6'.'ETH_CRN_2010'
+'R6'.'ETH_CRN_AllRegions'
+'R6'.'ETH_EXP_AllRegions'
+'R6'.'ETH_IMP_AllRegions'
+'R7'.'B20_AllRegions'
+'R7'.'BDL_AllRegions'
+'R7'.'BDL_EXP_AllRegions'
+'R7'.'BDL_IMP_AllRegions'
+'R7'.'E85_AllRegions'
+'R7'.'ETH_CRN_2010'
+'R7'.'ETH_CRN_AllRegions'
+'R7'.'ETH_EXP_AllRegions'
+'R7'.'ETH_IMP_AllRegions'
+'R8'.'B20_AllRegions'
+'R8'.'BDL_AllRegions'
+'R8'.'BDL_EXP_AllRegions'
+'R8'.'BDL_IMP_AllRegions'
+'R8'.'E85_AllRegions'
+'R8'.'ETH_CRN_2010'
+'R8'.'ETH_CRN_AllRegions'
+'R8'.'ETH_EXP_AllRegions'
+'R8'.'ETH_IMP_AllRegions'
+'R9'.'B20_AllRegions'
+'R9'.'BDL_AllRegions'
+'R9'.'BDL_EXP_AllRegions'
+'R9'.'BDL_IMP_AllRegions'
+'R9'.'E85_AllRegions'
+'R9'.'ETH_CRN_2010'
+'R9'.'ETH_CRN_AllRegions'
+'R9'.'ETH_EXP_AllRegions'
+'R9'.'ETH_IMP_AllRegions'
+/;
+
+PARAMETER
+
+UC_COMPRD ' '/
+'B20_AllRegions'.LHS.'R1'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R1'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R2'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R2'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R3'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R3'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R4'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R4'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R5'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R5'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R6'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R6'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R7'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R7'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R8'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R8'.2050.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R9'.2010.'TRNB20'.ANNUAL 1
+'B20_AllRegions'.LHS.'R9'.2050.'TRNB20'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R1'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R2'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R3'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R4'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R5'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R6'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R7'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R8'.2010.'TRBDL1'.ANNUAL 1
+'BDL_AllRegions'.LHS.'R9'.2010.'TRBDL1'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R1'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R1'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R1'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R1'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R1'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R2'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R2'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R2'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R2'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R2'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R3'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R3'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R3'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R3'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R3'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R4'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R4'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R4'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R4'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R4'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R5'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R5'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R5'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R5'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R5'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R6'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R6'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R6'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R6'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R6'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R7'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R7'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R7'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R7'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R7'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R8'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R8'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R8'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R8'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R8'.2025.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R9'.2010.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R9'.2011.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R9'.2015.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R9'.2020.'BDLEXP'.ANNUAL 1
+'BDL_EXP_AllRegions'.LHS.'R9'.2025.'BDLEXP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R1'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R1'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R1'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R1'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R1'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R2'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R2'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R2'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R2'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R2'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R3'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R3'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R3'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R3'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R3'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R4'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R4'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R4'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R4'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R4'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R5'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R5'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R5'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R5'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R5'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R6'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R6'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R6'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R6'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R6'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R7'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R7'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R7'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R7'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R7'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R8'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R8'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R8'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R8'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R8'.2025.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R9'.2010.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R9'.2011.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R9'.2015.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R9'.2020.'BDLIMP'.ANNUAL 1
+'BDL_IMP_AllRegions'.LHS.'R9'.2025.'BDLIMP'.ANNUAL 1
+'E85_AllRegions'.LHS.'R1'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R1'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R1'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R1'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R2'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R2'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R2'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R2'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R3'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R3'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R3'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R3'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R4'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R4'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R4'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R4'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R5'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R5'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R5'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R5'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R6'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R6'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R6'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R6'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R7'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R7'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R7'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R7'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R8'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R8'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R8'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R8'.2050.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R9'.2010.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R9'.2011.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R9'.2015.'TRNE85'.ANNUAL 1
+'E85_AllRegions'.LHS.'R9'.2050.'TRNE85'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R1'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R2'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R3'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R4'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R5'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R6'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R7'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R8'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_2010'.LHS.'R9'.2010.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R1'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R1'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R1'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R1'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R2'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R2'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R2'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R2'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R3'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R3'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R3'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R3'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R4'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R4'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R4'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R4'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R5'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R5'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R5'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R5'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R6'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R6'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R6'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R6'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R7'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R7'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R7'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R7'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R8'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R8'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R8'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R8'.2055.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R9'.2011.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R9'.2015.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R9'.2020.'ETH'.ANNUAL 1
+'ETH_CRN_AllRegions'.LHS.'R9'.2055.'ETH'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R1'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R1'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R1'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R1'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R1'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R2'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R2'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R2'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R2'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R2'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R3'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R3'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R3'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R3'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R3'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R4'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R4'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R4'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R4'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R4'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R5'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R5'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R5'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R5'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R5'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R6'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R6'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R6'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R6'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R6'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R7'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R7'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R7'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R7'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R7'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R8'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R8'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R8'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R8'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R8'.2025.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R9'.2010.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R9'.2011.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R9'.2015.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R9'.2020.'ETHEXP'.ANNUAL 1
+'ETH_EXP_AllRegions'.LHS.'R9'.2025.'ETHEXP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R1'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R1'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R1'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R1'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R1'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R2'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R2'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R2'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R2'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R2'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R3'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R3'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R3'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R3'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R3'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R4'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R4'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R4'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R4'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R4'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R5'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R5'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R5'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R5'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R5'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R6'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R6'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R6'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R6'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R6'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R7'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R7'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R7'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R7'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R7'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R8'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R8'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R8'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R8'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R8'.2025.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R9'.2010.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R9'.2011.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R9'.2015.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R9'.2020.'ETHIMP'.ANNUAL 1
+'ETH_IMP_AllRegions'.LHS.'R9'.2025.'ETHIMP'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'B20_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'B20_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'B20_AllRegions-'.ANNUAL.IMP -1
+'B20_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'B20_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'BDL_AllRegions-'.ANNUAL.IMP -1
+'BDL_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'BDL_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_EXP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions-'.ANNUAL.IMP -1
+'BDL_EXP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'BDL_EXP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'BDL_IMP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions-'.ANNUAL.IMP -1
+'BDL_IMP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'BDL_IMP_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'E85_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'E85_AllRegions-'.ANNUAL.IMP -1
+'E85_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'E85_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_2010'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_CRN_2010-'.ANNUAL.IMP -1
+'ETH_CRN_2010'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_CRN_2010_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_CRN_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions-'.ANNUAL.IMP -1
+'ETH_CRN_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_CRN_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_EXP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions-'.ANNUAL.IMP -1
+'ETH_EXP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_EXP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+'ETH_IMP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions-'.ANNUAL.IMP -1
+'ETH_IMP_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'ETH_IMP_AllRegions_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'B20_AllRegions'.0.ANNUAL.UP 5
+'B20_AllRegions'.2010.ANNUAL.UP 150
+'B20_AllRegions'.2050.ANNUAL.UP 150
+'BDL_AllRegions'.2010.ANNUAL.FX 42.1511738969261
+'BDL_EXP_AllRegions'.0.ANNUAL.FX 5
+'BDL_EXP_AllRegions'.2010.ANNUAL.FX 9.46421157720102
+'BDL_EXP_AllRegions'.2011.ANNUAL.FX 7.57136926176081
+'BDL_EXP_AllRegions'.2015.ANNUAL.FX 0
+'BDL_EXP_AllRegions'.2020.ANNUAL.FX 0
+'BDL_EXP_AllRegions'.2025.ANNUAL.FX 1.50365795166101
+'BDL_IMP_AllRegions'.0.ANNUAL.FX 5
+'BDL_IMP_AllRegions'.2010.ANNUAL.FX 0
+'BDL_IMP_AllRegions'.2011.ANNUAL.FX 2.34895700249992
+'BDL_IMP_AllRegions'.2015.ANNUAL.FX 11.7447850124996
+'BDL_IMP_AllRegions'.2020.ANNUAL.FX 3.94598845373965
+'BDL_IMP_AllRegions'.2025.ANNUAL.FX 0
+'E85_AllRegions'.0.ANNUAL.FX 5
+'E85_AllRegions'.2010.ANNUAL.FX 12.0545755561943
+'E85_AllRegions'.2011.ANNUAL.FX 14.4654906674331
+'E85_AllRegions'.2015.ANNUAL.FX 24.1091511123885
+'E85_AllRegions'.2050.ANNUAL.FX 26.5200662236274
+'ETH_CRN_2010'.2010.ANNUAL.FX 1187.62235205567
+'ETH_CRN_AllRegions'.0.ANNUAL.LO 5
+'ETH_CRN_AllRegions'.2011.ANNUAL.LO 1219.38461447878
+'ETH_CRN_AllRegions'.2015.ANNUAL.LO 1346.4336641712
+'ETH_CRN_AllRegions'.2020.ANNUAL.LO 1346.4336641712
+'ETH_CRN_AllRegions'.2055.ANNUAL.LO 1346.4336641712
+'ETH_EXP_AllRegions'.0.ANNUAL.FX 5
+'ETH_EXP_AllRegions'.2010.ANNUAL.FX 25.3132149391493
+'ETH_EXP_AllRegions'.2011.ANNUAL.FX 22.9188254046081
+'ETH_EXP_AllRegions'.2015.ANNUAL.FX 13.3412672664435
+'ETH_EXP_AllRegions'.2020.ANNUAL.FX 14.4839769853306
+'ETH_EXP_AllRegions'.2025.ANNUAL.FX 14.3760362569864
+'ETH_IMP_AllRegions'.0.ANNUAL.FX 5
+'ETH_IMP_AllRegions'.2010.ANNUAL.FX 15.9853053388144
+'ETH_IMP_AllRegions'.2011.ANNUAL.FX 33.0761037711132
+'ETH_IMP_AllRegions'.2015.ANNUAL.FX 101.439297500308
+'ETH_IMP_AllRegions'.2020.ANNUAL.FX 269.28673283424
+'ETH_IMP_AllRegions'.2025.ANNUAL.FX 314.16785497328
+/;
+
+

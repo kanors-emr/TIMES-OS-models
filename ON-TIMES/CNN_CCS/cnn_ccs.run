@@ -1,0 +1,206 @@
+$TITLE Veda2 -- v5.0.0.0
+
+
+OPTION PROFILE=1, SOLVEOPT=REPLACE;
+OPTION RESLIM=50000, ITERLIM=999999, LIMROW=0, LIMCOL=0, SOLPRINT=OFF;
+
+
+
+option LP=cplex;
+
+
+
+*--If you want to use an optimizer other than cplex/xpress, enter it here:
+*OPTION LP=MyOptimizer;
+
+
+$OFFLISTING
+*$ONLISTING
+
+
+* activate validation to force VAR_CAP/COMPRD
+$SET VALIDATE 'NO'
+* reduction of equation system
+$SET REDUCE   'YES'
+*--------------------------------------------------------------*
+* BATINCLUDE calls should all be with lower case file names!!! *
+*--------------------------------------------------------------*
+
+
+* initialize the environment variables
+$   SET VDA YES 
+$   SET DEBUG                          'NO'
+$   SET DUMPSOL                        'NO'
+$   SET SOLVE_NOW                      'YES'
+$   SET MODEL_NAME                     'TIMES'
+$   IF DECLARED REG      $SET STARTRUN 'RESTART'
+$   IF NOT DECLARED REG  $SET STARTRUN 'SCRATCH'
+$SET XTQA YES
+* VAR_UC being set so that non-binding constraints appear in results
+$SET VAR_UC YES 
+ OPTION BRATIO= 0;
+$ SET OBJ AUTO
+$ SET MID_YEAR YES
+$ SET OBLONG YES
+$SET DAMAGE NO
+$ SET STAGES NO
+$SET SOLVEDA 'YES'
+$SET VARCOST LIN
+$ SET DSCAUTO YES
+$SET DATAGDX YES
+
+
+
+
+
+* merge declarations & data
+$   ONMULTI
+
+
+* the times-slices MUST come 1st to ensure ordering OK
+$BATINCLUDE cnn_ccs_ts.dd
+
+
+*<perform fixed declarations>
+$SET BOTIME 1980
+$   BATINCLUDE initsys.mod
+
+
+* declare the (system/user) empties
+$   BATINCLUDE initmty.mod
+*$   BATINCLUDE initmty.mod DSC
+$IF NOT DECLARED REG_BNDCST $Abort "You need to use TIMES v2.3.1 or higher"
+
+
+$BATINCLUDE base.dd
+$BATINCLUDE elc-het-ref_fin.dd
+$BATINCLUDE elc_ccs_techs.dd
+$BATINCLUDE elc_dh-pipes.dd
+$BATINCLUDE elc_excessheat.dd
+$BATINCLUDE elc_impexp_no.dd
+$BATINCLUDE elc_impexp_se.dd
+$BATINCLUDE elc_importexport_dk.dd
+$BATINCLUDE elc_plants2020_dk.dd
+$BATINCLUDE elc_techs.dd
+$BATINCLUDE elc_techs_extra_no.dd
+$BATINCLUDE elc_techs_nodk.dd
+$BATINCLUDE ind-res-tra_fin.dd
+$BATINCLUDE ind_techs.dd
+$BATINCLUDE nonco2_fin.dd
+$BATINCLUDE ind_datacenters.dd
+$BATINCLUDE res_app_techs.dd
+$BATINCLUDE res_heatsav_dk.dd
+$BATINCLUDE res_heatsav_se.dd
+$BATINCLUDE res_techs.dd
+$BATINCLUDE tra_aggregates.dd
+$BATINCLUDE sup_refineries.dd
+$BATINCLUDE tra_techs.dd
+$BATINCLUDE syssettings.dd
+$BATINCLUDE trade_dk_elc.dd
+$BATINCLUDE trade_fin.dd
+$BATINCLUDE trade_no_elc.dd
+$BATINCLUDE trade_nordic_elc.dd
+$BATINCLUDE trade_nordic_fuel.dd
+$BATINCLUDE trade_se_elc.dd
+$BATINCLUDE _merge_sys_fuel_constraints.dd
+$BATINCLUDE _merged_co2storagepot_flows.dd
+$BATINCLUDE _merged_elc_pricetrade_balmorel.dd
+$BATINCLUDE _merged_nav_dem_fix.dd
+$BATINCLUDE _merged_datacenters.dd
+$BATINCLUDE _merged_sys_re_pot.dd
+$BATINCLUDE _merged_tra_maxshare.dd
+$BATINCLUDE _merged_tra_infrastructure.dd
+$BATINCLUDE _merged_tra_tp_update.dd
+$BATINCLUDE dk_elc_baseconstraints.dd
+$BATINCLUDE dk_elc_dh-pipesdata.dd
+$BATINCLUDE dk_elc_excessheat_pots.dd
+$BATINCLUDE dk_ets-nets_emicoeff.dd
+$BATINCLUDE dk_ind_demandproj.dd
+$BATINCLUDE dk_ind_ee-low.dd
+$BATINCLUDE dk_res_app_effproj.dd
+$BATINCLUDE dk_res_baseconstraints.dd
+$BATINCLUDE dk_res_buildingstockproj.dd
+$BATINCLUDE dk_res_demandproj.dd
+$BATINCLUDE dk_res_restrictheatsav.dd
+$BATINCLUDE dk_sup_northseaminingproj.dd
+$BATINCLUDE dk_sys_deliverycosts.dd
+$BATINCLUDE dk_sys_fuelinfrastructure.dd
+$BATINCLUDE dk_sys_subannual_data.dd
+$BATINCLUDE dk_tra_baseconstraints.dd
+$BATINCLUDE dk_tra_demandproj.dd
+$BATINCLUDE dk_tra_taxessubsidies.dd
+$BATINCLUDE dk_tra_xassumptions.dd
+$BATINCLUDE fi_distribution.dd
+$BATINCLUDE fi_potentials.dd
+$BATINCLUDE fi_secextra.dd
+$BATINCLUDE fi_subannualdata.dd
+$BATINCLUDE fi_taxes.dd
+$BATINCLUDE no_calibration.dd
+$BATINCLUDE no_elc_dh-pipesdata.dd
+$BATINCLUDE no_ets-nets_emicoeff.dd
+$BATINCLUDE no_hydro_average.dd
+$BATINCLUDE no_ind_demandproj.dd
+$BATINCLUDE no_ind_ee-low.dd
+$BATINCLUDE no_res_demandproj.dd
+$BATINCLUDE no_sys_deliverycosts.dd
+$BATINCLUDE no_res_buildingstockproj.dd
+$BATINCLUDE no_sys_fuelinfrastructure.dd
+$BATINCLUDE no_sys_subannual_data.dd
+$BATINCLUDE no_tra_demandproj.dd
+$BATINCLUDE no_tra_taxessubsidies.dd
+$BATINCLUDE no_tra_xassumptions.dd
+$BATINCLUDE se_elc_dh-pipes.dd
+$BATINCLUDE se_elc_excessheat_pots.dd
+$BATINCLUDE se_ets-nets_emicoeff.dd
+$BATINCLUDE se_ind_baseconstraints.dd
+$BATINCLUDE se_ind_demandproj.dd
+$BATINCLUDE se_ind_ee-low.dd
+$BATINCLUDE se_res_app_effproj.dd
+$BATINCLUDE se_res_baseconstraints.dd
+$BATINCLUDE se_res_buildingstockproj.dd
+$BATINCLUDE se_res_demandproj.dd
+$BATINCLUDE se_res_restrictheatsav.dd
+$BATINCLUDE se_sys_deliverycosts.dd
+$BATINCLUDE se_sys_fuelinfrastructure.dd
+$BATINCLUDE se_sys_subannual_data.dd
+$BATINCLUDE se_tra_demandproj.dd
+$BATINCLUDE se_tra_taxessubsidies.dd
+$BATINCLUDE se_tra_xassumptions.dd
+$BATINCLUDE dk_elc_taxessubsidies.dd
+$BATINCLUDE dk_ind_taxessubsidies.dd
+$BATINCLUDE dk_res_taxessubsidies.dd
+$BATINCLUDE no_res_taxessubsidies.dd
+$BATINCLUDE dk_sup_taxessubsidies.dd
+$BATINCLUDE no_elc_taxessubsidies.dd
+$BATINCLUDE no_ind_taxessubsidies.dd
+$BATINCLUDE no_sup_taxessubsidies.dd
+$BATINCLUDE se_elc_taxessubsidies.dd
+$BATINCLUDE se_ind_taxessubsidies.dd
+$BATINCLUDE se_res_taxessubsidies.dd
+$BATINCLUDE se_sup_taxessubsidies.dd
+$BATINCLUDE _merged_biofuels_no_bound.dd
+$BATINCLUDE _merged_cns.dd
+$BATINCLUDE fi_x_cnn.dd
+$BATINCLUDE x_high_ccs.dd
+$BATINCLUDE fi_x_high_ccs.dd
+
+SET MILESTONYR /2010,2012,2015,2020,2025,2030,2035,2040,2045,2050,2057/;
+$SET RUN_NAME 'cnn_ccs'
+
+
+
+
+
+
+$ SET VEDAVDD 'YES'
+
+
+* do the rest
+$ BATINCLUDE maindrv.mod mod
+
+
+
+
+
+
+

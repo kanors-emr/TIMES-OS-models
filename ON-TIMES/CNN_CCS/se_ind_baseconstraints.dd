@@ -1,0 +1,8 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'se_ind_baseconstraints'
+
+
+

@@ -1,0 +1,3541 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'fi_x_cnn'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'A_MAXCO2EM-'
+'DKE'.'NRG'.'A_MAXCO2EM_'
+'DKE'.'NRG'.'DNTSDIR-'
+'DKE'.'NRG'.'DNTSDIR_'
+'DKE'.'NRG'.'DNTSGASLO-'
+'DKE'.'NRG'.'DNTSGASLO_'
+'DKE'.'NRG'.'DNTSGASUP-'
+'DKE'.'NRG'.'DNTSGASUP_'
+'DKE'.'NRG'.'DNTSGOILO-'
+'DKE'.'NRG'.'DNTSGOILO_'
+'DKE'.'NRG'.'DNTSGOIUP-'
+'DKE'.'NRG'.'DNTSGOIUP_'
+'DKE'.'NRG'.'FORCHIP-'
+'DKE'.'NRG'.'FORCHIP_'
+'DKE'.'NRG'.'MAXGRO-'
+'DKE'.'NRG'.'MAXGRO_'
+'DKE'.'NRG'.'MINGRO-'
+'DKE'.'NRG'.'MINGRO_'
+'DKE'.'NRG'.'S_EUnonETS-FIN-base-'
+'DKE'.'NRG'.'S_EUnonETS-FIN-base_'
+'DKE'.'NRG'.'U_ElcDHP-'
+'DKE'.'NRG'.'U_ElcDHP_'
+'DKE'.'NRG'.'U_HTPUMP-'
+'DKE'.'NRG'.'U_HTPUMP_'
+'DKE'.'NRG'.'U_MinNtELI-'
+'DKE'.'NRG'.'U_MinNtELI_'
+'DKE'.'NRG'.'U_NetELIMP-'
+'DKE'.'NRG'.'U_NetELIMP_'
+'DKW'.'NRG'.'A_MAXCO2EM-'
+'DKW'.'NRG'.'A_MAXCO2EM_'
+'DKW'.'NRG'.'DNTSDIR-'
+'DKW'.'NRG'.'DNTSDIR_'
+'DKW'.'NRG'.'DNTSGASLO-'
+'DKW'.'NRG'.'DNTSGASLO_'
+'DKW'.'NRG'.'DNTSGASUP-'
+'DKW'.'NRG'.'DNTSGASUP_'
+'DKW'.'NRG'.'DNTSGOILO-'
+'DKW'.'NRG'.'DNTSGOILO_'
+'DKW'.'NRG'.'DNTSGOIUP-'
+'DKW'.'NRG'.'DNTSGOIUP_'
+'DKW'.'NRG'.'FORCHIP-'
+'DKW'.'NRG'.'FORCHIP_'
+'DKW'.'NRG'.'MAXGRO-'
+'DKW'.'NRG'.'MAXGRO_'
+'DKW'.'NRG'.'MINGRO-'
+'DKW'.'NRG'.'MINGRO_'
+'DKW'.'NRG'.'S_EUnonETS-FIN-base-'
+'DKW'.'NRG'.'S_EUnonETS-FIN-base_'
+'DKW'.'NRG'.'U_ElcDHP-'
+'DKW'.'NRG'.'U_ElcDHP_'
+'DKW'.'NRG'.'U_HTPUMP-'
+'DKW'.'NRG'.'U_HTPUMP_'
+'DKW'.'NRG'.'U_MinNtELI-'
+'DKW'.'NRG'.'U_MinNtELI_'
+'DKW'.'NRG'.'U_NetELIMP-'
+'DKW'.'NRG'.'U_NetELIMP_'
+'FIM'.'NRG'.'A_MAXCO2EM-'
+'FIM'.'NRG'.'A_MAXCO2EM_'
+'FIM'.'NRG'.'DNTSDIR-'
+'FIM'.'NRG'.'DNTSDIR_'
+'FIM'.'NRG'.'DNTSGASLO-'
+'FIM'.'NRG'.'DNTSGASLO_'
+'FIM'.'NRG'.'DNTSGASUP-'
+'FIM'.'NRG'.'DNTSGASUP_'
+'FIM'.'NRG'.'DNTSGOILO-'
+'FIM'.'NRG'.'DNTSGOILO_'
+'FIM'.'NRG'.'DNTSGOIUP-'
+'FIM'.'NRG'.'DNTSGOIUP_'
+'FIM'.'NRG'.'FORCHIP-'
+'FIM'.'NRG'.'FORCHIP_'
+'FIM'.'NRG'.'MAXGRO-'
+'FIM'.'NRG'.'MAXGRO_'
+'FIM'.'NRG'.'MINGRO-'
+'FIM'.'NRG'.'MINGRO_'
+'FIM'.'NRG'.'S_EUnonETS-FIN-base-'
+'FIM'.'NRG'.'S_EUnonETS-FIN-base_'
+'FIM'.'NRG'.'U_ElcDHP-'
+'FIM'.'NRG'.'U_ElcDHP_'
+'FIM'.'NRG'.'U_HTPUMP-'
+'FIM'.'NRG'.'U_HTPUMP_'
+'FIM'.'NRG'.'U_MinNtELI-'
+'FIM'.'NRG'.'U_MinNtELI_'
+'FIM'.'NRG'.'U_NetELIMP-'
+'FIM'.'NRG'.'U_NetELIMP_'
+'FIN'.'NRG'.'A_MAXCO2EM-'
+'FIN'.'NRG'.'A_MAXCO2EM_'
+'FIN'.'NRG'.'DNTSDIR-'
+'FIN'.'NRG'.'DNTSDIR_'
+'FIN'.'NRG'.'DNTSGASLO-'
+'FIN'.'NRG'.'DNTSGASLO_'
+'FIN'.'NRG'.'DNTSGASUP-'
+'FIN'.'NRG'.'DNTSGASUP_'
+'FIN'.'NRG'.'DNTSGOILO-'
+'FIN'.'NRG'.'DNTSGOILO_'
+'FIN'.'NRG'.'DNTSGOIUP-'
+'FIN'.'NRG'.'DNTSGOIUP_'
+'FIN'.'NRG'.'FORCHIP-'
+'FIN'.'NRG'.'FORCHIP_'
+'FIN'.'NRG'.'MAXGRO-'
+'FIN'.'NRG'.'MAXGRO_'
+'FIN'.'NRG'.'MINGRO-'
+'FIN'.'NRG'.'MINGRO_'
+'FIN'.'NRG'.'S_EUnonETS-FIN-base-'
+'FIN'.'NRG'.'S_EUnonETS-FIN-base_'
+'FIN'.'NRG'.'U_ElcDHP-'
+'FIN'.'NRG'.'U_ElcDHP_'
+'FIN'.'NRG'.'U_HTPUMP-'
+'FIN'.'NRG'.'U_HTPUMP_'
+'FIN'.'NRG'.'U_MinNtELI-'
+'FIN'.'NRG'.'U_MinNtELI_'
+'FIN'.'NRG'.'U_NetELIMP-'
+'FIN'.'NRG'.'U_NetELIMP_'
+'NO1'.'NRG'.'A_MAXCO2EM-'
+'NO1'.'NRG'.'A_MAXCO2EM_'
+'NO1'.'NRG'.'DNTSDIR-'
+'NO1'.'NRG'.'DNTSDIR_'
+'NO1'.'NRG'.'DNTSGASLO-'
+'NO1'.'NRG'.'DNTSGASLO_'
+'NO1'.'NRG'.'DNTSGASUP-'
+'NO1'.'NRG'.'DNTSGASUP_'
+'NO1'.'NRG'.'DNTSGOILO-'
+'NO1'.'NRG'.'DNTSGOILO_'
+'NO1'.'NRG'.'DNTSGOIUP-'
+'NO1'.'NRG'.'DNTSGOIUP_'
+'NO1'.'NRG'.'FORCHIP-'
+'NO1'.'NRG'.'FORCHIP_'
+'NO1'.'NRG'.'MAXGRO-'
+'NO1'.'NRG'.'MAXGRO_'
+'NO1'.'NRG'.'MINGRO-'
+'NO1'.'NRG'.'MINGRO_'
+'NO1'.'NRG'.'S_EUnonETS-FIN-base-'
+'NO1'.'NRG'.'S_EUnonETS-FIN-base_'
+'NO1'.'NRG'.'U_ElcDHP-'
+'NO1'.'NRG'.'U_ElcDHP_'
+'NO1'.'NRG'.'U_HTPUMP-'
+'NO1'.'NRG'.'U_HTPUMP_'
+'NO1'.'NRG'.'U_MinNtELI-'
+'NO1'.'NRG'.'U_MinNtELI_'
+'NO1'.'NRG'.'U_NetELIMP-'
+'NO1'.'NRG'.'U_NetELIMP_'
+'NO2'.'NRG'.'A_MAXCO2EM-'
+'NO2'.'NRG'.'A_MAXCO2EM_'
+'NO2'.'NRG'.'DNTSDIR-'
+'NO2'.'NRG'.'DNTSDIR_'
+'NO2'.'NRG'.'DNTSGASLO-'
+'NO2'.'NRG'.'DNTSGASLO_'
+'NO2'.'NRG'.'DNTSGASUP-'
+'NO2'.'NRG'.'DNTSGASUP_'
+'NO2'.'NRG'.'DNTSGOILO-'
+'NO2'.'NRG'.'DNTSGOILO_'
+'NO2'.'NRG'.'DNTSGOIUP-'
+'NO2'.'NRG'.'DNTSGOIUP_'
+'NO2'.'NRG'.'FORCHIP-'
+'NO2'.'NRG'.'FORCHIP_'
+'NO2'.'NRG'.'MAXGRO-'
+'NO2'.'NRG'.'MAXGRO_'
+'NO2'.'NRG'.'MINGRO-'
+'NO2'.'NRG'.'MINGRO_'
+'NO2'.'NRG'.'S_EUnonETS-FIN-base-'
+'NO2'.'NRG'.'S_EUnonETS-FIN-base_'
+'NO2'.'NRG'.'U_ElcDHP-'
+'NO2'.'NRG'.'U_ElcDHP_'
+'NO2'.'NRG'.'U_HTPUMP-'
+'NO2'.'NRG'.'U_HTPUMP_'
+'NO2'.'NRG'.'U_MinNtELI-'
+'NO2'.'NRG'.'U_MinNtELI_'
+'NO2'.'NRG'.'U_NetELIMP-'
+'NO2'.'NRG'.'U_NetELIMP_'
+'SE1'.'NRG'.'A_MAXCO2EM-'
+'SE1'.'NRG'.'A_MAXCO2EM_'
+'SE1'.'NRG'.'DNTSDIR-'
+'SE1'.'NRG'.'DNTSDIR_'
+'SE1'.'NRG'.'DNTSGASLO-'
+'SE1'.'NRG'.'DNTSGASLO_'
+'SE1'.'NRG'.'DNTSGASUP-'
+'SE1'.'NRG'.'DNTSGASUP_'
+'SE1'.'NRG'.'DNTSGOILO-'
+'SE1'.'NRG'.'DNTSGOILO_'
+'SE1'.'NRG'.'DNTSGOIUP-'
+'SE1'.'NRG'.'DNTSGOIUP_'
+'SE1'.'NRG'.'FORCHIP-'
+'SE1'.'NRG'.'FORCHIP_'
+'SE1'.'NRG'.'MAXGRO-'
+'SE1'.'NRG'.'MAXGRO_'
+'SE1'.'NRG'.'MINGRO-'
+'SE1'.'NRG'.'MINGRO_'
+'SE1'.'NRG'.'S_EUnonETS-FIN-base-'
+'SE1'.'NRG'.'S_EUnonETS-FIN-base_'
+'SE1'.'NRG'.'U_ElcDHP-'
+'SE1'.'NRG'.'U_ElcDHP_'
+'SE1'.'NRG'.'U_HTPUMP-'
+'SE1'.'NRG'.'U_HTPUMP_'
+'SE1'.'NRG'.'U_MinNtELI-'
+'SE1'.'NRG'.'U_MinNtELI_'
+'SE1'.'NRG'.'U_NetELIMP-'
+'SE1'.'NRG'.'U_NetELIMP_'
+'SE2'.'NRG'.'A_MAXCO2EM-'
+'SE2'.'NRG'.'A_MAXCO2EM_'
+'SE2'.'NRG'.'DNTSDIR-'
+'SE2'.'NRG'.'DNTSDIR_'
+'SE2'.'NRG'.'DNTSGASLO-'
+'SE2'.'NRG'.'DNTSGASLO_'
+'SE2'.'NRG'.'DNTSGASUP-'
+'SE2'.'NRG'.'DNTSGASUP_'
+'SE2'.'NRG'.'DNTSGOILO-'
+'SE2'.'NRG'.'DNTSGOILO_'
+'SE2'.'NRG'.'DNTSGOIUP-'
+'SE2'.'NRG'.'DNTSGOIUP_'
+'SE2'.'NRG'.'FORCHIP-'
+'SE2'.'NRG'.'FORCHIP_'
+'SE2'.'NRG'.'MAXGRO-'
+'SE2'.'NRG'.'MAXGRO_'
+'SE2'.'NRG'.'MINGRO-'
+'SE2'.'NRG'.'MINGRO_'
+'SE2'.'NRG'.'S_EUnonETS-FIN-base-'
+'SE2'.'NRG'.'S_EUnonETS-FIN-base_'
+'SE2'.'NRG'.'U_ElcDHP-'
+'SE2'.'NRG'.'U_ElcDHP_'
+'SE2'.'NRG'.'U_HTPUMP-'
+'SE2'.'NRG'.'U_HTPUMP_'
+'SE2'.'NRG'.'U_MinNtELI-'
+'SE2'.'NRG'.'U_MinNtELI_'
+'SE2'.'NRG'.'U_NetELIMP-'
+'SE2'.'NRG'.'U_NetELIMP_'
+'SE3'.'NRG'.'A_MAXCO2EM-'
+'SE3'.'NRG'.'A_MAXCO2EM_'
+'SE3'.'NRG'.'DNTSDIR-'
+'SE3'.'NRG'.'DNTSDIR_'
+'SE3'.'NRG'.'DNTSGASLO-'
+'SE3'.'NRG'.'DNTSGASLO_'
+'SE3'.'NRG'.'DNTSGASUP-'
+'SE3'.'NRG'.'DNTSGASUP_'
+'SE3'.'NRG'.'DNTSGOILO-'
+'SE3'.'NRG'.'DNTSGOILO_'
+'SE3'.'NRG'.'DNTSGOIUP-'
+'SE3'.'NRG'.'DNTSGOIUP_'
+'SE3'.'NRG'.'FORCHIP-'
+'SE3'.'NRG'.'FORCHIP_'
+'SE3'.'NRG'.'MAXGRO-'
+'SE3'.'NRG'.'MAXGRO_'
+'SE3'.'NRG'.'MINGRO-'
+'SE3'.'NRG'.'MINGRO_'
+'SE3'.'NRG'.'S_EUnonETS-FIN-base-'
+'SE3'.'NRG'.'S_EUnonETS-FIN-base_'
+'SE3'.'NRG'.'U_ElcDHP-'
+'SE3'.'NRG'.'U_ElcDHP_'
+'SE3'.'NRG'.'U_HTPUMP-'
+'SE3'.'NRG'.'U_HTPUMP_'
+'SE3'.'NRG'.'U_MinNtELI-'
+'SE3'.'NRG'.'U_MinNtELI_'
+'SE3'.'NRG'.'U_NetELIMP-'
+'SE3'.'NRG'.'U_NetELIMP_'
+'SE4'.'NRG'.'A_MAXCO2EM-'
+'SE4'.'NRG'.'A_MAXCO2EM_'
+'SE4'.'NRG'.'DNTSDIR-'
+'SE4'.'NRG'.'DNTSDIR_'
+'SE4'.'NRG'.'DNTSGASLO-'
+'SE4'.'NRG'.'DNTSGASLO_'
+'SE4'.'NRG'.'DNTSGASUP-'
+'SE4'.'NRG'.'DNTSGASUP_'
+'SE4'.'NRG'.'DNTSGOILO-'
+'SE4'.'NRG'.'DNTSGOILO_'
+'SE4'.'NRG'.'DNTSGOIUP-'
+'SE4'.'NRG'.'DNTSGOIUP_'
+'SE4'.'NRG'.'FORCHIP-'
+'SE4'.'NRG'.'FORCHIP_'
+'SE4'.'NRG'.'MAXGRO-'
+'SE4'.'NRG'.'MAXGRO_'
+'SE4'.'NRG'.'MINGRO-'
+'SE4'.'NRG'.'MINGRO_'
+'SE4'.'NRG'.'S_EUnonETS-FIN-base-'
+'SE4'.'NRG'.'S_EUnonETS-FIN-base_'
+'SE4'.'NRG'.'U_ElcDHP-'
+'SE4'.'NRG'.'U_ElcDHP_'
+'SE4'.'NRG'.'U_HTPUMP-'
+'SE4'.'NRG'.'U_HTPUMP_'
+'SE4'.'NRG'.'U_MinNtELI-'
+'SE4'.'NRG'.'U_MinNtELI_'
+'SE4'.'NRG'.'U_NetELIMP-'
+'SE4'.'NRG'.'U_NetELIMP_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'A_MAXCO2EM-'.'UCU'
+'DKE'.'A_MAXCO2EM_'.'UCU'
+'DKE'.'DNTSDIR-'.'UCU'
+'DKE'.'DNTSDIR_'.'UCU'
+'DKE'.'DNTSGASLO-'.'UCU'
+'DKE'.'DNTSGASLO_'.'UCU'
+'DKE'.'DNTSGASUP-'.'UCU'
+'DKE'.'DNTSGASUP_'.'UCU'
+'DKE'.'DNTSGOILO-'.'UCU'
+'DKE'.'DNTSGOILO_'.'UCU'
+'DKE'.'DNTSGOIUP-'.'UCU'
+'DKE'.'DNTSGOIUP_'.'UCU'
+'DKE'.'FORCHIP-'.'UCU'
+'DKE'.'FORCHIP_'.'UCU'
+'DKE'.'MAXGRO-'.'UCU'
+'DKE'.'MAXGRO_'.'UCU'
+'DKE'.'MINGRO-'.'UCU'
+'DKE'.'MINGRO_'.'UCU'
+'DKE'.'S_EUnonETS-FIN-base-'.'UCU'
+'DKE'.'S_EUnonETS-FIN-base_'.'UCU'
+'DKE'.'U_ElcDHP-'.'UCU'
+'DKE'.'U_ElcDHP_'.'UCU'
+'DKE'.'U_HTPUMP-'.'UCU'
+'DKE'.'U_HTPUMP_'.'UCU'
+'DKE'.'U_MinNtELI-'.'UCU'
+'DKE'.'U_MinNtELI_'.'UCU'
+'DKE'.'U_NetELIMP-'.'UCU'
+'DKE'.'U_NetELIMP_'.'UCU'
+'DKW'.'A_MAXCO2EM-'.'UCU'
+'DKW'.'A_MAXCO2EM_'.'UCU'
+'DKW'.'DNTSDIR-'.'UCU'
+'DKW'.'DNTSDIR_'.'UCU'
+'DKW'.'DNTSGASLO-'.'UCU'
+'DKW'.'DNTSGASLO_'.'UCU'
+'DKW'.'DNTSGASUP-'.'UCU'
+'DKW'.'DNTSGASUP_'.'UCU'
+'DKW'.'DNTSGOILO-'.'UCU'
+'DKW'.'DNTSGOILO_'.'UCU'
+'DKW'.'DNTSGOIUP-'.'UCU'
+'DKW'.'DNTSGOIUP_'.'UCU'
+'DKW'.'FORCHIP-'.'UCU'
+'DKW'.'FORCHIP_'.'UCU'
+'DKW'.'MAXGRO-'.'UCU'
+'DKW'.'MAXGRO_'.'UCU'
+'DKW'.'MINGRO-'.'UCU'
+'DKW'.'MINGRO_'.'UCU'
+'DKW'.'S_EUnonETS-FIN-base-'.'UCU'
+'DKW'.'S_EUnonETS-FIN-base_'.'UCU'
+'DKW'.'U_ElcDHP-'.'UCU'
+'DKW'.'U_ElcDHP_'.'UCU'
+'DKW'.'U_HTPUMP-'.'UCU'
+'DKW'.'U_HTPUMP_'.'UCU'
+'DKW'.'U_MinNtELI-'.'UCU'
+'DKW'.'U_MinNtELI_'.'UCU'
+'DKW'.'U_NetELIMP-'.'UCU'
+'DKW'.'U_NetELIMP_'.'UCU'
+'FIM'.'A_MAXCO2EM-'.'UCU'
+'FIM'.'A_MAXCO2EM_'.'UCU'
+'FIM'.'DNTSDIR-'.'UCU'
+'FIM'.'DNTSDIR_'.'UCU'
+'FIM'.'DNTSGASLO-'.'UCU'
+'FIM'.'DNTSGASLO_'.'UCU'
+'FIM'.'DNTSGASUP-'.'UCU'
+'FIM'.'DNTSGASUP_'.'UCU'
+'FIM'.'DNTSGOILO-'.'UCU'
+'FIM'.'DNTSGOILO_'.'UCU'
+'FIM'.'DNTSGOIUP-'.'UCU'
+'FIM'.'DNTSGOIUP_'.'UCU'
+'FIM'.'FORCHIP-'.'UCU'
+'FIM'.'FORCHIP_'.'UCU'
+'FIM'.'MAXGRO-'.'UCU'
+'FIM'.'MAXGRO_'.'UCU'
+'FIM'.'MINGRO-'.'UCU'
+'FIM'.'MINGRO_'.'UCU'
+'FIM'.'S_EUnonETS-FIN-base-'.'UCU'
+'FIM'.'S_EUnonETS-FIN-base_'.'UCU'
+'FIM'.'U_ElcDHP-'.'UCU'
+'FIM'.'U_ElcDHP_'.'UCU'
+'FIM'.'U_HTPUMP-'.'UCU'
+'FIM'.'U_HTPUMP_'.'UCU'
+'FIM'.'U_MinNtELI-'.'UCU'
+'FIM'.'U_MinNtELI_'.'UCU'
+'FIM'.'U_NetELIMP-'.'UCU'
+'FIM'.'U_NetELIMP_'.'UCU'
+'FIN'.'A_MAXCO2EM-'.'UCU'
+'FIN'.'A_MAXCO2EM_'.'UCU'
+'FIN'.'DNTSDIR-'.'UCU'
+'FIN'.'DNTSDIR_'.'UCU'
+'FIN'.'DNTSGASLO-'.'UCU'
+'FIN'.'DNTSGASLO_'.'UCU'
+'FIN'.'DNTSGASUP-'.'UCU'
+'FIN'.'DNTSGASUP_'.'UCU'
+'FIN'.'DNTSGOILO-'.'UCU'
+'FIN'.'DNTSGOILO_'.'UCU'
+'FIN'.'DNTSGOIUP-'.'UCU'
+'FIN'.'DNTSGOIUP_'.'UCU'
+'FIN'.'FORCHIP-'.'UCU'
+'FIN'.'FORCHIP_'.'UCU'
+'FIN'.'MAXGRO-'.'UCU'
+'FIN'.'MAXGRO_'.'UCU'
+'FIN'.'MINGRO-'.'UCU'
+'FIN'.'MINGRO_'.'UCU'
+'FIN'.'S_EUnonETS-FIN-base-'.'UCU'
+'FIN'.'S_EUnonETS-FIN-base_'.'UCU'
+'FIN'.'U_ElcDHP-'.'UCU'
+'FIN'.'U_ElcDHP_'.'UCU'
+'FIN'.'U_HTPUMP-'.'UCU'
+'FIN'.'U_HTPUMP_'.'UCU'
+'FIN'.'U_MinNtELI-'.'UCU'
+'FIN'.'U_MinNtELI_'.'UCU'
+'FIN'.'U_NetELIMP-'.'UCU'
+'FIN'.'U_NetELIMP_'.'UCU'
+'NO1'.'A_MAXCO2EM-'.'UCU'
+'NO1'.'A_MAXCO2EM_'.'UCU'
+'NO1'.'DNTSDIR-'.'UCU'
+'NO1'.'DNTSDIR_'.'UCU'
+'NO1'.'DNTSGASLO-'.'UCU'
+'NO1'.'DNTSGASLO_'.'UCU'
+'NO1'.'DNTSGASUP-'.'UCU'
+'NO1'.'DNTSGASUP_'.'UCU'
+'NO1'.'DNTSGOILO-'.'UCU'
+'NO1'.'DNTSGOILO_'.'UCU'
+'NO1'.'DNTSGOIUP-'.'UCU'
+'NO1'.'DNTSGOIUP_'.'UCU'
+'NO1'.'FORCHIP-'.'UCU'
+'NO1'.'FORCHIP_'.'UCU'
+'NO1'.'MAXGRO-'.'UCU'
+'NO1'.'MAXGRO_'.'UCU'
+'NO1'.'MINGRO-'.'UCU'
+'NO1'.'MINGRO_'.'UCU'
+'NO1'.'S_EUnonETS-FIN-base-'.'UCU'
+'NO1'.'S_EUnonETS-FIN-base_'.'UCU'
+'NO1'.'U_ElcDHP-'.'UCU'
+'NO1'.'U_ElcDHP_'.'UCU'
+'NO1'.'U_HTPUMP-'.'UCU'
+'NO1'.'U_HTPUMP_'.'UCU'
+'NO1'.'U_MinNtELI-'.'UCU'
+'NO1'.'U_MinNtELI_'.'UCU'
+'NO1'.'U_NetELIMP-'.'UCU'
+'NO1'.'U_NetELIMP_'.'UCU'
+'NO2'.'A_MAXCO2EM-'.'UCU'
+'NO2'.'A_MAXCO2EM_'.'UCU'
+'NO2'.'DNTSDIR-'.'UCU'
+'NO2'.'DNTSDIR_'.'UCU'
+'NO2'.'DNTSGASLO-'.'UCU'
+'NO2'.'DNTSGASLO_'.'UCU'
+'NO2'.'DNTSGASUP-'.'UCU'
+'NO2'.'DNTSGASUP_'.'UCU'
+'NO2'.'DNTSGOILO-'.'UCU'
+'NO2'.'DNTSGOILO_'.'UCU'
+'NO2'.'DNTSGOIUP-'.'UCU'
+'NO2'.'DNTSGOIUP_'.'UCU'
+'NO2'.'FORCHIP-'.'UCU'
+'NO2'.'FORCHIP_'.'UCU'
+'NO2'.'MAXGRO-'.'UCU'
+'NO2'.'MAXGRO_'.'UCU'
+'NO2'.'MINGRO-'.'UCU'
+'NO2'.'MINGRO_'.'UCU'
+'NO2'.'S_EUnonETS-FIN-base-'.'UCU'
+'NO2'.'S_EUnonETS-FIN-base_'.'UCU'
+'NO2'.'U_ElcDHP-'.'UCU'
+'NO2'.'U_ElcDHP_'.'UCU'
+'NO2'.'U_HTPUMP-'.'UCU'
+'NO2'.'U_HTPUMP_'.'UCU'
+'NO2'.'U_MinNtELI-'.'UCU'
+'NO2'.'U_MinNtELI_'.'UCU'
+'NO2'.'U_NetELIMP-'.'UCU'
+'NO2'.'U_NetELIMP_'.'UCU'
+'SE1'.'A_MAXCO2EM-'.'UCU'
+'SE1'.'A_MAXCO2EM_'.'UCU'
+'SE1'.'DNTSDIR-'.'UCU'
+'SE1'.'DNTSDIR_'.'UCU'
+'SE1'.'DNTSGASLO-'.'UCU'
+'SE1'.'DNTSGASLO_'.'UCU'
+'SE1'.'DNTSGASUP-'.'UCU'
+'SE1'.'DNTSGASUP_'.'UCU'
+'SE1'.'DNTSGOILO-'.'UCU'
+'SE1'.'DNTSGOILO_'.'UCU'
+'SE1'.'DNTSGOIUP-'.'UCU'
+'SE1'.'DNTSGOIUP_'.'UCU'
+'SE1'.'FORCHIP-'.'UCU'
+'SE1'.'FORCHIP_'.'UCU'
+'SE1'.'MAXGRO-'.'UCU'
+'SE1'.'MAXGRO_'.'UCU'
+'SE1'.'MINGRO-'.'UCU'
+'SE1'.'MINGRO_'.'UCU'
+'SE1'.'S_EUnonETS-FIN-base-'.'UCU'
+'SE1'.'S_EUnonETS-FIN-base_'.'UCU'
+'SE1'.'U_ElcDHP-'.'UCU'
+'SE1'.'U_ElcDHP_'.'UCU'
+'SE1'.'U_HTPUMP-'.'UCU'
+'SE1'.'U_HTPUMP_'.'UCU'
+'SE1'.'U_MinNtELI-'.'UCU'
+'SE1'.'U_MinNtELI_'.'UCU'
+'SE1'.'U_NetELIMP-'.'UCU'
+'SE1'.'U_NetELIMP_'.'UCU'
+'SE2'.'A_MAXCO2EM-'.'UCU'
+'SE2'.'A_MAXCO2EM_'.'UCU'
+'SE2'.'DNTSDIR-'.'UCU'
+'SE2'.'DNTSDIR_'.'UCU'
+'SE2'.'DNTSGASLO-'.'UCU'
+'SE2'.'DNTSGASLO_'.'UCU'
+'SE2'.'DNTSGASUP-'.'UCU'
+'SE2'.'DNTSGASUP_'.'UCU'
+'SE2'.'DNTSGOILO-'.'UCU'
+'SE2'.'DNTSGOILO_'.'UCU'
+'SE2'.'DNTSGOIUP-'.'UCU'
+'SE2'.'DNTSGOIUP_'.'UCU'
+'SE2'.'FORCHIP-'.'UCU'
+'SE2'.'FORCHIP_'.'UCU'
+'SE2'.'MAXGRO-'.'UCU'
+'SE2'.'MAXGRO_'.'UCU'
+'SE2'.'MINGRO-'.'UCU'
+'SE2'.'MINGRO_'.'UCU'
+'SE2'.'S_EUnonETS-FIN-base-'.'UCU'
+'SE2'.'S_EUnonETS-FIN-base_'.'UCU'
+'SE2'.'U_ElcDHP-'.'UCU'
+'SE2'.'U_ElcDHP_'.'UCU'
+'SE2'.'U_HTPUMP-'.'UCU'
+'SE2'.'U_HTPUMP_'.'UCU'
+'SE2'.'U_MinNtELI-'.'UCU'
+'SE2'.'U_MinNtELI_'.'UCU'
+'SE2'.'U_NetELIMP-'.'UCU'
+'SE2'.'U_NetELIMP_'.'UCU'
+'SE3'.'A_MAXCO2EM-'.'UCU'
+'SE3'.'A_MAXCO2EM_'.'UCU'
+'SE3'.'DNTSDIR-'.'UCU'
+'SE3'.'DNTSDIR_'.'UCU'
+'SE3'.'DNTSGASLO-'.'UCU'
+'SE3'.'DNTSGASLO_'.'UCU'
+'SE3'.'DNTSGASUP-'.'UCU'
+'SE3'.'DNTSGASUP_'.'UCU'
+'SE3'.'DNTSGOILO-'.'UCU'
+'SE3'.'DNTSGOILO_'.'UCU'
+'SE3'.'DNTSGOIUP-'.'UCU'
+'SE3'.'DNTSGOIUP_'.'UCU'
+'SE3'.'FORCHIP-'.'UCU'
+'SE3'.'FORCHIP_'.'UCU'
+'SE3'.'MAXGRO-'.'UCU'
+'SE3'.'MAXGRO_'.'UCU'
+'SE3'.'MINGRO-'.'UCU'
+'SE3'.'MINGRO_'.'UCU'
+'SE3'.'S_EUnonETS-FIN-base-'.'UCU'
+'SE3'.'S_EUnonETS-FIN-base_'.'UCU'
+'SE3'.'U_ElcDHP-'.'UCU'
+'SE3'.'U_ElcDHP_'.'UCU'
+'SE3'.'U_HTPUMP-'.'UCU'
+'SE3'.'U_HTPUMP_'.'UCU'
+'SE3'.'U_MinNtELI-'.'UCU'
+'SE3'.'U_MinNtELI_'.'UCU'
+'SE3'.'U_NetELIMP-'.'UCU'
+'SE3'.'U_NetELIMP_'.'UCU'
+'SE4'.'A_MAXCO2EM-'.'UCU'
+'SE4'.'A_MAXCO2EM_'.'UCU'
+'SE4'.'DNTSDIR-'.'UCU'
+'SE4'.'DNTSDIR_'.'UCU'
+'SE4'.'DNTSGASLO-'.'UCU'
+'SE4'.'DNTSGASLO_'.'UCU'
+'SE4'.'DNTSGASUP-'.'UCU'
+'SE4'.'DNTSGASUP_'.'UCU'
+'SE4'.'DNTSGOILO-'.'UCU'
+'SE4'.'DNTSGOILO_'.'UCU'
+'SE4'.'DNTSGOIUP-'.'UCU'
+'SE4'.'DNTSGOIUP_'.'UCU'
+'SE4'.'FORCHIP-'.'UCU'
+'SE4'.'FORCHIP_'.'UCU'
+'SE4'.'MAXGRO-'.'UCU'
+'SE4'.'MAXGRO_'.'UCU'
+'SE4'.'MINGRO-'.'UCU'
+'SE4'.'MINGRO_'.'UCU'
+'SE4'.'S_EUnonETS-FIN-base-'.'UCU'
+'SE4'.'S_EUnonETS-FIN-base_'.'UCU'
+'SE4'.'U_ElcDHP-'.'UCU'
+'SE4'.'U_ElcDHP_'.'UCU'
+'SE4'.'U_HTPUMP-'.'UCU'
+'SE4'.'U_HTPUMP_'.'UCU'
+'SE4'.'U_MinNtELI-'.'UCU'
+'SE4'.'U_MinNtELI_'.'UCU'
+'SE4'.'U_NetELIMP-'.'UCU'
+'SE4'.'U_NetELIMP_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'A_MAXCO2EM-'.'FIM'.'A_MAXCO2EM-'.'IMPDUCZ'
+'IMPEXP'.'A_MAXCO2EM-'.'FIN'.'A_MAXCO2EM-'.'IMPDUCZ'
+'IMPEXP'.'A_MAXCO2EM_'.'FIM'.'A_MAXCO2EM_'.'IMPDUCZ'
+'IMPEXP'.'A_MAXCO2EM_'.'FIN'.'A_MAXCO2EM_'.'IMPDUCZ'
+'IMPEXP'.'DNTSDIR-'.'FIN'.'DNTSDIR-'.'IMPDUCZ'
+'IMPEXP'.'DNTSDIR_'.'FIN'.'DNTSDIR_'.'IMPDUCZ'
+'IMPEXP'.'DNTSGASLO-'.'FIN'.'DNTSGASLO-'.'IMPDUCZ'
+'IMPEXP'.'DNTSGASLO_'.'FIN'.'DNTSGASLO_'.'IMPDUCZ'
+'IMPEXP'.'DNTSGASUP-'.'FIN'.'DNTSGASUP-'.'IMPDUCZ'
+'IMPEXP'.'DNTSGASUP_'.'FIN'.'DNTSGASUP_'.'IMPDUCZ'
+'IMPEXP'.'DNTSGOILO-'.'FIN'.'DNTSGOILO-'.'IMPDUCZ'
+'IMPEXP'.'DNTSGOILO_'.'FIN'.'DNTSGOILO_'.'IMPDUCZ'
+'IMPEXP'.'DNTSGOIUP-'.'FIN'.'DNTSGOIUP-'.'IMPDUCZ'
+'IMPEXP'.'DNTSGOIUP_'.'FIN'.'DNTSGOIUP_'.'IMPDUCZ'
+'IMPEXP'.'FORCHIP-'.'FIM'.'FORCHIP-'.'IMPDUCZ'
+'IMPEXP'.'FORCHIP-'.'FIN'.'FORCHIP-'.'IMPDUCZ'
+'IMPEXP'.'FORCHIP_'.'FIM'.'FORCHIP_'.'IMPDUCZ'
+'IMPEXP'.'FORCHIP_'.'FIN'.'FORCHIP_'.'IMPDUCZ'
+'IMPEXP'.'MAXGRO-'.'FIM'.'MAXGRO-'.'IMPDUCZ'
+'IMPEXP'.'MAXGRO-'.'FIN'.'MAXGRO-'.'IMPDUCZ'
+'IMPEXP'.'MAXGRO_'.'FIM'.'MAXGRO_'.'IMPDUCZ'
+'IMPEXP'.'MAXGRO_'.'FIN'.'MAXGRO_'.'IMPDUCZ'
+'IMPEXP'.'MINGRO-'.'FIN'.'MINGRO-'.'IMPDUCZ'
+'IMPEXP'.'MINGRO_'.'FIN'.'MINGRO_'.'IMPDUCZ'
+'IMPEXP'.'S_EUnonETS-FIN-base-'.'FIM'.'S_EUnonETS-FIN-base-'.'IMPDUCZ'
+'IMPEXP'.'S_EUnonETS-FIN-base-'.'FIN'.'S_EUnonETS-FIN-base-'.'IMPDUCZ'
+'IMPEXP'.'S_EUnonETS-FIN-base_'.'FIM'.'S_EUnonETS-FIN-base_'.'IMPDUCZ'
+'IMPEXP'.'S_EUnonETS-FIN-base_'.'FIN'.'S_EUnonETS-FIN-base_'.'IMPDUCZ'
+'IMPEXP'.'U_ElcDHP-'.'FIM'.'U_ElcDHP-'.'IMPDUCZ'
+'IMPEXP'.'U_ElcDHP-'.'FIN'.'U_ElcDHP-'.'IMPDUCZ'
+'IMPEXP'.'U_ElcDHP_'.'FIM'.'U_ElcDHP_'.'IMPDUCZ'
+'IMPEXP'.'U_ElcDHP_'.'FIN'.'U_ElcDHP_'.'IMPDUCZ'
+'IMPEXP'.'U_HTPUMP-'.'FIM'.'U_HTPUMP-'.'IMPDUCZ'
+'IMPEXP'.'U_HTPUMP-'.'FIN'.'U_HTPUMP-'.'IMPDUCZ'
+'IMPEXP'.'U_HTPUMP_'.'FIM'.'U_HTPUMP_'.'IMPDUCZ'
+'IMPEXP'.'U_HTPUMP_'.'FIN'.'U_HTPUMP_'.'IMPDUCZ'
+'IMPEXP'.'U_MinNtELI-'.'FIM'.'U_MinNtELI-'.'IMPDUCZ'
+'IMPEXP'.'U_MinNtELI_'.'FIM'.'U_MinNtELI_'.'IMPDUCZ'
+'IMPEXP'.'U_NetELIMP-'.'FIN'.'U_NetELIMP-'.'IMPDUCZ'
+'IMPEXP'.'U_NetELIMP_'.'FIN'.'U_NetELIMP_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'DKE'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'DKE'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'DKE'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'DKE'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'DKE'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'DKE'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'DKE'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'DKE'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'DKE'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'DKE'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'DKE'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'DKE'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'DKE'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'DKE'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'DKE'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'DKE'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'DKE'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'DKE'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'DKE'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'DKE'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'DKE'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'DKE'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'DKE'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'DKE'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'DKE'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'DKE'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'DKE'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'DKW'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'DKW'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'DKW'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'DKW'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'DKW'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'DKW'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'DKW'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'DKW'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'DKW'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'DKW'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'DKW'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'DKW'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'DKW'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'DKW'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'DKW'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'DKW'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'DKW'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'DKW'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'DKW'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'DKW'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'DKW'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'DKW'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'DKW'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'DKW'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'DKW'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'DKW'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'DKW'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'DKW'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'FIM'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'FIM'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'FIM'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'FIM'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'FIM'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'FIM'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'FIM'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'FIM'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'FIM'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'FIM'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'FIM'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'FIM'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'FIM'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'FIM'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'FIM'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'FIM'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'FIM'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'FIM'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'FIM'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'FIM'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'FIM'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'FIM'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'FIM'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'FIM'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'FIM'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'FIM'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'FIM'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'FIM'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'FIN'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'FIN'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'FIN'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'FIN'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'FIN'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'FIN'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'FIN'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'FIN'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'FIN'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'FIN'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'FIN'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'FIN'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'FIN'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'FIN'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'FIN'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'FIN'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'FIN'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'FIN'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'FIN'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'FIN'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'FIN'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'FIN'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'FIN'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'FIN'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'FIN'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'FIN'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'FIN'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'FIN'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'NO1'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'NO1'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'NO1'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'NO1'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'NO1'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'NO1'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'NO1'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'NO1'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'NO1'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'NO1'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'NO1'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'NO1'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'NO1'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'NO1'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'NO1'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'NO1'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'NO1'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'NO1'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'NO1'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'NO1'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'NO1'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'NO1'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'NO1'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'NO1'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'NO1'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'NO1'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'NO1'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'NO1'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'NO2'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'NO2'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'NO2'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'NO2'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'NO2'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'NO2'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'NO2'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'NO2'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'NO2'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'NO2'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'NO2'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'NO2'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'NO2'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'NO2'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'NO2'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'NO2'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'NO2'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'NO2'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'NO2'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'NO2'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'NO2'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'NO2'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'NO2'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'NO2'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'NO2'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'NO2'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'NO2'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'NO2'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'SE1'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'SE1'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'SE1'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'SE1'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'SE1'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'SE1'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'SE1'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'SE1'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'SE1'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'SE1'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'SE1'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'SE1'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'SE1'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'SE1'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'SE1'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'SE1'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'SE1'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'SE1'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'SE1'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'SE1'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'SE1'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'SE1'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'SE1'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'SE1'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'SE1'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'SE1'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'SE1'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'SE1'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'SE2'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'SE2'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'SE2'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'SE2'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'SE2'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'SE2'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'SE2'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'SE2'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'SE2'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'SE2'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'SE2'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'SE2'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'SE2'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'SE2'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'SE2'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'SE2'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'SE2'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'SE2'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'SE2'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'SE2'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'SE2'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'SE2'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'SE2'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'SE2'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'SE2'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'SE2'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'SE2'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'SE2'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'SE3'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'SE3'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'SE3'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'SE3'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'SE3'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'SE3'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'SE3'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'SE3'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'SE3'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'SE3'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'SE3'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'SE3'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'SE3'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'SE3'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'SE3'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'SE3'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'SE3'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'SE3'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'SE3'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'SE3'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'SE3'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'SE3'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'SE3'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'SE3'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'SE3'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'SE3'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'SE3'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'SE3'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+'SE4'.'A_MAXCO2EM-' 'Negative dummy var for UC: A_MAXCO2EM'
+'SE4'.'A_MAXCO2EM_' 'Positive dummy var for UC: A_MAXCO2EM'
+'SE4'.'DNTSDIR-' 'Negative dummy var for UC: DNTSDIR'
+'SE4'.'DNTSDIR_' 'Positive dummy var for UC: DNTSDIR'
+'SE4'.'DNTSGASLO-' 'Negative dummy var for UC: DNTSGASLO'
+'SE4'.'DNTSGASLO_' 'Positive dummy var for UC: DNTSGASLO'
+'SE4'.'DNTSGASUP-' 'Negative dummy var for UC: DNTSGASUP'
+'SE4'.'DNTSGASUP_' 'Positive dummy var for UC: DNTSGASUP'
+'SE4'.'DNTSGOILO-' 'Negative dummy var for UC: DNTSGOILO'
+'SE4'.'DNTSGOILO_' 'Positive dummy var for UC: DNTSGOILO'
+'SE4'.'DNTSGOIUP-' 'Negative dummy var for UC: DNTSGOIUP'
+'SE4'.'DNTSGOIUP_' 'Positive dummy var for UC: DNTSGOIUP'
+'SE4'.'FORCHIP-' 'Negative dummy var for UC: FORCHIP'
+'SE4'.'FORCHIP_' 'Positive dummy var for UC: FORCHIP'
+'SE4'.'MAXGRO-' 'Negative dummy var for UC: MAXGRO'
+'SE4'.'MAXGRO_' 'Positive dummy var for UC: MAXGRO'
+'SE4'.'MINGRO-' 'Negative dummy var for UC: MINGRO'
+'SE4'.'MINGRO_' 'Positive dummy var for UC: MINGRO'
+'SE4'.'S_EUnonETS-FIN-base-' 'Negative dummy var for UC: S_EUnonETS-FIN-base'
+'SE4'.'S_EUnonETS-FIN-base_' 'Positive dummy var for UC: S_EUnonETS-FIN-base'
+'SE4'.'U_ElcDHP-' 'Negative dummy var for UC: U_ElcDHP'
+'SE4'.'U_ElcDHP_' 'Positive dummy var for UC: U_ElcDHP'
+'SE4'.'U_HTPUMP-' 'Negative dummy var for UC: U_HTPUMP'
+'SE4'.'U_HTPUMP_' 'Positive dummy var for UC: U_HTPUMP'
+'SE4'.'U_MinNtELI-' 'Negative dummy var for UC: U_MinNtELI'
+'SE4'.'U_MinNtELI_' 'Positive dummy var for UC: U_MinNtELI'
+'SE4'.'U_NetELIMP-' 'Negative dummy var for UC: U_NetELIMP'
+'SE4'.'U_NetELIMP_' 'Positive dummy var for UC: U_NetELIMP'
+/;
+
+SET UC_R_EACH
+
+/
+'FIM'.'MAXGRO'
+'FIN'.'DNTSDIR'
+'FIN'.'DNTSGASLO'
+'FIN'.'DNTSGASUP'
+'FIN'.'DNTSGOILO'
+'FIN'.'DNTSGOIUP'
+'FIN'.'MAXGRO'
+'FIN'.'MINGRO'
+/;
+
+SET UC_R_SUM
+
+/
+'FIM'.'A_MAXCO2EM'
+'FIM'.'FORCHIP'
+'FIM'.'S_EUnonETS-FIN-base'
+'FIM'.'U_ElcDHP'
+'FIM'.'U_HTPUMP'
+'FIM'.'U_MinNtELI'
+'FIN'.'A_MAXCO2EM'
+'FIN'.'FORCHIP'
+'FIN'.'MINGRO'
+'FIN'.'S_EUnonETS-FIN-base'
+'FIN'.'U_ElcDHP'
+'FIN'.'U_HTPUMP'
+'FIN'.'U_NetELIMP'
+/;
+
+PARAMETER
+
+ACT_BND ' '/
+'FIM'.0.'HET1HTPUMP'.ANNUAL.LO 5
+'FIM'.0.'HZBCO105'.ANNUAL.UP 5
+'FIM'.2015.'HZBCO105'.ANNUAL.UP 0
+'FIM'.2017.'FT-TRANGA0'.ANNUAL.LO 0.03
+'FIM'.2019.'FT-ELCBCO1'.ANNUAL.LO 0.209664
+'FIM'.2019.'FT-ELCCOA0'.ANNUAL.LO 24.987274
+'FIM'.2019.'FT-ELCOIL0'.ANNUAL.LO 0.270036
+'FIM'.2019.'FT-INDBCO0'.ANNUAL.LO 0.00458333125882431
+'FIM'.2019.'FT-INDCOA0'.ANNUAL.LO 0.107701611609452
+'FIM'.2019.'FT-INDHFO0'.ANNUAL.LO 0.235443343312399
+'FIM'.2019.'FT-INDLPG0'.ANNUAL.LO 0.564053865294622
+'FIM'.2019.'FT-INDNAP0'.ANNUAL.LO 0.13775775
+'FIM'.2019.'FT-INDOIL0'.ANNUAL.LO 0.0108249757480119
+'FIM'.2020.'FT-COMDST0'.ANNUAL.LO 0.2
+'FIM'.2020.'FT-ELCCOA0'.ANNUAL.UP 25.22
+'FIM'.2020.'FT-RESDST0'.ANNUAL.LO 0.85
+'FIM'.2020.'FT-TRANGA0'.ANNUAL.LO 0.05
+'FIM'.2020.'HET1HTPUMP'.ANNUAL.LO 2.459
+'FIM'.2025.'FT-RESCOP5'.ANNUAL.UP 0.05
+'FIM'.2030.'FT-ELCCOA0'.ANNUAL.UP 0
+'FIM'.2030.'FT-TRANGA0'.ANNUAL.LO 0.1
+'FIM'.2030.'HET1HTPUMP'.ANNUAL.LO 4.786
+'FIM'.2030.'ILPBIOFT005'.ANNUAL.UP 0
+'FIM'.2030.'UFTSYNBDSL'.ANNUAL.UP 2.1
+'FIM'.2040.'FT-ELCCOA0'.ANNUAL.UP 0
+'FIM'.2040.'UFTSYNBDSL'.ANNUAL.UP 5
+'FIM'.2050.'FT-TRANGA0'.ANNUAL.LO 0.1
+'FIM'.2050.'HZBCO105'.ANNUAL.UP 0
+'FIM'.2050.'UFTSYNBDSL'.ANNUAL.UP 5
+'FIM'.2070.'FT-TRANGA0'.ANNUAL.LO 0.1
+'FIN'.0.'ECOAGEN00'.ANNUAL.UP 1
+'FIN'.0.'EXPSYNHYN'.ANNUAL.LO 5
+'FIN'.0.'FT-ELCBCO1'.ANNUAL.UP 1
+'FIN'.0.'HET1HTPUMP'.ANNUAL.LO 5
+'FIN'.0.'HZBCO105'.ANNUAL.UP 5
+'FIN'.0.'IMPCONOVCY'.ANNUAL.LO 1
+'FIN'.0.'UFTSYNBDSS'.ANNUAL.LO 4
+'FIN'.0.'UFTSYNBDSS'.ANNUAL.UP 5
+'FIN'.0.'UFTSYNBMTG'.ANNUAL.UP 4
+'FIN'.0.'UFTSYNBREF'.ANNUAL.UP 4
+'FIN'.0.'UPNCO2SN0'.ANNUAL.UP 5
+'FIN'.0.'UWODLIQ0'.ANNUAL.LO 4
+'FIN'.2010.'ACULAND'.ANNUAL.FX 1946.4
+'FIN'.2010.'AGRCATLE'.ANNUAL.FX 628.379
+'FIN'.2010.'AGRDAIRY'.ANNUAL.FX 289.339
+'FIN'.2010.'AGRHORSE'.ANNUAL.FX 68.788
+'FIN'.2010.'AGRPOULT'.ANNUAL.FX 13086.815
+'FIN'.2010.'AGRSHEEP'.ANNUAL.FX 330.563
+'FIN'.2010.'AGRSWINE'.ANNUAL.FX 1366.932
+'FIN'.2010.'MINWIN0'.ANNUAL.LO 1.062
+'FIN'.2010.'UPNCO2SN0'.ANNUAL.UP 150
+'FIN'.2015.'FT-ELCBCO1'.ANNUAL.UP 45
+'FIN'.2015.'HZBCO105'.ANNUAL.UP 0
+'FIN'.2015.'MINWIN0'.ANNUAL.LO 9.504
+'FIN'.2015.'UFTSYNBDSS'.ANNUAL.LO 4.085
+'FIN'.2015.'UFTSYNBMTG'.ANNUAL.UP 0
+'FIN'.2015.'UPNCO2SN0'.ANNUAL.UP 200
+'FIN'.2017.'ACULAND'.ANNUAL.FX 1938.18265393125
+'FIN'.2017.'AGRCATLE'.ANNUAL.FX 620
+'FIN'.2017.'AGRDAIRY'.ANNUAL.FX 285
+'FIN'.2017.'AGRHORSE'.ANNUAL.FX 68.0925493653042
+'FIN'.2017.'AGRPOULT'.ANNUAL.FX 13000
+'FIN'.2017.'AGRSHEEP'.ANNUAL.FX 330
+'FIN'.2017.'AGRSWINE'.ANNUAL.FX 1430
+'FIN'.2017.'FT-TRANGA0'.ANNUAL.LO 0.2
+'FIN'.2019.'FT-ELCBCO1'.ANNUAL.LO 22.6093133792866
+'FIN'.2019.'FT-ELCCOA0'.ANNUAL.LO 22.162071400972
+'FIN'.2019.'FT-ELCOIL0'.ANNUAL.LO 4.27207459404872
+'FIN'.2019.'FT-INDBCO0'.ANNUAL.LO 10.545961536051
+'FIN'.2019.'FT-INDCOA0'.ANNUAL.LO 3.88427385917337
+'FIN'.2019.'FT-INDHFO0'.ANNUAL.LO 8.19356737182334
+'FIN'.2019.'FT-INDLPG0'.ANNUAL.LO 11.4280981150153
+'FIN'.2019.'FT-INDNAP0'.ANNUAL.LO 2.16791918640312
+'FIN'.2019.'FT-INDOIL0'.ANNUAL.LO 0.832048658147187
+'FIN'.2020.'ACULAND'.ANNUAL.FX 1930
+'FIN'.2020.'AGRCATLE'.ANNUAL.FX 615
+'FIN'.2020.'AGRDAIRY'.ANNUAL.FX 285
+'FIN'.2020.'AGRHORSE'.ANNUAL.FX 68.0925493653042
+'FIN'.2020.'AGRPOULT'.ANNUAL.FX 13000
+'FIN'.2020.'AGRSHEEP'.ANNUAL.FX 330
+'FIN'.2020.'AGRSWINE'.ANNUAL.FX 1480
+'FIN'.2020.'ECOAGEN00'.ANNUAL.UP 14.76
+'FIN'.2020.'FT-COMDST0'.ANNUAL.LO 4.5
+'FIN'.2020.'FT-ELCBCO1'.ANNUAL.UP 37
+'FIN'.2020.'FT-ELCCOA0'.ANNUAL.UP 50
+'FIN'.2020.'FT-RESDST0'.ANNUAL.LO 12
+'FIN'.2020.'FT-TRANGA0'.ANNUAL.LO 0.35
+'FIN'.2020.'HET1HTPUMP'.ANNUAL.LO 1.024
+'FIN'.2020.'ILPPEX000'.ANNUAL.LO 3.37408547298053
+'FIN'.2020.'IMPCONOVCY'.ANNUAL.LO 5.5
+'FIN'.2020.'MINWIN0'.ANNUAL.LO 23.4
+'FIN'.2020.'UFTSYNBDSS'.ANNUAL.UP 4.4935
+'FIN'.2020.'UFTSYNBMTG'.ANNUAL.UP 2.326
+'FIN'.2020.'UPNCO2SN0'.ANNUAL.UP 300
+'FIN'.2020.'UTRNREFX00'.ANNUAL.LO 640
+'FIN'.2020.'UWODLIQ0'.ANNUAL.LO 1.25
+'FIN'.2025.'FT-RESCOP5'.ANNUAL.UP 0.55
+'FIN'.2025.'ILPPEX000'.ANNUAL.LO 3.69896944071981
+'FIN'.2030.'ACULAND'.ANNUAL.FX 1900
+'FIN'.2030.'AGRCATLE'.ANNUAL.FX 610
+'FIN'.2030.'AGRDAIRY'.ANNUAL.FX 285
+'FIN'.2030.'AGRHORSE'.ANNUAL.FX 68.0925493653042
+'FIN'.2030.'AGRPOULT'.ANNUAL.FX 13000
+'FIN'.2030.'AGRSHEEP'.ANNUAL.FX 330
+'FIN'.2030.'AGRSWINE'.ANNUAL.FX 1550
+'FIN'.2030.'EXPSYNHYN'.ANNUAL.LO 0
+'FIN'.2030.'FT-ELCBCO1'.ANNUAL.UP 27
+'FIN'.2030.'FT-ELCCOA0'.ANNUAL.UP 6.7
+'FIN'.2030.'FT-TRANGA0'.ANNUAL.LO 0.35
+'FIN'.2030.'HET1HTPUMP'.ANNUAL.LO 3.871
+'FIN'.2030.'ILPBIOFT005'.ANNUAL.UP 0
+'FIN'.2030.'ILPPEX000'.ANNUAL.LO 4.055135838421
+'FIN'.2030.'IMPCONOVCY'.ANNUAL.LO 5.5
+'FIN'.2030.'MINWIN0'.ANNUAL.LO 28.08
+'FIN'.2030.'TOTCO2SN0'.ANNUAL.UP 5000
+'FIN'.2030.'UFTSYNBDSL'.ANNUAL.UP 16.34
+'FIN'.2030.'UFTSYNBDSS'.ANNUAL.LO 4.085
+'FIN'.2030.'UFTSYNBDSS'.ANNUAL.UP 12.255
+'FIN'.2030.'UFTSYNBMTG'.ANNUAL.UP 4.1868
+'FIN'.2030.'UFTSYNBREF'.ANNUAL.UP 0
+'FIN'.2030.'UPNCO2SN0'.ANNUAL.UP 800
+'FIN'.2030.'UTRNREFX00'.ANNUAL.LO 544
+'FIN'.2030.'UWODLIQ0'.ANNUAL.UP 5.616
+'FIN'.2035.'ILPPEX000'.ANNUAL.LO 3.99309330177387
+'FIN'.2040.'ACULAND'.ANNUAL.FX 1900
+'FIN'.2040.'AGRCATLE'.ANNUAL.FX 580
+'FIN'.2040.'AGRDAIRY'.ANNUAL.FX 275
+'FIN'.2040.'AGRHORSE'.ANNUAL.FX 68.0925493653042
+'FIN'.2040.'AGRPOULT'.ANNUAL.FX 13000
+'FIN'.2040.'AGRSHEEP'.ANNUAL.FX 330
+'FIN'.2040.'AGRSWINE'.ANNUAL.FX 1550
+'FIN'.2040.'EXPSYNHYN'.ANNUAL.LO 0
+'FIN'.2040.'FT-ELCCOA0'.ANNUAL.UP 1
+'FIN'.2040.'ILPPEX000'.ANNUAL.LO 4.15
+'FIN'.2040.'MINWIN0'.ANNUAL.LO 30.888
+'FIN'.2040.'TOTCO2SN0'.ANNUAL.UP 8000
+'FIN'.2040.'UFTSYNBDSL'.ANNUAL.UP 25
+'FIN'.2040.'UFTSYNBDSS'.ANNUAL.UP 20.425
+'FIN'.2040.'UPNCO2SN0'.ANNUAL.UP 1400
+'FIN'.2040.'UTRNREFX00'.ANNUAL.LO 353.6
+'FIN'.2050.'ACULAND'.ANNUAL.FX 1900
+'FIN'.2050.'AGRCATLE'.ANNUAL.FX 550
+'FIN'.2050.'AGRDAIRY'.ANNUAL.FX 260
+'FIN'.2050.'AGRHORSE'.ANNUAL.FX 68.0925493653042
+'FIN'.2050.'AGRPOULT'.ANNUAL.FX 13000
+'FIN'.2050.'AGRSHEEP'.ANNUAL.FX 330
+'FIN'.2050.'AGRSWINE'.ANNUAL.FX 1550
+'FIN'.2050.'EXPSYNHYN'.ANNUAL.LO 0
+'FIN'.2050.'FT-TRANGA0'.ANNUAL.LO 0.2
+'FIN'.2050.'HZBCO105'.ANNUAL.UP 0
+'FIN'.2050.'ILPPEX000'.ANNUAL.LO 4.25
+'FIN'.2050.'TOTCO2SN0'.ANNUAL.UP 11000
+'FIN'.2050.'UPNCO2SN0'.ANNUAL.UP 1900
+'FIN'.2050.'UTRNREFX00'.ANNUAL.LO 160
+'FIN'.2070.'FT-TRANGA0'.ANNUAL.LO 0.1
+'FIN'.2070.'TOTCO2SN0'.ANNUAL.UP 13000
+'FIN'.2070.'UPNCO2SN0'.ANNUAL.UP 2500
+'FIN'.2070.'UTRNREFX00'.ANNUAL.LO 160
+/;
+
+PARAMETER
+
+ACT_COST ' '/
+'FIM'.2010.'IMPELCFIM'.'EUR10' 1
+'FIM'.2030.'CSTRASFINOS'.'EUR10' 0.0005
+'FIN'.2030.'CSTRASFINOS'.'EUR10' 0.005
+/;
+
+PARAMETER
+
+ACT_EFF ' '/
+'FIM'.2015.'AGHBIO00'.'AGRBIO'.ANNUAL 0.665956091029818
+'FIM'.2015.'AGHCOP00'.'AGRCOP'.ANNUAL 0.797066461222272
+'FIM'.2015.'AGHDST00'.'AGRDST'.ANNUAL 0.913865933056842
+'FIM'.2015.'AGHELC00'.'AGRELA'.ANNUAL 1.1592
+'FIM'.2015.'AGHGEO00'.'AGRGEO'.ANNUAL 1.14119685861722
+'FIM'.2015.'AGHHET00'.'AGRHET'.ANNUAL 1.14119685861722
+'FIM'.2015.'AGHHFO00'.'AGRHFO'.ANNUAL 0.878953029269837
+'FIM'.2015.'AGHKER00'.'AGRKER'.ANNUAL 0.878953029269837
+'FIM'.2015.'AGHLPG00'.'AGRLPG'.ANNUAL 0.97501304306734
+'FIM'.2015.'AGHNGA00'.'AGRNGA'.ANNUAL 0.977227149289952
+'FIM'.2015.'AGHSOL00'.'AGRSOL'.ANNUAL 1.14119685861722
+'FIM'.2015.'CH1BIO000'.'ACT'.ANNUAL 0.686329843087404
+'FIM'.2015.'CH1COP000'.'ACT'.ANNUAL 0.718056114634257
+'FIM'.2015.'CH1DST000'.'ACT'.ANNUAL 0.860113289842291
+'FIM'.2015.'CH1EHA000'.'ACT'.ANNUAL 2.21530221012478
+'FIM'.2015.'CH1ERS000'.'ACT'.ANNUAL 1.08910836990408
+'FIM'.2015.'CH1GEO000'.'ACT'.ANNUAL 1.04553084263184
+'FIM'.2015.'CH1HET000'.'ACT'.ANNUAL 1.04553084263184
+'FIM'.2015.'CH1HFO000'.'ACT'.ANNUAL 0.82735322811737
+'FIM'.2015.'CH1KER000'.'ACT'.ANNUAL 0.718056114634257
+'FIM'.2015.'CH1LPG000'.'ACT'.ANNUAL 0.82735322811737
+'FIM'.2015.'CH1NFN000'.'ACT'.ANNUAL 0.881946370348405
+'FIM'.2015.'CH1NHP000'.'ACT'.ANNUAL 2.10345789001328
+'FIM'.2015.'RH1BIO000'.'ACT'.ANNUAL 0.769676709696402
+'FIM'.2015.'RH1BIOP00'.'ACT'.ANNUAL 0.87808627239797
+'FIM'.2015.'RH1BIOS00'.'ACT'.ANNUAL 0.621740458955253
+'FIM'.2015.'RH1COP000'.'ACT'.ANNUAL 0.780151378627674
+'FIM'.2015.'RH1DST000'.'ACT'.ANNUAL 0.842769227868272
+'FIM'.2015.'RH1EHP000'.'ACT'.ANNUAL 2.96952672968062
+'FIM'.2015.'RH1ERS000'.'ACT'.ANNUAL 1.08981102894781
+'FIM'.2015.'RH1GEO000'.'ACT'.ANNUAL 3.60316076872585
+'FIM'.2015.'RH1HET000'.'ACT'.ANNUAL 1.04755557180009
+'FIM'.2015.'RH1HFO000'.'ACT'.ANNUAL 0.842769227868272
+'FIM'.2015.'RH1KER000'.'ACT'.ANNUAL 0.811508633959849
+'FIM'.2015.'RH1LPG000'.'ACT'.ANNUAL 0.832359506747704
+'FIM'.2015.'RH1NGA000'.'ACT'.ANNUAL 0.873937309324438
+'FIM'.2015.'RH1NHP000'.'ACT'.ANNUAL 2.03905441421253
+'FIM'.2015.'RH2BIO000'.'ACT'.ANNUAL 0.805245054869516
+'FIM'.2015.'RH2BIOP00'.'ACT'.ANNUAL 0.918664446630037
+'FIM'.2015.'RH2COP000'.'ACT'.ANNUAL 0.780151378627674
+'FIM'.2015.'RH2DST000'.'ACT'.ANNUAL 0.873937309324438
+'FIM'.2015.'RH2EHA000'.'ACT'.ANNUAL 2.91518083451441
+'FIM'.2015.'RH2ERS000'.'ACT'.ANNUAL 1.08981102894781
+'FIM'.2015.'RH2GEO000'.'ACT'.ANNUAL 1.04897803342582
+'FIM'.2015.'RH2HET000'.'ACT'.ANNUAL 1.04897803342582
+'FIM'.2015.'RH2HFO000'.'ACT'.ANNUAL 0.842769227868272
+'FIM'.2015.'RH2KER000'.'ACT'.ANNUAL 0.790614808237036
+'FIM'.2015.'RH2LPG000'.'ACT'.ANNUAL 0.842769227868272
+'FIM'.2015.'RH2NGA000'.'ACT'.ANNUAL 0.873937309324438
+'FIM'.2015.'RH2NHP000'.'ACT'.ANNUAL 2.03905441421253
+'FIN'.2015.'AGHBIO00'.'AGRBIO'.ANNUAL 0.672533582554308
+'FIN'.2015.'AGHCOP00'.'AGRCOP'.ANNUAL 0.797066461222272
+'FIN'.2015.'AGHDST00'.'AGRDST'.ANNUAL 0.913865933056842
+'FIN'.2015.'AGHELC00'.'AGRELA'.ANNUAL 1.1592
+'FIN'.2015.'AGHGEO00'.'AGRGEO'.ANNUAL 1.14119685861722
+'FIN'.2015.'AGHHET00'.'AGRHET'.ANNUAL 1.14119685861722
+'FIN'.2015.'AGHHFO00'.'AGRHFO'.ANNUAL 0.878953029269837
+'FIN'.2015.'AGHKER00'.'AGRKER'.ANNUAL 0.878953029269837
+'FIN'.2015.'AGHLPG00'.'AGRLPG'.ANNUAL 0.97501304306734
+'FIN'.2015.'AGHNGA00'.'AGRNGA'.ANNUAL 0.977227149289952
+'FIN'.2015.'AGHSOL00'.'AGRSOL'.ANNUAL 1.14119685861722
+'FIN'.2015.'CH1BIO000'.'ACT'.ANNUAL 0.693879812631893
+'FIN'.2015.'CH1COP000'.'ACT'.ANNUAL 0.718056114634257
+'FIN'.2015.'CH1DST000'.'ACT'.ANNUAL 0.860113289842291
+'FIN'.2015.'CH1EHA000'.'ACT'.ANNUAL 2.21530221012478
+'FIN'.2015.'CH1ERS000'.'ACT'.ANNUAL 1.08910836990408
+'FIN'.2015.'CH1GEO000'.'ACT'.ANNUAL 1.04553084263184
+'FIN'.2015.'CH1HET000'.'ACT'.ANNUAL 1.04553084263184
+'FIN'.2015.'CH1HFO000'.'ACT'.ANNUAL 0.82735322811737
+'FIN'.2015.'CH1KER000'.'ACT'.ANNUAL 0.718056114634257
+'FIN'.2015.'CH1LPG000'.'ACT'.ANNUAL 0.82735322811737
+'FIN'.2015.'CH1NFN000'.'ACT'.ANNUAL 0.881946370348405
+'FIN'.2015.'CH1NHP000'.'ACT'.ANNUAL 2.10345789001328
+'FIN'.2015.'RH1BIO000'.'ACT'.ANNUAL 0.769676709696402
+'FIN'.2015.'RH1BIOP00'.'ACT'.ANNUAL 0.87808627239797
+'FIN'.2015.'RH1BIOS00'.'ACT'.ANNUAL 0.628134343838847
+'FIN'.2015.'RH1COP000'.'ACT'.ANNUAL 0.780151378627674
+'FIN'.2015.'RH1DST000'.'ACT'.ANNUAL 0.842769227868272
+'FIN'.2015.'RH1EHP000'.'ACT'.ANNUAL 2.96952672968062
+'FIN'.2015.'RH1ERS000'.'ACT'.ANNUAL 1.08981102894781
+'FIN'.2015.'RH1GEO000'.'ACT'.ANNUAL 3.60316076872585
+'FIN'.2015.'RH1HET000'.'ACT'.ANNUAL 1.04755557180009
+'FIN'.2015.'RH1HFO000'.'ACT'.ANNUAL 0.842769227868272
+'FIN'.2015.'RH1KER000'.'ACT'.ANNUAL 0.811508633959849
+'FIN'.2015.'RH1LPG000'.'ACT'.ANNUAL 0.832359506747704
+'FIN'.2015.'RH1NGA000'.'ACT'.ANNUAL 0.873937309324438
+'FIN'.2015.'RH1NHP000'.'ACT'.ANNUAL 2.03905441421253
+'FIN'.2015.'RH2BIO000'.'ACT'.ANNUAL 0.805245054869516
+'FIN'.2015.'RH2BIOP00'.'ACT'.ANNUAL 0.918664446630037
+'FIN'.2015.'RH2COP000'.'ACT'.ANNUAL 0.780151378627674
+'FIN'.2015.'RH2DST000'.'ACT'.ANNUAL 0.873937309324438
+'FIN'.2015.'RH2EHA000'.'ACT'.ANNUAL 2.91518083451441
+'FIN'.2015.'RH2ERS000'.'ACT'.ANNUAL 1.08981102894781
+'FIN'.2015.'RH2GEO000'.'ACT'.ANNUAL 1.04897803342582
+'FIN'.2015.'RH2HET000'.'ACT'.ANNUAL 1.04897803342582
+'FIN'.2015.'RH2HFO000'.'ACT'.ANNUAL 0.842769227868272
+'FIN'.2015.'RH2KER000'.'ACT'.ANNUAL 0.790614808237036
+'FIN'.2015.'RH2LPG000'.'ACT'.ANNUAL 0.842769227868272
+'FIN'.2015.'RH2NGA000'.'ACT'.ANNUAL 0.873937309324438
+'FIN'.2015.'RH2NHP000'.'ACT'.ANNUAL 2.03905441421253
+/;
+
+PARAMETER
+
+CAP_BND ' '/
+'FIM'.0.'UPRL2G100'.UP 1
+'FIM'.2015.'UPRL2G100'.UP 0
+'FIM'.2020.'ESOLGEN00'.UP 40
+'FIM'.2020.'UPRL2G100'.UP 5
+'FIM'.2030.'UPRL2G100'.UP 15
+'FIM'.2040.'ESOLGEN00'.UP 100
+'FIN'.0.'UFTSYNBDSLH'.LO 10
+'FIN'.0.'UTRNREFX00'.UP 5
+'FIN'.0.'X+ELC-SE3-FIN'.UP 5
+'FIN'.2020.'ESOLGEN00'.UP 130
+'FIN'.2030.'UFTSYNBDSLH'.LO 22.9172210526316
+'FIN'.2030.'X+ELC-SE3-FIN'.UP 1000
+'FIN'.2040.'ESOLGEN00'.UP 170
+'FIN'.2040.'X+ELC-SE3-FIN'.UP 2000
+'FIN'.2050.'UTRNREFX00'.UP 320
+'FIN'.2050.'X+ELC-SE3-FIN'.UP 3000
+/;
+
+PARAMETER
+
+COM_AGG ' '/
+'FIM'.2010.'BIOCRP'.'AGRN2OP' 17.5
+'FIN'.2010.'BIOCRP'.'AGRN2OP' 17.5
+'FIN'.2020.'SNKTOTCO2'.'SNKELCCO2' 1
+/;
+
+PARAMETER
+
+COM_BNDNET ' '/
+'FIM'.0.'BIOBLQ'.ANNUAL.FX 2
+'FIM'.0.'ELCSOL'.ANNUAL.FX 2
+'FIM'.0.'INDBLQ'.ANNUAL.FX 2
+'FIM'.0.'WIN'.ANNUAL.FX 2
+'FIN'.0.'BIOBLQ'.ANNUAL.FX 2
+'FIN'.0.'ELCSOL'.ANNUAL.FX 2
+'FIN'.0.'FIREWOOD'.ANNUAL.LO 5
+'FIN'.0.'INDBLQ'.ANNUAL.FX 2
+'FIN'.0.'WIN'.ANNUAL.FX 2
+'FIN'.2020.'BWENET'.ANNUAL.LO 85
+'FIN'.2020.'FIREWOOD'.ANNUAL.LO 1
+'FIN'.2030.'BWENET'.ANNUAL.LO 83.724
+'FIN'.2030.'FIREWOOD'.ANNUAL.LO 3
+'FIN'.2040.'FIREWOOD'.ANNUAL.LO 5
+'FIN'.2050.'FIREWOOD'.ANNUAL.LO 10
+/;
+
+PARAMETER
+
+COM_BNDPRD ' '/
+'FIN'.0.'BIOCRP'.ANNUAL.UP 4
+'FIN'.0.'BIOPLT'.ANNUAL.LO 5
+'FIN'.0.'BIOSTR'.ANNUAL.UP 4
+'FIN'.0.'COAHCO'.ANNUAL.UP 1
+'FIN'.0.'GASNGA'.ANNUAL.UP 1
+'FIN'.2015.'BIOCRP'.ANNUAL.UP 1.5
+'FIN'.2015.'BIOPLT'.ANNUAL.LO 4.1
+'FIN'.2015.'BIOSTR'.ANNUAL.UP 1.8
+'FIN'.2020.'BIOCRP'.ANNUAL.UP 2.7
+'FIN'.2020.'BIOPLT'.ANNUAL.LO 5.6
+'FIN'.2020.'BIOSTR'.ANNUAL.UP 3.4
+'FIN'.2020.'COAHCO'.ANNUAL.UP 103.9
+'FIN'.2020.'GASNGA'.ANNUAL.UP 105.213
+'FIN'.2030.'BIOCRP'.ANNUAL.UP 8.1
+/;
+
+PARAMETER
+
+COM_CSTNET ' '/
+'FIN'.2020.'SNKTOTCO2'.ANNUAL.'EUR10' 0.005
+/;
+
+PARAMETER
+
+COM_IE ' '/
+'FIM'.0.'TRB'.ANNUAL 2017
+'FIM'.0.'TRH'.ANNUAL 2017
+'FIM'.0.'TRL'.ANNUAL 2017
+'FIM'.0.'TRM'.ANNUAL 2017
+'FIM'.0.'TRT'.ANNUAL 2017
+'FIM'.0.'TRW'.ANNUAL 2017
+'FIM'.2020.'TRB'.ANNUAL 0
+'FIM'.2020.'TRH'.ANNUAL 0
+'FIM'.2020.'TRL'.ANNUAL 0
+'FIM'.2020.'TRM'.ANNUAL 0
+'FIM'.2020.'TRT'.ANNUAL 0
+'FIM'.2020.'TRW'.ANNUAL 0
+'FIM'.2030.'TRB'.ANNUAL 0
+'FIM'.2030.'TRH'.ANNUAL 0
+'FIM'.2030.'TRL'.ANNUAL 0
+'FIM'.2030.'TRM'.ANNUAL 0
+'FIM'.2030.'TRT'.ANNUAL 0
+'FIM'.2030.'TRW'.ANNUAL 0
+'FIM'.2040.'TRB'.ANNUAL 0
+'FIM'.2040.'TRH'.ANNUAL 0
+'FIM'.2040.'TRL'.ANNUAL 0
+'FIM'.2040.'TRM'.ANNUAL 0
+'FIM'.2040.'TRT'.ANNUAL 0
+'FIM'.2040.'TRW'.ANNUAL 0
+'FIM'.2050.'TRB'.ANNUAL 0
+'FIM'.2050.'TRH'.ANNUAL 0
+'FIM'.2050.'TRL'.ANNUAL 0
+'FIM'.2050.'TRM'.ANNUAL 0
+'FIM'.2050.'TRT'.ANNUAL 0
+'FIM'.2050.'TRW'.ANNUAL 0
+'FIN'.0.'TRB'.ANNUAL 2017
+'FIN'.0.'TRH'.ANNUAL 2017
+'FIN'.0.'TRL'.ANNUAL 2017
+'FIN'.0.'TRM'.ANNUAL 2017
+'FIN'.0.'TRT'.ANNUAL 2017
+'FIN'.0.'TRW'.ANNUAL 2017
+'FIN'.0.'TTF'.ANNUAL 2017
+'FIN'.0.'TTP'.ANNUAL 2017
+'FIN'.2020.'ILPPOT'.ANNUAL 1.03404686146123
+'FIN'.2020.'ILPPPW'.ANNUAL 1.39023895371317
+'FIN'.2020.'TRB'.ANNUAL 0
+'FIN'.2020.'TRH'.ANNUAL 0
+'FIN'.2020.'TRL'.ANNUAL 0
+'FIN'.2020.'TRM'.ANNUAL 0
+'FIN'.2020.'TRT'.ANNUAL 0
+'FIN'.2020.'TRW'.ANNUAL 0
+'FIN'.2020.'TTF'.ANNUAL 0
+'FIN'.2020.'TTP'.ANNUAL 0
+'FIN'.2025.'ILPPOT'.ANNUAL 1.03426593900918
+'FIN'.2025.'ILPPPW'.ANNUAL 1.40500688034933
+'FIN'.2030.'ILPPOT'.ANNUAL 1.03448506297183
+'FIN'.2030.'ILPPPW'.ANNUAL 1.41993168049025
+'FIN'.2030.'TRB'.ANNUAL 0
+'FIN'.2030.'TRH'.ANNUAL 0
+'FIN'.2030.'TRL'.ANNUAL 0
+'FIN'.2030.'TRM'.ANNUAL 0
+'FIN'.2030.'TRT'.ANNUAL 0
+'FIN'.2030.'TRW'.ANNUAL 0
+'FIN'.2030.'TTF'.ANNUAL 0
+'FIN'.2030.'TTP'.ANNUAL 0
+'FIN'.2035.'ILPPOT'.ANNUAL 1.03453807566212
+'FIN'.2035.'ILPPPW'.ANNUAL 1.41759373672891
+'FIN'.2040.'ILPPOT'.ANNUAL 1.03459109106907
+'FIN'.2040.'ILPPPW'.ANNUAL 1.41525964243519
+'FIN'.2040.'TRB'.ANNUAL 0
+'FIN'.2040.'TRH'.ANNUAL 0
+'FIN'.2040.'TRL'.ANNUAL 0
+'FIN'.2040.'TRM'.ANNUAL 0
+'FIN'.2040.'TRT'.ANNUAL 0
+'FIN'.2040.'TRW'.ANNUAL 0
+'FIN'.2040.'TTF'.ANNUAL 0
+'FIN'.2040.'TTP'.ANNUAL 0
+'FIN'.2050.'ILPPOT'.ANNUAL 1.03459972010885
+'FIN'.2050.'ILPPPW'.ANNUAL 1.41251095386806
+'FIN'.2050.'TRB'.ANNUAL 0
+'FIN'.2050.'TRH'.ANNUAL 0
+'FIN'.2050.'TRL'.ANNUAL 0
+'FIN'.2050.'TRM'.ANNUAL 0
+'FIN'.2050.'TRT'.ANNUAL 0
+'FIN'.2050.'TRW'.ANNUAL 0
+'FIN'.2050.'TTF'.ANNUAL 0
+'FIN'.2050.'TTP'.ANNUAL 0
+/;
+
+PARAMETER
+
+COM_PROJ ' '/
+'FIM'.2010.'CC1' 1
+'FIM'.2010.'CCK' 1
+'FIM'.2010.'CHB1D' 1
+'FIM'.2010.'CLA' 1
+'FIM'.2010.'COE' 1
+'FIM'.2010.'COT' 1
+'FIM'.2010.'CRF' 1
+'FIM'.2010.'ICH' 1
+'FIM'.2010.'IIS' 1
+'FIM'.2010.'ILP' 1
+'FIM'.2010.'INF' 1
+'FIM'.2010.'INM' 1
+'FIM'.2010.'IOC' 1
+'FIM'.2010.'IOF' 1
+'FIM'.2010.'IOI' 1
+'FIM'.2010.'IOM' 1
+'FIM'.2010.'IOQ' 1
+'FIM'.2010.'IOT' 1
+'FIM'.2010.'IOW' 1
+'FIM'.2010.'RC1' 1
+'FIM'.2010.'RCD' 1
+'FIM'.2010.'RCW' 1
+'FIM'.2010.'RDW' 1
+'FIM'.2010.'REA' 1
+'FIM'.2010.'RHB1D' 1
+'FIM'.2010.'RHB2D' 1
+'FIM'.2010.'RK1' 1
+'FIM'.2010.'RL1' 1
+'FIM'.2010.'RRF' 1
+'FIM'.2010.'TFRH' 1
+'FIM'.2010.'TFRL' 1
+'FIM'.2010.'TFRM' 1
+'FIM'.2010.'TFSN' 1
+'FIM'.2010.'TFTN' 1
+'FIM'.2010.'TPAI' 1
+'FIM'.2010.'TPAN' 1
+'FIM'.2010.'TPRB' 1
+'FIM'.2010.'TPRC' 1
+'FIM'.2010.'TPRW' 1
+'FIM'.2010.'TPTN' 1
+'FIM'.2017.'CC1' 1
+'FIM'.2017.'CCK' 1
+'FIM'.2017.'CHB1D' 1
+'FIM'.2017.'CLA' 1
+'FIM'.2017.'COE' 1
+'FIM'.2017.'COT' 1
+'FIM'.2017.'CRF' 1
+'FIM'.2017.'ICH' 1
+'FIM'.2017.'IIS' 1
+'FIM'.2017.'ILP' 1
+'FIM'.2017.'INF' 1
+'FIM'.2017.'INM' 1
+'FIM'.2017.'IOC' 1
+'FIM'.2017.'IOF' 1
+'FIM'.2017.'IOI' 1
+'FIM'.2017.'IOM' 1
+'FIM'.2017.'IOQ' 1
+'FIM'.2017.'IOT' 1
+'FIM'.2017.'IOW' 1
+'FIM'.2017.'RC1' 1
+'FIM'.2017.'RCD' 1
+'FIM'.2017.'RCW' 1
+'FIM'.2017.'RDW' 1
+'FIM'.2017.'REA' 1
+'FIM'.2017.'RHB1D' 1
+'FIM'.2017.'RHB2D' 1
+'FIM'.2017.'RK1' 1
+'FIM'.2017.'RL1' 1
+'FIM'.2017.'RRF' 1
+'FIM'.2017.'TFRH' 1
+'FIM'.2017.'TFRL' 1
+'FIM'.2017.'TFRM' 1
+'FIM'.2017.'TFSN' 1
+'FIM'.2017.'TFTN' 1
+'FIM'.2017.'TPAI' 1
+'FIM'.2017.'TPAN' 1
+'FIM'.2017.'TPRB' 1
+'FIM'.2017.'TPRC' 1
+'FIM'.2017.'TPRW' 1
+'FIM'.2017.'TPTN' 1
+'FIM'.2020.'CC1' 1.22351187133845
+'FIM'.2020.'CCK' 1.07049680540995
+'FIM'.2020.'CHB1D' 1.04497991127553
+'FIM'.2020.'CLA' 1.10331465872334
+'FIM'.2020.'COE' 1.10600147423233
+'FIM'.2020.'COT' 1.09478301029861
+'FIM'.2020.'CRF' 1.07183682065468
+'FIM'.2020.'ICH' 1.05433676800272
+'FIM'.2020.'IIS' 1.04798412191203
+'FIM'.2020.'ILP' 0.940928674901114
+'FIM'.2020.'INF' 1.03942437183431
+'FIM'.2020.'INM' 1.01896462237611
+'FIM'.2020.'IOC' 1.06101473629812
+'FIM'.2020.'IOF' 1.07305612661148
+'FIM'.2020.'IOI' 1.09385028448857
+'FIM'.2020.'IOM' 1.05550478267828
+'FIM'.2020.'IOQ' 1.26097736896226
+'FIM'.2020.'IOT' 1.06708035123158
+'FIM'.2020.'IOW' 1.01795692787621
+'FIM'.2020.'RC1' 1.22246269327427
+'FIM'.2020.'RCD' 1.06309364561479
+'FIM'.2020.'RCW' 1.05480410912759
+'FIM'.2020.'RDW' 1.04507357134913
+'FIM'.2020.'REA' 1.05559458005199
+'FIM'.2020.'RHB1D' 1.04497991127553
+'FIM'.2020.'RHB2D' 1.05696984551975
+'FIM'.2020.'RK1' 1.03461013571887
+'FIM'.2020.'RL1' 1.04721403365111
+'FIM'.2020.'RRF' 1.03598459676765
+'FIM'.2020.'TFRH' 1.04202779962465
+'FIM'.2020.'TFRL' 1.0187905726689
+'FIM'.2020.'TFRM' 1.04202779962465
+'FIM'.2020.'TFSN' 0.938046126723088
+'FIM'.2020.'TFTN' 1.01190476190476
+'FIM'.2020.'TPAI' 0.583572129786724
+'FIM'.2020.'TPAN' 0.6
+'FIM'.2020.'TPRB' 1.01803199033431
+'FIM'.2020.'TPRC' 1.04637475390562
+'FIM'.2020.'TPRW' 1.02777547542577
+'FIM'.2020.'TPTN' 1.08006682804321
+'FIM'.2025.'CHB1D' 1.12574014279764
+'FIM'.2025.'ICH' 1.15230363212556
+'FIM'.2025.'IIS' 1.07724574362524
+'FIM'.2025.'ILP' 0.904256529110416
+'FIM'.2025.'INF' 1.08496843972669
+'FIM'.2025.'INM' 1.02359773230075
+'FIM'.2025.'IOC' 1.28282125847531
+'FIM'.2025.'IOF' 1.29178717583931
+'FIM'.2025.'IOI' 1.33087047228589
+'FIM'.2025.'IOM' 1.32239120856226
+'FIM'.2025.'IOQ' 1.54144515481179
+'FIM'.2025.'IOT' 1.28418477738859
+'FIM'.2025.'IOW' 1.04499209275602
+'FIM'.2025.'RC1' 1.67020145205784
+'FIM'.2025.'RHB1D' 1.12574014279764
+'FIM'.2025.'RHB2D' 1.14601460192332
+'FIM'.2025.'TFRH' 1.09851614228499
+'FIM'.2025.'TFRL' 1.01465489761963
+'FIM'.2025.'TFRM' 1.13496332054346
+'FIM'.2025.'TFSN' 1.11242108581595
+'FIM'.2025.'TFTN' 1.07445560052082
+'FIM'.2025.'TPAI' 1.17788154419027
+'FIM'.2025.'TPAN' 1.11709263040807
+'FIM'.2025.'TPRB' 1.08256263986469
+'FIM'.2025.'TPRC' 1.05138234382857
+'FIM'.2025.'TPRW' 1.06519497998659
+'FIM'.2025.'TPTN' 1.19707586654327
+'FIM'.2030.'CC1' 2.19278830028212
+'FIM'.2030.'CCK' 1.29628344865506
+'FIM'.2030.'CHB1D' 1.19492518695765
+'FIM'.2030.'CLA' 1.44828423963638
+'FIM'.2030.'COE' 1.46388174253496
+'FIM'.2030.'COT' 1.38731217815734
+'FIM'.2030.'CRF' 1.30219772360897
+'FIM'.2030.'ICH' 1.16128549368039
+'FIM'.2030.'IIS' 1.09898002455551
+'FIM'.2030.'ILP' 0.869013658792735
+'FIM'.2030.'INF' 1.13250809496183
+'FIM'.2030.'INM' 1.05419595202164
+'FIM'.2030.'IOC' 1.49589167771072
+'FIM'.2030.'IOF' 1.49985323552582
+'FIM'.2030.'IOI' 1.5617192384248
+'FIM'.2030.'IOM' 1.59789768062281
+'FIM'.2030.'IOQ' 1.81734812365891
+'FIM'.2030.'IOT' 1.49055215652969
+'FIM'.2030.'IOW' 1.13409393979414
+'FIM'.2030.'RC1' 2.2819288521472
+'FIM'.2030.'RCD' 1.27084456859019
+'FIM'.2030.'RCW' 1.23071970324197
+'FIM'.2030.'RDW' 1.21291552592451
+'FIM'.2030.'REA' 1.27451985343249
+'FIM'.2030.'RHB1D' 1.16569653528765
+'FIM'.2030.'RHB2D' 1.23970936810634
+'FIM'.2030.'RK1' 1.16755618414968
+'FIM'.2030.'RL1' 1.23216824317941
+'FIM'.2030.'RRF' 1.17351354203409
+'FIM'.2030.'TFRH' 1.14828917026632
+'FIM'.2030.'TFRL' 1.01509928754002
+'FIM'.2030.'TFRM' 1.21880561186211
+'FIM'.2030.'TFSN' 1.2653910032504
+'FIM'.2030.'TFTN' 1.14087301587302
+'FIM'.2030.'TPAI' 1.27352258510772
+'FIM'.2030.'TPAN' 1.24789594491201
+'FIM'.2030.'TPRB' 1.14269472368352
+'FIM'.2030.'TPRC' 1.05192449615238
+'FIM'.2030.'TPRW' 1.09827430687889
+'FIM'.2030.'TPTN' 1.29187936348626
+'FIM'.2035.'ICH' 1.20853917828746
+'FIM'.2035.'IIS' 1.15245743625247
+'FIM'.2035.'ILP' 0.82599311255182
+'FIM'.2035.'INF' 1.14390314218274
+'FIM'.2035.'INM' 1.12056124981173
+'FIM'.2035.'IOC' 1.70435146133598
+'FIM'.2035.'IOF' 1.69384770463545
+'FIM'.2035.'IOI' 1.77121826199342
+'FIM'.2035.'IOM' 1.82587514813519
+'FIM'.2035.'IOQ' 2.07582869488102
+'FIM'.2035.'IOT' 1.68493478342941
+'FIM'.2035.'IOW' 1.35116861214089
+'FIM'.2035.'TPAI' 1.3720996961144
+'FIM'.2040.'CC1' 3.31283307854979
+'FIM'.2040.'CCK' 1.49213779235832
+'FIM'.2040.'CHB1D' 1.33306138041519
+'FIM'.2040.'CLA' 1.75550035644368
+'FIM'.2040.'COE' 1.78625318975816
+'FIM'.2040.'COT' 1.6194627830836
+'FIM'.2040.'CRF' 1.5025178665561
+'FIM'.2040.'ICH' 1.25264605571265
+'FIM'.2040.'IIS' 1.15245743625247
+'FIM'.2040.'ILP' 0.785102299693276
+'FIM'.2040.'INF' 1.15541284386107
+'FIM'.2040.'INM' 1.20314664364688
+'FIM'.2040.'IOC' 1.87379518721544
+'FIM'.2040.'IOF' 1.84588187787334
+'FIM'.2040.'IOI' 1.93840781853821
+'FIM'.2040.'IOM' 2.013247364193
+'FIM'.2040.'IOQ' 2.28796220325283
+'FIM'.2040.'IOT' 1.83790460125203
+'FIM'.2040.'IOW' 1.25283811248312
+'FIM'.2040.'RC1' 3.22797455898588
+'FIM'.2040.'RCD' 1.41526057168038
+'FIM'.2040.'RCW' 1.34856092643002
+'FIM'.2040.'RDW' 1.35074859903932
+'FIM'.2040.'REA' 1.42429306393598
+'FIM'.2040.'RHB1D' 1.24372041191542
+'FIM'.2040.'RHB2D' 1.35177070191167
+'FIM'.2040.'RK1' 1.27723738971867
+'FIM'.2040.'RL1' 1.36266711320998
+'FIM'.2040.'RRF' 1.2867289011503
+'FIM'.2040.'TFRH' 1.19220737879044
+'FIM'.2040.'TFRL' 1.04956107714924
+'FIM'.2040.'TFRM' 1.26671412027535
+'FIM'.2040.'TFSN' 1.29622174184261
+'FIM'.2040.'TFTN' 1.14087301587302
+'FIM'.2040.'TPAI' 1.39698895458179
+'FIM'.2040.'TPAN' 1.24789594491201
+'FIM'.2040.'TPRB' 1.17998345404782
+'FIM'.2040.'TPRC' 1.04992024869072
+'FIM'.2040.'TPRW' 1.15340643731511
+'FIM'.2040.'TPTN' 1.48866159095488
+'FIM'.2050.'CC1' 4.32331792181825
+'FIM'.2050.'CCK' 1.64431524385904
+'FIM'.2050.'CHB1D' 1.47252909533782
+'FIM'.2050.'CLA' 1.98109421222629
+'FIM'.2050.'COE' 2.04794823080206
+'FIM'.2050.'COT' 1.78462562554497
+'FIM'.2050.'CRF' 1.65575394229776
+'FIM'.2050.'ICH' 1.34100010557822
+'FIM'.2050.'IIS' 1.15245743625247
+'FIM'.2050.'ILP' 0.708819789060997
+'FIM'.2050.'INF' 1.18086515542328
+'FIM'.2050.'INM' 1.35511471587691
+'FIM'.2050.'IOC' 2.19380236499351
+'FIM'.2050.'IOF' 2.09072537932503
+'FIM'.2050.'IOI' 2.25493842723798
+'FIM'.2050.'IOM' 2.31262940221328
+'FIM'.2050.'IOQ' 2.68816764049922
+'FIM'.2050.'IOT' 2.0840514563645
+'FIM'.2050.'IOW' 1.37158228517209
+'FIM'.2050.'RC1' 4.26784723360845
+'FIM'.2050.'RCD' 1.52921275945951
+'FIM'.2050.'RCW' 1.44914680281554
+'FIM'.2050.'RDW' 1.45950649216522
+'FIM'.2050.'REA' 1.55213422578995
+'FIM'.2050.'RHB1D' 1.32039104187104
+'FIM'.2050.'RHB2D' 1.4145619020148
+'FIM'.2050.'RK1' 1.36601280979481
+'FIM'.2050.'RL1' 1.47060285009013
+'FIM'.2050.'RRF' 1.37616403642214
+'FIM'.2050.'TFRH' 1.17105030922189
+'FIM'.2050.'TFRL' 1.07110281243285
+'FIM'.2050.'TFRM' 1.25774006604522
+'FIM'.2050.'TFSN' 1.32783099521913
+'FIM'.2050.'TFTN' 1.14087301587302
+'FIM'.2050.'TPAI' 1.62741178457387
+'FIM'.2050.'TPAN' 1.24789594491201
+'FIM'.2050.'TPRB' 1.3267888943691
+'FIM'.2050.'TPRC' 1.03471579136391
+'FIM'.2050.'TPRW' 1.19998606136096
+'FIM'.2050.'TPTN' 1.70880617714598
+'FIM'.2070.'CC1' 4.93885166771677
+'FIM'.2070.'CCK' 1.69292582030141
+'FIM'.2070.'CHB1D' 1.57875050011783
+'FIM'.2070.'CLA' 2.05426464298923
+'FIM'.2070.'COE' 2.13369215841589
+'FIM'.2070.'COT' 1.83738417091244
+'FIM'.2070.'CRF' 1.70470267878999
+'FIM'.2070.'ICH' 1.50676512265158
+'FIM'.2070.'IIS' 1.15245743625247
+'FIM'.2070.'ILP' 0.708819789060997
+'FIM'.2070.'INF' 1.22810052788929
+'FIM'.2070.'INM' 1.66077340857361
+'FIM'.2070.'IOC' 2.64656889497236
+'FIM'.2070.'IOF' 2.35627704770889
+'FIM'.2070.'IOI' 2.69963614398317
+'FIM'.2070.'IOM' 2.64184047974345
+'FIM'.2070.'IOQ' 3.25660644180015
+'FIM'.2070.'IOT' 2.35131325181413
+'FIM'.2070.'IOW' 1.50158104726659
+'FIM'.2070.'RC1' 4.64079617270385
+'FIM'.2070.'RCD' 1.56515504217506
+'FIM'.2070.'RCW' 1.48076085927337
+'FIM'.2070.'RDW' 1.49381041399826
+'FIM'.2070.'REA' 1.59267898765719
+'FIM'.2070.'RHB1D' 1.37685572352254
+'FIM'.2070.'RHB2D' 1.46024324750359
+'FIM'.2070.'RK1' 1.39382970697728
+'FIM'.2070.'RL1' 1.50462090618258
+'FIM'.2070.'RRF' 1.40418764881645
+'FIM'.2070.'TFRH' 1.17105030922189
+'FIM'.2070.'TFRL' 1.07110281243285
+'FIM'.2070.'TFRM' 1.25774006604522
+'FIM'.2070.'TFSN' 1.37338311141599
+'FIM'.2070.'TFTN' 1.14087301587302
+'FIM'.2070.'TPAI' 1.62741178457387
+'FIM'.2070.'TPAN' 1.24789594491201
+'FIM'.2070.'TPRB' 1.51616356069637
+'FIM'.2070.'TPRC' 0.994989479810617
+'FIM'.2070.'TPRW' 1.19437229194665
+'FIM'.2070.'TPTN' 2.07275683588467
+'FIN'.0.'AGR' 2019
+'FIN'.2010.'AGR' 1
+'FIN'.2010.'CC1' 1
+'FIN'.2010.'CCK' 1
+'FIN'.2010.'CHB1D' 1
+'FIN'.2010.'CLA' 1
+'FIN'.2010.'COE' 1
+'FIN'.2010.'COT' 1
+'FIN'.2010.'CRF' 1
+'FIN'.2010.'ICH' 1
+'FIN'.2010.'IIS' 1
+'FIN'.2010.'ILP' 1
+'FIN'.2010.'ILPNFR' 0
+'FIN'.2010.'INF' 1
+'FIN'.2010.'INM' 1
+'FIN'.2010.'IOC' 1
+'FIN'.2010.'IOF' 1
+'FIN'.2010.'IOI' 1
+'FIN'.2010.'IOM' 1
+'FIN'.2010.'IOQ' 1
+'FIN'.2010.'IOT' 1
+'FIN'.2010.'IOW' 1
+'FIN'.2010.'RC1' 1
+'FIN'.2010.'RCD' 1
+'FIN'.2010.'RCW' 1
+'FIN'.2010.'RDW' 1
+'FIN'.2010.'REA' 1
+'FIN'.2010.'RHB1D' 1
+'FIN'.2010.'RHB2D' 1
+'FIN'.2010.'RK1' 1
+'FIN'.2010.'RL1' 1
+'FIN'.2010.'RRF' 1
+'FIN'.2010.'TFRH' 1
+'FIN'.2010.'TFRL' 1
+'FIN'.2010.'TFRM' 1
+'FIN'.2010.'TFSN' 1
+'FIN'.2010.'TFTN' 1
+'FIN'.2010.'TPAI' 1
+'FIN'.2010.'TPAN' 1
+'FIN'.2010.'TPRB' 1
+'FIN'.2010.'TPRC' 1
+'FIN'.2010.'TPRW' 1
+'FIN'.2010.'TPTN' 1
+'FIN'.2017.'AGR' 1
+'FIN'.2017.'CC1' 1
+'FIN'.2017.'CCK' 1
+'FIN'.2017.'CHB1D' 1
+'FIN'.2017.'CLA' 1
+'FIN'.2017.'COE' 1
+'FIN'.2017.'COT' 1
+'FIN'.2017.'CRF' 1
+'FIN'.2017.'ICH' 1
+'FIN'.2017.'IIS' 1
+'FIN'.2017.'ILP' 1
+'FIN'.2017.'ILPNFR' 1
+'FIN'.2017.'INF' 1
+'FIN'.2017.'INM' 1
+'FIN'.2017.'IOC' 1
+'FIN'.2017.'IOF' 1
+'FIN'.2017.'IOI' 1
+'FIN'.2017.'IOM' 1
+'FIN'.2017.'IOQ' 1
+'FIN'.2017.'IOT' 1
+'FIN'.2017.'IOW' 1
+'FIN'.2017.'RC1' 1
+'FIN'.2017.'RCD' 1
+'FIN'.2017.'RCW' 1
+'FIN'.2017.'RDW' 1
+'FIN'.2017.'REA' 1
+'FIN'.2017.'RHB1D' 1
+'FIN'.2017.'RHB2D' 1
+'FIN'.2017.'RK1' 1
+'FIN'.2017.'RL1' 1
+'FIN'.2017.'RRF' 1
+'FIN'.2017.'TFRH' 1
+'FIN'.2017.'TFRL' 1
+'FIN'.2017.'TFRM' 1
+'FIN'.2017.'TFSN' 1
+'FIN'.2017.'TFTN' 1
+'FIN'.2017.'TPAI' 1
+'FIN'.2017.'TPAN' 1
+'FIN'.2017.'TPRB' 1
+'FIN'.2017.'TPRC' 1
+'FIN'.2017.'TPRW' 1
+'FIN'.2017.'TPTN' 1
+'FIN'.2020.'AGR' 0.009
+'FIN'.2020.'CC1' 1.20073317356941
+'FIN'.2020.'CCK' 1.05845597923208
+'FIN'.2020.'CHB1D' 1.02513216616065
+'FIN'.2020.'CLA' 1.08984072524111
+'FIN'.2020.'COE' 1.09431579451556
+'FIN'.2020.'COT' 1.08312376409092
+'FIN'.2020.'CRF' 1.05845597923208
+'FIN'.2020.'ICH' 1.05433676800272
+'FIN'.2020.'IIS' 1.04798412191203
+'FIN'.2020.'ILP' 0.940928674901114
+'FIN'.2020.'ILPNFR' 1
+'FIN'.2020.'INF' 1.03942437183431
+'FIN'.2020.'INM' 1.01896462237611
+'FIN'.2020.'IOC' 1.06101473629812
+'FIN'.2020.'IOF' 1.07305612661148
+'FIN'.2020.'IOI' 1.09385028448857
+'FIN'.2020.'IOM' 1.05550478267828
+'FIN'.2020.'IOQ' 1.26097736896226
+'FIN'.2020.'IOT' 1.06708035123158
+'FIN'.2020.'IOW' 1.01795692787621
+'FIN'.2020.'RC1' 1.20423848421216
+'FIN'.2020.'RCD' 1.04530132637179
+'FIN'.2020.'RCW' 1.0370503969146
+'FIN'.2020.'RDW' 1.02736720976333
+'FIN'.2020.'REA' 1.04226852740801
+'FIN'.2020.'RHB1D' 1.0323829121195
+'FIN'.2020.'RHB2D' 1.01513435011438
+'FIN'.2020.'RK1' 1.019158663763
+'FIN'.2020.'RL1' 1.03170685373813
+'FIN'.2020.'RRF' 1.0205268932251
+'FIN'.2020.'TFRH' 1.04202779962465
+'FIN'.2020.'TFRL' 1.0187905726689
+'FIN'.2020.'TFRM' 1.04202779962465
+'FIN'.2020.'TFSN' 0.938046126723088
+'FIN'.2020.'TFTN' 1.01190476190476
+'FIN'.2020.'TPAI' 0.583572129786724
+'FIN'.2020.'TPAN' 0.6
+'FIN'.2020.'TPRB' 0.998371444685472
+'FIN'.2020.'TPRC' 1.03480103761659
+'FIN'.2020.'TPRW' 1.01960829562624
+'FIN'.2020.'TPTN' 1.00304030379436
+'FIN'.2025.'AGR' 0.0075
+'FIN'.2025.'CHB1D' 1.06603640045121
+'FIN'.2025.'ICH' 1.15230363212556
+'FIN'.2025.'IIS' 1.07724574362524
+'FIN'.2025.'ILP' 0.904256529110416
+'FIN'.2025.'INF' 1.08496843972669
+'FIN'.2025.'INM' 1.02359773230075
+'FIN'.2025.'IOC' 1.28282125847531
+'FIN'.2025.'IOF' 1.29178717583931
+'FIN'.2025.'IOI' 1.33087047228589
+'FIN'.2025.'IOM' 1.32239120856226
+'FIN'.2025.'IOQ' 1.54144515481179
+'FIN'.2025.'IOT' 1.28418477738859
+'FIN'.2025.'IOW' 1.04499209275602
+'FIN'.2025.'RC1' 1.60948901023202
+'FIN'.2025.'RHB1D' 1.08626453437051
+'FIN'.2025.'RHB2D' 1.04420487101896
+'FIN'.2025.'TFRH' 1.09851614228499
+'FIN'.2025.'TFRL' 1.01465489761963
+'FIN'.2025.'TFRM' 1.13496332054346
+'FIN'.2025.'TFSN' 1.11242108581595
+'FIN'.2025.'TFTN' 1.07445560052082
+'FIN'.2025.'TPAI' 1.17788154419027
+'FIN'.2025.'TPAN' 1.11709263040807
+'FIN'.2025.'TPRB' 1.0225507401
+'FIN'.2025.'TPRC' 1.04724466822834
+'FIN'.2025.'TPRW' 1.03143186477616
+'FIN'.2025.'TPTN' 0.996698890331019
+'FIN'.2030.'AGR' 0.006
+'FIN'.2030.'CC1' 2.03676397505985
+'FIN'.2030.'CCK' 1.2441835837437
+'FIN'.2030.'CHB1D' 1.1109656786298
+'FIN'.2030.'CLA' 1.38414266499181
+'FIN'.2030.'COE' 1.40756321451331
+'FIN'.2030.'COT' 1.33382602356891
+'FIN'.2030.'CRF' 1.2441835837437
+'FIN'.2030.'ICH' 1.16128549368039
+'FIN'.2030.'IIS' 1.09898002455551
+'FIN'.2030.'ILP' 0.869013658792735
+'FIN'.2030.'ILPNFR' 1
+'FIN'.2030.'INF' 1.13250809496183
+'FIN'.2030.'INM' 1.05419595202164
+'FIN'.2030.'IOC' 1.49589167771072
+'FIN'.2030.'IOF' 1.49985323552582
+'FIN'.2030.'IOI' 1.5617192384248
+'FIN'.2030.'IOM' 1.59789768062281
+'FIN'.2030.'IOQ' 1.81734812365891
+'FIN'.2030.'IOT' 1.49055215652969
+'FIN'.2030.'IOW' 1.13409393979414
+'FIN'.2030.'RC1' 2.1511145076487
+'FIN'.2030.'RCD' 1.19576808651101
+'FIN'.2030.'RCW' 1.15790184172888
+'FIN'.2030.'RDW' 1.14102177545647
+'FIN'.2030.'REA' 1.21756592056128
+'FIN'.2030.'RHB1D' 1.1441117064019
+'FIN'.2030.'RHB2D' 1.07228929962283
+'FIN'.2030.'RK1' 1.10666668161872
+'FIN'.2030.'RL1' 1.16805918256825
+'FIN'.2030.'RRF' 1.11232893727278
+'FIN'.2030.'TFRH' 1.14828917026632
+'FIN'.2030.'TFRL' 1.01509928754002
+'FIN'.2030.'TFRM' 1.21880561186211
+'FIN'.2030.'TFSN' 1.2653910032504
+'FIN'.2030.'TFTN' 1.14087301587302
+'FIN'.2030.'TPAI' 1.27352258510772
+'FIN'.2030.'TPAN' 1.24789594491201
+'FIN'.2030.'TPRB' 1.04087458894313
+'FIN'.2030.'TPRC' 1.06242483237718
+'FIN'.2030.'TPRW' 1.04792719780286
+'FIN'.2030.'TPTN' 0.998198708500169
+'FIN'.2035.'ICH' 1.20853917828746
+'FIN'.2035.'IIS' 1.15245743625247
+'FIN'.2035.'ILP' 0.82599311255182
+'FIN'.2035.'INF' 1.14390314218274
+'FIN'.2035.'INM' 1.12056124981173
+'FIN'.2035.'IOC' 1.70435146133598
+'FIN'.2035.'IOF' 1.69384770463545
+'FIN'.2035.'IOI' 1.77121826199342
+'FIN'.2035.'IOM' 1.82587514813519
+'FIN'.2035.'IOQ' 2.07582869488102
+'FIN'.2035.'IOT' 1.68493478342941
+'FIN'.2035.'IOW' 1.35116861214089
+'FIN'.2035.'TPAI' 1.3720996961144
+'FIN'.2040.'AGR' 0.004
+'FIN'.2040.'CC1' 2.95742840630518
+'FIN'.2040.'CCK' 1.4018114139985
+'FIN'.2040.'CHB1D' 1.20295482462757
+'FIN'.2040.'CLA' 1.6382885079303
+'FIN'.2040.'COE' 1.68246364390681
+'FIN'.2040.'COT' 1.52523483897286
+'FIN'.2040.'CRF' 1.4018114139985
+'FIN'.2040.'ICH' 1.25264605571265
+'FIN'.2040.'IIS' 1.15245743625247
+'FIN'.2040.'ILP' 0.785102299693276
+'FIN'.2040.'ILPNFR' 1
+'FIN'.2040.'INF' 1.15541284386107
+'FIN'.2040.'INM' 1.20314664364688
+'FIN'.2040.'IOC' 1.87379518721544
+'FIN'.2040.'IOF' 1.84588187787334
+'FIN'.2040.'IOI' 1.93840781853821
+'FIN'.2040.'IOM' 2.013247364193
+'FIN'.2040.'IOQ' 2.28796220325283
+'FIN'.2040.'IOT' 1.83790460125203
+'FIN'.2040.'IOW' 1.25283811248312
+'FIN'.2040.'RC1' 2.9478683357777
+'FIN'.2040.'RCD' 1.29005277771583
+'FIN'.2040.'RCW' 1.22913535962655
+'FIN'.2040.'RDW' 1.23098979431436
+'FIN'.2040.'REA' 1.3286410002227
+'FIN'.2040.'RHB1D' 1.23102674691098
+'FIN'.2040.'RHB2D' 1.16637669027033
+'FIN'.2040.'RK1' 1.17747081240505
+'FIN'.2040.'RL1' 1.25638890266678
+'FIN'.2040.'RRF' 1.18623754692233
+'FIN'.2040.'TFRH' 1.19220737879044
+'FIN'.2040.'TFRL' 1.04956107714924
+'FIN'.2040.'TFRM' 1.26671412027535
+'FIN'.2040.'TFSN' 1.29622174184261
+'FIN'.2040.'TFTN' 1.14087301587302
+'FIN'.2040.'TPAI' 1.39698895458179
+'FIN'.2040.'TPAN' 1.24789594491201
+'FIN'.2040.'TPRB' 1.04937687759806
+'FIN'.2040.'TPRC' 1.08330892369117
+'FIN'.2040.'TPRW' 1.08940387685618
+'FIN'.2040.'TPTN' 0.989948958897078
+'FIN'.2050.'AGR' 0.003
+'FIN'.2050.'CC1' 3.74898589438477
+'FIN'.2050.'CCK' 1.51808088871911
+'FIN'.2050.'CHB1D' 1.29731094167041
+'FIN'.2050.'CLA' 1.81686960824807
+'FIN'.2050.'COE' 1.8956179542005
+'FIN'.2050.'COT' 1.65174133748047
+'FIN'.2050.'CRF' 1.51808088871911
+'FIN'.2050.'ICH' 1.34100010557822
+'FIN'.2050.'IIS' 1.15245743625247
+'FIN'.2050.'ILP' 0.708819789060997
+'FIN'.2050.'ILPNFR' 1
+'FIN'.2050.'INF' 1.18086515542328
+'FIN'.2050.'INM' 1.35511471587691
+'FIN'.2050.'IOC' 2.19380236499351
+'FIN'.2050.'IOF' 2.09072537932503
+'FIN'.2050.'IOI' 2.25493842723798
+'FIN'.2050.'IOM' 2.31262940221328
+'FIN'.2050.'IOQ' 2.68816764049922
+'FIN'.2050.'IOT' 2.0840514563645
+'FIN'.2050.'IOW' 1.37158228517209
+'FIN'.2050.'RC1' 3.81904000374502
+'FIN'.2050.'RCD' 1.36586050294718
+'FIN'.2050.'RCW' 1.2942223231949
+'FIN'.2050.'RDW' 1.30332678525143
+'FIN'.2050.'REA' 1.42287495320339
+'FIN'.2050.'RHB1D' 1.3088582778196
+'FIN'.2050.'RHB2D' 1.28759465851356
+'FIN'.2050.'RK1' 1.23754918120772
+'FIN'.2050.'RL1' 1.33247444495699
+'FIN'.2050.'RRF' 1.24676322287179
+'FIN'.2050.'TFRH' 1.17105030922189
+'FIN'.2050.'TFRL' 1.07110281243285
+'FIN'.2050.'TFRM' 1.25774006604522
+'FIN'.2050.'TFSN' 1.32783099521913
+'FIN'.2050.'TFTN' 1.14087301587302
+'FIN'.2050.'TPAI' 1.62741178457387
+'FIN'.2050.'TPAN' 1.24789594491201
+'FIN'.2050.'TPRB' 1.05013051996988
+'FIN'.2050.'TPRC' 1.1033383868661
+'FIN'.2050.'TPRW' 1.13832020274298
+'FIN'.2050.'TPTN' 0.982435489187668
+'FIN'.2070.'AGR' 0.002
+'FIN'.2070.'CC1' 5.04934042133763
+'FIN'.2070.'CCK' 1.67732085975744
+'FIN'.2070.'CHB1D' 1.36773013219312
+'FIN'.2070.'CLA' 2.06823243566023
+'FIN'.2070.'COE' 2.20116150828284
+'FIN'.2070.'COT' 1.82500169843866
+'FIN'.2070.'CRF' 1.67732085975744
+'FIN'.2070.'ICH' 1.50676512265158
+'FIN'.2070.'IIS' 1.15245743625247
+'FIN'.2070.'ILP' 0.708819789060997
+'FIN'.2070.'INF' 1.22810052788929
+'FIN'.2070.'INM' 1.66077340857361
+'FIN'.2070.'IOC' 2.64656889497236
+'FIN'.2070.'IOF' 2.35627704770889
+'FIN'.2070.'IOI' 2.69963614398317
+'FIN'.2070.'IOM' 2.64184047974345
+'FIN'.2070.'IOQ' 3.25660644180015
+'FIN'.2070.'IOT' 2.35131325181413
+'FIN'.2070.'IOW' 1.50158104726659
+'FIN'.2070.'RC1' 4.97311140350827
+'FIN'.2070.'RCD' 1.4476216053458
+'FIN'.2070.'RCW' 1.36388174782514
+'FIN'.2070.'RDW' 1.381344587595
+'FIN'.2070.'REA' 1.52519785525633
+'FIN'.2070.'RHB1D' 1.36625013689049
+'FIN'.2070.'RHB2D' 1.37986754686963
+'FIN'.2070.'RK1' 1.30167685030117
+'FIN'.2070.'RL1' 1.41413548713575
+'FIN'.2070.'RRF' 1.31136834774948
+'FIN'.2070.'TFRH' 1.17105030922189
+'FIN'.2070.'TFRL' 1.07110281243285
+'FIN'.2070.'TFRM' 1.25774006604522
+'FIN'.2070.'TFSN' 1.37338311141599
+'FIN'.2070.'TFTN' 1.14087301587302
+'FIN'.2070.'TPAI' 1.62741178457387
+'FIN'.2070.'TPAN' 1.24789594491201
+'FIN'.2070.'TPRB' 1.01224963250063
+'FIN'.2070.'TPRC' 1.10896273655033
+'FIN'.2070.'TPRW' 1.13987937076322
+'FIN'.2070.'TPTN' 0.958621552665234
+/;
+
+PARAMETER
+
+COM_TAXNET ' '/
+'FIM'.0.'TRACO2B'.ANNUAL.'EUR15' 5
+'FIM'.2025.'TRACO2B'.ANNUAL.'EUR15' 0.02
+'FIM'.2030.'TRACO2B'.ANNUAL.'EUR15' 0.025
+'FIM'.2035.'TRACO2B'.ANNUAL.'EUR15' 0.03
+'FIM'.2040.'TRACO2B'.ANNUAL.'EUR15' 0.04
+'FIM'.2045.'TRACO2B'.ANNUAL.'EUR15' 0.05
+'FIM'.2050.'TRACO2B'.ANNUAL.'EUR15' 0.06
+'FIN'.0.'TRACO2B'.ANNUAL.'EUR15' 5
+'FIN'.2025.'TRACO2B'.ANNUAL.'EUR15' 0.02
+'FIN'.2030.'TRACO2B'.ANNUAL.'EUR15' 0.025
+'FIN'.2035.'TRACO2B'.ANNUAL.'EUR15' 0.03
+'FIN'.2040.'TRACO2B'.ANNUAL.'EUR15' 0.04
+'FIN'.2045.'TRACO2B'.ANNUAL.'EUR15' 0.05
+'FIN'.2050.'TRACO2B'.ANNUAL.'EUR15' 0.06
+/;
+
+PARAMETER
+
+FLO_BND ' '/
+'FIM'.0.'IMPBIOFIM'.'BIOCRP'.ANNUAL.UP 5
+'FIM'.0.'IMPBIOFIM'.'BIOWOO'.ANNUAL.UP 5
+'FIM'.0.'IMPCOAFIM'.'COABCO'.ANNUAL.UP 5
+'FIM'.2015.'IMPCOAFIM'.'COABCO'.ANNUAL.UP 1.7
+'FIM'.2020.'IMPBIOFIM'.'BIOWOO'.ANNUAL.UP 6.84
+'FIM'.2030.'IMPBIOFIM'.'BIOCRP'.ANNUAL.UP 4.9
+'FIM'.2030.'IMPBIOFIM'.'BIOWOO'.ANNUAL.UP 9.36
+'FIM'.2040.'IMPBIOFIM'.'BIOWOO'.ANNUAL.UP 14.4
+'FIM'.2050.'IMPBIOFIM'.'BIOCRP'.ANNUAL.UP 7
+'FIM'.2050.'IMPBIOFIM'.'BIOWOO'.ANNUAL.UP 21.6
+'FIN'.0.'UTRNREFX00'.'UPNREFC'.ANNUAL.LO 5
+'FIN'.0.'UTRNREFX00'.'UPNREFC'.ANNUAL.UP 5
+'FIN'.2010.'UTRNREFX00'.'UPNREFC'.ANNUAL.LO 96
+'FIN'.2010.'UTRNREFX00'.'UPNREFC'.ANNUAL.UP 100
+'FIN'.2015.'UTRNREFX00'.'UPNREFC'.ANNUAL.LO 95
+'FIN'.2020.'UTRNREFX00'.'UPNREFC'.ANNUAL.LO 90
+'FIN'.2030.'UTRNREFX00'.'UPNREFC'.ANNUAL.LO 84
+'FIN'.2040.'UTRNREFX00'.'UPNREFC'.ANNUAL.LO 60.48
+'FIN'.2050.'UTRNREFX00'.'UPNREFC'.ANNUAL.LO 36.96
+/;
+
+PARAMETER
+
+FLO_COST ' '/
+'FIM'.2010.'ESTMOIL005'.'INDBFO'.ANNUAL.'EUR10' 0.5
+'FIM'.2010.'IMPBIOFIM'.'BIOCRP'.ANNUAL.'EUR10' 0.6
+'FIM'.2010.'IMPBIOFIM'.'BIOSLD'.ANNUAL.'EUR10' 0.9
+'FIM'.2010.'IMPCOAFIM'.'COABCO'.ANNUAL.'EUR10' 0.694444444444444
+'FIM'.2025.'RESWLF000'.'BIOBMU'.ANNUAL.'EUR10' 1
+'FIN'.2010.'ESTMOIL005'.'INDBFO'.ANNUAL.'EUR10' 0.5
+'FIN'.2025.'RESWLF000'.'BIOBMU'.ANNUAL.'EUR10' 1
+/;
+
+PARAMETER
+
+FLO_DELIV ' '/
+'FIM'.2015.'FT-ELCHCO1'.'COAHCO'.ANNUAL.'EUR10' 0.74
+'FIN'.2015.'FT-ELCHCO1'.'COAHCO'.ANNUAL.'EUR10' 0.74
+/;
+
+PARAMETER
+
+FLO_EMIS ' '/
+'FIM'.2010.'FT-ELCBIO0'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIM'.2010.'FT-ELCBIO11'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIM'.2010.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIM'.2010.'FT-INDBIO0'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIM'.2010.'FT-INDBIO5'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIM'.2010.'FT-INDBSL0'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIM'.2010.'I00000'.'ACT'.'INDCO2P'.ANNUAL 96
+'FIM'.2010.'ICHBTX005'.'ACT'.'INDCO2N'.ANNUAL 15.331875
+'FIM'.2010.'ICHMTHCOA005'.'ACT'.'INDCO2N'.ANNUAL 2.115
+'FIM'.2010.'ICHMTHNGA005'.'ACT'.'INDCO2N'.ANNUAL 1.26
+'FIM'.2010.'ICHOLFETH005'.'ACT'.'INDCO2N'.ANNUAL 6.45075
+'FIM'.2010.'ICHOLFMET005'.'ACT'.'INDCO2N'.ANNUAL 10.945125
+'FIM'.2010.'ICHOLFNAP005'.'ACT'.'INDCO2N'.ANNUAL 7.71975
+'FIM'.2010.'NEO000'.'COAHCO'.'INDCO2N'.ANNUAL 10.6425
+'FIM'.2010.'NEO000'.'COAOVC'.'INDCO2N'.ANNUAL 11.79675
+'FIM'.2010.'NEO000'.'INDCO2N'.'NONCO2T'.ANNUAL 1
+'FIM'.2010.'NEO000'.'OILASP'.'INDCO2N'.ANNUAL 0
+'FIM'.2010.'NEO000'.'OILLUB'.'INDCO2N'.ANNUAL 4.168125
+'FIM'.2010.'NEO000'.'OILNSP'.'INDCO2N'.ANNUAL 8.24625
+'FIM'.2010.'NEO000'.'OILPTC'.'INDCO2N'.ANNUAL 10.96875
+'FIM'.2010.'NEO000'.'OILWAX'.'INDCO2N'.ANNUAL 9.07875
+'FIM'.2010.'NEO000'.'OILWSP'.'INDCO2N'.ANNUAL 8.24625
+'FIM'.2015.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIM'.2015.'I00000'.'ACT'.'INDCO2P'.ANNUAL 80
+'FIM'.2020.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIM'.2020.'I00000'.'ACT'.'INDCO2P'.ANNUAL 80
+'FIM'.2025.'UFTSYNBREF'.'BIOBSL'.'SNKBIOREF'.ANNUAL 0
+'FIM'.2030.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIM'.2030.'I00000'.'ACT'.'INDCO2P'.ANNUAL 80
+'FIN'.2010.'ACULAND'.'AGRLAND'.'AGRCO2P'.ANNUAL 0.126387176325524
+'FIN'.2010.'ACULAND'.'AGRLAND'.'AGRN2OP'.ANNUAL 2.41273291819386
+'FIN'.2010.'FT-ELCBIO0'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIN'.2010.'FT-ELCBIO11'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIN'.2010.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIN'.2010.'FT-INDBIO0'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIN'.2010.'FT-INDBIO5'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIN'.2010.'FT-INDBSL0'.'BIOWOO'.'BWENET'.ANNUAL 1
+'FIN'.2010.'I00000'.'ACT'.'INDCO2P'.ANNUAL 0
+'FIN'.2010.'I00000'.'ACT'.'NONCO2T'.ANNUAL 0
+'FIN'.2010.'ICH000'.'ACT'.'INDCO2P'.ANNUAL 135.168539325843
+'FIN'.2010.'ICH000'.'INDCO2P'.'NONCO2T'.ANNUAL 1
+'FIN'.2010.'ICHBTX005'.'ACT'.'INDCO2N'.ANNUAL 15.331875
+'FIN'.2010.'ICHMTHCOA005'.'ACT'.'INDCO2N'.ANNUAL 2.115
+'FIN'.2010.'ICHMTHNGA005'.'ACT'.'INDCO2N'.ANNUAL 1.26
+'FIN'.2010.'ICHOLFETH005'.'ACT'.'INDCO2N'.ANNUAL 6.45075
+'FIN'.2010.'ICHOLFMET005'.'ACT'.'INDCO2N'.ANNUAL 10.945125
+'FIN'.2010.'ICHOLFNAP005'.'ACT'.'INDCO2N'.ANNUAL 7.71975
+'FIN'.2010.'IMPBIOTRDY'.'ACT'.'BWENET'.ANNUAL 1
+'FIN'.2010.'INMCRM000'.'ACT'.'INDCO2P'.ANNUAL 201.818181818182
+'FIN'.2010.'INMCRM000'.'INDCO2P'.'NONCO2T'.ANNUAL 1
+'FIN'.2010.'NEO000'.'COAHCO'.'INDCO2N'.ANNUAL 10.6425
+'FIN'.2010.'NEO000'.'COAOVC'.'INDCO2N'.ANNUAL 11.79675
+'FIN'.2010.'NEO000'.'INDCO2N'.'NONCO2T'.ANNUAL 1
+'FIN'.2010.'NEO000'.'OILASP'.'INDCO2N'.ANNUAL 0
+'FIN'.2010.'NEO000'.'OILLUB'.'INDCO2N'.ANNUAL 4.168125
+'FIN'.2010.'NEO000'.'OILNSP'.'INDCO2N'.ANNUAL 8.24625
+'FIN'.2010.'NEO000'.'OILPTC'.'INDCO2N'.ANNUAL 10.96875
+'FIN'.2010.'NEO000'.'OILWAX'.'INDCO2N'.ANNUAL 9.07875
+'FIN'.2010.'NEO000'.'OILWSP'.'INDCO2N'.ANNUAL 8.24625
+'FIN'.2015.'ACULAND'.'AGRLAND'.'AGRCO2P'.ANNUAL 0.114540288320976
+'FIN'.2015.'ACULAND'.'AGRLAND'.'AGRN2OP'.ANNUAL 2.46803275667887
+'FIN'.2015.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIN'.2015.'I00000'.'ACT'.'INDCO2P'.ANNUAL -129.760701097619
+'FIN'.2015.'I00000'.'ACT'.'NONCO2T'.ANNUAL -129.760701097619
+'FIN'.2015.'ICH000'.'ACT'.'INDCO2P'.ANNUAL 137.87191011236
+'FIN'.2020.'ACULAND'.'AGRLAND'.'AGRCO2P'.ANNUAL 0.115025906735751
+'FIN'.2020.'ACULAND'.'AGRLAND'.'AGRN2OP'.ANNUAL 2.52333259516387
+'FIN'.2020.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIN'.2020.'I00000'.'ACT'.'INDCO2P'.ANNUAL -123.235932779456
+'FIN'.2020.'I00000'.'ACT'.'NONCO2T'.ANNUAL -123.235932779456
+'FIN'.2025.'UFTSYNBREF'.'BIOBSL'.'SNKBIOREF'.ANNUAL 0
+'FIN'.2030.'ACULAND'.'AGRLAND'.'AGRCO2P'.ANNUAL 0.116842105263158
+'FIN'.2030.'ACULAND'.'AGRLAND'.'AGRN2OP'.ANNUAL 2.64949922492207
+'FIN'.2030.'FT-ELCBMU0'.'ACT'.'NONCO2T'.ANNUAL 40
+'FIN'.2030.'I00000'.'ACT'.'INDCO2P'.ANNUAL -113.817031722054
+'FIN'.2030.'I00000'.'ACT'.'NONCO2T'.ANNUAL -113.817031722054
+'FIN'.2030.'ICH000'.'ACT'.'INDCO2P'.ANNUAL 144.765505617978
+'FIN'.2040.'ACULAND'.'AGRLAND'.'AGRCO2P'.ANNUAL 0.116842105263158
+'FIN'.2040.'ACULAND'.'AGRLAND'.'AGRN2OP'.ANNUAL 2.64949922492207
+'FIN'.2050.'ICH000'.'ACT'.'INDCO2P'.ANNUAL 144.765505617978
+/;
+
+PARAMETER
+
+FLO_MARK ' '/
+'FIM'.0.'FT-TRAGSL5'.'TRAGSL'.FX 1
+'FIM'.0.'FT-TRAGSL5'.'TRAGSL'.LO 11
+'FIM'.0.'FT-TRAGSL5'.'TRAGSL'.UP 5
+'FIM'.2020.'FT-TRAGSL5'.'TRAGSL'.LO 0.125
+'FIM'.2020.'FT-TRAGSL5'.'TRAGSL'.UP 0.13
+'FIM'.2030.'FT-TRAGSL5'.'TRAGSL'.LO 0.125
+'FIM'.2030.'FT-TRAGSL5'.'TRAGSL'.UP 0.15
+'FIM'.2040.'FT-TRAGSL5'.'TRAGSL'.UP 0.25
+'FIM'.2050.'FT-TRAGSL5'.'TRAGSL'.UP 0.33
+'FIN'.0.'CH1ELC005'.'CH1'.LO 5
+'FIN'.0.'FT-TRAGSL5'.'TRAGSL'.FX 1
+'FIN'.0.'FT-TRAGSL5'.'TRAGSL'.LO 11
+'FIN'.0.'FT-TRAGSL5'.'TRAGSL'.UP 5
+'FIN'.0.'ILPPUC115'.'ILPCSB'.LO 5
+'FIN'.0.'ILPPUC215'.'ILPCHB'.LO 5
+'FIN'.0.'ILPPUC315'.'ILPCSB'.LO 5
+'FIN'.0.'ILPPUC415'.'ILPCHB'.LO 5
+'FIN'.0.'ILPPUC515'.'ILPNFR'.LO 5
+'FIN'.0.'IN2ONIT03'.'INDNIT'.FX 10
+'FIN'.0.'IOOINGA005'.'IOOI'.UP 5
+'FIN'.0.'RH1ELC005'.'RH1'.LO 5
+'FIN'.0.'RH2ELC005'.'RH2'.LO 5
+'FIN'.2010.'ONOE000'.'ONO'.UP 0.04
+'FIN'.2017.'IN2ONIT03'.'INDNIT'.FX 1
+'FIN'.2020.'CH1ELC005'.'CH1'.LO 0.0962477984096854
+'FIN'.2020.'FT-TRAGSL5'.'TRAGSL'.LO 0.125
+'FIN'.2020.'FT-TRAGSL5'.'TRAGSL'.UP 0.13
+'FIN'.2020.'ILPPUC115'.'ILPCSB'.LO 0.382716049382716
+'FIN'.2020.'ILPPUC215'.'ILPCHB'.LO 0.427241449099373
+'FIN'.2020.'ILPPUC315'.'ILPCSB'.LO 0
+'FIN'.2020.'ILPPUC415'.'ILPCHB'.LO 0
+'FIN'.2020.'ILPPUC515'.'ILPNFR'.LO 0.5
+'FIN'.2020.'IOOINGA005'.'IOOI'.UP 0.1
+'FIN'.2020.'IPOIELC000'.'IPOI'.LO 0.2
+'FIN'.2020.'ONOE000'.'ONO'.UP 0.1
+'FIN'.2020.'RH1ELC005'.'RH1'.LO 0.185612059746591
+'FIN'.2020.'RH2ELC005'.'RH2'.LO 0.105621928194934
+'FIN'.2025.'ILPPUC115'.'ILPCSB'.LO 0.742857142857143
+'FIN'.2025.'ILPPUC215'.'ILPCHB'.LO 0.952380952380952
+'FIN'.2025.'ILPPUC315'.'ILPCSB'.LO 0
+'FIN'.2025.'ILPPUC415'.'ILPCHB'.LO 0
+'FIN'.2030.'CH1ELC005'.'CH1'.LO 0.0692984148549735
+'FIN'.2030.'FT-TRAGSL5'.'TRAGSL'.LO 0.125
+'FIN'.2030.'FT-TRAGSL5'.'TRAGSL'.UP 0.15
+'FIN'.2030.'ILPPUC115'.'ILPCSB'.LO 1
+'FIN'.2030.'ILPPUC215'.'ILPCHB'.LO 1
+'FIN'.2030.'ILPPUC315'.'ILPCSB'.LO 0
+'FIN'.2030.'ILPPUC415'.'ILPCHB'.LO 0
+'FIN'.2030.'ILPPUC515'.'ILPNFR'.LO 0.6
+'FIN'.2030.'IOOINGA005'.'IOOI'.UP 0.2
+'FIN'.2030.'RH1ELC005'.'RH1'.LO 0.133640683017546
+'FIN'.2030.'RH2ELC005'.'RH2'.LO 0.0760477883003527
+'FIN'.2035.'ILPPUC115'.'ILPCSB'.LO 1
+'FIN'.2035.'ILPPUC215'.'ILPCHB'.LO 1
+'FIN'.2040.'CH1ELC005'.'CH1'.LO 0.0554387318839788
+'FIN'.2040.'FT-TRAGSL5'.'TRAGSL'.UP 0.25
+'FIN'.2040.'ILPPUC115'.'ILPCSB'.LO 1
+'FIN'.2040.'ILPPUC215'.'ILPCHB'.LO 1
+'FIN'.2040.'ILPPUC315'.'ILPCSB'.LO 0
+'FIN'.2040.'ILPPUC415'.'ILPCHB'.LO 0
+'FIN'.2040.'ILPPUC515'.'ILPNFR'.LO 0.6
+'FIN'.2040.'IOOINGA005'.'IOOI'.UP 0.25
+'FIN'.2040.'ONOE000'.'ONO'.UP 0.25
+'FIN'.2040.'RH1ELC005'.'RH1'.LO 0.106912546414037
+'FIN'.2040.'RH2ELC005'.'RH2'.LO 0.0608382306402821
+'FIN'.2050.'CH1ELC005'.'CH1'.LO 0.044350985507183
+'FIN'.2050.'FT-TRAGSL5'.'TRAGSL'.UP 0.33
+'FIN'.2050.'ILPPUC115'.'ILPCSB'.LO 1
+'FIN'.2050.'ILPPUC215'.'ILPCHB'.LO 1
+'FIN'.2050.'ILPPUC315'.'ILPCSB'.LO 0
+'FIN'.2050.'ILPPUC415'.'ILPCHB'.LO 0
+'FIN'.2050.'ILPPUC515'.'ILPNFR'.LO 0.6
+'FIN'.2050.'IOOINGA005'.'IOOI'.UP 0.3
+'FIN'.2050.'ONOE000'.'ONO'.UP 0.3
+'FIN'.2050.'RH1ELC005'.'RH1'.LO 0.0855300371312294
+'FIN'.2050.'RH2ELC005'.'RH2'.LO 0.0486705845122257
+'FIN'.2070.'IISDRI007'.'G-IISTEEL'.UP 0.6
+'FIN'.2070.'IPOIELC000'.'IPOI'.LO 0.2
+/;
+
+PARAMETER
+
+FLO_SHAR ' '/
+'FIM'.0.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.LO 5
+'FIM'.0.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.UP 5
+'FIM'.0.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 5
+'FIM'.2020.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.LO 0.7
+'FIM'.2020.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.UP 0.8
+'FIM'.2020.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 0.2
+'FIM'.2020.'IOW000'.'MANRAW'.'ACT'.ANNUAL.LO 0.7
+'FIM'.2025.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 0.27
+'FIM'.2030.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.LO 0.7
+'FIM'.2030.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.UP 0.8
+'FIM'.2030.'DHPCOAP100'.'ELCBIO'.'NRG'.ANNUAL.UP 0.4
+'FIM'.2030.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 0.35
+'FIM'.2050.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.LO 0.7
+'FIM'.2050.'DHP1BIOBFB-0'.'EL1BIO'.'DHP1BIOBFB-0_NRGI'.ANNUAL.UP 0.85
+'FIN'.0.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 5
+'FIN'.0.'IIS000'.'IISBOF'.'IIS000_MATI'.ANNUAL.LO 5
+'FIN'.2010.'ACULAND'.'DUM1'.'ACT'.ANNUAL.LO 0.910604192355117
+'FIN'.2010.'ACULAND'.'DUM1'.'ACT'.ANNUAL.UP 0.94
+'FIN'.2017.'ACULAND'.'DUM1'.'ACT'.ANNUAL.LO 0.895171318392465
+'FIN'.2017.'ACULAND'.'DUM1'.'ACT'.ANNUAL.UP 0.93
+'FIN'.2020.'ACULAND'.'DUM1'.'ACT'.ANNUAL.LO 0.88
+'FIN'.2020.'ACULAND'.'DUM1'.'ACT'.ANNUAL.UP 0.92
+'FIN'.2020.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 0.2
+'FIN'.2020.'IIS000'.'IISBOF'.'IIS000_MATI'.ANNUAL.LO 0.651134678394328
+'FIN'.2020.'IOW000'.'MANRAW'.'ACT'.ANNUAL.LO 0.7
+'FIN'.2025.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 0.27
+'FIN'.2030.'ACULAND'.'DUM1'.'ACT'.ANNUAL.LO 0.85
+'FIN'.2030.'ACULAND'.'DUM1'.'ACT'.ANNUAL.UP 0.88
+'FIN'.2030.'FT-TRADST5'.'BIODST'.'FT-TRADST5_NRGI'.ANNUAL.LO 0.35
+'FIN'.2030.'IIS000'.'IISBOF'.'IIS000_MATI'.ANNUAL.LO 0.651134678394328
+'FIN'.2030.'INMCMTBLD005'.'MANBFS'.'ACT'.ANNUAL.UP 0.4
+'FIN'.2030.'INMCMTDRY105'.'INDBIO'.'G-INDFUEL'.ANNUAL.UP 0.2
+'FIN'.2030.'INMCMTDRY705'.'INDBIO'.'G-INDFUEL'.ANNUAL.UP 0.2
+'FIN'.2040.'ACULAND'.'DUM1'.'ACT'.ANNUAL.LO 0.82
+'FIN'.2040.'ACULAND'.'DUM1'.'ACT'.ANNUAL.UP 0.86
+'FIN'.2040.'IIS000'.'IISBOF'.'IIS000_MATI'.ANNUAL.LO 0.325567339197164
+'FIN'.2050.'ACULAND'.'DUM1'.'ACT'.ANNUAL.LO 0.78
+'FIN'.2050.'ACULAND'.'DUM1'.'ACT'.ANNUAL.UP 0.84
+'FIN'.2050.'IIS000'.'IISBOF'.'IIS000_MATI'.ANNUAL.LO 0
+'FIN'.2050.'IIS000'.'IISSCR'.'IIS000_MATI'.ANNUAL.UP 0.37
+'FIN'.2050.'INMCMTDRY105'.'INDBIO'.'G-INDFUEL'.ANNUAL.UP 0.4
+'FIN'.2050.'INMCMTDRY705'.'INDBIO'.'G-INDFUEL'.ANNUAL.UP 0.4
+'FIN'.2070.'IIS000'.'IISSCR'.'IIS000_MATI'.ANNUAL.UP 0.4
+/;
+
+PARAMETER
+
+FLO_SUB ' '/
+'FIM'.2040.'ELCWOF000'.'ELCWOF'.ANNUAL.'EUR10' 0.5
+'FIM'.2040.'EWINDON1-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIM'.2040.'EWINDON2-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIM'.2040.'EWINDON3-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIM'.2040.'EWINDON4-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIM'.2040.'EWINDON5-D5'.'ELCMP'.ANNUAL.'EUR10' 0.5
+'FIM'.2040.'EWINGEN00'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIM'.2040.'EWINNOF3-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'ELCWOF000'.'ELCWOF'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'EWINDON1-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'EWINDON2-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'EWINDON3-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'EWINDON4-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'EWINDON5-D5'.'ELCMP'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'EWINGEN00'.'ELCC'.ANNUAL.'EUR10' 0.5
+'FIN'.2040.'EWINNOF3-05'.'ELCC'.ANNUAL.'EUR10' 0.5
+/;
+
+PARAMETER
+
+FLO_TAX ' '/
+'FIM'.2010.'FT-TRAHH20'.'TRAHH2'.ANNUAL.'EUR10' 5
+'FIN'.2010.'FT-TRAHH20'.'TRAHH2'.ANNUAL.'EUR10' 5
+/;
+
+PARAMETER
+
+NCAP_AF ' '/
+'FIN'.2015.'EHYDDAM00'.ANNUAL.UP 1
+'FIN'.2015.'EHYDRUN00'.ANNUAL.UP 1
+'FIN'.2015.'EURALWR-05'.ANNUAL.UP 0.96
+'FIN'.2020.'EHYDDAM00'.ANNUAL.UP 0.9
+'FIN'.2020.'EHYDRUN00'.ANNUAL.UP 0.9
+'FIN'.2030.'UFTSYNBDSLH'.ANNUAL.UP 0.9
+/;
+
+PARAMETER
+
+NCAP_AFA ' '/
+'FIM'.2020.'DHPGASP100'.LO 0.27
+'FIN'.2015.'ENUCGEN10'.UP 0.92
+'FIN'.2015.'ENUCGEN20'.UP 0.92
+'FIN'.2015.'EURALWR-05'.UP 0.91324200913242
+'FIN'.2020.'EHYDDAM00'.UP 0.534621268095318
+'FIN'.2020.'EHYDRUN00'.UP 0.426867115595514
+'FIN'.2020.'ENUCGEN10'.UP 0.904727272727273
+'FIN'.2020.'ENUCGEN20'.UP 0.904727272727273
+'FIN'.2030.'ENUCGEN10'.UP 0.92
+'FIN'.2030.'ENUCGEN20'.UP 0.92
+'FIN'.2040.'ENUCGEN10'.UP 0.874616827722912
+'FIN'.2040.'ENUCGEN20'.UP 0.874616827722912
+'FIN'.2050.'ENUCGEN10'.UP 0.91324200913242
+'FIN'.2050.'ENUCGEN20'.UP 0.91324200913242
+/;
+
+PARAMETER
+
+NCAP_BND ' '/
+'FIM'.0.'DHP1BCOFCS+0'.N 2070
+'FIM'.0.'DHP1BIOFCS+0'.N 2070
+'FIM'.0.'DHP1COACFB-0'.N 2025
+'FIM'.0.'DHP1COACLC+0'.N 2025
+'FIM'.0.'DHP1COAIGC-0'.N 2025
+'FIM'.0.'DHP1COAPFB-0'.N 2025
+'FIM'.0.'DHP1COAPFB+0'.N 2025
+'FIM'.0.'DHP1COAPFS-0'.N 2025
+'FIM'.0.'DHP1COAPFU+0'.N 2025
+'FIM'.0.'DHP1NUCPBR-0'.N 2070
+'FIM'.0.'DHP3BCOFCS+0'.N 2070
+'FIM'.0.'DHP3BIOFCS+0'.N 2070
+'FIM'.0.'EGEOBNY105'.N 2200
+'FIM'.0.'ELCHYSD00'.N 2200
+'FIM'.0.'ELCHYSS00'.N 2200
+'FIM'.0.'ELCHYSW00'.N 2200
+'FIM'.0.'ENGACCA-05'.N 2020
+'FIM'.0.'ENGACCA+05'.N 2020
+'FIM'.0.'ENGACCC-05'.N 2020
+'FIM'.0.'ESOLGEN00'.UP 4
+'FIM'.0.'EURALWR-05'.N 2020
+'FIM'.0.'EURALWR-10'.N 2100
+'FIM'.0.'EURAPBR-05'.N 2100
+'FIM'.0.'FT-COMCOP5'.N 2200
+'FIM'.0.'FT-COMGEO5'.N 2200
+'FIM'.0.'FT-INDGEO5'.N 2200
+'FIM'.0.'FT-RESGEO5'.N 2200
+'FIM'.0.'HETGEOP105'.N 2200
+'FIM'.0.'IISBOF007'.N 2070
+'FIM'.0.'IISDRI007'.N 2070
+'FIM'.0.'IISSRD005'.N 2035
+'FIM'.0.'ILPBLQFT005'.N 2050
+'FIM'.0.'ILPMIX370'.N 2110
+'FIM'.0.'ILPPAP007'.N 2010
+'FIM'.0.'ILPPUM008'.N 2070
+'FIM'.0.'TRHHFC01'.N 2035
+'FIM'.0.'TRHMFC01'.N 2035
+'FIM'.0.'TRMHFC01'.N 2035
+'FIM'.0.'TRMMFC01'.N 2035
+'FIM'.2015.'DHP1BCOFCS+0'.UP 0
+'FIM'.2015.'DHP1BIOBFB-0'.UP 0
+'FIM'.2015.'DHP1BIOBFB-1'.UP 0
+'FIM'.2015.'DHP1BIOFCS-0'.UP 0
+'FIM'.2015.'DHP1BIOFCS+0'.UP 0
+'FIM'.2015.'DHP1BIOGFE-0'.UP 0
+'FIM'.2015.'DHP1COACFB-0'.UP 0
+'FIM'.2015.'DHP1COACLC+0'.UP 0
+'FIM'.2015.'DHP1COAIGC-0'.UP 0
+'FIM'.2015.'DHP1COAPFB-0'.UP 0
+'FIM'.2015.'DHP1COAPFB+0'.UP 0
+'FIM'.2015.'DHP1COAPFS-0'.UP 0
+'FIM'.2015.'DHP1COAPFU+0'.UP 0
+'FIM'.2015.'DHP1GASCCT-0'.UP 0
+'FIM'.2015.'DHP1GASCCT+0'.UP 0
+'FIM'.2015.'DHP1GASFCM-0'.UP 0
+'FIM'.2015.'DHP1GASICE-0'.UP 0
+'FIM'.2015.'DHP1GASWGT-0'.UP 0
+'FIM'.2015.'DHP1NUCPBR-0'.UP 0
+'FIM'.2015.'DHP1NUCSMR'.UP 0
+'FIM'.2015.'DHP1OILSTB-0'.UP 0
+'FIM'.2015.'DHP1REFBFB-0'.UP 0
+'FIM'.2015.'DHP2BGSICE-0'.UP 0
+'FIM'.2015.'DHP2BIOBFB-0'.UP 0
+'FIM'.2015.'DHP2BIOBFB-1'.UP 0
+'FIM'.2015.'DHP2BIOGFE-0'.UP 0
+'FIM'.2015.'DHP2BIOIGC-0'.UP 0
+'FIM'.2015.'DHP2GASCCT-0'.UP 0
+'FIM'.2015.'DHP2GASFCM-0'.UP 0
+'FIM'.2015.'DHP2GASICE-0'.UP 0
+'FIM'.2015.'DHP2GASWGT-0'.UP 0
+'FIM'.2015.'DHP3BCOFCS+0'.UP 0
+'FIM'.2015.'DHP3BIOBFB-0'.UP 0
+'FIM'.2015.'DHP3BIOBFB-1'.UP 0
+'FIM'.2015.'DHP3BIOCFB-0'.UP 0
+'FIM'.2015.'DHP3BIOCFB+0'.UP 0
+'FIM'.2015.'DHP3BIOFCS-0'.UP 0
+'FIM'.2015.'DHP3BIOFCS+0'.UP 0
+'FIM'.2015.'DHP3BIOGFE-0'.UP 0
+'FIM'.2015.'DHP3BIOIGC-0'.UP 0
+'FIM'.2015.'DHP3BIOPFB-0'.UP 0
+'FIM'.2015.'DHP3BIOPFB+0'.UP 0
+'FIM'.2015.'DHP3COACLC+0'.UP 0
+'FIM'.2015.'DHP3OILSTB-0'.UP 0
+'FIM'.2015.'DHP3REFBFB-0'.UP 0
+'FIM'.2015.'DHP4BIOBFB-0'.UP 0
+'FIM'.2015.'DHP4BIOGFE-0'.UP 0
+'FIM'.2015.'DHP4OILICE-0'.UP 0
+'FIM'.2015.'DHPBCOP100'.UP 0
+'FIM'.2015.'DHPBCOP200'.UP 0
+'FIM'.2015.'DHPBCOP300'.UP 0
+'FIM'.2015.'DHPBCOP400'.UP 0
+'FIM'.2015.'DHPBIOICE-B5'.UP 0
+'FIM'.2015.'DHPBIOP100'.UP 0
+'FIM'.2015.'DHPBIOP200'.UP 0
+'FIM'.2015.'DHPBIOP300'.UP 0
+'FIM'.2015.'DHPBIOP400'.UP 0
+'FIM'.2015.'DHPBMUP100'.UP 0
+'FIM'.2015.'DHPBMUP200'.UP 0
+'FIM'.2015.'DHPBMUP300'.UP 0
+'FIM'.2015.'DHPBMUP400'.UP 0
+'FIM'.2015.'DHPCOAP100'.UP 0
+'FIM'.2015.'DHPCOAP200'.UP 0
+'FIM'.2015.'DHPCOAP300'.UP 0
+'FIM'.2015.'DHPCOAP400'.UP 0
+'FIM'.2015.'DHPGASICE-N5'.UP 0
+'FIM'.2015.'DHPGASP100'.UP 0
+'FIM'.2015.'DHPGASP200'.UP 0
+'FIM'.2015.'DHPGASP300'.UP 0
+'FIM'.2015.'DHPGASP400'.UP 0
+'FIM'.2015.'DHPGEOP00'.UP 0
+'FIM'.2015.'DHPOILP100'.UP 0
+'FIM'.2015.'DHPOILP200'.UP 0
+'FIM'.2015.'DHPOILP300'.UP 0
+'FIM'.2015.'DHPOILP400'.UP 0
+'FIM'.2015.'DHYNPFC-05'.UP 0
+'FIM'.2015.'ESOLGEN00'.UP 0
+'FIM'.2020.'DHP1COACFB-0'.FX 0
+'FIM'.2020.'DHP1COAPFS-0'.N 2070
+'FIM'.2025.'FT-RESCOP5'.N 2100
+'FIM'.2035.'EURALWR-05'.N 2100
+'FIN'.0.'AN2OMMM1'.N 2060
+'FIN'.0.'AN2OMMM2'.N 2060
+'FIN'.0.'AN2OMMM3'.N 2060
+'FIN'.0.'AN2OMMM4'.N 2060
+'FIN'.0.'DHP1BCOFCS+0'.N 2070
+'FIN'.0.'DHP1BIOFCS+0'.N 2070
+'FIN'.0.'DHP1COAPFB+0'.N 2030
+'FIN'.0.'DHP1COAPFU+0'.N 2030
+'FIN'.0.'DHP1NUCPBR-0'.N 2070
+'FIN'.0.'DHP3BCOFCS+0'.N 2070
+'FIN'.0.'DHP3BIOFCS+0'.N 2070
+'FIN'.0.'DNETSCO2'.N 2005
+'FIN'.0.'EGEOBNY105'.N 2100
+'FIN'.0.'ENGACCA-05'.N 2020
+'FIN'.0.'ENGACCA+05'.N 2020
+'FIN'.0.'ENGACCC-05'.N 2020
+'FIN'.0.'ESOLGEN00'.UP 4
+'FIN'.0.'EURALWR-05'.N 2020
+'FIN'.0.'EURALWR-10'.N 2100
+'FIN'.0.'EURAPBR-05'.N 2100
+'FIN'.0.'IISBOF007'.N 2070
+'FIN'.0.'IISDRI007'.N 2070
+'FIN'.0.'IISSRD005'.N 2035
+'FIN'.0.'ILPBLQFT005'.N 2050
+'FIN'.0.'ILPMIX370'.N 2110
+'FIN'.0.'ILPPAP007'.N 2010
+'FIN'.0.'ILPPUM008'.N 2070
+'FIN'.0.'TRHHFC01'.N 2035
+'FIN'.0.'TRHMFC01'.N 2035
+'FIN'.0.'TRMHFC01'.N 2035
+'FIN'.0.'TRMMFC01'.N 2035
+'FIN'.2015.'DHP1BCOFCS+0'.UP 0
+'FIN'.2015.'DHP1BIOBFB-0'.UP 0
+'FIN'.2015.'DHP1BIOBFB-1'.UP 0
+'FIN'.2015.'DHP1BIOFCS-0'.UP 0
+'FIN'.2015.'DHP1BIOFCS+0'.UP 0
+'FIN'.2015.'DHP1BIOGFE-0'.UP 0
+'FIN'.2015.'DHP1COACFB-0'.UP 0
+'FIN'.2015.'DHP1COACLC+0'.UP 0
+'FIN'.2015.'DHP1COAIGC-0'.UP 0
+'FIN'.2015.'DHP1COAPFB-0'.UP 0
+'FIN'.2015.'DHP1COAPFB+0'.UP 0
+'FIN'.2015.'DHP1COAPFS-0'.UP 0
+'FIN'.2015.'DHP1COAPFU+0'.UP 0
+'FIN'.2015.'DHP1GASCCT-0'.UP 0
+'FIN'.2015.'DHP1GASCCT+0'.UP 0
+'FIN'.2015.'DHP1GASFCM-0'.UP 0
+'FIN'.2015.'DHP1GASICE-0'.UP 0
+'FIN'.2015.'DHP1GASWGT-0'.UP 0
+'FIN'.2015.'DHP1NUCPBR-0'.UP 0
+'FIN'.2015.'DHP1NUCSMR'.UP 0
+'FIN'.2015.'DHP1OILSTB-0'.UP 0
+'FIN'.2015.'DHP1REFBFB-0'.UP 0
+'FIN'.2015.'DHP2BGSICE-0'.UP 0
+'FIN'.2015.'DHP2BIOBFB-0'.UP 0
+'FIN'.2015.'DHP2BIOBFB-1'.UP 0
+'FIN'.2015.'DHP2BIOGFE-0'.UP 0
+'FIN'.2015.'DHP2BIOIGC-0'.UP 0
+'FIN'.2015.'DHP2GASCCT-0'.UP 0
+'FIN'.2015.'DHP2GASFCM-0'.UP 0
+'FIN'.2015.'DHP2GASICE-0'.UP 0
+'FIN'.2015.'DHP2GASWGT-0'.UP 0
+'FIN'.2015.'DHP3BCOFCS+0'.UP 0
+'FIN'.2015.'DHP3BIOBFB-0'.UP 0
+'FIN'.2015.'DHP3BIOBFB-1'.UP 0
+'FIN'.2015.'DHP3BIOCFB-0'.UP 0
+'FIN'.2015.'DHP3BIOCFB+0'.UP 0
+'FIN'.2015.'DHP3BIOFCS-0'.UP 0
+'FIN'.2015.'DHP3BIOFCS+0'.UP 0
+'FIN'.2015.'DHP3BIOGFE-0'.UP 0
+'FIN'.2015.'DHP3BIOIGC-0'.UP 0
+'FIN'.2015.'DHP3BIOPFB-0'.UP 0
+'FIN'.2015.'DHP3BIOPFB+0'.UP 0
+'FIN'.2015.'DHP3COACLC+0'.UP 0
+'FIN'.2015.'DHP3OILSTB-0'.UP 0
+'FIN'.2015.'DHP3REFBFB-0'.UP 0
+'FIN'.2015.'DHP4BIOBFB-0'.UP 0
+'FIN'.2015.'DHP4BIOGFE-0'.UP 0
+'FIN'.2015.'DHP4OILICE-0'.UP 0
+'FIN'.2015.'DHPBCOP100'.UP 0
+'FIN'.2015.'DHPBCOP200'.UP 0
+'FIN'.2015.'DHPBCOP300'.UP 0
+'FIN'.2015.'DHPBCOP400'.UP 0
+'FIN'.2015.'DHPBIOICE-B5'.UP 0
+'FIN'.2015.'DHPBIOP100'.UP 0
+'FIN'.2015.'DHPBIOP200'.UP 0
+'FIN'.2015.'DHPBIOP300'.UP 0
+'FIN'.2015.'DHPBIOP400'.UP 0
+'FIN'.2015.'DHPBMUP100'.UP 0
+'FIN'.2015.'DHPBMUP200'.UP 0
+'FIN'.2015.'DHPBMUP300'.UP 0
+'FIN'.2015.'DHPBMUP400'.UP 0
+'FIN'.2015.'DHPCOAP100'.UP 0
+'FIN'.2015.'DHPCOAP200'.UP 0
+'FIN'.2015.'DHPCOAP300'.UP 0
+'FIN'.2015.'DHPCOAP400'.UP 0
+'FIN'.2015.'DHPGASICE-N5'.UP 0
+'FIN'.2015.'DHPGASP100'.UP 0
+'FIN'.2015.'DHPGASP200'.UP 0
+'FIN'.2015.'DHPGASP300'.UP 0
+'FIN'.2015.'DHPGASP400'.UP 0
+'FIN'.2015.'DHPGEOP00'.UP 0
+'FIN'.2015.'DHPOILP100'.UP 0
+'FIN'.2015.'DHPOILP200'.UP 0
+'FIN'.2015.'DHPOILP300'.UP 0
+'FIN'.2015.'DHPOILP400'.UP 0
+'FIN'.2015.'DHYNPFC-05'.UP 0
+'FIN'.2015.'ESOLGEN00'.UP 0
+'FIN'.2020.'DHP1BIOBFB-0'.UP 0
+'FIN'.2020.'DHP1COACFB-0'.FX 0
+'FIN'.2020.'DHP1COACLC+0'.UP 0
+'FIN'.2020.'DHP1COAIGC-0'.UP 0
+'FIN'.2020.'DHP1COAPFB-0'.UP 0
+'FIN'.2020.'DHP1COAPFB+0'.UP 0
+'FIN'.2020.'DHP1COAPFS-0'.N 2070
+'FIN'.2020.'DHP1COAPFS-0'.UP 0
+'FIN'.2020.'DHP1COAPFU+0'.UP 0
+'FIN'.2020.'DHP2BIOBFB-0'.UP 0
+'FIN'.2020.'DHP3BIOCFB-0'.UP 0
+'FIN'.2020.'DHP3BIOCFB+0'.UP 0
+'FIN'.2020.'DHP3BIOIGC-0'.UP 0
+'FIN'.2020.'DHP3COACLC+0'.UP 0
+'FIN'.2020.'DHPCOAP100'.UP 0
+'FIN'.2020.'DHPCOAP200'.UP 0
+'FIN'.2020.'DHPCOAP300'.UP 0
+'FIN'.2020.'DHPCOAP400'.UP 0
+'FIN'.2025.'FT-RESCOP5'.N 2100
+'FIN'.2030.'EURALWR-05'.FX 0
+'FIN'.2035.'ECOAPFU-05'.N 2100
+'FIN'.2035.'EURALWR-05'.N 2100
+/;
+
+PARAMETER
+
+NCAP_COST ' '/
+'FIN'.2030.'ILPBIOFT005'.'EUR10' 105
+'FIN'.2030.'UFTSYNBDSL'.'EUR10' 90
+'FIN'.2030.'UFTSYNBDSS'.'EUR10' 95
+/;
+
+PARAMETER
+
+NCAP_PASTI ' '/
+'FIN'.2030.'X-ELC-SE1-FIN' 0
+'FIN'.2030.'X+ELC-SE3-FIN' 0
+'FIN'.2040.'X-ELC-SE1-FIN' 0
+'FIN'.2040.'X+ELC-SE3-FIN' 0
+'FIN'.2050.'X-ELC-SE1-FIN' 0
+'FIN'.2050.'X+ELC-SE3-FIN' 0
+'SE1'.2030.'X-ELC-SE1-FIN' 0
+'SE1'.2040.'X-ELC-SE1-FIN' 0
+'SE1'.2050.'X-ELC-SE1-FIN' 0
+/;
+
+PARAMETER
+
+NCAP_START ' '/
+'FIM'.'DHP1COACFB-0' 2025
+'FIM'.'DHP1COAIGC-0' 2025
+'FIM'.'DHP1COAPFB-0' 2025
+'FIM'.'DHP1COAPFU+0' 2025
+'FIM'.'DHP1GASCCT-0' 2025
+'FIM'.'DHP3BCOFCS+0' 2200
+'FIM'.'DHP3BIOBFB-0' 2200
+'FIM'.'DHP3BIOBFB-1' 2200
+'FIM'.'DHP3BIOCFB-0' 2200
+'FIM'.'DHP3BIOCFB+0' 2200
+'FIM'.'DHP3BIOFCS-0' 2200
+'FIM'.'DHP3BIOFCS+0' 2200
+'FIM'.'DHP3BIOGFE-0' 2200
+'FIM'.'DHP3BIOIGC-0' 2200
+'FIM'.'DHP3BIOPFB-0' 2200
+'FIM'.'DHP3BIOPFB+0' 2200
+'FIM'.'DHP3COACLC+0' 2200
+'FIM'.'DHP3OILSTB-0' 2200
+'FIM'.'DHP3REFBFB-0' 2200
+'FIM'.'IMPDEMZ' 2200
+'FIM'.'IMPMATZ' 2200
+'FIN'.'EXPSYNHYN' 2150
+'FIN'.'IMPDEMZ' 2200
+'FIN'.'IMPMATZ' 2200
+/;
+
+PARAMETER
+
+NCAP_TLIFE ' '/
+'FIM'.2020.'FT-COMDST0' 1
+'FIM'.2020.'FT-RESDST0' 1
+'FIN'.2020.'FT-COMDST0' 1
+'FIN'.2020.'FT-RESDST0' 1
+'FIN'.2030.'X-ELC-SE1-FIN' 40
+'SE1'.2030.'X-ELC-SE1-FIN' 40
+/;
+
+PARAMETER
+
+PRC_ACTFLO ' '/
+'FIN'.2010.'DNETSCO2'.'NONCO2T' 0.21
+'FIN'.2010.'UTRNREFX00'.'UPXREFO' 1
+'FIN'.2015.'UTRNREFX00'.'UPXREFO' 1.02
+'FIN'.2020.'ILPMIX370'.'ILPPOT' 1
+'FIN'.2025.'ILPMIX370'.'ILPPOT' 1
+'FIN'.2030.'ILPMIX370'.'ILPPOT' 1
+'FIN'.2035.'ILPMIX370'.'ILPPOT' 1
+'FIN'.2040.'ILPMIX370'.'ILPPOT' 1
+'FIN'.2050.'ILPMIX370'.'ILPPOT' 1
+/;
+
+PARAMETER
+
+PRC_MARK ' '/
+'FIM'.2020.'FT-INDELC0'.'FT-INDELC0'.'G-INDELC'.LO 0.93
+'FIM'.2020.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.05
+'FIM'.2020.'TRBELC01'.'BUSELP'.'TRB'.UP 0.05
+'FIM'.2020.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.05
+'FIM'.2020.'TRHELC01'.'TRCELP'.'TRH'.UP 0.05
+'FIM'.2020.'TRLDHE01'.'VANELP'.'TRL'.UP 0.12
+'FIM'.2020.'TRLELC01'.'VANELP'.'TRL'.UP 0.12
+'FIM'.2020.'TRLGHE01'.'VANELP'.'TRL'.UP 0.12
+'FIM'.2020.'TRMDHE01'.'LORELP'.'TRM'.UP 0.05
+'FIM'.2020.'TRMELC01'.'LORELP'.'TRM'.UP 0.05
+'FIM'.2020.'TRTDHE01'.'CARELP'.'TRT'.LO 0.02
+'FIM'.2020.'TRTELC01'.'CARELP'.'TRT'.LO 0.02
+'FIM'.2020.'TRTGHE01'.'CARELP'.'TRT'.LO 0.02
+'FIM'.2025.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.05
+'FIM'.2025.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.05
+'FIM'.2025.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.07
+'FIM'.2025.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.07
+'FIM'.2025.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.09
+'FIM'.2025.'TRTELC01'.'CARHDE'.'TRT'.UP 0.09
+'FIM'.2025.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.09
+'FIM'.2030.'ESOPVD205'.'ESOPVD205'.'G-PUBELC'.UP 0.03
+'FIM'.2030.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.2
+'FIM'.2030.'TRBELC01'.'BUSELP'.'TRB'.UP 0.2
+'FIM'.2030.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.12
+'FIM'.2030.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.12
+'FIM'.2030.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.12
+'FIM'.2030.'TRHELC01'.'TRCELP'.'TRH'.UP 0.12
+'FIM'.2030.'TRLDHE01'.'VANELP'.'TRL'.UP 0.33
+'FIM'.2030.'TRLELC01'.'VANELP'.'TRL'.UP 0.33
+'FIM'.2030.'TRLGHE01'.'VANELP'.'TRL'.UP 0.33
+'FIM'.2030.'TRMDHE01'.'LORELP'.'TRM'.UP 0.15
+'FIM'.2030.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.2
+'FIM'.2030.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.2
+'FIM'.2030.'TRMELC01'.'LORELP'.'TRM'.UP 0.15
+'FIM'.2030.'TRTDHE01'.'CARELP'.'TRT'.LO 0.11
+'FIM'.2030.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.22
+'FIM'.2030.'TRTELC01'.'CARELP'.'TRT'.LO 0.11
+'FIM'.2030.'TRTELC01'.'CARHDE'.'TRT'.UP 0.22
+'FIM'.2030.'TRTGHE01'.'CARELP'.'TRT'.LO 0.11
+'FIM'.2030.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.22
+'FIM'.2030.'TRTHFC01'.'CARFC'.'TRT'.UP 0.04
+'FIM'.2030.'TRTMFC01'.'CARFC'.'TRT'.UP 0.04
+'FIM'.2040.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.45
+'FIM'.2040.'TRBELC01'.'BUSELP'.'TRB'.UP 0.45
+'FIM'.2040.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.33
+'FIM'.2040.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.25
+'FIM'.2040.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.25
+'FIM'.2040.'TRHELC01'.'TRCELP'.'TRH'.UP 0.33
+'FIM'.2040.'TRMDHE01'.'LORELP'.'TRM'.UP 0.4
+'FIM'.2040.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.4
+'FIM'.2040.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.4
+'FIM'.2040.'TRMELC01'.'LORELP'.'TRM'.UP 0.4
+'FIM'.2040.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.54
+'FIM'.2040.'TRTELC01'.'CARHDE'.'TRT'.UP 0.54
+'FIM'.2040.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.54
+'FIM'.2040.'TRTHFC01'.'CARFC'.'TRT'.UP 0.11
+'FIM'.2040.'TRTMFC01'.'CARFC'.'TRT'.UP 0.11
+'FIM'.2050.'ESOPVD205'.'ESOPVD205'.'G-PUBELC'.UP 0.1
+'FIM'.2050.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.85
+'FIM'.2050.'TRBELC01'.'BUSELP'.'TRB'.UP 0.85
+'FIM'.2050.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.6
+'FIM'.2050.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.4
+'FIM'.2050.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.4
+'FIM'.2050.'TRHELC01'.'TRCELP'.'TRH'.UP 0.6
+'FIM'.2050.'TRMDHE01'.'LORELP'.'TRM'.UP 0.75
+'FIM'.2050.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.65
+'FIM'.2050.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.65
+'FIM'.2050.'TRMELC01'.'LORELP'.'TRM'.UP 0.75
+'FIM'.2050.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.85
+'FIM'.2050.'TRTELC01'.'CARHDE'.'TRT'.UP 0.85
+'FIM'.2050.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.85
+'FIM'.2050.'TRTHFC01'.'CARFC'.'TRT'.UP 0.2
+'FIM'.2050.'TRTMFC01'.'CARFC'.'TRT'.UP 0.2
+'FIM'.2090.'ESOPVD205'.'ESOPVD205'.'G-PUBELC'.UP 0.15
+'FIN'.0.'CH1ELC705'.'CH1ELC005'.'CH1'.LO 5
+'FIN'.0.'CH1ERS000'.'CH1ELC005'.'CH1'.LO 5
+'FIN'.0.'ECOAGEN00'.'ECOACAL'.'ELCC'.LO 1
+'FIN'.0.'RH1ELC705'.'RH1ELC005'.'RH1'.LO 5
+'FIN'.0.'RH1ERS000'.'RH1ELC005'.'RH1'.LO 5
+'FIN'.0.'RH2ELC705'.'RH2ELC005'.'RH2'.LO 5
+'FIN'.0.'RH2ERS000'.'RH2ELC005'.'RH2'.LO 5
+'FIN'.2020.'CH1ELC705'.'CH1ELC005'.'CH1'.LO 0
+'FIN'.2020.'CH1ERS000'.'CH1ELC005'.'CH1'.LO 0
+'FIN'.2020.'ECOAGEN00'.'ECOACAL'.'ELCC'.LO 0.0566808510638298
+'FIN'.2020.'FT-INDELC0'.'FT-INDELC0'.'G-INDELC'.LO 0.7333
+'FIN'.2020.'IDTHET000'.'IDT'.'ISIS'.LO 0.1
+'FIN'.2020.'IDTHET000'.'IDT'.'ISLP'.LO 0.023
+'FIN'.2020.'ILPMIX100'.'ILPMIX100'.'G-PAPMIX'.FX 0.486576412027096
+'FIN'.2020.'ILPMIX370'.'ILPMIX300'.'G-PAPMIX'.FX 0
+'FIN'.2020.'IPOIELC005'.'IPOIELC000'.'IPOI'.LO 0
+'FIN'.2020.'RH1ELC705'.'RH1ELC005'.'RH1'.LO 0
+'FIN'.2020.'RH1ERS000'.'RH1ELC005'.'RH1'.LO 0
+'FIN'.2020.'RH2ELC705'.'RH2ELC005'.'RH2'.LO 0
+'FIN'.2020.'RH2ERS000'.'RH2ELC005'.'RH2'.LO 0
+'FIN'.2020.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.05
+'FIN'.2020.'TRBELC01'.'BUSELP'.'TRB'.UP 0.05
+'FIN'.2020.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.05
+'FIN'.2020.'TRHELC01'.'TRCELP'.'TRH'.UP 0.05
+'FIN'.2020.'TRLDHE01'.'VANELP'.'TRL'.UP 0.12
+'FIN'.2020.'TRLELC01'.'VANELP'.'TRL'.UP 0.12
+'FIN'.2020.'TRLGHE01'.'VANELP'.'TRL'.UP 0.12
+'FIN'.2020.'TRMDHE01'.'LORELP'.'TRM'.UP 0.05
+'FIN'.2020.'TRMELC01'.'LORELP'.'TRM'.UP 0.05
+'FIN'.2020.'TRTDHE01'.'CARELP'.'TRT'.LO 0.02
+'FIN'.2020.'TRTELC01'.'CARELP'.'TRT'.LO 0.02
+'FIN'.2020.'TRTGHE01'.'CARELP'.'TRT'.LO 0.02
+'FIN'.2025.'ILPMIX100'.'ILPMIX100'.'G-PAPMIX'.FX 0.456035944841698
+'FIN'.2025.'ILPMIX370'.'ILPMIX300'.'G-PAPMIX'.FX 0
+'FIN'.2025.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.05
+'FIN'.2025.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.05
+'FIN'.2025.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.07
+'FIN'.2025.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.07
+'FIN'.2025.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.09
+'FIN'.2025.'TRTELC01'.'CARHDE'.'TRT'.UP 0.09
+'FIN'.2025.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.09
+'FIN'.2030.'ESOPVD205'.'ESOPVD205'.'G-PUBELC'.UP 0.03
+'FIN'.2030.'ILPMIX100'.'ILPMIX100'.'G-PAPMIX'.FX 0.427412381379637
+'FIN'.2030.'ILPMIX370'.'ILPMIX300'.'G-PAPMIX'.FX 0
+'FIN'.2030.'IOOINGA000'.'IOOINGA000'.'IOOI'.LO 0.0523255813953488
+'FIN'.2030.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.2
+'FIN'.2030.'TRBELC01'.'BUSELP'.'TRB'.UP 0.2
+'FIN'.2030.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.12
+'FIN'.2030.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.12
+'FIN'.2030.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.12
+'FIN'.2030.'TRHELC01'.'TRCELP'.'TRH'.UP 0.12
+'FIN'.2030.'TRLDHE01'.'VANELP'.'TRL'.UP 0.33
+'FIN'.2030.'TRLELC01'.'VANELP'.'TRL'.UP 0.33
+'FIN'.2030.'TRLGHE01'.'VANELP'.'TRL'.UP 0.33
+'FIN'.2030.'TRMDHE01'.'LORELP'.'TRM'.UP 0.15
+'FIN'.2030.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.2
+'FIN'.2030.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.2
+'FIN'.2030.'TRMELC01'.'LORELP'.'TRM'.UP 0.15
+'FIN'.2030.'TRTDHE01'.'CARELP'.'TRT'.LO 0.11
+'FIN'.2030.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.22
+'FIN'.2030.'TRTELC01'.'CARELP'.'TRT'.LO 0.11
+'FIN'.2030.'TRTELC01'.'CARHDE'.'TRT'.UP 0.22
+'FIN'.2030.'TRTGHE01'.'CARELP'.'TRT'.LO 0.11
+'FIN'.2030.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.22
+'FIN'.2030.'TRTHFC01'.'CARFC'.'TRT'.UP 0.04
+'FIN'.2030.'TRTMFC01'.'CARFC'.'TRT'.UP 0.04
+'FIN'.2035.'ILPMIX100'.'ILPMIX100'.'G-PAPMIX'.FX 0.406429036711876
+'FIN'.2035.'ILPMIX370'.'ILPMIX300'.'G-PAPMIX'.FX 0
+'FIN'.2040.'ILPMIX100'.'ILPMIX100'.'G-PAPMIX'.FX 0.386475846463192
+'FIN'.2040.'ILPMIX370'.'ILPMIX300'.'G-PAPMIX'.FX 0
+'FIN'.2040.'IOOINGA000'.'IOOINGA000'.'IOOI'.LO 0.04
+'FIN'.2040.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.45
+'FIN'.2040.'TRBELC01'.'BUSELP'.'TRB'.UP 0.45
+'FIN'.2040.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.33
+'FIN'.2040.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.25
+'FIN'.2040.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.25
+'FIN'.2040.'TRHELC01'.'TRCELP'.'TRH'.UP 0.33
+'FIN'.2040.'TRMDHE01'.'LORELP'.'TRM'.UP 0.4
+'FIN'.2040.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.4
+'FIN'.2040.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.4
+'FIN'.2040.'TRMELC01'.'LORELP'.'TRM'.UP 0.4
+'FIN'.2040.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.54
+'FIN'.2040.'TRTELC01'.'CARHDE'.'TRT'.UP 0.54
+'FIN'.2040.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.54
+'FIN'.2040.'TRTHFC01'.'CARFC'.'TRT'.UP 0.11
+'FIN'.2040.'TRTMFC01'.'CARFC'.'TRT'.UP 0.11
+'FIN'.2050.'ESOPVD205'.'ESOPVD205'.'G-PUBELC'.UP 0.1
+'FIN'.2050.'IDTHET000'.'IDT'.'ISIS'.LO 0.1
+'FIN'.2050.'IDTHET000'.'IDT'.'ISLP'.LO 0.023
+'FIN'.2050.'ILPMIX100'.'ILPMIX100'.'G-PAPMIX'.FX 0.362231101451201
+'FIN'.2050.'ILPMIX370'.'ILPMIX300'.'G-PAPMIX'.FX 0
+'FIN'.2050.'IOOINGA000'.'IOOINGA000'.'IOOI'.LO 0.03
+'FIN'.2050.'TRBDHE01'.'BUSELP'.'TRB'.UP 0.85
+'FIN'.2050.'TRBELC01'.'BUSELP'.'TRB'.UP 0.85
+'FIN'.2050.'TRHDHE01'.'TRCELP'.'TRH'.UP 0.6
+'FIN'.2050.'TRHDHE01'.'TRHHD'.'TRH'.UP 0.4
+'FIN'.2050.'TRHDHY01'.'TRHHD'.'TRH'.UP 0.4
+'FIN'.2050.'TRHELC01'.'TRCELP'.'TRH'.UP 0.6
+'FIN'.2050.'TRMDHE01'.'LORELP'.'TRM'.UP 0.75
+'FIN'.2050.'TRMDHE01'.'TRMHD'.'TRM'.UP 0.65
+'FIN'.2050.'TRMDHY01'.'TRMHD'.'TRM'.UP 0.65
+'FIN'.2050.'TRMELC01'.'LORELP'.'TRM'.UP 0.75
+'FIN'.2050.'TRTDHE01'.'CARHDE'.'TRT'.UP 0.85
+'FIN'.2050.'TRTELC01'.'CARHDE'.'TRT'.UP 0.85
+'FIN'.2050.'TRTGHE01'.'CARHDE'.'TRT'.UP 0.85
+'FIN'.2050.'TRTHFC01'.'CARFC'.'TRT'.UP 0.2
+'FIN'.2050.'TRTMFC01'.'CARFC'.'TRT'.UP 0.2
+'FIN'.2070.'IPOIELC005'.'IPOIELC000'.'IPOI'.LO 0
+'FIN'.2090.'ESOPVD205'.'ESOPVD205'.'G-PUBELC'.UP 0.15
+/;
+
+PARAMETER
+
+PRC_RESID ' '/
+'FIM'.2020.'HET1HTPUMP' 0.1
+'FIM'.2030.'HET1HTPUMP' 0.15
+'FIM'.2040.'HET1HTPUMP' 0.15
+'FIM'.2050.'HET1HTPUMP' 0.15
+'FIN'.2010.'ALANDUSE' 2000
+'FIN'.2017.'ALANDUSE' 2024.84567313166
+'FIN'.2020.'ALANDUSE' 2050
+'FIN'.2020.'DHPCOAP100' 0
+'FIN'.2020.'HET1HTPUMP' 0.05
+'FIN'.2030.'ALANDUSE' 2100
+'FIN'.2030.'HET1HTPUMP' 0.05
+'FIN'.2040.'ALANDUSE' 2150
+'FIN'.2040.'HET1HTPUMP' 0.05
+'FIN'.2050.'ALANDUSE' 2200
+'FIN'.2050.'HET1HTPUMP' 0.05
+'FIN'.2050.'UPRNCB200' 8
+/;
+
+PARAMETER
+
+UC_ACT ' '/
+'MINGRO'.LHS.'FIN'.2040.'ONON000'.ANNUAL 0.96
+/;
+
+PARAMETER
+
+UC_CAP ' '/
+'MAXGRO'.LHS.'FIM'.2030.'EDSOLCOM05' 1.16
+'MAXGRO'.LHS.'FIM'.2030.'EDSOLRES05' 1.16
+'MAXGRO'.LHS.'FIM'.2040.'EDSOLCOM05' 1.1
+'MAXGRO'.LHS.'FIM'.2040.'EDSOLRES05' 1.1
+'MAXGRO'.LHS.'FIM'.2050.'EDSOLCOM05' 1.07
+'MAXGRO'.LHS.'FIM'.2050.'EDSOLRES05' 1.07
+'MAXGRO'.LHS.'FIN'.2030.'EDSOLCOM05' 1.16
+'MAXGRO'.LHS.'FIN'.2030.'EDSOLRES05' 1.16
+'MAXGRO'.LHS.'FIN'.2040.'EDSOLCOM05' 1.1
+'MAXGRO'.LHS.'FIN'.2040.'EDSOLRES05' 1.1
+'MAXGRO'.LHS.'FIN'.2050.'EDSOLCOM05' 1.07
+'MAXGRO'.LHS.'FIN'.2050.'EDSOLRES05' 1.07
+'MAXGRO'.RHS.'FIM'.2015.'EDSOLCOM05' 0.02
+'MAXGRO'.RHS.'FIM'.2015.'EDSOLRES05' 0.02
+'MAXGRO'.RHS.'FIN'.2015.'EDSOLCOM05' 0.05
+'MAXGRO'.RHS.'FIN'.2015.'EDSOLRES05' 0.05
+/;
+
+PARAMETER
+
+UC_COMNET ' '/
+'A_MAXCO2EM'.LHS.'FIM'.2025.'TOTCO2'.ANNUAL 1
+'A_MAXCO2EM'.LHS.'FIN'.2025.'TOTCO2'.ANNUAL 1
+'S_EUnonETS-FIN-base'.LHS.'FIM'.2025.'NONCO2T'.ANNUAL 1
+'S_EUnonETS-FIN-base'.LHS.'FIN'.2025.'NONCO2T'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_FLO ' '/
+'DNTSDIR'.LHS.'FIN'.2020.'DNETSCO2'.'DUM1'.ANNUAL -1
+'DNTSDIR'.LHS.'FIN'.2020.'HET2BIOBFB-1'.'ELCBCO'.ANNUAL 102
+'DNTSDIR'.LHS.'FIN'.2020.'HET4BIOBFB-1'.'ELCBCO'.ANNUAL 102
+'DNTSDIR'.LHS.'FIN'.2020.'HET4BIOBFB-1'.'ELCCOA'.ANNUAL 92.7
+'DNTSDIR'.LHS.'FIN'.2020.'HETBCOP200'.'ELCBCO'.ANNUAL 102
+'DNTSDIR'.LHS.'FIN'.2020.'HETBCOP400'.'ELCBCO'.ANNUAL 102
+'DNTSDIR'.LHS.'FIN'.2020.'HETCOAP200'.'ELCCOA'.ANNUAL 92.7
+'DNTSDIR'.LHS.'FIN'.2020.'HETCOAP400'.'ELCCOA'.ANNUAL 92.7
+'DNTSDIR'.LHS.'FIN'.2020.'HETOILP200'.'ELCOIL'.ANNUAL 76
+'DNTSDIR'.LHS.'FIN'.2020.'HETOILP400'.'ELCOIL'.ANNUAL 76
+'DNTSGASLO'.LHS.'FIN'.2020.'DNETSCO2'.'DUM3'.ANNUAL -1
+'DNTSGASLO'.LHS.'FIN'.2020.'HET2OILBUR-1'.'ELCNGA'.ANNUAL 56.1
+'DNTSGASLO'.LHS.'FIN'.2020.'HETGASP200'.'ELCNGA'.ANNUAL 56.1
+'DNTSGASLO'.LHS.'FIN'.2020.'HETGASP400'.'ELCNGA'.ANNUAL 56.1
+'DNTSGASUP'.LHS.'FIN'.2020.'DNETSCO2'.'DUM3'.ANNUAL -1
+'DNTSGASUP'.LHS.'FIN'.2020.'FT-ELCNGA1'.'SYNGAS'.ANNUAL -22.44
+'DNTSGASUP'.LHS.'FIN'.2020.'HET2OILBUR-1'.'ELCNGA'.ANNUAL 56.1
+'DNTSGASUP'.LHS.'FIN'.2020.'HETGASP200'.'ELCNGA'.ANNUAL 56.1
+'DNTSGASUP'.LHS.'FIN'.2020.'HETGASP400'.'ELCNGA'.ANNUAL 56.1
+'DNTSGOILO'.LHS.'FIN'.2020.'DNETSCO2'.'DUM2'.ANNUAL -1
+'DNTSGOILO'.LHS.'FIN'.2020.'HET2OILBUR-1'.'ELCGOI'.ANNUAL 77.1
+'DNTSGOILO'.LHS.'FIN'.2020.'HET4OILBUR-1'.'ELCGOI'.ANNUAL 77.1
+'DNTSGOIUP'.LHS.'FIN'.2020.'DNETSCO2'.'DUM2'.ANNUAL -1
+'DNTSGOIUP'.LHS.'FIN'.2020.'FT-ELCHOIL0'.'BIODST'.ANNUAL -30.84
+'DNTSGOIUP'.LHS.'FIN'.2020.'FT-ELCHOIL0'.'OILDST'.ANNUAL -1.5
+'DNTSGOIUP'.LHS.'FIN'.2020.'HET2OILBUR-1'.'ELCGOI'.ANNUAL 77.1
+'DNTSGOIUP'.LHS.'FIN'.2020.'HET4OILBUR-1'.'ELCGOI'.ANNUAL 77.1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1BIOBFB-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1BIOBFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1BIOFCS-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1BIOFCS+0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1BIOGFE-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1COACFB-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1COACLC+0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1COAIGC-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1COAPFB-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP1COAPFB+0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP2BIOBFB-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP2BIOBFB-1'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP2BIOGFE-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP2BIOIGC-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOBFB-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOBFB-1'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOCFB-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOCFB+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOFCS-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOFCS+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOGFE-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOIGC-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOPFB-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3BIOPFB+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP3COACLC+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP4BIOBFB-0'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHP4BIOGFE-0'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBCOP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBCOP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBCOP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBCOP400'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBIOP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBIOP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBIOP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPBIOP400'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPCOAP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPCOAP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPCOAP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'DHPCOAP400'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET1BIOBFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET1BIOCFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET1BIOCFB+1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET1BIOGFE-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET1COACFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET1REFBFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET2BIOBFB-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET2BIOBFB-1'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET2BIOGFE-1'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET4BIOBFB-0'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET4BIOBFB-1'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HET4BIOGFE-1'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HETBIOP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HETBIOP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HETBIOP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIM'.2010.'HETBIOP400'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1BIOBFB-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1BIOBFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1BIOFCS-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1BIOFCS+0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1BIOGFE-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1COACFB-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1COACLC+0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1COAIGC-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1COAPFB-0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP1COAPFB+0'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP2BIOBFB-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP2BIOBFB-1'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP2BIOGFE-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP2BIOIGC-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOBFB-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOBFB-1'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOCFB-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOCFB+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOFCS-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOFCS+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOGFE-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOIGC-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOPFB-0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3BIOPFB+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP3COACLC+0'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP4BIOBFB-0'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHP4BIOGFE-0'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBCOP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBCOP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBCOP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBCOP400'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBIOP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBIOP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBIOP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPBIOP400'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPCOAP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPCOAP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPCOAP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'DHPCOAP400'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET1BIOBFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET1BIOCFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET1BIOCFB+1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET1BIOGFE-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET1COACFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET1REFBFB-1'.'EL1BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET2BIOBFB-0'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET2BIOBFB-1'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET2BIOGFE-1'.'EL2BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET3BIOBFB-1'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET3BIOCFB-1'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET3BIOGFE-1'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET3REFBFB-1'.'EL3BIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET4BIOBFB-0'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET4BIOBFB-1'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HET4BIOGFE-1'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HETBIOP100'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HETBIOP200'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HETBIOP300'.'ELCBIO'.ANNUAL 1
+'FORCHIP'.LHS.'FIN'.2010.'HETBIOP400'.'ELCBIO'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1BCOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1BIOBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1BIOBFB-1'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1BIOFCS-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1BIOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1BIOGFE-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1COACFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1COACLC+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1COAIGC-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1COAPFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1COAPFB+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1COAPFS-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1COAPFU+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1GASCCT-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1GASCCT+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1GASFCM-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1GASICE-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1GASWGT-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1NUCPBR-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1NUCSMR'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1OILSTB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP1REFBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2BGSICE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2BIOBFB-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2BIOBFB-1'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2BIOGFE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2BIOIGC-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2GASCCT-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2GASFCM-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2GASICE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP2GASWGT-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BCOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOBFB-1'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOCFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOCFB+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOFCS-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOGFE-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOIGC-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOPFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3BIOPFB+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3COACLC+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3OILSTB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP3REFBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP4BIOBFB-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP4BIOGFE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHP4OILICE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBCOP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBCOP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBCOP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBCOP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBIOICE-B5'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBIOP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBIOP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBIOP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBIOP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBMUP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBMUP200'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBMUP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPBMUP400'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPCOAP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPCOAP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPCOAP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPCOAP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPGASICE-N5'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPGASP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPGASP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPGASP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPGASP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPGEOP00'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPOILP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPOILP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPOILP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHPOILP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIM'.2020.'DHYNPFC-05'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1BCOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1BIOBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1BIOBFB-1'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1BIOFCS-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1BIOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1BIOGFE-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1COACFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1COACLC+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1COAIGC-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1COAPFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1COAPFB+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1COAPFS-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1COAPFU+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1GASCCT-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1GASCCT+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1GASFCM-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1GASICE-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1GASWGT-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1NUCPBR-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1NUCSMR'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1OILSTB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP1REFBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2BGSICE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2BIOBFB-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2BIOBFB-1'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2BIOGFE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2BIOIGC-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2GASCCT-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2GASFCM-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2GASICE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP2GASWGT-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BCOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOBFB-1'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOCFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOCFB+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOFCS-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOFCS+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOGFE-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOIGC-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOPFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3BIOPFB+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3COACLC+0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3OILSTB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP3REFBFB-0'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP4BIOBFB-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP4BIOGFE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHP4OILICE-0'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBCOP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBCOP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBCOP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBCOP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBIOICE-B5'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBIOP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBIOP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBIOP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBIOP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBMUP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBMUP200'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBMUP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPBMUP400'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPCOAP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPCOAP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPCOAP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPCOAP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPGASICE-N5'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPGASP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPGASP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPGASP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPGASP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPGEOP00'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPOILP100'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPOILP200'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPOILP300'.'ELCC'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHPOILP400'.'ELCMP'.ANNUAL 1
+'U_ElcDHP'.LHS.'FIN'.2020.'DHYNPFC-05'.'ELCC'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CC2EHP000'.'COMELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA000'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA000'.'CHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA005'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA005'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA007'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA007'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA705'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHA705'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHP005'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHP005'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHP705'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH1EHP705'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH2EHA000'.'CH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'CH2EHA000'.'CHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHA005'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHA005'.'RHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHA705'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHA705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHN005'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHN005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHN705'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHN705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHP000'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHP000'.'RHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHP005'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHP005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHP705'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH1EHP705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHA000'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHA000'.'RHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHA005'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHA005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHA705'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHA705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHP005'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHP005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHP705'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIM'.2030.'RH2EHP705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CC2EHP000'.'COMELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA000'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA000'.'CHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA005'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA005'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA007'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA007'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA705'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHA705'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHP005'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHP005'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHP705'.'CH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH1EHP705'.'CHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH2EHA000'.'CH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'CH2EHA000'.'CHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHA005'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHA005'.'RHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHA705'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHA705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHN005'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHN005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHN705'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHN705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHP000'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHP000'.'RHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHP005'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHP005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHP705'.'RH1'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH1EHP705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHA000'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHA000'.'RHAELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHA005'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHA005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHA705'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHA705'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHP005'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHP005'.'RHPELC'.ANNUAL -1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHP705'.'RH2'.ANNUAL 1
+'U_HTPUMP'.LHS.'FIN'.2030.'RH2EHP705'.'RHPELC'.ANNUAL -1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'A_MAXCO2EM'.LHS.'FIM'.2010.'IMPDUCZ'.'A_MAXCO2EM-'.ANNUAL.IMP -1
+'A_MAXCO2EM'.LHS.'FIM'.2010.'IMPDUCZ'.'A_MAXCO2EM_'.ANNUAL.IMP 1
+'A_MAXCO2EM'.LHS.'FIN'.2010.'IMPDUCZ'.'A_MAXCO2EM-'.ANNUAL.IMP -1
+'A_MAXCO2EM'.LHS.'FIN'.2010.'IMPDUCZ'.'A_MAXCO2EM_'.ANNUAL.IMP 1
+'DNTSDIR'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSDIR-'.ANNUAL.IMP -1
+'DNTSDIR'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSDIR_'.ANNUAL.IMP 1
+'DNTSGASLO'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGASLO-'.ANNUAL.IMP -1
+'DNTSGASLO'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGASLO_'.ANNUAL.IMP 1
+'DNTSGASUP'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGASUP-'.ANNUAL.IMP -1
+'DNTSGASUP'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGASUP_'.ANNUAL.IMP 1
+'DNTSGOILO'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGOILO-'.ANNUAL.IMP -1
+'DNTSGOILO'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGOILO_'.ANNUAL.IMP 1
+'DNTSGOIUP'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGOIUP-'.ANNUAL.IMP -1
+'DNTSGOIUP'.LHS.'FIN'.2010.'IMPDUCZ'.'DNTSGOIUP_'.ANNUAL.IMP 1
+'FORCHIP'.LHS.'FIM'.2010.'IMPDUCZ'.'FORCHIP-'.ANNUAL.IMP -1
+'FORCHIP'.LHS.'FIM'.2010.'IMPDUCZ'.'FORCHIP_'.ANNUAL.IMP 1
+'FORCHIP'.LHS.'FIN'.2010.'IMPDUCZ'.'FORCHIP-'.ANNUAL.IMP -1
+'FORCHIP'.LHS.'FIN'.2010.'IMPDUCZ'.'FORCHIP_'.ANNUAL.IMP 1
+'MAXGRO'.LHS.'FIM'.2010.'IMPDUCZ'.'MAXGRO-'.ANNUAL.IMP -1
+'MAXGRO'.LHS.'FIM'.2010.'IMPDUCZ'.'MAXGRO_'.ANNUAL.IMP 1
+'MAXGRO'.LHS.'FIN'.2010.'IMPDUCZ'.'MAXGRO-'.ANNUAL.IMP -1
+'MAXGRO'.LHS.'FIN'.2010.'IMPDUCZ'.'MAXGRO_'.ANNUAL.IMP 1
+'MINGRO'.LHS.'FIN'.2010.'IMPDUCZ'.'MINGRO-'.ANNUAL.IMP -1
+'MINGRO'.LHS.'FIN'.2010.'IMPDUCZ'.'MINGRO_'.ANNUAL.IMP 1
+'S_EUnonETS-FIN-base'.LHS.'FIM'.2010.'IMPDUCZ'.'S_EUnonETS-FIN-base-'.ANNUAL.IMP -1
+'S_EUnonETS-FIN-base'.LHS.'FIM'.2010.'IMPDUCZ'.'S_EUnonETS-FIN-base_'.ANNUAL.IMP 1
+'S_EUnonETS-FIN-base'.LHS.'FIN'.2010.'IMPDUCZ'.'S_EUnonETS-FIN-base-'.ANNUAL.IMP -1
+'S_EUnonETS-FIN-base'.LHS.'FIN'.2010.'IMPDUCZ'.'S_EUnonETS-FIN-base_'.ANNUAL.IMP 1
+'U_ElcDHP'.LHS.'FIM'.2010.'IMPDUCZ'.'U_ElcDHP-'.ANNUAL.IMP -1
+'U_ElcDHP'.LHS.'FIM'.2010.'IMPDUCZ'.'U_ElcDHP_'.ANNUAL.IMP 1
+'U_ElcDHP'.LHS.'FIN'.2010.'IMPDUCZ'.'U_ElcDHP-'.ANNUAL.IMP -1
+'U_ElcDHP'.LHS.'FIN'.2010.'IMPDUCZ'.'U_ElcDHP_'.ANNUAL.IMP 1
+'U_HTPUMP'.LHS.'FIM'.2010.'IMPDUCZ'.'U_HTPUMP-'.ANNUAL.IMP -1
+'U_HTPUMP'.LHS.'FIM'.2010.'IMPDUCZ'.'U_HTPUMP_'.ANNUAL.IMP 1
+'U_HTPUMP'.LHS.'FIN'.2010.'IMPDUCZ'.'U_HTPUMP-'.ANNUAL.IMP -1
+'U_HTPUMP'.LHS.'FIN'.2010.'IMPDUCZ'.'U_HTPUMP_'.ANNUAL.IMP 1
+'U_MinNtELI'.LHS.'FIM'.2010.'IMPDUCZ'.'U_MinNtELI-'.ANNUAL.IMP -1
+'U_MinNtELI'.LHS.'FIM'.2010.'IMPDUCZ'.'U_MinNtELI_'.ANNUAL.IMP 1
+'U_MinNtELI'.LHS.'FIM'.2020.'IMPELCFIM'.'ELCC'.ANNUAL.IMP 1
+'U_MinNtELI'.LHS.'FIM'.2020.'IMPELCFIN'.'ELCE'.ANNUAL.EXP -1
+'U_NetELIMP'.LHS.'FIN'.2010.'IMPDUCZ'.'U_NetELIMP-'.ANNUAL.IMP -1
+'U_NetELIMP'.LHS.'FIN'.2010.'IMPDUCZ'.'U_NetELIMP_'.ANNUAL.IMP 1
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-EEU-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-EEU-FIN'.'ELCE'.ANNUAL.EXP -1
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-NO2-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-NO2-FIN'.'ELCE'.ANNUAL.EXP -1
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-RUS-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-RUS-FIN'.'ELCE'.ANNUAL.EXP -1
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-SE1-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-SE1-FIN'.'ELCE'.ANNUAL.EXP -1
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-SE3-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X-ELC-SE3-FIN'.'ELCE'.ANNUAL.EXP -1
+'U_NetELIMP'.LHS.'FIN'.2020.'X+ELC-EEU-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X+ELC-EEU-FIN'.'ELCE'.ANNUAL.EXP -1
+'U_NetELIMP'.LHS.'FIN'.2020.'X+ELC-NO2-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X+ELC-SE3-FIN'.'ELCC'.ANNUAL.IMP 0.98
+'U_NetELIMP'.LHS.'FIN'.2020.'X+ELC-SE3-FIN'.'ELCE'.ANNUAL.EXP -1
+/;
+
+PARAMETER
+
+UC_RHSRT ' '/
+'FIN'.'A_INDCOA'.2030.UP 31
+'FIN'.'DNTSDIR'.0.FX 5
+'FIN'.'DNTSDIR'.2010.FX 0
+'FIN'.'DNTSGASLO'.0.LO 5
+'FIN'.'DNTSGASLO'.2010.LO 0
+'FIN'.'DNTSGASUP'.0.UP 5
+'FIN'.'DNTSGASUP'.2010.UP 0
+'FIN'.'DNTSGOILO'.0.LO 5
+'FIN'.'DNTSGOILO'.2010.LO 0
+'FIN'.'DNTSGOIUP'.0.UP 5
+'FIN'.'DNTSGOIUP'.2010.UP 0
+/;
+
+PARAMETER
+
+UC_RHSRTS ' '/
+'FIM'.'U_MinNtELI'.2010.ANNUAL.LO 3.1536
+'FIN'.'U_NetELIMP'.2010.ANNUAL.LO 37.332
+'FIN'.'U_NetELIMP'.2015.ANNUAL.LO 58.788
+'FIN'.'U_NetELIMP'.2017.ANNUAL.LO 73.44
+'FIN'.'U_NetELIMP'.2020.ANNUAL.LO 11.88
+'FIN'.'U_NetELIMP'.2020.ANNUAL.UP 66.564
+/;
+
+PARAMETER
+
+UC_RHST ' '/
+'A_MAXCO2EM'.0.UP 5
+'A_MAXCO2EM'.2025.UP 32262.7220071661
+'A_MAXCO2EM'.2030.UP 23729.0148473993
+'A_MAXCO2EM'.2035.UP 12651.2116555225
+'A_MAXCO2EM'.2040.UP 10197.1370425268
+'A_MAXCO2EM'.2045.UP 8966.00405946979
+'A_MAXCO2EM'.2050.UP 7734.87107641279
+'S_EUnonETS-FIN-base'.0.UP 5
+'S_EUnonETS-FIN-base'.2030.UP 20569.2
+'S_EUnonETS-FIN-base'.2040.UP 16860
+'S_EUnonETS-FIN-base'.2050.UP 13488
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'FORCHIP'.0.ANNUAL.LO 5
+'FORCHIP'.2010.ANNUAL.LO 29.1
+'FORCHIP'.2020.ANNUAL.LO 48.433
+'FORCHIP'.2030.ANNUAL.LO 61.58
+'FORCHIP'.2035.ANNUAL.LO 70.459
+'U_ElcDHP'.2020.ANNUAL.UP 52.5744
+'U_HTPUMP'.0.ANNUAL.LO 5
+'U_HTPUMP'.2030.ANNUAL.LO 21.6
+/;
+
+PARAMETER
+
+VDA_FLOP ' '/
+'FIM'.2015.'IOOIBIO000'.'INDBIO'.ANNUAL 1.03703703703704
+'FIM'.2015.'IOOICOA000'.'INDCOA'.ANNUAL 1.03703703703704
+'FIM'.2015.'IOOICOK000'.'INDCOK'.ANNUAL 1.03703703703704
+'FIM'.2015.'IOOIDST000'.'INDDST'.ANNUAL 1.03703703703704
+'FIM'.2015.'IOOIELC000'.'IOOELC'.ANNUAL 0.84
+'FIM'.2015.'IOOIGEO000'.'INDGEO'.ANNUAL 0.875000000000003
+'FIM'.2015.'IOOIHET000'.'INDLTH'.ANNUAL 0.875000000000003
+'FIM'.2015.'IOOIHFO000'.'INDHFO'.ANNUAL 1.03703703703704
+'FIM'.2015.'IOOILPG000'.'INDLPG'.ANNUAL 1.03703703703704
+'FIM'.2015.'IOOINGA000'.'INDNGA'.ANNUAL 1.03703703703704
+'FIM'.2015.'IOOIPTC000'.'INDPTC'.ANNUAL 1.03703703703704
+'FIM'.2020.'ILPPAP000'.'IMLP'.ANNUAL 2.05
+'FIM'.2030.'ICH000'.'ICHBTX'.ANNUAL -0.007
+'FIM'.2030.'ICH000'.'ICHOLF'.ANNUAL -0.007
+'FIN'.2015.'I00000'.'INDELC'.ANNUAL 0
+'FIN'.2015.'IOOIBIO000'.'INDBIO'.ANNUAL 1.03703703703704
+'FIN'.2015.'IOOICOA000'.'INDCOA'.ANNUAL 1.03703703703704
+'FIN'.2015.'IOOICOK000'.'INDCOK'.ANNUAL 1.03703703703704
+'FIN'.2015.'IOOIDST000'.'INDDST'.ANNUAL 1.03703703703704
+'FIN'.2015.'IOOIELC000'.'IOOELC'.ANNUAL 0.84
+'FIN'.2015.'IOOIGEO000'.'INDGEO'.ANNUAL 0.875000000000003
+'FIN'.2015.'IOOIHET000'.'INDLTH'.ANNUAL 0.875000000000003
+'FIN'.2015.'IOOIHFO000'.'INDHFO'.ANNUAL 1.03703703703704
+'FIN'.2015.'IOOILPG000'.'INDLPG'.ANNUAL 1.03703703703704
+'FIN'.2015.'IOOINGA000'.'INDNGA'.ANNUAL 1.03703703703704
+'FIN'.2015.'IOOIPTC000'.'INDPTC'.ANNUAL 1.03703703703704
+'FIN'.2015.'UTRNREFX00'.'BIOADD'.ANNUAL 0.0186702702702703
+'FIN'.2020.'IIS000'.'IISAOD'.ANNUAL 0.283907276945581
+'FIN'.2020.'IIS000'.'IISFEA'.ANNUAL 0.108160225375215
+'FIN'.2020.'ILPMIX100'.'ILPCHB'.ANNUAL 0.177396319384833
+'FIN'.2020.'ILPMIX100'.'ILPCSB'.ANNUAL 0.432370285184467
+'FIN'.2020.'ILPMIX100'.'ILPMGF'.ANNUAL 0.177625844135291
+'FIN'.2020.'ILPMIX100'.'ILPMRF'.ANNUAL 0.181690470509389
+'FIN'.2020.'ILPMIX200'.'ILPCHB'.ANNUAL 0.145712836009965
+'FIN'.2020.'ILPMIX200'.'ILPCSB'.ANNUAL 0.270581037862185
+'FIN'.2020.'ILPMIX200'.'ILPCSN'.ANNUAL 0.1140619663916
+'FIN'.2020.'ILPMIX200'.'ILPMGN'.ANNUAL 0.128053110000712
+'FIN'.2020.'ILPMIX200'.'ILPMRN'.ANNUAL 0.131888170196256
+'FIN'.2020.'ILPMIX200'.'ILPSCN'.ANNUAL 0.0948745921727443
+'FIN'.2020.'ILPPAP000'.'IMLP'.ANNUAL 2.05
+'FIN'.2020.'ILPPEX000'.'ILPCHB'.ANNUAL 0.304793441639958
+'FIN'.2020.'ILPPUC000'.'ISLP'.ANNUAL 8.66
+'FIN'.2020.'ILPPUR000'.'ISLP'.ANNUAL 0.2
+'FIN'.2020.'UTRNREFX00'.'UPNELC'.ANNUAL 0.0077
+'FIN'.2030.'I00000'.'INDELC'.ANNUAL 1.296
+'FIN'.2030.'ICH000'.'ICHBTX'.ANNUAL -0.007
+'FIN'.2030.'ICH000'.'ICHOLF'.ANNUAL -0.007
+'FIN'.2030.'IIS000'.'IISAOD'.ANNUAL 0.283907276945581
+'FIN'.2030.'IIS000'.'IISFEA'.ANNUAL 0.112712066677374
+'FIN'.2030.'ILPMIX100'.'ILPCHB'.ANNUAL 0.155921867664131
+'FIN'.2030.'ILPMIX100'.'ILPCSB'.ANNUAL 0.45087824136873
+'FIN'.2030.'ILPMIX100'.'ILPMGF'.ANNUAL 0.176257970250621
+'FIN'.2030.'ILPMIX100'.'ILPMRF'.ANNUAL 0.180291295457397
+'FIN'.2030.'ILPMIX200'.'ILPCHB'.ANNUAL 0.128975723541752
+'FIN'.2030.'ILPMIX200'.'ILPCSB'.ANNUAL 0.282870139909873
+'FIN'.2030.'ILPMIX200'.'ILPCSN'.ANNUAL 0.120659426048384
+'FIN'.2030.'ILPMIX200'.'ILPMGN'.ANNUAL 0.127672379614736
+'FIN'.2030.'ILPMIX200'.'ILPMRN'.ANNUAL 0.131496037323074
+'FIN'.2030.'ILPMIX200'.'ILPSCN'.ANNUAL 0.0916736908616142
+'FIN'.2030.'ILPPEX000'.'ILPCHB'.ANNUAL 0.270370376462854
+'FIN'.2030.'ILPPUC000'.'ISLP'.ANNUAL 8.1404
+'FIN'.2040.'IIS000'.'IISAOD'.ANNUAL 0.283907276945581
+'FIN'.2040.'IIS000'.'IISFEA'.ANNUAL 0.112712066677374
+'FIN'.2040.'ILPMIX100'.'ILPCHB'.ANNUAL 0.157647727175757
+'FIN'.2040.'ILPMIX100'.'ILPCSB'.ANNUAL 0.44773034094402
+'FIN'.2040.'ILPMIX100'.'ILPMGF'.ANNUAL 0.174731859362985
+'FIN'.2040.'ILPMIX100'.'ILPMRF'.ANNUAL 0.178730262452466
+'FIN'.2040.'ILPMIX200'.'ILPCHB'.ANNUAL 0.131523729338437
+'FIN'.2040.'ILPMIX200'.'ILPCSB'.ANNUAL 0.282286312528225
+'FIN'.2040.'ILPMIX200'.'ILPCSN'.ANNUAL 0.121174597958012
+'FIN'.2040.'ILPMIX200'.'ILPMGN'.ANNUAL 0.127422729186027
+'FIN'.2040.'ILPMIX200'.'ILPMRN'.ANNUAL 0.131238910118347
+'FIN'.2040.'ILPMIX200'.'ILPSCN'.ANNUAL 0.0888886805177308
+'FIN'.2040.'ILPPEX000'.'ILPCHB'.ANNUAL 0.275125258007132
+'FIN'.2050.'ICHOTH000'.'IFCH'.ANNUAL -0.007
+'FIN'.2050.'IIS000'.'IISAOD'.ANNUAL 0.283907276945581
+'FIN'.2050.'IIS000'.'IISFEA'.ANNUAL 0.112712066677374
+'FIN'.2050.'ILPMIX100'.'ILPCHB'.ANNUAL 0.157015982280525
+'FIN'.2050.'ILPMIX100'.'ILPCSB'.ANNUAL 0.446296832168404
+'FIN'.2050.'ILPMIX100'.'ILPMGF'.ANNUAL 0.174102286334307
+'FIN'.2050.'ILPMIX100'.'ILPMRF'.ANNUAL 0.178086282853903
+'FIN'.2050.'ILPMIX200'.'ILPCHB'.ANNUAL 0.13166711957566
+'FIN'.2050.'ILPMIX200'.'ILPCSB'.ANNUAL 0.282187770698452
+'FIN'.2050.'ILPMIX200'.'ILPCSN'.ANNUAL 0.121625406086425
+'FIN'.2050.'ILPMIX200'.'ILPMGN'.ANNUAL 0.127469198305477
+'FIN'.2050.'ILPMIX200'.'ILPMRN'.ANNUAL 0.131286770940586
+'FIN'.2050.'ILPMIX200'.'ILPSCN'.ANNUAL 0.0871451617500054
+'FIN'.2050.'ILPPEX000'.'ILPCHB'.ANNUAL 0.275652546554785
+/;
+
+

@@ -1,0 +1,13 @@
+Copyright (c) 2026 KanORS-EMR
+
+Each model folder holds its model's input files under that model's own
+licence, given in the folder's LICENSE and README. No licence in this
+file covers them.
+
+The rest of this repository (the README files, expected.json and the
+report_*.txt files) is licensed under the Creative Commons Attribution
+4.0 International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Where a model's licence requires it (share-alike: CC BY-SA, GPL-3.0,
+ODbL), the files produced from that model are also under that licence.

@@ -1,0 +1,346 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'BASE'
+$SET SCENARIO_NAME 'dk_tra_baseconstraints'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'DKE'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'DKE'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'DKE'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'DKW'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'DKW'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'DKW'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'DKW'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'FIM'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'FIM'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'FIM'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'FIM'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'FIN'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'FIN'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'FIN'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'FIN'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'NO1'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'NO1'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'NO1'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'NO1'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'NO2'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'NO2'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'NO2'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'NO2'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'SE1'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'SE1'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'SE1'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'SE1'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'SE2'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'SE2'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'SE2'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'SE2'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'SE3'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'SE3'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'SE3'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'SE3'.'NRG'.'UC_TRA_MinRenShare_DK_'
+'SE4'.'NRG'.'UC_Min_AviationGasoline_DK-'
+'SE4'.'NRG'.'UC_Min_AviationGasoline_DK_'
+'SE4'.'NRG'.'UC_TRA_MinRenShare_DK-'
+'SE4'.'NRG'.'UC_TRA_MinRenShare_DK_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'DKE'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'DKE'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'DKE'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'DKW'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'DKW'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'DKW'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'DKW'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'FIM'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'FIM'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'FIM'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'FIM'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'FIN'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'FIN'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'FIN'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'FIN'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'NO1'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'NO1'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'NO1'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'NO1'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'NO2'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'NO2'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'NO2'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'NO2'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'SE1'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'SE1'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'SE1'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'SE1'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'SE2'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'SE2'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'SE2'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'SE2'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'SE3'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'SE3'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'SE3'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'SE3'.'UC_TRA_MinRenShare_DK_'.'UCU'
+'SE4'.'UC_Min_AviationGasoline_DK-'.'UCU'
+'SE4'.'UC_Min_AviationGasoline_DK_'.'UCU'
+'SE4'.'UC_TRA_MinRenShare_DK-'.'UCU'
+'SE4'.'UC_TRA_MinRenShare_DK_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'UC_Min_AviationGasoline_DK-'.'DKE'.'UC_Min_AviationGasoline_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_Min_AviationGasoline_DK-'.'DKW'.'UC_Min_AviationGasoline_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_Min_AviationGasoline_DK_'.'DKE'.'UC_Min_AviationGasoline_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_Min_AviationGasoline_DK_'.'DKW'.'UC_Min_AviationGasoline_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_TRA_MinRenShare_DK-'.'DKE'.'UC_TRA_MinRenShare_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_TRA_MinRenShare_DK-'.'DKW'.'UC_TRA_MinRenShare_DK-'.'IMPDUCZ'
+'IMPEXP'.'UC_TRA_MinRenShare_DK_'.'DKE'.'UC_TRA_MinRenShare_DK_'.'IMPDUCZ'
+'IMPEXP'.'UC_TRA_MinRenShare_DK_'.'DKW'.'UC_TRA_MinRenShare_DK_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'DKE'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'DKE'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'DKE'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'DKW'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'DKW'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'DKW'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'DKW'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'FIM'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'FIM'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'FIM'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'FIM'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'FIN'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'FIN'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'FIN'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'FIN'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'NO1'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'NO1'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'NO1'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'NO1'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'NO2'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'NO2'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'NO2'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'NO2'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE1'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE1'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE1'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE1'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE2'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE2'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE2'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE2'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE3'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE3'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE3'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE3'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE4'.'UC_Min_AviationGasoline_DK-' 'Negative dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE4'.'UC_Min_AviationGasoline_DK_' 'Positive dummy var for UC: UC_Min_AviationGasoline_DK'
+'SE4'.'UC_TRA_MinRenShare_DK-' 'Negative dummy var for UC: UC_TRA_MinRenShare_DK'
+'SE4'.'UC_TRA_MinRenShare_DK_' 'Positive dummy var for UC: UC_TRA_MinRenShare_DK'
+/;
+
+SET UC_R_SUM
+
+/
+'DKE'.'UC_Min_AviationGasoline_DK'
+'DKE'.'UC_TRA_MinRenShare_DK'
+'DKW'.'UC_Min_AviationGasoline_DK'
+'DKW'.'UC_TRA_MinRenShare_DK'
+/;
+
+PARAMETER
+
+COM_TAXNET ' '/
+'DKE'.2010.'TPCAL'.ANNUAL.'MEUR15' 7000
+'DKE'.2010.'TPCAM'.ANNUAL.'MEUR15' 7000
+'DKE'.2010.'TPCAS'.ANNUAL.'MEUR15' 7000
+'DKE'.2010.'TPCAX'.ANNUAL.'MEUR15' 7000
+'DKW'.2010.'TPCAL'.ANNUAL.'MEUR15' 7000
+'DKW'.2010.'TPCAM'.ANNUAL.'MEUR15' 7000
+'DKW'.2010.'TPCAS'.ANNUAL.'MEUR15' 7000
+'DKW'.2010.'TPCAX'.ANNUAL.'MEUR15' 7000
+/;
+
+PARAMETER
+
+FLO_SHAR ' '/
+'DKE'.0.'FT-TRAGSBL2'.'TRAGSBL2'.'FT-TRAGSBL2_NRGO'.ANNUAL.LO 5
+'DKE'.0.'FT-TRAGSBL3'.'TRAGSBL3'.'FT-TRAGSBL3_NRGO'.ANNUAL.LO 5
+'DKE'.0.'FT-TRAGSBL4'.'TRAGSBL4'.'FT-TRAGSBL4_NRGO'.ANNUAL.LO 5
+'DKE'.2012.'FT-TRAGSBL2'.'TRAGSBL2'.'FT-TRAGSBL2_NRGO'.ANNUAL.LO 0.0575
+'DKE'.2012.'FT-TRAGSBL3'.'TRAGSBL3'.'FT-TRAGSBL3_NRGO'.ANNUAL.LO 0.0575
+'DKE'.2012.'FT-TRAGSBL4'.'TRAGSBL4'.'FT-TRAGSBL4_NRGO'.ANNUAL.LO 0.0575
+'DKW'.0.'FT-TRAGSBL2'.'TRAGSBL2'.'FT-TRAGSBL2_NRGO'.ANNUAL.LO 5
+'DKW'.0.'FT-TRAGSBL3'.'TRAGSBL3'.'FT-TRAGSBL3_NRGO'.ANNUAL.LO 5
+'DKW'.0.'FT-TRAGSBL4'.'TRAGSBL4'.'FT-TRAGSBL4_NRGO'.ANNUAL.LO 5
+'DKW'.2012.'FT-TRAGSBL2'.'TRAGSBL2'.'FT-TRAGSBL2_NRGO'.ANNUAL.LO 0.0575
+'DKW'.2012.'FT-TRAGSBL3'.'TRAGSBL3'.'FT-TRAGSBL3_NRGO'.ANNUAL.LO 0.0575
+'DKW'.2012.'FT-TRAGSBL4'.'TRAGSBL4'.'FT-TRAGSBL4_NRGO'.ANNUAL.LO 0.0575
+/;
+
+PARAMETER
+
+UC_FLO ' '/
+'UC_Min_AviationGasoline_DK'.LHS.'DKE'.2012.'TPANAGSL1E'.'TRAAGSL'.ANNUAL 1
+'UC_Min_AviationGasoline_DK'.LHS.'DKE'.2020.'TPANAGSL1E'.'TRAAGSL'.ANNUAL 1
+'UC_Min_AviationGasoline_DK'.LHS.'DKW'.2012.'TPANAGSL1E'.'TRAAGSL'.ANNUAL 1
+'UC_Min_AviationGasoline_DK'.LHS.'DKW'.2020.'TPANAGSL1E'.'TRAAGSL'.ANNUAL 1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRADSB'.'DSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRADSB'.'DSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRADSBN'.'DSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRADSBN'.'DSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRADSL'.'DSL'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRADSLN'.'DSL'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAELCEV'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAELCEVC'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAGSB'.'GSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAGSB'.'GSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAGSBN'.'GSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAGSBN'.'GSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAGSL'.'GSL'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAKRB'.'KRB1'.ANNUAL -1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRAKRB'.'KRB2'.ANNUAL -2
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRANGA'.'NGA'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRANGAN'.'NGA'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRASNG'.'SNG1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRASNG'.'SNG2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRASNGN'.'SNG1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'FT-TRASNGN'.'SNG2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TFRLELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TFRNELCX1N'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TPRMELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TPRMELCX1N'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TPROELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TPROELCX1N'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TPRSELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'TPRSELCX1N'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRADSB'.'DSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRADSB'.'DSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRADSBN'.'DSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRADSBN'.'DSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRADSL'.'DSL'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRADSLN'.'DSL'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAELCEV'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAELCEVC'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAGSB'.'GSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAGSB'.'GSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAGSBN'.'GSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAGSBN'.'GSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAGSL'.'GSL'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAKRB'.'KRB1'.ANNUAL -1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRAKRB'.'KRB2'.ANNUAL -2
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRANGA'.'NGA'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRANGAN'.'NGA'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRASNG'.'SNG1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRASNG'.'SNG2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRASNGN'.'SNG1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'FT-TRASNGN'.'SNG2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TFRLELCX1E'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TFRNELCX1N'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TPRMELCX1E'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TPRMELCX1N'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TPROELCX1E'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TPROELCX1N'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TPRSELCX1E'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2020.'TPRSELCX1N'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRADSB'.'DSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRADSB'.'DSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRADSBN'.'DSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRADSBN'.'DSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRADSL'.'DSL'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRADSLN'.'DSL'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAELCEV'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAELCEVC'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAGSB'.'GSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAGSB'.'GSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAGSBN'.'GSB1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAGSBN'.'GSB2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAGSL'.'GSL'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAKRB'.'KRB1'.ANNUAL -1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRAKRB'.'KRB2'.ANNUAL -2
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRANGA'.'NGA'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRANGAN'.'NGA'.ANNUAL 0.05
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRASNG'.'SNG1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRASNG'.'SNG2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRASNGN'.'SNG1'.ANNUAL -0.95
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'FT-TRASNGN'.'SNG2'.ANNUAL -1.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'TFRLELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'TFRNELCX1N'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'TPRMELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'TPROELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'TPROELCX1N'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'TPRSELCX1E'.'TRAELC'.ANNUAL -0.25
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRADSB'.'DSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRADSB'.'DSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRADSBN'.'DSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRADSBN'.'DSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRADSL'.'DSL'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRADSLN'.'DSL'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAELCEV'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAELCEVC'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAGSB'.'GSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAGSB'.'GSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAGSBN'.'GSB1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAGSBN'.'GSB2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAGSL'.'GSL'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAKRB'.'KRB1'.ANNUAL -1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRAKRB'.'KRB2'.ANNUAL -2
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRANGA'.'NGA'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRANGAN'.'NGA'.ANNUAL 0.1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRASNG'.'SNG1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRASNG'.'SNG2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRASNGN'.'SNG1'.ANNUAL -0.9
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'FT-TRASNGN'.'SNG2'.ANNUAL -1.8
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'TFRLELCX1E'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'TFRNELCX1N'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'TPRMELCX1E'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'TPROELCX1E'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'TPROELCX1N'.'TRAELC'.ANNUAL -0.45
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2020.'TPRSELCX1E'.'TRAELC'.ANNUAL -0.45
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'UC_Min_AviationGasoline_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Min_AviationGasoline_DK-'.ANNUAL.IMP -1
+'UC_Min_AviationGasoline_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Min_AviationGasoline_DK_'.ANNUAL.IMP 1
+'UC_Min_AviationGasoline_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Min_AviationGasoline_DK-'.ANNUAL.IMP -1
+'UC_Min_AviationGasoline_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Min_AviationGasoline_DK_'.ANNUAL.IMP 1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_TRA_MinRenShare_DK-'.ANNUAL.IMP -1
+'UC_TRA_MinRenShare_DK'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_TRA_MinRenShare_DK_'.ANNUAL.IMP 1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_TRA_MinRenShare_DK-'.ANNUAL.IMP -1
+'UC_TRA_MinRenShare_DK'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_TRA_MinRenShare_DK_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'UC_Min_AviationGasoline_DK'.0.ANNUAL.LO 1
+'UC_Min_AviationGasoline_DK'.2012.ANNUAL.LO 0.0391
+'UC_Min_AviationGasoline_DK'.2020.ANNUAL.LO 0.0391
+'UC_TRA_MinRenShare_DK'.0.ANNUAL.UP 5
+'UC_TRA_MinRenShare_DK'.2010.ANNUAL.UP 0
+'UC_TRA_MinRenShare_DK'.2020.ANNUAL.UP 0
+/;
+
+

@@ -1,0 +1,92 @@
+VERDICT  SAME OBJECTIVE: only the objective was compared
+model    reference    (OTUS9r/reference)
+when     2026-11-08T18:39:25    total 388.5 s
+limit    50000 s for each solve    (the run file's OPTION RESLIM)
+
+This file is written by TIMES.py. It is complete in itself: everything needed to understand
+the result is below; FILES says which of the files it names are in this folder.
+
+CHECKS
+     check                                   result              Julia                   GAMS
+  0  all inputs supported                    yes
+  1  rows                                    same                1,028,923               1,028,923
+  1  columns                                 same                1,647,278               1,647,278
+  1  non-zeros                               same                7,186,412               7,186,412
+  2  objective                               same                192206507156.182556     192206507156.182617   relative difference 3.2e-16
+  4  matrix, entry by entry                  not made here       made in the matrix run: same (report_reference_matrix.txt)
+
+THE TWO RUNS
+  GAMS    published reference (expected.json); REDUCE YES; GAMS 54.1.0; TIMES v4.9.8; solver CPLEX
+          1 Normal Completion / 1 Optimal; objective 192206507156.18262; rows 1,028,923, columns 1,647,278, non-zeros 7,186,412
+  memory  peak working set of the processes of each run, summed, every 0.5 s: the open chain 7.46 GB (preprocessor and Julia), GAMS not run; in the open chain's, GAMS of --lp 3.58 GB
+  Julia   CPLEX 22.1.2.0 through GAMS 54.1.0 (cplex.opt: scaind 1, rerun yes, iis yes, lpmethod 4, baralg 1, barcrossalg 0, barorder 3, THREADS=7, advind=0, names no); OPTIMAL; objective 192206507156.18256; rows 1,028,923, columns 1,647,278, non-zeros 7,186,412
+          through GAMS: the LP taken from JuMP 2.7 s, to a GDX 1.5 s, GAMS 263.4 s (to the solver's start 3.4 s, of it generation 2.5 s; solver 257.3 s, 87 iterations; after it 2.7 s), read back 1.5 s: the hand-over 11.9 s; GAMS's log: gamslp.log
+          time      start and packages 0.4 s (packages loaded while the preprocessor ran: 1.3 s), load 1.1 s, checks 0.0 s, build 3.2 s, counts 0.5 s, solver setup 0.0 s, solve 270.0 s, solution 4.7 s, solution file 4.5 s, result file 0.0 s, other 5.5 s; Julia process 289.9 s; Julia 1.13.1
+          compiling load 4.5 s, build 0.4 s, counts 0.1 s, solve 0.8 s, solution 0.2 s; garbage collection 3.2 s; allocated 24.5 GB; peak memory 4.0 GB to the built model, 4.5 GB for the whole run
+          solution: solution.db3 (levels, marginals and bounds of every column and row, by GAMS name)
+
+NOTES
+  - the reference has no gams_solution.db3: sizes and the objective are compared, not the solution
+
+INPUT
+  run file  OTUS9r/reference/reference.run    sha256 9d974f3b7f3ba560
+  switches  REDUCE=YES  OBJ=AUTO  OBLONG=YES  MID_YEAR=YES  VAR_UC=YES  VARCOST=LIN  DSCAUTO=YES  VALIDATE=NO  STAGES=NO  DAMAGE=NO  BOTIME=1929
+            (as in the run file)
+  DD file   reference_ts.dd                                  121 bytes  sha256 77c307bad99e0ced
+  DD file   base.dd                                   42,550,960 bytes  sha256 75eea612345b71c9
+  DD file   coalplants-ret-and_lifeext.dd                 75,051 bytes  sha256 a1157f7a1f2d1297
+  DD file   storage.dd                                     7,358 bytes  sha256 43a589ba93a42aaa
+  DD file   syssettings.dd                               506,788 bytes  sha256 e08ad255b6185238
+  DD file   tradeparams.dd                                32,571 bytes  sha256 3053d2c8b3b05f10
+  DD file   aqreg.dd                                       1,682 bytes  sha256 d13aefb1d4fd701a
+  DD file   baseextra-offeps.dd                           49,419 bytes  sha256 3ca279922f74c9db
+  DD file   2080upd.dd                                     4,277 bytes  sha256 a53268b789995c20
+  DD file   bevcharging.dd                                67,335 bytes  sha256 01900fd2457fa4b4
+  DD file   csapr-mats.dd                                  4,817 bytes  sha256 2bcf75cf58c33b6e
+  DD file   growthv2.dd                                1,853,765 bytes  sha256 25ddb8cf75a5d337
+  DD file   refemiupd-ts.dd                               59,684 bytes  sha256 6f35d67711a0f37e
+  DD file   trnco2-ts.dd                                  85,260 bytes  sha256 493ebbc350a6ee96
+  DD file   uc-biofuels20.dd                              66,905 bytes  sha256 1a818e1a5e103a9a
+  DD file   uc-csapr-mats.dd                              20,581 bytes  sha256 dd93969b0e50425d
+  DD file   uc-elc20.dd                                  451,955 bytes  sha256 07c823bb253669ce
+  DD file   uc-ind20.dd                                2,689,324 bytes  sha256 14233b1441a3abad
+  DD file   uc-nonewnuc.dd                                10,108 bytes  sha256 e24f61c17bb9fcbc
+  DD file   uc-rescom20.dd                               593,349 bytes  sha256 6bf6758f7f12147b
+  DD file   uc-rps20.dd                                  402,088 bytes  sha256 f64e46331e5e1c6a
+  DD file   uc_aqreg.dd                                   15,476 bytes  sha256 22345d3885b95107
+  DD file   uc_trnhdv20_az121921.dd                      422,429 bytes  sha256 68c9698d65150277
+  DD file   uc_trnldv20.dd                             1,432,874 bytes  sha256 87c3586aecd4d633
+
+VEDA RESULT FILES (of the Julia solution; import them into Veda as a scenario next to the GAMS run)
+  reference_julia.vd, .vde, .vds   2,533,705 rows in 54 attributes, 43.0 s
+
+ENVIRONMENT
+  TIMES code         TIMES-OS 1.0.0   (follows TIMES v4.9.8)
+  TIMES source       v4.9.8
+  Python 3.12.6;  Julia;  GAMS
+  system             Windows-11-10.0.22631-SP0
+  preprocessor       Segment Heap, DuckDB with 8 threads, parallel stages level 2;  the tables as model_parquet/, streamed beside the steps; tables dropped once no longer read: off (TIMES_DROP=1 turns it on)
+  Julia              threads auto (24), garbage collector threads 12, at most 8 equation families at once (memory 63.8 GB, expected peak 13.1 GB)
+  seconds            before_preprocess 0.4, preprocess 43.3, julia_started 43.8, julia 289.9, to_solver 61.8, preprocess_finished 45.8, report 43.6, results_for_later_runs 11.2, total 388.5
+
+FILES (this folder)
+  report_reference.txt          the run that compares with expected.json, with no GAMS: the objective
+  report_reference_matrix.txt   the run that compared the matrix with that of TIMES in GAMS, entry by entry
+  expected.json                 the result of TIMES in GAMS that the run compares with, and the evidence in short
+  reference.run                 with the DD files and the option files: the inputs
+  The run's other files (report json, logs, solution.db3, the Veda files) are written to its result folder;
+  README.md gives the command.
+
+WHAT THE VERDICT MEANS
+  SAME            every check that could be made against the published GAMS result agrees. With the published matrix the
+                  two are the same linear program, and have the same optimum whether or not the solver finds it.
+  SAME OBJECTIVE  the optimum is the one published; no more was published to compare with.
+  DIFFERENT       the model runs and something does not agree with the published result: a defect. DIFFERENCES above says where to look.
+  UNSUPPORTED     the model uses TIMES features this implementation does not have yet; they are all listed above. Not a defect.
+  NOT SOLVED      the model was built and the solver did not reach an optimum (time limit, or a failure of the solver). julia.log has the solver log.
+  ERROR           a step failed. If it is the preprocessor or Julia, it is a defect; the message is above.
+  INFEASIBLE      the model's data cannot be met: rows left with no column whose constant does not satisfy them
+                  (0 = 2.685), on which TIMES in GAMS stops too (equation infeasible due to rhs value). Not a defect.
+  SOLVED          the open chain solved the model; there was no published GAMS result to compare with (--jacobian writes the matrix
+                  in the layout of GAMS's CONVERT jacobian, to compare with GAMS's own).
+  To report or to work on a result, hand over this file (or the bundle made with --bundle, which adds the input files).

@@ -1,0 +1,406 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'REFERENCE'
+$SET SCENARIO_NAME 'uc-csapr-mats'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'R0'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R0'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R0'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R0'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R1'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R1'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R1'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R1'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R2'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R2'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R2'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R2'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R3'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R3'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R3'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R3'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R4'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R4'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R4'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R4'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R5'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R5'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R5'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R5'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R6'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R6'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R6'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R6'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R7'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R7'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R7'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R7'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R8'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R8'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R8'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R8'.'NRG'.'CSAPR_SO2_AllRegions_'
+'R9'.'NRG'.'CSAPR_NOX_AllRegions-'
+'R9'.'NRG'.'CSAPR_NOX_AllRegions_'
+'R9'.'NRG'.'CSAPR_SO2_AllRegions-'
+'R9'.'NRG'.'CSAPR_SO2_AllRegions_'
+/;
+
+SET COM_UNIT
+
+/
+'R0'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R0'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R0'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R0'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R1'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R1'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R1'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R1'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R2'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R2'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R2'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R2'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R3'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R3'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R3'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R3'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R4'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R4'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R4'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R4'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R5'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R5'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R5'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R5'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R6'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R6'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R6'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R6'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R7'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R7'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R7'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R7'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R8'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R8'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R8'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R8'.'CSAPR_SO2_AllRegions_'.'UCU'
+'R9'.'CSAPR_NOX_AllRegions-'.'UCU'
+'R9'.'CSAPR_NOX_AllRegions_'.'UCU'
+'R9'.'CSAPR_SO2_AllRegions-'.'UCU'
+'R9'.'CSAPR_SO2_AllRegions_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R1'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R2'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R3'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R4'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R5'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R6'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R7'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R8'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions-'.'R9'.'CSAPR_NOX_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R1'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R2'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R3'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R4'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R5'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R6'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R7'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R8'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_NOX_AllRegions_'.'R9'.'CSAPR_NOX_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R1'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R2'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R3'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R4'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R5'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R6'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R7'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R8'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions-'.'R9'.'CSAPR_SO2_AllRegions-'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R1'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R2'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R3'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R4'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R5'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R6'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R7'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R8'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+'IMPEXP'.'CSAPR_SO2_AllRegions_'.'R9'.'CSAPR_SO2_AllRegions_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'R0'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R0'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R0'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R0'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R1'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R1'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R1'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R1'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R2'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R2'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R2'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R2'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R3'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R3'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R3'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R3'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R4'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R4'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R4'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R4'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R5'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R5'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R5'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R5'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R6'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R6'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R6'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R6'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R7'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R7'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R7'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R7'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R8'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R8'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R8'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R8'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+'R9'.'CSAPR_NOX_AllRegions-' 'Negative dummy var for UC: CSAPR_NOX_AllRegions'
+'R9'.'CSAPR_NOX_AllRegions_' 'Positive dummy var for UC: CSAPR_NOX_AllRegions'
+'R9'.'CSAPR_SO2_AllRegions-' 'Negative dummy var for UC: CSAPR_SO2_AllRegions'
+'R9'.'CSAPR_SO2_AllRegions_' 'Positive dummy var for UC: CSAPR_SO2_AllRegions'
+/;
+
+SET UC_R_SUM
+
+/
+'R1'.'CSAPR_NOX_AllRegions'
+'R1'.'CSAPR_SO2_AllRegions'
+'R2'.'CSAPR_NOX_AllRegions'
+'R2'.'CSAPR_SO2_AllRegions'
+'R3'.'CSAPR_NOX_AllRegions'
+'R3'.'CSAPR_SO2_AllRegions'
+'R4'.'CSAPR_NOX_AllRegions'
+'R4'.'CSAPR_SO2_AllRegions'
+'R5'.'CSAPR_NOX_AllRegions'
+'R5'.'CSAPR_SO2_AllRegions'
+'R6'.'CSAPR_NOX_AllRegions'
+'R6'.'CSAPR_SO2_AllRegions'
+'R7'.'CSAPR_NOX_AllRegions'
+'R7'.'CSAPR_SO2_AllRegions'
+'R8'.'CSAPR_NOX_AllRegions'
+'R8'.'CSAPR_SO2_AllRegions'
+'R9'.'CSAPR_NOX_AllRegions'
+'R9'.'CSAPR_SO2_AllRegions'
+/;
+
+PARAMETER
+
+UC_COMNET ' '/
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2025.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2030.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2035.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2040.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2045.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2050.'ELCNOX'.ANNUAL 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2055.'ELCNOX'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2055.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2025.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2030.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2035.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2040.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2045.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2050.'ELCSO2'.ANNUAL 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2055.'ELCSO2'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_NOX_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'CSAPR_NOX_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R1'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R2'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R3'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R4'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R5'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R6'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R7'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R8'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions-'.ANNUAL.IMP -1
+'CSAPR_SO2_AllRegions'.LHS.'R9'.2010.'IMPDUCZ'.'CSAPR_SO2_AllRegions_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHSTS ' '/
+'CSAPR_NOX_AllRegions'.0.ANNUAL.UP 5
+'CSAPR_NOX_AllRegions'.2025.ANNUAL.UP 1390.29679482682
+'CSAPR_NOX_AllRegions'.2030.ANNUAL.UP 1341.36689773824
+'CSAPR_NOX_AllRegions'.2035.ANNUAL.UP 1331.61437140506
+'CSAPR_NOX_AllRegions'.2040.ANNUAL.UP 1321.86184507189
+'CSAPR_NOX_AllRegions'.2045.ANNUAL.UP 1344.39919092369
+'CSAPR_NOX_AllRegions'.2050.ANNUAL.UP 1366.93653677548
+'CSAPR_NOX_AllRegions'.2055.ANNUAL.UP 1366.93653677548
+'CSAPR_SO2_AllRegions'.0.ANNUAL.UP 5
+'CSAPR_SO2_AllRegions'.2025.ANNUAL.UP 1363.50200808771
+'CSAPR_SO2_AllRegions'.2030.ANNUAL.UP 1342.25867799552
+'CSAPR_SO2_AllRegions'.2035.ANNUAL.UP 1320.77277131448
+'CSAPR_SO2_AllRegions'.2040.ANNUAL.UP 1299.28686463344
+'CSAPR_SO2_AllRegions'.2045.ANNUAL.UP 1308.98744351395
+'CSAPR_SO2_AllRegions'.2050.ANNUAL.UP 1318.68802239446
+'CSAPR_SO2_AllRegions'.2055.ANNUAL.UP 1318.68802239446
+/;
+
+

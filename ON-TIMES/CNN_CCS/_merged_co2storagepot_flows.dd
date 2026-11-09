@@ -1,0 +1,2048 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME '_merged_co2storagepot_flows'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'CO2storageCSSTODGA-'
+'DKE'.'NRG'.'CO2storageCSSTODGA_'
+'DKE'.'NRG'.'CO2storageCSSTODGS-'
+'DKE'.'NRG'.'CO2storageCSSTODGS_'
+'DKE'.'NRG'.'CO2storageCSSTODHS-'
+'DKE'.'NRG'.'CO2storageCSSTODHS_'
+'DKE'.'NRG'.'CO2storageCSSTODTS-'
+'DKE'.'NRG'.'CO2storageCSSTODTS_'
+'DKE'.'NRG'.'CO2storageCSSTODZS-'
+'DKE'.'NRG'.'CO2storageCSSTODZS_'
+'DKE'.'NRG'.'CO2storageCSSTONGA-'
+'DKE'.'NRG'.'CO2storageCSSTONGA_'
+'DKE'.'NRG'.'CO2storageCSSTONMF-'
+'DKE'.'NRG'.'CO2storageCSSTONMF_'
+'DKE'.'NRG'.'CO2storageCSSTONSA-'
+'DKE'.'NRG'.'CO2storageCSSTONSA_'
+'DKE'.'NRG'.'CO2storageCSSTONSF-'
+'DKE'.'NRG'.'CO2storageCSSTONSF_'
+'DKE'.'NRG'.'CO2storageCSSTOSAA-'
+'DKE'.'NRG'.'CO2storageCSSTOSAA_'
+'DKE'.'NRG'.'CO2storageCSSTOSFA-'
+'DKE'.'NRG'.'CO2storageCSSTOSFA_'
+'DKE'.'NRG'.'UC_Share_INDCD-'
+'DKE'.'NRG'.'UC_Share_INDCD_'
+'DKE'.'NRG'.'UC_Share_INDGD-'
+'DKE'.'NRG'.'UC_Share_INDGD_'
+'DKE'.'NRG'.'UC_Share_INDSD-'
+'DKE'.'NRG'.'UC_Share_INDSD_'
+'DKE'.'NRG'.'UC_Share_INDXD-'
+'DKE'.'NRG'.'UC_Share_INDXD_'
+'DKW'.'NRG'.'CO2storageCSSTODGA-'
+'DKW'.'NRG'.'CO2storageCSSTODGA_'
+'DKW'.'NRG'.'CO2storageCSSTODGS-'
+'DKW'.'NRG'.'CO2storageCSSTODGS_'
+'DKW'.'NRG'.'CO2storageCSSTODHS-'
+'DKW'.'NRG'.'CO2storageCSSTODHS_'
+'DKW'.'NRG'.'CO2storageCSSTODTS-'
+'DKW'.'NRG'.'CO2storageCSSTODTS_'
+'DKW'.'NRG'.'CO2storageCSSTODZS-'
+'DKW'.'NRG'.'CO2storageCSSTODZS_'
+'DKW'.'NRG'.'CO2storageCSSTONGA-'
+'DKW'.'NRG'.'CO2storageCSSTONGA_'
+'DKW'.'NRG'.'CO2storageCSSTONMF-'
+'DKW'.'NRG'.'CO2storageCSSTONMF_'
+'DKW'.'NRG'.'CO2storageCSSTONSA-'
+'DKW'.'NRG'.'CO2storageCSSTONSA_'
+'DKW'.'NRG'.'CO2storageCSSTONSF-'
+'DKW'.'NRG'.'CO2storageCSSTONSF_'
+'DKW'.'NRG'.'CO2storageCSSTOSAA-'
+'DKW'.'NRG'.'CO2storageCSSTOSAA_'
+'DKW'.'NRG'.'CO2storageCSSTOSFA-'
+'DKW'.'NRG'.'CO2storageCSSTOSFA_'
+'DKW'.'NRG'.'UC_Share_INDCD-'
+'DKW'.'NRG'.'UC_Share_INDCD_'
+'DKW'.'NRG'.'UC_Share_INDGD-'
+'DKW'.'NRG'.'UC_Share_INDGD_'
+'DKW'.'NRG'.'UC_Share_INDSD-'
+'DKW'.'NRG'.'UC_Share_INDSD_'
+'DKW'.'NRG'.'UC_Share_INDXD-'
+'DKW'.'NRG'.'UC_Share_INDXD_'
+'FIM'.'NRG'.'CO2storageCSSTODGA-'
+'FIM'.'NRG'.'CO2storageCSSTODGA_'
+'FIM'.'NRG'.'CO2storageCSSTODGS-'
+'FIM'.'NRG'.'CO2storageCSSTODGS_'
+'FIM'.'NRG'.'CO2storageCSSTODHS-'
+'FIM'.'NRG'.'CO2storageCSSTODHS_'
+'FIM'.'NRG'.'CO2storageCSSTODTS-'
+'FIM'.'NRG'.'CO2storageCSSTODTS_'
+'FIM'.'NRG'.'CO2storageCSSTODZS-'
+'FIM'.'NRG'.'CO2storageCSSTODZS_'
+'FIM'.'NRG'.'CO2storageCSSTONGA-'
+'FIM'.'NRG'.'CO2storageCSSTONGA_'
+'FIM'.'NRG'.'CO2storageCSSTONMF-'
+'FIM'.'NRG'.'CO2storageCSSTONMF_'
+'FIM'.'NRG'.'CO2storageCSSTONSA-'
+'FIM'.'NRG'.'CO2storageCSSTONSA_'
+'FIM'.'NRG'.'CO2storageCSSTONSF-'
+'FIM'.'NRG'.'CO2storageCSSTONSF_'
+'FIM'.'NRG'.'CO2storageCSSTOSAA-'
+'FIM'.'NRG'.'CO2storageCSSTOSAA_'
+'FIM'.'NRG'.'CO2storageCSSTOSFA-'
+'FIM'.'NRG'.'CO2storageCSSTOSFA_'
+'FIM'.'NRG'.'UC_Share_INDCD-'
+'FIM'.'NRG'.'UC_Share_INDCD_'
+'FIM'.'NRG'.'UC_Share_INDGD-'
+'FIM'.'NRG'.'UC_Share_INDGD_'
+'FIM'.'NRG'.'UC_Share_INDSD-'
+'FIM'.'NRG'.'UC_Share_INDSD_'
+'FIM'.'NRG'.'UC_Share_INDXD-'
+'FIM'.'NRG'.'UC_Share_INDXD_'
+'FIN'.'NRG'.'CO2storageCSSTODGA-'
+'FIN'.'NRG'.'CO2storageCSSTODGA_'
+'FIN'.'NRG'.'CO2storageCSSTODGS-'
+'FIN'.'NRG'.'CO2storageCSSTODGS_'
+'FIN'.'NRG'.'CO2storageCSSTODHS-'
+'FIN'.'NRG'.'CO2storageCSSTODHS_'
+'FIN'.'NRG'.'CO2storageCSSTODTS-'
+'FIN'.'NRG'.'CO2storageCSSTODTS_'
+'FIN'.'NRG'.'CO2storageCSSTODZS-'
+'FIN'.'NRG'.'CO2storageCSSTODZS_'
+'FIN'.'NRG'.'CO2storageCSSTONGA-'
+'FIN'.'NRG'.'CO2storageCSSTONGA_'
+'FIN'.'NRG'.'CO2storageCSSTONMF-'
+'FIN'.'NRG'.'CO2storageCSSTONMF_'
+'FIN'.'NRG'.'CO2storageCSSTONSA-'
+'FIN'.'NRG'.'CO2storageCSSTONSA_'
+'FIN'.'NRG'.'CO2storageCSSTONSF-'
+'FIN'.'NRG'.'CO2storageCSSTONSF_'
+'FIN'.'NRG'.'CO2storageCSSTOSAA-'
+'FIN'.'NRG'.'CO2storageCSSTOSAA_'
+'FIN'.'NRG'.'CO2storageCSSTOSFA-'
+'FIN'.'NRG'.'CO2storageCSSTOSFA_'
+'FIN'.'NRG'.'UC_Share_INDCD-'
+'FIN'.'NRG'.'UC_Share_INDCD_'
+'FIN'.'NRG'.'UC_Share_INDGD-'
+'FIN'.'NRG'.'UC_Share_INDGD_'
+'FIN'.'NRG'.'UC_Share_INDSD-'
+'FIN'.'NRG'.'UC_Share_INDSD_'
+'FIN'.'NRG'.'UC_Share_INDXD-'
+'FIN'.'NRG'.'UC_Share_INDXD_'
+'NO1'.'NRG'.'CO2storageCSSTODGA-'
+'NO1'.'NRG'.'CO2storageCSSTODGA_'
+'NO1'.'NRG'.'CO2storageCSSTODGS-'
+'NO1'.'NRG'.'CO2storageCSSTODGS_'
+'NO1'.'NRG'.'CO2storageCSSTODHS-'
+'NO1'.'NRG'.'CO2storageCSSTODHS_'
+'NO1'.'NRG'.'CO2storageCSSTODTS-'
+'NO1'.'NRG'.'CO2storageCSSTODTS_'
+'NO1'.'NRG'.'CO2storageCSSTODZS-'
+'NO1'.'NRG'.'CO2storageCSSTODZS_'
+'NO1'.'NRG'.'CO2storageCSSTONGA-'
+'NO1'.'NRG'.'CO2storageCSSTONGA_'
+'NO1'.'NRG'.'CO2storageCSSTONMF-'
+'NO1'.'NRG'.'CO2storageCSSTONMF_'
+'NO1'.'NRG'.'CO2storageCSSTONSA-'
+'NO1'.'NRG'.'CO2storageCSSTONSA_'
+'NO1'.'NRG'.'CO2storageCSSTONSF-'
+'NO1'.'NRG'.'CO2storageCSSTONSF_'
+'NO1'.'NRG'.'CO2storageCSSTOSAA-'
+'NO1'.'NRG'.'CO2storageCSSTOSAA_'
+'NO1'.'NRG'.'CO2storageCSSTOSFA-'
+'NO1'.'NRG'.'CO2storageCSSTOSFA_'
+'NO1'.'NRG'.'UC_Share_INDCD-'
+'NO1'.'NRG'.'UC_Share_INDCD_'
+'NO1'.'NRG'.'UC_Share_INDGD-'
+'NO1'.'NRG'.'UC_Share_INDGD_'
+'NO1'.'NRG'.'UC_Share_INDSD-'
+'NO1'.'NRG'.'UC_Share_INDSD_'
+'NO1'.'NRG'.'UC_Share_INDXD-'
+'NO1'.'NRG'.'UC_Share_INDXD_'
+'NO2'.'NRG'.'CO2storageCSSTODGA-'
+'NO2'.'NRG'.'CO2storageCSSTODGA_'
+'NO2'.'NRG'.'CO2storageCSSTODGS-'
+'NO2'.'NRG'.'CO2storageCSSTODGS_'
+'NO2'.'NRG'.'CO2storageCSSTODHS-'
+'NO2'.'NRG'.'CO2storageCSSTODHS_'
+'NO2'.'NRG'.'CO2storageCSSTODTS-'
+'NO2'.'NRG'.'CO2storageCSSTODTS_'
+'NO2'.'NRG'.'CO2storageCSSTODZS-'
+'NO2'.'NRG'.'CO2storageCSSTODZS_'
+'NO2'.'NRG'.'CO2storageCSSTONGA-'
+'NO2'.'NRG'.'CO2storageCSSTONGA_'
+'NO2'.'NRG'.'CO2storageCSSTONMF-'
+'NO2'.'NRG'.'CO2storageCSSTONMF_'
+'NO2'.'NRG'.'CO2storageCSSTONSA-'
+'NO2'.'NRG'.'CO2storageCSSTONSA_'
+'NO2'.'NRG'.'CO2storageCSSTONSF-'
+'NO2'.'NRG'.'CO2storageCSSTONSF_'
+'NO2'.'NRG'.'CO2storageCSSTOSAA-'
+'NO2'.'NRG'.'CO2storageCSSTOSAA_'
+'NO2'.'NRG'.'CO2storageCSSTOSFA-'
+'NO2'.'NRG'.'CO2storageCSSTOSFA_'
+'NO2'.'NRG'.'UC_Share_INDCD-'
+'NO2'.'NRG'.'UC_Share_INDCD_'
+'NO2'.'NRG'.'UC_Share_INDGD-'
+'NO2'.'NRG'.'UC_Share_INDGD_'
+'NO2'.'NRG'.'UC_Share_INDSD-'
+'NO2'.'NRG'.'UC_Share_INDSD_'
+'NO2'.'NRG'.'UC_Share_INDXD-'
+'NO2'.'NRG'.'UC_Share_INDXD_'
+'SE1'.'NRG'.'CO2storageCSSTODGA-'
+'SE1'.'NRG'.'CO2storageCSSTODGA_'
+'SE1'.'NRG'.'CO2storageCSSTODGS-'
+'SE1'.'NRG'.'CO2storageCSSTODGS_'
+'SE1'.'NRG'.'CO2storageCSSTODHS-'
+'SE1'.'NRG'.'CO2storageCSSTODHS_'
+'SE1'.'NRG'.'CO2storageCSSTODTS-'
+'SE1'.'NRG'.'CO2storageCSSTODTS_'
+'SE1'.'NRG'.'CO2storageCSSTODZS-'
+'SE1'.'NRG'.'CO2storageCSSTODZS_'
+'SE1'.'NRG'.'CO2storageCSSTONGA-'
+'SE1'.'NRG'.'CO2storageCSSTONGA_'
+'SE1'.'NRG'.'CO2storageCSSTONMF-'
+'SE1'.'NRG'.'CO2storageCSSTONMF_'
+'SE1'.'NRG'.'CO2storageCSSTONSA-'
+'SE1'.'NRG'.'CO2storageCSSTONSA_'
+'SE1'.'NRG'.'CO2storageCSSTONSF-'
+'SE1'.'NRG'.'CO2storageCSSTONSF_'
+'SE1'.'NRG'.'CO2storageCSSTOSAA-'
+'SE1'.'NRG'.'CO2storageCSSTOSAA_'
+'SE1'.'NRG'.'CO2storageCSSTOSFA-'
+'SE1'.'NRG'.'CO2storageCSSTOSFA_'
+'SE1'.'NRG'.'UC_Share_INDCD-'
+'SE1'.'NRG'.'UC_Share_INDCD_'
+'SE1'.'NRG'.'UC_Share_INDGD-'
+'SE1'.'NRG'.'UC_Share_INDGD_'
+'SE1'.'NRG'.'UC_Share_INDSD-'
+'SE1'.'NRG'.'UC_Share_INDSD_'
+'SE1'.'NRG'.'UC_Share_INDXD-'
+'SE1'.'NRG'.'UC_Share_INDXD_'
+'SE2'.'NRG'.'CO2storageCSSTODGA-'
+'SE2'.'NRG'.'CO2storageCSSTODGA_'
+'SE2'.'NRG'.'CO2storageCSSTODGS-'
+'SE2'.'NRG'.'CO2storageCSSTODGS_'
+'SE2'.'NRG'.'CO2storageCSSTODHS-'
+'SE2'.'NRG'.'CO2storageCSSTODHS_'
+'SE2'.'NRG'.'CO2storageCSSTODTS-'
+'SE2'.'NRG'.'CO2storageCSSTODTS_'
+'SE2'.'NRG'.'CO2storageCSSTODZS-'
+'SE2'.'NRG'.'CO2storageCSSTODZS_'
+'SE2'.'NRG'.'CO2storageCSSTONGA-'
+'SE2'.'NRG'.'CO2storageCSSTONGA_'
+'SE2'.'NRG'.'CO2storageCSSTONMF-'
+'SE2'.'NRG'.'CO2storageCSSTONMF_'
+'SE2'.'NRG'.'CO2storageCSSTONSA-'
+'SE2'.'NRG'.'CO2storageCSSTONSA_'
+'SE2'.'NRG'.'CO2storageCSSTONSF-'
+'SE2'.'NRG'.'CO2storageCSSTONSF_'
+'SE2'.'NRG'.'CO2storageCSSTOSAA-'
+'SE2'.'NRG'.'CO2storageCSSTOSAA_'
+'SE2'.'NRG'.'CO2storageCSSTOSFA-'
+'SE2'.'NRG'.'CO2storageCSSTOSFA_'
+'SE2'.'NRG'.'UC_Share_INDCD-'
+'SE2'.'NRG'.'UC_Share_INDCD_'
+'SE2'.'NRG'.'UC_Share_INDGD-'
+'SE2'.'NRG'.'UC_Share_INDGD_'
+'SE2'.'NRG'.'UC_Share_INDSD-'
+'SE2'.'NRG'.'UC_Share_INDSD_'
+'SE2'.'NRG'.'UC_Share_INDXD-'
+'SE2'.'NRG'.'UC_Share_INDXD_'
+'SE3'.'NRG'.'CO2storageCSSTODGA-'
+'SE3'.'NRG'.'CO2storageCSSTODGA_'
+'SE3'.'NRG'.'CO2storageCSSTODGS-'
+'SE3'.'NRG'.'CO2storageCSSTODGS_'
+'SE3'.'NRG'.'CO2storageCSSTODHS-'
+'SE3'.'NRG'.'CO2storageCSSTODHS_'
+'SE3'.'NRG'.'CO2storageCSSTODTS-'
+'SE3'.'NRG'.'CO2storageCSSTODTS_'
+'SE3'.'NRG'.'CO2storageCSSTODZS-'
+'SE3'.'NRG'.'CO2storageCSSTODZS_'
+'SE3'.'NRG'.'CO2storageCSSTONGA-'
+'SE3'.'NRG'.'CO2storageCSSTONGA_'
+'SE3'.'NRG'.'CO2storageCSSTONMF-'
+'SE3'.'NRG'.'CO2storageCSSTONMF_'
+'SE3'.'NRG'.'CO2storageCSSTONSA-'
+'SE3'.'NRG'.'CO2storageCSSTONSA_'
+'SE3'.'NRG'.'CO2storageCSSTONSF-'
+'SE3'.'NRG'.'CO2storageCSSTONSF_'
+'SE3'.'NRG'.'CO2storageCSSTOSAA-'
+'SE3'.'NRG'.'CO2storageCSSTOSAA_'
+'SE3'.'NRG'.'CO2storageCSSTOSFA-'
+'SE3'.'NRG'.'CO2storageCSSTOSFA_'
+'SE3'.'NRG'.'UC_Share_INDCD-'
+'SE3'.'NRG'.'UC_Share_INDCD_'
+'SE3'.'NRG'.'UC_Share_INDGD-'
+'SE3'.'NRG'.'UC_Share_INDGD_'
+'SE3'.'NRG'.'UC_Share_INDSD-'
+'SE3'.'NRG'.'UC_Share_INDSD_'
+'SE3'.'NRG'.'UC_Share_INDXD-'
+'SE3'.'NRG'.'UC_Share_INDXD_'
+'SE4'.'NRG'.'CO2storageCSSTODGA-'
+'SE4'.'NRG'.'CO2storageCSSTODGA_'
+'SE4'.'NRG'.'CO2storageCSSTODGS-'
+'SE4'.'NRG'.'CO2storageCSSTODGS_'
+'SE4'.'NRG'.'CO2storageCSSTODHS-'
+'SE4'.'NRG'.'CO2storageCSSTODHS_'
+'SE4'.'NRG'.'CO2storageCSSTODTS-'
+'SE4'.'NRG'.'CO2storageCSSTODTS_'
+'SE4'.'NRG'.'CO2storageCSSTODZS-'
+'SE4'.'NRG'.'CO2storageCSSTODZS_'
+'SE4'.'NRG'.'CO2storageCSSTONGA-'
+'SE4'.'NRG'.'CO2storageCSSTONGA_'
+'SE4'.'NRG'.'CO2storageCSSTONMF-'
+'SE4'.'NRG'.'CO2storageCSSTONMF_'
+'SE4'.'NRG'.'CO2storageCSSTONSA-'
+'SE4'.'NRG'.'CO2storageCSSTONSA_'
+'SE4'.'NRG'.'CO2storageCSSTONSF-'
+'SE4'.'NRG'.'CO2storageCSSTONSF_'
+'SE4'.'NRG'.'CO2storageCSSTOSAA-'
+'SE4'.'NRG'.'CO2storageCSSTOSAA_'
+'SE4'.'NRG'.'CO2storageCSSTOSFA-'
+'SE4'.'NRG'.'CO2storageCSSTOSFA_'
+'SE4'.'NRG'.'UC_Share_INDCD-'
+'SE4'.'NRG'.'UC_Share_INDCD_'
+'SE4'.'NRG'.'UC_Share_INDGD-'
+'SE4'.'NRG'.'UC_Share_INDGD_'
+'SE4'.'NRG'.'UC_Share_INDSD-'
+'SE4'.'NRG'.'UC_Share_INDSD_'
+'SE4'.'NRG'.'UC_Share_INDXD-'
+'SE4'.'NRG'.'UC_Share_INDXD_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'CO2storageCSSTODGA-'.'UCU'
+'DKE'.'CO2storageCSSTODGA_'.'UCU'
+'DKE'.'CO2storageCSSTODGS-'.'UCU'
+'DKE'.'CO2storageCSSTODGS_'.'UCU'
+'DKE'.'CO2storageCSSTODHS-'.'UCU'
+'DKE'.'CO2storageCSSTODHS_'.'UCU'
+'DKE'.'CO2storageCSSTODTS-'.'UCU'
+'DKE'.'CO2storageCSSTODTS_'.'UCU'
+'DKE'.'CO2storageCSSTODZS-'.'UCU'
+'DKE'.'CO2storageCSSTODZS_'.'UCU'
+'DKE'.'CO2storageCSSTONGA-'.'UCU'
+'DKE'.'CO2storageCSSTONGA_'.'UCU'
+'DKE'.'CO2storageCSSTONMF-'.'UCU'
+'DKE'.'CO2storageCSSTONMF_'.'UCU'
+'DKE'.'CO2storageCSSTONSA-'.'UCU'
+'DKE'.'CO2storageCSSTONSA_'.'UCU'
+'DKE'.'CO2storageCSSTONSF-'.'UCU'
+'DKE'.'CO2storageCSSTONSF_'.'UCU'
+'DKE'.'CO2storageCSSTOSAA-'.'UCU'
+'DKE'.'CO2storageCSSTOSAA_'.'UCU'
+'DKE'.'CO2storageCSSTOSFA-'.'UCU'
+'DKE'.'CO2storageCSSTOSFA_'.'UCU'
+'DKE'.'UC_Share_INDCD-'.'UCU'
+'DKE'.'UC_Share_INDCD_'.'UCU'
+'DKE'.'UC_Share_INDGD-'.'UCU'
+'DKE'.'UC_Share_INDGD_'.'UCU'
+'DKE'.'UC_Share_INDSD-'.'UCU'
+'DKE'.'UC_Share_INDSD_'.'UCU'
+'DKE'.'UC_Share_INDXD-'.'UCU'
+'DKE'.'UC_Share_INDXD_'.'UCU'
+'DKW'.'CO2storageCSSTODGA-'.'UCU'
+'DKW'.'CO2storageCSSTODGA_'.'UCU'
+'DKW'.'CO2storageCSSTODGS-'.'UCU'
+'DKW'.'CO2storageCSSTODGS_'.'UCU'
+'DKW'.'CO2storageCSSTODHS-'.'UCU'
+'DKW'.'CO2storageCSSTODHS_'.'UCU'
+'DKW'.'CO2storageCSSTODTS-'.'UCU'
+'DKW'.'CO2storageCSSTODTS_'.'UCU'
+'DKW'.'CO2storageCSSTODZS-'.'UCU'
+'DKW'.'CO2storageCSSTODZS_'.'UCU'
+'DKW'.'CO2storageCSSTONGA-'.'UCU'
+'DKW'.'CO2storageCSSTONGA_'.'UCU'
+'DKW'.'CO2storageCSSTONMF-'.'UCU'
+'DKW'.'CO2storageCSSTONMF_'.'UCU'
+'DKW'.'CO2storageCSSTONSA-'.'UCU'
+'DKW'.'CO2storageCSSTONSA_'.'UCU'
+'DKW'.'CO2storageCSSTONSF-'.'UCU'
+'DKW'.'CO2storageCSSTONSF_'.'UCU'
+'DKW'.'CO2storageCSSTOSAA-'.'UCU'
+'DKW'.'CO2storageCSSTOSAA_'.'UCU'
+'DKW'.'CO2storageCSSTOSFA-'.'UCU'
+'DKW'.'CO2storageCSSTOSFA_'.'UCU'
+'DKW'.'UC_Share_INDCD-'.'UCU'
+'DKW'.'UC_Share_INDCD_'.'UCU'
+'DKW'.'UC_Share_INDGD-'.'UCU'
+'DKW'.'UC_Share_INDGD_'.'UCU'
+'DKW'.'UC_Share_INDSD-'.'UCU'
+'DKW'.'UC_Share_INDSD_'.'UCU'
+'DKW'.'UC_Share_INDXD-'.'UCU'
+'DKW'.'UC_Share_INDXD_'.'UCU'
+'FIM'.'CO2storageCSSTODGA-'.'UCU'
+'FIM'.'CO2storageCSSTODGA_'.'UCU'
+'FIM'.'CO2storageCSSTODGS-'.'UCU'
+'FIM'.'CO2storageCSSTODGS_'.'UCU'
+'FIM'.'CO2storageCSSTODHS-'.'UCU'
+'FIM'.'CO2storageCSSTODHS_'.'UCU'
+'FIM'.'CO2storageCSSTODTS-'.'UCU'
+'FIM'.'CO2storageCSSTODTS_'.'UCU'
+'FIM'.'CO2storageCSSTODZS-'.'UCU'
+'FIM'.'CO2storageCSSTODZS_'.'UCU'
+'FIM'.'CO2storageCSSTONGA-'.'UCU'
+'FIM'.'CO2storageCSSTONGA_'.'UCU'
+'FIM'.'CO2storageCSSTONMF-'.'UCU'
+'FIM'.'CO2storageCSSTONMF_'.'UCU'
+'FIM'.'CO2storageCSSTONSA-'.'UCU'
+'FIM'.'CO2storageCSSTONSA_'.'UCU'
+'FIM'.'CO2storageCSSTONSF-'.'UCU'
+'FIM'.'CO2storageCSSTONSF_'.'UCU'
+'FIM'.'CO2storageCSSTOSAA-'.'UCU'
+'FIM'.'CO2storageCSSTOSAA_'.'UCU'
+'FIM'.'CO2storageCSSTOSFA-'.'UCU'
+'FIM'.'CO2storageCSSTOSFA_'.'UCU'
+'FIM'.'UC_Share_INDCD-'.'UCU'
+'FIM'.'UC_Share_INDCD_'.'UCU'
+'FIM'.'UC_Share_INDGD-'.'UCU'
+'FIM'.'UC_Share_INDGD_'.'UCU'
+'FIM'.'UC_Share_INDSD-'.'UCU'
+'FIM'.'UC_Share_INDSD_'.'UCU'
+'FIM'.'UC_Share_INDXD-'.'UCU'
+'FIM'.'UC_Share_INDXD_'.'UCU'
+'FIN'.'CO2storageCSSTODGA-'.'UCU'
+'FIN'.'CO2storageCSSTODGA_'.'UCU'
+'FIN'.'CO2storageCSSTODGS-'.'UCU'
+'FIN'.'CO2storageCSSTODGS_'.'UCU'
+'FIN'.'CO2storageCSSTODHS-'.'UCU'
+'FIN'.'CO2storageCSSTODHS_'.'UCU'
+'FIN'.'CO2storageCSSTODTS-'.'UCU'
+'FIN'.'CO2storageCSSTODTS_'.'UCU'
+'FIN'.'CO2storageCSSTODZS-'.'UCU'
+'FIN'.'CO2storageCSSTODZS_'.'UCU'
+'FIN'.'CO2storageCSSTONGA-'.'UCU'
+'FIN'.'CO2storageCSSTONGA_'.'UCU'
+'FIN'.'CO2storageCSSTONMF-'.'UCU'
+'FIN'.'CO2storageCSSTONMF_'.'UCU'
+'FIN'.'CO2storageCSSTONSA-'.'UCU'
+'FIN'.'CO2storageCSSTONSA_'.'UCU'
+'FIN'.'CO2storageCSSTONSF-'.'UCU'
+'FIN'.'CO2storageCSSTONSF_'.'UCU'
+'FIN'.'CO2storageCSSTOSAA-'.'UCU'
+'FIN'.'CO2storageCSSTOSAA_'.'UCU'
+'FIN'.'CO2storageCSSTOSFA-'.'UCU'
+'FIN'.'CO2storageCSSTOSFA_'.'UCU'
+'FIN'.'UC_Share_INDCD-'.'UCU'
+'FIN'.'UC_Share_INDCD_'.'UCU'
+'FIN'.'UC_Share_INDGD-'.'UCU'
+'FIN'.'UC_Share_INDGD_'.'UCU'
+'FIN'.'UC_Share_INDSD-'.'UCU'
+'FIN'.'UC_Share_INDSD_'.'UCU'
+'FIN'.'UC_Share_INDXD-'.'UCU'
+'FIN'.'UC_Share_INDXD_'.'UCU'
+'NO1'.'CO2storageCSSTODGA-'.'UCU'
+'NO1'.'CO2storageCSSTODGA_'.'UCU'
+'NO1'.'CO2storageCSSTODGS-'.'UCU'
+'NO1'.'CO2storageCSSTODGS_'.'UCU'
+'NO1'.'CO2storageCSSTODHS-'.'UCU'
+'NO1'.'CO2storageCSSTODHS_'.'UCU'
+'NO1'.'CO2storageCSSTODTS-'.'UCU'
+'NO1'.'CO2storageCSSTODTS_'.'UCU'
+'NO1'.'CO2storageCSSTODZS-'.'UCU'
+'NO1'.'CO2storageCSSTODZS_'.'UCU'
+'NO1'.'CO2storageCSSTONGA-'.'UCU'
+'NO1'.'CO2storageCSSTONGA_'.'UCU'
+'NO1'.'CO2storageCSSTONMF-'.'UCU'
+'NO1'.'CO2storageCSSTONMF_'.'UCU'
+'NO1'.'CO2storageCSSTONSA-'.'UCU'
+'NO1'.'CO2storageCSSTONSA_'.'UCU'
+'NO1'.'CO2storageCSSTONSF-'.'UCU'
+'NO1'.'CO2storageCSSTONSF_'.'UCU'
+'NO1'.'CO2storageCSSTOSAA-'.'UCU'
+'NO1'.'CO2storageCSSTOSAA_'.'UCU'
+'NO1'.'CO2storageCSSTOSFA-'.'UCU'
+'NO1'.'CO2storageCSSTOSFA_'.'UCU'
+'NO1'.'UC_Share_INDCD-'.'UCU'
+'NO1'.'UC_Share_INDCD_'.'UCU'
+'NO1'.'UC_Share_INDGD-'.'UCU'
+'NO1'.'UC_Share_INDGD_'.'UCU'
+'NO1'.'UC_Share_INDSD-'.'UCU'
+'NO1'.'UC_Share_INDSD_'.'UCU'
+'NO1'.'UC_Share_INDXD-'.'UCU'
+'NO1'.'UC_Share_INDXD_'.'UCU'
+'NO2'.'CO2storageCSSTODGA-'.'UCU'
+'NO2'.'CO2storageCSSTODGA_'.'UCU'
+'NO2'.'CO2storageCSSTODGS-'.'UCU'
+'NO2'.'CO2storageCSSTODGS_'.'UCU'
+'NO2'.'CO2storageCSSTODHS-'.'UCU'
+'NO2'.'CO2storageCSSTODHS_'.'UCU'
+'NO2'.'CO2storageCSSTODTS-'.'UCU'
+'NO2'.'CO2storageCSSTODTS_'.'UCU'
+'NO2'.'CO2storageCSSTODZS-'.'UCU'
+'NO2'.'CO2storageCSSTODZS_'.'UCU'
+'NO2'.'CO2storageCSSTONGA-'.'UCU'
+'NO2'.'CO2storageCSSTONGA_'.'UCU'
+'NO2'.'CO2storageCSSTONMF-'.'UCU'
+'NO2'.'CO2storageCSSTONMF_'.'UCU'
+'NO2'.'CO2storageCSSTONSA-'.'UCU'
+'NO2'.'CO2storageCSSTONSA_'.'UCU'
+'NO2'.'CO2storageCSSTONSF-'.'UCU'
+'NO2'.'CO2storageCSSTONSF_'.'UCU'
+'NO2'.'CO2storageCSSTOSAA-'.'UCU'
+'NO2'.'CO2storageCSSTOSAA_'.'UCU'
+'NO2'.'CO2storageCSSTOSFA-'.'UCU'
+'NO2'.'CO2storageCSSTOSFA_'.'UCU'
+'NO2'.'UC_Share_INDCD-'.'UCU'
+'NO2'.'UC_Share_INDCD_'.'UCU'
+'NO2'.'UC_Share_INDGD-'.'UCU'
+'NO2'.'UC_Share_INDGD_'.'UCU'
+'NO2'.'UC_Share_INDSD-'.'UCU'
+'NO2'.'UC_Share_INDSD_'.'UCU'
+'NO2'.'UC_Share_INDXD-'.'UCU'
+'NO2'.'UC_Share_INDXD_'.'UCU'
+'SE1'.'CO2storageCSSTODGA-'.'UCU'
+'SE1'.'CO2storageCSSTODGA_'.'UCU'
+'SE1'.'CO2storageCSSTODGS-'.'UCU'
+'SE1'.'CO2storageCSSTODGS_'.'UCU'
+'SE1'.'CO2storageCSSTODHS-'.'UCU'
+'SE1'.'CO2storageCSSTODHS_'.'UCU'
+'SE1'.'CO2storageCSSTODTS-'.'UCU'
+'SE1'.'CO2storageCSSTODTS_'.'UCU'
+'SE1'.'CO2storageCSSTODZS-'.'UCU'
+'SE1'.'CO2storageCSSTODZS_'.'UCU'
+'SE1'.'CO2storageCSSTONGA-'.'UCU'
+'SE1'.'CO2storageCSSTONGA_'.'UCU'
+'SE1'.'CO2storageCSSTONMF-'.'UCU'
+'SE1'.'CO2storageCSSTONMF_'.'UCU'
+'SE1'.'CO2storageCSSTONSA-'.'UCU'
+'SE1'.'CO2storageCSSTONSA_'.'UCU'
+'SE1'.'CO2storageCSSTONSF-'.'UCU'
+'SE1'.'CO2storageCSSTONSF_'.'UCU'
+'SE1'.'CO2storageCSSTOSAA-'.'UCU'
+'SE1'.'CO2storageCSSTOSAA_'.'UCU'
+'SE1'.'CO2storageCSSTOSFA-'.'UCU'
+'SE1'.'CO2storageCSSTOSFA_'.'UCU'
+'SE1'.'UC_Share_INDCD-'.'UCU'
+'SE1'.'UC_Share_INDCD_'.'UCU'
+'SE1'.'UC_Share_INDGD-'.'UCU'
+'SE1'.'UC_Share_INDGD_'.'UCU'
+'SE1'.'UC_Share_INDSD-'.'UCU'
+'SE1'.'UC_Share_INDSD_'.'UCU'
+'SE1'.'UC_Share_INDXD-'.'UCU'
+'SE1'.'UC_Share_INDXD_'.'UCU'
+'SE2'.'CO2storageCSSTODGA-'.'UCU'
+'SE2'.'CO2storageCSSTODGA_'.'UCU'
+'SE2'.'CO2storageCSSTODGS-'.'UCU'
+'SE2'.'CO2storageCSSTODGS_'.'UCU'
+'SE2'.'CO2storageCSSTODHS-'.'UCU'
+'SE2'.'CO2storageCSSTODHS_'.'UCU'
+'SE2'.'CO2storageCSSTODTS-'.'UCU'
+'SE2'.'CO2storageCSSTODTS_'.'UCU'
+'SE2'.'CO2storageCSSTODZS-'.'UCU'
+'SE2'.'CO2storageCSSTODZS_'.'UCU'
+'SE2'.'CO2storageCSSTONGA-'.'UCU'
+'SE2'.'CO2storageCSSTONGA_'.'UCU'
+'SE2'.'CO2storageCSSTONMF-'.'UCU'
+'SE2'.'CO2storageCSSTONMF_'.'UCU'
+'SE2'.'CO2storageCSSTONSA-'.'UCU'
+'SE2'.'CO2storageCSSTONSA_'.'UCU'
+'SE2'.'CO2storageCSSTONSF-'.'UCU'
+'SE2'.'CO2storageCSSTONSF_'.'UCU'
+'SE2'.'CO2storageCSSTOSAA-'.'UCU'
+'SE2'.'CO2storageCSSTOSAA_'.'UCU'
+'SE2'.'CO2storageCSSTOSFA-'.'UCU'
+'SE2'.'CO2storageCSSTOSFA_'.'UCU'
+'SE2'.'UC_Share_INDCD-'.'UCU'
+'SE2'.'UC_Share_INDCD_'.'UCU'
+'SE2'.'UC_Share_INDGD-'.'UCU'
+'SE2'.'UC_Share_INDGD_'.'UCU'
+'SE2'.'UC_Share_INDSD-'.'UCU'
+'SE2'.'UC_Share_INDSD_'.'UCU'
+'SE2'.'UC_Share_INDXD-'.'UCU'
+'SE2'.'UC_Share_INDXD_'.'UCU'
+'SE3'.'CO2storageCSSTODGA-'.'UCU'
+'SE3'.'CO2storageCSSTODGA_'.'UCU'
+'SE3'.'CO2storageCSSTODGS-'.'UCU'
+'SE3'.'CO2storageCSSTODGS_'.'UCU'
+'SE3'.'CO2storageCSSTODHS-'.'UCU'
+'SE3'.'CO2storageCSSTODHS_'.'UCU'
+'SE3'.'CO2storageCSSTODTS-'.'UCU'
+'SE3'.'CO2storageCSSTODTS_'.'UCU'
+'SE3'.'CO2storageCSSTODZS-'.'UCU'
+'SE3'.'CO2storageCSSTODZS_'.'UCU'
+'SE3'.'CO2storageCSSTONGA-'.'UCU'
+'SE3'.'CO2storageCSSTONGA_'.'UCU'
+'SE3'.'CO2storageCSSTONMF-'.'UCU'
+'SE3'.'CO2storageCSSTONMF_'.'UCU'
+'SE3'.'CO2storageCSSTONSA-'.'UCU'
+'SE3'.'CO2storageCSSTONSA_'.'UCU'
+'SE3'.'CO2storageCSSTONSF-'.'UCU'
+'SE3'.'CO2storageCSSTONSF_'.'UCU'
+'SE3'.'CO2storageCSSTOSAA-'.'UCU'
+'SE3'.'CO2storageCSSTOSAA_'.'UCU'
+'SE3'.'CO2storageCSSTOSFA-'.'UCU'
+'SE3'.'CO2storageCSSTOSFA_'.'UCU'
+'SE3'.'UC_Share_INDCD-'.'UCU'
+'SE3'.'UC_Share_INDCD_'.'UCU'
+'SE3'.'UC_Share_INDGD-'.'UCU'
+'SE3'.'UC_Share_INDGD_'.'UCU'
+'SE3'.'UC_Share_INDSD-'.'UCU'
+'SE3'.'UC_Share_INDSD_'.'UCU'
+'SE3'.'UC_Share_INDXD-'.'UCU'
+'SE3'.'UC_Share_INDXD_'.'UCU'
+'SE4'.'CO2storageCSSTODGA-'.'UCU'
+'SE4'.'CO2storageCSSTODGA_'.'UCU'
+'SE4'.'CO2storageCSSTODGS-'.'UCU'
+'SE4'.'CO2storageCSSTODGS_'.'UCU'
+'SE4'.'CO2storageCSSTODHS-'.'UCU'
+'SE4'.'CO2storageCSSTODHS_'.'UCU'
+'SE4'.'CO2storageCSSTODTS-'.'UCU'
+'SE4'.'CO2storageCSSTODTS_'.'UCU'
+'SE4'.'CO2storageCSSTODZS-'.'UCU'
+'SE4'.'CO2storageCSSTODZS_'.'UCU'
+'SE4'.'CO2storageCSSTONGA-'.'UCU'
+'SE4'.'CO2storageCSSTONGA_'.'UCU'
+'SE4'.'CO2storageCSSTONMF-'.'UCU'
+'SE4'.'CO2storageCSSTONMF_'.'UCU'
+'SE4'.'CO2storageCSSTONSA-'.'UCU'
+'SE4'.'CO2storageCSSTONSA_'.'UCU'
+'SE4'.'CO2storageCSSTONSF-'.'UCU'
+'SE4'.'CO2storageCSSTONSF_'.'UCU'
+'SE4'.'CO2storageCSSTOSAA-'.'UCU'
+'SE4'.'CO2storageCSSTOSAA_'.'UCU'
+'SE4'.'CO2storageCSSTOSFA-'.'UCU'
+'SE4'.'CO2storageCSSTOSFA_'.'UCU'
+'SE4'.'UC_Share_INDCD-'.'UCU'
+'SE4'.'UC_Share_INDCD_'.'UCU'
+'SE4'.'UC_Share_INDGD-'.'UCU'
+'SE4'.'UC_Share_INDGD_'.'UCU'
+'SE4'.'UC_Share_INDSD-'.'UCU'
+'SE4'.'UC_Share_INDSD_'.'UCU'
+'SE4'.'UC_Share_INDXD-'.'UCU'
+'SE4'.'UC_Share_INDXD_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'CO2storageCSSTODGA-'.'DKE'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA-'.'DKW'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA-'.'NO1'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA-'.'NO2'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA-'.'SE1'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA-'.'SE2'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA-'.'SE3'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA-'.'SE4'.'CO2storageCSSTODGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'DKE'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'DKW'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'NO1'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'NO2'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'SE1'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'SE2'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'SE3'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGA_'.'SE4'.'CO2storageCSSTODGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'DKE'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'DKW'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'NO1'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'NO2'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'SE1'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'SE2'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'SE3'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS-'.'SE4'.'CO2storageCSSTODGS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'DKE'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'DKW'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'NO1'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'NO2'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'SE1'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'SE2'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'SE3'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODGS_'.'SE4'.'CO2storageCSSTODGS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'DKE'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'DKW'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'NO1'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'NO2'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'SE1'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'SE2'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'SE3'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS-'.'SE4'.'CO2storageCSSTODHS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'DKE'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'DKW'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'NO1'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'NO2'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'SE1'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'SE2'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'SE3'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODHS_'.'SE4'.'CO2storageCSSTODHS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'DKE'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'DKW'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'NO1'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'NO2'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'SE1'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'SE2'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'SE3'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS-'.'SE4'.'CO2storageCSSTODTS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'DKE'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'DKW'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'NO1'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'NO2'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'SE1'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'SE2'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'SE3'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODTS_'.'SE4'.'CO2storageCSSTODTS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'DKE'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'DKW'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'NO1'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'NO2'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'SE1'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'SE2'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'SE3'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS-'.'SE4'.'CO2storageCSSTODZS-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'DKE'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'DKW'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'NO1'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'NO2'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'SE1'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'SE2'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'SE3'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTODZS_'.'SE4'.'CO2storageCSSTODZS_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'DKE'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'DKW'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'NO1'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'NO2'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'SE1'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'SE2'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'SE3'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA-'.'SE4'.'CO2storageCSSTONGA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'DKE'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'DKW'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'NO1'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'NO2'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'SE1'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'SE2'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'SE3'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONGA_'.'SE4'.'CO2storageCSSTONGA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'DKE'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'DKW'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'NO1'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'NO2'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'SE1'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'SE2'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'SE3'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF-'.'SE4'.'CO2storageCSSTONMF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'DKE'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'DKW'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'NO1'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'NO2'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'SE1'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'SE2'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'SE3'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONMF_'.'SE4'.'CO2storageCSSTONMF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'DKE'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'DKW'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'NO1'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'NO2'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'SE1'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'SE2'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'SE3'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA-'.'SE4'.'CO2storageCSSTONSA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'DKE'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'DKW'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'NO1'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'NO2'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'SE1'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'SE2'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'SE3'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSA_'.'SE4'.'CO2storageCSSTONSA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'DKE'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'DKW'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'NO1'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'NO2'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'SE1'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'SE2'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'SE3'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF-'.'SE4'.'CO2storageCSSTONSF-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'DKE'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'DKW'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'NO1'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'NO2'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'SE1'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'SE2'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'SE3'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTONSF_'.'SE4'.'CO2storageCSSTONSF_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'DKE'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'DKW'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'NO1'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'NO2'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'SE1'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'SE2'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'SE3'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA-'.'SE4'.'CO2storageCSSTOSAA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'DKE'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'DKW'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'NO1'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'NO2'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'SE1'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'SE2'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'SE3'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSAA_'.'SE4'.'CO2storageCSSTOSAA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'DKE'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'DKW'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'NO1'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'NO2'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'SE1'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'SE2'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'SE3'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA-'.'SE4'.'CO2storageCSSTOSFA-'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'DKE'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'DKW'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'NO1'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'NO2'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'SE1'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'SE2'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'SE3'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'CO2storageCSSTOSFA_'.'SE4'.'CO2storageCSSTOSFA_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'DKE'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'DKW'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'FIM'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'FIN'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'NO1'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'NO2'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'SE1'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'SE2'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'SE3'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD-'.'SE4'.'UC_Share_INDCD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'DKE'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'DKW'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'FIM'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'FIN'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'NO1'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'NO2'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'SE1'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'SE2'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'SE3'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDCD_'.'SE4'.'UC_Share_INDCD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'DKE'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'DKW'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'FIM'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'FIN'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'NO1'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'NO2'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'SE1'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'SE2'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'SE3'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD-'.'SE4'.'UC_Share_INDGD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'DKE'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'DKW'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'FIM'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'FIN'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'NO1'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'NO2'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'SE1'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'SE2'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'SE3'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDGD_'.'SE4'.'UC_Share_INDGD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'DKE'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'DKW'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'FIM'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'FIN'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'NO1'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'NO2'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'SE1'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'SE2'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'SE3'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD-'.'SE4'.'UC_Share_INDSD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'DKE'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'DKW'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'FIM'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'FIN'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'NO1'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'NO2'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'SE1'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'SE2'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'SE3'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDSD_'.'SE4'.'UC_Share_INDSD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'DKE'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'DKW'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'FIM'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'FIN'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'NO1'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'NO2'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'SE1'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'SE2'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'SE3'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD-'.'SE4'.'UC_Share_INDXD-'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'DKE'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'DKW'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'FIM'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'FIN'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'NO1'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'NO2'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'SE1'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'SE2'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'SE3'.'UC_Share_INDXD_'.'IMPDUCZ'
+'IMPEXP'.'UC_Share_INDXD_'.'SE4'.'UC_Share_INDXD_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'DKE'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'DKE'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'DKE'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'DKE'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'DKE'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'DKE'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'DKE'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'DKE'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'DKE'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'DKE'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'DKE'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'DKE'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'DKE'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'DKE'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'DKE'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'DKE'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'DKE'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'DKE'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'DKE'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'DKE'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'DKE'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'DKE'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'DKE'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'DKE'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'DKE'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'DKE'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'DKE'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'DKE'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'DKE'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'DKW'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'DKW'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'DKW'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'DKW'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'DKW'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'DKW'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'DKW'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'DKW'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'DKW'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'DKW'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'DKW'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'DKW'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'DKW'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'DKW'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'DKW'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'DKW'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'DKW'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'DKW'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'DKW'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'DKW'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'DKW'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'DKW'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'DKW'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'DKW'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'DKW'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'DKW'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'DKW'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'DKW'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'DKW'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'DKW'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'FIM'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'FIM'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'FIM'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'FIM'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'FIM'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'FIM'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'FIM'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'FIM'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'FIM'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'FIM'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'FIM'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'FIM'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'FIM'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'FIM'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'FIM'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'FIM'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'FIM'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'FIM'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'FIM'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'FIM'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'FIM'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'FIM'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'FIM'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'FIM'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'FIM'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'FIM'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'FIM'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'FIM'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'FIM'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'FIM'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'FIN'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'FIN'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'FIN'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'FIN'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'FIN'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'FIN'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'FIN'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'FIN'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'FIN'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'FIN'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'FIN'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'FIN'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'FIN'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'FIN'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'FIN'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'FIN'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'FIN'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'FIN'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'FIN'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'FIN'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'FIN'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'FIN'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'FIN'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'FIN'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'FIN'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'FIN'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'FIN'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'FIN'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'FIN'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'FIN'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'NO1'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'NO1'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'NO1'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'NO1'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'NO1'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'NO1'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'NO1'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'NO1'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'NO1'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'NO1'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'NO1'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'NO1'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'NO1'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'NO1'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'NO1'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'NO1'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'NO1'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'NO1'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'NO1'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'NO1'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'NO1'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'NO1'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'NO1'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'NO1'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'NO1'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'NO1'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'NO1'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'NO1'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'NO1'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'NO1'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'NO2'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'NO2'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'NO2'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'NO2'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'NO2'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'NO2'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'NO2'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'NO2'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'NO2'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'NO2'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'NO2'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'NO2'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'NO2'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'NO2'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'NO2'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'NO2'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'NO2'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'NO2'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'NO2'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'NO2'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'NO2'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'NO2'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'NO2'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'NO2'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'NO2'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'NO2'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'NO2'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'NO2'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'NO2'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'NO2'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'SE1'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'SE1'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'SE1'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'SE1'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'SE1'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'SE1'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'SE1'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'SE1'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'SE1'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'SE1'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'SE1'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'SE1'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'SE1'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'SE1'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'SE1'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'SE1'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'SE1'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'SE1'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'SE1'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'SE1'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'SE1'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'SE1'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'SE1'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'SE1'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'SE1'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'SE1'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'SE1'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'SE1'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'SE1'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'SE1'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'SE2'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'SE2'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'SE2'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'SE2'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'SE2'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'SE2'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'SE2'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'SE2'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'SE2'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'SE2'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'SE2'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'SE2'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'SE2'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'SE2'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'SE2'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'SE2'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'SE2'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'SE2'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'SE2'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'SE2'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'SE2'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'SE2'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'SE2'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'SE2'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'SE2'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'SE2'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'SE2'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'SE2'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'SE2'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'SE2'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'SE3'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'SE3'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'SE3'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'SE3'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'SE3'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'SE3'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'SE3'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'SE3'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'SE3'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'SE3'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'SE3'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'SE3'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'SE3'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'SE3'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'SE3'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'SE3'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'SE3'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'SE3'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'SE3'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'SE3'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'SE3'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'SE3'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'SE3'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'SE3'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'SE3'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'SE3'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'SE3'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'SE3'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'SE3'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'SE3'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+'SE4'.'CO2storageCSSTODGA-' 'Negative dummy var for UC: CO2storageCSSTODGA'
+'SE4'.'CO2storageCSSTODGA_' 'Positive dummy var for UC: CO2storageCSSTODGA'
+'SE4'.'CO2storageCSSTODGS-' 'Negative dummy var for UC: CO2storageCSSTODGS'
+'SE4'.'CO2storageCSSTODGS_' 'Positive dummy var for UC: CO2storageCSSTODGS'
+'SE4'.'CO2storageCSSTODHS-' 'Negative dummy var for UC: CO2storageCSSTODHS'
+'SE4'.'CO2storageCSSTODHS_' 'Positive dummy var for UC: CO2storageCSSTODHS'
+'SE4'.'CO2storageCSSTODTS-' 'Negative dummy var for UC: CO2storageCSSTODTS'
+'SE4'.'CO2storageCSSTODTS_' 'Positive dummy var for UC: CO2storageCSSTODTS'
+'SE4'.'CO2storageCSSTODZS-' 'Negative dummy var for UC: CO2storageCSSTODZS'
+'SE4'.'CO2storageCSSTODZS_' 'Positive dummy var for UC: CO2storageCSSTODZS'
+'SE4'.'CO2storageCSSTONGA-' 'Negative dummy var for UC: CO2storageCSSTONGA'
+'SE4'.'CO2storageCSSTONGA_' 'Positive dummy var for UC: CO2storageCSSTONGA'
+'SE4'.'CO2storageCSSTONMF-' 'Negative dummy var for UC: CO2storageCSSTONMF'
+'SE4'.'CO2storageCSSTONMF_' 'Positive dummy var for UC: CO2storageCSSTONMF'
+'SE4'.'CO2storageCSSTONSA-' 'Negative dummy var for UC: CO2storageCSSTONSA'
+'SE4'.'CO2storageCSSTONSA_' 'Positive dummy var for UC: CO2storageCSSTONSA'
+'SE4'.'CO2storageCSSTONSF-' 'Negative dummy var for UC: CO2storageCSSTONSF'
+'SE4'.'CO2storageCSSTONSF_' 'Positive dummy var for UC: CO2storageCSSTONSF'
+'SE4'.'CO2storageCSSTOSAA-' 'Negative dummy var for UC: CO2storageCSSTOSAA'
+'SE4'.'CO2storageCSSTOSAA_' 'Positive dummy var for UC: CO2storageCSSTOSAA'
+'SE4'.'CO2storageCSSTOSFA-' 'Negative dummy var for UC: CO2storageCSSTOSFA'
+'SE4'.'CO2storageCSSTOSFA_' 'Positive dummy var for UC: CO2storageCSSTOSFA'
+'SE4'.'UC_Share_INDCD-' 'Negative dummy var for UC: UC_Share_INDCD'
+'SE4'.'UC_Share_INDCD_' 'Positive dummy var for UC: UC_Share_INDCD'
+'SE4'.'UC_Share_INDGD-' 'Negative dummy var for UC: UC_Share_INDGD'
+'SE4'.'UC_Share_INDGD_' 'Positive dummy var for UC: UC_Share_INDGD'
+'SE4'.'UC_Share_INDSD-' 'Negative dummy var for UC: UC_Share_INDSD'
+'SE4'.'UC_Share_INDSD_' 'Positive dummy var for UC: UC_Share_INDSD'
+'SE4'.'UC_Share_INDXD-' 'Negative dummy var for UC: UC_Share_INDXD'
+'SE4'.'UC_Share_INDXD_' 'Positive dummy var for UC: UC_Share_INDXD'
+/;
+
+SET UC_R_EACH
+
+/
+'DKE'.'UC_Share_INDCD'
+'DKE'.'UC_Share_INDGD'
+'DKE'.'UC_Share_INDSD'
+'DKE'.'UC_Share_INDXD'
+'DKW'.'UC_Share_INDCD'
+'DKW'.'UC_Share_INDGD'
+'DKW'.'UC_Share_INDSD'
+'DKW'.'UC_Share_INDXD'
+'FIM'.'UC_Share_INDCD'
+'FIM'.'UC_Share_INDGD'
+'FIM'.'UC_Share_INDSD'
+'FIM'.'UC_Share_INDXD'
+'FIN'.'UC_Share_INDCD'
+'FIN'.'UC_Share_INDGD'
+'FIN'.'UC_Share_INDSD'
+'FIN'.'UC_Share_INDXD'
+'NO1'.'UC_Share_INDCD'
+'NO1'.'UC_Share_INDGD'
+'NO1'.'UC_Share_INDSD'
+'NO1'.'UC_Share_INDXD'
+'NO2'.'UC_Share_INDCD'
+'NO2'.'UC_Share_INDGD'
+'NO2'.'UC_Share_INDSD'
+'NO2'.'UC_Share_INDXD'
+'SE1'.'UC_Share_INDCD'
+'SE1'.'UC_Share_INDGD'
+'SE1'.'UC_Share_INDSD'
+'SE1'.'UC_Share_INDXD'
+'SE2'.'UC_Share_INDCD'
+'SE2'.'UC_Share_INDGD'
+'SE2'.'UC_Share_INDSD'
+'SE2'.'UC_Share_INDXD'
+'SE3'.'UC_Share_INDCD'
+'SE3'.'UC_Share_INDGD'
+'SE3'.'UC_Share_INDSD'
+'SE3'.'UC_Share_INDXD'
+'SE4'.'UC_Share_INDCD'
+'SE4'.'UC_Share_INDGD'
+'SE4'.'UC_Share_INDSD'
+'SE4'.'UC_Share_INDXD'
+/;
+
+SET UC_R_SUM
+
+/
+'DKE'.'CO2storageCSSTODGA'
+'DKE'.'CO2storageCSSTODGS'
+'DKE'.'CO2storageCSSTODHS'
+'DKE'.'CO2storageCSSTODTS'
+'DKE'.'CO2storageCSSTODZS'
+'DKE'.'CO2storageCSSTONGA'
+'DKE'.'CO2storageCSSTONMF'
+'DKE'.'CO2storageCSSTONSA'
+'DKE'.'CO2storageCSSTONSF'
+'DKE'.'CO2storageCSSTOSAA'
+'DKE'.'CO2storageCSSTOSFA'
+'DKW'.'CO2storageCSSTODGA'
+'DKW'.'CO2storageCSSTODGS'
+'DKW'.'CO2storageCSSTODHS'
+'DKW'.'CO2storageCSSTODTS'
+'DKW'.'CO2storageCSSTODZS'
+'DKW'.'CO2storageCSSTONGA'
+'DKW'.'CO2storageCSSTONMF'
+'DKW'.'CO2storageCSSTONSA'
+'DKW'.'CO2storageCSSTONSF'
+'DKW'.'CO2storageCSSTOSAA'
+'DKW'.'CO2storageCSSTOSFA'
+'NO1'.'CO2storageCSSTODGA'
+'NO1'.'CO2storageCSSTODGS'
+'NO1'.'CO2storageCSSTODHS'
+'NO1'.'CO2storageCSSTODTS'
+'NO1'.'CO2storageCSSTODZS'
+'NO1'.'CO2storageCSSTONGA'
+'NO1'.'CO2storageCSSTONMF'
+'NO1'.'CO2storageCSSTONSA'
+'NO1'.'CO2storageCSSTONSF'
+'NO1'.'CO2storageCSSTOSAA'
+'NO1'.'CO2storageCSSTOSFA'
+'NO2'.'CO2storageCSSTODGA'
+'NO2'.'CO2storageCSSTODGS'
+'NO2'.'CO2storageCSSTODHS'
+'NO2'.'CO2storageCSSTODTS'
+'NO2'.'CO2storageCSSTODZS'
+'NO2'.'CO2storageCSSTONGA'
+'NO2'.'CO2storageCSSTONMF'
+'NO2'.'CO2storageCSSTONSA'
+'NO2'.'CO2storageCSSTONSF'
+'NO2'.'CO2storageCSSTOSAA'
+'NO2'.'CO2storageCSSTOSFA'
+'SE1'.'CO2storageCSSTODGA'
+'SE1'.'CO2storageCSSTODGS'
+'SE1'.'CO2storageCSSTODHS'
+'SE1'.'CO2storageCSSTODTS'
+'SE1'.'CO2storageCSSTODZS'
+'SE1'.'CO2storageCSSTONGA'
+'SE1'.'CO2storageCSSTONMF'
+'SE1'.'CO2storageCSSTONSA'
+'SE1'.'CO2storageCSSTONSF'
+'SE1'.'CO2storageCSSTOSAA'
+'SE1'.'CO2storageCSSTOSFA'
+'SE2'.'CO2storageCSSTODGA'
+'SE2'.'CO2storageCSSTODGS'
+'SE2'.'CO2storageCSSTODHS'
+'SE2'.'CO2storageCSSTODTS'
+'SE2'.'CO2storageCSSTODZS'
+'SE2'.'CO2storageCSSTONGA'
+'SE2'.'CO2storageCSSTONMF'
+'SE2'.'CO2storageCSSTONSA'
+'SE2'.'CO2storageCSSTONSF'
+'SE2'.'CO2storageCSSTOSAA'
+'SE2'.'CO2storageCSSTOSFA'
+'SE3'.'CO2storageCSSTODGA'
+'SE3'.'CO2storageCSSTODGS'
+'SE3'.'CO2storageCSSTODHS'
+'SE3'.'CO2storageCSSTODTS'
+'SE3'.'CO2storageCSSTODZS'
+'SE3'.'CO2storageCSSTONGA'
+'SE3'.'CO2storageCSSTONMF'
+'SE3'.'CO2storageCSSTONSA'
+'SE3'.'CO2storageCSSTONSF'
+'SE3'.'CO2storageCSSTOSAA'
+'SE3'.'CO2storageCSSTOSFA'
+'SE4'.'CO2storageCSSTODGA'
+'SE4'.'CO2storageCSSTODGS'
+'SE4'.'CO2storageCSSTODHS'
+'SE4'.'CO2storageCSSTODTS'
+'SE4'.'CO2storageCSSTODZS'
+'SE4'.'CO2storageCSSTONGA'
+'SE4'.'CO2storageCSSTONMF'
+'SE4'.'CO2storageCSSTONSA'
+'SE4'.'CO2storageCSSTONSF'
+'SE4'.'CO2storageCSSTOSAA'
+'SE4'.'CO2storageCSSTOSFA'
+/;
+
+PARAMETER
+
+UC_COMPRD ' '/
+'UC_Share_INDCD'.LHS.'DKE'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'DKE'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'DKW'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'DKW'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'NO1'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'NO1'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'NO2'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'NO2'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE1'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE1'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE2'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE2'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE3'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE3'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE4'.2020.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDCD'.LHS.'SE4'.2050.'ICDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'DKE'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'DKW'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'NO1'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'NO2'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE1'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE2'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE3'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDGD'.LHS.'SE4'.2050.'IGDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'NO1'.2020.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'NO1'.2050.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'NO2'.2020.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'NO2'.2050.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE1'.2020.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE1'.2050.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE2'.2020.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE2'.2050.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE3'.2020.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE3'.2050.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE4'.2020.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDSD'.LHS.'SE4'.2050.'ISDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'NO1'.2020.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'NO1'.2050.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'NO2'.2020.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'NO2'.2050.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE1'.2020.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE1'.2050.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE2'.2020.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE2'.2050.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE3'.2020.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE3'.2050.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE4'.2020.'IXDHT'.ANNUAL -0.1
+'UC_Share_INDXD'.LHS.'SE4'.2050.'IXDHT'.ANNUAL -0.1
+/;
+
+PARAMETER
+
+UC_FLO ' '/
+'CO2storageCSSTODGA'.LHS.'DKE'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGA'.LHS.'DKW'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGA'.LHS.'NO1'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGA'.LHS.'NO2'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGA'.LHS.'SE1'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGA'.LHS.'SE2'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGA'.LHS.'SE3'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGA'.LHS.'SE4'.2010.'CSSTODGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'DKE'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'DKW'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'NO1'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'NO2'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'SE1'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'SE2'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'SE3'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODGS'.LHS.'SE4'.2010.'CSSTODGS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'DKE'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'DKW'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'NO1'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'NO2'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'SE1'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'SE2'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'SE3'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODHS'.LHS.'SE4'.2010.'CSSTODHS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'DKE'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'DKW'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'NO1'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'NO2'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'SE1'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'SE2'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'SE3'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODTS'.LHS.'SE4'.2010.'CSSTODTS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'DKE'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'DKW'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'NO1'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'NO2'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'SE1'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'SE2'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'SE3'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTODZS'.LHS.'SE4'.2010.'CSSTODZS'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'DKE'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'DKW'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'NO1'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'NO2'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'SE1'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'SE2'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'SE3'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONGA'.LHS.'SE4'.2010.'CSSTONGA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'DKE'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'DKW'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'NO1'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'NO2'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'SE1'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'SE2'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'SE3'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONMF'.LHS.'SE4'.2010.'CSSTONMF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'DKE'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'DKW'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'NO1'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'NO2'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'SE1'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'SE2'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'SE3'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSA'.LHS.'SE4'.2010.'CSSTONSA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'DKE'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'DKW'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'NO1'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'NO2'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'SE1'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'SE2'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'SE3'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTONSF'.LHS.'SE4'.2010.'CSSTONSF'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'DKE'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'DKW'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'NO1'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'NO2'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'SE1'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'SE2'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'SE3'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSAA'.LHS.'SE4'.2010.'CSSTOSAA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'DKE'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'DKW'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'NO1'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'NO2'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'SE1'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'SE2'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'SE3'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'CO2storageCSSTOSFA'.LHS.'SE4'.2010.'CSSTOSFA'.'CO2STO'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKE'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKE'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKE'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKE'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKE'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKW'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKW'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKW'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKW'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'DKW'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO1'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO1'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO1'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO1'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO1'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO2'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO2'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO2'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO2'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'NO2'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE1'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE1'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE1'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE1'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE1'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE2'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE2'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE2'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE2'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE2'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE3'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE3'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE3'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE3'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE3'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE4'.2020.'INDCDHTBCOAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE4'.2020.'INDCDHTBNGAE1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE4'.2020.'INDCDHTCOAN1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE4'.2020.'INDCDHTDH2N1'.'ICDHT'.ANNUAL 1
+'UC_Share_INDCD'.LHS.'SE4'.2020.'INDCDHTDH2N5'.'ICDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKE'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'DKW'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO1'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'NO2'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE1'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE2'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE3'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTBCOAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTBNGAE1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTCOAN1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTCOAN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTDH2N1'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTDH2N5'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTGASN1CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDGD'.LHS.'SE4'.2020.'INDGDHTGASN5CCS'.'IGDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO1'.2020.'INDSDHTBCOAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO1'.2020.'INDSDHTBNGAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO1'.2020.'INDSDHTCOAN1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO1'.2020.'INDSDHTDH2N1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO1'.2020.'INDSDHTDH2N5'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO2'.2020.'INDSDHTBCOAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO2'.2020.'INDSDHTBNGAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO2'.2020.'INDSDHTCOAN1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO2'.2020.'INDSDHTDH2N1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'NO2'.2020.'INDSDHTDH2N5'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE1'.2020.'INDSDHTBCOAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE1'.2020.'INDSDHTBNGAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE1'.2020.'INDSDHTCOAN1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE1'.2020.'INDSDHTDH2N1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE1'.2020.'INDSDHTDH2N5'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE2'.2020.'INDSDHTBCOAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE2'.2020.'INDSDHTBNGAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE2'.2020.'INDSDHTCOAN1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE2'.2020.'INDSDHTDH2N1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE2'.2020.'INDSDHTDH2N5'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE3'.2020.'INDSDHTBCOAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE3'.2020.'INDSDHTBNGAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE3'.2020.'INDSDHTCOAN1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE3'.2020.'INDSDHTDH2N1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE3'.2020.'INDSDHTDH2N5'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE4'.2020.'INDSDHTBCOAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE4'.2020.'INDSDHTBNGAE1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE4'.2020.'INDSDHTCOAN1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE4'.2020.'INDSDHTDH2N1'.'ISDHT'.ANNUAL 1
+'UC_Share_INDSD'.LHS.'SE4'.2020.'INDSDHTDH2N5'.'ISDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO1'.2020.'INDXDHTBCOAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO1'.2020.'INDXDHTBNGAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO1'.2020.'INDXDHTCOAN1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO1'.2020.'INDXDHTDH2N1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO1'.2020.'INDXDHTDH2N5'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO2'.2020.'INDXDHTBCOAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO2'.2020.'INDXDHTBNGAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO2'.2020.'INDXDHTCOAN1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO2'.2020.'INDXDHTDH2N1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'NO2'.2020.'INDXDHTDH2N5'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE1'.2020.'INDXDHTBCOAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE1'.2020.'INDXDHTBNGAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE1'.2020.'INDXDHTCOAN1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE1'.2020.'INDXDHTDH2N1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE1'.2020.'INDXDHTDH2N5'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE2'.2020.'INDXDHTBCOAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE2'.2020.'INDXDHTBNGAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE2'.2020.'INDXDHTCOAN1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE2'.2020.'INDXDHTDH2N1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE2'.2020.'INDXDHTDH2N5'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE3'.2020.'INDXDHTBCOAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE3'.2020.'INDXDHTBNGAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE3'.2020.'INDXDHTCOAN1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE3'.2020.'INDXDHTDH2N1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE3'.2020.'INDXDHTDH2N5'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE4'.2020.'INDXDHTBCOAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE4'.2020.'INDXDHTBNGAE1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE4'.2020.'INDXDHTCOAN1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE4'.2020.'INDXDHTDH2N1'.'IXDHT'.ANNUAL 1
+'UC_Share_INDXD'.LHS.'SE4'.2020.'INDXDHTDH2N5'.'IXDHT'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'CO2storageCSSTODGA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODGA-'.ANNUAL.IMP -1
+'CO2storageCSSTODGA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODGA_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODGS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODGS-'.ANNUAL.IMP -1
+'CO2storageCSSTODGS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODGS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODHS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODHS-'.ANNUAL.IMP -1
+'CO2storageCSSTODHS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODHS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODTS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODTS-'.ANNUAL.IMP -1
+'CO2storageCSSTODTS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODTS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTODZS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODZS-'.ANNUAL.IMP -1
+'CO2storageCSSTODZS'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTODZS_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONGA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONGA-'.ANNUAL.IMP -1
+'CO2storageCSSTONGA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONGA_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONMF'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONMF-'.ANNUAL.IMP -1
+'CO2storageCSSTONMF'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONMF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONSA-'.ANNUAL.IMP -1
+'CO2storageCSSTONSA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONSA_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTONSF'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONSF-'.ANNUAL.IMP -1
+'CO2storageCSSTONSF'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTONSF_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSAA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSAA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTOSAA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'DKE'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'DKW'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'NO1'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'NO2'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'SE1'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'SE2'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'SE3'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'CO2storageCSSTOSFA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA-'.ANNUAL.IMP -1
+'CO2storageCSSTOSFA'.LHS.'SE4'.2010.'IMPDUCZ'.'CO2storageCSSTOSFA_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDCD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDCD-'.ANNUAL.IMP -1
+'UC_Share_INDCD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDCD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDGD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDGD-'.ANNUAL.IMP -1
+'UC_Share_INDGD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDGD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDSD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDSD-'.ANNUAL.IMP -1
+'UC_Share_INDSD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDSD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'DKE'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'DKW'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'FIM'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'FIN'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'NO1'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'NO2'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'SE1'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'SE2'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'SE3'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+'UC_Share_INDXD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDXD-'.ANNUAL.IMP -1
+'UC_Share_INDXD'.LHS.'SE4'.2010.'IMPDUCZ'.'UC_Share_INDXD_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_RHS ' '/
+'CO2storageCSSTODGA'.UP 3700000
+'CO2storageCSSTODGS'.UP 600000
+'CO2storageCSSTODHS'.UP 2800000
+'CO2storageCSSTODTS'.UP 11000000
+'CO2storageCSSTODZS'.UP 1150000
+'CO2storageCSSTONGA'.UP 8000000
+'CO2storageCSSTONMF'.UP 9000000
+'CO2storageCSSTONSA'.UP 9000000
+'CO2storageCSSTONSF'.UP 9000000
+'CO2storageCSSTOSAA'.UP 1000000
+'CO2storageCSSTOSFA'.UP 700000
+/;
+
+PARAMETER
+
+UC_RHSRT ' '/
+'DKE'.'UC_Share_INDCD'.0.LO 1
+'DKE'.'UC_Share_INDCD'.2020.LO 0
+'DKE'.'UC_Share_INDCD'.2050.LO 0
+'DKE'.'UC_Share_INDGD'.0.LO 1
+'DKE'.'UC_Share_INDGD'.2020.LO 0
+'DKE'.'UC_Share_INDGD'.2050.LO 0
+'DKE'.'UC_Share_INDSD'.0.LO 1
+'DKE'.'UC_Share_INDSD'.2020.LO 0
+'DKE'.'UC_Share_INDSD'.2050.LO 0
+'DKE'.'UC_Share_INDXD'.0.LO 1
+'DKE'.'UC_Share_INDXD'.2020.LO 0
+'DKE'.'UC_Share_INDXD'.2050.LO 0
+'DKW'.'UC_Share_INDCD'.0.LO 1
+'DKW'.'UC_Share_INDCD'.2020.LO 0
+'DKW'.'UC_Share_INDCD'.2050.LO 0
+'DKW'.'UC_Share_INDGD'.0.LO 1
+'DKW'.'UC_Share_INDGD'.2020.LO 0
+'DKW'.'UC_Share_INDGD'.2050.LO 0
+'DKW'.'UC_Share_INDSD'.0.LO 1
+'DKW'.'UC_Share_INDSD'.2020.LO 0
+'DKW'.'UC_Share_INDSD'.2050.LO 0
+'DKW'.'UC_Share_INDXD'.0.LO 1
+'DKW'.'UC_Share_INDXD'.2020.LO 0
+'DKW'.'UC_Share_INDXD'.2050.LO 0
+'FIM'.'UC_Share_INDCD'.0.LO 1
+'FIM'.'UC_Share_INDCD'.2020.LO 0
+'FIM'.'UC_Share_INDCD'.2050.LO 0
+'FIM'.'UC_Share_INDGD'.0.LO 1
+'FIM'.'UC_Share_INDGD'.2020.LO 0
+'FIM'.'UC_Share_INDGD'.2050.LO 0
+'FIM'.'UC_Share_INDSD'.0.LO 1
+'FIM'.'UC_Share_INDSD'.2020.LO 0
+'FIM'.'UC_Share_INDSD'.2050.LO 0
+'FIM'.'UC_Share_INDXD'.0.LO 1
+'FIM'.'UC_Share_INDXD'.2020.LO 0
+'FIM'.'UC_Share_INDXD'.2050.LO 0
+'FIN'.'UC_Share_INDCD'.0.LO 1
+'FIN'.'UC_Share_INDCD'.2020.LO 0
+'FIN'.'UC_Share_INDCD'.2050.LO 0
+'FIN'.'UC_Share_INDGD'.0.LO 1
+'FIN'.'UC_Share_INDGD'.2020.LO 0
+'FIN'.'UC_Share_INDGD'.2050.LO 0
+'FIN'.'UC_Share_INDSD'.0.LO 1
+'FIN'.'UC_Share_INDSD'.2020.LO 0
+'FIN'.'UC_Share_INDSD'.2050.LO 0
+'FIN'.'UC_Share_INDXD'.0.LO 1
+'FIN'.'UC_Share_INDXD'.2020.LO 0
+'FIN'.'UC_Share_INDXD'.2050.LO 0
+'NO1'.'UC_Share_INDCD'.0.LO 1
+'NO1'.'UC_Share_INDCD'.2020.LO 0
+'NO1'.'UC_Share_INDCD'.2050.LO 0
+'NO1'.'UC_Share_INDGD'.0.LO 1
+'NO1'.'UC_Share_INDGD'.2020.LO 0
+'NO1'.'UC_Share_INDGD'.2050.LO 0
+'NO1'.'UC_Share_INDSD'.0.LO 1
+'NO1'.'UC_Share_INDSD'.2020.LO 0
+'NO1'.'UC_Share_INDSD'.2050.LO 0
+'NO1'.'UC_Share_INDXD'.0.LO 1
+'NO1'.'UC_Share_INDXD'.2020.LO 0
+'NO1'.'UC_Share_INDXD'.2050.LO 0
+'NO2'.'UC_Share_INDCD'.0.LO 1
+'NO2'.'UC_Share_INDCD'.2020.LO 0
+'NO2'.'UC_Share_INDCD'.2050.LO 0
+'NO2'.'UC_Share_INDGD'.0.LO 1
+'NO2'.'UC_Share_INDGD'.2020.LO 0
+'NO2'.'UC_Share_INDGD'.2050.LO 0
+'NO2'.'UC_Share_INDSD'.0.LO 1
+'NO2'.'UC_Share_INDSD'.2020.LO 0
+'NO2'.'UC_Share_INDSD'.2050.LO 0
+'NO2'.'UC_Share_INDXD'.0.LO 1
+'NO2'.'UC_Share_INDXD'.2020.LO 0
+'NO2'.'UC_Share_INDXD'.2050.LO 0
+'SE1'.'UC_Share_INDCD'.0.LO 1
+'SE1'.'UC_Share_INDCD'.2020.LO 0
+'SE1'.'UC_Share_INDCD'.2050.LO 0
+'SE1'.'UC_Share_INDGD'.0.LO 1
+'SE1'.'UC_Share_INDGD'.2020.LO 0
+'SE1'.'UC_Share_INDGD'.2050.LO 0
+'SE1'.'UC_Share_INDSD'.0.LO 1
+'SE1'.'UC_Share_INDSD'.2020.LO 0
+'SE1'.'UC_Share_INDSD'.2050.LO 0
+'SE1'.'UC_Share_INDXD'.0.LO 1
+'SE1'.'UC_Share_INDXD'.2020.LO 0
+'SE1'.'UC_Share_INDXD'.2050.LO 0
+'SE2'.'UC_Share_INDCD'.0.LO 1
+'SE2'.'UC_Share_INDCD'.2020.LO 0
+'SE2'.'UC_Share_INDCD'.2050.LO 0
+'SE2'.'UC_Share_INDGD'.0.LO 1
+'SE2'.'UC_Share_INDGD'.2020.LO 0
+'SE2'.'UC_Share_INDGD'.2050.LO 0
+'SE2'.'UC_Share_INDSD'.0.LO 1
+'SE2'.'UC_Share_INDSD'.2020.LO 0
+'SE2'.'UC_Share_INDSD'.2050.LO 0
+'SE2'.'UC_Share_INDXD'.0.LO 1
+'SE2'.'UC_Share_INDXD'.2020.LO 0
+'SE2'.'UC_Share_INDXD'.2050.LO 0
+'SE3'.'UC_Share_INDCD'.0.LO 1
+'SE3'.'UC_Share_INDCD'.2020.LO 0
+'SE3'.'UC_Share_INDCD'.2050.LO 0
+'SE3'.'UC_Share_INDGD'.0.LO 1
+'SE3'.'UC_Share_INDGD'.2020.LO 0
+'SE3'.'UC_Share_INDGD'.2050.LO 0
+'SE3'.'UC_Share_INDSD'.0.LO 1
+'SE3'.'UC_Share_INDSD'.2020.LO 0
+'SE3'.'UC_Share_INDSD'.2050.LO 0
+'SE3'.'UC_Share_INDXD'.0.LO 1
+'SE3'.'UC_Share_INDXD'.2020.LO 0
+'SE3'.'UC_Share_INDXD'.2050.LO 0
+'SE4'.'UC_Share_INDCD'.0.LO 1
+'SE4'.'UC_Share_INDCD'.2020.LO 0
+'SE4'.'UC_Share_INDCD'.2050.LO 0
+'SE4'.'UC_Share_INDGD'.0.LO 1
+'SE4'.'UC_Share_INDGD'.2020.LO 0
+'SE4'.'UC_Share_INDGD'.2050.LO 0
+'SE4'.'UC_Share_INDSD'.0.LO 1
+'SE4'.'UC_Share_INDSD'.2020.LO 0
+'SE4'.'UC_Share_INDSD'.2050.LO 0
+'SE4'.'UC_Share_INDXD'.0.LO 1
+'SE4'.'UC_Share_INDXD'.2020.LO 0
+'SE4'.'UC_Share_INDXD'.2050.LO 0
+/;
+
+

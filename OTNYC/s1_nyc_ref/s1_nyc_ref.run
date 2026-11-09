@@ -1,0 +1,114 @@
+$TITLE Veda2 -- v5.0.0.0
+
+
+OPTION PROFILE=1, SOLVEOPT=REPLACE;
+OPTION RESLIM=50000, ITERLIM=999999, LIMROW=0, LIMCOL=0, SOLPRINT=OFF;
+
+
+
+option LP=cplex;
+
+
+
+*--If you want to use an optimizer other than cplex/xpress, enter it here:
+*OPTION LP=MyOptimizer;
+
+
+$OFFLISTING
+*$ONLISTING
+
+
+* activate validation to force VAR_CAP/COMPRD
+$SET VALIDATE 'NO'
+* reduction of equation system
+$SET REDUCE   'YES'
+*--------------------------------------------------------------*
+* BATINCLUDE calls should all be with lower case file names!!! *
+*--------------------------------------------------------------*
+
+
+* initialize the environment variables
+$   SET VDA YES 
+$   SET DEBUG                          'NO'
+$   SET DUMPSOL                        'NO'
+$   SET SOLVE_NOW                      'YES'
+$   SET MODEL_NAME                     'TIMES'
+$   IF DECLARED REG      $SET STARTRUN 'RESTART'
+$   IF NOT DECLARED REG  $SET STARTRUN 'SCRATCH'
+$SET XTQA YES
+* VAR_UC being set so that non-binding constraints appear in results
+$SET VAR_UC YES 
+$ SET OBJ AUTO
+$SET DAMAGE NO
+$ SET TIMESED NO
+$ SET STAGES NO
+$SET SOLVEDA 'YES'
+$ SET DSCAUTO YES
+$SET DATAGDX YES
+
+
+
+
+
+* merge declarations & data
+$   ONMULTI
+
+
+* the times-slices MUST come 1st to ensure ordering OK
+$BATINCLUDE s1_nyc_ref_ts.dd
+
+
+*<perform fixed declarations>
+$SET BOTIME 1980
+$   BATINCLUDE initsys.mod
+
+
+* declare the (system/user) empties
+$   BATINCLUDE initmty.mod
+*$   BATINCLUDE initmty.mod DSC
+$IF NOT DECLARED REG_BNDCST $Abort "You need to use TIMES v2.3.1 or higher"
+
+
+$BATINCLUDE base.dd
+$BATINCLUDE techcom.dd
+$BATINCLUDE techelc.dd
+$BATINCLUDE techh2g.dd
+$BATINCLUDE technga.dd
+$BATINCLUDE techref.dd
+$BATINCLUDE techres.dd
+$BATINCLUDE techtrnhdv.dd
+$BATINCLUDE techtrnldv.dd
+$BATINCLUDE syssettings.dd
+$BATINCLUDE tradeparam.dd
+$BATINCLUDE gdr_ref.dd
+$BATINCLUDE ghg.dd
+$BATINCLUDE uc_coa.dd
+$BATINCLUDE uc_com.dd
+$BATINCLUDE uc_elc.dd
+$BATINCLUDE uc_ind.dd
+$BATINCLUDE uc_nga.dd
+$BATINCLUDE uc_oil.dd
+$BATINCLUDE uc_res.dd
+$BATINCLUDE uc_trnhdv.dd
+$BATINCLUDE uc_trnldv.dd
+
+SET MILESTONYR /2010,2012,2015,2020,2025,2030,2035,2040,2045,2050,2055/;
+$SET RUN_NAME 's1_nyc_ref'
+
+
+
+
+
+
+$ SET VEDAVDD 'YES'
+
+
+* do the rest
+$ BATINCLUDE maindrv.mod mod
+
+
+
+
+
+
+

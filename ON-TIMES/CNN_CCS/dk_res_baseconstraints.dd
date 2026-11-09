@@ -1,0 +1,1264 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'dk_res_baseconstraints'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'AU_GAS_ACTBND-'
+'DKE'.'NRG'.'AU_GAS_ACTBND_'
+'DKE'.'NRG'.'AU_HCEDB_ACTBND-'
+'DKE'.'NRG'.'AU_HCEDB_ACTBND_'
+'DKE'.'NRG'.'AU_HCEMB_ACTBND-'
+'DKE'.'NRG'.'AU_HCEMB_ACTBND_'
+'DKE'.'NRG'.'AU_HDEDB_ACTBND-'
+'DKE'.'NRG'.'AU_HDEDB_ACTBND_'
+'DKE'.'NRG'.'AU_HDEMB_ACTBND-'
+'DKE'.'NRG'.'AU_HDEMB_ACTBND_'
+'DKE'.'NRG'.'AU_NG_DB_ACTBND-'
+'DKE'.'NRG'.'AU_NG_DB_ACTBND_'
+'DKE'.'NRG'.'AU_NG_MB_ACTBND-'
+'DKE'.'NRG'.'AU_NG_MB_ACTBND_'
+'DKE'.'NRG'.'DHPipeExp_CE1-'
+'DKE'.'NRG'.'DHPipeExp_CE1_'
+'DKE'.'NRG'.'DHPipeExp_CN1-'
+'DKE'.'NRG'.'DHPipeExp_CN1_'
+'DKE'.'NRG'.'DHPipeExp_CN2-'
+'DKE'.'NRG'.'DHPipeExp_CN2_'
+'DKE'.'NRG'.'DHPipeExp_DE1-'
+'DKE'.'NRG'.'DHPipeExp_DE1_'
+'DKE'.'NRG'.'DHPipeExp_DN1-'
+'DKE'.'NRG'.'DHPipeExp_DN1_'
+'DKE'.'NRG'.'DHPipeExp_DN2-'
+'DKE'.'NRG'.'DHPipeExp_DN2_'
+'DKE'.'NRG'.'MaxSolH_MF-'
+'DKE'.'NRG'.'MaxSolH_MF_'
+'DKE'.'NRG'.'MaxSolH_SF-'
+'DKE'.'NRG'.'MaxSolH_SF_'
+'DKW'.'NRG'.'AU_GAS_ACTBND-'
+'DKW'.'NRG'.'AU_GAS_ACTBND_'
+'DKW'.'NRG'.'AU_HCEDB_ACTBND-'
+'DKW'.'NRG'.'AU_HCEDB_ACTBND_'
+'DKW'.'NRG'.'AU_HCEMB_ACTBND-'
+'DKW'.'NRG'.'AU_HCEMB_ACTBND_'
+'DKW'.'NRG'.'AU_HDEDB_ACTBND-'
+'DKW'.'NRG'.'AU_HDEDB_ACTBND_'
+'DKW'.'NRG'.'AU_HDEMB_ACTBND-'
+'DKW'.'NRG'.'AU_HDEMB_ACTBND_'
+'DKW'.'NRG'.'AU_NG_DB_ACTBND-'
+'DKW'.'NRG'.'AU_NG_DB_ACTBND_'
+'DKW'.'NRG'.'AU_NG_MB_ACTBND-'
+'DKW'.'NRG'.'AU_NG_MB_ACTBND_'
+'DKW'.'NRG'.'DHPipeExp_CE1-'
+'DKW'.'NRG'.'DHPipeExp_CE1_'
+'DKW'.'NRG'.'DHPipeExp_CN1-'
+'DKW'.'NRG'.'DHPipeExp_CN1_'
+'DKW'.'NRG'.'DHPipeExp_CN2-'
+'DKW'.'NRG'.'DHPipeExp_CN2_'
+'DKW'.'NRG'.'DHPipeExp_DE1-'
+'DKW'.'NRG'.'DHPipeExp_DE1_'
+'DKW'.'NRG'.'DHPipeExp_DN1-'
+'DKW'.'NRG'.'DHPipeExp_DN1_'
+'DKW'.'NRG'.'DHPipeExp_DN2-'
+'DKW'.'NRG'.'DHPipeExp_DN2_'
+'DKW'.'NRG'.'MaxSolH_MF-'
+'DKW'.'NRG'.'MaxSolH_MF_'
+'DKW'.'NRG'.'MaxSolH_SF-'
+'DKW'.'NRG'.'MaxSolH_SF_'
+'FIM'.'NRG'.'AU_GAS_ACTBND-'
+'FIM'.'NRG'.'AU_GAS_ACTBND_'
+'FIM'.'NRG'.'AU_HCEDB_ACTBND-'
+'FIM'.'NRG'.'AU_HCEDB_ACTBND_'
+'FIM'.'NRG'.'AU_HCEMB_ACTBND-'
+'FIM'.'NRG'.'AU_HCEMB_ACTBND_'
+'FIM'.'NRG'.'AU_HDEDB_ACTBND-'
+'FIM'.'NRG'.'AU_HDEDB_ACTBND_'
+'FIM'.'NRG'.'AU_HDEMB_ACTBND-'
+'FIM'.'NRG'.'AU_HDEMB_ACTBND_'
+'FIM'.'NRG'.'AU_NG_DB_ACTBND-'
+'FIM'.'NRG'.'AU_NG_DB_ACTBND_'
+'FIM'.'NRG'.'AU_NG_MB_ACTBND-'
+'FIM'.'NRG'.'AU_NG_MB_ACTBND_'
+'FIM'.'NRG'.'DHPipeExp_CE1-'
+'FIM'.'NRG'.'DHPipeExp_CE1_'
+'FIM'.'NRG'.'DHPipeExp_CN1-'
+'FIM'.'NRG'.'DHPipeExp_CN1_'
+'FIM'.'NRG'.'DHPipeExp_CN2-'
+'FIM'.'NRG'.'DHPipeExp_CN2_'
+'FIM'.'NRG'.'DHPipeExp_DE1-'
+'FIM'.'NRG'.'DHPipeExp_DE1_'
+'FIM'.'NRG'.'DHPipeExp_DN1-'
+'FIM'.'NRG'.'DHPipeExp_DN1_'
+'FIM'.'NRG'.'DHPipeExp_DN2-'
+'FIM'.'NRG'.'DHPipeExp_DN2_'
+'FIM'.'NRG'.'MaxSolH_MF-'
+'FIM'.'NRG'.'MaxSolH_MF_'
+'FIM'.'NRG'.'MaxSolH_SF-'
+'FIM'.'NRG'.'MaxSolH_SF_'
+'FIN'.'NRG'.'AU_GAS_ACTBND-'
+'FIN'.'NRG'.'AU_GAS_ACTBND_'
+'FIN'.'NRG'.'AU_HCEDB_ACTBND-'
+'FIN'.'NRG'.'AU_HCEDB_ACTBND_'
+'FIN'.'NRG'.'AU_HCEMB_ACTBND-'
+'FIN'.'NRG'.'AU_HCEMB_ACTBND_'
+'FIN'.'NRG'.'AU_HDEDB_ACTBND-'
+'FIN'.'NRG'.'AU_HDEDB_ACTBND_'
+'FIN'.'NRG'.'AU_HDEMB_ACTBND-'
+'FIN'.'NRG'.'AU_HDEMB_ACTBND_'
+'FIN'.'NRG'.'AU_NG_DB_ACTBND-'
+'FIN'.'NRG'.'AU_NG_DB_ACTBND_'
+'FIN'.'NRG'.'AU_NG_MB_ACTBND-'
+'FIN'.'NRG'.'AU_NG_MB_ACTBND_'
+'FIN'.'NRG'.'DHPipeExp_CE1-'
+'FIN'.'NRG'.'DHPipeExp_CE1_'
+'FIN'.'NRG'.'DHPipeExp_CN1-'
+'FIN'.'NRG'.'DHPipeExp_CN1_'
+'FIN'.'NRG'.'DHPipeExp_CN2-'
+'FIN'.'NRG'.'DHPipeExp_CN2_'
+'FIN'.'NRG'.'DHPipeExp_DE1-'
+'FIN'.'NRG'.'DHPipeExp_DE1_'
+'FIN'.'NRG'.'DHPipeExp_DN1-'
+'FIN'.'NRG'.'DHPipeExp_DN1_'
+'FIN'.'NRG'.'DHPipeExp_DN2-'
+'FIN'.'NRG'.'DHPipeExp_DN2_'
+'FIN'.'NRG'.'MaxSolH_MF-'
+'FIN'.'NRG'.'MaxSolH_MF_'
+'FIN'.'NRG'.'MaxSolH_SF-'
+'FIN'.'NRG'.'MaxSolH_SF_'
+'NO1'.'NRG'.'AU_GAS_ACTBND-'
+'NO1'.'NRG'.'AU_GAS_ACTBND_'
+'NO1'.'NRG'.'AU_HCEDB_ACTBND-'
+'NO1'.'NRG'.'AU_HCEDB_ACTBND_'
+'NO1'.'NRG'.'AU_HCEMB_ACTBND-'
+'NO1'.'NRG'.'AU_HCEMB_ACTBND_'
+'NO1'.'NRG'.'AU_HDEDB_ACTBND-'
+'NO1'.'NRG'.'AU_HDEDB_ACTBND_'
+'NO1'.'NRG'.'AU_HDEMB_ACTBND-'
+'NO1'.'NRG'.'AU_HDEMB_ACTBND_'
+'NO1'.'NRG'.'AU_NG_DB_ACTBND-'
+'NO1'.'NRG'.'AU_NG_DB_ACTBND_'
+'NO1'.'NRG'.'AU_NG_MB_ACTBND-'
+'NO1'.'NRG'.'AU_NG_MB_ACTBND_'
+'NO1'.'NRG'.'DHPipeExp_CE1-'
+'NO1'.'NRG'.'DHPipeExp_CE1_'
+'NO1'.'NRG'.'DHPipeExp_CN1-'
+'NO1'.'NRG'.'DHPipeExp_CN1_'
+'NO1'.'NRG'.'DHPipeExp_CN2-'
+'NO1'.'NRG'.'DHPipeExp_CN2_'
+'NO1'.'NRG'.'DHPipeExp_DE1-'
+'NO1'.'NRG'.'DHPipeExp_DE1_'
+'NO1'.'NRG'.'DHPipeExp_DN1-'
+'NO1'.'NRG'.'DHPipeExp_DN1_'
+'NO1'.'NRG'.'DHPipeExp_DN2-'
+'NO1'.'NRG'.'DHPipeExp_DN2_'
+'NO1'.'NRG'.'MaxSolH_MF-'
+'NO1'.'NRG'.'MaxSolH_MF_'
+'NO1'.'NRG'.'MaxSolH_SF-'
+'NO1'.'NRG'.'MaxSolH_SF_'
+'NO2'.'NRG'.'AU_GAS_ACTBND-'
+'NO2'.'NRG'.'AU_GAS_ACTBND_'
+'NO2'.'NRG'.'AU_HCEDB_ACTBND-'
+'NO2'.'NRG'.'AU_HCEDB_ACTBND_'
+'NO2'.'NRG'.'AU_HCEMB_ACTBND-'
+'NO2'.'NRG'.'AU_HCEMB_ACTBND_'
+'NO2'.'NRG'.'AU_HDEDB_ACTBND-'
+'NO2'.'NRG'.'AU_HDEDB_ACTBND_'
+'NO2'.'NRG'.'AU_HDEMB_ACTBND-'
+'NO2'.'NRG'.'AU_HDEMB_ACTBND_'
+'NO2'.'NRG'.'AU_NG_DB_ACTBND-'
+'NO2'.'NRG'.'AU_NG_DB_ACTBND_'
+'NO2'.'NRG'.'AU_NG_MB_ACTBND-'
+'NO2'.'NRG'.'AU_NG_MB_ACTBND_'
+'NO2'.'NRG'.'DHPipeExp_CE1-'
+'NO2'.'NRG'.'DHPipeExp_CE1_'
+'NO2'.'NRG'.'DHPipeExp_CN1-'
+'NO2'.'NRG'.'DHPipeExp_CN1_'
+'NO2'.'NRG'.'DHPipeExp_CN2-'
+'NO2'.'NRG'.'DHPipeExp_CN2_'
+'NO2'.'NRG'.'DHPipeExp_DE1-'
+'NO2'.'NRG'.'DHPipeExp_DE1_'
+'NO2'.'NRG'.'DHPipeExp_DN1-'
+'NO2'.'NRG'.'DHPipeExp_DN1_'
+'NO2'.'NRG'.'DHPipeExp_DN2-'
+'NO2'.'NRG'.'DHPipeExp_DN2_'
+'NO2'.'NRG'.'MaxSolH_MF-'
+'NO2'.'NRG'.'MaxSolH_MF_'
+'NO2'.'NRG'.'MaxSolH_SF-'
+'NO2'.'NRG'.'MaxSolH_SF_'
+'SE1'.'NRG'.'AU_GAS_ACTBND-'
+'SE1'.'NRG'.'AU_GAS_ACTBND_'
+'SE1'.'NRG'.'AU_HCEDB_ACTBND-'
+'SE1'.'NRG'.'AU_HCEDB_ACTBND_'
+'SE1'.'NRG'.'AU_HCEMB_ACTBND-'
+'SE1'.'NRG'.'AU_HCEMB_ACTBND_'
+'SE1'.'NRG'.'AU_HDEDB_ACTBND-'
+'SE1'.'NRG'.'AU_HDEDB_ACTBND_'
+'SE1'.'NRG'.'AU_HDEMB_ACTBND-'
+'SE1'.'NRG'.'AU_HDEMB_ACTBND_'
+'SE1'.'NRG'.'AU_NG_DB_ACTBND-'
+'SE1'.'NRG'.'AU_NG_DB_ACTBND_'
+'SE1'.'NRG'.'AU_NG_MB_ACTBND-'
+'SE1'.'NRG'.'AU_NG_MB_ACTBND_'
+'SE1'.'NRG'.'DHPipeExp_CE1-'
+'SE1'.'NRG'.'DHPipeExp_CE1_'
+'SE1'.'NRG'.'DHPipeExp_CN1-'
+'SE1'.'NRG'.'DHPipeExp_CN1_'
+'SE1'.'NRG'.'DHPipeExp_CN2-'
+'SE1'.'NRG'.'DHPipeExp_CN2_'
+'SE1'.'NRG'.'DHPipeExp_DE1-'
+'SE1'.'NRG'.'DHPipeExp_DE1_'
+'SE1'.'NRG'.'DHPipeExp_DN1-'
+'SE1'.'NRG'.'DHPipeExp_DN1_'
+'SE1'.'NRG'.'DHPipeExp_DN2-'
+'SE1'.'NRG'.'DHPipeExp_DN2_'
+'SE1'.'NRG'.'MaxSolH_MF-'
+'SE1'.'NRG'.'MaxSolH_MF_'
+'SE1'.'NRG'.'MaxSolH_SF-'
+'SE1'.'NRG'.'MaxSolH_SF_'
+'SE2'.'NRG'.'AU_GAS_ACTBND-'
+'SE2'.'NRG'.'AU_GAS_ACTBND_'
+'SE2'.'NRG'.'AU_HCEDB_ACTBND-'
+'SE2'.'NRG'.'AU_HCEDB_ACTBND_'
+'SE2'.'NRG'.'AU_HCEMB_ACTBND-'
+'SE2'.'NRG'.'AU_HCEMB_ACTBND_'
+'SE2'.'NRG'.'AU_HDEDB_ACTBND-'
+'SE2'.'NRG'.'AU_HDEDB_ACTBND_'
+'SE2'.'NRG'.'AU_HDEMB_ACTBND-'
+'SE2'.'NRG'.'AU_HDEMB_ACTBND_'
+'SE2'.'NRG'.'AU_NG_DB_ACTBND-'
+'SE2'.'NRG'.'AU_NG_DB_ACTBND_'
+'SE2'.'NRG'.'AU_NG_MB_ACTBND-'
+'SE2'.'NRG'.'AU_NG_MB_ACTBND_'
+'SE2'.'NRG'.'DHPipeExp_CE1-'
+'SE2'.'NRG'.'DHPipeExp_CE1_'
+'SE2'.'NRG'.'DHPipeExp_CN1-'
+'SE2'.'NRG'.'DHPipeExp_CN1_'
+'SE2'.'NRG'.'DHPipeExp_CN2-'
+'SE2'.'NRG'.'DHPipeExp_CN2_'
+'SE2'.'NRG'.'DHPipeExp_DE1-'
+'SE2'.'NRG'.'DHPipeExp_DE1_'
+'SE2'.'NRG'.'DHPipeExp_DN1-'
+'SE2'.'NRG'.'DHPipeExp_DN1_'
+'SE2'.'NRG'.'DHPipeExp_DN2-'
+'SE2'.'NRG'.'DHPipeExp_DN2_'
+'SE2'.'NRG'.'MaxSolH_MF-'
+'SE2'.'NRG'.'MaxSolH_MF_'
+'SE2'.'NRG'.'MaxSolH_SF-'
+'SE2'.'NRG'.'MaxSolH_SF_'
+'SE3'.'NRG'.'AU_GAS_ACTBND-'
+'SE3'.'NRG'.'AU_GAS_ACTBND_'
+'SE3'.'NRG'.'AU_HCEDB_ACTBND-'
+'SE3'.'NRG'.'AU_HCEDB_ACTBND_'
+'SE3'.'NRG'.'AU_HCEMB_ACTBND-'
+'SE3'.'NRG'.'AU_HCEMB_ACTBND_'
+'SE3'.'NRG'.'AU_HDEDB_ACTBND-'
+'SE3'.'NRG'.'AU_HDEDB_ACTBND_'
+'SE3'.'NRG'.'AU_HDEMB_ACTBND-'
+'SE3'.'NRG'.'AU_HDEMB_ACTBND_'
+'SE3'.'NRG'.'AU_NG_DB_ACTBND-'
+'SE3'.'NRG'.'AU_NG_DB_ACTBND_'
+'SE3'.'NRG'.'AU_NG_MB_ACTBND-'
+'SE3'.'NRG'.'AU_NG_MB_ACTBND_'
+'SE3'.'NRG'.'DHPipeExp_CE1-'
+'SE3'.'NRG'.'DHPipeExp_CE1_'
+'SE3'.'NRG'.'DHPipeExp_CN1-'
+'SE3'.'NRG'.'DHPipeExp_CN1_'
+'SE3'.'NRG'.'DHPipeExp_CN2-'
+'SE3'.'NRG'.'DHPipeExp_CN2_'
+'SE3'.'NRG'.'DHPipeExp_DE1-'
+'SE3'.'NRG'.'DHPipeExp_DE1_'
+'SE3'.'NRG'.'DHPipeExp_DN1-'
+'SE3'.'NRG'.'DHPipeExp_DN1_'
+'SE3'.'NRG'.'DHPipeExp_DN2-'
+'SE3'.'NRG'.'DHPipeExp_DN2_'
+'SE3'.'NRG'.'MaxSolH_MF-'
+'SE3'.'NRG'.'MaxSolH_MF_'
+'SE3'.'NRG'.'MaxSolH_SF-'
+'SE3'.'NRG'.'MaxSolH_SF_'
+'SE4'.'NRG'.'AU_GAS_ACTBND-'
+'SE4'.'NRG'.'AU_GAS_ACTBND_'
+'SE4'.'NRG'.'AU_HCEDB_ACTBND-'
+'SE4'.'NRG'.'AU_HCEDB_ACTBND_'
+'SE4'.'NRG'.'AU_HCEMB_ACTBND-'
+'SE4'.'NRG'.'AU_HCEMB_ACTBND_'
+'SE4'.'NRG'.'AU_HDEDB_ACTBND-'
+'SE4'.'NRG'.'AU_HDEDB_ACTBND_'
+'SE4'.'NRG'.'AU_HDEMB_ACTBND-'
+'SE4'.'NRG'.'AU_HDEMB_ACTBND_'
+'SE4'.'NRG'.'AU_NG_DB_ACTBND-'
+'SE4'.'NRG'.'AU_NG_DB_ACTBND_'
+'SE4'.'NRG'.'AU_NG_MB_ACTBND-'
+'SE4'.'NRG'.'AU_NG_MB_ACTBND_'
+'SE4'.'NRG'.'DHPipeExp_CE1-'
+'SE4'.'NRG'.'DHPipeExp_CE1_'
+'SE4'.'NRG'.'DHPipeExp_CN1-'
+'SE4'.'NRG'.'DHPipeExp_CN1_'
+'SE4'.'NRG'.'DHPipeExp_CN2-'
+'SE4'.'NRG'.'DHPipeExp_CN2_'
+'SE4'.'NRG'.'DHPipeExp_DE1-'
+'SE4'.'NRG'.'DHPipeExp_DE1_'
+'SE4'.'NRG'.'DHPipeExp_DN1-'
+'SE4'.'NRG'.'DHPipeExp_DN1_'
+'SE4'.'NRG'.'DHPipeExp_DN2-'
+'SE4'.'NRG'.'DHPipeExp_DN2_'
+'SE4'.'NRG'.'MaxSolH_MF-'
+'SE4'.'NRG'.'MaxSolH_MF_'
+'SE4'.'NRG'.'MaxSolH_SF-'
+'SE4'.'NRG'.'MaxSolH_SF_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'AU_GAS_ACTBND-'.'UCU'
+'DKE'.'AU_GAS_ACTBND_'.'UCU'
+'DKE'.'AU_HCEDB_ACTBND-'.'UCU'
+'DKE'.'AU_HCEDB_ACTBND_'.'UCU'
+'DKE'.'AU_HCEMB_ACTBND-'.'UCU'
+'DKE'.'AU_HCEMB_ACTBND_'.'UCU'
+'DKE'.'AU_HDEDB_ACTBND-'.'UCU'
+'DKE'.'AU_HDEDB_ACTBND_'.'UCU'
+'DKE'.'AU_HDEMB_ACTBND-'.'UCU'
+'DKE'.'AU_HDEMB_ACTBND_'.'UCU'
+'DKE'.'AU_NG_DB_ACTBND-'.'UCU'
+'DKE'.'AU_NG_DB_ACTBND_'.'UCU'
+'DKE'.'AU_NG_MB_ACTBND-'.'UCU'
+'DKE'.'AU_NG_MB_ACTBND_'.'UCU'
+'DKE'.'DHPipeExp_CE1-'.'UCU'
+'DKE'.'DHPipeExp_CE1_'.'UCU'
+'DKE'.'DHPipeExp_CN1-'.'UCU'
+'DKE'.'DHPipeExp_CN1_'.'UCU'
+'DKE'.'DHPipeExp_CN2-'.'UCU'
+'DKE'.'DHPipeExp_CN2_'.'UCU'
+'DKE'.'DHPipeExp_DE1-'.'UCU'
+'DKE'.'DHPipeExp_DE1_'.'UCU'
+'DKE'.'DHPipeExp_DN1-'.'UCU'
+'DKE'.'DHPipeExp_DN1_'.'UCU'
+'DKE'.'DHPipeExp_DN2-'.'UCU'
+'DKE'.'DHPipeExp_DN2_'.'UCU'
+'DKE'.'MaxSolH_MF-'.'UCU'
+'DKE'.'MaxSolH_MF_'.'UCU'
+'DKE'.'MaxSolH_SF-'.'UCU'
+'DKE'.'MaxSolH_SF_'.'UCU'
+'DKW'.'AU_GAS_ACTBND-'.'UCU'
+'DKW'.'AU_GAS_ACTBND_'.'UCU'
+'DKW'.'AU_HCEDB_ACTBND-'.'UCU'
+'DKW'.'AU_HCEDB_ACTBND_'.'UCU'
+'DKW'.'AU_HCEMB_ACTBND-'.'UCU'
+'DKW'.'AU_HCEMB_ACTBND_'.'UCU'
+'DKW'.'AU_HDEDB_ACTBND-'.'UCU'
+'DKW'.'AU_HDEDB_ACTBND_'.'UCU'
+'DKW'.'AU_HDEMB_ACTBND-'.'UCU'
+'DKW'.'AU_HDEMB_ACTBND_'.'UCU'
+'DKW'.'AU_NG_DB_ACTBND-'.'UCU'
+'DKW'.'AU_NG_DB_ACTBND_'.'UCU'
+'DKW'.'AU_NG_MB_ACTBND-'.'UCU'
+'DKW'.'AU_NG_MB_ACTBND_'.'UCU'
+'DKW'.'DHPipeExp_CE1-'.'UCU'
+'DKW'.'DHPipeExp_CE1_'.'UCU'
+'DKW'.'DHPipeExp_CN1-'.'UCU'
+'DKW'.'DHPipeExp_CN1_'.'UCU'
+'DKW'.'DHPipeExp_CN2-'.'UCU'
+'DKW'.'DHPipeExp_CN2_'.'UCU'
+'DKW'.'DHPipeExp_DE1-'.'UCU'
+'DKW'.'DHPipeExp_DE1_'.'UCU'
+'DKW'.'DHPipeExp_DN1-'.'UCU'
+'DKW'.'DHPipeExp_DN1_'.'UCU'
+'DKW'.'DHPipeExp_DN2-'.'UCU'
+'DKW'.'DHPipeExp_DN2_'.'UCU'
+'DKW'.'MaxSolH_MF-'.'UCU'
+'DKW'.'MaxSolH_MF_'.'UCU'
+'DKW'.'MaxSolH_SF-'.'UCU'
+'DKW'.'MaxSolH_SF_'.'UCU'
+'FIM'.'AU_GAS_ACTBND-'.'UCU'
+'FIM'.'AU_GAS_ACTBND_'.'UCU'
+'FIM'.'AU_HCEDB_ACTBND-'.'UCU'
+'FIM'.'AU_HCEDB_ACTBND_'.'UCU'
+'FIM'.'AU_HCEMB_ACTBND-'.'UCU'
+'FIM'.'AU_HCEMB_ACTBND_'.'UCU'
+'FIM'.'AU_HDEDB_ACTBND-'.'UCU'
+'FIM'.'AU_HDEDB_ACTBND_'.'UCU'
+'FIM'.'AU_HDEMB_ACTBND-'.'UCU'
+'FIM'.'AU_HDEMB_ACTBND_'.'UCU'
+'FIM'.'AU_NG_DB_ACTBND-'.'UCU'
+'FIM'.'AU_NG_DB_ACTBND_'.'UCU'
+'FIM'.'AU_NG_MB_ACTBND-'.'UCU'
+'FIM'.'AU_NG_MB_ACTBND_'.'UCU'
+'FIM'.'DHPipeExp_CE1-'.'UCU'
+'FIM'.'DHPipeExp_CE1_'.'UCU'
+'FIM'.'DHPipeExp_CN1-'.'UCU'
+'FIM'.'DHPipeExp_CN1_'.'UCU'
+'FIM'.'DHPipeExp_CN2-'.'UCU'
+'FIM'.'DHPipeExp_CN2_'.'UCU'
+'FIM'.'DHPipeExp_DE1-'.'UCU'
+'FIM'.'DHPipeExp_DE1_'.'UCU'
+'FIM'.'DHPipeExp_DN1-'.'UCU'
+'FIM'.'DHPipeExp_DN1_'.'UCU'
+'FIM'.'DHPipeExp_DN2-'.'UCU'
+'FIM'.'DHPipeExp_DN2_'.'UCU'
+'FIM'.'MaxSolH_MF-'.'UCU'
+'FIM'.'MaxSolH_MF_'.'UCU'
+'FIM'.'MaxSolH_SF-'.'UCU'
+'FIM'.'MaxSolH_SF_'.'UCU'
+'FIN'.'AU_GAS_ACTBND-'.'UCU'
+'FIN'.'AU_GAS_ACTBND_'.'UCU'
+'FIN'.'AU_HCEDB_ACTBND-'.'UCU'
+'FIN'.'AU_HCEDB_ACTBND_'.'UCU'
+'FIN'.'AU_HCEMB_ACTBND-'.'UCU'
+'FIN'.'AU_HCEMB_ACTBND_'.'UCU'
+'FIN'.'AU_HDEDB_ACTBND-'.'UCU'
+'FIN'.'AU_HDEDB_ACTBND_'.'UCU'
+'FIN'.'AU_HDEMB_ACTBND-'.'UCU'
+'FIN'.'AU_HDEMB_ACTBND_'.'UCU'
+'FIN'.'AU_NG_DB_ACTBND-'.'UCU'
+'FIN'.'AU_NG_DB_ACTBND_'.'UCU'
+'FIN'.'AU_NG_MB_ACTBND-'.'UCU'
+'FIN'.'AU_NG_MB_ACTBND_'.'UCU'
+'FIN'.'DHPipeExp_CE1-'.'UCU'
+'FIN'.'DHPipeExp_CE1_'.'UCU'
+'FIN'.'DHPipeExp_CN1-'.'UCU'
+'FIN'.'DHPipeExp_CN1_'.'UCU'
+'FIN'.'DHPipeExp_CN2-'.'UCU'
+'FIN'.'DHPipeExp_CN2_'.'UCU'
+'FIN'.'DHPipeExp_DE1-'.'UCU'
+'FIN'.'DHPipeExp_DE1_'.'UCU'
+'FIN'.'DHPipeExp_DN1-'.'UCU'
+'FIN'.'DHPipeExp_DN1_'.'UCU'
+'FIN'.'DHPipeExp_DN2-'.'UCU'
+'FIN'.'DHPipeExp_DN2_'.'UCU'
+'FIN'.'MaxSolH_MF-'.'UCU'
+'FIN'.'MaxSolH_MF_'.'UCU'
+'FIN'.'MaxSolH_SF-'.'UCU'
+'FIN'.'MaxSolH_SF_'.'UCU'
+'NO1'.'AU_GAS_ACTBND-'.'UCU'
+'NO1'.'AU_GAS_ACTBND_'.'UCU'
+'NO1'.'AU_HCEDB_ACTBND-'.'UCU'
+'NO1'.'AU_HCEDB_ACTBND_'.'UCU'
+'NO1'.'AU_HCEMB_ACTBND-'.'UCU'
+'NO1'.'AU_HCEMB_ACTBND_'.'UCU'
+'NO1'.'AU_HDEDB_ACTBND-'.'UCU'
+'NO1'.'AU_HDEDB_ACTBND_'.'UCU'
+'NO1'.'AU_HDEMB_ACTBND-'.'UCU'
+'NO1'.'AU_HDEMB_ACTBND_'.'UCU'
+'NO1'.'AU_NG_DB_ACTBND-'.'UCU'
+'NO1'.'AU_NG_DB_ACTBND_'.'UCU'
+'NO1'.'AU_NG_MB_ACTBND-'.'UCU'
+'NO1'.'AU_NG_MB_ACTBND_'.'UCU'
+'NO1'.'DHPipeExp_CE1-'.'UCU'
+'NO1'.'DHPipeExp_CE1_'.'UCU'
+'NO1'.'DHPipeExp_CN1-'.'UCU'
+'NO1'.'DHPipeExp_CN1_'.'UCU'
+'NO1'.'DHPipeExp_CN2-'.'UCU'
+'NO1'.'DHPipeExp_CN2_'.'UCU'
+'NO1'.'DHPipeExp_DE1-'.'UCU'
+'NO1'.'DHPipeExp_DE1_'.'UCU'
+'NO1'.'DHPipeExp_DN1-'.'UCU'
+'NO1'.'DHPipeExp_DN1_'.'UCU'
+'NO1'.'DHPipeExp_DN2-'.'UCU'
+'NO1'.'DHPipeExp_DN2_'.'UCU'
+'NO1'.'MaxSolH_MF-'.'UCU'
+'NO1'.'MaxSolH_MF_'.'UCU'
+'NO1'.'MaxSolH_SF-'.'UCU'
+'NO1'.'MaxSolH_SF_'.'UCU'
+'NO2'.'AU_GAS_ACTBND-'.'UCU'
+'NO2'.'AU_GAS_ACTBND_'.'UCU'
+'NO2'.'AU_HCEDB_ACTBND-'.'UCU'
+'NO2'.'AU_HCEDB_ACTBND_'.'UCU'
+'NO2'.'AU_HCEMB_ACTBND-'.'UCU'
+'NO2'.'AU_HCEMB_ACTBND_'.'UCU'
+'NO2'.'AU_HDEDB_ACTBND-'.'UCU'
+'NO2'.'AU_HDEDB_ACTBND_'.'UCU'
+'NO2'.'AU_HDEMB_ACTBND-'.'UCU'
+'NO2'.'AU_HDEMB_ACTBND_'.'UCU'
+'NO2'.'AU_NG_DB_ACTBND-'.'UCU'
+'NO2'.'AU_NG_DB_ACTBND_'.'UCU'
+'NO2'.'AU_NG_MB_ACTBND-'.'UCU'
+'NO2'.'AU_NG_MB_ACTBND_'.'UCU'
+'NO2'.'DHPipeExp_CE1-'.'UCU'
+'NO2'.'DHPipeExp_CE1_'.'UCU'
+'NO2'.'DHPipeExp_CN1-'.'UCU'
+'NO2'.'DHPipeExp_CN1_'.'UCU'
+'NO2'.'DHPipeExp_CN2-'.'UCU'
+'NO2'.'DHPipeExp_CN2_'.'UCU'
+'NO2'.'DHPipeExp_DE1-'.'UCU'
+'NO2'.'DHPipeExp_DE1_'.'UCU'
+'NO2'.'DHPipeExp_DN1-'.'UCU'
+'NO2'.'DHPipeExp_DN1_'.'UCU'
+'NO2'.'DHPipeExp_DN2-'.'UCU'
+'NO2'.'DHPipeExp_DN2_'.'UCU'
+'NO2'.'MaxSolH_MF-'.'UCU'
+'NO2'.'MaxSolH_MF_'.'UCU'
+'NO2'.'MaxSolH_SF-'.'UCU'
+'NO2'.'MaxSolH_SF_'.'UCU'
+'SE1'.'AU_GAS_ACTBND-'.'UCU'
+'SE1'.'AU_GAS_ACTBND_'.'UCU'
+'SE1'.'AU_HCEDB_ACTBND-'.'UCU'
+'SE1'.'AU_HCEDB_ACTBND_'.'UCU'
+'SE1'.'AU_HCEMB_ACTBND-'.'UCU'
+'SE1'.'AU_HCEMB_ACTBND_'.'UCU'
+'SE1'.'AU_HDEDB_ACTBND-'.'UCU'
+'SE1'.'AU_HDEDB_ACTBND_'.'UCU'
+'SE1'.'AU_HDEMB_ACTBND-'.'UCU'
+'SE1'.'AU_HDEMB_ACTBND_'.'UCU'
+'SE1'.'AU_NG_DB_ACTBND-'.'UCU'
+'SE1'.'AU_NG_DB_ACTBND_'.'UCU'
+'SE1'.'AU_NG_MB_ACTBND-'.'UCU'
+'SE1'.'AU_NG_MB_ACTBND_'.'UCU'
+'SE1'.'DHPipeExp_CE1-'.'UCU'
+'SE1'.'DHPipeExp_CE1_'.'UCU'
+'SE1'.'DHPipeExp_CN1-'.'UCU'
+'SE1'.'DHPipeExp_CN1_'.'UCU'
+'SE1'.'DHPipeExp_CN2-'.'UCU'
+'SE1'.'DHPipeExp_CN2_'.'UCU'
+'SE1'.'DHPipeExp_DE1-'.'UCU'
+'SE1'.'DHPipeExp_DE1_'.'UCU'
+'SE1'.'DHPipeExp_DN1-'.'UCU'
+'SE1'.'DHPipeExp_DN1_'.'UCU'
+'SE1'.'DHPipeExp_DN2-'.'UCU'
+'SE1'.'DHPipeExp_DN2_'.'UCU'
+'SE1'.'MaxSolH_MF-'.'UCU'
+'SE1'.'MaxSolH_MF_'.'UCU'
+'SE1'.'MaxSolH_SF-'.'UCU'
+'SE1'.'MaxSolH_SF_'.'UCU'
+'SE2'.'AU_GAS_ACTBND-'.'UCU'
+'SE2'.'AU_GAS_ACTBND_'.'UCU'
+'SE2'.'AU_HCEDB_ACTBND-'.'UCU'
+'SE2'.'AU_HCEDB_ACTBND_'.'UCU'
+'SE2'.'AU_HCEMB_ACTBND-'.'UCU'
+'SE2'.'AU_HCEMB_ACTBND_'.'UCU'
+'SE2'.'AU_HDEDB_ACTBND-'.'UCU'
+'SE2'.'AU_HDEDB_ACTBND_'.'UCU'
+'SE2'.'AU_HDEMB_ACTBND-'.'UCU'
+'SE2'.'AU_HDEMB_ACTBND_'.'UCU'
+'SE2'.'AU_NG_DB_ACTBND-'.'UCU'
+'SE2'.'AU_NG_DB_ACTBND_'.'UCU'
+'SE2'.'AU_NG_MB_ACTBND-'.'UCU'
+'SE2'.'AU_NG_MB_ACTBND_'.'UCU'
+'SE2'.'DHPipeExp_CE1-'.'UCU'
+'SE2'.'DHPipeExp_CE1_'.'UCU'
+'SE2'.'DHPipeExp_CN1-'.'UCU'
+'SE2'.'DHPipeExp_CN1_'.'UCU'
+'SE2'.'DHPipeExp_CN2-'.'UCU'
+'SE2'.'DHPipeExp_CN2_'.'UCU'
+'SE2'.'DHPipeExp_DE1-'.'UCU'
+'SE2'.'DHPipeExp_DE1_'.'UCU'
+'SE2'.'DHPipeExp_DN1-'.'UCU'
+'SE2'.'DHPipeExp_DN1_'.'UCU'
+'SE2'.'DHPipeExp_DN2-'.'UCU'
+'SE2'.'DHPipeExp_DN2_'.'UCU'
+'SE2'.'MaxSolH_MF-'.'UCU'
+'SE2'.'MaxSolH_MF_'.'UCU'
+'SE2'.'MaxSolH_SF-'.'UCU'
+'SE2'.'MaxSolH_SF_'.'UCU'
+'SE3'.'AU_GAS_ACTBND-'.'UCU'
+'SE3'.'AU_GAS_ACTBND_'.'UCU'
+'SE3'.'AU_HCEDB_ACTBND-'.'UCU'
+'SE3'.'AU_HCEDB_ACTBND_'.'UCU'
+'SE3'.'AU_HCEMB_ACTBND-'.'UCU'
+'SE3'.'AU_HCEMB_ACTBND_'.'UCU'
+'SE3'.'AU_HDEDB_ACTBND-'.'UCU'
+'SE3'.'AU_HDEDB_ACTBND_'.'UCU'
+'SE3'.'AU_HDEMB_ACTBND-'.'UCU'
+'SE3'.'AU_HDEMB_ACTBND_'.'UCU'
+'SE3'.'AU_NG_DB_ACTBND-'.'UCU'
+'SE3'.'AU_NG_DB_ACTBND_'.'UCU'
+'SE3'.'AU_NG_MB_ACTBND-'.'UCU'
+'SE3'.'AU_NG_MB_ACTBND_'.'UCU'
+'SE3'.'DHPipeExp_CE1-'.'UCU'
+'SE3'.'DHPipeExp_CE1_'.'UCU'
+'SE3'.'DHPipeExp_CN1-'.'UCU'
+'SE3'.'DHPipeExp_CN1_'.'UCU'
+'SE3'.'DHPipeExp_CN2-'.'UCU'
+'SE3'.'DHPipeExp_CN2_'.'UCU'
+'SE3'.'DHPipeExp_DE1-'.'UCU'
+'SE3'.'DHPipeExp_DE1_'.'UCU'
+'SE3'.'DHPipeExp_DN1-'.'UCU'
+'SE3'.'DHPipeExp_DN1_'.'UCU'
+'SE3'.'DHPipeExp_DN2-'.'UCU'
+'SE3'.'DHPipeExp_DN2_'.'UCU'
+'SE3'.'MaxSolH_MF-'.'UCU'
+'SE3'.'MaxSolH_MF_'.'UCU'
+'SE3'.'MaxSolH_SF-'.'UCU'
+'SE3'.'MaxSolH_SF_'.'UCU'
+'SE4'.'AU_GAS_ACTBND-'.'UCU'
+'SE4'.'AU_GAS_ACTBND_'.'UCU'
+'SE4'.'AU_HCEDB_ACTBND-'.'UCU'
+'SE4'.'AU_HCEDB_ACTBND_'.'UCU'
+'SE4'.'AU_HCEMB_ACTBND-'.'UCU'
+'SE4'.'AU_HCEMB_ACTBND_'.'UCU'
+'SE4'.'AU_HDEDB_ACTBND-'.'UCU'
+'SE4'.'AU_HDEDB_ACTBND_'.'UCU'
+'SE4'.'AU_HDEMB_ACTBND-'.'UCU'
+'SE4'.'AU_HDEMB_ACTBND_'.'UCU'
+'SE4'.'AU_NG_DB_ACTBND-'.'UCU'
+'SE4'.'AU_NG_DB_ACTBND_'.'UCU'
+'SE4'.'AU_NG_MB_ACTBND-'.'UCU'
+'SE4'.'AU_NG_MB_ACTBND_'.'UCU'
+'SE4'.'DHPipeExp_CE1-'.'UCU'
+'SE4'.'DHPipeExp_CE1_'.'UCU'
+'SE4'.'DHPipeExp_CN1-'.'UCU'
+'SE4'.'DHPipeExp_CN1_'.'UCU'
+'SE4'.'DHPipeExp_CN2-'.'UCU'
+'SE4'.'DHPipeExp_CN2_'.'UCU'
+'SE4'.'DHPipeExp_DE1-'.'UCU'
+'SE4'.'DHPipeExp_DE1_'.'UCU'
+'SE4'.'DHPipeExp_DN1-'.'UCU'
+'SE4'.'DHPipeExp_DN1_'.'UCU'
+'SE4'.'DHPipeExp_DN2-'.'UCU'
+'SE4'.'DHPipeExp_DN2_'.'UCU'
+'SE4'.'MaxSolH_MF-'.'UCU'
+'SE4'.'MaxSolH_MF_'.'UCU'
+'SE4'.'MaxSolH_SF-'.'UCU'
+'SE4'.'MaxSolH_SF_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'AU_GAS_ACTBND-'.'DKE'.'AU_GAS_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_GAS_ACTBND-'.'DKW'.'AU_GAS_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_GAS_ACTBND_'.'DKE'.'AU_GAS_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_GAS_ACTBND_'.'DKW'.'AU_GAS_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEDB_ACTBND-'.'DKE'.'AU_HCEDB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEDB_ACTBND-'.'DKW'.'AU_HCEDB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEDB_ACTBND_'.'DKE'.'AU_HCEDB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEDB_ACTBND_'.'DKW'.'AU_HCEDB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEMB_ACTBND-'.'DKE'.'AU_HCEMB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEMB_ACTBND-'.'DKW'.'AU_HCEMB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEMB_ACTBND_'.'DKE'.'AU_HCEMB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HCEMB_ACTBND_'.'DKW'.'AU_HCEMB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEDB_ACTBND-'.'DKE'.'AU_HDEDB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEDB_ACTBND-'.'DKW'.'AU_HDEDB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEDB_ACTBND_'.'DKE'.'AU_HDEDB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEDB_ACTBND_'.'DKW'.'AU_HDEDB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEMB_ACTBND-'.'DKE'.'AU_HDEMB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEMB_ACTBND-'.'DKW'.'AU_HDEMB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEMB_ACTBND_'.'DKE'.'AU_HDEMB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_HDEMB_ACTBND_'.'DKW'.'AU_HDEMB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_DB_ACTBND-'.'DKE'.'AU_NG_DB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_DB_ACTBND-'.'DKW'.'AU_NG_DB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_DB_ACTBND_'.'DKE'.'AU_NG_DB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_DB_ACTBND_'.'DKW'.'AU_NG_DB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_MB_ACTBND-'.'DKE'.'AU_NG_MB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_MB_ACTBND-'.'DKW'.'AU_NG_MB_ACTBND-'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_MB_ACTBND_'.'DKE'.'AU_NG_MB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'AU_NG_MB_ACTBND_'.'DKW'.'AU_NG_MB_ACTBND_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CE1-'.'DKE'.'DHPipeExp_CE1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CE1-'.'DKW'.'DHPipeExp_CE1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CE1_'.'DKE'.'DHPipeExp_CE1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CE1_'.'DKW'.'DHPipeExp_CE1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN1-'.'DKE'.'DHPipeExp_CN1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN1-'.'DKW'.'DHPipeExp_CN1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN1_'.'DKE'.'DHPipeExp_CN1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN1_'.'DKW'.'DHPipeExp_CN1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN2-'.'DKE'.'DHPipeExp_CN2-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN2-'.'DKW'.'DHPipeExp_CN2-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN2_'.'DKE'.'DHPipeExp_CN2_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_CN2_'.'DKW'.'DHPipeExp_CN2_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DE1-'.'DKE'.'DHPipeExp_DE1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DE1-'.'DKW'.'DHPipeExp_DE1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DE1_'.'DKE'.'DHPipeExp_DE1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DE1_'.'DKW'.'DHPipeExp_DE1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN1-'.'DKE'.'DHPipeExp_DN1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN1-'.'DKW'.'DHPipeExp_DN1-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN1_'.'DKE'.'DHPipeExp_DN1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN1_'.'DKW'.'DHPipeExp_DN1_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN2-'.'DKE'.'DHPipeExp_DN2-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN2-'.'DKW'.'DHPipeExp_DN2-'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN2_'.'DKE'.'DHPipeExp_DN2_'.'IMPDUCZ'
+'IMPEXP'.'DHPipeExp_DN2_'.'DKW'.'DHPipeExp_DN2_'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_MF-'.'DKE'.'MaxSolH_MF-'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_MF-'.'DKW'.'MaxSolH_MF-'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_MF_'.'DKE'.'MaxSolH_MF_'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_MF_'.'DKW'.'MaxSolH_MF_'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_SF-'.'DKE'.'MaxSolH_SF-'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_SF-'.'DKW'.'MaxSolH_SF-'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_SF_'.'DKE'.'MaxSolH_SF_'.'IMPDUCZ'
+'IMPEXP'.'MaxSolH_SF_'.'DKW'.'MaxSolH_SF_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'DKE'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'DKE'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'DKE'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'DKE'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'DKE'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'DKE'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'DKE'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'DKE'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'DKE'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'DKE'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'DKE'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'DKE'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'DKE'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'DKE'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'DKE'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'DKE'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'DKE'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'DKE'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'DKE'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'DKE'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'DKE'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'DKE'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'DKE'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'DKE'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'DKE'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'DKE'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'DKE'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'DKE'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'DKE'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'DKW'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'DKW'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'DKW'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'DKW'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'DKW'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'DKW'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'DKW'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'DKW'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'DKW'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'DKW'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'DKW'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'DKW'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'DKW'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'DKW'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'DKW'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'DKW'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'DKW'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'DKW'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'DKW'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'DKW'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'DKW'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'DKW'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'DKW'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'DKW'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'DKW'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'DKW'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'DKW'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'DKW'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'DKW'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'DKW'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'FIM'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'FIM'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'FIM'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'FIM'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'FIM'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'FIM'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'FIM'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'FIM'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'FIM'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'FIM'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'FIM'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'FIM'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'FIM'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'FIM'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'FIM'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'FIM'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'FIM'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'FIM'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'FIM'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'FIM'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'FIM'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'FIM'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'FIM'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'FIM'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'FIM'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'FIM'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'FIM'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'FIM'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'FIM'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'FIM'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'FIN'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'FIN'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'FIN'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'FIN'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'FIN'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'FIN'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'FIN'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'FIN'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'FIN'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'FIN'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'FIN'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'FIN'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'FIN'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'FIN'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'FIN'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'FIN'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'FIN'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'FIN'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'FIN'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'FIN'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'FIN'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'FIN'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'FIN'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'FIN'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'FIN'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'FIN'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'FIN'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'FIN'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'FIN'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'FIN'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'NO1'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'NO1'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'NO1'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'NO1'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'NO1'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'NO1'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'NO1'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'NO1'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'NO1'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'NO1'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'NO1'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'NO1'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'NO1'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'NO1'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'NO1'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'NO1'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'NO1'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'NO1'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'NO1'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'NO1'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'NO1'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'NO1'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'NO1'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'NO1'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'NO1'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'NO1'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'NO1'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'NO1'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'NO1'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'NO1'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'NO2'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'NO2'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'NO2'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'NO2'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'NO2'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'NO2'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'NO2'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'NO2'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'NO2'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'NO2'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'NO2'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'NO2'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'NO2'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'NO2'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'NO2'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'NO2'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'NO2'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'NO2'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'NO2'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'NO2'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'NO2'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'NO2'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'NO2'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'NO2'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'NO2'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'NO2'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'NO2'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'NO2'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'NO2'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'NO2'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'SE1'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'SE1'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'SE1'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'SE1'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'SE1'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'SE1'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'SE1'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'SE1'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'SE1'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'SE1'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'SE1'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'SE1'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'SE1'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'SE1'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'SE1'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'SE1'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'SE1'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'SE1'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'SE1'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'SE1'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'SE1'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'SE1'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'SE1'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'SE1'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'SE1'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'SE1'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'SE1'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'SE1'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'SE1'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'SE1'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'SE2'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'SE2'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'SE2'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'SE2'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'SE2'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'SE2'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'SE2'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'SE2'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'SE2'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'SE2'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'SE2'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'SE2'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'SE2'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'SE2'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'SE2'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'SE2'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'SE2'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'SE2'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'SE2'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'SE2'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'SE2'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'SE2'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'SE2'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'SE2'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'SE2'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'SE2'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'SE2'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'SE2'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'SE2'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'SE2'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'SE3'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'SE3'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'SE3'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'SE3'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'SE3'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'SE3'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'SE3'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'SE3'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'SE3'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'SE3'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'SE3'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'SE3'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'SE3'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'SE3'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'SE3'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'SE3'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'SE3'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'SE3'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'SE3'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'SE3'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'SE3'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'SE3'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'SE3'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'SE3'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'SE3'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'SE3'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'SE3'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'SE3'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'SE3'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'SE3'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+'SE4'.'AU_GAS_ACTBND-' 'Negative dummy var for UC: AU_GAS_ACTBND'
+'SE4'.'AU_GAS_ACTBND_' 'Positive dummy var for UC: AU_GAS_ACTBND'
+'SE4'.'AU_HCEDB_ACTBND-' 'Negative dummy var for UC: AU_HCEDB_ACTBND'
+'SE4'.'AU_HCEDB_ACTBND_' 'Positive dummy var for UC: AU_HCEDB_ACTBND'
+'SE4'.'AU_HCEMB_ACTBND-' 'Negative dummy var for UC: AU_HCEMB_ACTBND'
+'SE4'.'AU_HCEMB_ACTBND_' 'Positive dummy var for UC: AU_HCEMB_ACTBND'
+'SE4'.'AU_HDEDB_ACTBND-' 'Negative dummy var for UC: AU_HDEDB_ACTBND'
+'SE4'.'AU_HDEDB_ACTBND_' 'Positive dummy var for UC: AU_HDEDB_ACTBND'
+'SE4'.'AU_HDEMB_ACTBND-' 'Negative dummy var for UC: AU_HDEMB_ACTBND'
+'SE4'.'AU_HDEMB_ACTBND_' 'Positive dummy var for UC: AU_HDEMB_ACTBND'
+'SE4'.'AU_NG_DB_ACTBND-' 'Negative dummy var for UC: AU_NG_DB_ACTBND'
+'SE4'.'AU_NG_DB_ACTBND_' 'Positive dummy var for UC: AU_NG_DB_ACTBND'
+'SE4'.'AU_NG_MB_ACTBND-' 'Negative dummy var for UC: AU_NG_MB_ACTBND'
+'SE4'.'AU_NG_MB_ACTBND_' 'Positive dummy var for UC: AU_NG_MB_ACTBND'
+'SE4'.'DHPipeExp_CE1-' 'Negative dummy var for UC: DHPipeExp_CE1'
+'SE4'.'DHPipeExp_CE1_' 'Positive dummy var for UC: DHPipeExp_CE1'
+'SE4'.'DHPipeExp_CN1-' 'Negative dummy var for UC: DHPipeExp_CN1'
+'SE4'.'DHPipeExp_CN1_' 'Positive dummy var for UC: DHPipeExp_CN1'
+'SE4'.'DHPipeExp_CN2-' 'Negative dummy var for UC: DHPipeExp_CN2'
+'SE4'.'DHPipeExp_CN2_' 'Positive dummy var for UC: DHPipeExp_CN2'
+'SE4'.'DHPipeExp_DE1-' 'Negative dummy var for UC: DHPipeExp_DE1'
+'SE4'.'DHPipeExp_DE1_' 'Positive dummy var for UC: DHPipeExp_DE1'
+'SE4'.'DHPipeExp_DN1-' 'Negative dummy var for UC: DHPipeExp_DN1'
+'SE4'.'DHPipeExp_DN1_' 'Positive dummy var for UC: DHPipeExp_DN1'
+'SE4'.'DHPipeExp_DN2-' 'Negative dummy var for UC: DHPipeExp_DN2'
+'SE4'.'DHPipeExp_DN2_' 'Positive dummy var for UC: DHPipeExp_DN2'
+'SE4'.'MaxSolH_MF-' 'Negative dummy var for UC: MaxSolH_MF'
+'SE4'.'MaxSolH_MF_' 'Positive dummy var for UC: MaxSolH_MF'
+'SE4'.'MaxSolH_SF-' 'Negative dummy var for UC: MaxSolH_SF'
+'SE4'.'MaxSolH_SF_' 'Positive dummy var for UC: MaxSolH_SF'
+/;
+
+SET UC_R_EACH
+
+/
+'DKE'.'AU_GAS_ACTBND'
+'DKE'.'AU_HCEDB_ACTBND'
+'DKE'.'AU_HCEMB_ACTBND'
+'DKE'.'AU_HDEDB_ACTBND'
+'DKE'.'AU_HDEMB_ACTBND'
+'DKE'.'AU_NG_DB_ACTBND'
+'DKE'.'AU_NG_MB_ACTBND'
+'DKE'.'DHPipeExp_CE1'
+'DKE'.'DHPipeExp_CN1'
+'DKE'.'DHPipeExp_CN2'
+'DKE'.'DHPipeExp_DE1'
+'DKE'.'DHPipeExp_DN1'
+'DKE'.'DHPipeExp_DN2'
+'DKE'.'MaxSolH_MF'
+'DKE'.'MaxSolH_SF'
+'DKW'.'AU_GAS_ACTBND'
+'DKW'.'AU_HCEDB_ACTBND'
+'DKW'.'AU_HCEMB_ACTBND'
+'DKW'.'AU_HDEDB_ACTBND'
+'DKW'.'AU_HDEMB_ACTBND'
+'DKW'.'AU_NG_DB_ACTBND'
+'DKW'.'AU_NG_MB_ACTBND'
+'DKW'.'DHPipeExp_CE1'
+'DKW'.'DHPipeExp_CN1'
+'DKW'.'DHPipeExp_CN2'
+'DKW'.'DHPipeExp_DE1'
+'DKW'.'DHPipeExp_DN1'
+'DKW'.'DHPipeExp_DN2'
+'DKW'.'MaxSolH_MF'
+'DKW'.'MaxSolH_SF'
+/;
+
+SET UC_ATTR
+
+/
+'DKE'.'DHPipeExp_CE1'.LHS.NCAP.BUILDUP
+'DKE'.'DHPipeExp_CN1'.LHS.NCAP.BUILDUP
+'DKE'.'DHPipeExp_CN2'.LHS.NCAP.BUILDUP
+'DKE'.'DHPipeExp_DE1'.LHS.NCAP.BUILDUP
+'DKE'.'DHPipeExp_DN1'.LHS.NCAP.BUILDUP
+'DKE'.'DHPipeExp_DN2'.LHS.NCAP.BUILDUP
+'DKW'.'DHPipeExp_CE1'.LHS.NCAP.BUILDUP
+'DKW'.'DHPipeExp_CN1'.LHS.NCAP.BUILDUP
+'DKW'.'DHPipeExp_CN2'.LHS.NCAP.BUILDUP
+'DKW'.'DHPipeExp_DE1'.LHS.NCAP.BUILDUP
+'DKW'.'DHPipeExp_DN1'.LHS.NCAP.BUILDUP
+'DKW'.'DHPipeExp_DN2'.LHS.NCAP.BUILDUP
+/;
+
+PARAMETER
+
+UC_CAP ' '/
+'MaxSolH_MF'.LHS.'DKE'.2015.'RHTMBSOLXE1' 1
+'MaxSolH_MF'.LHS.'DKE'.2015.'RHTMBSOLXN1' 1
+'MaxSolH_MF'.LHS.'DKW'.2015.'RHTMBSOLXE1' 1
+'MaxSolH_MF'.LHS.'DKW'.2015.'RHTMBSOLXN1' 1
+'MaxSolH_SF'.LHS.'DKE'.2015.'RHTDBSOLXE1' 1
+'MaxSolH_SF'.LHS.'DKE'.2015.'RHTDBSOLXN1' 1
+'MaxSolH_SF'.LHS.'DKW'.2015.'RHTDBSOLXE1' 1
+'MaxSolH_SF'.LHS.'DKW'.2015.'RHTDBSOLXN1' 1
+/;
+
+PARAMETER
+
+UC_FLO ' '/
+'AU_GAS_ACTBND'.LHS.'DKE'.2010.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_GAS_ACTBND'.LHS.'DKE'.2010.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+'AU_GAS_ACTBND'.LHS.'DKE'.2020.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_GAS_ACTBND'.LHS.'DKE'.2020.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+'AU_GAS_ACTBND'.LHS.'DKW'.2010.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_GAS_ACTBND'.LHS.'DKW'.2010.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+'AU_GAS_ACTBND'.LHS.'DKW'.2020.'FT-RESNGA'.'RESNGA'.ANNUAL 1
+'AU_GAS_ACTBND'.LHS.'DKW'.2020.'FT-RESSNG'.'RESSNG'.ANNUAL 1
+'AU_HCEDB_ACTBND'.LHS.'DKE'.2014.'RHTDBHCEBE1'.'RESHXCD'.ANNUAL 1
+'AU_HCEDB_ACTBND'.LHS.'DKE'.2014.'RHTDBHCEBN1'.'RESHXCD'.ANNUAL 1
+'AU_HCEDB_ACTBND'.LHS.'DKW'.2014.'RHTDBHCEBE1'.'RESHXCD'.ANNUAL 1
+'AU_HCEDB_ACTBND'.LHS.'DKW'.2014.'RHTDBHCEBN1'.'RESHXCD'.ANNUAL 1
+'AU_HCEMB_ACTBND'.LHS.'DKE'.2014.'RHTMBHCEBE1'.'RESHXCM'.ANNUAL 1
+'AU_HCEMB_ACTBND'.LHS.'DKE'.2014.'RHTMBHCEBN1'.'RESHXCM'.ANNUAL 1
+'AU_HCEMB_ACTBND'.LHS.'DKW'.2014.'RHTMBHCEBE1'.'RESHXCM'.ANNUAL 1
+'AU_HCEMB_ACTBND'.LHS.'DKW'.2014.'RHTMBHCEBN1'.'RESHXCM'.ANNUAL 1
+'AU_HDEDB_ACTBND'.LHS.'DKE'.2014.'RHTDBHDEBE1'.'RESHXDD'.ANNUAL 1
+'AU_HDEDB_ACTBND'.LHS.'DKE'.2014.'RHTDBHDEBN1'.'RESHXDD'.ANNUAL 1
+'AU_HDEDB_ACTBND'.LHS.'DKW'.2014.'RHTDBHDEBE1'.'RESHXDD'.ANNUAL 1
+'AU_HDEDB_ACTBND'.LHS.'DKW'.2014.'RHTDBHDEBN1'.'RESHXDD'.ANNUAL 1
+'AU_HDEMB_ACTBND'.LHS.'DKE'.2014.'RHTMBHDEBE1'.'RESHXDM'.ANNUAL 1
+'AU_HDEMB_ACTBND'.LHS.'DKE'.2014.'RHTMBHDEBN1'.'RESHXDM'.ANNUAL 1
+'AU_HDEMB_ACTBND'.LHS.'DKW'.2014.'RHTMBHDEBE1'.'RESHXDM'.ANNUAL 1
+'AU_HDEMB_ACTBND'.LHS.'DKW'.2014.'RHTMBHDEBN1'.'RESHXDM'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKE'.2014.'RHTDBNGABE1'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKE'.2014.'RHTDBNGABN1'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKE'.2014.'RHTDBNGABN2'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKE'.2014.'RHTDBNGABN3'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKE'.2014.'RHTDBNGABN6'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKW'.2014.'RHTDBNGABE1'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKW'.2014.'RHTDBNGABN1'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKW'.2014.'RHTDBNGABN2'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKW'.2014.'RHTDBNGABN3'.'RESHBDB'.ANNUAL 1
+'AU_NG_DB_ACTBND'.LHS.'DKW'.2014.'RHTDBNGABN6'.'RESHBDB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2014.'RHTMBNGABE1'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2014.'RHTMBNGABN1'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2014.'RHTMBNGABN2'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2014.'RHTMBNGABN3'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2014.'RHTMBNGABN4'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2014.'RHTMBNGABN5'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2014.'RHTMBNGABE1'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2014.'RHTMBNGABN1'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2014.'RHTMBNGABN2'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2014.'RHTMBNGABN3'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2014.'RHTMBNGABN4'.'RESHBMB'.ANNUAL 1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2014.'RHTMBNGABN5'.'RESHBMB'.ANNUAL 1
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'AU_GAS_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_GAS_ACTBND-'.ANNUAL.IMP -1
+'AU_GAS_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_GAS_ACTBND_'.ANNUAL.IMP 1
+'AU_GAS_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_GAS_ACTBND-'.ANNUAL.IMP -1
+'AU_GAS_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_GAS_ACTBND_'.ANNUAL.IMP 1
+'AU_HCEDB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HCEDB_ACTBND-'.ANNUAL.IMP -1
+'AU_HCEDB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HCEDB_ACTBND_'.ANNUAL.IMP 1
+'AU_HCEDB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HCEDB_ACTBND-'.ANNUAL.IMP -1
+'AU_HCEDB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HCEDB_ACTBND_'.ANNUAL.IMP 1
+'AU_HCEMB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HCEMB_ACTBND-'.ANNUAL.IMP -1
+'AU_HCEMB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HCEMB_ACTBND_'.ANNUAL.IMP 1
+'AU_HCEMB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HCEMB_ACTBND-'.ANNUAL.IMP -1
+'AU_HCEMB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HCEMB_ACTBND_'.ANNUAL.IMP 1
+'AU_HDEDB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HDEDB_ACTBND-'.ANNUAL.IMP -1
+'AU_HDEDB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HDEDB_ACTBND_'.ANNUAL.IMP 1
+'AU_HDEDB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HDEDB_ACTBND-'.ANNUAL.IMP -1
+'AU_HDEDB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HDEDB_ACTBND_'.ANNUAL.IMP 1
+'AU_HDEMB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HDEMB_ACTBND-'.ANNUAL.IMP -1
+'AU_HDEMB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_HDEMB_ACTBND_'.ANNUAL.IMP 1
+'AU_HDEMB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HDEMB_ACTBND-'.ANNUAL.IMP -1
+'AU_HDEMB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_HDEMB_ACTBND_'.ANNUAL.IMP 1
+'AU_NG_DB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_NG_DB_ACTBND-'.ANNUAL.IMP -1
+'AU_NG_DB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_NG_DB_ACTBND_'.ANNUAL.IMP 1
+'AU_NG_DB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_NG_DB_ACTBND-'.ANNUAL.IMP -1
+'AU_NG_DB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_NG_DB_ACTBND_'.ANNUAL.IMP 1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_NG_MB_ACTBND-'.ANNUAL.IMP -1
+'AU_NG_MB_ACTBND'.LHS.'DKE'.2010.'IMPDUCZ'.'AU_NG_MB_ACTBND_'.ANNUAL.IMP 1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_NG_MB_ACTBND-'.ANNUAL.IMP -1
+'AU_NG_MB_ACTBND'.LHS.'DKW'.2010.'IMPDUCZ'.'AU_NG_MB_ACTBND_'.ANNUAL.IMP 1
+'DHPipeExp_CE1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_CE1-'.ANNUAL.IMP -1
+'DHPipeExp_CE1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_CE1_'.ANNUAL.IMP 1
+'DHPipeExp_CE1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_CE1-'.ANNUAL.IMP -1
+'DHPipeExp_CE1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_CE1_'.ANNUAL.IMP 1
+'DHPipeExp_CN1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_CN1-'.ANNUAL.IMP -1
+'DHPipeExp_CN1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_CN1_'.ANNUAL.IMP 1
+'DHPipeExp_CN1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_CN1-'.ANNUAL.IMP -1
+'DHPipeExp_CN1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_CN1_'.ANNUAL.IMP 1
+'DHPipeExp_CN2'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_CN2-'.ANNUAL.IMP -1
+'DHPipeExp_CN2'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_CN2_'.ANNUAL.IMP 1
+'DHPipeExp_CN2'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_CN2-'.ANNUAL.IMP -1
+'DHPipeExp_CN2'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_CN2_'.ANNUAL.IMP 1
+'DHPipeExp_DE1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_DE1-'.ANNUAL.IMP -1
+'DHPipeExp_DE1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_DE1_'.ANNUAL.IMP 1
+'DHPipeExp_DE1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_DE1-'.ANNUAL.IMP -1
+'DHPipeExp_DE1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_DE1_'.ANNUAL.IMP 1
+'DHPipeExp_DN1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_DN1-'.ANNUAL.IMP -1
+'DHPipeExp_DN1'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_DN1_'.ANNUAL.IMP 1
+'DHPipeExp_DN1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_DN1-'.ANNUAL.IMP -1
+'DHPipeExp_DN1'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_DN1_'.ANNUAL.IMP 1
+'DHPipeExp_DN2'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_DN2-'.ANNUAL.IMP -1
+'DHPipeExp_DN2'.LHS.'DKE'.2010.'IMPDUCZ'.'DHPipeExp_DN2_'.ANNUAL.IMP 1
+'DHPipeExp_DN2'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_DN2-'.ANNUAL.IMP -1
+'DHPipeExp_DN2'.LHS.'DKW'.2010.'IMPDUCZ'.'DHPipeExp_DN2_'.ANNUAL.IMP 1
+'MaxSolH_MF'.LHS.'DKE'.2010.'IMPDUCZ'.'MaxSolH_MF-'.ANNUAL.IMP -1
+'MaxSolH_MF'.LHS.'DKE'.2010.'IMPDUCZ'.'MaxSolH_MF_'.ANNUAL.IMP 1
+'MaxSolH_MF'.LHS.'DKW'.2010.'IMPDUCZ'.'MaxSolH_MF-'.ANNUAL.IMP -1
+'MaxSolH_MF'.LHS.'DKW'.2010.'IMPDUCZ'.'MaxSolH_MF_'.ANNUAL.IMP 1
+'MaxSolH_SF'.LHS.'DKE'.2010.'IMPDUCZ'.'MaxSolH_SF-'.ANNUAL.IMP -1
+'MaxSolH_SF'.LHS.'DKE'.2010.'IMPDUCZ'.'MaxSolH_SF_'.ANNUAL.IMP 1
+'MaxSolH_SF'.LHS.'DKW'.2010.'IMPDUCZ'.'MaxSolH_SF-'.ANNUAL.IMP -1
+'MaxSolH_SF'.LHS.'DKW'.2010.'IMPDUCZ'.'MaxSolH_SF_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_NCAP ' '/
+'DHPipeExp_CE1'.LHS.'DKE'.2012.'DHPIPEHETCE1' 1
+'DHPipeExp_CE1'.LHS.'DKW'.2012.'DHPIPEHETCE1' 1
+'DHPipeExp_CN1'.LHS.'DKE'.2012.'DHPIPEHETCN1' 1
+'DHPipeExp_CN1'.LHS.'DKW'.2012.'DHPIPEHETCN1' 1
+'DHPipeExp_CN2'.LHS.'DKE'.2012.'DHPIPEHETCN2' 1
+'DHPipeExp_CN2'.LHS.'DKW'.2012.'DHPIPEHETCN2' 1
+'DHPipeExp_DE1'.LHS.'DKE'.2012.'DHPIPEHETDE1' 1
+'DHPipeExp_DE1'.LHS.'DKW'.2012.'DHPIPEHETDE1' 1
+'DHPipeExp_DN1'.LHS.'DKE'.2012.'DHPIPEHETDN1' 1
+'DHPipeExp_DN1'.LHS.'DKW'.2012.'DHPIPEHETDN1' 1
+'DHPipeExp_DN2'.LHS.'DKE'.2012.'DHPIPEHETDN2' 1
+'DHPipeExp_DN2'.LHS.'DKW'.2012.'DHPIPEHETDN2' 1
+/;
+
+PARAMETER
+
+UC_RHSRT ' '/
+'DKE'.'DHPipeExp_CE1'.0.UP 5
+'DKE'.'DHPipeExp_CE1'.2012.UP 67.6
+'DKE'.'DHPipeExp_CN1'.0.UP 5
+'DKE'.'DHPipeExp_CN1'.2012.UP 10.28
+'DKE'.'DHPipeExp_CN2'.0.UP 5
+'DKE'.'DHPipeExp_CN2'.2012.UP 1.12
+'DKE'.'DHPipeExp_DE1'.0.UP 5
+'DKE'.'DHPipeExp_DE1'.2012.UP 28.72
+'DKE'.'DHPipeExp_DN1'.0.UP 5
+'DKE'.'DHPipeExp_DN1'.2012.UP 17.13
+'DKE'.'DHPipeExp_DN2'.0.UP 5
+'DKE'.'DHPipeExp_DN2'.2012.UP 7.42
+'DKE'.'MaxSolH_MF'.0.UP 5
+'DKE'.'MaxSolH_MF'.2015.UP 27.41
+'DKE'.'MaxSolH_SF'.0.UP 5
+'DKE'.'MaxSolH_SF'.2015.UP 535.65
+'DKW'.'DHPipeExp_CE1'.0.UP 5
+'DKW'.'DHPipeExp_CE1'.2012.UP 77.68
+'DKW'.'DHPipeExp_CN1'.0.UP 5
+'DKW'.'DHPipeExp_CN1'.2012.UP 1.15
+'DKW'.'DHPipeExp_CN2'.0.UP 5
+'DKW'.'DHPipeExp_CN2'.2012.UP 0.68
+'DKW'.'DHPipeExp_DE1'.0.UP 5
+'DKW'.'DHPipeExp_DE1'.2012.UP 68.26
+'DKW'.'DHPipeExp_DN1'.0.UP 5
+'DKW'.'DHPipeExp_DN1'.2012.UP 8
+'DKW'.'DHPipeExp_DN2'.0.UP 5
+'DKW'.'DHPipeExp_DN2'.2012.UP 3.37
+'DKW'.'MaxSolH_MF'.0.UP 5
+'DKW'.'MaxSolH_MF'.2015.UP 45.88
+'DKW'.'MaxSolH_SF'.0.UP 5
+'DKW'.'MaxSolH_SF'.2015.UP 1065.95
+/;
+
+PARAMETER
+
+UC_RHSRTS ' '/
+'DKE'.'AU_GAS_ACTBND'.0.ANNUAL.UP 5
+'DKE'.'AU_GAS_ACTBND'.2010.ANNUAL.UP 17.4456715353525
+'DKE'.'AU_GAS_ACTBND'.2020.ANNUAL.UP 17.4456715353525
+'DKE'.'AU_HCEDB_ACTBND'.0.ANNUAL.UP 5
+'DKE'.'AU_HCEDB_ACTBND'.2014.ANNUAL.UP 2.86
+'DKE'.'AU_HCEMB_ACTBND'.0.ANNUAL.UP 5
+'DKE'.'AU_HCEMB_ACTBND'.2014.ANNUAL.UP 15.76
+'DKE'.'AU_HDEDB_ACTBND'.0.ANNUAL.UP 5
+'DKE'.'AU_HDEDB_ACTBND'.2014.ANNUAL.UP 3.26
+'DKE'.'AU_HDEMB_ACTBND'.0.ANNUAL.UP 5
+'DKE'.'AU_HDEMB_ACTBND'.2014.ANNUAL.UP 3.19
+'DKE'.'AU_NG_DB_ACTBND'.0.ANNUAL.UP 5
+'DKE'.'AU_NG_DB_ACTBND'.2014.ANNUAL.UP 10.83
+'DKE'.'AU_NG_MB_ACTBND'.0.ANNUAL.UP 5
+'DKE'.'AU_NG_MB_ACTBND'.2014.ANNUAL.UP 3.06
+'DKW'.'AU_GAS_ACTBND'.0.ANNUAL.UP 5
+'DKW'.'AU_GAS_ACTBND'.2010.ANNUAL.UP 11.0822733736622
+'DKW'.'AU_GAS_ACTBND'.2020.ANNUAL.UP 11.0822733736622
+'DKW'.'AU_HCEDB_ACTBND'.0.ANNUAL.UP 5
+'DKW'.'AU_HCEDB_ACTBND'.2014.ANNUAL.UP 12.49
+'DKW'.'AU_HCEMB_ACTBND'.0.ANNUAL.UP 5
+'DKW'.'AU_HCEMB_ACTBND'.2014.ANNUAL.UP 9.71
+'DKW'.'AU_HDEDB_ACTBND'.0.ANNUAL.UP 5
+'DKW'.'AU_HDEDB_ACTBND'.2014.ANNUAL.UP 13.25
+'DKW'.'AU_HDEMB_ACTBND'.0.ANNUAL.UP 5
+'DKW'.'AU_HDEMB_ACTBND'.2014.ANNUAL.UP 4.76
+'DKW'.'AU_NG_DB_ACTBND'.0.ANNUAL.UP 5
+'DKW'.'AU_NG_DB_ACTBND'.2014.ANNUAL.UP 7.9
+'DKW'.'AU_NG_MB_ACTBND'.0.ANNUAL.UP 5
+'DKW'.'AU_NG_MB_ACTBND'.2014.ANNUAL.UP 0.61
+/;
+
+

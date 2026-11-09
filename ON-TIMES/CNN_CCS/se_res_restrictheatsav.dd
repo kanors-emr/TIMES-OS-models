@@ -1,0 +1,550 @@
+$ONEMPTY
+$ONEPS
+$ONWARNING
+$SET RUN_NAME 'CNN_CCS'
+$SET SCENARIO_NAME 'se_res_restrictheatsav'
+
+
+SET UNITS_COM
+
+/
+'UCU'
+/;
+
+SET COM_TMAP
+
+/
+'DKE'.'NRG'.'HSav_SE1-'
+'DKE'.'NRG'.'HSav_SE1_'
+'DKE'.'NRG'.'HSav_SE2-'
+'DKE'.'NRG'.'HSav_SE2_'
+'DKE'.'NRG'.'HSav_SE3-'
+'DKE'.'NRG'.'HSav_SE3_'
+'DKE'.'NRG'.'HSav_SE4-'
+'DKE'.'NRG'.'HSav_SE4_'
+'DKW'.'NRG'.'HSav_SE1-'
+'DKW'.'NRG'.'HSav_SE1_'
+'DKW'.'NRG'.'HSav_SE2-'
+'DKW'.'NRG'.'HSav_SE2_'
+'DKW'.'NRG'.'HSav_SE3-'
+'DKW'.'NRG'.'HSav_SE3_'
+'DKW'.'NRG'.'HSav_SE4-'
+'DKW'.'NRG'.'HSav_SE4_'
+'FIM'.'NRG'.'HSav_SE1-'
+'FIM'.'NRG'.'HSav_SE1_'
+'FIM'.'NRG'.'HSav_SE2-'
+'FIM'.'NRG'.'HSav_SE2_'
+'FIM'.'NRG'.'HSav_SE3-'
+'FIM'.'NRG'.'HSav_SE3_'
+'FIM'.'NRG'.'HSav_SE4-'
+'FIM'.'NRG'.'HSav_SE4_'
+'FIN'.'NRG'.'HSav_SE1-'
+'FIN'.'NRG'.'HSav_SE1_'
+'FIN'.'NRG'.'HSav_SE2-'
+'FIN'.'NRG'.'HSav_SE2_'
+'FIN'.'NRG'.'HSav_SE3-'
+'FIN'.'NRG'.'HSav_SE3_'
+'FIN'.'NRG'.'HSav_SE4-'
+'FIN'.'NRG'.'HSav_SE4_'
+'NO1'.'NRG'.'HSav_SE1-'
+'NO1'.'NRG'.'HSav_SE1_'
+'NO1'.'NRG'.'HSav_SE2-'
+'NO1'.'NRG'.'HSav_SE2_'
+'NO1'.'NRG'.'HSav_SE3-'
+'NO1'.'NRG'.'HSav_SE3_'
+'NO1'.'NRG'.'HSav_SE4-'
+'NO1'.'NRG'.'HSav_SE4_'
+'NO2'.'NRG'.'HSav_SE1-'
+'NO2'.'NRG'.'HSav_SE1_'
+'NO2'.'NRG'.'HSav_SE2-'
+'NO2'.'NRG'.'HSav_SE2_'
+'NO2'.'NRG'.'HSav_SE3-'
+'NO2'.'NRG'.'HSav_SE3_'
+'NO2'.'NRG'.'HSav_SE4-'
+'NO2'.'NRG'.'HSav_SE4_'
+'SE1'.'NRG'.'HSav_SE1-'
+'SE1'.'NRG'.'HSav_SE1_'
+'SE1'.'NRG'.'HSav_SE2-'
+'SE1'.'NRG'.'HSav_SE2_'
+'SE1'.'NRG'.'HSav_SE3-'
+'SE1'.'NRG'.'HSav_SE3_'
+'SE1'.'NRG'.'HSav_SE4-'
+'SE1'.'NRG'.'HSav_SE4_'
+'SE2'.'NRG'.'HSav_SE1-'
+'SE2'.'NRG'.'HSav_SE1_'
+'SE2'.'NRG'.'HSav_SE2-'
+'SE2'.'NRG'.'HSav_SE2_'
+'SE2'.'NRG'.'HSav_SE3-'
+'SE2'.'NRG'.'HSav_SE3_'
+'SE2'.'NRG'.'HSav_SE4-'
+'SE2'.'NRG'.'HSav_SE4_'
+'SE3'.'NRG'.'HSav_SE1-'
+'SE3'.'NRG'.'HSav_SE1_'
+'SE3'.'NRG'.'HSav_SE2-'
+'SE3'.'NRG'.'HSav_SE2_'
+'SE3'.'NRG'.'HSav_SE3-'
+'SE3'.'NRG'.'HSav_SE3_'
+'SE3'.'NRG'.'HSav_SE4-'
+'SE3'.'NRG'.'HSav_SE4_'
+'SE4'.'NRG'.'HSav_SE1-'
+'SE4'.'NRG'.'HSav_SE1_'
+'SE4'.'NRG'.'HSav_SE2-'
+'SE4'.'NRG'.'HSav_SE2_'
+'SE4'.'NRG'.'HSav_SE3-'
+'SE4'.'NRG'.'HSav_SE3_'
+'SE4'.'NRG'.'HSav_SE4-'
+'SE4'.'NRG'.'HSav_SE4_'
+/;
+
+SET COM_UNIT
+
+/
+'DKE'.'HSav_SE1-'.'UCU'
+'DKE'.'HSav_SE1_'.'UCU'
+'DKE'.'HSav_SE2-'.'UCU'
+'DKE'.'HSav_SE2_'.'UCU'
+'DKE'.'HSav_SE3-'.'UCU'
+'DKE'.'HSav_SE3_'.'UCU'
+'DKE'.'HSav_SE4-'.'UCU'
+'DKE'.'HSav_SE4_'.'UCU'
+'DKW'.'HSav_SE1-'.'UCU'
+'DKW'.'HSav_SE1_'.'UCU'
+'DKW'.'HSav_SE2-'.'UCU'
+'DKW'.'HSav_SE2_'.'UCU'
+'DKW'.'HSav_SE3-'.'UCU'
+'DKW'.'HSav_SE3_'.'UCU'
+'DKW'.'HSav_SE4-'.'UCU'
+'DKW'.'HSav_SE4_'.'UCU'
+'FIM'.'HSav_SE1-'.'UCU'
+'FIM'.'HSav_SE1_'.'UCU'
+'FIM'.'HSav_SE2-'.'UCU'
+'FIM'.'HSav_SE2_'.'UCU'
+'FIM'.'HSav_SE3-'.'UCU'
+'FIM'.'HSav_SE3_'.'UCU'
+'FIM'.'HSav_SE4-'.'UCU'
+'FIM'.'HSav_SE4_'.'UCU'
+'FIN'.'HSav_SE1-'.'UCU'
+'FIN'.'HSav_SE1_'.'UCU'
+'FIN'.'HSav_SE2-'.'UCU'
+'FIN'.'HSav_SE2_'.'UCU'
+'FIN'.'HSav_SE3-'.'UCU'
+'FIN'.'HSav_SE3_'.'UCU'
+'FIN'.'HSav_SE4-'.'UCU'
+'FIN'.'HSav_SE4_'.'UCU'
+'NO1'.'HSav_SE1-'.'UCU'
+'NO1'.'HSav_SE1_'.'UCU'
+'NO1'.'HSav_SE2-'.'UCU'
+'NO1'.'HSav_SE2_'.'UCU'
+'NO1'.'HSav_SE3-'.'UCU'
+'NO1'.'HSav_SE3_'.'UCU'
+'NO1'.'HSav_SE4-'.'UCU'
+'NO1'.'HSav_SE4_'.'UCU'
+'NO2'.'HSav_SE1-'.'UCU'
+'NO2'.'HSav_SE1_'.'UCU'
+'NO2'.'HSav_SE2-'.'UCU'
+'NO2'.'HSav_SE2_'.'UCU'
+'NO2'.'HSav_SE3-'.'UCU'
+'NO2'.'HSav_SE3_'.'UCU'
+'NO2'.'HSav_SE4-'.'UCU'
+'NO2'.'HSav_SE4_'.'UCU'
+'SE1'.'HSav_SE1-'.'UCU'
+'SE1'.'HSav_SE1_'.'UCU'
+'SE1'.'HSav_SE2-'.'UCU'
+'SE1'.'HSav_SE2_'.'UCU'
+'SE1'.'HSav_SE3-'.'UCU'
+'SE1'.'HSav_SE3_'.'UCU'
+'SE1'.'HSav_SE4-'.'UCU'
+'SE1'.'HSav_SE4_'.'UCU'
+'SE2'.'HSav_SE1-'.'UCU'
+'SE2'.'HSav_SE1_'.'UCU'
+'SE2'.'HSav_SE2-'.'UCU'
+'SE2'.'HSav_SE2_'.'UCU'
+'SE2'.'HSav_SE3-'.'UCU'
+'SE2'.'HSav_SE3_'.'UCU'
+'SE2'.'HSav_SE4-'.'UCU'
+'SE2'.'HSav_SE4_'.'UCU'
+'SE3'.'HSav_SE1-'.'UCU'
+'SE3'.'HSav_SE1_'.'UCU'
+'SE3'.'HSav_SE2-'.'UCU'
+'SE3'.'HSav_SE2_'.'UCU'
+'SE3'.'HSav_SE3-'.'UCU'
+'SE3'.'HSav_SE3_'.'UCU'
+'SE3'.'HSav_SE4-'.'UCU'
+'SE3'.'HSav_SE4_'.'UCU'
+'SE4'.'HSav_SE1-'.'UCU'
+'SE4'.'HSav_SE1_'.'UCU'
+'SE4'.'HSav_SE2-'.'UCU'
+'SE4'.'HSav_SE2_'.'UCU'
+'SE4'.'HSav_SE3-'.'UCU'
+'SE4'.'HSav_SE3_'.'UCU'
+'SE4'.'HSav_SE4-'.'UCU'
+'SE4'.'HSav_SE4_'.'UCU'
+/;
+
+SET TOP_IRE
+
+/
+'IMPEXP'.'HSav_SE1-'.'SE1'.'HSav_SE1-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE1-'.'SE2'.'HSav_SE1-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE1-'.'SE3'.'HSav_SE1-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE1-'.'SE4'.'HSav_SE1-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE1_'.'SE1'.'HSav_SE1_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE1_'.'SE2'.'HSav_SE1_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE1_'.'SE3'.'HSav_SE1_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE1_'.'SE4'.'HSav_SE1_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2-'.'SE1'.'HSav_SE2-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2-'.'SE2'.'HSav_SE2-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2-'.'SE3'.'HSav_SE2-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2-'.'SE4'.'HSav_SE2-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2_'.'SE1'.'HSav_SE2_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2_'.'SE2'.'HSav_SE2_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2_'.'SE3'.'HSav_SE2_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE2_'.'SE4'.'HSav_SE2_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3-'.'SE1'.'HSav_SE3-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3-'.'SE2'.'HSav_SE3-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3-'.'SE3'.'HSav_SE3-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3-'.'SE4'.'HSav_SE3-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3_'.'SE1'.'HSav_SE3_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3_'.'SE2'.'HSav_SE3_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3_'.'SE3'.'HSav_SE3_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE3_'.'SE4'.'HSav_SE3_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4-'.'SE1'.'HSav_SE4-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4-'.'SE2'.'HSav_SE4-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4-'.'SE3'.'HSav_SE4-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4-'.'SE4'.'HSav_SE4-'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4_'.'SE1'.'HSav_SE4_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4_'.'SE2'.'HSav_SE4_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4_'.'SE3'.'HSav_SE4_'.'IMPDUCZ'
+'IMPEXP'.'HSav_SE4_'.'SE4'.'HSav_SE4_'.'IMPDUCZ'
+/;
+
+SET COM_DESC
+
+/
+'DKE'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'DKE'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'DKE'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'DKE'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'DKE'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'DKE'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'DKE'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'DKE'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'DKW'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'DKW'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'DKW'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'DKW'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'DKW'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'DKW'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'DKW'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'DKW'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'FIM'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'FIM'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'FIM'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'FIM'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'FIM'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'FIM'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'FIM'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'FIM'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'FIN'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'FIN'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'FIN'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'FIN'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'FIN'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'FIN'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'FIN'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'FIN'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'NO1'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'NO1'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'NO1'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'NO1'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'NO1'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'NO1'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'NO1'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'NO1'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'NO2'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'NO2'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'NO2'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'NO2'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'NO2'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'NO2'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'NO2'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'NO2'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'SE1'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'SE1'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'SE1'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'SE1'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'SE1'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'SE1'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'SE1'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'SE1'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'SE2'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'SE2'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'SE2'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'SE2'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'SE2'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'SE2'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'SE2'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'SE2'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'SE3'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'SE3'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'SE3'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'SE3'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'SE3'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'SE3'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'SE3'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'SE3'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+'SE4'.'HSav_SE1-' 'Negative dummy var for UC: HSav_SE1'
+'SE4'.'HSav_SE1_' 'Positive dummy var for UC: HSav_SE1'
+'SE4'.'HSav_SE2-' 'Negative dummy var for UC: HSav_SE2'
+'SE4'.'HSav_SE2_' 'Positive dummy var for UC: HSav_SE2'
+'SE4'.'HSav_SE3-' 'Negative dummy var for UC: HSav_SE3'
+'SE4'.'HSav_SE3_' 'Positive dummy var for UC: HSav_SE3'
+'SE4'.'HSav_SE4-' 'Negative dummy var for UC: HSav_SE4'
+'SE4'.'HSav_SE4_' 'Positive dummy var for UC: HSav_SE4'
+/;
+
+SET UC_R_EACH
+
+/
+'SE1'.'HSav_SE1'
+'SE1'.'HSav_SE2'
+'SE1'.'HSav_SE3'
+'SE1'.'HSav_SE4'
+'SE2'.'HSav_SE1'
+'SE2'.'HSav_SE2'
+'SE2'.'HSav_SE3'
+'SE2'.'HSav_SE4'
+'SE3'.'HSav_SE1'
+'SE3'.'HSav_SE2'
+'SE3'.'HSav_SE3'
+'SE3'.'HSav_SE4'
+'SE4'.'HSav_SE1'
+'SE4'.'HSav_SE2'
+'SE4'.'HSav_SE3'
+'SE4'.'HSav_SE4'
+/;
+
+PARAMETER
+
+UC_IRE ' '/
+'HSav_SE1'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE1-'.ANNUAL.IMP -1
+'HSav_SE1'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE1_'.ANNUAL.IMP 1
+'HSav_SE1'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE1-'.ANNUAL.IMP -1
+'HSav_SE1'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE1_'.ANNUAL.IMP 1
+'HSav_SE1'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE1-'.ANNUAL.IMP -1
+'HSav_SE1'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE1_'.ANNUAL.IMP 1
+'HSav_SE1'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE1-'.ANNUAL.IMP -1
+'HSav_SE1'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE1_'.ANNUAL.IMP 1
+'HSav_SE2'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE2-'.ANNUAL.IMP -1
+'HSav_SE2'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE2_'.ANNUAL.IMP 1
+'HSav_SE2'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE2-'.ANNUAL.IMP -1
+'HSav_SE2'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE2_'.ANNUAL.IMP 1
+'HSav_SE2'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE2-'.ANNUAL.IMP -1
+'HSav_SE2'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE2_'.ANNUAL.IMP 1
+'HSav_SE2'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE2-'.ANNUAL.IMP -1
+'HSav_SE2'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE2_'.ANNUAL.IMP 1
+'HSav_SE3'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE3-'.ANNUAL.IMP -1
+'HSav_SE3'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE3_'.ANNUAL.IMP 1
+'HSav_SE3'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE3-'.ANNUAL.IMP -1
+'HSav_SE3'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE3_'.ANNUAL.IMP 1
+'HSav_SE3'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE3-'.ANNUAL.IMP -1
+'HSav_SE3'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE3_'.ANNUAL.IMP 1
+'HSav_SE3'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE3-'.ANNUAL.IMP -1
+'HSav_SE3'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE3_'.ANNUAL.IMP 1
+'HSav_SE4'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE4-'.ANNUAL.IMP -1
+'HSav_SE4'.LHS.'SE1'.2010.'IMPDUCZ'.'HSav_SE4_'.ANNUAL.IMP 1
+'HSav_SE4'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE4-'.ANNUAL.IMP -1
+'HSav_SE4'.LHS.'SE2'.2010.'IMPDUCZ'.'HSav_SE4_'.ANNUAL.IMP 1
+'HSav_SE4'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE4-'.ANNUAL.IMP -1
+'HSav_SE4'.LHS.'SE3'.2010.'IMPDUCZ'.'HSav_SE4_'.ANNUAL.IMP 1
+'HSav_SE4'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE4-'.ANNUAL.IMP -1
+'HSav_SE4'.LHS.'SE4'.2010.'IMPDUCZ'.'HSav_SE4_'.ANNUAL.IMP 1
+/;
+
+PARAMETER
+
+UC_NCAP ' '/
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCDa81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCDa81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCDa81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCDb81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCDb81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCDb81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCMa81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCMa81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCMa81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCMb81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCMb81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBCMb81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDDa81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDDa81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDDa81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDDb81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDDb81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDDb81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDMa81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDMa81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDMa81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDMb81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDMb81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBDMb81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIDa81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIDa81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIDa81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIDb81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIDb81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIDb81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIMa81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIMa81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIMa81_P3' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIMb81_P1' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIMb81_P2' 1
+'HSav_SE1'.LHS.'SE1'.2012.'RSBIMb81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCDa81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCDa81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCDa81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCDb81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCDb81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCDb81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCMa81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCMa81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCMa81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCMb81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCMb81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBCMb81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDDa81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDDa81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDDa81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDDb81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDDb81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDDb81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDMa81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDMa81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDMa81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDMb81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDMb81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBDMb81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIDa81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIDa81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIDa81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIDb81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIDb81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIDb81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIMa81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIMa81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIMa81_P3' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIMb81_P1' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIMb81_P2' 1
+'HSav_SE2'.LHS.'SE2'.2012.'RSBIMb81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCDa81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCDa81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCDa81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCDb81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCDb81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCDb81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCMa81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCMa81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCMa81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCMb81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCMb81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBCMb81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDDa81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDDa81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDDa81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDDb81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDDb81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDDb81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDMa81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDMa81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDMa81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDMb81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDMb81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBDMb81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIDa81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIDa81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIDa81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIDb81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIDb81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIDb81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIMa81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIMa81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIMa81_P3' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIMb81_P1' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIMb81_P2' 1
+'HSav_SE3'.LHS.'SE3'.2012.'RSBIMb81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCDa81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCDa81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCDa81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCDb81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCDb81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCDb81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCMa81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCMa81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCMa81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCMb81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCMb81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBCMb81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDDa81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDDa81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDDa81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDDb81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDDb81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDDb81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDMa81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDMa81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDMa81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDMb81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDMb81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBDMb81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIDa81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIDa81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIDa81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIDb81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIDb81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIDb81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIMa81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIMa81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIMa81_P3' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIMb81_P1' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIMb81_P2' 1
+'HSav_SE4'.LHS.'SE4'.2012.'RSBIMb81_P3' 1
+/;
+
+PARAMETER
+
+UC_RHSRT ' '/
+'SE1'.'HSav_SE1'.0.UP 5
+'SE1'.'HSav_SE1'.2012.UP 0.43
+'SE1'.'HSav_SE2'.0.UP 5
+'SE1'.'HSav_SE2'.2012.UP 1.72
+'SE1'.'HSav_SE3'.0.UP 5
+'SE1'.'HSav_SE3'.2012.UP 9.9
+'SE1'.'HSav_SE4'.0.UP 5
+'SE1'.'HSav_SE4'.2012.UP 2.88
+'SE2'.'HSav_SE1'.0.UP 5
+'SE2'.'HSav_SE1'.2012.UP 0.43
+'SE2'.'HSav_SE2'.0.UP 5
+'SE2'.'HSav_SE2'.2012.UP 1.72
+'SE2'.'HSav_SE3'.0.UP 5
+'SE2'.'HSav_SE3'.2012.UP 9.9
+'SE2'.'HSav_SE4'.0.UP 5
+'SE2'.'HSav_SE4'.2012.UP 2.88
+'SE3'.'HSav_SE1'.0.UP 5
+'SE3'.'HSav_SE1'.2012.UP 0.43
+'SE3'.'HSav_SE2'.0.UP 5
+'SE3'.'HSav_SE2'.2012.UP 1.72
+'SE3'.'HSav_SE3'.0.UP 5
+'SE3'.'HSav_SE3'.2012.UP 9.9
+'SE3'.'HSav_SE4'.0.UP 5
+'SE3'.'HSav_SE4'.2012.UP 2.88
+'SE4'.'HSav_SE1'.0.UP 5
+'SE4'.'HSav_SE1'.2012.UP 0.43
+'SE4'.'HSav_SE2'.0.UP 5
+'SE4'.'HSav_SE2'.2012.UP 1.72
+'SE4'.'HSav_SE3'.0.UP 5
+'SE4'.'HSav_SE3'.2012.UP 9.9
+'SE4'.'HSav_SE4'.0.UP 5
+'SE4'.'HSav_SE4'.2012.UP 2.88
+/;
+
+

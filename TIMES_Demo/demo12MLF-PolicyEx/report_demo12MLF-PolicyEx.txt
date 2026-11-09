@@ -1,0 +1,88 @@
+VERDICT  SAME OBJECTIVE: only the objective was compared
+model    demo12MLF-PolicyEx    (TIMES_Demo/demo12MLF-PolicyEx)
+when     2026-11-08T18:17:56    total 26.8 s
+limit    50000 s for each solve    (the run file's OPTION RESLIM)
+
+This file is written by TIMES.py. It is complete in itself: everything needed to understand
+the result is below; FILES says which of the files it names are in this folder.
+
+CHECKS
+     check                                   result              Julia                   GAMS
+  0  all inputs supported                    yes
+  1  rows                                    same                4,270                   4,270
+  1  columns                                 same                44,808                  44,808
+  1  non-zeros                               same                142,213                 142,213
+  2  objective                               same                27198.570313            27198.570300   relative difference 4.6e-10
+  4  matrix, entry by entry                  not made here       made in the matrix run: same (report_demo12MLF-PolicyEx_matrix.txt)
+
+THE TWO RUNS
+  GAMS    published reference (expected.json); REDUCE YES; GAMS 54.1.0; TIMES v4.9.8; solver CPLEX
+          1 Normal Completion / 1 Optimal; objective 27198.5703; rows 4,270, columns 44,808, non-zeros 142,213
+  memory  peak working set of the processes of each run, summed, every 0.5 s: the open chain 1.13 GB (preprocessor and Julia), GAMS not run
+  Julia   HiGHS simplex; OPTIMAL; objective 27198.57031263454; rows 4,270, columns 44,808, non-zeros 142,213
+          HiGHS options: solver=simplex
+          time      start and packages 0.2 s (packages loaded while the preprocessor ran: 1.2 s), load 0.2 s, checks 0.0 s, build 0.1 s, counts 0.0 s, solver setup 0.0 s, copy to HiGHS 0.0 s, solve 4.6 s, solution 0.1 s, solution file 0.1 s, result file 0.0 s, negishi 3.0 s, other 0.4 s; Julia process 8.7 s; Julia 1.13.1
+          compiling load 3.7 s, build 0.3 s, counts 0.1 s, solution file 0.1 s, negishi 3.0 s; garbage collection 0.0 s; allocated 0.4 GB; peak memory 0.5 GB to the built model, 0.6 GB for the whole run
+          solve     simplex; cores in use 0.5 of 24 (CPU 3.6 s in 7.5 s); HiGHS 1.15.1
+          presolve  rows 4,270 -> 2,579, columns 44,808 -> 43,320, non-zeros 142,213 -> 129,491
+          iterations 14,467 simplex iterations; first iteration at 0.1 s; HiGHS run time 4.6 s
+          warning   Problem has some excessively large column bounds
+          solution: solution.db3 (levels, marginals and bounds of every column and row, by GAMS name)
+
+NOTES
+  - TIMESED YES: the base prices of the demands (readbprice.mod): read TIMES_Demo/demo12Base/com_bprice.parquet (Parquet, written by this implementation: run demo12Base (TIMES_Demo/demo12Base), 2026-11-08 17:45:35)
+  - TIMES-MACRO MLF: the calibration of MACRO with Ipopt (linear_solver=mumps tol=1.0e-10 constr_viol_tol=1.0e-10 acceptable_tol=1.0e-9 max_iter=3000 print_level=0 sb=yes): 28 NLPs, 7 iterations of the first loop and 17 of the Negishi weights, last errors MSA_ERR DDF 3.67088189797206e-8, GDP 5.513494974096472e-8, NWT 9.367235320745237e-10; it agrees with TIMES's within the accuracy of the solvers, not to the bit
+  - the reference has no gams_solution.db3: sizes and the objective are compared, not the solution
+
+INPUT
+  run file  TIMES_Demo/demo12MLF-PolicyEx/demo12MLF-PolicyEx.run    sha256 d35f411130673d43
+  switches  REDUCE=YES  OBJ=MOD  VAR_UC=YES  DSCAUTO=YES  MACRO=MLF  TIMESED=YES  BOTIME=1960
+            (as in the run file)
+  DD file   demo12_ts.dd                                     111 bytes  sha256 88865dabecc777fe
+  DD file   base.dd                                      111,836 bytes  sha256 e488f886ee5d517c
+  DD file   newtechs.dd                                   37,737 bytes  sha256 9c1d4e921260e724
+  DD file   trade_param.dd                                   248 bytes  sha256 7fbbf12506e9b9c5
+  DD file   dem_ref.dd                                    25,528 bytes  sha256 42466bdc4c3e2eaa
+  DD file   syssettings.dd                                 6,460 bytes  sha256 0e43c1494803517b
+  DD file   peak_rsv.dd                                      234 bytes  sha256 552bcfdefa6ffdbe
+  DD file   refinery.dd                                    1,033 bytes  sha256 9f47ccd14d0fbf97
+  DD file   demproj_dtcar.dd                                 436 bytes  sha256 598d259ee8747baf
+  DD file   uc_nuc_maxcap.dd                               1,050 bytes  sha256 e1f155d9e1d2f7a7
+  DD file   bounds-uc_wsets.dd                             2,273 bytes  sha256 53d679b6752a3f3f
+  DD file   offdummy.dd                                      167 bytes  sha256 f51997a45f8ddab7
+  DD file   demomacro.dd                                     269 bytes  sha256 b14ab5caaec3c4a0
+  DD file   ghgpolicy.dd                                     936 bytes  sha256 1bd560fab98e5049
+
+VEDA RESULT FILES (of the Julia solution; import them into Veda as a scenario next to the GAMS run)
+  demo12MLF-PolicyEx_julia.vd, .vde, .vds   8,819 rows in 54 attributes, 6.4 s
+
+ENVIRONMENT
+  TIMES code         TIMES-OS 1.0.0   (follows TIMES v4.9.8)
+  TIMES source       v4.9.8
+  Python 3.12.6;  Julia;  GAMS
+  system             Windows-11-10.0.22631-SP0
+  preprocessor       Segment Heap, DuckDB with 8 threads, parallel stages level 2;  the tables as model_parquet/, streamed beside the steps; tables dropped once no longer read: off (TIMES_DROP=1 turns it on)
+  Julia              threads auto (24), garbage collector threads 12, at most 8 equation families at once (memory 63.8 GB, expected peak 0.1 GB)
+  seconds            before_preprocess 0.2, preprocess 10.7, julia_started 10.9, julia 8.7, to_solver 11.5, preprocess_finished 10.6, report 6.6, results_for_later_runs 0.6, total 26.8
+
+FILES (this folder)
+  report_demo12MLF-PolicyEx.txt          the run that compares with expected.json, with no GAMS: the objective
+  report_demo12MLF-PolicyEx_matrix.txt   the run that compared the matrix with that of TIMES in GAMS, entry by entry
+  expected.json                          the result of TIMES in GAMS that the run compares with, and the evidence in short
+  demo12MLF-PolicyEx.run                 with the DD files and the option files: the inputs
+  The run's other files (report json, logs, solution.db3, the Veda files) are written to its result folder;
+  README.md gives the command.
+
+WHAT THE VERDICT MEANS
+  SAME            every check that could be made against the published GAMS result agrees. With the published matrix the
+                  two are the same linear program, and have the same optimum whether or not the solver finds it.
+  SAME OBJECTIVE  the optimum is the one published; no more was published to compare with.
+  DIFFERENT       the model runs and something does not agree with the published result: a defect. DIFFERENCES above says where to look.
+  UNSUPPORTED     the model uses TIMES features this implementation does not have yet; they are all listed above. Not a defect.
+  NOT SOLVED      the model was built and the solver did not reach an optimum (time limit, or a failure of the solver). julia.log has the solver log.
+  ERROR           a step failed. If it is the preprocessor or Julia, it is a defect; the message is above.
+  INFEASIBLE      the model's data cannot be met: rows left with no column whose constant does not satisfy them
+                  (0 = 2.685), on which TIMES in GAMS stops too (equation infeasible due to rhs value). Not a defect.
+  SOLVED          the open chain solved the model; there was no published GAMS result to compare with (--jacobian writes the matrix
+                  in the layout of GAMS's CONVERT jacobian, to compare with GAMS's own).
+  To report or to work on a result, hand over this file (or the bundle made with --bundle, which adds the input files).

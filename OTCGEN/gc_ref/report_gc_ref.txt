@@ -1,0 +1,95 @@
+VERDICT  SAME OBJECTIVE: only the objective was compared
+model    gc_ref    (OTCGEN/gc_ref)
+when     2026-11-08T17:47:45    total 174.3 s
+limit    50000 s for each solve    (the run file's OPTION RESLIM)
+
+This file is written by TIMES.py. It is complete in itself: everything needed to understand
+the result is below; FILES says which of the files it names are in this folder.
+
+CHECKS
+     check                                   result              Julia                   GAMS
+  0  all inputs supported                    yes
+  1  rows                                    same                512,182                 512,182
+  1  columns                                 same                765,953                 765,953
+  1  non-zeros                               same                5,622,500               5,622,500
+  2  objective                               same                756405975.876613        756404387.820140   relative difference 2.1e-06
+  4  matrix, entry by entry                  not made here       made in the matrix run: same (report_gc_ref_matrix.txt)
+
+THE TWO RUNS
+  GAMS    published reference (expected.json); REDUCE YES; GAMS 54.1.0; TIMES v4.9.8; solver CPLEX
+          1 Normal Completion / 1 Optimal; objective 756404387.8201399; rows 512,182, columns 765,953, non-zeros 5,622,500
+  memory  peak working set of the processes of each run, summed, every 0.5 s: the open chain 5.04 GB (preprocessor and Julia), GAMS not run
+  Julia   HiGHS ipx; OPTIMAL; objective 756405975.8766135; rows 512,182, columns 765,953, non-zeros 5,622,500
+          HiGHS options: run_crossover=off, solver=ipx
+          time      start and packages 0.3 s (packages loaded while the preprocessor ran: 1.2 s), load 1.2 s, checks 0.0 s, build 2.9 s, counts 0.2 s, solver setup 0.0 s, copy to HiGHS 0.5 s, solve 86.5 s, solution 2.3 s, solution file 2.1 s, result file 0.0 s, other 0.0 s; Julia process 96.0 s; Julia 1.13.1
+          compiling load 5.2 s, build 0.1 s; garbage collection 1.8 s; allocated 14.9 GB; peak memory 2.8 GB to the built model, 3.7 GB for the whole run
+          solve     IPX; cores in use 0.7 of 24 (CPU 64.8 s in 86.5 s); HiGHS 1.15.1
+          presolve  rows 512,182 -> 114,971, columns 765,953 -> 193,211, non-zeros 5,200,869 -> 2,033,608
+          iterations 116 interior point iterations; first iteration at 3.1 s; 0.72 s per iteration; HiGHS run time 86.5 s
+          warning   Problem has some excessively large row bounds
+          warning   Ipx: Stopped
+          warning   Ipx: IPM no progress
+          warning   No progress: primal objective value = 7.564e+08
+          solution: solution.db3 (levels, marginals and bounds of every column and row, by GAMS name)
+
+NOTES
+  - the reference has no gams_solution.db3: sizes and the objective are compared, not the solution
+
+INPUT
+  run file  OTCGEN/gc_ref/gc_ref.run    sha256 794217a47473f4c1
+  switches  REDUCE=YES  OBJ=AUTO  VAR_UC=YES  DSCAUTO=YES  VALIDATE=NO  STAGES=NO  DAMAGE=NO  TIMESED=NO  BOTIME=1980
+            (as in the run file)
+  DD file   gc_ref_ts.dd                                      98 bytes  sha256 a0e0e428646d7f19
+  DD file   base.dd                                    1,029,360 bytes  sha256 676c0d02d3910fdf
+  DD file   techcom.dd                                 2,020,647 bytes  sha256 6179dc794e88d22d
+  DD file   techind.dd                                     9,059 bytes  sha256 a9c96e2e897aa424
+  DD file   techelc.dd                                   659,826 bytes  sha256 be6bfdb19d9911a2
+  DD file   demand.dd                                     38,485 bytes  sha256 e014b96904f55934
+  DD file   techres.dd                                 2,430,859 bytes  sha256 37c384287ebd9191
+  DD file   techret.dd                                   131,175 bytes  sha256 adabbe75c67f8161
+  DD file   techtra.dd                                   337,735 bytes  sha256 26ca5e016c0f03f2
+  DD file   techwas.dd                                    57,144 bytes  sha256 3943b1611e85ecf3
+  DD file   syssettings.dd                               154,510 bytes  sha256 80e77b709b98f657
+  DD file   tradeparam.dd                                  1,943 bytes  sha256 471949d32efca209
+  DD file   gdr.dd                                           315 bytes  sha256 a6e92bc4fccbbc22
+  DD file   ghg_ipcc.dd                                1,999,864 bytes  sha256 27e57b1d11aba8e5
+  DD file   growth_elc.dd                                 64,839 bytes  sha256 cd22a5b6993c8e8f
+  DD file   pollutants.dd                              1,165,688 bytes  sha256 ebfaa4af6d4c1f6b
+  DD file   uc_ind.dd                                     11,421 bytes  sha256 5bd22940e630646a
+  DD file   uc_res.dd                                    505,074 bytes  sha256 783bfdee39a9164b
+  DD file   uc_com.dd                                     47,958 bytes  sha256 318f93f999dd1299
+  DD file   uc_tra.dd                                     56,903 bytes  sha256 f43d014d9bc3815d
+
+VEDA RESULT FILES (of the Julia solution; import them into Veda as a scenario next to the GAMS run)
+  gc_ref_julia.vd, .vde, .vds   2,313,263 rows in 54 attributes, 39.2 s
+
+ENVIRONMENT
+  TIMES code         TIMES-OS 1.0.0   (follows TIMES v4.9.8)
+  TIMES source       v4.9.8
+  Python 3.12.6;  Julia;  GAMS
+  system             Windows-11-10.0.22631-SP0
+  preprocessor       Segment Heap, DuckDB with 8 threads, parallel stages level 2;  the tables as model_parquet/, streamed beside the steps; tables dropped once no longer read: off (TIMES_DROP=1 turns it on)
+  Julia              threads auto (24), garbage collector threads 12, at most 8 equation families at once (memory 63.8 GB, expected peak 9.2 GB)
+  seconds            before_preprocess 0.3, preprocess 27.7, julia_started 28.0, julia 96.0, to_solver 33.0, preprocess_finished 29.7, report 39.9, results_for_later_runs 10.5, total 174.3
+
+FILES (this folder)
+  report_gc_ref.txt          the run that compares with expected.json, with no GAMS: the objective
+  report_gc_ref_matrix.txt   the run that compared the matrix with that of TIMES in GAMS, entry by entry
+  expected.json              the result of TIMES in GAMS that the run compares with, and the evidence in short
+  gc_ref.run                 with the DD files and the option files: the inputs
+  The run's other files (report json, logs, solution.db3, the Veda files) are written to its result folder;
+  README.md gives the command.
+
+WHAT THE VERDICT MEANS
+  SAME            every check that could be made against the published GAMS result agrees. With the published matrix the
+                  two are the same linear program, and have the same optimum whether or not the solver finds it.
+  SAME OBJECTIVE  the optimum is the one published; no more was published to compare with.
+  DIFFERENT       the model runs and something does not agree with the published result: a defect. DIFFERENCES above says where to look.
+  UNSUPPORTED     the model uses TIMES features this implementation does not have yet; they are all listed above. Not a defect.
+  NOT SOLVED      the model was built and the solver did not reach an optimum (time limit, or a failure of the solver). julia.log has the solver log.
+  ERROR           a step failed. If it is the preprocessor or Julia, it is a defect; the message is above.
+  INFEASIBLE      the model's data cannot be met: rows left with no column whose constant does not satisfy them
+                  (0 = 2.685), on which TIMES in GAMS stops too (equation infeasible due to rhs value). Not a defect.
+  SOLVED          the open chain solved the model; there was no published GAMS result to compare with (--jacobian writes the matrix
+                  in the layout of GAMS's CONVERT jacobian, to compare with GAMS's own).
+  To report or to work on a result, hand over this file (or the bundle made with --bundle, which adds the input files).

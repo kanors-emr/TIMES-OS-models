@@ -1,0 +1,265 @@
+{
+ "case": "reference",
+ "made": "2026-11-08",
+ "objective": 192206507156.18262,
+ "environment": {
+  "gams": "54.1.0",
+  "times": "4.9.8",
+  "solver": "CPLEX"
+ },
+ "gams": {
+  "rows": 1028923,
+  "columns": 1647278,
+  "nonzeros": 7186412,
+  "objective": 192206507156.18262,
+  "REDUCE": "YES",
+  "gams_version": "54.1.0",
+  "times_version": "4.9.8",
+  "solver": "CPLEX",
+  "solver_status": "1 Normal Completion",
+  "model_status": "1 Optimal"
+ },
+ "julia": {
+  "rows": 1028923,
+  "columns": 1647278,
+  "nonzeros": 7186412,
+  "objective": 192206507156.18256
+ },
+ "row_counts": {
+  "EQ_OBJVAR": 10,
+  "EQ_PTRANS": 1080,
+  "EQG_CPT": 7969,
+  "EQ_OBJSALV": 10,
+  "EQ_OBJFIX": 10,
+  "EQG_COMBAL": 114099,
+  "EQL_CAPACT": 317344,
+  "EQ_STGAUX": 1728,
+  "EQL_ACTBND": 162,
+  "EQL_CAFLAC": 1728,
+  "EQ_IRE": 27504,
+  "EQL_CAPFLO": 1728,
+  "EQL_CPT": 198,
+  "EQG_ACTBND": 176,
+  "EQE_COMPRD": 19356,
+  "EQ_OBJ": 1,
+  "EQE_CPT": 379,
+  "EQL_REFIT": 660,
+  "EQ_PEAK": 5184,
+  "EQN_UCRTP": 15962,
+  "EQG_INSHR": 57,
+  "EQE_INSHR": 54256,
+  "EQE_COMBAL": 20805,
+  "EQG_OUTSHR": 3824,
+  "EQ_OBJINV": 10,
+  "EQE_ACTEFF": 136268,
+  "EQE_ACTBND": 420,
+  "EQE_UCTS": 136,
+  "EQ_STGTSS": 3546,
+  "EQE_UCRT": 53569,
+  "EQ_CUMRET": 2008,
+  "EQE_CAPACT": 2592,
+  "EQ_CUMFLO": 676,
+  "EQ_ACTFLO": 150148,
+  "EQE_OUTSHR": 85320
+ },
+ "port_follows_TIMES": "4.9.8",
+ "switches": {
+  "BOTIME": "1929",
+  "CTST": "",
+  "DAMAGE": "NO",
+  "DATAGDX": "YES",
+  "DEBUG": "NO",
+  "DFLBL": "0",
+  "DSCAUTO": "YES",
+  "DUMPSOL": "NO",
+  "EOTIME": "2200",
+  "ERR_ABORT": "YES",
+  "EXTEND": "%1 %2 %3 %4 %5 %6",
+  "GAMS_CGI": "NO",
+  "GDXPATH": "",
+  "MACRO": "N",
+  "MAXSOW": "96",
+  "MID_YEAR": "YES",
+  "MODEL_NAME": "TIMES",
+  "MX": ",SEASON, WEEKLY, DAYNITE",
+  "OBJ": "AUTO",
+  "OBLONG": "YES",
+  "PGPRIM": "'ACT'",
+  "PRF": "FILE=1",
+  "REDUCE": "YES",
+  "RPOINT": "NO",
+  "RUN_NAME": "reference",
+  "SCENARIO_NAME": "uc_trnldv20",
+  "SOLANS": "NO",
+  "SOLVEDA": "YES",
+  "SOLVE_NOW": "YES",
+  "STAGES": "NO",
+  "SYSPREFIX": "",
+  "TMP": "0",
+  "VALIDATE": "NO",
+  "VAR": "VARIABLE OBJZ",
+  "VARCOST": "LIN",
+  "VAR_UC": "YES",
+  "VDA": "YES",
+  "VEDAVDD": "YES",
+  "XTQA": "YES"
+ },
+ "dd_files": [
+  {
+   "name": "reference_ts.dd",
+   "bytes": 121,
+   "sha256_16": "77c307bad99e0ced"
+  },
+  {
+   "name": "base.dd",
+   "bytes": 42550960,
+   "sha256_16": "75eea612345b71c9"
+  },
+  {
+   "name": "coalplants-ret-and_lifeext.dd",
+   "bytes": 75051,
+   "sha256_16": "a1157f7a1f2d1297"
+  },
+  {
+   "name": "storage.dd",
+   "bytes": 7358,
+   "sha256_16": "43a589ba93a42aaa"
+  },
+  {
+   "name": "syssettings.dd",
+   "bytes": 506788,
+   "sha256_16": "e08ad255b6185238"
+  },
+  {
+   "name": "tradeparams.dd",
+   "bytes": 32571,
+   "sha256_16": "3053d2c8b3b05f10"
+  },
+  {
+   "name": "aqreg.dd",
+   "bytes": 1682,
+   "sha256_16": "d13aefb1d4fd701a"
+  },
+  {
+   "name": "baseextra-offeps.dd",
+   "bytes": 49419,
+   "sha256_16": "3ca279922f74c9db"
+  },
+  {
+   "name": "2080upd.dd",
+   "bytes": 4277,
+   "sha256_16": "a53268b789995c20"
+  },
+  {
+   "name": "bevcharging.dd",
+   "bytes": 67335,
+   "sha256_16": "01900fd2457fa4b4"
+  },
+  {
+   "name": "csapr-mats.dd",
+   "bytes": 4817,
+   "sha256_16": "2bcf75cf58c33b6e"
+  },
+  {
+   "name": "growthv2.dd",
+   "bytes": 1853765,
+   "sha256_16": "25ddb8cf75a5d337"
+  },
+  {
+   "name": "refemiupd-ts.dd",
+   "bytes": 59684,
+   "sha256_16": "6f35d67711a0f37e"
+  },
+  {
+   "name": "trnco2-ts.dd",
+   "bytes": 85260,
+   "sha256_16": "493ebbc350a6ee96"
+  },
+  {
+   "name": "uc-biofuels20.dd",
+   "bytes": 66905,
+   "sha256_16": "1a818e1a5e103a9a"
+  },
+  {
+   "name": "uc-csapr-mats.dd",
+   "bytes": 20581,
+   "sha256_16": "dd93969b0e50425d"
+  },
+  {
+   "name": "uc-elc20.dd",
+   "bytes": 451955,
+   "sha256_16": "07c823bb253669ce"
+  },
+  {
+   "name": "uc-ind20.dd",
+   "bytes": 2689324,
+   "sha256_16": "14233b1441a3abad"
+  },
+  {
+   "name": "uc-nonewnuc.dd",
+   "bytes": 10108,
+   "sha256_16": "e24f61c17bb9fcbc"
+  },
+  {
+   "name": "uc-rescom20.dd",
+   "bytes": 593349,
+   "sha256_16": "6bf6758f7f12147b"
+  },
+  {
+   "name": "uc-rps20.dd",
+   "bytes": 402088,
+   "sha256_16": "f64e46331e5e1c6a"
+  },
+  {
+   "name": "uc_aqreg.dd",
+   "bytes": 15476,
+   "sha256_16": "22345d3885b95107"
+  },
+  {
+   "name": "uc_trnhdv20_az121921.dd",
+   "bytes": 422429,
+   "sha256_16": "68c9698d65150277"
+  },
+  {
+   "name": "uc_trnldv20.dd",
+   "bytes": 1432874,
+   "sha256_16": "87c3586aecd4d633"
+  }
+ ],
+ "files": [],
+ "evidence": {
+  "matrix": {
+   "verdict": "SAME",
+   "rule": "times_pp/tools/compare_jacobian.py",
+   "summary": [
+    "rows       here 1028923   GAMS 1028923   only here 0   only in GAMS 0",
+    "columns    here 1647278   GAMS 1647278   only here 0   only in GAMS 0",
+    "entries    here 7186412   GAMS 7186412   only here 0   only in GAMS 0   other value 0",
+    "right-hand sides that differ 0   column bounds that differ 0",
+    "equal entries: largest relative difference 3.0e-15 (tolerance 1.0e-9); 22447 are zero on both sides (EPS in GAMS)"
+   ]
+  },
+  "cplex": {
+   "timesos_objective": 192206507156.18256,
+   "times_in_gams_objective": 192206507156.18262,
+   "crossover": true,
+   "cplex_version": "22.1.2.0 (through GAMS 54.1.0, both sides)",
+   "solve_seconds": 209.14,
+   "relative_difference": 3.175498954382654e-16
+  },
+  "regions": 10,
+  "highs": {
+   "status": "not attempted (over 1 M rows)"
+  },
+  "command": "python TIMES.py run OTUS9r/reference --lp cplex",
+  "build": {
+   "timesos_seconds": 48.2,
+   "timesos_peak_gb": 6.04,
+   "times_in_gams_seconds": 39.3,
+   "times_in_gams_peak_gb": 1.8,
+   "time_ratio": 1.2264631043257,
+   "memory_ratio": 3.348651867893882,
+   "measured": "from the start to the matrix built, same run, same machine. Time: TIMES-OS (preprocessor and model generation) divided by TIMES v4.9.8 in GAMS (to the end of model generation). Memory: TIMES-OS's peak working set (its processes, sampled every 0.5 s) divided by the peak memory TIMES in GAMS reports in its listing"
+  }
+ }
+}

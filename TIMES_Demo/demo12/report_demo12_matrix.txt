@@ -1,0 +1,99 @@
+VERDICT  SAME: the same linear program as GAMS, every coefficient, right-hand side and bound; not solved here (--no-solve)
+model    demo12    (TIMES_Demo/demo12)
+when     2026-11-07T19:00:41    total 10.0 s
+limit    50000 s for each solve    (the run file's OPTION RESLIM)
+
+This file is written by TIMES.py. It is complete in itself: everything needed to understand
+the result is below; FILES says which of the files it names are in this folder.
+
+CHECKS
+     check                                   result              Julia                   GAMS
+  0  all inputs supported                    yes
+  1  rows                                    same                3,233                   3,233
+  1  columns                                 same                4,485                   4,485
+  1  non-zeros                               same                18,375                  18,375
+  4  matrix: every coefficient               same                18,375                  18,375   largest relative difference 8.3e-16 (tolerance 1e-09); compared as Parquet in DuckDB
+  4  matrix: rows and columns by name        same
+  4  matrix: right-hand sides and senses     same                3,233 rows
+  4  matrix: column bounds                   same                4,485 columns
+
+MATRIX BY EQUATION (check 4: the coefficients of GAMS and of Julia, matched by row and column name)
+  equation              rows  coefficients       equal  other value  only here  only GAMS   largest relative difference of the equal ones
+  EQG_COMBAL             876         4,860       4,860            0          0          0   0.0e+00
+  EQL_CAPACT           1,232         3,232       3,232            0          0          0   6.8e-16
+  EQG_INSHR              322         1,682       1,682            0          0          0   0.0e+00
+  EQE_INSHR              238         1,358       1,358            0          0          0   0.0e+00
+  EQE_COMBAL             120         1,222       1,222            0          0          0   0.0e+00
+  EQ_OBJVAR                2           974         974            0          0          0   0.0e+00
+  EQE_ACTEFF             132           864         864            0          0          0   0.0e+00
+  EQE_COMPRD              48           832         832            0          0          0   0.0e+00
+  EQ_ACTFLO               24           768         768            0          0          0   0.0e+00
+  EQ_PEAK                 24           596         596            0          0          0   8.3e-16
+  EQG_OUTSHR              70           490         490            0          0          0   0.0e+00
+  EQ_OBJINV                2           446         446            0          0          0   3.5e-16
+  EQ_OBJFIX                2           314         314            0          0          0   6.2e-16
+  EQE_UCRTS                6           146         146            0          0          0   1.3e-16
+  EQ_OBJSALV               2           122         122            0          0          0   6.4e-16
+  EQ_CUMFLO               16           112         112            0          0          0   1.9e-16
+  EQ_IRE                  54           108         108            0          0          0   0.0e+00
+  EQL_ACTBND              24            96          96            0          0          0   0.0e+00
+  EQE_OUTSHR              12            84          84            0          0          0   0.0e+00
+  EQE_CPT                 18            38          38            0          0          0   0.0e+00
+  EQE_UCRT                 8            22          22            0          0          0   0.0e+00
+  EQ_OBJ                   1             9           9            0          0          0   0.0e+00
+  all                  3,233        18,375      18,375            0          0          0   8.3e-16
+
+THE TWO RUNS
+  GAMS    run now; REDUCE YES; GAMS 54.1.0; TIMES v4.9.8; solver CONVERT
+          model generated and its matrix written, nothing solved (--no-solve); rows 3,233, columns 4,485, non-zeros 18,375; 0.7 s, 0.4 s to the solver
+  memory  peak working set of the processes of each run, summed, every 0.5 s: the open chain 0.78 GB (preprocessor and Julia), GAMS 0.03 GB (the whole run); in the open chain's, GAMS of --lp 0.01 GB
+  Julia   not solved; -; objective None; rows 3,233, columns 4,485, non-zeros 18,375
+          time      start and packages 0.1 s (packages loaded while the preprocessor ran: 1.2 s), load 0.2 s, checks 0.0 s, build 0.1 s, counts 0.0 s, result file 0.0 s, matrix out 0.1 s, other 0.1 s; Julia process 0.6 s; Julia 1.13.1
+          compiling load 3.8 s, build 0.2 s, counts 0.1 s; garbage collection 0.1 s; allocated 0.2 GB; peak memory 0.5 GB to the built model
+
+INPUT
+  run file  TIMES_Demo/demo12/demo12.run    sha256 31bf7323e30ab85e
+  switches  REDUCE=YES  OBJ=MOD  VAR_UC=YES  DSCAUTO=YES  BOTIME=1960
+            (as in the run file)
+  DD file   demo12_ts.dd                                     111 bytes  sha256 88865dabecc777fe
+  DD file   base.dd                                      111,836 bytes  sha256 e488f886ee5d517c
+  DD file   newtechs.dd                                   37,737 bytes  sha256 9c1d4e921260e724
+  DD file   trade_param.dd                                   248 bytes  sha256 7fbbf12506e9b9c5
+  DD file   dem_ref.dd                                    25,528 bytes  sha256 42466bdc4c3e2eaa
+  DD file   syssettings.dd                                 6,460 bytes  sha256 0e43c1494803517b
+  DD file   peak_rsv.dd                                      234 bytes  sha256 552bcfdefa6ffdbe
+  DD file   refinery.dd                                    1,033 bytes  sha256 9f47ccd14d0fbf97
+  DD file   demproj_dtcar.dd                                 436 bytes  sha256 598d259ee8747baf
+  DD file   uc_nuc_maxcap.dd                               1,050 bytes  sha256 e1f155d9e1d2f7a7
+  DD file   bounds-uc_wsets.dd                             2,273 bytes  sha256 53d679b6752a3f3f
+
+ENVIRONMENT
+  TIMES code         92bc1d36   (follows TIMES v4.9.8)
+  TIMES source       v4.9.8
+  Python 3.12.6;  Julia;  GAMS
+  system             Windows-11-10.0.22631-SP0
+  preprocessor       Segment Heap, DuckDB with 8 threads, parallel stages level 2;  the tables as model_parquet/, streamed beside the steps; tables dropped once no longer read: off (TIMES_DROP=1 turns it on)
+  Julia              threads auto (24), garbage collector threads 12, at most 8 equation families at once
+  seconds            before_preprocess 0.4, preprocess 7.4, julia_started 7.8, julia 0.6, preprocess_finished 7.4, jacobian_gdx 0.8, gams_matrix 0.7, gams_matrix_convert 0.1, gams 0.7, gams_to_solver 0.4, total 10.0, matrix_here_parquet 0.5, matrix_compare 0.2, check 0.8
+
+FILES (this folder)
+  report_demo12.txt          the run that compares with expected.json, with no GAMS: the objective
+  report_demo12_matrix.txt   the run that compared the matrix with that of TIMES in GAMS, entry by entry
+  expected.json              the result of TIMES in GAMS that the run compares with, and the evidence in short
+  demo12.run                 with the DD files and the option files: the inputs
+  The run's other files (report json, logs, solution.db3, the Veda files) are written to its result folder;
+  README.md gives the command.
+
+WHAT THE VERDICT MEANS
+  SAME            every check that could be made against the published GAMS result agrees. With the published matrix the
+                  two are the same linear program, and have the same optimum whether or not the solver finds it.
+  SAME OBJECTIVE  the optimum is the one published; no more was published to compare with.
+  DIFFERENT       the model runs and something does not agree with the published result: a defect. DIFFERENCES above says where to look.
+  UNSUPPORTED     the model uses TIMES features this implementation does not have yet; they are all listed above. Not a defect.
+  NOT SOLVED      the model was built and the solver did not reach an optimum (time limit, or a failure of the solver). julia.log has the solver log.
+  ERROR           a step failed. If it is the preprocessor or Julia, it is a defect; the message is above.
+  INFEASIBLE      the model's data cannot be met: rows left with no column whose constant does not satisfy them
+                  (0 = 2.685), on which TIMES in GAMS stops too (equation infeasible due to rhs value). Not a defect.
+  SOLVED          the open chain solved the model; there was no published GAMS result to compare with (--jacobian writes the matrix
+                  in the layout of GAMS's CONVERT jacobian, to compare with GAMS's own).
+  To report or to work on a result, hand over this file (or the bundle made with --bundle, which adds the input files).
