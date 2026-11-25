@@ -103,3 +103,7 @@ Each folder holds its own LICENSE, attribution and any changes; the root [LICENS
 - Every case is solved with its own shipped option files (`cplex.opt`, `conopt.opt`), as it is published here.
 - JRC-EU-TIMES JRC_BAU, PET-VTT EUnetzero, JRC-EU-TIMES JRC_NetZero: their `cplex.opt` solves by barrier without crossover, so their objectives agree to the barrier's tolerance (†).
 - The cases over 1 M rows are run with `--lp cplex` (TIMES-OS's matrix solved by CPLEX through your own GAMS); HiGHS was not attempted on them.
+
+## 6. MPS files for solver testing
+
+[`mps-suite/`](mps-suite/) writes 15 of these cases as MPS files, from cloning onwards: one linear program per case, as TIMES-OS hands it to HiGHS, with its reference optimum. The steps are written for an AI coding agent or a person, and the only input is a local folder. The two MACRO MLF cases are left out, because each solves a sequence of linear programs.
